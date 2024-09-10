@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://hpde.io/CNES/DisplayData/CDPP-Archive/ARCAD-3/Isoprobe/ARC_ISO_HTE_RES_PS",
+  "name": "ARCAD3 ISOPROBE high resolution density waveforms (PostScripts)",
+  "url": "https://hpde.io/CNES/DisplayData/CDPP-Archive/ARCAD-3/Isoprobe/ARC_ISO_HTE_RES_PS.html",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-Archive/Dominique.Lagoutte",
+    "url": "http://hpde.io/CNES/Person/CDPP-Archive/Dominique.Lagoutte"
+  },
+  "sdDatePublished": "2022-03-24",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ARC_ISO_HTE_RES_PS",
+    "encodingFormat": "Postscript"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/DisplayData/CDPP-Archive/ARCAD-3/Isoprobe/ARC_ISO_HTE_RES_PS",
+  "creditText": "ARCAD3 ISOPROBE high resolution density waveforms (PostScripts).",
+  "description": "This data set contains ARCAD-3 Isoprobe  plots of waveform (tracking frequency of the extremum).\nThe high resolution data correspond to a frequency tracking of the resonance or an anti-resonance of the mutual impedance response. As the resonance frequency is related to the electron density and the anti-resonance frequency to the Debye length, these data (used as waveform data) allow studies of density and/or temperature fluctuations.\nThe extremum trackings, one per probe, are available in the Self-Oscillating mode, Maximum and Minimum search modes. The different combinations are : AUT-AUT, MAX-MAX, MAX-MIN and MIN-MIN. The number of samples and the time resolution depend on the type of telemetry : 256 samples with a resolution of 50 ms in TMS120, 200 samples with a resolution of 20 ms in TMS30, 1680 samples with a resolution of 2.5 ms in TMS4 and 19672 samples with a resolution of 0.2 ms in TMF.",
+  "abstract": "This data set contains ARCAD-3 Isoprobe  plots of waveform (tracking frequency of the extremum).\nThe high resolution data correspond to a frequency tracking of the resonance or an anti-resonance of the mutual impedance response. As the resonance frequency is related to the electron density and the anti-resonance frequency to the Debye length, these data (used as waveform data) allow studies of density and/or temperature fluctuations.\nThe extremum trackings, one per probe, are available in the Self-Oscillating mode, Maximum and Minimum search modes. The different combinations are : AUT-AUT, MAX-MAX, MAX-MIN and MIN-MIN. The number of samples and the time resolution depend on the type of telemetry : 256 samples with a resolution of 50 ms in TMS120, 200 samples with a resolution of 20 ms in TMS30, 1680 samples with a resolution of 2.5 ms in TMS4 and 19672 samples with a resolution of 0.2 ms in TMF.",
+  "temporalCoverage": "Start date: 1981-09-29T00:00:00Z. Relative stop date: None",
+  "variableMeasured": "ThermalPlasma",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -2,13 +2,15 @@ import json
 from datetime import datetime, timedelta
 import os
 
-def convert_spase_to_jsonld(input_file, output_directory):
+def convert_spase_to_jsonld(input_file):
     # Read the input JSON file
-    with open(input_file, 'r') as f:
+    with open(input_file, 'r', encoding='utf-8') as f:
         spase_data = json.load(f)
 
     # Extract the DisplayData section
     display_data = spase_data['Spase']['DisplayData']
+    if isinstance(display_data, list):
+        display_data = display_data[0]
 
     # Create the base JSON-LD structure
     jsonld = {
@@ -36,15 +38,18 @@ def convert_spase_to_jsonld(input_file, output_directory):
 
     jsonld["sdPublisher"] = {
         "@type": "Organization",
-        "name": "hdpe.io"
+        "name": "hpde.io"
     }
 
     # Distribution information
-    if 'AccessInformation' in display_data and 'AccessURL' in display_data['AccessInformation'] and len(display_data['AccessInformation']['AccessURL']) > 2:
+    if 'AccessInformation' in display_data and 'AccessURL' in display_data['AccessInformation']:
+        access_url = display_data['AccessInformation']['AccessURL']
+        if isinstance(access_url, list):
+            access_url = access_url[0]
         jsonld["distribution"] = {
             "@type": "DataDownload",
-            "contentUrl": display_data['AccessInformation']['AccessURL'][2]['URL'],
-            "encodingFormat": display_data['AccessInformation']['Format']
+            "contentUrl": access_url['URL'],
+            "encodingFormat": display_data['AccessInformation'].get('Format', '')
         }
 
     jsonld["includedInDataCatalog"] = {
@@ -77,21 +82,17 @@ def convert_spase_to_jsonld(input_file, output_directory):
     observed_regions = display_data.get('ObservedRegion', [])
     if observed_regions:
         jsonld["spatialCoverage"] = []
-        for region in observed_regions:
-            jsonld["spatialCoverage"].append({
+        if isinstance(observed_regions, str):
+            jsonld["spatialCoverage"] = [{
                 "@type": "Place",
-                "name": f"{region}",
-                # This needs to be refactored. It needs a separate method that retrieve the region in UAT
-                # "keywords": [{
-                #     "@type": "DefinedTerm",
-                #     "url": "https://astrothesaurus.org/",
-                #     "name": "Planetary magnetosphere",
-                #     "inDefinedTermSet": "https://github.com/astrothesaurus/UAT/blob/master/UAT.json",
-                #     "identifier": "http://astrothesaurus.org/uat/997",
-                #     "termCode": "997",
-                #     "description": "Planetary magnetosphere"
-                # }]
-            })
+                "name": observed_regions
+            }]
+        else:
+            for region in observed_regions:
+                jsonld["spatialCoverage"].append({
+                    "@type": "Place",
+                    "name": f"{region}"
+                })
 
     if 'Keyword' in display_data:
         jsonld["keywords"] = display_data['Keyword']
@@ -101,18 +102,7 @@ def convert_spase_to_jsonld(input_file, output_directory):
         "audienceType": ["Space Physicist", "Space Community", "Data Scientists", "Machine Learning Users"]
     }
 
-    # Create output filename
-    output_filename = f"{display_data['ResourceID'].split('/')[-1]}.json"
-    output_path = os.path.join(output_directory, output_filename)
-
-    # Write the JSON-LD to a file
-    with open(output_path, 'w') as f:
-        json.dump(jsonld, f, indent=2)
-
-    print(f"Converted file saved as: {output_path}")
-
-    return output_path
-
+    return jsonld
 def main():
     # Example usage
     input_file = 'source.spase.json'

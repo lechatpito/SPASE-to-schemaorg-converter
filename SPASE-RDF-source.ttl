@@ -1,0 +1,68 @@
+s1:ASWS_DisplayData_Solar_Image_Clg_Solar_Image a ns1:DisplayData ;
+    rdfs:label "ASWS_DisplayData_Solar_Image_Clg_Solar_Image" ;
+    ns2:identifier "spase://ASWS/DisplayData/Solar_Image/Clg_Solar_Image" ;
+    ns1:caveats "The time record varies, generally record daylight hours."^^xsd:string ;
+    ns1:display_cadence "PT60S"^^xsd:duration ;
+    ns1:has_access_information ns1:AccessInformation-e4a1de5f-6b26-4fae-895a-9fb25989c52e ;
+    ns1:has_instrument ns1:ASWS_Instrument_Ground_Culgoora_Telescope ;
+    ns1:has_measurement_type ns1:SPECTRUM ;
+    ns1:has_observed_region ns1:EARTH_MAGNETOSPHERE,
+        ns1:HELIOSPHERE_INNER,
+        ns1:HELIOSPHERE_OUTER,
+        ns1:SUN ;
+    ns1:has_resource ns1:ASWS_DisplayData_Solar_Image_Clg_Solar_Image ;
+    ns1:has_resource_header ns1:ResourceHeader-354a1a55-ce2d-4b39-a918-56190cbdb797 ;
+    ns1:has_temporal_description ns1:TemporalDescription-cec83cf2-6491-42cf-a6a4-982725a73d9b ;
+    ns1:keyword "H-Alpha Image"^^xsd:string,
+        "Solar Image"^^xsd:string,
+        "White Light Image"^^xsd:string .
+
+ns1:ResourceHeader-354a1a55-ce2d-4b39-a918-56190cbdb797 a ns1:ResourceHeader ;
+    rdfs:label "ResourceHeader-354a1a55-ce2d-4b39-a918-56190cbdb797" ;
+    ns1:acknowledgement "We are thankful to the Culgoora Solar Observatory of Space Weather Network, Bureau of Meteorology of Australia for the observations of Culgoora Solar Image data."^^xsd:string ;
+    ns1:description "Australia has made major contributions to research in solar physics for several decades. Solar images are a major kind of records of solar activities. The SWS has monitored and archived solar activity images from Culgoora and Learmonth for more than two decades. They include H-Alpha (2003-2014) and White Light (2004-2013) images from Culgoora, and H-Alpha (2004-2009), GONG H-Alpha (since 2013), GONG White Light (since 2010), and GONG Magnetogram (since 2010) images from Learmonth. A new set of three telescopes, which are on a single mount, has installed at Culgoora. Culgoora solar image data are available since 2003-02-01."^^xsd:string ;
+    ns1:has_contact ns1:Contact-dd57958a-4745-4f52-9a99-559bdf6cf738 ;
+    ns1:has_information_url ns1:InformationUrl-a1bbc348-1ca3-4c1d-8fae-1ca67a9e2259,
+        ns1:InformationUrl-fa70266b-8b8f-43e9-8cb5-7980d26d1dda ;
+    ns1:has_revision_history ns1:RevisionHistory-a015bd7a-165d-4d42-a9e5-3587a8ea7c12 ;
+    ns1:release_date "2022-02-24T12:34:56.789"^^xsd:dateTime ;
+    ns1:resource_name "Australian Space Weather Services, SWS, Culgoora Solar Observatory Solar Image"^^xsd:string .
+
+ns1:AccessInformation-e4a1de5f-6b26-4fae-895a-9fb25989c52e a ns1:AccessInformation ;
+    rdfs:label "AccessInformation-e4a1de5f-6b26-4fae-895a-9fb25989c52e" ;
+    ns1:has_access_url ns1:AccessUrl-4797bf20-e46b-441a-ab0d-df0ef51f561d,
+        ns1:AccessUrl-8ff8eefe-0e87-49ab-81ff-e0b526ddc79e,
+        ns1:AccessUrl-e3445948-b60b-4de5-a353-d58bb9c6c414 ;
+    ns1:has_format ns1:JPEG ;
+    ns1:has_repository ns1:SMWG_Repository_SWS .
+
+ns1:AccessUrl-4797bf20-e46b-441a-ab0d-df0ef51f561d a ns1:AccessUrl ;
+    rdfs:label "AccessUrl-4797bf20-e46b-441a-ab0d-df0ef51f561d" ;
+    ns1:description "Access to the Culgoora H-Alpha and White Light solar image data files"^^xsd:string ;
+    ns1:language "en"^^xsd:string ;
+    ns1:name "Access to Solar Images (not with most browsers)"^^xsd:string ;
+    ns1:url "https://downloads.sws.bom.gov.au/wdc/wdc_sol_archive/data/culgoora/"^^xsd:string .
+
+ns1:TemporalDescription-cec83cf2-6491-42cf-a6a4-982725a73d9b a ns1:TemporalDescription ;
+    rdfs:label "TemporalDescription-cec83cf2-6491-42cf-a6a4-982725a73d9b" ;
+    ns1:has_time_span ns1:TimeSpan-f109d377-16f7-48c2-a0db-ade291cf5650 .
+
+ns1:TimeSpan-f109d377-16f7-48c2-a0db-ade291cf5650 a ns1:TimeSpan ;
+    rdfs:label "TimeSpan-f109d377-16f7-48c2-a0db-ade291cf5650" ;
+    ns1:note "Data are current to within a day or two."^^xsd:string ;
+    ns1:relative_stop_date "-P2D"^^xsd:duration ;
+    ns1:start_date "2003-01-02T05:00:00Z"^^xsd:dateTime .
+
+ns1:Contact-dd57958a-4745-4f52-9a99-559bdf6cf738 a ns1:Contact ;
+    rdfs:label "Contact-dd57958a-4745-4f52-9a99-559bdf6cf738" ;
+    ns1:has_person ns1:ASWS_Person_Kehe_Wang ;
+    ns1:has_role ns1:GENERAL_CONTACT .
+
+ns1:ASWS_Person_Kehe_Wang a ns1:Person ;
+    rdfs:label "ASWS_Person_Kehe_Wang" ;
+    ns2:identifier "spase://ASWS/Person/Kehe.Wang" ;
+    ns1:email "kehe.wang@bom.gov.au"^^xsd:string ;
+    ns1:has_resource ns1:ASWS_Person_Kehe_Wang ;
+    ns1:organization_name "Space Weather Services (SWS), Bureau of Meteorology, Australia"^^xsd:string ;
+    ns1:person_name "Kehe Wang"^^xsd:string ;
+    ns1:release_date "2017-06-28T17:03:47Z"^^xsd:dateTime .

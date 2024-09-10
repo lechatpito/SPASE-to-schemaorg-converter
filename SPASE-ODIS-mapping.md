@@ -16,7 +16,6 @@
 | Keyword | keywords | Direct mapping |
 | - | license | Hardcoded value |
 | - | audience | Hardcoded value |
-| - | creditText | Generated from ResourceName and current year |
+| - | creditText | Generated from ResourceName |
 | - | sdPublisher | Hardcoded value |
 | - | includedInDataCatalog | Hardcoded value |
-
