@@ -1,6 +1,6 @@
 # SPASE to ODIS Conversion
 
-This project focuses on converting SPASE (Space Physics Archive Search and Extract) metadata to ODIS (Ocean Data and Information System) compatible JSON-LD format. This conversion is a crucial step in integrating heliophysics data into a broader, interoperable framework that adheres to schema.org vocabulary.
+This project focuses on converting [SPASE (Space Physics Archive Search and Extract)](https://spase-group.org/) metadata to [ODIS (Ocean Data and Information System)](https://book.odis.org/) compatible JSON-LD format. This conversion is a crucial step in integrating heliophysics data into a broader, interoperable framework that adheres to schema.org vocabulary.
 
 ## Why Convert SPASE to ODIS?
 
