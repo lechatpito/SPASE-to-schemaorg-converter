@@ -22,6 +22,13 @@ Our conversion process involves two main scripts:
 
 The conversion maps SPASE metadata fields to appropriate schema.org types and properties, ensuring that the rich information contained in SPASE records is accurately represented in the resulting JSON-LD.
 
+## SPASE to ODIS Mapping
+
+To facilitate the conversion process and ensure consistency, we have created a mapping between SPASE metadata fields and their corresponding ODIS (schema.org) properties. This mapping serves as a reference for understanding how SPASE concepts are translated into the ODIS framework.
+
+You can find the SPASE to ODIS mapping file here:
+[SPASE_to_ODIS_mapping.md](./SPASE_to_ODIS_mapping.md)
+
 ## Helio-KNOW: Advancing Heliophysics through Open Science and Knowledge Commons
 
 ### Project Overview
