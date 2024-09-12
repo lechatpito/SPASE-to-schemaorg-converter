@@ -91,7 +91,7 @@ def process_single_access_info(json_file_path, output_dir, sitemap_file, base_ur
     output_file_path = os.path.join(output_dir, new_file_name)
     
     # Convert the SPASE JSON to JSON-LD
-    jsonld_content = convert_spase_to_jsonld(json_file_path)
+    jsonld_content = convert_spase_to_jsonld(json_file_path, base_url, new_file_name)
     
     # Ensure the output directory exists
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)

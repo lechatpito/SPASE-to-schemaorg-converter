@@ -2,7 +2,7 @@ import json
 from datetime import datetime, timedelta
 import os
 
-def convert_spase_to_jsonld(input_file):
+def convert_spase_to_jsonld(input_file, base_url, output_file_path):
     # Read the input JSON file
     with open(input_file, 'r', encoding='utf-8') as f:
         spase_data = json.load(f)
@@ -21,10 +21,16 @@ def convert_spase_to_jsonld(input_file):
     }
 
     # Map fields from SPASE to JSON-LD
-    jsonld["@id"] = f"https://hpde.io/{display_data['ResourceID'].split('://')[-1]}"
-    jsonld["name"] = display_data['ResourceHeader']['ResourceName']
-    jsonld["url"] = f"{jsonld['@id']}.html"
+    relative_path = output_file_path.replace(os.sep, '/')
+    path_parts = relative_path.split('/')
+    # Remove directories to be omitted
+    path_parts = [part for part in path_parts if part not in ['..', 'hpde.io', 'DisplayData']]
+    cleaned_path = '/'.join(path_parts)
     
+    jsonld["@id"] = f"{base_url}{cleaned_path}"
+    jsonld["name"] = display_data['ResourceHeader']['ResourceName']
+    jsonld["url"] = f"{jsonld['@id']}"
+
     # Publisher information
     if 'Contact' in display_data['ResourceHeader'] and 'PersonID' in display_data['ResourceHeader']['Contact']:
         jsonld["publisher"] = {
@@ -103,6 +109,7 @@ def convert_spase_to_jsonld(input_file):
     }
 
     return jsonld
+
 def main():
     # Example usage
     input_file = 'source.spase.json'
