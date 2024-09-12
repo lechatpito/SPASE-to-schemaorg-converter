@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_CDPP-Archive_GEOS-1_Ephemeris_GEOS1_POS_3D_PS.jsonld",
+  "name": "GEOS-1 3D Positions in GSE system (PostScripts)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_CDPP-Archive_GEOS-1_Ephemeris_GEOS1_POS_3D_PS.jsonld",
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GEOS1_POS_3D_PS",
+    "encodingFormat": "Postscript"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/DisplayData/CDPP-Archive/GEOS-1/Ephemeris/GEOS1_POS_3D_PS",
+  "creditText": "GEOS-1 3D Positions in GSE system (PostScripts).",
+  "description": "This data set contains 3D plots of  GEOS-1  positions in GSE system.\n\n This is a projection of the GEOS-1 orbit on the 3 planes of Geocentric Solar Equatorial system (GSE), i.e. X-Y, X-Z, and Y-Z planes. A 3-D perspective view is also added.\n\nMeasured positions, given from auxiliary data, are plotted in blue, while corresponding estimated Kepler ellipse is plotted in green. The estimated Kepler parameters are computed from a fit with the experimental positions and a model. So, the values of apogee, perigee, semi-major and semi-minor axis could differ a little bit from one view to another one.\n\nTime ticks are used to locate the spacecraft at a given time.",
+  "abstract": "This data set contains 3D plots of  GEOS-1  positions in GSE system.\n\n This is a projection of the GEOS-1 orbit on the 3 planes of Geocentric Solar Equatorial system (GSE), i.e. X-Y, X-Z, and Y-Z planes. A 3-D perspective view is also added.\n\nMeasured positions, given from auxiliary data, are plotted in blue, while corresponding estimated Kepler ellipse is plotted in green. The estimated Kepler parameters are computed from a fit with the experimental positions and a model. So, the values of apogee, perigee, semi-major and semi-minor axis could differ a little bit from one view to another one.\n\nTime ticks are used to locate the spacecraft at a given time.",
+  "temporalCoverage": "Start date: 1977-05-19T00:00:00Z. Relative stop date: None",
+  "variableMeasured": "Ephemeris",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

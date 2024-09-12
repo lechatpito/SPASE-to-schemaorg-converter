@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_PROBA2_LYRA_Level_4_PT24H.jsonld",
+  "name": "Proba 2 LYRA Daily PNG Files of Calibrated Time Series",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_PROBA2_LYRA_Level_4_PT24H.jsonld",
+  "sdDatePublished": "2022-02-20",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://proba2.sidc.be/lyra/data/Level4calibrated/",
+    "encodingFormat": "PNG"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/DisplayData/PROBA2/LYRA/Level_4/PT24H",
+  "creditText": "Proba 2 LYRA Daily PNG Files of Calibrated Time Series.",
+  "description": "This dataset contains daily PNG files of calibrated time series from the Large Yield RAdiometer (LYRA) onboard Proba 2. Data are averaged to one minute. Time series of solar irradiance are displayed in all four ultraviolet channels: the Lyman-alpha line at 121.6 nm, the 200-220 nm Herzberg continuum range, the 17-80 nm aluminium filter range and the 6-20 nm zirconium filter range.",
+  "abstract": "This dataset contains daily PNG files of calibrated time series from the Large Yield RAdiometer (LYRA) onboard Proba 2. Data are averaged to one minute. Time series of solar irradiance are displayed in all four ultraviolet channels: the Lyman-alpha line at 121.6 nm, the 200-220 nm Herzberg continuum range, the 17-80 nm aluminium filter range and the 6-20 nm zirconium filter range.",
+  "temporalCoverage": "Start date: 2010-01-15T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": [
+    "Irradiance",
+    "Spectrum"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

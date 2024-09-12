@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_CDPP-Archive_CASSINI_RPWS-HFR_CAS_RPWS_HFR_DYNSPECTRA_N3.jsonld",
+  "name": "CASSINI RPWS L3 Dynamic Spectra (Flux Density and Circular Polarization degree)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_CDPP-Archive_CASSINI_RPWS-HFR_CAS_RPWS_HFR_DYNSPECTRA_N3.jsonld",
+  "sdDatePublished": "2022-06-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CAS_RPWS_HFR_DYNSPECTRA_N3",
+    "encodingFormat": "PDF"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/DisplayData/CDPP-Archive/CASSINI/RPWS-HFR/CAS_RPWS_HFR_DYNSPECTRA_N3",
+  "creditText": "CASSINI RPWS L3 Dynamic Spectra (Flux Density and Circular Polarization degree).",
+  "description": "This data set contains 24h  dynamic spectra plots of spectral flux densities (top panel) and circular polarization degree (bottom panel) measured by the RPWS/HFR instrument after a goniopolarimetric inversion. \nPlots are in PDF format.",
+  "abstract": "This data set contains 24h  dynamic spectra plots of spectral flux densities (top panel) and circular polarization degree (bottom panel) measured by the RPWS/HFR instrument after a goniopolarimetric inversion. \nPlots are in PDF format.",
+  "temporalCoverage": "Start date: 2004-01-01T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    "Waves.Active",
+    "Waves.Passive",
+    "Spectrum"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

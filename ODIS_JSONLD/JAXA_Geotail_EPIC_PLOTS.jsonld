@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_Geotail_EPIC_PLOTS.jsonld",
+  "name": "Geotail EPIC Summary Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_Geotail_EPIC_PLOTS.jsonld",
+  "sdDatePublished": "2018-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "http://sd-www.jhuapl.edu/Geotail/",
+    "encodingFormat": "Text"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://JAXA/DisplayData/Geotail/EPIC/PLOTS",
+  "creditText": "Geotail EPIC Summary Plots.",
+  "description": "GIF plots, several types per 12-hr interval",
+  "abstract": "GIF plots, several types per 12-hr interval",
+  "temporalCoverage": "Start date: 1992-10-01T00:00:00. Relative stop date: -P14D",
+  "variableMeasured": [
+    "IonComposition",
+    "EnergeticParticles"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

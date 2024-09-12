@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_DoubleStar_QLPLOTS.jsonld",
+  "name": "Double Star Quicklook Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_DoubleStar_QLPLOTS.jsonld",
+  "sdDatePublished": "2019-05-05",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://www.cosmos.esa.int/web/csa/double-star-quicklook-plots",
+    "encodingFormat": "PNG"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/DisplayData/DoubleStar/QLPLOTS",
+  "creditText": "Double Star Quicklook Plots.",
+  "description": "6-Hour GIF plots of multi-instrument quick look data from Double Star TC1 and TC2 spacecraft",
+  "abstract": "6-Hour GIF plots of multi-instrument quick look data from Double Star TC1 and TC2 spacecraft",
+  "temporalCoverage": "Start date: 2004-01-01T00:00:00. Relative stop date: -P7D",
+  "variableMeasured": [
+    "MagneticField",
+    "ElectricField",
+    "ThermalPlasma",
+    "EnergeticParticles"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

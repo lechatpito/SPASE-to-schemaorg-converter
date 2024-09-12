@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_RISH_misc_PON_AWS_aws_pon_gif.jsonld",
+  "name": "Surface meteorological data at Pontianak (GIF format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_RISH_misc_PON_AWS_aws_pon_gif.jsonld",
+  "sdDatePublished": "2016-07-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "http://www.rish.kyoto-u.ac.jp/radar-group/surface/pontianak/aws/",
+    "encodingFormat": "GIF"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/DisplayData/RISH/misc/PON/AWS/aws_pon_gif",
+  "creditText": "Surface meteorological data at Pontianak (GIF format).",
+  "description": "The time-series plot of surface meteorological data taken by the Automatic Weather Station (AWS) at Pontianak in West Karimantan, Indonesia (0.00S, 109.37E, 1m MSL), which has been operated on March 16, 2008. This plot includes pressure, temperature, relative humidity, wind velocity, wind direction and rain amount. File names are composed of (year)(month)(day).gif (daily plot), (year)(month).gif (monthly plot) and (year).gif (yearly plot). Local time (UT + 07:00) is used for time data.",
+  "abstract": "The time-series plot of surface meteorological data taken by the Automatic Weather Station (AWS) at Pontianak in West Karimantan, Indonesia (0.00S, 109.37E, 1m MSL), which has been operated on March 16, 2008. This plot includes pressure, temperature, relative humidity, wind velocity, wind direction and rain amount. File names are composed of (year)(month)(day).gif (daily plot), (year)(month).gif (monthly plot) and (year).gif (yearly plot). Local time (UT + 07:00) is used for time data.",
+  "temporalCoverage": "Start date: 2008-03-16T17:00:00. Relative stop date: -P6M",
+  "variableMeasured": "NeutralGas",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Phenomena",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

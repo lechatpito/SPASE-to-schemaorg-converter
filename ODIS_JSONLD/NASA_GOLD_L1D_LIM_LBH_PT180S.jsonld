@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_GOLD_L1D_LIM_LBH_PT180S.jsonld",
+  "name": "Gold Level 1D Limb LBH Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_GOLD_L1D_LIM_LBH_PT180S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Richard.Eastes",
+    "url": "http://hpde.io/SMWG/Person/Richard.Eastes"
+  },
+  "sdDatePublished": "2020-09-14",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/gold/level1d/",
+    "encodingFormat": "PNG"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/GOLD/L1D/LIM_LBH/PT180S",
+  "creditText": "Gold Level 1D Limb LBH Plots.",
+  "description": "Level 1D files contain a thumbnail image (PNG) for total Lyman-Birge-Hopfield (LBH) radiance.\n   A new L1D file is generated for each new L1C file. These correspond to either the Northern or Southern hemisphere.\n   Individual image size = 512 x 512 pixels. Total LBH brightness map (in Rayleighs) integrates the signal from \n   137 to 155 nm with 148.5 to 150.0 nm masked.",
+  "abstract": "Level 1D files contain a thumbnail image (PNG) for total Lyman-Birge-Hopfield (LBH) radiance.\n   A new L1D file is generated for each new L1C file. These correspond to either the Northern or Southern hemisphere.\n   Individual image size = 512 x 512 pixels. Total LBH brightness map (in Rayleighs) integrates the signal from \n   137 to 155 nm with 148.5 to 150.0 nm masked.",
+  "temporalCoverage": "Start date: 2018-10-05T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": "Radiance",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": [
+    "GOLD",
+    "SES-14"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

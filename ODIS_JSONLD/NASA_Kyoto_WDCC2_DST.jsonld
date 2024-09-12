@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_Kyoto_WDCC2_DST.jsonld",
+  "name": "Hourly Dst Indices to Today",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_Kyoto_WDCC2_DST.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Toyo.Kamei",
+    "url": "http://hpde.io/SMWG/Person/Toyo.Kamei"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "http://wdc.kugi.kyoto-u.ac.jp/dst_realtime/presentmonth/index.html",
+    "encodingFormat": "GIF"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/Kyoto/WDCC2/DST",
+  "creditText": "Hourly Dst Indices to Today.",
+  "description": "Quicklook hourly Dst indices through today from WDC-C2 at Kyoto-U, also prior provisional and definitive hourly Dst",
+  "abstract": "Quicklook hourly Dst indices through today from WDC-C2 at Kyoto-U, also prior provisional and definitive hourly Dst",
+  "temporalCoverage": "Start date: 1957-01-01T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": [
+    "MagneticField",
+    "ActivityIndex"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

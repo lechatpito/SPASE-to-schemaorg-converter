@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_GOLD_L1D_LIM_PT180S.jsonld",
+  "name": "Gold Level 1D Limb Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_GOLD_L1D_LIM_PT180S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Richard.Eastes",
+    "url": "http://hpde.io/SMWG/Person/Richard.Eastes"
+  },
+  "sdDatePublished": "2020-09-14",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/gold/level1d/",
+    "encodingFormat": "PNG"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/GOLD/L1D/LIM/PT180S",
+  "creditText": "Gold Level 1D Limb Plots.",
+  "description": "Level 1D files contain a thumbnail image (PNG) for individual limb scans. There is also a combined thumbnail \n   image file created that contains 4 images: 1356 Angstrom (Atomic Oxygen), total Lyman-Birge-Hopfield (LBH), stack of 8 \n   slices for different latitudes of brightness as a function of wavelength and tangent altitude, and a single line plot with \n   brightness of 1356, LBH Short (denoted LBH1), and LBH Long (denoted LBH2) as a function of tangent altitude. Separate files \n   are created for Channel A and Channel B data. A new L1D file is generated for each new L1C file. These can correspond to either \n   the Northern or Southern hemisphere.",
+  "abstract": "Level 1D files contain a thumbnail image (PNG) for individual limb scans. There is also a combined thumbnail \n   image file created that contains 4 images: 1356 Angstrom (Atomic Oxygen), total Lyman-Birge-Hopfield (LBH), stack of 8 \n   slices for different latitudes of brightness as a function of wavelength and tangent altitude, and a single line plot with \n   brightness of 1356, LBH Short (denoted LBH1), and LBH Long (denoted LBH2) as a function of tangent altitude. Separate files \n   are created for Channel A and Channel B data. A new L1D file is generated for each new L1C file. These can correspond to either \n   the Northern or Southern hemisphere.",
+  "temporalCoverage": "Start date: 2018-10-05T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": "Radiance",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": [
+    "GOLD",
+    "SES-14"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

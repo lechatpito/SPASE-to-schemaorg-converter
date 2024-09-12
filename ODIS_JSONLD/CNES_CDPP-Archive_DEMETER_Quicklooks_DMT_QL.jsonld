@@ -1,0 +1,64 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_CDPP-Archive_DEMETER_Quicklooks_DMT_QL.jsonld",
+  "name": "Demeter QuickLooks (Postscript)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_CDPP-Archive_DEMETER_Quicklooks_DMT_QL.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-Archive/Dominique.Lagoutte",
+    "url": "http://hpde.io/CNES/Person/CDPP-Archive/Dominique.Lagoutte"
+  },
+  "sdDatePublished": "2021-11-03",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DMT_QL",
+    "encodingFormat": "Postscript"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/DisplayData/CDPP-Archive/DEMETER/Quicklooks/DMT_QL",
+  "creditText": "Demeter QuickLooks (Postscript).",
+  "description": "DEMETER Quicklooks present data of all the science experiments. \nIt represents half-orbit data with a low time resolution. \n\n- Date and orbit number,\n- Mode frame (Survey or Burst),\n- ICE experiment : 3 plots (spectra and waveforms),\n- IMSC experiment : 1 plot (spectra),\n- RNF neural network : 1 plot,\n- IDP experiment : 1 plot (counters),\n- IAP experiment : 2 plots (APR and ADV detectors),\n- ISL experiment : 2 plots (spectra and curves),\n- Earthquake information : 1 plot,\n- Orbit parameters : 1 plot.",
+  "abstract": "DEMETER Quicklooks present data of all the science experiments. \nIt represents half-orbit data with a low time resolution. \n\n- Date and orbit number,\n- Mode frame (Survey or Burst),\n- ICE experiment : 3 plots (spectra and waveforms),\n- IMSC experiment : 1 plot (spectra),\n- RNF neural network : 1 plot,\n- IDP experiment : 1 plot (counters),\n- IAP experiment : 2 plots (APR and ADV detectors),\n- ISL experiment : 2 plots (spectra and curves),\n- Earthquake information : 1 plot,\n- Orbit parameters : 1 plot.",
+  "temporalCoverage": "Start date: 2004-07-05T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    "ElectricField",
+    "MagneticField",
+    "EnergeticParticles",
+    "IonComposition"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

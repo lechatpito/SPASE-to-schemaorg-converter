@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_RISH_misc_PAM_MFradar_mfr_pam_gif.jsonld",
+  "name": "Time-height plot of eastward, northward and vertical winds in the mesosphere and lower thermosphere estimated from the MF radar at Pameungpeuk (GIF format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_RISH_misc_PAM_MFradar_mfr_pam_gif.jsonld",
+  "sdDatePublished": "2016-07-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/iugonet/index-idr.html",
+    "encodingFormat": "GIF"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/DisplayData/RISH/misc/PAM/MFradar/mfr_pam_gif",
+  "creditText": "Time-height plot of eastward, northward and vertical winds in the mesosphere and lower thermosphere estimated from the MF radar at Pameungpeuk (GIF format).",
+  "description": "The time-height plot of eastward, northward and vertical wind data in the mesosphere and lower thermosphere (52-122 km) estimated from the MF radar observations at Pameungpeuk, Indonesia (7.65S, 107.69E). File names of gif data are composed of date: (year)(month)(day)_pam.gif (daily plot), and (year)(month)_pam.gif (monthly plot). These plots are made using the netCDF data. For daily and monthly plots, the wind data are averaged for 10 minutes and 6 hours in each height, respectively. The 6-hour average is done if there are more than 20 valid data points in 6-hour window (0-5, 6-11, 12-17, and 18-23h) for each height. Detailed description of the netCDF data can be found in the metadata. Universal time is used for time data.",
+  "abstract": "The time-height plot of eastward, northward and vertical wind data in the mesosphere and lower thermosphere (52-122 km) estimated from the MF radar observations at Pameungpeuk, Indonesia (7.65S, 107.69E). File names of gif data are composed of date: (year)(month)(day)_pam.gif (daily plot), and (year)(month)_pam.gif (monthly plot). These plots are made using the netCDF data. For daily and monthly plots, the wind data are averaged for 10 minutes and 6 hours in each height, respectively. The 6-hour average is done if there are more than 20 valid data points in 6-hour window (0-5, 6-11, 12-17, and 18-23h) for each height. Detailed description of the netCDF data can be found in the metadata. Universal time is used for time data.",
+  "temporalCoverage": "Start date: 2004-03-25T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": "Profile",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

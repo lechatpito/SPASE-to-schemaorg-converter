@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_KSO_KANZ_CaIIK.jsonld",
+  "name": "KSO Ca II K Solar Images",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_KSO_KANZ_CaIIK.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Dietmar.Baumgartner",
+    "url": "http://hpde.io/SMWG/Person/Dietmar.Baumgartner"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "http://cesar.kso.ac.at/synoptic/caii_years.php",
+    "encodingFormat": "JPEG"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/KSO/KANZ/CaIIK",
+  "creditText": "KSO Ca II K Solar Images.",
+  "description": "Ca II K solar imagery from Kanzelhoehe Solar Observatory (KSO), Austria",
+  "abstract": "Ca II K solar imagery from Kanzelhoehe Solar Observatory (KSO), Austria",
+  "temporalCoverage": "Start date: 2010-07-31T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Photosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -91,7 +91,7 @@ def process_single_access_info(json_file_path, output_dir, sitemap_file, base_ur
     output_file_path = os.path.join(output_dir, new_file_name)
     
     # Convert the SPASE JSON to JSON-LD
-    jsonld_content = convert_spase_to_jsonld(json_file_path, base_url, new_file_name)
+    jsonld_content = convert_spase_to_jsonld(json_file_path, base_url, output_file_path)
     
     # Ensure the output directory exists
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
@@ -131,7 +131,7 @@ def main():
     root_dir = '../hpde.io'
     output_dir = './ODIS_JSONLD'
     sitemap_file = './sitemap.xml'
-    base_url = "https://github.com/lechatpito/NASA-ODIS-Examples/ODIS_JSONLD/"
+    base_url = "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/"
     
     crawl_hpde_directory(root_dir, output_dir, sitemap_file, base_url)
 

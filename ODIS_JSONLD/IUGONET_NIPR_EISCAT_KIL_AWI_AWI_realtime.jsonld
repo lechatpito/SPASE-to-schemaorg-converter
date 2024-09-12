@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NIPR_EISCAT_KIL_AWI_AWI_realtime.jsonld",
+  "name": "Realtime quicklook images taken by the all-sky imager at Kilpisjarvi, Finland",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NIPR_EISCAT_KIL_AWI_AWI_realtime.jsonld",
+  "sdDatePublished": "2017-03-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "http://polaris.nipr.ac.jp/~kstdev/opt/KIL/",
+    "encodingFormat": "JPEG"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/DisplayData/NIPR/EISCAT/KIL/AWI/AWI_realtime",
+  "creditText": "Realtime quicklook images taken by the all-sky imager at Kilpisjarvi, Finland.",
+  "description": "Realtime quicklook images taken by the all-sky imager (body: WATEC WAT-120N+, lens: FUJINON YV2.2\u00d71.4A-SA2) with some filters at Kilpisjarvi, Finland. The all images are originally recorded in the JPEG format with a temporal resolution of 1s, 0.5s, and 4s for 558nm, 670nm, and 428nm, respectively.",
+  "abstract": "Realtime quicklook images taken by the all-sky imager (body: WATEC WAT-120N+, lens: FUJINON YV2.2\u00d71.4A-SA2) with some filters at Kilpisjarvi, Finland. The all images are originally recorded in the JPEG format with a temporal resolution of 1s, 0.5s, and 4s for 558nm, 670nm, and 428nm, respectively.",
+  "temporalCoverage": "Start date: 2017-03-22T00:00:00Z. Relative stop date: -P1D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earch Interaction Ionosphere/Magnetosphere Dynamics Aurorae",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

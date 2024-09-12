@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_RISH_misc_KTB_EAradar_ear_ktb_ionostd_png.jsonld",
+  "name": "Field-aligned irregularity (FAI) observation data of the ionosphere taken by the EAR (PNG format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_RISH_misc_KTB_EAradar_ear_ktb_ionostd_png.jsonld",
+  "sdDatePublished": "2016-07-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "http://www.rish.kyoto-u.ac.jp/ear/data-fai/index.html#rti",
+    "encodingFormat": "PNG"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/DisplayData/RISH/misc/KTB/EAradar/ear_ktb_ionostd_png",
+  "creditText": "Field-aligned irregularity (FAI) observation data of the ionosphere taken by the EAR (PNG format).",
+  "description": "The time-range plots of the echo power in the ionosphere above 80 km taken by the equatorial atmosphere radar (EAR) at Kototabang, Indonesia (0.20S, 100.32E, 865m MSL), which has been operated in the field-aligned irregularity (FAI) observation mode. The display of time-range plots of the echo intensity depends on each observation parameter. The time ranges are two kinds of local day (06-18 h, LT) and night (18-06 h, LT). The plots are stored in the gif file named (month)(day)(year).(start local time).(observation parameter).rti.mul.snr.png. The local date, start and end time, and observation parameter are described at the top center of each PNG plot. Details of the observation parameter are described in the EAR-FAI homepage (http://www.rish.kyoto-u.ac.jp/ear/data-fai/index.html).",
+  "abstract": "The time-range plots of the echo power in the ionosphere above 80 km taken by the equatorial atmosphere radar (EAR) at Kototabang, Indonesia (0.20S, 100.32E, 865m MSL), which has been operated in the field-aligned irregularity (FAI) observation mode. The display of time-range plots of the echo intensity depends on each observation parameter. The time ranges are two kinds of local day (06-18 h, LT) and night (18-06 h, LT). The plots are stored in the gif file named (month)(day)(year).(start local time).(observation parameter).rti.mul.snr.png. The local date, start and end time, and observation parameter are described at the top center of each PNG plot. Details of the observation parameter are described in the EAR-FAI homepage (http://www.rish.kyoto-u.ac.jp/ear/data-fai/index.html).",
+  "temporalCoverage": "Start date: 2001-07-29T23:00:00. Relative stop date: -P1M",
+  "variableMeasured": "Profile",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Ion Chemistry/Ionization",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

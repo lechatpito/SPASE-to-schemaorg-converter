@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_RISH_misc_PON_MFradar_mfr_pon_png.jsonld",
+  "name": "Wind data in the mesosphere and lower thermosphere estimated from the MF radar observations at Pontianak (PNG format).",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_RISH_misc_PON_MFradar_mfr_pon_png.jsonld",
+  "sdDatePublished": "2016-10-08",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/iugonet/index-idr.html",
+    "encodingFormat": "PNG"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/DisplayData/RISH/misc/PON/MFradar/mfr_pon_png",
+  "creditText": "Wind data in the mesosphere and lower thermosphere estimated from the MF radar observations at Pontianak (PNG format)..",
+  "description": "The time-height plots of three components of wind velocity (zonal, meridional and vertical winds) in the mesosphere and lower thermosphere between 60 and 100 km estimated from the MF radar observations at Pontianak in West Kalimantan, Indonesia (0.00S, 109.36E). File names are composed of date and variable abbreviation: (year)(month).wnd.png (1-month plot) or (year)(month)(day).wnd.png (1-day plot). The variable abbreviation 'wnd' means wind velocity. The wind data corresponding to \"bad\" status code (other than 0) in the original binary data (Full Correlation Analysis: FCA) are replaced by missing value. The wind data for a period from September 2, 1999 to present are available now. In the future, the wind data for other periods will be released.",
+  "abstract": "The time-height plots of three components of wind velocity (zonal, meridional and vertical winds) in the mesosphere and lower thermosphere between 60 and 100 km estimated from the MF radar observations at Pontianak in West Kalimantan, Indonesia (0.00S, 109.36E). File names are composed of date and variable abbreviation: (year)(month).wnd.png (1-month plot) or (year)(month)(day).wnd.png (1-day plot). The variable abbreviation 'wnd' means wind velocity. The wind data corresponding to \"bad\" status code (other than 0) in the original binary data (Full Correlation Analysis: FCA) are replaced by missing value. The wind data for a period from September 2, 1999 to present are available now. In the future, the wind data for other periods will be released.",
+  "temporalCoverage": "Start date: 1995-11-01T00:00:00. Relative stop date: -P2D",
+  "variableMeasured": "Profile",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

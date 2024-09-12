@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_Yohkoh_SXT_MOVIES.jsonld",
+  "name": "Yohkoh SXT X-ray Movie Maker",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_Yohkoh_SXT_MOVIES.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Sam.Freeland",
+    "url": "http://hpde.io/SMWG/Person/Sam.Freeland"
+  },
+  "sdDatePublished": "2020-11-04",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "http://ylstone.physics.montana.edu/ylegacy/sxt_movie.html",
+    "encodingFormat": "MPEG"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://JAXA/DisplayData/Yohkoh/SXT/MOVIES",
+  "creditText": "Yohkoh SXT X-ray Movie Maker.",
+  "description": "User-specified solar X-ray movies from Yohkoh/SXT",
+  "abstract": "User-specified solar X-ray movies from Yohkoh/SXT",
+  "temporalCoverage": "Start date: 1992-01-01T00:00:00. Relative stop date: None",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}
