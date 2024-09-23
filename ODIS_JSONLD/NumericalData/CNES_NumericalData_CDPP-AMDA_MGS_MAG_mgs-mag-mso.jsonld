@@ -1,0 +1,168 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_MGS_MAG_mgs-mag-mso.jsonld",
+  "name": "MGS - MAG - orbit mars",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_MGS_MAG_mgs-mag-mso.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/John.E.P.Connerney",
+    "url": "http://hpde.io/SMWG/Person/John.E.P.Connerney"
+  },
+  "sdDatePublished": "2014-05-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MGS/MAG/mgs-mag-mso",
+  "creditText": "MGS - MAG - orbit mars.",
+  "description": "Calibrated data set from the Magnetometer instrument on the Mars Global Surveyor spacecraft, collected during the Mapping phase of the mission and expressed in Sun-State and Planetocentric coordinates.",
+  "abstract": "Calibrated data set from the Magnetometer instrument on the Mars Global Surveyor spacecraft, collected during the Mapping phase of the mission and expressed in Sun-State and Planetocentric coordinates.",
+  "temporalCoverage": "Start date: 1997-09-14T00:42:11Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_mso",
+      "description": "Magnetic field vector components in MSO coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "b_mgs_mso"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "b_mgs_tot"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_iau_mars",
+      "description": "Magnetic field vector components in planetocentic coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "b_mgs_pc"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

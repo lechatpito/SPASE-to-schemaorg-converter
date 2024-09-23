@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_CORONAS-F_SPIRIT_PT5M.jsonld",
+  "name": "CORONAS-F Full Sun XUV Spectroscopy Imaging (SPIRIT) Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_CORONAS-F_SPIRIT_PT5M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/I.A.Zhitnik",
+    "url": "http://hpde.io/SMWG/Person/I.A.Zhitnik"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://idoc-medoc.ias.u-psud.fr/sitools/client-user/index.html?project=Medoc-Solar-Portal",
+      "encodingFormat": "FITS",
+      "name": "HTTP access to FITS files at MEDOC",
+      "description": "In FITS via HTTP from MEDOC"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/CORONAS-F/SPIRIT/PT5M",
+  "creditText": "CORONAS-F Full Sun XUV Spectroscopy Imaging (SPIRIT) Data.",
+  "description": "Data from the Full Sun XUV Spectroscopy Imaging (SPIRIT) onboard CORONAS-F.",
+  "abstract": "Data from the Full Sun XUV Spectroscopy Imaging (SPIRIT) onboard CORONAS-F.",
+  "temporalCoverage": "Start date: 2001-07-01T00:00:00. Relative stop date: None",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

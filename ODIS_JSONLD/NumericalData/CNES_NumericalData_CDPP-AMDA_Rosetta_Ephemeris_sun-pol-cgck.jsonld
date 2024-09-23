@@ -1,0 +1,119 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Rosetta_Ephemeris_sun-pol-cgck.jsonld",
+  "name": "Rosetta - Ephemeris - sun in C-G_CK frame",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Rosetta_Ephemeris_sun-pol-cgck.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Elena.Budnik",
+    "url": "http://hpde.io/SMWG/Person/Elena.Budnik"
+  },
+  "sdDatePublished": "2018-06-13",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Rosetta/Ephemeris/sun-pol-cgck",
+  "creditText": "Rosetta - Ephemeris - sun in C-G_CK frame.",
+  "description": "C_G-CK  C_G comet fixed frame (CK frame) \n \n     A body-fixed frame is defined using standard \n     body-fixed, CK-based frame formation rules: \n   \n      -  +Z axis is toward the North pole;\n\n      -  +X axis is toward the prime meridian;\n\n      -  +Y axis completes the right hand frame;\n\n      -  the origin of this frame is at the center of the body.\n\n   The orientation of this frame is computed by evaluating\n   corresponding C_G comet attitudes kernels.",
+  "abstract": "C_G-CK  C_G comet fixed frame (CK frame) \n \n     A body-fixed frame is defined using standard \n     body-fixed, CK-based frame formation rules: \n   \n      -  +Z axis is toward the North pole;\n\n      -  +X axis is toward the prime meridian;\n\n      -  +Y axis completes the right hand frame;\n\n      -  the origin of this frame is at the center of the body.\n\n   The orientation of this frame is computed by evaluating\n   corresponding C_G comet attitudes kernels.",
+  "temporalCoverage": "Start date: 2014-01-01T00:01:07Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "distance C_G-sun",
+      "description": "",
+      "unitText": "AU",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sun_cg_r"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sun lat C-G_CK",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sun_cg_lat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sun lon C-G_CK",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sun_cg_lon"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

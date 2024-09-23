@@ -1,0 +1,247 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NOAA_NumericalData_GOES_15_EPS_SEM_L2_PitchAngle_PT1M.jsonld",
+  "name": "GOES 15 Energetic Particle Sensor (EPS), MagED and MagPD Telescope Magnetic Field Dependent Pitch Angle Directions, 1 min Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NOAA_NumericalData_GOES_15_EPS_SEM_L2_PitchAngle_PT1M.jsonld",
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NOAA/NumericalData/GOES/15/EPS/SEM/L2/PitchAngle/PT1M",
+  "creditText": "GOES 15 Energetic Particle Sensor (EPS), MagED and MagPD Telescope Magnetic Field Dependent Pitch Angle Directions, 1 min Data.",
+  "description": "These Data has been recast from original NOAA netCDF Files by SPDF. Data Caveats and Warnings: The MagED Data may not be accurate at Times due to Instrument Limitations such as Dead Time and Proton Contamination. Every Effort is made to reduce these Effects but Uncertainties are inevitable. Additionally, the Detectors may suffer from intermittent Noise Problems. Please contact Juan V. Rodriguez, sem.goes@noaa.gov, with Questions or Concerns.",
+  "abstract": "These Data has been recast from original NOAA netCDF Files by SPDF. Data Caveats and Warnings: The MagED Data may not be accurate at Times due to Instrument Limitations such as Dead Time and Proton Contamination. Every Effort is made to reduce these Effects but Uncertainties are inevitable. Additionally, the Detectors may suffer from intermittent Noise Problems. Please contact Juan V. Rodriguez, sem.goes@noaa.gov, with Questions or Concerns.",
+  "temporalCoverage": "Start date: 2010-03-01T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time, Default",
+      "unitText": "ns",
+      "minValue": "1990-01-01T00:00:00.000000000",
+      "maxValue": "2029-12-31T23:59:59.999000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "unitCode": "1e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter exhibits an increasing monotonic progression."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time Tag",
+      "description": "Time Tag, Date and Time for each Observation",
+      "unitText": "ms",
+      "minValue": "0.0",
+      "maxValue": "3.0e+12",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "time_tag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "milliseconds since 1970-01-01 00:00:00.0 UTC using gregorian calendar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "time_tag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EPS MagED and MagPD Telescope Pitch Angles",
+      "description": "Energetic Particle Sensor, EPS, Pitch Angles of the Magnetospheric Electron Detector, MagED, and the Magnetospheric Proton Detector, MagPD, Telescopes 1 through 9 calculated using the GOES Magnetic Field Vector",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "0.0174532925>rad",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "PitchAngle_T1, 0-AntiEarth",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PitchAngle_T2, 35+X, eqWorE",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PitchAngle_T3, 70-X, eqEorW",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PitchAngle_T4, 35-X, eqEorW",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PitchAngle_T5, 70+X, eqWorE",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PitchAngle_T6, 35+Y, poNorS",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PitchAngle_T7, 70-Y, poSorN",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PitchAngle_T8, 35-Y, poSorN",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PitchAngle_T9, 70+Y, poNorS",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "pitch_angles"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

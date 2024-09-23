@@ -1,0 +1,531 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NOAA_NumericalData_GOES_9_MAG_PT1M.jsonld",
+  "name": "GOES 9 Space Environment Monitor (SEM) Triaxial Fluxgate Magnetometer (FGM), Magnetic Field and Ephemeris, Multiple Coordinate Systems, 1.0 min Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NOAA_NumericalData_GOES_9_MAG_PT1M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Howard.J.Singer",
+    "url": "http://hpde.io/SMWG/Person/Howard.J.Singer"
+  },
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NOAA/NumericalData/GOES/9/MAG/PT1M",
+  "creditText": "GOES 9 Space Environment Monitor (SEM) Triaxial Fluxgate Magnetometer (FGM), Magnetic Field and Ephemeris, Multiple Coordinate Systems, 1.0 min Data.",
+  "description": "The NOAA Geostationary Operational Environment Satellite (GOES) key parameters.  This data is a subset of the data available from the GOES Space Environment Monitor (SEM) instruments.  It contains vector magnetic field in three coordinate systems:\r\n\r\n* Spacecraft P,E,N\r\n* GSM X,Y,Z\r\n* GSE X,Y,Z\r\n\r\nSpacecraft magnetic field is defined as:\r\n\r\n* P perpendicular to the spacecraft orbital plane or parallel to the spin axis of the Earth in the case of a 0\u00b0 inclination orbit\r\n* E perpendicular to P and directed earthward\r\n* N perpendicular to both P and E and directed eastward",
+  "abstract": "The NOAA Geostationary Operational Environment Satellite (GOES) key parameters.  This data is a subset of the data available from the GOES Space Environment Monitor (SEM) instruments.  It contains vector magnetic field in three coordinate systems:\r\n\r\n* Spacecraft P,E,N\r\n* GSM X,Y,Z\r\n* GSE X,Y,Z\r\n\r\nSpacecraft magnetic field is defined as:\r\n\r\n* P perpendicular to the spacecraft orbital plane or parallel to the spin axis of the Earth in the case of a 0\u00b0 inclination orbit\r\n* E perpendicular to P and directed earthward\r\n* N perpendicular to both P and E and directed eastward",
+  "temporalCoverage": "Start date: 1995-12-01T00:00:30. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Epoch of the data point",
+      "unitText": "ms",
+      "minValue": "1977-01-01T00:00:00",
+      "maxValue": "2010-12-31T23:59:59",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time PB5",
+      "description": "Time array in the form: year, day of year, ms",
+      "unitText": "",
+      "minValue": "1977-01-01T00:00:00",
+      "maxValue": "2010-12-31T23:59:59",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time_PB5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector GSE",
+      "description": "Magnetic Field vector in GSE coordinates",
+      "unitText": "nT",
+      "minValue": "-600.0",
+      "maxValue": "600.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X, GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y, GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z, GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_GSE_c"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field vector GSM",
+      "description": "Magnetic Field vector in GSM coordinates",
+      "unitText": "nT",
+      "minValue": "-600.0",
+      "maxValue": "600.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X, GSM",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y, GSM",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z, GSM",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_GSM_c"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field vector spacecraft coordinates",
+      "description": "Magnetic Field vector in spacecraft coordinates. Spacecraft magnetic field (P,E,N) is defined as:\r\n\r\n* P perpendicular to the spacecraft orbital plane or parallel to the spin axis of the Earth in the case of a 0\u00b0 inclination orbit\r\n* E perpendicular to P and directed earthward\r\n* N perpendicular to both P and E and directed eastward",
+      "unitText": "nT",
+      "minValue": "-600.0",
+      "maxValue": "600.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Cartesian SpacecraftOrbitPlane",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "P",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "N",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_lcl_c"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position Geographic",
+      "description": "Spacecraft position in Geographic coordinates",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Spherical GEO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Latitude",
+          "description": "DirectionAngle.ElevationAngle",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Longitude",
+          "description": "DirectionAngle.AzimuthAngle",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Radius",
+          "description": "Magnitude",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_pos_ll"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft position GEO",
+      "description": "Spacecraft position in GEO coordinates",
+      "unitText": "km",
+      "minValue": "-5000.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Cartesian GEO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X, GEO",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y, GEO",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z, GEO",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_pos_eo"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position GSE",
+      "description": "Spacecraft position in GSE coordinates",
+      "unitText": "km",
+      "minValue": "-5000.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "GSE X",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "GSE Y",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "GSE Z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_pos_se"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft position GSM",
+      "description": "Spacecraft position in GSM coordinates",
+      "unitText": "km",
+      "minValue": "-5000.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X, GSM",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y, GSM",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z, GSM",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_pos_sm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MGF Instrument Status",
+      "description": "Status of the magnetic field instrument:\r\n\r\n* 0 OK\r\n* 1 minor problem\r\n* 2 major problem\r\n* 3 missing data",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MGF_stat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field post-gap flag",
+      "description": "Magnetic field data flag:\r\n\r\n* 0 no gap\r\n* 1 data not available",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_flag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft post-gap flag",
+      "description": "Spacecraft location data flag:\r\n\r\n* 0 no gap\r\n* 1 data not available",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_flag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "keywords": "Magnetic field",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

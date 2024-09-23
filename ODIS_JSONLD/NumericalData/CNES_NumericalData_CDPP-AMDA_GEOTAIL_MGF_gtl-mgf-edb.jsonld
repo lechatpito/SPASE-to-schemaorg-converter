@@ -1,0 +1,189 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_GEOTAIL_MGF_gtl-mgf-edb.jsonld",
+  "name": "Geotail - MGF - editor B",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_GEOTAIL_MGF_gtl-mgf-edb.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Tsugunobu.Nagai",
+    "url": "http://hpde.io/SMWG/Person/Tsugunobu.Nagai"
+  },
+  "sdDatePublished": "2020-03-04",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/GEOTAIL/MGF/gtl-mgf-edb",
+  "creditText": "Geotail - MGF - editor B.",
+  "description": "3-second Editor-B magnetic field data from the Geotail spacecraft.\n\n            As of February 1 2008 the Bz component of the magnetic field has been corrected in the data set.\n\n            The Geotail satellite has two editors onboard: \n            \n            The Editor-A data are only acquired with the real-time operation in Usuda Deep Space Center (UDSC) or Uchinoura Space Center (USC), Japan, while the Editor-B data are continuously recorded in the onboard tape recorders for 24 hours and are dumped to the NASA JPL Deep Space Network (DSN) stations.                       \n            ",
+  "abstract": "3-second Editor-B magnetic field data from the Geotail spacecraft.\n\n            As of February 1 2008 the Bz component of the magnetic field has been corrected in the data set.\n\n            The Geotail satellite has two editors onboard: \n            \n            The Editor-A data are only acquired with the real-time operation in Usuda Deep Space Center (UDSC) or Uchinoura Space Center (USC), Japan, while the Editor-B data are continuously recorded in the onboard tape recorders for 24 hours and are dumped to the NASA JPL Deep Space Network (DSN) stations.                       \n            ",
+  "temporalCoverage": "Start date: 1992-09-18T00:00:08Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "description": "Magnetic field vector in GSE cartesian coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_b_edb"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "description": "Magnetic field vector in GSM coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_b_edb_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Observed magnetic field intensity",
+      "unitText": "nT",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Average",
+            "Magnitude"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_bmag_edb"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

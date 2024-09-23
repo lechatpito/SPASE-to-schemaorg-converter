@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_GOLD_L1D_DAY_PT1080S.jsonld",
+  "name": "Gold Level 1D Day Disk Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_GOLD_L1D_DAY_PT1080S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Richard.Eastes",
+    "url": "http://hpde.io/SMWG/Person/Richard.Eastes"
+  },
+  "sdDatePublished": "2020-09-14",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/gold/level1d/",
+      "encodingFormat": "PNG",
+      "name": "HTTPS from SPDF",
+      "description": "Directory with GOLD plots."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/GOLD/L1D/DAY/PT1080S",
+  "creditText": "Gold Level 1D Day Disk Plots.",
+  "description": "Level 1D files contain a combined thumbnail image that contains 4 images: 1356 Angstrom, LBH Short (denoted LBH1), \n   LBH Long (denoted LBH2), and solar zenith angle. Separate files are created for Channel A and Channel B data. A new L1D file \n   is generated for each new L1C file. These can correspond to either the Northern or Southern hemisphere.\n   Combined file definition (image size = 1024 x 1024 pixels)\n   - Header information (at the top of the set of 4 images)\n   - Date of image\n   - Time of image\n   - File name\n   - 1356 brightness map (in Rayleighs) integrates the signal from 133 to 137 nm.\n   - LBH band 1 brightness map (in Rayleighs) integrates the signal from 140 to 148 nm.\n   - LBH band 2 brightness map (in Rayleighs) integrates the signal from 150 to 160 nm.\n   - SZA solar zenith angle map is at the reference altitude of 150 km.",
+  "abstract": "Level 1D files contain a combined thumbnail image that contains 4 images: 1356 Angstrom, LBH Short (denoted LBH1), \n   LBH Long (denoted LBH2), and solar zenith angle. Separate files are created for Channel A and Channel B data. A new L1D file \n   is generated for each new L1C file. These can correspond to either the Northern or Southern hemisphere.\n   Combined file definition (image size = 1024 x 1024 pixels)\n   - Header information (at the top of the set of 4 images)\n   - Date of image\n   - Time of image\n   - File name\n   - 1356 brightness map (in Rayleighs) integrates the signal from 133 to 137 nm.\n   - LBH band 1 brightness map (in Rayleighs) integrates the signal from 140 to 148 nm.\n   - LBH band 2 brightness map (in Rayleighs) integrates the signal from 150 to 160 nm.\n   - SZA solar zenith angle map is at the reference altitude of 150 km.",
+  "temporalCoverage": "Start date: 2018-10-05T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": [
+    "Radiance",
+    "Ephemeris"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": [
+    "GOLD",
+    "SES-14"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

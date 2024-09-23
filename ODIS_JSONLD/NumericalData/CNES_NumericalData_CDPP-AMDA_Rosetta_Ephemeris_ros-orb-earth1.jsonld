@@ -1,0 +1,118 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Rosetta_Ephemeris_ros-orb-earth1.jsonld",
+  "name": "Rosetta - Ephemeris - flyby earth 1",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Rosetta_Ephemeris_ros-orb-earth1.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Elena.Budnik",
+    "url": "http://hpde.io/SMWG/Person/Elena.Budnik"
+  },
+  "sdDatePublished": "2014-05-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Rosetta/Ephemeris/ros-orb-earth1",
+  "creditText": "Rosetta - Ephemeris - flyby earth 1.",
+  "description": "\n        GSE : Geocentric Solar Ecliptic -\n         This system has its X axis towards the Sun and its Z axis\n         perpendicular to the plane of the Earth's orbit around the\n         Sun (positive North). Y completes the right-handed system.\n         \n   GSM : Geocentric Solar Magnetospheric -\n         This system has its X axis towards the Sun and its Z axis\n         is the projection of the Earth's magnetic dipole axis\n         (positive North) on to the plane perpendicular to the X\n         axis. Y completes the right-handed system.",
+  "abstract": "\n        GSE : Geocentric Solar Ecliptic -\n         This system has its X axis towards the Sun and its Z axis\n         perpendicular to the plane of the Earth's orbit around the\n         Sun (positive North). Y completes the right-handed system.\n         \n   GSM : Geocentric Solar Magnetospheric -\n         This system has its X axis towards the Sun and its Z axis\n         is the projection of the Earth's magnetic dipole axis\n         (positive North) on to the plane perpendicular to the X\n         axis. Y completes the right-handed system.",
+  "temporalCoverage": "Start date: 2005-03-03T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gse",
+      "description": "",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ros_xyz_earth1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance ros-earth",
+      "description": "",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ros_r_earth1"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

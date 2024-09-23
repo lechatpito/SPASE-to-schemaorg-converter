@@ -1,0 +1,228 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_RISH_COSMIC_COSMIC_FORMOSAT_3_IGOR_cosmic_formosat_3_igor_fsi_netcdf.jsonld",
+  "name": "COSMIC full spectrum inversion (FSI) data (netCDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_RISH_COSMIC_COSMIC_FORMOSAT_3_IGOR_cosmic_formosat_3_igor_fsi_netcdf.jsonld",
+  "sdDatePublished": "2016-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/iugonet/GPS/index.html",
+      "encodingFormat": "NetCDF",
+      "name": "COSMIC FSI data",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/RISH/COSMIC/COSMIC_FORMOSAT_3/IGOR/cosmic_formosat_3_igor_fsi_netcdf",
+  "creditText": "COSMIC full spectrum inversion (FSI) data (netCDF).",
+  "description": "The archived GPS-RO data have been calculated applying full spectrum inversion (FSI) [Jensen et al., 2003] method to COSMIC GPS-RO profiles in an altitude from ground level up to 30 km. The original COSMIC GPS-RO profiles are open on the UCAR webpage (http://cdaac-www.cosmic.ucar.edu/cdaac/products.html#cosmic). The resolution of archived data is 0.1 km and we averaged the original RISHANA data (refractivity, pressure, temperature, and tangential point of latitude and longitude) included in a bin of +/-0.05 km for nominal height. The available data format is netCDF, and each netCDF file contains physical parameters such as dry pressure, dry temperature, refractivity, bending angle, impact parameter, etc as a function of mean sea level altitude of perigee point. File names of netCDF data are composed of RISHANA_YYYY.DDD.nc. YYYY and DDD indicates year and day of year, respectively. If you want to know details of data description and FSI, please refer to the paper [Tsuda, T, X. Lin, H. Hayashi, and Noersomadi, Analysis of vertical wave number spectrum of atmospheric gravity waves in the stratosphere using COSMIC GPS radio occultation data, Atmos. Meas. Tech., 4, 1627 - 1636, doi:10.5194/amt-4-1627-2011, 2011].",
+  "abstract": "The archived GPS-RO data have been calculated applying full spectrum inversion (FSI) [Jensen et al., 2003] method to COSMIC GPS-RO profiles in an altitude from ground level up to 30 km. The original COSMIC GPS-RO profiles are open on the UCAR webpage (http://cdaac-www.cosmic.ucar.edu/cdaac/products.html#cosmic). The resolution of archived data is 0.1 km and we averaged the original RISHANA data (refractivity, pressure, temperature, and tangential point of latitude and longitude) included in a bin of +/-0.05 km for nominal height. The available data format is netCDF, and each netCDF file contains physical parameters such as dry pressure, dry temperature, refractivity, bending angle, impact parameter, etc as a function of mean sea level altitude of perigee point. File names of netCDF data are composed of RISHANA_YYYY.DDD.nc. YYYY and DDD indicates year and day of year, respectively. If you want to know details of data description and FSI, please refer to the paper [Tsuda, T, X. Lin, H. Hayashi, and Noersomadi, Analysis of vertical wave number spectrum of atmospheric gravity waves in the stratosphere using COSMIC GPS radio occultation data, Atmos. Meas. Tech., 4, 1627 - 1636, doi:10.5194/amt-4-1627-2011, 2011].",
+  "temporalCoverage": "Start date: 2006-07-13T00:00:00. Relative stop date: P6M",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "event",
+      "description": "GPS occultation event number.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "z",
+      "description": "Mean sea level altitude of perigee point at occultation point.",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "gpsid",
+      "description": "GPS satellite ID",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "leoid",
+      "description": "LEO satelite ID",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "GPS time",
+      "unitText": "seconds since 1980-01-06 00:00:00.",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat",
+      "description": "Latitude",
+      "unitText": "degree",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon",
+      "description": "Longitude",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ref",
+      "description": "Refractivity",
+      "unitText": "N",
+      "minValue": "0.0",
+      "maxValue": "9999.0",
+      "defaultValue": "-999.0",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pres",
+      "description": "Dry air pressure",
+      "unitText": "mb",
+      "minValue": "0.0",
+      "maxValue": "1500.0",
+      "defaultValue": "-999.0",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temp",
+      "description": "Dry air temperature",
+      "unitText": "degree C",
+      "minValue": "-200",
+      "maxValue": "100",
+      "defaultValue": "-999.0",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tan_lat",
+      "description": "Latitude of perigee point at occultation point",
+      "unitText": "degree",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-999.0",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tan_lon",
+      "description": "Longitude of perigee point at occultation point",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-999.0",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Stratosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Altitude Geopotential Height Hydrostatic Pressure Atmospheric Temperature Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

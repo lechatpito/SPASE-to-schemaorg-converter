@@ -1,0 +1,300 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_DE1_MAGA_PT6S.jsonld",
+  "name": "DE 1 Magnetic Field Observations Triaxial Fluxgate Magnetometer (MAG-A)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_DE1_MAGA_PT6S.jsonld",
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/DE1/MAGA/PT6S",
+  "creditText": "DE 1 Magnetic Field Observations Triaxial Fluxgate Magnetometer (MAG-A).",
+  "description": "Dynamics Explorer 1 Magnetic Field Observations Triaxial Fluxgate Magnetometer at 6 second resolution.",
+  "abstract": "Dynamics Explorer 1 Magnetic Field Observations Triaxial Fluxgate Magnetometer at 6 second resolution.",
+  "temporalCoverage": "Start date: 1981-09-15T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Universal Time columns from left to right are:  year, day of year, milliseconds of the day.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian MAG",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DOY",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Milliseconds",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Mode",
+      "description": "Instrument mode at time measurement taken.",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Support Data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dynamics Explorer 1 measured magnetic field vector",
+      "description": "Dynamics Explorer 1 components of the magnetic field, B-Radial (Br), B-Theta (Bth), and B-Phi\n            (Bph), in Geomagnetic Spherical (GMS) Coordinates. This is a local Cartesian\n            coordinate system. The R, Theta and Phi axes are oriented relative to a MAGSAT\n            magnetic field model (Langel et al., 1980) positive in the directions of\n            increasing radial distance from the center of the Earth (i.e., outward),\n            increasing magnetic colatitude (i.e., southward) and increasing azimuth angle\n            (i.e., magnetic east).",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10^9 >T",
+      "measurementTechnique": "Spherical MAG",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "BR-GMS",
+          "description": "Magnitude",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bth-GMS",
+          "description": "DirectionAngle.ElevationAngle",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bph-GMS",
+          "description": "DirectionAngle.AzimuthAngle",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Dynamics Explorer 1 Measured Magnetic Field Vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dynamics Explorer 1 model magnetic field vector",
+      "description": "Dynamics Explorer 1 components of the magnetic field, B-Radial (Br), B-Theta (Bth), and B-Phi\n            (Bph), in Geomagnetic Spherical (GMS) Coordinates. This is a local Cartesian\n            coordinate system. The R, Theta and Phi axes are oriented relative to a MAGSAT\n            magnetic field model (Langel et al., 1980) positive in the directions of\n            increasing radial distance from the center of the Earth (i.e., outward),\n            increasing magnetic colatitude (i.e., southward) and increasing azimuth angle\n            (i.e., magnetic east).",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10^9 >T",
+      "measurementTechnique": "Spherical MAG",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "MBR-GMS",
+          "description": "Magnitude",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MBth-GMS",
+          "description": "DirectionAngle.ElevationAngle",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MBph-GMS",
+          "description": "DirectionAngle.AzimuthAngle",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Dynamics Explorer 1 Model Magnetic Field Vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dynamics Explorer 1 spacecraft position vector",
+      "description": "Location of the Dynamics Explorer 1 spacecraft in magnetic coordinates in units of km, Degrees, and Hours",
+      "unitText": "km, degrees, and Hours",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Spherical MAG",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "GALT",
+          "description": "Magnitude",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MLONG",
+          "description": "DirectionAngle.AzimuthAngle",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MLAT",
+          "description": "DirectionAngle.ElevationAngle",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MLT",
+          "description": "DirectionAngle.AzimuthAngle",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ILAT",
+          "description": "DirectionAngle.ElevationAngle",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Dynamics Explorer 1 position vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Flags=999.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6S"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    "6 s",
+    "Magnetosphere",
+    "Auroral region",
+    "Polar Cap",
+    "Cusp",
+    "Radiation Belt",
+    "Plasmasphere",
+    "solar wind",
+    "Dynamics Explorer 1",
+    "Dynamics Explorer",
+    "magnetic fields",
+    "magnetometer"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

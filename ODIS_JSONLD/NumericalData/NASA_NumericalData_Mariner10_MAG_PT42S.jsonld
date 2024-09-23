@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Mariner10_MAG_PT42S.jsonld",
+  "name": "Mariner 10 Magnetometer 42-s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Mariner10_MAG_PT42S.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/mariner/mariner10/magnetic_fields/ip_42s_ascii/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/mariner/mariner10/magnetic_fields/ip_42s_ascii/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Mariner10/MAG/PT42S",
+  "creditText": "Mariner 10 Magnetometer 42-s Data.",
+  "description": "These interplanetary data from the Mariner 10 Fluxgate Magnetometer consist of 42-s average magnetic field vectors in Heliographic\nRTN coordinates in ASCII format. The data are grouped into one day files and span the time period from 1973 day 307 (Nov. 3) through 1975 day 80\n(Mar. 21). Each file consists of ASCII records, one line per record. Each line consists of a two digit year, a decimal day of year (1 Jan. = Day 0),\nthe radial, tangential, and normal components of the magnetic field (in heliographic RTN coordinates), the magnitude of the magnetic field, and\nthe number of samples used to produce the 42 s average. The time given corresponds to the UTC start time of the 42 s average. Magnetic field\nunits are nanoTelsa (1 Gauss = 100,000 nT).  No data are available for 1973 days 361-365.",
+  "abstract": "These interplanetary data from the Mariner 10 Fluxgate Magnetometer consist of 42-s average magnetic field vectors in Heliographic\nRTN coordinates in ASCII format. The data are grouped into one day files and span the time period from 1973 day 307 (Nov. 3) through 1975 day 80\n(Mar. 21). Each file consists of ASCII records, one line per record. Each line consists of a two digit year, a decimal day of year (1 Jan. = Day 0),\nthe radial, tangential, and normal components of the magnetic field (in heliographic RTN coordinates), the magnitude of the magnetic field, and\nthe number of samples used to produce the 42 s average. The time given corresponds to the UTC start time of the 42 s average. Magnetic field\nunits are nanoTelsa (1 Gauss = 100,000 nT).  No data are available for 1973 days 361-365.",
+  "temporalCoverage": "Start date: 1973-11-03T00:00:00. Relative stop date: None",
+  "variableMeasured": "MagneticField",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

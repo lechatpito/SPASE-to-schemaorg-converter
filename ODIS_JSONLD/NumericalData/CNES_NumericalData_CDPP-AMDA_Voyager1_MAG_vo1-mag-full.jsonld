@@ -1,0 +1,176 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Voyager1_MAG_vo1-mag-full.jsonld",
+  "name": "Voyager 1 - MAG - cruise",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Voyager1_MAG_vo1-mag-full.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Elena.Budnik",
+    "url": "http://hpde.io/SMWG/Person/Elena.Budnik"
+  },
+  "sdDatePublished": "2023-01-12",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Voyager1/MAG/vo1-mag-full",
+  "creditText": "Voyager 1 - MAG - cruise.",
+  "description": "Voyager 1 MAG Data (Magnetometer) during Cruise (from CDAWeb)",
+  "abstract": "Voyager 1 MAG Data (Magnetometer) during Cruise (from CDAWeb)",
+  "temporalCoverage": "Start date: 1977-01-01T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_rtn",
+      "description": "Magnetic Field in RTN coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian RTN",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "br",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bt",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bn",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "vo1_b_full"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude (average of high time resolution magnitudes)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "vo1_bmag_full"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi",
+      "description": "Magnetic field phi angle",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9&gt;T",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "vo1_b_full_phi"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta",
+      "description": "Magnetic field theta angle",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9&gt;T",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "vo1_b_full_theta"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

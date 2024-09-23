@@ -1,0 +1,132 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_PSP_MAG_psp-mag-vflyby4.jsonld",
+  "name": "PSP - FIELDS MAG - Venus flybys - Venus flyby #4",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_PSP_MAG_psp-mag-vflyby4.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Stuart.D.Bale",
+    "url": "http://hpde.io/SMWG/Person/Stuart.D.Bale"
+  },
+  "sdDatePublished": "2021-07-20",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/PSP/MAG/psp-mag-vflyby4",
+  "creditText": "PSP - FIELDS MAG - Venus flybys - Venus flyby #4.",
+  "description": "Venus flyby #4 Magnetometer data.\n         ",
+  "abstract": "Venus flyby #4 Magnetometer data.\n         ",
+  "temporalCoverage": "Start date: 2021-02-20T05:55:50Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_vso",
+      "description": "Magnetic field vector in VSO Cartesian coordinates ",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian VSO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Component.I",
+            "Component.J",
+            "Component.K"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_vflyby4_b_vso"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude ",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_vflyby4_btot"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

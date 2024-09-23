@@ -1,0 +1,203 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-B_IMPACT_MAG_SC_L1_PT0.125S.jsonld",
+  "name": "STEREO-B In-Situ Measurements of Particles and CME Transients (IMPACT) Fluxgate Magnetometer (MAG) Magnetic Field Vectors, in Spacecraft (SC) Coordinates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-B_IMPACT_MAG_SC_L1_PT0.125S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/STEREO-B/IMPACT/MAG/SC/L1/PT0.125S",
+  "creditText": "STEREO-B In-Situ Measurements of Particles and CME Transients (IMPACT) Fluxgate Magnetometer (MAG) Magnetic Field Vectors, in Spacecraft (SC) Coordinates.",
+  "description": "STEREO Behind In-situ Measurements of Particles and CME Transients, IMPACT, Magnetometer Instrument, MAG, Magnetic Field Vectors, Level 1 Data",
+  "abstract": "STEREO Behind In-situ Measurements of Particles and CME Transients, IMPACT, Magnetometer Instrument, MAG, Magnetic Field Vectors, Level 1 Data",
+  "temporalCoverage": "Start date: 2006-11-07T00:00:05. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, since 0 A.D.",
+      "description": "Epoch Time, Milliseconds since 0 A.D.",
+      "unitText": "ms",
+      "minValue": "01-Jan-1990 00:00:00.000",
+      "maxValue": "31-Dec-2020 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Interval-Centered Time Tag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.125S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMPACT/MAG Magnetic Field Vector, SC",
+      "description": "IMPACT/MAG Magnetic Field Vector, Spacecraft, SC, Coordinates",
+      "unitText": "nT",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx(s/c)",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By(s/c)",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz(s/c)",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BTotal",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Magnitude"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BFIELD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.125S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMPACT/MAG Status Flag",
+      "description": "IMPACT/MAG Status Flag, Highly Encoded Values",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "4294967295",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MAGFLAGUC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bits 0:3-Magnetometer Error Counter, Bits 4:7-Magnetometer Command Counter, Bit 8-Spare, Bit 9-First, Bit 10-Time, Bit 11-Interface Parity Error, 0=OK, 1=Fault, Bit 12-Interface Timeout Error, 0=OK, 1=Fault, Bit-13 ADC Calibration, 0=Off, 1=On, Bit 14-In Flight Calibration, 0=Off, 1=On, Bit 15-Range, 0=Low Field, High Sensitivity, 1=High Field, Low Sensitivity, Bit 16-Calibration, 0=Old Calibration, 1=New Calibration, Bit-17 STEREO Stepping For X-Axis, Bits 18:31 Spare"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.125S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MAGFLAGUC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

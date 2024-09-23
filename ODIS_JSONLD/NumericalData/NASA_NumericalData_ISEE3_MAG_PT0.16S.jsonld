@@ -1,0 +1,267 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ISEE3_MAG_PT0.16S.jsonld",
+  "name": "ISEE-3 High Resolution Magnetic Field Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ISEE3_MAG_PT0.16S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Edward.J.Smith",
+    "url": "http://hpde.io/SMWG/Person/Edward.J.Smith"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/isee3.html",
+      "encodingFormat": "Text.ASCII",
+      "name": "FTPBrowser",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/isee/isee3/magnetic_fields/0.16sec_ascii_gz/",
+      "encodingFormat": "Text.ASCII",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/isee/isee3/magnetic_fields/0.16sec_ascii_gz/",
+      "encodingFormat": "Text.ASCII",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ISEE3/MAG/PT0.16S",
+  "creditText": "ISEE-3 High Resolution Magnetic Field Data.",
+  "description": "These data are the highest-time-resolution data available from the ISEE-3 MAG instrument. The data are separated into four files per day, each with the date (YYDDD) and starting hour (00, 06, 12, or 18) embedded in the data file name. The ASCII files were compressed using gzip, and must be de-compressed before using. Some or all files from any particular day may be absent due to absence of data. Files are located in yearly sub-directories.",
+  "abstract": "These data are the highest-time-resolution data available from the ISEE-3 MAG instrument. The data are separated into four files per day, each with the date (YYDDD) and starting hour (00, 06, 12, or 18) embedded in the data file name. The ASCII files were compressed using gzip, and must be de-compressed before using. Some or all files from any particular day may be absent due to absence of data. Files are located in yearly sub-directories.",
+  "temporalCoverage": "Start date: 1978-01-01T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "2-digit year",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_1"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day of Year",
+      "description": "day of year (Jan. 1 is 001)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour",
+      "description": "Hour (0 to 23)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minute",
+      "description": "Minute (0 to 59.99)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Seconds",
+      "description": "Seconds (0 - 59.99)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bx",
+      "description": "Bx in Solar Ecliptic coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian SE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "By",
+      "description": "By in Solar Ecliptic coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian SE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_7"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Bz in Solar Ecliptic coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian SE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BT",
+      "description": "Magnetic Field Magnitude",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian SE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_9"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

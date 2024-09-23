@@ -1,0 +1,6880 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-B_IMPACT_Housekeeping_L1_PT2S.jsonld",
+  "name": "STEREO-B In-Situ Measurements of Particles and CME Transients (IMPACT) Housekeeping",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-B_IMPACT_Housekeeping_L1_PT2S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/STEREO-B/IMPACT/Housekeeping/L1/PT2S",
+  "creditText": "STEREO-B In-Situ Measurements of Particles and CME Transients (IMPACT) Housekeeping.",
+  "description": "STEREO-B, In-situ Measurements of Particles and CME Transients, IMPACT, Instrument, State of Health and Housekeeping, Level 1, Data",
+  "abstract": "STEREO-B, In-situ Measurements of Particles and CME Transients, IMPACT, Instrument, State of Health and Housekeeping, Level 1, Data",
+  "temporalCoverage": "Start date: 2006-10-28T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, since 0 A.D.",
+      "description": "Epoch Time, Milliseconds since 0 A.D.",
+      "unitText": "ms",
+      "minValue": "01-Jan-1990 00:00:00.000",
+      "maxValue": "31-Dec-2020 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Interval-Centered Time Tag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IPDU Software Version",
+      "description": "Instrument Data Processing Unit, IPDU, Software Version",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SoftwareVersion"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SW Version"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IPDU Hardware Version",
+      "description": "Instrument Data Processing Unit, IPDU, Hardware Version",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "HardwareVersion"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "HW Version"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Maximum Foreground Loop Time",
+      "description": "Maximum Foreground Loop Time",
+      "unitText": "s",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": [
+            "Maximum",
+            "Scalar"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PollTimeMax"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Poll Time Max"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Average Foreground Loop Time",
+      "description": "Average Foreground Loop Time",
+      "unitText": "s",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": [
+            "Average",
+            "Scalar"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PollTimeAvg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Poll Time Avg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Maximum UTC Time Jitter",
+      "description": "Maximum UTC Time Jitter, compared to Sample Clock once a Second",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": [
+            "Maximum",
+            "Scalar"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "TimeJitter"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Time Jitter"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error Code reported by IPDU",
+      "description": "Error Code reported by Instrument Data Processing Unit, IPDU",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ErrorCode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Error Code"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error Data reported by IPDU",
+      "description": "Error Data reported by Instrument Data Processing Unit, IPDU",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ErrorData"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Error Data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error Count",
+      "description": "Error Count",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ErrorCount"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Error Count"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMPACT Command Counter",
+      "description": "IMPACT Command Counter",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CommandCount"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Command Count"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMPACT Last Command APID",
+      "description": "IMPACT Last Command Application Process Identifier, APID, Bits 8,6,5,4,3,2,1,0",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CommandLastID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Last Command ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMPACT Last Command Sequence Counter, LSB",
+      "description": "IMPACT Last Command Sequence Counter, Least Significant Bit, LSB",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CommandLastSeq"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Last Command Sequence"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Command Counter",
+      "description": "PLASTIC Command Counter",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PCommandCount"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Command Count"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Last Command APID",
+      "description": "PLASTIC Last Command Application Process Identifier, APID, Bits 8,6,5,4,3,2,1,0",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PCommandLastID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Last Command ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Last Command Sequence Counter, LSB",
+      "description": "PLASTIC Last Command Sequence Counter, Least Significant Bit, LSB",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PCommandLastSeq"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Last Command Sequence"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMPACT SSR Fill Level",
+      "description": "IMPACT Solid State Recorder, SSR, Fill Level",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "100",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "IMPACT_SSR"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "IMPACT SSR"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SSR Fill Level",
+      "description": "PLASTIC Solid State Recorder, SSR, Fill Level",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "100",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLASTIC_SSR"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "IMPACT SSR"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Status",
+      "description": "Spacecraft Status",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SCStatus"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bit 0 IDPU Power Warning, 1=Warning, Red, 0=OK; Bit 1 SEP Power Warning, 1=Warning, Yellow, 0=OK; Bit 2 SWEA Power Warning, 1=Warning, Yellow, 0=OK; Bit 3 PLASTIC Power Warning, 1=Warning, Yellow, 0=OK; Bit 4 Thruster Warning, 1=Warning, Yellow, 0=OK; Bit 5 Coarse Pointing, 1=Bad Pointing, Yellow, 0=OK; Bit 6 SWAVES Power Warning 1=Warning, Yellow, 0=OK; Bit 7 1553 Channel Spacecraft Status was received on, 1=A, 0=B"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC Status"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Boot Select",
+      "description": "Boot Select: 0-3=EEPROM to RAM, 4-7=EEPROM, else PROM",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BootSelect"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Boot Select"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Code Page",
+      "description": "Code Page: 0=PROM, 8-11=EEPROM0-3, 16=RAM, Else=Illegal",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CodePage"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Code Page"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Code Page Status Bits",
+      "description": "Code Page Status Bits",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CodePageStatus"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bit 7 EEPROM Code Page 3 Checksum Status, 1=Bad, Red, 0=OK; Bit 6 EEPROM Code Page 2 Checksum Status, 1=Bad, Red, 0=OK; Bit 5 EEPROM Code Page 1 Checksum Status, 1=Bad, Red, 0=OK; Bit 4 EEPROM Code Page 0 Checksum Status, 1=Bad, Red, 0=OK; Bit 3 RAM Code Page Checksum Status, 1=Bad, Red, 0=OK; Bits 2:0 RAM Code Page Source: 0-3=Copies of EEPROM Code Pages, 7=PROM, 6=Modified"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Code Page Status"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Command Sequence Number Running",
+      "description": "Command Sequence Number Running, >31=No Sequence Running",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CmdSeqRunning"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Cmd Seq Running"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Interface Enables",
+      "description": "Instrument Interface Enables",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "InterfaceEnables"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bit 0 MAGInterface, MAG Instrument Interface Enable, 1=Enabled, 0=Disabled, Yellow; Bit 1 STEUInterface, STE-U Instrument Interface Enable, 1=Enabled, 0=Disabled, Yellow; Bit 2 SWEAInterface, SWEA/STE-D Instrument Interface Enable, 1=Enabled, 0=Disabled, Yellow; Bit 3 SEPInterface, SEP Instrument Interface Enable, 1=Enabled, 0=Disabled, Yellow; Bit 4 PLASTICInterface, PLASTIC Instrument Interface Enable, 1=Enabled, 0=Disabled, Yellow; Bit 5 Spare; Bit 6 EEPROMWriteEnable, IDPU EEPROM Write Enable, 1=Enabled=Yellow, 0=Disabled; Bit 7 PLASTICSysCmd, PLASTIC System Commands Enable, 1=Enabled, Yellow, 0=Disabled"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Interface Enables"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMPACT Telemetry Enables",
+      "description": "IMPACT Telemetry Enables",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ITelemEnables"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bit 0 BurstTlm, Enable Burst Telemetry to be sent, for all ITelemEnables except where otherwise stated, 0=Disabled, Yellow, 1=Enabled; Bit 1 SEPTlm, Enable SEP Telemetry; Bit 2 MAGTlm, Enable MAG Telemetry; Bit 3 MAGBurst, Enable MAG Burst Collection; Bit 4 STERatesTlm, Enable STE Monitor Rates Telemetry; Bit 5 STERatesBurst, Enable STE Monitor Rates Burst Collection; Bit 6 STESpecTlm, Enable STE Spectra Telemetry; Bit 7 STESpecBurst, Enable STE Spectra Burst Collection; Bit 8 SWEADistTlm, Enable SWEA Distribution Telemetry; Bit 9 SWEADistBurst, Enable SWEA Distribution Burst Collection; Bit 10 SWEAPADTlm, Enable SWEA PAD Telemetry; Bit 11 SWEAMomTlm, Enable SWEA Moments Telemetry; Bit 12 SWEAFHKP, Enable SWEA Fast Housekeeping, No Alarm State, 0 or 1=Green; Bit 13 SWEASpecTlm, Enable SWEA Spectra Telemetry; Bit 14 BurstCriteria, Enable Burst Criteria Telemetry; Bit 15 SWEAMomComp, Enable SWEA Moment Computation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "ITelemEnables"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Telemetry Enables",
+      "description": "PLASTIC Telemetry Enables",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PTelemEnables"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PTelemEnables"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Interfaces Active",
+      "description": "Instrument Interfaces Active",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "InterfaceActive"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bit 0 MAGInterface, MAG Instrument Interface Active, 1=Active, 0=Inactive, Yellow; Bit 1 STEUInterface, STE-U Instrument Interface Active, 1=Active, 0=Inactive, Yellow; Bit 2 SWEAInterface, SWEA/STE-D Instrument Interface Active, 1=Active, 0=Inactive, Yellow; Bit 3 SEPInterface, SEP Instrument Interface Active, 1=Active, 0=Inactive, Yellow; Bit 4 PLASTICInterface, PLASTIC Instrument Interface Active, 1=Active, 0=Inactive, Yellow; Bit 5 SWAVESInterface, SWAVES RT-RT Instrument Interface Active, 1=Active, 0=Inactive, Yellow; Bit 6 SWAVESTimeout, SWAVES RT-RT Rx Timeout, SWAVES not responding. , 1=Timeout=Yellow, 0=OK; Bit 7 SEPTimeout, SEP Interface Activity Low for Too Long, 1=Timeout=Yellow, 0=OK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Interfaces Active"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMPACT Maximum Queue Depth",
+      "description": "IMPACT Maximum Queue Depth",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MaxIMPACTQ"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MaxIMPACTQ"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Maximum Queue Depth",
+      "description": "PLASTIC Maximum Queue Depth",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MaxPLASTICQ"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MaxPLASTICQ"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMPACT Telemetry Bit Rate",
+      "description": "IMPACT Telemetry Bit Rate",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "9000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "IMPACTBitrate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "IMPACT Bit Rate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Telemetry Bit Rate",
+      "description": "PLASTIC Telemetry Bit Rate",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "9000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLASTICBitrate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLASTIC Bitrate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Command Sequence Mask",
+      "description": "Command Sequence Mask",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "4294967295",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CmdSeqMask"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bit 31 Seq0 IDPUPwrWarn, IDPU Power Warning Sequence Enable; Bit 30 Seq1 IDPUPwrWarnClr, IDPU Power Warning Clear Sequence Enable; Bit 29 Seq2 SEPPwrWarn, SEP Power Warning Sequence Enable; Bit 28 Seq3 SEPPwrWarnClr, SEP Power Warning Clear Sequence Enable; Bit 27 Seq4 SWEAPwrWarn, SWEA Power Warning Sequence Enable; Bit 26 Seq5 SWEAPwrWarnClr, SWEA Power Warning Clear Sequence Enable; Bit 25 Seq6 PLAPwrWarn, PLASTIC Power Warning Sequence Enable; Bit 24 Seq7 PLAPwrWarnClr, PLASTIC Power Warning Clear Sequence Enable; Bit 23 Seq8 ThrusterWarn, Thruster Warning Sequence Enable; Bit 22 Seq9 ThrusterWarnClr, Thruster Warning Clear Sequence Enable; Bit 21 Seq10 PointWarn, Coarse Pointing Warning Sequence Enable; Bit 20 Seq11 PointWarnClr, Coarse Pointing Warning Clear Sequence Enable; Bit 19 Seq12 SEPRecovery, SEP Recovery Sequence Enable; Bit 18 Seq13, Command Sequence 13 Enable; Bit 17 Seq14, Command Sequence 14 Enable; Bit 16 Seq15, Command Sequence 15 Enable; Bit 15 Seq16, Command Sequence 16 Enable; Bit 14 Seq17, Command Sequence 17 Enable; Bit 13 Seq18, Command Sequence 18 Enable; Bit 12 Seq19, Command Sequence 19 Enable; Bit 11 Seq20: PLA_PS0, PLASTIC PS 0, Disable Entrance System, 'Thruster Coarse' Sequence Enable; Bit 10 Seq21: PLA_Start, PLASTIC Startup Sequence Enable; Bit 9 Seq22: PLA_PS1, PLASTIC PS 1, Reduce High Voltage Levels, Sequence Enable; Bit 8 Seq23: PLA_PR0, PLASTIC PR0, Second Half, Recover from a 'PAC Discharge' Sequence Enable; Bit 7 Seq24: PLA_PS2, PLASTIC PS2, Disable Entrance System, Turn Off High Voltage, Don't Request Turnoff 'PAC Discharge' Sequence Enable; Bit 6 Seq25, Command Sequence 25 Enable; Bit 5 Seq26: PLA_PR0, PLASTIC PR0, Part 1, Enbale Entrance System, Bring up High Voltages and Put System in Mode 3, after PS2, Sequence Enable; Bit 4 Seq27: PLA_PR1, PLASTIC PR1, Enable Entrance System, Run if Thruster Coarse Bits Clear, Sequence Enable; Bit 3 Seq28, Command Sequence 28 Enable; Bit 2 Seq29: PLA_PS3, PLASTIC PS3, Disable Entrance System, Turn Off High Voltage and Requenst PLASTIC Off, 'IDPU PLASTIC Power Down' Sequence Enable; Bit 1 Seq30: UserPeriodic, User Periodic Sequence Enable; Bit 0 Seq31: SystemPeriodic, System Periodic Sequence Enable"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "CmdSeqMask"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Parameter Table Mode ID",
+      "description": "Burst Parameter Table Mode ID",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BurstModeID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Burst Mode ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Current Criteria",
+      "description": "Burst Current Criteria",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BurstCurCriteria"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Burst Cur Criteria"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U Door Motion Count",
+      "description": "STE-U Door Motion Count",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEUDoorCount"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU Door Count"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U Time from Power Application to Motion Start",
+      "description": "STE-U Time from Power Application to Motion Start",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEUDoorStart"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU Door Start"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U Time from Power Application to Motion Complete",
+      "description": "STE-U Time from Power Application to Motion Complete",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEUDoorDone"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU Door Done"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-D Door Motion Count",
+      "description": "STE-D Door Motion Count",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEDDoorCount"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STED Door Count"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-D Door Start",
+      "description": "STE-D Door Start",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEDDoorStart"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STED Door Start"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-D Time from Power Application to Motion Complete",
+      "description": "STE-D Time from Power Application to Motion Complete",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEDDoorDone"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STED Door Done"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA/STE Auto LUT Enables",
+      "description": "SWEA/STE Auto Look-Up Table, LUT, Enables",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "AutoLUT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bit 0 ISWEAAutoLUT, Enable SWEA Auto LUT Generation, 1=Manual; Bit 1 ISTEAutoLUT, Enable STE Auto LUT Generation, 1=Manual; Bit 2 ISWEAAutoV0, Enable Automatic Generation of SWEA V0 Setting, 1=Manual; Bit 3 ISWEAMomE, Enable Automatic Generation of SWEA Moment Energy Coefficient, 1=Manual; Bit 4 Spare; Bit 5 ISTEULUT, Current State of the STE-U LUT Page Select; Bit 6 ISTEDLUT, Current State of the STE-D LUT Page Select; Bit 7 ISWEALUT, Current State of the SWEA LUT Page Select"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Auto LUT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE LUT Table ID",
+      "description": "STE Look-Up Table, LUT, Table ID",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEModeID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STE Mode ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA LUT Table ID",
+      "description": "SWEA Look-Up Table, LUT, Table ID",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEAModeID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA Mode ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Recording Page Number",
+      "description": "Burst Recording Page Number",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BurstSavePage"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Burst Save Page"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Transmission Page Number",
+      "description": "Burst Transmission Page Number",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BurstSendPage"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Burst Send Page"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Save Best Criteria",
+      "description": "Burst Save Best Criteria",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BurstBestCriteria"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Burst Best Criteria"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MAG Hardware Housekeeping",
+      "description": "MAG Hardware Housekeeping",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MAGHKP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bits 0:3 Mag Error Counter, Not 0=Red, Else OK; Bits 4:7 Mag Command Counter; Bit 8 Spare, 0=Red, 1=OK; Bit 9 First, 1st MAG Sample after 1 Hz tick; Bit 10 Time, Toggles at 1 Hz; Bit 11 Interface Parity Error, 1=Red, 0=OK; Bit 12 Interface Timeout Error, 1=Red, 0=OK; Bit 13 ADC Cal, 0=Off, 1=On; Bit 14 In Flight Cal, 0=Off, 1=On; Bit 15 Range, 0=Low Fields, High Sensitivity, 1=High Fields, Low Sensitivity"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MAG HKP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MAG Sensor Heater Input Current",
+      "description": "MAG Sensor Heater Input Current, on 28 V Primary",
+      "unitText": "mA",
+      "minValue": "-5.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MAGHeater"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MAG Heater Current"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MAG Sensor Temperature",
+      "description": "MAG Sensor Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MAGTemp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MAG Temp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U Front End Current",
+      "description": "STE-U Front End Current, Sum of +5 A, -5 A, and +5 D",
+      "unitText": "V",
+      "minValue": "0.0",
+      "maxValue": "200.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEUCur"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "To Convert to Current, Sum of +5.1 V Current and -5.1 V Current, mA, Use: ISTEUCur-corrected=STEUa*V+STEUb*ISTEU12V-STEUc*(ISTEUVCC1-ISTEU5VD), STEUa 40.20, STEUb 16.14, STEUc 201.00"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU Current"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U Temp",
+      "description": "STE-U Temp",
+      "unitText": "\u00b0C",
+      "minValue": "-200.0",
+      "maxValue": "200.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEUTemp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU Temp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U PWB Temperature",
+      "description": "STE-U Interface Printed Wiring Board, PWB, Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "150.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEUDACTemp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU DAC Temp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U +2.5 V Supply Voltage",
+      "description": "STE-U +2.5 V Supply Voltage",
+      "unitText": "V",
+      "minValue": "-1.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEUVCCA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU VCCA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U +5 V Digital Supply Voltage",
+      "description": "STE-U +5 V Digital Supply Voltage",
+      "unitText": "V",
+      "minValue": "-1.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEU5VD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU 5VD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U FPGA Interface +5 V Supply Voltage",
+      "description": "STE-U Field-Programmable Gate Array, FPGA, Interface +5 V Supply Voltage, Reference",
+      "unitText": "V",
+      "minValue": "-1.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEUVCC1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU VCC1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U +5 V Analog Supply Voltage",
+      "description": "STE-U +5 V Analog Supply Voltage",
+      "unitText": "V",
+      "minValue": "-1.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEU5VA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU 5VA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U +12 V Supply Voltage",
+      "description": "STE-U +12 V Supply Voltage",
+      "unitText": "V",
+      "minValue": "-1.0",
+      "maxValue": "50.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEU12V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU 12V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA MCP Voltage",
+      "description": "SWEA Micro-Channel Plate, MCP, Voltage",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEAMCP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA MCP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA Non-Regulated HV 5 V Supply",
+      "description": "SWEA Non-Regulated High-Voltage, HV, 5 V Supply",
+      "unitText": "V",
+      "minValue": "-1.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEANR5V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA NR5V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA Analyzer Voltage",
+      "description": "SWEA Analyzer Voltage",
+      "unitText": "V",
+      "minValue": "-200.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEAAnal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA Anal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA Deflector 1 Voltage",
+      "description": "SWEA Deflector 1 Voltage",
+      "unitText": "V",
+      "minValue": "-200.0",
+      "maxValue": "3000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEADefl1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA Defl1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA Deflector 2 Voltage",
+      "description": "SWEA Deflector 2 Voltage",
+      "unitText": "V",
+      "minValue": "-200.0",
+      "maxValue": "3000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEADefl2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA Defl2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA V0 Voltage",
+      "description": "SWEA Retarding Potential, V0, Voltage",
+      "unitText": "V",
+      "minValue": "-200.0",
+      "maxValue": "200.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEAV0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA V0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA Ground",
+      "description": "SWEA Ground",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEAGND"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA GND"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA/STE-D Front End Current",
+      "description": "SWEA/STE-D Front End Current, Sum of +5 A, -5 A, and +5 D",
+      "unitText": "V",
+      "minValue": "-200.0",
+      "maxValue": "200.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEASTEDCur"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "To Convert To Current, Sum of +5.1V Current and -5.1V Current, mA, Use: ISWEASTEDCur-corrected=STEDa*V+STEDb*ISWEASTE12V-STEDc*(ISWEASTEDVCC1-ISWEASTED5VD), STEDa 40.20, STEDb 16.14, STEDc 201.00"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA/STED Cur"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA MCP Temperature",
+      "description": "SWEA Micro-Channel Plate, MCP, Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-200.0",
+      "maxValue": "200.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEAMCPTemp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA MCP Temp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-D Temperature",
+      "description": "STE-D Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-300.0",
+      "maxValue": "300.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEDTemp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STED Temp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA PWB Temperature",
+      "description": "SWEA Printed Wiring Board, PWB, Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-300.0",
+      "maxValue": "300.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEADACTemp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA DAC Temp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA/STE-D +2.5 V Supply Voltage",
+      "description": "SWEA/STE-D +2.5 V Supply Voltage",
+      "unitText": "V",
+      "minValue": "-10.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEASTEDVCCA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA/STED VCCA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA/STE-D +5 V Digital Supply Voltage",
+      "description": "SWEA/STE-D +5 V Digital Supply Voltage",
+      "unitText": "V",
+      "minValue": "-10.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEASTED5VD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA/STED 5VD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA/STE FPGA Interface +5 V Supply Voltage",
+      "description": "SWEA/STE Field-Programmable Gate Array, FPGA, Interface +5 V Supply Voltage, Reference",
+      "unitText": "V",
+      "minValue": "-10.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEASTEDVCC1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA/STED VCC1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA/STE-D +5 V Analog Supply Voltage",
+      "description": "SWEA/STE-D +5 V Analog Supply Voltage",
+      "unitText": "V",
+      "minValue": "-10.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEASTE5VA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA/STE 5VA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA/STE-D +12 V Supply Voltage",
+      "description": "SWEA/STE-D +12 V Supply Voltage",
+      "unitText": "V",
+      "minValue": "-10.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEASTE12V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA/STE 12V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STE-U Digital Housekeeping",
+      "description": "STE-U Digital Housekeeping",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "STEUDig"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bit 0 CPE, Command Interface Parity Error, 1=Error, Red, 0=OK; Bit 1 AFEPWR, AFE Power Status, 1=On, 0=Off=Yellow; Bit 2 AFESHDN, AFE Over-Current Detect, 1=Overcurrent=Red, 0=OK; Bit 3 Spare; Bits 5:4 STECOVSTAT, STE Cover Status, 00=Illegal, Red, 01=Closed, 10=Open, 11=Moving, Yellow; Bits 7:6 STECOVSW, STE Cover Actuator Power, 00=Off, 01=Open, 10=Close, 11=Illegal, Red; Bit 8 ANORM, Indicates an Unusual Configuration, 0=Normal, 1=Unusual, Yellow; Bit 9 Spare; Bit 10 Spare; Bit 11 HSKPMD, Analog Housekeeping Mode, 0=Cycling, 1=Sweep; Bit 12 ENBSTETP, Enable STE Test Pulser, 1=Enabled, Yellow, 0=Disabled; Bit 13 Spare; Bit 14 ENBSWEA, Enable SWEA Subsystem, 1=Enabled, Red, 0=Disabled; Bit 15 PCE, Protected Command Error, 1=Error, Red, 0=OK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "STEU Digital"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SWEA/STE-D Digital Housekeeping",
+      "description": "SWEA/STE-D Digital Housekeeping",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SWEASTEDDig"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bit 0 CPE, Command Interface Parity Error, 1=Error, Red, 0=OK; Bit 1 AFEPWR, AFE Power Status, 1=On, 0=Off=Yellow; Bit 2 AFESHDN, AFE Over-Current Detect, 1=Overcurrent=Red, 0=OK; Bit 3 SWEACOVSTAT, SWEA Cover Status, 1=Closed, Yellow, 0=Open; Bits 5:4 STECOVSTAT, STE Cover Status, 00=Illegal, Red, 01=Closed, 10=Open, 11=Moving, Yellow; Bits 7:6 STECOVSW, STE Cover Actuator Power, 00=Off, 01=Open, 10=Close, 11=Illegal, Red; Bit 8 ANORM, Indicates an Unusual Configuration, 0=Normal, 1=Unusual, Yellow; Bit 9 MCPHVENB, MCP High Voltage Enable, 0=Disabled, 1=Enabled; Bit 10 NRHVENB, Non-Regulated High Voltage Enable, 0=Disabled, 1=Enabled; Bit 11 HSKPMD, Analog Housekeeping Mode, 0=Cycling, 1=Sweep; Bit 12 ENBSTETP, Enable STE Test Pulser, 1=Enabled, Yellow, 0=Disabled; Bit 13 ENBSWEATP, Enable SWEA Test Pulser, 1=Enabled, Yellow, 0=Disabled; Bit 14 ENBSWEA, Enable SWEA Subsystem, 1=Enabled, 0=Disabled, Red; Bit 15 PCE, Protected Command Error, 1=Error, Red, 0=OK"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SWEA/STED Digital"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Block ID",
+      "description": "PLASTIC Block ID",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BLK_ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Block ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Device ID",
+      "description": "PLASTIC Device ID",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DEV_ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Device ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Spare Monitor Channel, Negative",
+      "description": "PLASTIC Spare Monitor Channel, Negative",
+      "unitText": "",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLRNM_SPARE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Normally Grounded"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLRNM_SPARE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter -12 V",
+      "description": "PLASTIC Low-Voltage Converter -12 V",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_N12V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC -12V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter -5 V",
+      "description": "PLASTIC Low-Voltage Converter -5 V",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_N5V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC -5V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Electrostatic Analyzer Positive Voltage Monitor",
+      "description": "PLASTIC Electrostatic Analyzer Positive Voltage Monitor",
+      "unitText": "V",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PESA_VM_POS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PESA_VM_POS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Deflection 1 HV Voltage Monitor",
+      "description": "PLASTIC Deflection 1 High-Voltage, HV, Voltage Monitor",
+      "unitText": "V",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PDFL_1_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PDFL_1_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Deflection 1 HV Tap Voltage Monitor",
+      "description": "PLASTIC Deflection 1 High-Voltage, HV, Tap Voltage Monitor",
+      "unitText": "V",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PDFL_1_TAP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PDFL_1_TAP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Deflection 2 HV Voltage Monitor",
+      "description": "PLASTIC Deflection 2 High-Voltage, HV, Voltage Monitor",
+      "unitText": "V",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PDFL_2_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PDFL_2_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Deflection 2 HV Tap Voltage Monitor",
+      "description": "PLASTIC Deflection 2 High-Voltage, HV, Tap Voltage Monitor",
+      "unitText": "V",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PDFL_2_TAP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PDFL_2_TAP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter +2.5 V B",
+      "description": "PLASTIC Low-Voltage Converter +2.5 V B",
+      "unitText": "V",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_P2VB"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC_P2VB"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Post-Acceleration Voltage DC Current Monitor",
+      "description": "PLASTIC Post-Acceleration Voltage DC Current Monitor",
+      "unitText": "mA",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPAC_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PPAC_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter +12 V",
+      "description": "PLASTIC Low-Voltage Converter +12 V",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_P12V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC +12V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Spare Monitor Channel, Positive",
+      "description": "PLASTIC Spare Monitor Channel, Positive",
+      "unitText": "",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLRPM_SPARE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Normally Grounded"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLRNM_SPARE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter +2.5 V A",
+      "description": "PLASTIC Low-Voltage Converter +2.5 V A",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_P2VA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC +2.5V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter +5 V",
+      "description": "PLASTIC Low-Voltage Converter +5 V",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_P5V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC +5V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Analog to Digital Converter Voltage, Analog",
+      "description": "PLASTIC Analog to Digital Converter, ADC, Voltage, Analog",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PADC_AVDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PADC_AVDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Analog to Digital Converter Voltage, Digital",
+      "description": "PLASTIC Analog to Digital Converter, ADC, Voltage, Digital",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PADC_DVDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PADC_DVDD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Post-Acceleration Voltage Monitor",
+      "description": "PLASTIC Post-Acceleration Voltage Monitor",
+      "unitText": "V",
+      "minValue": "-100000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPAC_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PPAC_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Calibrated Reference Voltage",
+      "description": "PLASTIC Calibrated Reference Voltage",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PCAL_VREF"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PCAL_VREF"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Post-Acceleration AC Current Monitor",
+      "description": "PLASTIC Post-Acceleration AC Current Monitor, Not in use",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPAC_CM_AC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PPAC_CM_AC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC MCP Voltage Monitor",
+      "description": "PLASTIC Micro-Channel Plate, MCP, Voltage Monitor",
+      "unitText": "V",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PMCP_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PMCP_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC MCP DC Current Monitor",
+      "description": "PLASTIC Micro-Channel Plate, MCP, DC Current Monitor",
+      "unitText": "mA",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PMCP_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PMCP_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC MCP AC Current Monitor",
+      "description": "PLASTIC Micro-Channel Plate, MCP, AC Current Monitor, Not in use",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PMCP_CM_AC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PMCP_CM_AC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SDD DC Current Monitor, Primary",
+      "description": "PLASTIC Solid State Detector, SDD, DC Current Monitor, Primary Side Estimate",
+      "unitText": "mA",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSSD_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSSD_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC S-Channel Voltage Monitor",
+      "description": "PLASTIC S-Channel Voltage Monitor",
+      "unitText": "V",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PS_CH_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PS_CH_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC S-Channel Voltage Monitor Tap",
+      "description": "PLASTIC S-Channel Voltage Monitor Tap",
+      "unitText": "V",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PS_CH_VM_TAP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PS_CH_VM_TAP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC S-Channel DC Current Monitor",
+      "description": "PLASTIC S-Channel DC Current Monitor",
+      "unitText": "mA",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PS_CH_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PS_CH_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Electrostatic Analyzer Negative Voltage Monitor",
+      "description": "PLASTIC Electrostatic Analyzer Negative Voltage Monitor",
+      "unitText": "V",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PESA_VM_NEG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PESA_VM_NEG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Electrostatic Analyzer DC Current Monitor",
+      "description": "PLASTIC Electrostatic Analyzer DC Current Monitor",
+      "unitText": "mA",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PESA_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PESA_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Deflection 1 HV DC Current Monitor",
+      "description": "PLASTIC Deflection 1 High-Voltage, HV, DC Current Monitor",
+      "unitText": "mA",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PDFL_1_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PDFL_1_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Deflection 2 HV DC Current Monitor",
+      "description": "PLASTIC Deflection 2 High-Voltage, HV, DC Current Monitor",
+      "unitText": "mA",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PDFL_2_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PDFL_2_CM_DC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter +2.5 V B Current Monitor",
+      "description": "PLASTIC Low-Voltage Converter +2.5 V B Current Monitor",
+      "unitText": "mA",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_P2VB_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC_P2VB_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter +12 V Current Monitor",
+      "description": "PLASTIC Low-Voltage Converter +12 V Current Monitor",
+      "unitText": "mA",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_P12V_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC_P12V_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter -12 V Current Monitor",
+      "description": "PLASTIC Low-Voltage Converter -12 V Current Monitor",
+      "unitText": "mA",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_N12V_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC_N12V_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter +5 V Current Monitor",
+      "description": "PLASTIC Low-Voltage Converter +5 V Current Monitor",
+      "unitText": "mA",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_P5V_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC_P5V_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter -5 V Current Monitor",
+      "description": "PLASTIC Low-Voltage Converter -5 V Current Monitor",
+      "unitText": "mA",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_N5V_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC_N5V_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter +2.5 V A Current Monitor",
+      "description": "PLASTIC Low-Voltage Converter +2.5 V A Current Monitor",
+      "unitText": "mA",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC_P2VA_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC_P2VA_IMON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SSD Voltage Monitor",
+      "description": "PLASTIC Solid State Detector, SSD, Voltage Monitor, Primary Side Estimate",
+      "unitText": "V",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSSD_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSSD_VM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC HV Limit Plug",
+      "description": "PLASTIC High-Voltage, HV, Limit Plug: None=High-Voltage Fully Enable",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPLUG_ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "0000 Full High Voltage Disable, 0001 High Voltage Register Limit, in which an High Voltage Setpoint is compared to a Register Value for Safety during Ground Testing, Not used in Flight, 0010 High Voltage Hard Limit, Maximum Setpoints are limited for Testing in Air, Not used in Flight, 1111 High Voltage Full Enable, Flight Use"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PPLUG_ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC DAC Board, Latchup Flag",
+      "description": "PLASTIC Digital to Analog Converter, DAC, Board, Latchup Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PADC_LU_FLAG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PADC_LU_FLAG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC DAC Board, Status",
+      "description": "PLASTIC Digital to Analog Converter, DAC, Board, Status",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PDAC_STATUS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Bit 0, LSB adc_lu_det, Latchup has been detected, 1 means Latchup has been detected; Bit 2 adc_hung; Bit 3 lu_ctr_ovfl; Bit 4 pac_cm_f_n, PAC Current Monitor Flag; Bit 5 mcp_cm_f_n, MCP Current Monitor Flag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PDAC_Status"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC DAC Board, Converter Latchup Counter",
+      "description": "PLASTIC Digital to Analog Converter, DAC, Board, Converter Latchup Counter",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PADC_LU_CTR"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PADC_LU_CTR"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PDHK Spare",
+      "description": "PDHK Spare",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PDHK_SPARE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PDHK_SPAR"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC ADC 0 Analog Ground",
+      "description": "PLASTIC Analog to Digital Converter, ADC, 0 Analog Ground",
+      "unitText": "",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PADC0_AGND"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PADC0_AGND"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC ADC 1 Analog Ground",
+      "description": "PLASTIC Analog to Digital Converter, ADC, 1 Analog Ground",
+      "unitText": "",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PADC1_AGND"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PADC1_AGND"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Resistive Anode Charge Amplifier Output 0",
+      "description": "PLASTIC Resistive Anode Charge Amplifier Output 0",
+      "unitText": "",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PRA_E0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PRA_E0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Resistive Anode Charge Amplifier Output 1",
+      "description": "PLASTIC Resistive Anode Charge Amplifier Output 1",
+      "unitText": "",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PRA_E1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PRA_E1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Time to Amplitude Converter Board 0 Temperature",
+      "description": "PLASTIC Time to Amplitude Converter Board 0 Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PTAC0_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PTAC0_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Time to Amplitude Converter Board 2 Temperature",
+      "description": "PLASTIC Time to Amplitude Converter Board 2 Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PTAC2_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PTAC2_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Signal Board 0 Temperature",
+      "description": "PLASTIC Signal Board 0 Temperature, Not in use",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSB0_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSB0_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Signal Board 1 Temperature",
+      "description": "PLASTIC Signal Board 1 Temperature, Not in use",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSB1_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSB1_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Time-of-Flight System HV 0 Temperature",
+      "description": "PLASTIC Time-of-Flight System High-Voltage, HV, 0 Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PTOF_HV0_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PTOF_HV0_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Time-of-Flight System HV 1 Temperature",
+      "description": "PLASTIC Time-of-Flight System High-Voltage, HV, 1 Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PTOF_HV1_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PTOF_HV1_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Spacecraft/Instrument Case Temperature 0",
+      "description": "PLASTIC Spacecraft/Instrument Case Temperature 0",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PS_C_0_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PS_C_0_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Spacecraft/Instrument Case Temperature 1",
+      "description": "PLASTIC Spacecraft/Instrument Case Temperature 1",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PS_C_1_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PS_C_1_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter 0 Temperature",
+      "description": "PLASTIC Low-Voltage Converter 0 Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC0_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC0_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC Low-Voltage Converter 1 Temperature",
+      "description": "PLASTIC Low-Voltage Converter 1 Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PLVC1_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PLVC1_TSP"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC ADC 0 Reference Voltage",
+      "description": "PLASTIC Analog to Digital Converter, ADC, 0 Reference Voltage",
+      "unitText": "V",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PADC0_VREF"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PADC0_VREF"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC ADC 1 Reference Voltage",
+      "description": "PLASTIC Analog to Digital Converter, ADC, 1 Reference Voltage",
+      "unitText": "V",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PADC1_VREF"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PADC1_VREF"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SSD, Status",
+      "description": "PLASTIC Solid State Detector, SSD, Status",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSSD_STATUS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSSD_STATUS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SSD, Positive Voltage, Analog",
+      "description": "PLASTIC Solid State Detector, SSD, Positive Voltage, Analog",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSSD_V_POS_ANALOG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSSD_V_POS_ANALOG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SSD, Negative Voltage, Analog",
+      "description": "PLASTIC Solid State Detector, SSD, Negative Voltage, Analog",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSSD_V_NEG_ANALOG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSSD_V_NEG_ANALOG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SSD, HV Bias",
+      "description": "PLASTIC Solid State Detector, SSD, High-Voltage, HV, Bias",
+      "unitText": "V",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSSD_HV_BIAS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSSD_HV_BIAS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SSD 0 Temperature",
+      "description": "PLASTIC Solid State Detector 0, SSD 0, Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSSD_TC0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSSD_TC0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SSD 1 Temperature",
+      "description": "PLASTIC Solid State Detector 1, SSD 1, Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSSD_TC1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSSD_TC1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SSD 2 Temperature",
+      "description": "PLASTIC Solid State Detector 2, SSD 2, Temperature",
+      "unitText": "\u00b0C",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "\u00b0C+273.15>\u00b0K",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSSD_TC2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSSD_TC2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLASTIC SSD, Positive Voltage, Digital",
+      "description": "PLASTIC Solid State Detector, SSD, Positive Voltage, Digital",
+      "unitText": "V",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PSSD_V_POS_DIG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSSD_V_POS_DIG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sample Time as reported by the IPDU",
+      "description": "Sample Time as reported by the Instrument Data Processing Unit, IPDU",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SampleTime"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "To convert to time: 4 MSB=hr, 6 middle bits=min, 6 LSB=seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Sample Time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

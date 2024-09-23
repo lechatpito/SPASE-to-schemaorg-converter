@@ -1,0 +1,478 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_THEMIS_Ground_Longyearbyen_Magnetometer_PT1M.jsonld",
+  "name": "Longyearbyen (LYR) Ground-based Vector Magnetic Field (L2) 1.0 min Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_THEMIS_Ground_Longyearbyen_Magnetometer_PT1M.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/THEMIS/Ground/Longyearbyen/Magnetometer/PT1M",
+  "creditText": "Longyearbyen (LYR) Ground-based Vector Magnetic Field (L2) 1.0 min Data.",
+  "description": "Longyearbyen, Norway, Ground-based Vector Magnetic Field Level 2 Data, 1.0 min Time Resolution, Station Code: (LYR), Station Location: (GEO Latitude 78.2, Longitude 15.8), TGO Network",
+  "abstract": "Longyearbyen, Norway, Ground-based Vector Magnetic Field Level 2 Data, 1.0 min Time Resolution, Station Code: (LYR), Station Location: (GEO Latitude 78.2, Longitude 15.8), TGO Network",
+  "temporalCoverage": "Start date: 2006-12-30T00:00:00.000. Relative stop date: -P2M",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "B in HEZ Components",
+      "description": "Magnetic field B in HEZ vector components",
+      "unitText": "nT",
+      "minValue": "-60000.0",
+      "maxValue": "60000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian LGM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Magnetic North - H",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Magnetic East - E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Vertical Down - Z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_lyr"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B in HEZ Components"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "f9.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "H component of B",
+      "description": "---> H - Local magnetic North component of B",
+      "unitText": "nT",
+      "minValue": "-60000.0",
+      "maxValue": "60000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_magh_lyr"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: thg_mag_lyr."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Magnetic North - H"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "f9.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E component of B",
+      "description": "---> E - Local magnetic East component of B",
+      "unitText": "nT",
+      "minValue": "-60000.0",
+      "maxValue": "60000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_magd_lyr"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: thg_mag_lyr."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Magnetic East - E"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "f9.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Z component of B",
+      "description": "---> Z - Local vertical down component of B",
+      "unitText": "nT",
+      "minValue": "-60000.0",
+      "maxValue": "60000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_magz_lyr"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: thg_mag_lyr."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Vertical Down - Z"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "f9.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HEZ Component Number",
+      "description": "HEZ Component Number",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "3",
+      "defaultValue": "-2147483648",
+      "measurementTechnique": "Cartesian LGM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_lyr_compno"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "HEZ Component Number"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "i2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "thg_mag_lyr_time",
+      "description": "thg_mag_lyr_time, UTC, in seconds since 01-Jan-1970 00:00:00",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0e+09",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_lyr_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "e13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "thg_mag_lyr_epoch",
+      "description": "thg_mag_lyr_epoch",
+      "unitText": "",
+      "minValue": "6.31455e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_lyr_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: thg_mag_lyr_epoch0, thg_mag_lyr_time."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "thg_mag_lyr_epoch0",
+      "description": "EPOCH0 of THEMIS TIME BASE",
+      "unitText": "ms",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.40607e+13",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_lyr_epoch0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "EPOCH of 01-Jan-1970 00:00:00"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "timebase"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "range_epoch",
+      "description": "range_epoch",
+      "unitText": "ms",
+      "minValue": "6.31455e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "range_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

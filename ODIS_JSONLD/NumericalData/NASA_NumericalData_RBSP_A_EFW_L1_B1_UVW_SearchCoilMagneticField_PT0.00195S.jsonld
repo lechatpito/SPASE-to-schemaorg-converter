@@ -1,0 +1,1279 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_RBSP_A_EFW_L1_B1_UVW_SearchCoilMagneticField_PT0.00195S.jsonld",
+  "name": "Van Allen Probe A Electric Field and Waves Suite (EFW) Burst Waveform MSCB1 Medium Resolution Magnetic Field in Spacecraft Spin (UVW) Coordinates and Instrument Status, Level 1 (L1), 1.95 ms Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_RBSP_A_EFW_L1_B1_UVW_SearchCoilMagneticField_PT0.00195S.jsonld",
+  "sdDatePublished": "2022-08-18",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/RBSP/A/EFW/L1/B1/UVW/SearchCoilMagneticField/PT0.00195S",
+  "creditText": "Van Allen Probe A Electric Field and Waves Suite (EFW) Burst Waveform MSCB1 Medium Resolution Magnetic Field in Spacecraft Spin (UVW) Coordinates and Instrument Status, Level 1 (L1), 1.95 ms Data.",
+  "description": "The EFW Burst Modes provide targeted Measurements over Brief Time Intervals of 3-D Electric Fields, 3-D Wave Magnetic Fields, and Spacecraft Potential. There are two EFW Burst Modes: BURST1, B1, Medium-Rate 512 samples/s nominal and BURST2, B2, Higher-Rate, 16384 samples/s nominal. The Burst 1 Mode Data includes three components of the Electric Field, E12_B1, E34_B1, and E56_B1, six Components of the Spacecraft Sensor Potential, V1_B1 through V6_B1, and three Components of the AC Magnetic Field, SCM_U_B1, SCM_V_B1, and SCM_W_B1, from the EMFISIS Search Coil Magnetometer. The Burst 2 Mode Data returns a similar Complement of Electric Field, E_12ac_B2, E34ac_B2, and E56ac_B2, Search Coil, SCM_B2, SCM_2B2, and SCM_B2, again from the EMFISIS Search Coil Magnetometer and Single-ended Potential Measurements, V1ac_B1 through V6ac_B2, with the exception that in the Default Mode the Single-ended Potential and Electric Field Signals are AC coupled with a higher Gain. All Quantities are in UVW Coordinates where, U, and, V, are the Sensor Coordinates rotating with the Spacecraft and, W, points along the Spacecraft Spin Axis. Burst Waveform CDF Files are available. The three Data Types available are the Electric Field, E, the Searchcoil Magnetic Field, MSC, and Antenna Potential, V. The Suffix on each of these is either, B1 or B2. B1 or Burst 1 is the Human-in-the-Loop Burst Type, meaning that both Collection and Playback for arbitrary Lengths of Time are requested on the Ground. B2 or Burst 2 is automatically telemetered as short Bursts based on an onboard Triggering Algorithm, typically set to trigger on large Amplitude Signals near 1 kHz. Sample Rates for B1 and B2 can and are changed depending on varying Science Goals.",
+  "abstract": "The EFW Burst Modes provide targeted Measurements over Brief Time Intervals of 3-D Electric Fields, 3-D Wave Magnetic Fields, and Spacecraft Potential. There are two EFW Burst Modes: BURST1, B1, Medium-Rate 512 samples/s nominal and BURST2, B2, Higher-Rate, 16384 samples/s nominal. The Burst 1 Mode Data includes three components of the Electric Field, E12_B1, E34_B1, and E56_B1, six Components of the Spacecraft Sensor Potential, V1_B1 through V6_B1, and three Components of the AC Magnetic Field, SCM_U_B1, SCM_V_B1, and SCM_W_B1, from the EMFISIS Search Coil Magnetometer. The Burst 2 Mode Data returns a similar Complement of Electric Field, E_12ac_B2, E34ac_B2, and E56ac_B2, Search Coil, SCM_B2, SCM_2B2, and SCM_B2, again from the EMFISIS Search Coil Magnetometer and Single-ended Potential Measurements, V1ac_B1 through V6ac_B2, with the exception that in the Default Mode the Single-ended Potential and Electric Field Signals are AC coupled with a higher Gain. All Quantities are in UVW Coordinates where, U, and, V, are the Sensor Coordinates rotating with the Spacecraft and, W, points along the Spacecraft Spin Axis. Burst Waveform CDF Files are available. The three Data Types available are the Electric Field, E, the Searchcoil Magnetic Field, MSC, and Antenna Potential, V. The Suffix on each of these is either, B1 or B2. B1 or Burst 1 is the Human-in-the-Loop Burst Type, meaning that both Collection and Playback for arbitrary Lengths of Time are requested on the Ground. B2 or Burst 2 is automatically telemetered as short Bursts based on an onboard Triggering Algorithm, typically set to trigger on large Amplitude Signals near 1 kHz. Sample Rates for B1 and B2 can and are changed depending on varying Science Goals.",
+  "temporalCoverage": "Start date: 2012-09-05T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC",
+      "description": "Epoch Time, Coordinated Universal Time, UTC",
+      "unitText": "ms",
+      "minValue": "01-Jan-2009 00:00:00.000",
+      "maxValue": "31-Dec-2100 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "unitCode": "1.0e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This Parameter exhibits an increasing Monotonic Progression"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MSCB1 Searchcoil Magnetic Field, Sensor Cartesian Coordinates",
+      "description": "MSCB1 Mode, Searchcoil Magnetic Field, Sensor Cartesian Coordinates",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "MSCX",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MSCY",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MSCZ",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "mscb1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MSCB1 X Component Enabled Flag",
+      "description": "MSCB1 Mode, Searchcoil Magnetic Field, X component, Enabled Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "mscb1_MSCZ_enabled"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "MSCB1 Mode, X Component Flag: 0=Disabled, 1=Enabled"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MSCZ enabled"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MSCB1 Y Component Enabled Flag",
+      "description": "MSCB1 Mode, Searchcoil Magnetic Field, Y Component, Enabled Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "mscb1_MSCY_enabled"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "MSCB1 Mode, Y Component Flag: 0=Disabled, 1=Enabled"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MSCY enabled"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MSCB1 Z Component Enabled Flag",
+      "description": "MSCB1 Mode, Searchcoil Magnetic Field, Z Component, Enabled Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "mscb1_MSCX_enabled"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "MSCB1 Mode, Z Component Flag: 0=Disabled, 1=Enabled"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MSCX enabled"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GDH Size",
+      "description": "Generic Data Header, GDH, Size",
+      "unitText": "",
+      "minValue": "3",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gdh_size"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Size of Object to follow in Bytes, including this Header"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GDH Type",
+      "description": "Generic Data Header, GDH, Type",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gdh_type"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Type of Object to follow: 0=EOT, 3=PTP, 255=Error Message"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA Spacecraft Identifier",
+      "description": "Ground Annotation, GA, Spacecraft Identifier",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ga_scid"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Spacecraft ID: 0x16A=RBSP-A, 0x16B=RBSP-B"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA GRT Epoch Day",
+      "description": "Ground Annotation, GA, Ground Receipt Time, GRT, Epoch Day, Days since January 1, 1958",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ga_grt_epoch_day"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Days since January 1, 1958"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA GRT Milliseconds of Day",
+      "description": "Ground Annotation, GA, Ground Receipt Time, GRT, Milliseconds of Day",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "86400000",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ga_grt_ms_day"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA GRT Tenths of Microseconds since the Millisecond",
+      "description": "Ground Annotation, GA, Ground Reciept Time, GRT, Tenths of Microseconds since the Millisecond",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ga_grt_ext_resolution"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA Source",
+      "description": "Ground Annotation, GA, Source",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ga_source"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "6=Spacecraft from SSR, 7=Spacecraft in Real-Time, 100=Ground System, 200=Testbed"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "source"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA Path",
+      "description": "Ground Annotation, GA, Path, Front-End or Ground Station Identifier",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ga_path"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Front-End or Ground Station Identifier: 0=Ground System, 1=Front End #1, 2=Front End #2, 3=Front End #3, 4=Front End #4, 5=Front End #5, 6=Front End #6, 7=Front End #7, 255=Not Applicable or Unknown"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Ground System"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Version, always Zero",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Version, always Zero",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "0",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_hdr_version"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Version"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Type",
+      "description": "CCSDS Header Type: 0=Telemetry, TLM, 1=Command, CMD",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_hdr_type"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "CCSDS Header Type: 0=Telemetry, TLM, 1=Command, CMD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "CCSDS Type"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Secondary Header Flag",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Secondary Header Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_hdr_sec_hdr_flag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "CCSDS Secondary Header Flag: 0=No Secondary Header, 1=Secondary Header Present"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "CCSDS Sec. Hdr. Flag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header APID",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Application ID, APID",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_hdr_apid"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "ApID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Grouping",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Grouping",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "3",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_hdr_grouping"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "CCSDS Header Grouping Flag: 0=Intermediate Packet, 1=First Packet in Group, 2=Last Packet in Group, 3=Not Part of Group"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Grouping Flags"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Sequence Count",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Sequence Count",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "16383",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_hdr_sequence_count"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "The CCSDS Header Sequence Count increments with each Packet"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Seqence Count"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Packet Length",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Packet Length",
+      "unitText": "",
+      "minValue": "3",
+      "maxValue": "249",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_hdr_packet_length"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "The CCSDS Header Packet Length lists the Number of Bytes following the Packet Length minus One. The Value is always an odd Number"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Packet Length"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header MET",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Mission Elapsed Time, MET",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "2147483647",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_hdr_met"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MET Seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I11"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Packet Sample Index",
+      "description": "Packet Sample Index, Index of the first Sample from this Packet",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "2147483647",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "packet_sample_index"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Sample number"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I11"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Header Epoch Time, UTC",
+      "description": "Header Epoch Time, Coordinated Universal Time, UTC",
+      "unitText": "ms",
+      "minValue": "01-Jan-2009 00:00:00.000",
+      "maxValue": "31-Dec-2100 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "unitCode": "1.0e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "hdr_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Time Base for the Packet Header Data This Parameter exhibits an increasing Monotonic Progression"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Data Subseconds",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Data Subseconds",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_data_subseconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Divide by 65536, 2, #185; #8310;, to get the Mantissa Part of the Mission Elapsed Time for this Packet"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Subseconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Data Compression Flag",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Data Compression Flag, 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_data_compression"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "CCSDS Data Compression Flag: 0=Off, 1=On"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Compression"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Data BEB Configuration Bits",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Data Boom Electronics Board, BEB, Configuration Bits",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "127",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_data_BEB_config"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "See a to be determined, TBD, Document for the Modes designated by these seven Bits"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BEB cfg bits [0:6]"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Data DFB Configuration Bits",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Data Digital Fields Board, DFB, Configuration BitSee a to be determined, TBD, Document for the Modes designated by these eight Bits",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_data_DFB_config"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "DFB cfg bits [0:7]"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Data Speed Code",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Data Speed Code",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "15",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ccsds_data_speed"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "See a to be determined, TBD, Document for the Speed Setting designated by this Code"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.00195S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Speed Code"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

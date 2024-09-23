@@ -1,0 +1,371 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ParkerSolarProbe_FIELDS_DFB_Level2_DC_Spectra_SCM_U_LowFrequency_HighGain_PT6.99054S.jsonld",
+  "name": "PSP FIELDS Digital Fields Board (DFB) DC-coupled Searchcoil Magnetometer, SCM, Spectra, Low Frequency, High Gain, u-component, Sensor coordinates, Level 2 (L2), 6.99054 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ParkerSolarProbe_FIELDS_DFB_Level2_DC_Spectra_SCM_U_LowFrequency_HighGain_PT6.99054S.jsonld",
+  "sdDatePublished": "2022-05-25",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ParkerSolarProbe/FIELDS/DFB/Level2/DC/Spectra/SCM/U/LowFrequency/HighGain/PT6.99054S",
+  "creditText": "PSP FIELDS Digital Fields Board (DFB) DC-coupled Searchcoil Magnetometer, SCM, Spectra, Low Frequency, High Gain, u-component, Sensor coordinates, Level 2 (L2), 6.99054 s Data.",
+  "description": "PSP FIELDS Digital Fields Board, DFB, SCMulfhg data:\n\nThe DFB is the low frequency, less than 75 kHz, component of the FIELDS experiment on the Parker Solar Probe spacecraft, see reference [1] below. For a full description of the FIELDS experiment, see reference [2]. For a description of the DFB, see reference [3].\n\nDFB DC spectra data consist of power spectral densities as a function of frequency and time. These spectra are averaged over both frequency and time as described in [3]. The spectra have pseudo-logarithmically spaced frequency bins with the bin central frequencies reported in the metadata.\n\nThe Level 2 data products contained in this data file have been calibrated for:\n\n* 1) The Hanning window used in the spectral calculation\n* 2) DFB in-band gain\n* 3) DFB analog filter gain response\n* 4) DFB digital filter gain response\n* 5) The search coil preamplifier response, when applicable\n* 6) The bandwidth of each spectral bin\n\nNote that compensation for the DFB digital filters will introduce a non-physical positively sloped power trend at high frequencies when the non-corrected signal is dominated by noise. This effect should be examined carefully when determining spectral slopes and features at the highest frequencies. Calibrations for the FIELDS preamplifiers have not been implemented as the preamplifier response is flat and equal to one through the DFB frequency range. Corrections for plasma sheath impedance gain and antenna effective length have not been applied to voltage sensor signals. These corrections will be applied in the Level 3 DFB data products. Therefore, all voltage sensor quantities when present in these Level 2 data products are expressed by using units of Volts squared per Hertz. Likewise, all magnetic field quantities when present in these Level 2 data product are expressed by using units of nanoTesla squared per Hertz.\n\nThe Level 2 data products contained in this data file are expressed in sensor coordinates: e.g. dV12, dV34 for voltage measurements. For solar orbits 1 and 2, the search coil magnetometer spectral data are rotated into a non-intuitive coordinate system with components [d,e,f]. For solar orbits 3 and beyond, the magnetic field spectral data are in expressed in search coil magnetometer sensor coordinates with components [u,v,w].\n\nTo rotate from [d,e,f] coordinates into [u,v,w] search coil sensor coordinates, use the following matrix, written in IDL notation, and the following equation: spectra_uvw_vector = R ## spectra_def_vector.\n\nR = [[  0.46834856, -0.81336422 ,  0.34509170]\n     [ -0.66921924, -0.071546954,  0.73961249]\n     [ -0.57688408, -0.57733845 , -0.57782790]]\n\nThe time resolution of the DFB DC spectral data can vary by multiples of 2^N. During encounter when PSP is within 0.25 AU of the Sun, the DFB DC spectra data cadence is typically 30 NYseconds NYsecond [2]. Timestamps correspond to the center time of each window.\n\nReferences:\n\n* 1) Fox, N.J., Velli, M.C., Bale, S.D. et al., Space Sci Rev (2016) 204:7. https://doi.org/10.1007/s1121401502116\n* 2) Bale, S.D., Goetz, K., Harvey, P.R. et al., Space Sci Rev (2016) 204:49. https://doi.org/10.1007/s1121401602445\n* 3) Malaspina, D.M., Ergun, R.E., Bolton, M. et al., JGR Space Physics (2016), 121, 5088-5096. https://doi.org/10.1002/2016JA022344",
+  "abstract": "PSP FIELDS Digital Fields Board, DFB, SCMulfhg data:\n\nThe DFB is the low frequency, less than 75 kHz, component of the FIELDS experiment on the Parker Solar Probe spacecraft, see reference [1] below. For a full description of the FIELDS experiment, see reference [2]. For a description of the DFB, see reference [3].\n\nDFB DC spectra data consist of power spectral densities as a function of frequency and time. These spectra are averaged over both frequency and time as described in [3]. The spectra have pseudo-logarithmically spaced frequency bins with the bin central frequencies reported in the metadata.\n\nThe Level 2 data products contained in this data file have been calibrated for:\n\n* 1) The Hanning window used in the spectral calculation\n* 2) DFB in-band gain\n* 3) DFB analog filter gain response\n* 4) DFB digital filter gain response\n* 5) The search coil preamplifier response, when applicable\n* 6) The bandwidth of each spectral bin\n\nNote that compensation for the DFB digital filters will introduce a non-physical positively sloped power trend at high frequencies when the non-corrected signal is dominated by noise. This effect should be examined carefully when determining spectral slopes and features at the highest frequencies. Calibrations for the FIELDS preamplifiers have not been implemented as the preamplifier response is flat and equal to one through the DFB frequency range. Corrections for plasma sheath impedance gain and antenna effective length have not been applied to voltage sensor signals. These corrections will be applied in the Level 3 DFB data products. Therefore, all voltage sensor quantities when present in these Level 2 data products are expressed by using units of Volts squared per Hertz. Likewise, all magnetic field quantities when present in these Level 2 data product are expressed by using units of nanoTesla squared per Hertz.\n\nThe Level 2 data products contained in this data file are expressed in sensor coordinates: e.g. dV12, dV34 for voltage measurements. For solar orbits 1 and 2, the search coil magnetometer spectral data are rotated into a non-intuitive coordinate system with components [d,e,f]. For solar orbits 3 and beyond, the magnetic field spectral data are in expressed in search coil magnetometer sensor coordinates with components [u,v,w].\n\nTo rotate from [d,e,f] coordinates into [u,v,w] search coil sensor coordinates, use the following matrix, written in IDL notation, and the following equation: spectra_uvw_vector = R ## spectra_def_vector.\n\nR = [[  0.46834856, -0.81336422 ,  0.34509170]\n     [ -0.66921924, -0.071546954,  0.73961249]\n     [ -0.57688408, -0.57733845 , -0.57782790]]\n\nThe time resolution of the DFB DC spectral data can vary by multiples of 2^N. During encounter when PSP is within 0.25 AU of the Sun, the DFB DC spectra data cadence is typically 30 NYseconds NYsecond [2]. Timestamps correspond to the center time of each window.\n\nReferences:\n\n* 1) Fox, N.J., Velli, M.C., Bale, S.D. et al., Space Sci Rev (2016) 204:7. https://doi.org/10.1007/s1121401502116\n* 2) Bale, S.D., Goetz, K., Harvey, P.R. et al., Space Sci Rev (2016) 204:49. https://doi.org/10.1007/s1121401602445\n* 3) Malaspina, D.M., Ergun, R.E., Bolton, M. et al., JGR Space Physics (2016), 121, 5088-5096. https://doi.org/10.1002/2016JA022344",
+  "temporalCoverage": "Start date: 2019-08-17T00:00:00.000. Relative stop date: -P6M",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, DFB, DC Searchcoil Magnetometer, LF, HG, u-comp., Sensor coordinates Spectra",
+      "description": "Epoch Time Tags in Terrestrial Time 2000, TT2000, for Digital Fields Board, DFB, DC-coupled Searchcoil Magnetometer, SCM, Low Frequency, High Gain, u-component, Searchcoil Sensor coordinates Spectra",
+      "unitText": "ns",
+      "minValue": "2010-01-01T00:00:00.000000000",
+      "maxValue": "2050-01-01T00:00:00.000000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "unitCode": "1.0e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "epoch_dc_spec_SCMulfhg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This Parameter exhibits an increasing Monotonic Progression"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6.99054S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I22"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.3733197819904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.3733284219904e+13"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DFB, Spectra, Frequency Bins for DC Searchcoil Magnetometer, LF, HG, u-comp., Sensor coordinates",
+      "description": "FIELDS Digital Fields Board, DFB, Frequency Bins for Spectra, DC-coupled Searchcoil Magnetometer, SCM, Low Frequency, High Gain, u-component, Searchcoil Sensor coordinates",
+      "unitText": "Hz",
+      "minValue": "22.8882",
+      "maxValue": "4541.02",
+      "defaultValue": "-1.0e+31",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Array"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_fld_l2_dfb_dc_spec_SCMulfhg_frequency_bins"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6.99054S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "frequency"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LogScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "psp_fld_l2_dfb_dc_spec_SCMulfhg",
+      "description": "L2 Power Spectra for channel SCMULFHG",
+      "unitText": "nT^2/Hz",
+      "minValue": "0.0",
+      "maxValue": "122880.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0e-18>T^2/Hz",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Array",
+            "Component.I",
+            "CrossSpectrum"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_fld_l2_dfb_dc_spec_SCMulfhg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6.99054S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "Spectrogram"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PSD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LogScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DFB, Spectra, Saturation Flags for DC Searchcoil Magnetometer, LF, HG, u-comp., Sensor coordinates",
+      "description": "FIELDS Digital Fields Board, DFB, Saturation Flags for Spectra, DC-coupled Spectra, Searchcoil Magnetometer, SCM, Low Frequency, High Gain, u-component, Searchcoil Sensor coordinates",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_fld_l2_dfb_dc_spec_SCMulfhg_saturation_flags"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6.99054S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I8"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, FIELDS Data Quality Flags",
+      "description": "Epoch Time Tags in Terrestrial Time 2000, TT2000, for FIELDS Instrument Suite Data Quality Flags",
+      "unitText": "ns",
+      "minValue": "2010-01-01T00:00:00.000000000",
+      "maxValue": "2050-01-01T00:00:00.000000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "unitCode": "1.0e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "epoch_quality_flags"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "FIELDS Level 2 DFB Saturation Flag Values: 0=Spectra unsaturated, 1=Spectra saturated"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6.99054S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I22"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.3733197819904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.3733284219904e+13"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIELDS Data Quality Flags",
+      "description": "FIELDS Instrument Suite Data Quality Flags",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1023",
+      "defaultValue": "4294967295",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_fld_l2_quality_flags"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "FIELDS quality flags: These flags are bitwise variables, meaning that multiple flags can be set simultaneously for a single time by adding flag values. Current flagged values are:\n\n* 1: FIELDS Antenna Bias Sweep\n* 2: PSP Thruster Firing\n* 4: SCM Calibration\n* 8: PSP Rotations for MAG Calibration, MAG Rolls\n* 16: FIELDS MAG Calibration Sequence\n* 32: SWEAP SPC in Electron Mode\n* 64: PSP Solar Limb Sensor, SLS, Test\n* 128: PSP Spacecraft is off Umbra Pointing, Heat Shield not pointed Sunward\n* 256: High Frequency Noise affecting RFS and TDS Receivers\n* 512: Antennas driven towards the FIELDS Power Supply Rails\n\nA value of zero corresponds to no set flags. Not all flags are relevant to all FIELDS data products, refer to notes in the CDF metadata and on the FIELDS Satellite Operations Center, SOC, website for information on how the various flags impact FIELDS data. For more information on the quality flags describing high frequency noise and antennas driven to the rails, see release notes for PSP/FIELDS releases 8 and 9. Additional flagged items may be added in the future."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6.99054S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "flag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I10"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rotation Matrix, (d,e,f) to (u,v,w)",
+      "description": "Rotation Matrix from (d,e,f) to (u,v,w) Coordinates",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Array"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "scm_rotation_matrix_def_uvw"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT6.99054S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F10.3"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

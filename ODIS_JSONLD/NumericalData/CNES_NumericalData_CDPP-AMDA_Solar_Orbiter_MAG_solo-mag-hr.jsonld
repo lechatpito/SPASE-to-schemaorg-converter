@@ -1,0 +1,160 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Solar_Orbiter_MAG_solo-mag-hr.jsonld",
+  "name": "SolarOrbiter - MAG - L2 - 0.1 sec : srf",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Solar_Orbiter_MAG_solo-mag-hr.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-AMDA/Tim.Horbury",
+    "url": "http://hpde.io/CNES/Person/CDPP-AMDA/Tim.Horbury"
+  },
+  "sdDatePublished": "2024-05-15",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/MAG/solo-mag-hr",
+  "creditText": "SolarOrbiter - MAG - L2 - 0.1 sec : srf.",
+  "description": "Publication quality. Take note of Quality Flag and refer to SOL-MAG-DPDD for exceptions ( see SolO Archive Support Data)",
+  "abstract": "Publication quality. Take note of Quality Flag and refer to SOL-MAG-DPDD for exceptions ( see SolO Archive Support Data)",
+  "temporalCoverage": "Start date: 2020-04-15T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_srf",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Component.I",
+            "Component.J",
+            "Component.K"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "solo_b_sfr"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "\n              Magnetic field magnitude \n          ",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "solo_b_sfr_tot"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality",
+      "description": "\n               Flag setting: 0: Bad data; 1: Known problems use at your own risk; 2: Survey data, possibly \n               not publication quality; 3: Good for publication subject to PI approval; 4: Excellent data which has received special treatment\n           ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "DataQuality"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "solo_b_srf_qf"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

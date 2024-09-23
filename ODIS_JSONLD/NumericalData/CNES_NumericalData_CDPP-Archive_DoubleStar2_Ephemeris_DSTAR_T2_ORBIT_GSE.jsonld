@@ -1,0 +1,108 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DoubleStar2_Ephemeris_DSTAR_T2_ORBIT_GSE.jsonld",
+  "name": "Double Star 2 Orbit data (GSE frame, 1 min resolution)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DoubleStar2_Ephemeris_DSTAR_T2_ORBIT_GSE.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-Archive/James.M.James.M.Weygand",
+    "url": "http://hpde.io/CNES/Person/CDPP-Archive/James.M.James.M.Weygand"
+  },
+  "sdDatePublished": "2021-11-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_T2_ORBIT_GSE",
+      "encodingFormat": "Text.ASCII",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/DoubleStar2/Ephemeris/DSTAR_T2_ORBIT_GSE",
+  "creditText": "Double Star 2 Orbit data (GSE frame, 1 min resolution).",
+  "description": "This data set contains Double Star 2 GSE position and velocity at 1 min resolution",
+  "abstract": "This data set contains Double Star 2 GSE position and velocity at 1 min resolution",
+  "temporalCoverage": "Start date: 2004-07-27T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 GSE position",
+      "description": "Spacecraft position in GSE",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional",
+        "description": "Vector"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 GSE Velocity",
+      "description": "Spacecraft velocity  in GSE",
+      "unitText": "km s^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Velocity",
+        "description": "Vector"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

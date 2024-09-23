@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_SOLIS_VSM_P1D.jsonld",
+  "name": "SOLIS VSM Daily Images, FITS",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_SOLIS_VSM_P1D.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/John.W.Harvey",
+    "url": "http://hpde.io/SMWG/Person/John.W.Harvey"
+  },
+  "sdDatePublished": "2018-08-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://solis.nso.edu/0/solis_data.html",
+      "encodingFormat": "JPEG",
+      "name": "SOLIS data access page at NSO",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/SOLIS/VSM/P1D",
+  "creditText": "SOLIS VSM Daily Images, FITS.",
+  "description": "This data product consists of daily sets of four\nimages created from SOLIS Vector Spectromagnetograph (VSM) data: \n(a) photospheric longitudinal magnetic field, based on FeI 630.15 \nand 630.25 nm lines; (b) photospheric vector magnetic field, based \non FeI 630.15 and 630.25 nm lines; (c) chromospheric equivalent\nwidths based on the HeI 1083.0 nm line; (d) lower chromosphere\nlongitudinal magnetic field based on the CaII 854.2 nm lines.\nSome recent data are \"quick look\" while most data are based on \nMilne-Eddington inversions.  The data are available as both JPEG \nimages for browsing and as FITS files for quantitative work.",
+  "abstract": "This data product consists of daily sets of four\nimages created from SOLIS Vector Spectromagnetograph (VSM) data: \n(a) photospheric longitudinal magnetic field, based on FeI 630.15 \nand 630.25 nm lines; (b) photospheric vector magnetic field, based \non FeI 630.15 and 630.25 nm lines; (c) chromospheric equivalent\nwidths based on the HeI 1083.0 nm line; (d) lower chromosphere\nlongitudinal magnetic field based on the CaII 854.2 nm lines.\nSome recent data are \"quick look\" while most data are based on \nMilne-Eddington inversions.  The data are available as both JPEG \nimages for browsing and as FITS files for quantitative work.",
+  "temporalCoverage": "Start date: 2003-08-21T00:00:00. Relative stop date: P5D",
+  "variableMeasured": "Magnetogram",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

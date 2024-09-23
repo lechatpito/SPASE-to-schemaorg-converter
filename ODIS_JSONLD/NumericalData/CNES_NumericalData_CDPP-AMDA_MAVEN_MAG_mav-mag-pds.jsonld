@@ -1,0 +1,156 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_MAVEN_MAG_mav-mag-pds.jsonld",
+  "name": "MAVEN - MAG - 0.03 sec",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_MAVEN_MAG_mav-mag-pds.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/John.E.P.Connerney",
+    "url": "http://hpde.io/SMWG/Person/John.E.P.Connerney"
+  },
+  "sdDatePublished": "2023-05-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MAVEN/MAG/mav-mag-pds",
+  "creditText": "MAVEN - MAG - 0.03 sec.",
+  "description": " * Calibrated science vector magnetic-field data in Planetocentric coordinates (IAU Mars) vs. time (LID = urn:nasa:pds:maven.mag.calibrated:data.pc) \n           * Calibrated science vector magnetic-field  in Sun-State (MSO) coordinates vs. time (LID = urn:nasa:pds:maven.mag.calibrated:data.ss)\n         ",
+  "abstract": " * Calibrated science vector magnetic-field data in Planetocentric coordinates (IAU Mars) vs. time (LID = urn:nasa:pds:maven.mag.calibrated:data.pc) \n           * Calibrated science vector magnetic-field  in Sun-State (MSO) coordinates vs. time (LID = urn:nasa:pds:maven.mag.calibrated:data.ss)\n         ",
+  "temporalCoverage": "Start date: 2014-10-10T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_mso",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "mavb_mso"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_iau_mars",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "Component",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "Component",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "Component",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "mavb_iau"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "mavb_tot"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

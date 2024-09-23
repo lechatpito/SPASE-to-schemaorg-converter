@@ -1,0 +1,226 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Weygand_ISEE1_MAG_Processed_GSE_PT60S.jsonld",
+  "name": "ISEE 1 Linearly Interpolated 60 s Resolution Tri-axial Fluxgate Magnetometer in GSE Coordinates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Weygand_ISEE1_MAG_Processed_GSE_PT60S.jsonld",
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://vmo.igpp.ucla.edu/data1/Weygand/ProcessedSolarWindGSE/ISEE1/mag/",
+      "encodingFormat": "Text",
+      "name": "IGPP UCLA ISEE-1 Magnetometer Data JMW Processed Solar Wind Archive",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Weygand/ISEE1/MAG/Processed/GSE/PT60S",
+  "creditText": "ISEE 1 Linearly Interpolated 60 s Resolution Tri-axial Fluxgate Magnetometer in GSE Coordinates.",
+  "description": "ISEE-1 linearly interpolated to have the measurements on the minute at 60 s resolution tri-axial fluxgate magnetometer data in GSE coordinates. This data set consists of processed solar wind data that has been linearly interpolated to 1 min resolution at the position of the spacecraft using the interp1.m function in MATLAB. This data set was originally constructed by Dr. J.M. Weygand for Prof. R.L. McPherron, who was the principle investigator of two National Science Foundation studies: GEM Grant ATM 02-1798 and a Space Weather Grant ATM 02-08501. These data were primarily used in superposed epoch studies and cross correlation studies on solar wind.",
+  "abstract": "ISEE-1 linearly interpolated to have the measurements on the minute at 60 s resolution tri-axial fluxgate magnetometer data in GSE coordinates. This data set consists of processed solar wind data that has been linearly interpolated to 1 min resolution at the position of the spacecraft using the interp1.m function in MATLAB. This data set was originally constructed by Dr. J.M. Weygand for Prof. R.L. McPherron, who was the principle investigator of two National Science Foundation studies: GEM Grant ATM 02-1798 and a Space Weather Grant ATM 02-08501. These data were primarily used in superposed epoch studies and cross correlation studies on solar wind.",
+  "temporalCoverage": "Start date: 1977-10-01T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Interpolated universal time columns from left to right are: day month year hour minute sec in the format of dd mm yyyy hh mm ss.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Minute",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Second",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE-1 Magnetic Field Vector Interpolated to 1 min Resolution in GSE Coordinates",
+      "description": "Magnetic field vector for ISEE-1 in GSE coordinates in units of nT.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "BX-GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BY-GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BZ-GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Magnetic Field Vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE-1 Spacecraft Position Vector Interpolated to 1 min Resolution in GSE Coordinates",
+      "description": "Location of the spacecraft in GSE coordinates in units of Re.",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X-GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y-GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z-GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Position Vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    "1 min",
+    "magnetometer",
+    "solar wind",
+    "magnetotail",
+    "bow shock",
+    "magnetopause",
+    "ISEE-1",
+    "magnetic field"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

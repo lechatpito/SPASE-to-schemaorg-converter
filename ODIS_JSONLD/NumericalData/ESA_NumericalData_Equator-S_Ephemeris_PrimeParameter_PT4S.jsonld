@@ -1,0 +1,614 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Equator-S_Ephemeris_PrimeParameter_PT4S.jsonld",
+  "name": "Equator-S Epheneris and Auxiliary Prime Parameter 4 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Equator-S_Ephemeris_PrimeParameter_PT4S.jsonld",
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/NumericalData/Equator-S/Ephemeris/PrimeParameter/PT4S",
+  "creditText": "Equator-S Epheneris and Auxiliary Prime Parameter 4 s Data.",
+  "description": "Equator-S Auxiliary Data Prime Parameters. EQUATOR-S was a Low-Cost Mission designed to study the Earth's Equatorial Magnetosphere out to Distances of about 10 Re and it formed Element of the Closely-Coordinated Fleet of Satellites that comprise the IASTP Program. Equator-S was based on a Simple Spacecraft Design and carries a Science Payload consisting of advanced Instruments that were developed for other IASTP Missions. Unique Features of EQUATOR-S were its nearly Equatorial Orbit and its High Spin Rate. It was launched as an Auxiliary Payload on an Ariane-4 Rocket on December 2, 1997. The Mission was intended for a Two-Year Lifetime. See the Equator-S Data Center Manual, EQS-MPE-EDC-01, Section 4.8 AUX",
+  "abstract": "Equator-S Auxiliary Data Prime Parameters. EQUATOR-S was a Low-Cost Mission designed to study the Earth's Equatorial Magnetosphere out to Distances of about 10 Re and it formed Element of the Closely-Coordinated Fleet of Satellites that comprise the IASTP Program. Equator-S was based on a Simple Spacecraft Design and carries a Science Payload consisting of advanced Instruments that were developed for other IASTP Missions. Unique Features of EQUATOR-S were its nearly Equatorial Orbit and its High Spin Rate. It was launched as an Auxiliary Payload on an Ariane-4 Rocket on December 2, 1997. The Mission was intended for a Two-Year Lifetime. See the Equator-S Data Center Manual, EQS-MPE-EDC-01, Section 4.8 AUX",
+  "temporalCoverage": "Start date: 1997-12-16T11:25:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, since 0 A.D.",
+      "description": "Epoch Time, Milliseconds since 0 A.D., Interval Centered, rounded to nearest Millisecond",
+      "unitText": "ms",
+      "minValue": "01-Jan-1994 00:00:00.000",
+      "maxValue": "01-Jan-2020 00:00:00.000",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter exhibits an increasing monotonic progression."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.2924580219904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.3745034619904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Status",
+      "description": "Spacecraft Status, Scalar",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_status"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: none"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "255"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, GSE",
+      "description": "Spacecraft Position, Geocentric Solar Ecliptic, GSE, Cartesian Coordinates",
+      "unitText": "km",
+      "minValue": "-150000.0",
+      "maxValue": "150000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_r_xyz_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-130000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "130000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Velocity, GSE",
+      "description": "Spacecraft Velocity, Geocentric Solar Ecliptic, GSE, Cartesian Coordinates",
+      "unitText": "km/s",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_v_xyz_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-10.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "10.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Latitude, GSE",
+      "description": "Spacecraft Latitude, Geocentric Solar Ecliptic, GSE, Spherical Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_at_lat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Lat, GSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Longitude, GSE",
+      "description": "Spacecraft Longitude, Geocentric Solar Ecliptic, GSE, Spherical Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_at_long"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Long, GSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "360.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Telemetry Rate",
+      "description": "Telemetry Rate, Low or High, Scalar",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.1",
+      "defaultValue": "-1.0e-31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tm_rate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: none"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "TM Rate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rotation Angle, GSE to GSM",
+      "description": "Rotation Angle, GSE to GSM, Scalar",
+      "unitText": "\u00b0",
+      "minValue": "-35.0",
+      "maxValue": "35.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gse_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GSE_GSM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-35.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "35.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dipole Tilt in the GSM X-Z Plane",
+      "description": "Dipole Tilt in the GSM X-Z Plane, Scalar",
+      "unitText": "\u00b0",
+      "minValue": "-35.0",
+      "maxValue": "35.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "dipole_tilt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Pole_Tilt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-35.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "35.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

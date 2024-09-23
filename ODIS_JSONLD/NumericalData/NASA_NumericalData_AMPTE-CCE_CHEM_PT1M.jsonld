@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_AMPTE-CCE_CHEM_PT1M.jsonld",
+  "name": "AMPTE-CCE CHEM Data at JHU/APL",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_AMPTE-CCE_CHEM_PT1M.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://sd-www.jhuapl.edu/AMPTE/chem/index.html",
+      "encodingFormat": "FITS",
+      "name": "AMPTE/CCE Science Data Center",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/AMPTE-CCE/CHEM/PT1M",
+  "creditText": "AMPTE-CCE CHEM Data at JHU/APL.",
+  "description": "AMPTE-CCE CHEM data consist of rates and fluxes of ions H through Fe with energies between 3 and 300 keV/q, as functions of mass, mass/charge, energy, and\narrival direction.  Time resolution in the Earth's magnetosphere and magntosheath is less than 1 minute.  Data were originally in VMS binary.  Data are now in daily gzipped FITS files as translated from the original VMS binaries.",
+  "abstract": "AMPTE-CCE CHEM data consist of rates and fluxes of ions H through Fe with energies between 3 and 300 keV/q, as functions of mass, mass/charge, energy, and\narrival direction.  Time resolution in the Earth's magnetosphere and magntosheath is less than 1 minute.  Data were originally in VMS binary.  Data are now in daily gzipped FITS files as translated from the original VMS binaries.",
+  "temporalCoverage": "Start date: 1984-08-21T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    "EnergeticParticles",
+    "IonComposition"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

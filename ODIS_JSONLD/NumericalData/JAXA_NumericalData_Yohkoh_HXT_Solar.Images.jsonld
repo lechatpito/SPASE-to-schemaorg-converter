@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Yohkoh_HXT_Solar.Images.jsonld",
+  "name": "Yohkoh HXT Solar Images",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Yohkoh_HXT_Solar.Images.jsonld",
+  "sdDatePublished": "2019-08-15",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ylstone.physics.montana.edu/ylegacy/weekdirs/",
+      "encodingFormat": "FITS",
+      "name": "via http from Montana",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://umbra.nascom.nasa.gov/pub/yohkoh/online_archive/",
+      "encodingFormat": "FITS",
+      "name": "via https from GSFC/SDAC",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sdac.virtualsolar.org/cgi/search",
+      "encodingFormat": "FITS",
+      "name": "from Montana via VSO",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://JAXA/NumericalData/Yohkoh/HXT/Solar.Images",
+  "creditText": "Yohkoh HXT Solar Images.",
+  "description": "Yohkoh HXT (Hard X ray Telescope) Solar Images. HXT had the following characteristics: effective area: 70 sq. cm, time resolution of 2 s, angular resolution ~5 arc s FWHM, energy range 15-100 keV",
+  "abstract": "Yohkoh HXT (Hard X ray Telescope) Solar Images. HXT had the following characteristics: effective area: 70 sq. cm, time resolution of 2 s, angular resolution ~5 arc s FWHM, energy range 15-100 keV",
+  "temporalCoverage": "Start date: 1991-09-03T00:00:00. Relative stop date: None",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

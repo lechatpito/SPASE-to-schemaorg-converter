@@ -1,0 +1,426 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_MAVEN_MAG_SunState_Level2_PT1S.jsonld",
+  "name": "MAVEN Magnetometer (MAG) Magnetic Field and Orbital Position, Sun-State and Payload Coordinates, Level 2 (L2), 1 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_MAVEN_MAG_SunState_Level2_PT1S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/MAVEN/MAG/SunState/Level2/PT1S",
+  "creditText": "MAVEN Magnetometer (MAG) Magnetic Field and Orbital Position, Sun-State and Payload Coordinates, Level 2 (L2), 1 s Data.",
+  "description": "The MAVEN Magnetic Field Investigation is Part of a comprehensive Particles and Fields Subsystem that will measure the Magnetic and Electric Fields and Plasma Environment of Mars and its Interaction with the Solar Wind. This Data Product includes Magnetic Field Observations in Sun-State and Payload Coordinates. Sun-State, SS, Coordinate System wherein the Primary Reference Vector, the X-axis, points from the Object, in this case Mars, to the Sun and the Secondary Reference Vector, the Y-axis, is in the Mars Orbit Plane, which is approximately opposite to Orbital Motion Direction, such that the Z-axis is Northward. The Observations Spacecraft Payload, PL, Coordinates are suitable for use in association with Measurements obtained by other Instruments on the Spacecraft. The Spacecraft Payload Coordinate System and the MAG Sensor Coordinate Systems are illustrated in Figure 21 of Connerney et al., 2015. The Text appearing here is also adapted from Connerney et al., 2015.",
+  "abstract": "The MAVEN Magnetic Field Investigation is Part of a comprehensive Particles and Fields Subsystem that will measure the Magnetic and Electric Fields and Plasma Environment of Mars and its Interaction with the Solar Wind. This Data Product includes Magnetic Field Observations in Sun-State and Payload Coordinates. Sun-State, SS, Coordinate System wherein the Primary Reference Vector, the X-axis, points from the Object, in this case Mars, to the Sun and the Secondary Reference Vector, the Y-axis, is in the Mars Orbit Plane, which is approximately opposite to Orbital Motion Direction, such that the Z-axis is Northward. The Observations Spacecraft Payload, PL, Coordinates are suitable for use in association with Measurements obtained by other Instruments on the Spacecraft. The Spacecraft Payload Coordinate System and the MAG Sensor Coordinate Systems are illustrated in Figure 21 of Connerney et al., 2015. The Text appearing here is also adapted from Connerney et al., 2015.",
+  "temporalCoverage": "Start date: 2014-10-10T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000",
+      "description": "Epoch Time, Terrestrial Time 2000, TT2000, Coordinated Universal Time, UTC, elapsed since 2000-0101 12:00:00.000 including Leap Seconds",
+      "unitText": "ns",
+      "minValue": "2013-11-17T23:59:59.999999999",
+      "maxValue": "2040-12-31T23:58:58.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "unitCode": "1.0e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This Parameter exhibits an increasing Monotonic Progression"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "TT2000"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E25.18"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Decimal Day",
+      "description": "Decimal Day",
+      "unitText": "",
+      "minValue": "1.0",
+      "maxValue": "367.0",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DDAY"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "dday"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F13.9"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Outboard Magnetic Field Vector, Sun-State Cartesian Coordinates",
+      "description": "Outboard Magnetic Field Vector, Sun-State, SS, Cartesian Coordinates",
+      "unitText": "nT",
+      "minValue": "-1.0e+10",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0e-9>T",
+      "measurementTechnique": "Cartesian SpacecraftOrbitPlane",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "OB_B"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "OB_B"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F9.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Outboard Magnetometer Dynamic Range Setting, Sun-State",
+      "description": "Outboard Magnetometer Dynamic Range Setting, Sun-State, SS, Coordinates",
+      "unitText": "",
+      "minValue": "-1.0e+10",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "OB_B_range"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "The MAVEN Magnetometer operates in one of three Dynamic Range Modes with corresponding Digital Resolutions. The Dynamic Ranges are: 512 nT with a Digital Resolution equal to 0.015625 nT, 2048 nT with a Digital Resolution equal to 0.0625 nT, and 65536 nT with a Digital Resolution equal to 2.0 nT."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "OB_B range"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F9.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position Vector, Sun-State Cartesian Coordinates",
+      "description": "Spacecraft Position Vector, Sun-State, SS, Cartesian Coordinates",
+      "unitText": "km",
+      "minValue": "-1.0e+13",
+      "maxValue": "1.0e+13",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0e3>m",
+      "measurementTechnique": "Cartesian SpacecraftOrbitPlane",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "POSN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "OB_B"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F14.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Outboard Magnetic Field Vector, Payload Cartesian Coordinates",
+      "description": "Outboard Magnetic Field Vector, Payload Cartesian Coordinates",
+      "unitText": "nT",
+      "minValue": "-1.0e+10",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0e-9>T",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "OB_BDPL"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "OB_BDPL"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Outboard Magnetometer Dynamic Range Setting, Payload",
+      "description": "Outboard Magnetometer Dynamic Range Setting, Payload Coordinates",
+      "unitText": "",
+      "minValue": "-1.0e+10",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "OB_BDPL_range"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "dday"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F4.0"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

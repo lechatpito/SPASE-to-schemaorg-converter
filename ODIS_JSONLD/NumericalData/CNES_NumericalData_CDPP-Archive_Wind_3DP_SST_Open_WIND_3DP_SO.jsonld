@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Wind_3DP_SST_Open_WIND_3DP_SO.jsonld",
+  "name": "WIND 3DP SST-SO Protons (50 keV - 5 MeV) Alpha particles (6.7 MeV)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Wind_3DP_SST_Open_WIND_3DP_SO.jsonld",
+  "sdDatePublished": "2022-09-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:WIND_3DP_SO",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Wind/3DP/SST_Open/WIND_3DP_SO",
+  "creditText": "WIND 3DP SST-SO Protons (50 keV - 5 MeV) Alpha particles (6.7 MeV).",
+  "description": "This data set contains three-dimensionnal distribution functions of protons  (50 keV - 5 MeV) and  alpha particles (6.7 MeV), provided by WIND 3-DP Solid State Telescope Open, not corrected for calibration factors and are given in raw counts.\nThus they correspond to a Level 1 data processing on ground, and they can be transformed into physical units by multiplying them by a calibration factor and using the appropriate geometric factor.",
+  "abstract": "This data set contains three-dimensionnal distribution functions of protons  (50 keV - 5 MeV) and  alpha particles (6.7 MeV), provided by WIND 3-DP Solid State Telescope Open, not corrected for calibration factors and are given in raw counts.\nThus they correspond to a Level 1 data processing on ground, and they can be transformed into physical units by multiplying them by a calibration factor and using the appropriate geometric factor.",
+  "temporalCoverage": "Start date: 1994-11-20T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "WIND 3DP SST Open   Proton Energy-Angle Distributions",
+      "description": "WIND 3DP SST Foil Open   Proton Energy-Angle Distributions",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "WIND 3DP SST Open   Alpha Energy-Angle Distributions",
+      "description": "WIND 3DP SST Foil Open   Alpha  Energy-Angle Distributions",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

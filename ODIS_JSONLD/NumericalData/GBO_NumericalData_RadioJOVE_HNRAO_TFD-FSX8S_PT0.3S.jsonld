@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_RadioJOVE_HNRAO_TFD-FSX8S_PT0.3S.jsonld",
+  "name": "Radio JOVE HNRAO Terminated Folded Dipole and FSX-8S 15-30 MHZ Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_RadioJOVE_HNRAO_TFD-FSX8S_PT0.3S.jsonld",
+  "sdDatePublished": "2022-02-19",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/RadioJOVE/HNRAO/TFD-FSX8S/PT0.3S",
+  "creditText": "Radio JOVE HNRAO Terminated Folded Dipole and FSX-8S 15-30 MHZ Data.",
+  "description": "RadioJOVE Multiple Frequency Data Product. This data set consists of observations made at the Hawk's Nest Radio Astronomy Observatory (HNRAO) using a Terminated Folded Dipole and an FSX-8S 12 bit switching dual polarization spectrograph. These data are generated using the Radio Sky Spectrograph software. The data set consists of two channels of data. Channel 1 is Right Circular Polarization and Channel 2 is Left Circular Polarization.\n\nThese data may include observations of Solar Radio Bursts, Jupiter decametric radio emission, or Galactic Background radio emission.\n\nThe Radio-Sky Spectrograph produced datafiles consist of a fixed length header and a variable length note. The data portion of the file for two channel data consists of an 8 byte timestamp using the VisualBasic 6 date format (days since 1 Jan 1900) followed by two 8 byte data values (Channel 1 followed by Channel 2), this pattern repeats until the end of file. More details can be found in the Data File Structure document on the Radio-SkyPipe help page (see Information URL).\n\nThese data are submitted to the RadioJOVE Archive and to the PDS/PPI archive at UCLA.",
+  "abstract": "RadioJOVE Multiple Frequency Data Product. This data set consists of observations made at the Hawk's Nest Radio Astronomy Observatory (HNRAO) using a Terminated Folded Dipole and an FSX-8S 12 bit switching dual polarization spectrograph. These data are generated using the Radio Sky Spectrograph software. The data set consists of two channels of data. Channel 1 is Right Circular Polarization and Channel 2 is Left Circular Polarization.\n\nThese data may include observations of Solar Radio Bursts, Jupiter decametric radio emission, or Galactic Background radio emission.\n\nThe Radio-Sky Spectrograph produced datafiles consist of a fixed length header and a variable length note. The data portion of the file for two channel data consists of an 8 byte timestamp using the VisualBasic 6 date format (days since 1 Jan 1900) followed by two 8 byte data values (Channel 1 followed by Channel 2), this pattern repeats until the end of file. More details can be found in the Data File Structure document on the Radio-SkyPipe help page (see Information URL).\n\nThese data are submitted to the RadioJOVE Archive and to the PDS/PPI archive at UCLA.",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "The time array of the data. The time resolution is variable but is typically set at about 0.3 seconds",
+      "unitText": "Days since 1 January 1900",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Channel 1 Data - Right Circular Polarization",
+      "description": "",
+      "unitText": "KiloKelvins",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Channel 2 Data - Left Circular Polarization",
+      "description": "",
+      "unitText": "KiloKelvins",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

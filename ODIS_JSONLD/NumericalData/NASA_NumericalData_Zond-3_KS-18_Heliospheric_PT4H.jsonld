@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Zond-3_KS-18_Heliospheric_PT4H.jsonld",
+  "name": "Russian MSU Zond-3 Heliopsheric Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Zond-3_KS-18_Heliospheric_PT4H.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Natalia.E.Papitashvili",
+    "url": "http://hpde.io/SMWG/Person/Natalia.E.Papitashvili"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/russian_msu/zond-3/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In ASCII via SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/russian_msu/zond-3/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Zond-3/KS-18/Heliospheric/PT4H",
+  "creditText": "Russian MSU Zond-3 Heliopsheric Data.",
+  "description": "This set of heliospheric data in ASCII contains measurements of energetic particles by the KS-18 instrument onboard the third Russian space probe of the Zond series at heliocentric distances larger than 1 AU.  It includes proton flux intensities at >30 MeV energy from Sun (gas-discharge counter) and at 1-5 MeV energy arriving from the direction perpendicular to the Sun-spacecraft line (stand-alone SSD sensor of 35 micron Si). Subdirectory /lownoise contains the same measured data but in its extra-rectified variant.  Besides the trajectory data in two coordinate systesms, there are overview plots in GIF.",
+  "abstract": "This set of heliospheric data in ASCII contains measurements of energetic particles by the KS-18 instrument onboard the third Russian space probe of the Zond series at heliocentric distances larger than 1 AU.  It includes proton flux intensities at >30 MeV energy from Sun (gas-discharge counter) and at 1-5 MeV energy arriving from the direction perpendicular to the Sun-spacecraft line (stand-alone SSD sensor of 35 micron Si). Subdirectory /lownoise contains the same measured data but in its extra-rectified variant.  Besides the trajectory data in two coordinate systesms, there are overview plots in GIF.",
+  "temporalCoverage": "Start date: 1965-07-19T00:00:00. Relative stop date: None",
+  "variableMeasured": "EnergeticParticles",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

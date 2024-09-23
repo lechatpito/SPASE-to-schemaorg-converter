@@ -1,0 +1,343 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Cluster_Cluster4_STAFF_clust4-sta-pp.jsonld",
+  "name": "Cluster 4 - STAFF - prime parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Cluster_Cluster4_STAFF_clust4-sta-pp.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Patrick.Canu",
+    "url": "http://hpde.io/SMWG/Person/Patrick.Canu"
+  },
+  "sdDatePublished": "2013-04-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Cluster/Cluster4/STAFF/clust4-sta-pp",
+  "creditText": "Cluster 4 - STAFF - prime parameters.",
+  "description": "\n                The STAFF Spectrum Analyser (SA) combines the 3 magnetic components of the waves with the two electric components measured by the EFW experiment to calculate in real time the 5x5 Hermitian cross-spectral matrix at 27 frequencies distributed logarithmically in the frequency range 8 Hz to 4 kHz. \nThe components in the spin plane are despun onboard. The five auto-spectral power estimates are obtained with a dynamic range of approximately 100 dB and an average amplitude resolution of 0.38 dB.\nThe 10 cross-spectral power estimates are normalised to give the coherence. The precision of the phase depends upon the magnitude of the coherence: for a signal with magnitude in the highest bin, it is approximately 5 degree close to 0 degree, 180 degree, and +/- 90 degree, increasing to about 10 degree midway between these angles. \nThe Spectrum Analyser can work in different modes, in Burst Mode the analysis is performed in \nthe frequency range 64 Hz - 4 kHz.\nThis dataset contains preliminary spin resolution measurements of the magnetic field spectral density and electric field spectral density from the STAFF Spectrum Analyser experiment on the Cluster C1 spacecraft.\nThese data have been converted into Cluster Exchange Format from the orignal Cluster Science Data System Common Data Format (CDF) Prime Parameter files that were made available through the Cluster Science Data System.              \n            ",
+  "abstract": "\n                The STAFF Spectrum Analyser (SA) combines the 3 magnetic components of the waves with the two electric components measured by the EFW experiment to calculate in real time the 5x5 Hermitian cross-spectral matrix at 27 frequencies distributed logarithmically in the frequency range 8 Hz to 4 kHz. \nThe components in the spin plane are despun onboard. The five auto-spectral power estimates are obtained with a dynamic range of approximately 100 dB and an average amplitude resolution of 0.38 dB.\nThe 10 cross-spectral power estimates are normalised to give the coherence. The precision of the phase depends upon the magnitude of the coherence: for a signal with magnitude in the highest bin, it is approximately 5 degree close to 0 degree, 180 degree, and +/- 90 degree, increasing to about 10 degree midway between these angles. \nThe Spectrum Analyser can work in different modes, in Burst Mode the analysis is performed in \nthe frequency range 64 Hz - 4 kHz.\nThis dataset contains preliminary spin resolution measurements of the magnetic field spectral density and electric field spectral density from the STAFF Spectrum Analyser experiment on the Cluster C1 spacecraft.\nThese data have been converted into Cluster Exchange Format from the orignal Cluster Science Data System Common Data Format (CDF) Prime Parameter files that were made available through the Cluster Science Data System.              \n            ",
+  "temporalCoverage": "Start date: 2001-01-09T09:05:03Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b spectral density (1-10 Hz)",
+      "description": "Magnetic field spectral power in the 1-10 Hz (f1) at spin time resolution (parallel and perp components) \n            ",
+      "unitText": "nT^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0e-18>T^2 Hz^-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "parallel to b0",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "perpendicular to b0",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "c4_sta_f1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b spectral density (10-180 Hz)",
+      "description": "Magnetic field spectral power in the 10-180 Hz (f2) at spin time resolution (parallel and perp components)                 \n            ",
+      "unitText": "nT^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0e-18>T^2 Hz^-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "parallel to b0",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "perpendicular to b0",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "c4_sta_f2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b spectral density (180-4000 Hz)",
+      "description": " Magnetic field spectral power in the 80-4000 Hz (f3) at spin time resolution (parallel and perp components)  \n            ",
+      "unitText": "nT^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0e-18>T^2 Hz^-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "parallel to b0",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "perpendicular to b0",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "c4_sta_f3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e spectral density (10-180 Hz)",
+      "description": " Electric field spectral power in the 10-180 Hz (f2) frequency range at spin time resolution.\n            ",
+      "unitText": "V^2 m^-2 Hz^-1",
+      "minValue": "1.0000e-14",
+      "maxValue": "1.0000e-4",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0>V^2 m^-2 Hz^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "c4_stae_f2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "E_pow_f2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "1.0000e-13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0000e-5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e spectral density (180-4000 Hz)",
+      "description": "Electric field spectral power in the 180-4000 Hz (f3) frequency range at spin time resolution. \n            ",
+      "unitText": "V^2 m^-2 Hz^-1",
+      "minValue": "1.0000e-15",
+      "maxValue": "1.0000e-6",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0>V^2 m^-2 Hz^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "c4_stae_f3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "E_pow_f3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "1.0000e-14"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0000e-7"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "keywords": [
+    "4 second",
+    "magnetosphere",
+    "auroral region",
+    "polar cap",
+    "cusp",
+    "bow shock",
+    "solar wind",
+    "magnetosheath",
+    "Cluster",
+    "magnetotail",
+    "lobe"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

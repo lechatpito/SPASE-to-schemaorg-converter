@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DEMETER_IMSC_DMT_N1_1136.jsonld",
+  "name": "DMT_N1_1136 : IMSC - Waveform of the VLF Magnetic Field (1 component)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DEMETER_IMSC_DMT_N1_1136.jsonld",
+  "sdDatePublished": "2021-11-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DMT_N1_1136",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/DEMETER/IMSC/DMT_N1_1136",
+  "creditText": "DMT_N1_1136 : IMSC - Waveform of the VLF Magnetic Field (1 component).",
+  "description": "This data set contains DEMETER IMSC (magnetic field experiment) - Waveform of the VLF Magnetic Field (3 components, frequency range 15Hz - 1kHz)",
+  "abstract": "This data set contains DEMETER IMSC (magnetic field experiment) - Waveform of the VLF Magnetic Field (3 components, frequency range 15Hz - 1kHz)",
+  "temporalCoverage": "Start date: 2004-07-05T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "VLF Magnetic Field B1",
+      "description": "VLF magnetic field component B1 in sensor coordinate system",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VLF Magnetic Field B2",
+      "description": "VLF magnetic field component B2 in sensor coordinate system",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VLF Magnetic Field B3",
+      "description": "VLF magnetic field component B3 in sensor coordinate system",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

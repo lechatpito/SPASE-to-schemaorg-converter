@@ -1,0 +1,248 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Solar_Orbiter_MAG_solo-mag-8s.jsonld",
+  "name": "SolarOrbiter - MAG - LL (Low Latency)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Solar_Orbiter_MAG_solo-mag-8s.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-AMDA/Tim.Horbury",
+    "url": "http://hpde.io/CNES/Person/CDPP-AMDA/Tim.Horbury"
+  },
+  "sdDatePublished": "2023-02-14",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/MAG/solo-mag-8s",
+  "creditText": "SolarOrbiter - MAG - LL (Low Latency).",
+  "description": "LL02 : Level 2 Low Latency Data : Not For Publication \n              \n             The MAG Low Latency data are a useful resource but should be used with caution: \n             they contain many artificial signals, are not of a high enough quality to undertake \n             science analysis and results derived from them should not submitted for publication.\n             \n             Routine processing of the MAG data on the ground removes the vast majority of these signals but the \n             automated nature of the pipeline at ESA/ESAC means that this cannot be applied to the Low Latency data stream. \n             The MAG team intends to provide a cleaned version of the MAG data in the near future which should be used in \n             preference to the Low Latency data. We also expect to release full science-quality level 2 data products to the \n             ESA archive from September 2020.",
+  "abstract": "LL02 : Level 2 Low Latency Data : Not For Publication \n              \n             The MAG Low Latency data are a useful resource but should be used with caution: \n             they contain many artificial signals, are not of a high enough quality to undertake \n             science analysis and results derived from them should not submitted for publication.\n             \n             Routine processing of the MAG data on the ground removes the vast majority of these signals but the \n             automated nature of the pipeline at ESA/ESAC means that this cannot be applied to the Low Latency data stream. \n             The MAG team intends to provide a cleaned version of the MAG data in the near future which should be used in \n             preference to the Low Latency data. We also expect to release full science-quality level 2 data products to the \n             ESA archive from September 2020.",
+  "temporalCoverage": "Start date: 2020-06-03T14:28:15Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_rtn",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian RTN",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "br",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bt",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bn",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Component.I",
+            "Component.J",
+            "Component.K"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "solo_b_rtn_8s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_srf",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Component.I",
+            "Component.J",
+            "Component.K"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "solo_b_srf_8s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "solo_b_tot_8s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi",
+      "description": "Magnetic field phi angle",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9&gt;T",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "solo_b_rtn_8s_phi"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta",
+      "description": "Magnetic field theta angle",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9&gt;T",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "solo_b_rtn_8s_theta"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

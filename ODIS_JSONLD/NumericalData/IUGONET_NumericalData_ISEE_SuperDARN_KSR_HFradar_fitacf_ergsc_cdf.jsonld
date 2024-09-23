@@ -1,0 +1,1006 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_ISEE_SuperDARN_KSR_HFradar_fitacf_ergsc_cdf.jsonld",
+  "name": "The common time fitacf CDF data of SuperDARN King Salmon HF radar distributed by ERG-SC",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_ISEE_SuperDARN_KSR_HFradar_fitacf_ergsc_cdf.jsonld",
+  "sdDatePublished": "2011-04-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://ergsc.isee.nagoya-u.ac.jp/index.shtml.en",
+      "encodingFormat": "CDF",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/ISEE/SuperDARN/KSR/HFradar/fitacf_ergsc_cdf",
+  "creditText": "The common time fitacf CDF data of SuperDARN King Salmon HF radar distributed by ERG-SC.",
+  "description": "Common time fitacf data obtained by SuperDARN King Salmon HF radar. The data set consists primarily of the backscatter power, spectral width, and Doppler velocity derived with radar echoes in the field-of-view of the radar beams with time resolutions of 1-2 min. Data files are distributed in the Common Data Format (CDF) through the ERG-SC repository",
+  "abstract": "Common time fitacf data obtained by SuperDARN King Salmon HF radar. The data set consists primarily of the backscatter power, spectral width, and Doppler velocity derived with radar echoes in the field-of-view of the radar beams with time resolutions of 1-2 min. Data files are distributed in the Common Data Format (CDF) through the ERG-SC repository",
+  "temporalCoverage": "Start date: 2006-12-02T00:00:00. Relative stop date: -P14D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware station ID",
+      "description": "The unique numeric ID of the radar",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware year",
+      "description": "This and the next parameter describe the date up until which the radar configuration described in the hardware parameter",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware second of year",
+      "description": "This and the previous parameter describe the date up until which the radar configuration described in the hardware parameter",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware Geog. Latitude",
+      "description": "The geographic latitude of the radar location, given in decimal degrees to 3 decimal places. Southern hemisphere values are negative",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware Geog. Longitude",
+      "description": "The geographic longitude of the radar location, in degree given in decimal degrees to 3 decimal places. West longitude values are negative",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware altitude",
+      "description": "The altitude above sealevel of the radar location, in meter",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware Scanning Boresite",
+      "description": "The direction of the center of the field-of-view of the radar, in degree, relative to geographic North, positive clockwise",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware beam separation",
+      "description": "The angular separation of two adjacent beams, in degree. Normally 3.24 degrees",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware vdir",
+      "description": "The sign of the velocity direction, either +1 or -1, usually +1.(At the radar level, backscattered signals with frequencies above the transmitted frequency are assigned positive Doppler velocities while backscattered signals with frequencies below the transmitted frequency are assigned negative Doppler velocity. This convention can be reversed by changes in receiver design or in the data samping rate. This parameter is set to +1 or -1 to maintain the convention.)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware Attenuation Step",
+      "description": "The step size of the receiver attenuation in dB",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware Time Difference",
+      "description": "The relative time delay of signal paths from the interferometer array to the receiver and the main array to the receiver, in microseconds",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware phidiff",
+      "description": "The sign of the phase shift between interferometer and main array, either +1 or -1, usually +1",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware Interferometer Array Position",
+      "description": "The offset distance between the mid points of the interferometer and main array, (1st component) in the direction along the main array, positive towards higher antenna numbers, (2nd component) in the direction perpendicular to the main array, positive values indicate that the interferometer array is in front of the main array, (3rd component) in the vertical direction, positive up, in meter",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hardware Receiver Rise Time",
+      "description": "The rise time of the analog receiver, in microseconds",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "rgate_no_0",
+      "description": "The range gate number for each pixel observed sequantially by the radar for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "position_tbl_0",
+      "description": "The table of geographical Latitudes and longitudes [deg] for the reflection points of radar echoes for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch_0",
+      "description": "The start time of each beam observation sequence in the CDF epoch format for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cpid_0",
+      "description": "ID of observation mode for 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "channel_0",
+      "description": "ID of the channel used for the observation for the 75 range gate measurement. This value should be either of 0 (non-stereo radar) or 1 (channelA of a stereo radar)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "int_time_0",
+      "description": "Integration time over which received pulses are integrated to derive the fitting parameters for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "azim_no_0",
+      "description": "Number of the azimuthal direction of radar beam for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr_0",
+      "description": "Backscatter power of radar echoes for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr_err_0",
+      "description": "Error of Backscatter power of radar echoes for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "spec_width_0",
+      "description": "Spectral widths of radar echoes for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "spec_width_err_0",
+      "description": "Error of spectral widths of radar echoes for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vlos_0",
+      "description": "Doppler velocity of radar echoes for the 75 range mode measurement. This Doppler velocity corresponds to the bulk velocity of ionospheric electrons perpendicular to the ambient magnetic field",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vlos_err_0",
+      "description": "Error of Doppler velocity of radar echoes for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elev_angle_0",
+      "description": "Elevation angle of returning HF waves observed by a set of the main antennas and the interferometers for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electromagnetic",
+          "description": "DirectionAngle.ElevationAngle"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elev_angle_err_0",
+      "description": "Error of elevation angle for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electromagnetic",
+          "description": "DirectionAngle.ElevationAngle"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi_0",
+      "description": "Phase offset derived by calculating the auto correlation function (ACF) for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi_err_0",
+      "description": "Error of phase offset for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "echo_flag_0",
+      "description": "Echo flag (ionospheric/ground) of radar echoes for 75 range gate measurement. 1: ionospheric echo, 0: ground scatter, based on the empirical criteria by Millan et al.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality_0",
+      "description": "Data quality flag of radar echoes for the 75 range gate measurement. This value is how many criteria (described in \"quality_flag_?\" in detail) are satisfied. 0 means that no condition for bad/poor data is satisfied, that is, the data is in good shape. The data quality becomes worse as quality_? increases",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality_flag_0",
+      "description": "Breakdown of judgements for criteria in evaluating the data quality flag of radar echoes for the 75 range gate measurement. Each bit status of this value (1 byte integer) show if each criterion is satisfied. LSB: backscatter power is less 3dB, 2nd bit: currently unused, 3rd bit: spectral width is greater than 1000 m/s, 4th bit (MSB): currently unused",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "scanno_0",
+      "description": "Serial number (in a CDF file) referring to each 2D scan. (Nominally 16) beams with the same scanno_? form a full field-of-view scan.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "scanstartflag_0",
+      "description": "If this value is 1, then the current beam is the start of a new 2D scan",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lagfr_0",
+      "description": "The lag time in microsecond for the first range gate for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "smsep_0",
+      "description": "The sampling separation in microsecond between neighboring range gates",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "nrang_max_0",
+      "description": "Maximum range gate number for the 75 range gate measurement. This should be 75",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tfreq_0",
+      "description": "Frequency in kHz of transmitted HF waves for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "noise_0",
+      "description": "Noise level (in dB) in receiving radar echoes for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "num_ave_0",
+      "description": "This value shows how many pulse sequences are integrated to evaluate ACFs for a beam",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "txpl_0",
+      "description": "Time width in microsecond of the entire pulse sequences for each range gate for the 75 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "rgate_no_2",
+      "description": "The range gate number for each pixel observed sequantially by the radar for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "position_tbl_2",
+      "description": "The table of geographical Latitudes and longitudes [deg] for the reflection points of radar echoes for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch_2",
+      "description": "The start time of each beam observation sequence in the CDF epoch format for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cpid_2",
+      "description": "ID of observation mode for 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "channel_2",
+      "description": "ID of the channel used for the observation for the 70 range gate measurement. This value should be either of 0 (non-stereo radar) or 1 (channelA of a stereo radar)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "int_time_2",
+      "description": "Integration time over which received pulses are integrated to derive the fitting parameters for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "azim_no_2",
+      "description": "Number of the azimuthal direction of radar beam for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr_2",
+      "description": "Backscatter power of radar echoes for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr_err_2",
+      "description": "Error of Backscatter power of radar echoes for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "spec_width_2",
+      "description": "Spectral widths of radar echoes for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "spec_width_err_2",
+      "description": "Error of spectral widths of radar echoes for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vlos_2",
+      "description": "Doppler velocity of radar echoes for the 70 range mode measurement. This Doppler velocity corresponds to the bulk velocity of ionospheric electrons perpendicular to the ambient magnetic field",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vlos_err_2",
+      "description": "Error of Doppler velocity of radar echoes for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elev_angle_2",
+      "description": "Elevation angle of returning HF waves observed by a set of the main antennas and the interferometers for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electromagnetic",
+          "description": "DirectionAngle.ElevationAngle"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elev_angle_err_2",
+      "description": "Error of elevation angle for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electromagnetic",
+          "description": "DirectionAngle.ElevationAngle"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi_2",
+      "description": "Phase offset derived by calculating the auto correlation function (ACF) for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi_err_2",
+      "description": "Error of phase offset for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "echo_flag_2",
+      "description": "Echo flag (ionospheric/ground) of radar echoes for 70 range gate measurement. 1: ionospheric echo, 0: ground scatter, based on the empirical criteria by Millan et al.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality_2",
+      "description": "Data quality flag of radar echoes for the 70 range gate measurement. This value is how many criteria (described in \"quality_flag_?\" in detail) are satisfied. 0 means that no condition for bad/poor data is satisfied, that is, the data is in good shape. The data quality becomes worse as quality_? increases",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality_flag_2",
+      "description": "Breakdown of judgements for criteria in evaluating the data quality flag of radar echoes for the 70 range gate measurement. Each bit status of this value (1 byte integer) show if each criterion is satisfied. LSB: backscatter power is less 3dB, 2nd bit: currently unused, 3rd bit: spectral width is greater than 1000 m/s, 4th bit (MSB): currently unused",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "scanno_2",
+      "description": "Serial number (in a CDF file) referring to each 2D scan. (Nominally 16) beams with the same scanno_? form a full field-of-view scan.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "scanstartflag_2",
+      "description": "If this value is 1, then the current beam is the start of a new 2D scan",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lagfr_2",
+      "description": "The lag time in microsecond for the first range gate for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "smsep_2",
+      "description": "The sampling separation in microsecond between neighboring range gates",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "nrang_max_2",
+      "description": "Maximum range gate number for the 70 range gate measurement. This should be 70",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tfreq_2",
+      "description": "Frequency in kHz of transmitted HF waves for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "noise_2",
+      "description": "Noise level (in dB) in receiving radar echoes for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "num_ave_2",
+      "description": "This value shows how many pulse sequences are integrated to evaluate ACFs for a beam",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "txpl_2",
+      "description": "Time width in microsecond of the entire pulse sequences for each range gate for the 70 range gate measurement",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Electric Fields/Electric Currents",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

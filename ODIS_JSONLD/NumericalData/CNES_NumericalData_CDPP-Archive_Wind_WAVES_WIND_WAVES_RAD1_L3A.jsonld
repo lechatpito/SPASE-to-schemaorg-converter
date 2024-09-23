@@ -1,0 +1,164 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Wind_WAVES_WIND_WAVES_RAD1_L3A.jsonld",
+  "name": "Wind Waves RAD1_L3A : Direction Finding Data (Unpolarized Source Assumption)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Wind_WAVES_WIND_WAVES_RAD1_L3A.jsonld",
+  "sdDatePublished": "2022-09-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:WIND_WAVES_RAD1_L3A",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Wind/WAVES/WIND_WAVES_RAD1_L3A",
+  "creditText": "Wind Waves RAD1_L3A : Direction Finding Data (Unpolarized Source Assumption).",
+  "description": "This data set contains Wind Waves RAD1  direction-finding data.\n Direction-finding inversion method has been applied on RAD1_L2 high resolution data to derive characteristics of radio emissions.\nThe method is based on the work by Manning and Fainberg, Space Science Instrumentation, 1980. It returns the absolute flux density (in W/m^2/Hz) of the radio source, as well as the azimuth, and the elevation angles (in degrees) in a RTN reference frame centered on the Wind spacecraft.\nThe method is only valid under the following criteria:\n   * Radio source is unpolarized\n   * Radio source has an uniform brightness\n   * Radio source signal remains constant at a given frequency over a spacecraft rotation (~3sec)\n   * Short antenna dipole assumption is valid\n   * Z axial antenna is not tilted\nAbsolute flux density is calibrated using radio galaxy method (see Zaslavsky et al., 2011. DOI 10.1029/2010RS004464). \nCaveat: Level 3 df data are computed with the following assumptions : (i) incoming wave properties do not change during a spacecraft rotation (~3 seconds)parameter set, (ii) radio sources are unpolarized (U=V=Q=0), (iii) galaxy radio emission is not subtracted, (iv) radio sources have an uniform brightness distribution, (v) Z antennas are not tilted",
+  "abstract": "This data set contains Wind Waves RAD1  direction-finding data.\n Direction-finding inversion method has been applied on RAD1_L2 high resolution data to derive characteristics of radio emissions.\nThe method is based on the work by Manning and Fainberg, Space Science Instrumentation, 1980. It returns the absolute flux density (in W/m^2/Hz) of the radio source, as well as the azimuth, and the elevation angles (in degrees) in a RTN reference frame centered on the Wind spacecraft.\nThe method is only valid under the following criteria:\n   * Radio source is unpolarized\n   * Radio source has an uniform brightness\n   * Radio source signal remains constant at a given frequency over a spacecraft rotation (~3sec)\n   * Short antenna dipole assumption is valid\n   * Z axial antenna is not tilted\nAbsolute flux density is calibrated using radio galaxy method (see Zaslavsky et al., 2011. DOI 10.1029/2010RS004464). \nCaveat: Level 3 df data are computed with the following assumptions : (i) incoming wave properties do not change during a spacecraft rotation (~3 seconds)parameter set, (ii) radio sources are unpolarized (U=V=Q=0), (iii) galaxy radio emission is not subtracted, (iv) radio sources have an uniform brightness distribution, (v) Z antennas are not tilted",
+  "temporalCoverage": "Start date: 1994-11-10T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Sequential sweep number",
+      "description": "Sequential sweep number in the file, starting from the first sweep of the current day",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Frequency of analysis",
+      "unitText": "kHz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>Hz",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sequential number in parent L2 data file",
+      "description": "Sequential number in parent L2 data file",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux density",
+      "description": "Absolute flux density measured at the antennas (receiver background removed) : Stokes parameter I",
+      "unitText": "W/m^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Wave vector elevation",
+      "description": "Elevation of the wave vector in the RTN reference frame centered on Wind spacecraft",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "0.0174532925>rad",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Orientation",
+        "description": "DirectionAngle.ElevationAngle"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Wave vector azimuth",
+      "description": "Azimuth of the wave vector in the RTN reference frame centered on Wind spacecraft",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "0.0174532925>rad",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Orientation",
+        "description": "DirectionAngle.AzimuthAngle"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radio source angular radius",
+      "description": "Radio source angular radius, assuming an uniform brightness distribution.",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "0.0174532925>rad",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Signal modulation rate",
+      "description": "Signal modulation rate",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

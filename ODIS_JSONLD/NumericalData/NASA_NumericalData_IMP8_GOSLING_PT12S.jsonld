@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_IMP8_GOSLING_PT12S.jsonld",
+  "name": "IMP 8 LANL 12-s Magnetotail Plasma Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_IMP8_GOSLING_PT12S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/John.T.Gosling",
+    "url": "http://hpde.io/SMWG/Person/John.T.Gosling"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/imp/imp8/plasma_lanl/magnetotail_12s/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/imp/imp8/plasma_lanl/magnetotail_12s/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/IMP8/GOSLING/PT12S",
+  "creditText": "IMP 8 LANL 12-s Magnetotail Plasma Data.",
+  "description": "This data set contains IMP 8 LANL 12-s solar wind plasma parameters from the magnetotail. Parameters included are proton density flow speed and azimuthal direction, and min and max temperatures; alpha particle parameters are given relative to protons: Abundance and temperature ratios, and relative flow speeds and directions. Alpha temperature anisotropy, and azimuthal angles of both proton and alpha pressure tensor symmetry axis are also given. ",
+  "abstract": "This data set contains IMP 8 LANL 12-s solar wind plasma parameters from the magnetotail. Parameters included are proton density flow speed and azimuthal direction, and min and max temperatures; alpha particle parameters are given relative to protons: Abundance and temperature ratios, and relative flow speeds and directions. Alpha temperature anisotropy, and azimuthal angles of both proton and alpha pressure tensor symmetry axis are also given. ",
+  "temporalCoverage": "Start date: 1973-11-04T00:00:00. Relative stop date: None",
+  "variableMeasured": "ThermalPlasma",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

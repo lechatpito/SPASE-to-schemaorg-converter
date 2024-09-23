@@ -1,0 +1,1755 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Munin_Ephemeris_PT0.25S.jsonld",
+  "name": "Munin Ephemeris, Spacecraft Orbit and Attitude Information, 0.25 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Munin_Ephemeris_PT0.25S.jsonld",
+  "sdDatePublished": "2023-08-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/NumericalData/Munin/Ephemeris/PT0.25S",
+  "creditText": "Munin Ephemeris, Spacecraft Orbit and Attitude Information, 0.25 s Data.",
+  "description": "Munin Ephemeris, Spacecraft Orbit and Attitude Data",
+  "abstract": "Munin Ephemeris, Spacecraft Orbit and Attitude Data",
+  "temporalCoverage": "Start date: 2000-12-08T09:51:08. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch, Time Line",
+      "description": "Epoch, Start Time for the Record",
+      "unitText": "ns",
+      "minValue": "1990-01-01T00:00:00.000000000",
+      "maxValue": "2020-01-01T00:00:01.000000000",
+      "defaultValue": "2100-01-01T00:00:01.000000000",
+      "unitCode": "1e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter exhibits an increasing monotonic progression."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E14.8"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.2798349819904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.3745034620904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch, Start",
+      "description": "Start time, Epoch minus Value",
+      "unitText": "ns",
+      "minValue": "0.0",
+      "maxValue": "3.16224e+16",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch_Start"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "dt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E14.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch, End",
+      "description": "End time, Epoch plus Value",
+      "unitText": "ns",
+      "minValue": "0.0",
+      "maxValue": "3.16224e+16",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch_End"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "dt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E14.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Satellite Altitude",
+      "description": "Satellite Altitude",
+      "unitText": "km",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e3>m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Altitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Altitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "950.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1050.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Latitude, CGM Coordinates",
+      "description": "Spacecraft Position, Latitude, Corrected Geomagnetic, CGM, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical CGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CGLat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "CGLat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Longitude, CGM Coordinates",
+      "description": "Spacecraft Position, Longitude, Corrected Geomagnetic, CGM, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical CGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CGLong"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "CGLong"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-180.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "180.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Latitude, GEO Coordinates",
+      "description": "Spacecraft Position, Latitude, Geographic, GEO, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical CGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Latitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Latitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Longitude, GEO Coordinates",
+      "description": "Spacecraft Position, Longitude, Geographic, GEO, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical CGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Longitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Longitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-180.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "180.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Local Time",
+      "description": "Magnetic Local Time",
+      "unitText": "h",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "3600>s",
+      "measurementTechnique": "Spherical CGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MLT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_hour"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MLT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "24.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L-Shell",
+      "description": "L-Shell Parameter",
+      "unitText": "Earth Radii",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "6.3712e6>m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "L_shell"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "L-shell"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "10.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Eclipse Status",
+      "description": "Eclipse Status",
+      "unitText": "Dimensionless",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Eclipse_status"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Eclipse status"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, X-component, GEI Coordinates",
+      "description": "Spacecraft Position Vector, X-component, Geocentric Equatorial Inertial, GEI, Coordinates",
+      "unitText": "km",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_X"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEI X"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Y-component, GEI Coordinates",
+      "description": "Spacecraft Position Vector, Y-component, Geocentric Equatorial Inertial, GEI, Coordinates",
+      "unitText": "km",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_Y"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEI Y"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Z-component, GEI Coordinates",
+      "description": "Spacecraft Position Vector, Z-component, Geocentric Equatorial Inertial, GEI, Coordinates",
+      "unitText": "km",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_Z"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEI Z"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Velocity, X-component, GEI Coordinates",
+      "description": "Spacecraft Velocity Vector, X-component, Geocentric Equatorial Inertial, GEI, Coordinates",
+      "unitText": "km/s",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_Vx"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEI Vx"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-8.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "8.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Velocity, Y-component, GEI Coordinates",
+      "description": "Spacecraft Velocity Vector, Y-component, Geocentric Equatorial Inertial, GEI, Coordinates",
+      "unitText": "km/s",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_Vy"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEI Vy"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-8.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "8.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Velocity, Z-component, GEI Coordinates",
+      "description": "Spacecraft Velocity Vector, Z-component, Geocentric Equatorial Inertial, GEI, Coordinates",
+      "unitText": "km/s",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_Vz"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEI Vz"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-8.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "8.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar Direction, X-component, GEI Coordinates",
+      "description": "Solar Direction, Unit Vector, X-component, Geocentric Equatorial Inertial, GEI, Coordinates",
+      "unitText": "Dimensionless",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_Sun_X"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEI Sun-X"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar Direction, Y-component, GEI Coordinates",
+      "description": "Solar Direction, Unit Vector, Y-component, Geocentric Equatorial Inertial, GEI, Coordinates",
+      "unitText": "Dimensionless",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_Sun_Y"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEI Sun-Y"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar Direction, Z-component, GEI Coordinates",
+      "description": "Solar Direction, Unit Vector, Z-component, Geocentric Equatorial Inertial, GEI, Coordinates",
+      "unitText": "Dimensionless",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_Sun_Z"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEI Sun-Z"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, X-component, GEO Coordinates",
+      "description": "Spacecraft Position Vector, X-component, Geographic, GEO, Coordinates",
+      "unitText": "km",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEO_X"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEO X"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Y-component, GEO Coordinates",
+      "description": "Spacecraft Position Vector, Y-component, Geographic, GEO, Coordinates",
+      "unitText": "km",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEO_Y"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEO Y"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Z-component, GEO Coordinates",
+      "description": "Spacecraft Position Vector, Z-component, Geographic, GEO, Coordinates",
+      "unitText": "km",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEO_Z"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GEO Z"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "8000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Right Ascension, J2000 Coordinates",
+      "description": "Right Ascension, J2000 Coordinates, measured Eastward along the Celestial Equator from the Ascending Node of the Ecliptic, Celestial Coordiates",
+      "unitText": "\u00b0",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical J2000",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "RA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "360.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Declination, J2000 Coordinates",
+      "description": "Declination, J2000 Coordinates, the Angle is measured North or South from the Celestial Equator",
+      "unitText": "\u00b0",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical J2000",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Declination"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Declination"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sun Angle",
+      "description": "Sun Angle",
+      "unitText": "\u00b0",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "0.0174532925>rad",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "DirectionAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Sun_Angle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Sun Angle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-Field Angle",
+      "description": "B-Field Angle",
+      "unitText": "\u00b0",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical MFA",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "DirectionAngle.PolarAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_field_Angle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-field Angle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "180.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Period",
+      "description": "Spin Period",
+      "unitText": "ms",
+      "minValue": "-3.0e+38",
+      "maxValue": "3.0e+38",
+      "defaultValue": "-3.4e+38",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Spin_period"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Spin period"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "3100.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "4400.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

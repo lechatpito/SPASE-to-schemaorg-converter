@@ -1,0 +1,141 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DoubleStar2_PEACE_DSTAR_PP_T2_PEA.jsonld",
+  "name": "Double Star 2 PEACE Prime Parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DoubleStar2_PEACE_DSTAR_PP_T2_PEA.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-Archive/Andrew.Fazakerley",
+    "url": "http://hpde.io/CNES/Person/CDPP-Archive/Andrew.Fazakerley"
+  },
+  "sdDatePublished": "2021-11-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_PP_T2_PEA",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/DoubleStar2/PEACE/DSTAR_PP_T2_PEA",
+  "creditText": "Double Star 2 PEACE Prime Parameters.",
+  "description": "The PEACE electron analyser provides  the electron velocity distribution function at the satellite in three dimensions with good time, energy, and angular resolution for electron energies up to ~25 keV.\n\nThis data set contains  Double Star 2 PEACE prime parameters at spin resolution including  the instrument status, the electron density, electron bulk velocity, electron temperature, and electron heat flux.",
+  "abstract": "The PEACE electron analyser provides  the electron velocity distribution function at the satellite in three dimensions with good time, energy, and angular resolution for electron energies up to ~25 keV.\n\nThis data set contains  Double Star 2 PEACE prime parameters at spin resolution including  the instrument status, the electron density, electron bulk velocity, electron temperature, and electron heat flux.",
+  "temporalCoverage": "Start date: 2004-05-15T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 PEACE Status Prime Parameter",
+      "description": "Double Star 2 PEACE status at spin resolution",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 PEACE Electron Number Density Prime Parameter",
+      "description": "Double Star 2 PEACE electron number density at spin resolution",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e6>m^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 PEACE Electron Velocity Prime Parameter",
+      "description": "Double Star 2 PEACE electron velocity at spin resolution in GSE Coordinates",
+      "unitText": "km s^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e3>m s^-1",
+      "measurementTechnique": "Cartesian GSE"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 PEACE Parallel Electron Temperature Prime Parameter",
+      "description": "Double Star 2 PEACE parallel electron temperature at spin resolution",
+      "unitText": "MK",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e6>K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 PEACE Perpendicular Electron Temperature Prime Parameter",
+      "description": "Double Star 2 PEACE perpendicular electron temperature at spin resolution",
+      "unitText": "MK",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e6>K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 PEACE Parallel Electron Heat Flux Prime Parameter",
+      "description": "Double Star 2 PEACE parallel electron heat flux at spin resolution",
+      "unitText": "uJ m^-2 s^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-6>J m^-2 s^-1"
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_FGM_UFA_PT1M.jsonld",
+  "name": "Ulysses magnetic field data files at ESA",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_FGM_UFA_PT1M.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ufa.esac.esa.int/ufa/#data",
+      "encodingFormat": "Text",
+      "name": "annual gzipped-ASCII files from ESA",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Ulysses/FGM/UFA/PT1M",
+  "creditText": "Ulysses magnetic field data files at ESA.",
+  "description": "1-min and 1-hour Ulysses magnetic field data at ESA, also 1-sec data for 1990-3; field magnitude and RTN components",
+  "abstract": "1-min and 1-hour Ulysses magnetic field data at ESA, also 1-sec data for 1990-3; field magnitude and RTN components",
+  "temporalCoverage": "Start date: 1990-10-25T00:00:00. Relative stop date: None",
+  "variableMeasured": "MagneticField",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_GOLD_L1D_DLR_LBH_PT1080S.jsonld",
+  "name": "Gold Level 1D German Space Agency Disk LBH Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_GOLD_L1D_DLR_LBH_PT1080S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Richard.Eastes",
+    "url": "http://hpde.io/SMWG/Person/Richard.Eastes"
+  },
+  "sdDatePublished": "2020-09-14",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/gold/level1d/",
+      "encodingFormat": "PNG",
+      "name": "HTTPS from SPDF",
+      "description": "Directory with GOLD plots."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/GOLD/L1D/DLR_LBH/PT1080S",
+  "creditText": "Gold Level 1D German Space Agency Disk LBH Plots.",
+  "description": "Level 1D Lyman-Birge-Hopfield (LBH) files contain a thumbnail image (PNG) for individual disk scans. \n   There are individual thumbnail files created for total LBH radiance (kR). Separate \n   files are created for Channel A and Channel B data.  A new L1D file is generated for each new L1C file. \n   These can correspond to either the Northern or Southern hemisphere.",
+  "abstract": "Level 1D Lyman-Birge-Hopfield (LBH) files contain a thumbnail image (PNG) for individual disk scans. \n   There are individual thumbnail files created for total LBH radiance (kR). Separate \n   files are created for Channel A and Channel B data.  A new L1D file is generated for each new L1C file. \n   These can correspond to either the Northern or Southern hemisphere.",
+  "temporalCoverage": "Start date: 2018-10-05T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": "Radiance",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": [
+    "GOLD",
+    "SES-14"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

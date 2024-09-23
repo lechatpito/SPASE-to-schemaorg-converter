@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_AE-E_PT15S.jsonld",
+  "name": "AE-E 15-s Unified Abstract data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_AE-E_PT15S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Dieter.K.Bilitza",
+    "url": "http://hpde.io/SMWG/Person/Dieter.K.Bilitza"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/ae_e.html",
+      "encodingFormat": "Text",
+      "name": "FTPBrowser",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/ae/ae_e/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/ae/ae_e/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/AE-E/PT15S",
+  "creditText": "AE-E 15-s Unified Abstract data.",
+  "description": "Atmospheric Explorer (AE)-E 15-s aeronomy data from all experiments, including electron, ion and neutral densities, temperatures, composition and winds, and airglow emissions",
+  "abstract": "Atmospheric Explorer (AE)-E 15-s aeronomy data from all experiments, including electron, ion and neutral densities, temperatures, composition and winds, and airglow emissions",
+  "temporalCoverage": "Start date: 1975-12-11T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    "ThermalPlasma",
+    "NeutralGas"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

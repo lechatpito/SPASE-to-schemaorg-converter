@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_PROBA2_SWAP_EUV_Avg_Intensities_PT24H.jsonld",
+  "name": "Proba 2 SWAP Daily Solar Average Intensities",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_PROBA2_SWAP_EUV_Avg_Intensities_PT24H.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/David.Berghmans",
+    "url": "http://hpde.io/SMWG/Person/David.Berghmans"
+  },
+  "sdDatePublished": "2018-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://proba2.oma.be/swap/data/swavint/",
+      "encodingFormat": "FITS",
+      "name": "HTTP access to Average Intensity at PROBA2 Science Center",
+      "description": "In FITS via HTTP from PROBA2 Science Center"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/NumericalData/PROBA2/SWAP/EUV/Avg_Intensities/PT24H",
+  "creditText": "Proba 2 SWAP Daily Solar Average Intensities.",
+  "description": " This Proba 2 dataset contains daily intensities of the solar corona averaged over the SWAP (Sun Watcher using Active Pixel System detector and Image Processing) Field of View in calibrated images.  Images are sampled near 17.4 nm every minute by the Extreme UltraViolet (EUV) imager, showing how the sun\u2019s corona changes and evolves over time. Due to its large viewing angle, PROBA2 sees a region of the corona not seen by the other solar satellites, including the ESA/NASA Solar and Heliospheric Observatory (SOHO), and NASA's Solar Dynamics Observatory (SDO).",
+  "abstract": " This Proba 2 dataset contains daily intensities of the solar corona averaged over the SWAP (Sun Watcher using Active Pixel System detector and Image Processing) Field of View in calibrated images.  Images are sampled near 17.4 nm every minute by the Extreme UltraViolet (EUV) imager, showing how the sun\u2019s corona changes and evolves over time. Due to its large viewing angle, PROBA2 sees a region of the corona not seen by the other solar satellites, including the ESA/NASA Solar and Heliospheric Observatory (SOHO), and NASA's Solar Dynamics Observatory (SDO).",
+  "temporalCoverage": "Start date: 2009-11-20T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

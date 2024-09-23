@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Apollo12-LM_SWS_PT28S.jsonld",
+  "name": "Apollo 12 Solar Wind Measurements at the Lunar Surface 28-s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Apollo12-LM_SWS_PT28S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Apollo12-LM/SWS/PT28S",
+  "creditText": "Apollo 12 Solar Wind Measurements at the Lunar Surface 28-s Data.",
+  "description": "This data set contains the highest time resolution plasma data available (28 sec per spectrum) from the solar wind experiment onboard Apollo 12. Contained in each record are: time, proton density, alpha-to-proton ratio, bulk speed, angle of flow, most probable thermal speed, and various housekeeping and fit parameters relating to the reliability of the calculated plasma parameters. During the local lunar night there is no solar wind signal so there are data gaps of about 15 days each lunation.",
+  "abstract": "This data set contains the highest time resolution plasma data available (28 sec per spectrum) from the solar wind experiment onboard Apollo 12. Contained in each record are: time, proton density, alpha-to-proton ratio, bulk speed, angle of flow, most probable thermal speed, and various housekeeping and fit parameters relating to the reliability of the calculated plasma parameters. During the local lunar night there is no solar wind signal so there are data gaps of about 15 days each lunation.",
+  "temporalCoverage": "Start date: 1969-11-19T18:42:13. Relative stop date: None",
+  "variableMeasured": "ThermalPlasma",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

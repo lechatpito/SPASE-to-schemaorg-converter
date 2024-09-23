@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_S-Cubed_A_VLF_IOWAVLF_PT0.01S.jsonld",
+  "name": "S-Cubed_A Electric Field Iowa VLF Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_S-Cubed_A_VLF_IOWAVLF_PT0.01S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/H.Kent.Hills",
+    "url": "http://hpde.io/SMWG/Person/H.Kent.Hills"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/s_cubed_a/iowavlf/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In ASCII via nssdcftp"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/s_cubed_a/iowavlf/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/S-Cubed_A/VLF/IOWAVLF/PT0.01S",
+  "creditText": "S-Cubed_A Electric Field Iowa VLF Data.",
+  "description": "This dataset provided by the University of Iowa contains a few minutes of electric field data from a single channel.  Data are available for 1 kHz and 10 kHz bandwidth in 10 millisecond waveform series for selected times in January 1972 (Days 022, 023, and 025), June (Day 170), and August (Days 217 and 218). These events have appeared in journal publications. Also provided are the software to convert from binary to ASCII, and to plot the data.",
+  "abstract": "This dataset provided by the University of Iowa contains a few minutes of electric field data from a single channel.  Data are available for 1 kHz and 10 kHz bandwidth in 10 millisecond waveform series for selected times in January 1972 (Days 022, 023, and 025), June (Day 170), and August (Days 217 and 218). These events have appeared in journal publications. Also provided are the software to convert from binary to ASCII, and to plot the data.",
+  "temporalCoverage": "Start date: 1972-01-22T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    "Waves",
+    "ElectricField"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

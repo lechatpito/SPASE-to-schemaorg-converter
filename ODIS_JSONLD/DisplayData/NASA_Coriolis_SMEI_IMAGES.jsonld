@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_Coriolis_SMEI_IMAGES.jsonld",
+  "name": "SMEI Imagery of CME's",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_Coriolis_SMEI_IMAGES.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Bernard.V.Jackson",
+    "url": "http://hpde.io/SMWG/Person/Bernard.V.Jackson"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://smei.ucsd.edu/new_smei/data&images/data&images.html",
+      "encodingFormat": "JPEG",
+      "name": "Images and movies at UCSD",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/Coriolis/SMEI/IMAGES",
+  "creditText": "SMEI Imagery of CME's.",
+  "description": "Images and movies from the Solar Mass Ejection Imager (SMEI) flown on the USAF Coriolis spacecraft",
+  "abstract": "Images and movies from the Solar Mass Ejection Imager (SMEI) flown on the USAF Coriolis spacecraft",
+  "temporalCoverage": "Start date: 2003-03-31T00:00:00. Relative stop date: -P3D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

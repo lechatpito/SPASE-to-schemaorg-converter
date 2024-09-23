@@ -1,0 +1,724 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_POLAR_Ephemeris_PT60S.jsonld",
+  "name": "Polar Predicted Orbit, 1 min Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_POLAR_Ephemeris_PT60S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/POLAR/Ephemeris/PT60S",
+  "creditText": "Polar Predicted Orbit, 1 min Data.",
+  "description": "Polar orbit data, 1-min GSE and GSM (originally \"predicted,\" but so good that generation of \"definitive\" data were dropped)",
+  "abstract": "Polar orbit data, 1-min GSE and GSM (originally \"predicted,\" but so good that generation of \"definitive\" data were dropped)",
+  "temporalCoverage": "Start date: 1996-02-27T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Orbit Epoch Time",
+      "description": "Number of milliseconds since the CDF epoch",
+      "unitText": "ms",
+      "minValue": "01-Jul-1992 00:00:00.000",
+      "maxValue": "31-Dec-2020 23:59:59.000",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbit PB5 Time",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "1",
+          "defaultValue": "-2147483648"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day of Year (Jan 1 = day 1)",
+          "description": "",
+          "position": "2",
+          "defaultValue": "-2147483648"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "elapsed ms of day",
+          "description": "",
+          "position": "3",
+          "defaultValue": "-2147483648"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time_PB5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GCI Cartesian Position",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEI",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X GCI",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y GCI",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z GCI",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GCI_POS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GCI Cartesian Velocity",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian GEI",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "vx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "vy",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "vz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GCI_VEL"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Cartesian Position",
+      "description": "",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSE_POS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Cartesian Velocity",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "vx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "vy",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "vz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSE_VEL"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Cartesian Position",
+      "description": "",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X GSM",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y GSM",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z GSM",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSM_POS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Cartesian Velocity",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "vx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "vy",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "vz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Velocity"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSM_VEL"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GCI Sun Postion Vector",
+      "description": "",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEI",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Xsun",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ysun",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Zsun",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SUN_VECTOR"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HEC Cartesian Position",
+      "description": "",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian HAE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X HEC",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y HEC",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z HEC",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "HEC_POS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HEC Cartesian Velocity",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "vx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "vy",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "vz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Velocity"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "HEC_VEL"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CRN of the Earth",
+      "description": "Carrington rotation number of the Earth",
+      "unitText": "",
+      "minValue": "1857",
+      "maxValue": "2239",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CRN_EARTH"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic Long of the Earth",
+      "description": "",
+      "unitText": "rad",
+      "minValue": "0.0",
+      "maxValue": "6.283185306999999",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "LONG_EARTH"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic Lat of the Earth",
+      "description": "",
+      "unitText": "rad",
+      "minValue": "-1.5707963269999998",
+      "maxValue": "1.5707963269999998",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "LAT_EARTH"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CRN of the Spacecraft",
+      "description": "Carrington rotation number of the spacecraft",
+      "unitText": "",
+      "minValue": "1857",
+      "maxValue": "2239",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CRN_SPACE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic Long of Craft",
+      "description": "",
+      "unitText": "rad",
+      "minValue": "0.0",
+      "maxValue": "6.283185306999999",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "LONG_SPACE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic Lat of the Craft",
+      "description": "",
+      "unitText": "rad",
+      "minValue": "-1.5707963269999998",
+      "maxValue": "1.5707963269999998",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "LAT_SPACE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Calculated EDMLT Time",
+      "description": "Calculated Magnetic Local Time (EDMLT) in hours",
+      "unitText": "hour",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0E31",
+      "unitCode": "3600>s",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EDMLT_TIME"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Latitude",
+      "description": "Calculated magnetic latitude.",
+      "unitText": "deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MAG_LATITUDE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L_SHELL",
+      "description": "",
+      "unitText": "Re",
+      "minValue": "1.0",
+      "maxValue": "20000.0",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "L_SHELL"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-B_SECCHI_Cor2_TotalBrightness_PT1H.jsonld",
+  "name": "STEREO SECCHI Cor2 telescopes P0 FITS files",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-B_SECCHI_Cor2_TotalBrightness_PT1H.jsonld",
+  "sdDatePublished": "2022-02-24",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://stereo-ssc.nascom.nasa.gov/data/ins_data/secchi/P0/",
+      "encodingFormat": "FITS",
+      "name": "STEREO Science Center",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/STEREO-B/SECCHI/Cor2/TotalBrigntness/PT1H",
+  "creditText": "STEREO SECCHI Cor2 telescopes P0 FITS files.",
+  "description": "Total Brightness data from STEREO SECCHI, Sun Earth Connection Coronal and Heliospheric Investigation, Cor2 telescopes at 1 hr cadence (except for special observing campaigns) and full resolution (2048\u00b2). The data are generally available within about three days.",
+  "abstract": "Total Brightness data from STEREO SECCHI, Sun Earth Connection Coronal and Heliospheric Investigation, Cor2 telescopes at 1 hr cadence (except for special observing campaigns) and full resolution (2048\u00b2). The data are generally available within about three days.",
+  "temporalCoverage": "Start date: 2006-10-01T00:00:00Z. Relative stop date: -P3D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Weygand_Wind_MFI_Processed_GSM_PT60S.jsonld",
+  "name": "Wind Linearly Interpolated 60 s Resolution Tri-axial Fluxgate Magnetometer in GSM Coordinates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Weygand_Wind_MFI_Processed_GSM_PT60S.jsonld",
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://vmo.igpp.ucla.edu/data1/Weygand/ProcessedSolarWindGSM/Wind/mag/",
+      "encodingFormat": "Text",
+      "name": "IGPP UCLA Wind Magnetometer Data JMW Processed Archive",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Weygand/Wind/MFI/Processed/GSM/PT60S",
+  "creditText": "Wind Linearly Interpolated 60 s Resolution Tri-axial Fluxgate Magnetometer in GSM Coordinates.",
+  "description": "Wind linearly interpolated to have the measurements on the minute at 60 s resolution tri-axial fluxgate magnetometer data in GSM coordinates. This data set consists of processed solar wind data that has been linearly interpolated to 1 min resolution at the position of the spacecraft using the interp1.m function in MATLAB. This data set was originally constructed by Dr. J.M. Weygand for Prof. R.L. McPherron, who was the principle investigator of two National Science Foundation studies: GEM Grant ATM 02-1798 and a Space Weather Grant ATM 02-08501. These data were primarily used in superposed epoch studies and cross correlation studies on solar wind. There are now two version of this data set. An off set has been found in the Wind MFI Bz component that is present after November 2004. Version 2 has this offset removed. Prof. R.L. McPherron determined the correction to be Bz = Bz - (-0.000000130406219.*odoy.*odoy + 0.000576303146.*odoy + 0.679940509 + 0.3215*cos(2*pi*(doy-171)/366)) where doy is the day of the year in units of days and odoy is the days sinces Jan 1, 1999 00:00:00 UT in units of days.",
+  "abstract": "Wind linearly interpolated to have the measurements on the minute at 60 s resolution tri-axial fluxgate magnetometer data in GSM coordinates. This data set consists of processed solar wind data that has been linearly interpolated to 1 min resolution at the position of the spacecraft using the interp1.m function in MATLAB. This data set was originally constructed by Dr. J.M. Weygand for Prof. R.L. McPherron, who was the principle investigator of two National Science Foundation studies: GEM Grant ATM 02-1798 and a Space Weather Grant ATM 02-08501. These data were primarily used in superposed epoch studies and cross correlation studies on solar wind. There are now two version of this data set. An off set has been found in the Wind MFI Bz component that is present after November 2004. Version 2 has this offset removed. Prof. R.L. McPherron determined the correction to be Bz = Bz - (-0.000000130406219.*odoy.*odoy + 0.000576303146.*odoy + 0.679940509 + 0.3215*cos(2*pi*(doy-171)/366)) where doy is the day of the year in units of days and odoy is the days sinces Jan 1, 1999 00:00:00 UT in units of days.",
+  "temporalCoverage": "Start date: 1994-11-01T00:00:00.000. Relative stop date: -P1Y",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Interpolated universal time columns from left to right are: day month year hour minute sec in the format of dd mm yyyy hh mm ss.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Minute",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Second",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Wind Magnetic Field Vector Interpolated to 1 min Resolution in GSM Coordinates",
+      "description": "Magnetic field vector for Wind in GSM coordinates in units of nT",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "BX-GSM",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BY-GSM",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BZ-GSM",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Magnetic Field Vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Wind Spacecraft Position Vector Interpolated to 1 min Resolution in GSM Coordinates",
+      "description": "Location of the spacecraft in GSM coordinates in units of Re.",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X-GSM",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y-GSM",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z-GSM",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Position Vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    "1 min",
+    "solar wind",
+    "magnetotail",
+    "bow shock",
+    "magnetopause",
+    "magnetic fields",
+    "magnetometer",
+    "Wind"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Cluster_STAFF_SummaryParameter_PT60S.jsonld",
+  "name": "Cluster Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Cluster_STAFF_SummaryParameter_PT60S.jsonld",
+  "sdDatePublished": "2020-07-03",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/cluster/cl/sp/sta/",
+      "encodingFormat": "CDF",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Cluster II Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) data"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/cluster/cl/sp/sta/",
+      "encodingFormat": "CDF",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/NumericalData/Cluster/STAFF/SummaryParameter/PT60S",
+  "creditText": "Cluster Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) Data.",
+  "description": "The Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) experiment provides magnetic field power spectral density values parallel and perpendicular to the magnetic field and the electric field power spectral density values for several frequency ranges. For more details of the Cluster mission, the spacecraft, and its instruments, see the report Cluster: mission, payload and supporting activities, March 1993, ESA SP-1159, and the included article The STAFF (Spatio-Temporal Analysis of Field Fluctuations) Experiment for the Cluster Mission, by N. Cornilleau-Wehrlin et al., from which this information was obtained.",
+  "abstract": "The Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) experiment provides magnetic field power spectral density values parallel and perpendicular to the magnetic field and the electric field power spectral density values for several frequency ranges. For more details of the Cluster mission, the spacecraft, and its instruments, see the report Cluster: mission, payload and supporting activities, March 1993, ESA SP-1159, and the included article The STAFF (Spatio-Temporal Analysis of Field Fluctuations) Experiment for the Cluster Mission, by N. Cornilleau-Wehrlin et al., from which this information was obtained.",
+  "temporalCoverage": "Start date: 2001-01-09T00:00:00.000. Relative stop date: -P3M",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Half Sample Time Interval",
+      "description": "Half width of measurement interval",
+      "unitText": "ms",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0000e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Half_interval__C1_SP_STA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Universal Time in data cell: day, month, year hour, min, seconds. Ex: 01-Jan-1981 00:00:00.000.",
+      "unitText": "ms",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch__CL_SP_STA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Interval centered time tag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Status",
+      "description": "Cluster II Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) status",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Status__CL_SP_STA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Wave Experiment Consortium (WEC) Status",
+      "description": "Cluster II Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) Wave Experiment Consortium (WEC) status",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "State_wec__CL_SP_STA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Spectral Power (0.3-10 Hz)",
+      "description": "Cluster II Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power in the 0.3-10 Hz (f1) frequency range",
+      "unitText": "nT^2 Hz^-1",
+      "minValue": "1.0000e-7",
+      "maxValue": "100",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0e-18>T^2 Hz^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_pow_f1__CL_SP_STA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B_pow_f1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "1.0000e-6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "0.11"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Spectral Power (10-180 Hz)",
+      "description": "Cluster II Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power in the 10-180 Hz (f2) frequency range",
+      "unitText": "nT^2 Hz^-1",
+      "minValue": "1.0000e-9",
+      "maxValue": "1",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0e-18>T^2 Hz^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_pow_f2__CL_SP_STA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B_pow_f2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "1.0000e-7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "0.01"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Spectral Power (180-4000 Hz)",
+      "description": "Cluster II Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power in the 180-4000 Hz (f3) frequency range",
+      "unitText": "nT^2 Hz^-1",
+      "minValue": "1.0000e-11",
+      "maxValue": "0.0010",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0e-18>T^2 Hz^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_pow_f3__CL_SP_STA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B_pow_f3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "1.0000e-10"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0000e-5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field Spectral Power (10-180 Hz)",
+      "description": "Cluster II Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) electric field spectral power in the 10-180 Hz (f2) frequency range",
+      "unitText": "V^2 m^-2 Hz^-1",
+      "minValue": "1.0000e-14",
+      "maxValue": "1.0000e-4",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0e-18>T^2 Hz^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "E_pow_f2__CL_SP_STA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "E_pow_f2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "1.0000e-13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0000e-5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field Spectral Power (180-4000 Hz)",
+      "description": "Cluster II Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) electric field spectral power in the 180-4000 Hz (f3) frequency range",
+      "unitText": "V^2 m^-2 Hz^-1",
+      "minValue": "1.0000e-15",
+      "maxValue": "1.0000e-6",
+      "defaultValue": "-1.0000e+31",
+      "unitCode": "1.0e-18>T^2 Hz^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "E_pow_f3__CL_SP_STA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "E_pow_f3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "1.0000e-14"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0000e-7"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "keywords": [
+    "60 second",
+    "magnetosphere",
+    "auroral region",
+    "polar cap",
+    "cusp",
+    "bow shock",
+    "solar wind",
+    "magnetosheath",
+    "Cluster",
+    "magnetotail",
+    "lobe"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

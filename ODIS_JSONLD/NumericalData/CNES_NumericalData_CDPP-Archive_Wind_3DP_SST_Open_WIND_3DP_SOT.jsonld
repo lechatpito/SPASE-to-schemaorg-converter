@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Wind_3DP_SST_Open_WIND_3DP_SOT.jsonld",
+  "name": "WIND 3DP SST-SOT Protons (6MeV - 10 MeV) Alpha particles (11.6 MeV)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Wind_3DP_SST_Open_WIND_3DP_SOT.jsonld",
+  "sdDatePublished": "2022-09-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:WIND_3DP_SOT",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Wind/3DP/SST_Open/WIND_3DP_SOT",
+  "creditText": "WIND 3DP SST-SOT Protons (6MeV - 10 MeV) Alpha particles (11.6 MeV).",
+  "description": "This data set contains three-dimensionnal distribution functions of protons (6MeV - 10 MeV) and  alpha particles  (11.6 MeV), provided by WIND 3-DP Solid State Telescope Open Thick, not corrected for calibration factors and  given in raw counts.\nThus they correspond to a Level 1 data processing on ground, and they can be transformed into physical units by multiplying them by a calibration factor and using the appropriate geometric factor.",
+  "abstract": "This data set contains three-dimensionnal distribution functions of protons (6MeV - 10 MeV) and  alpha particles  (11.6 MeV), provided by WIND 3-DP Solid State Telescope Open Thick, not corrected for calibration factors and  given in raw counts.\nThus they correspond to a Level 1 data processing on ground, and they can be transformed into physical units by multiplying them by a calibration factor and using the appropriate geometric factor.",
+  "temporalCoverage": "Start date: 1994-11-20T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "WIND 3DP SST Foil Open Thick Electron Energy-Angle Distributions",
+      "description": "WIND 3DP SST Foil Open Thick Electron Energy-Angle Distributions",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "WIND 3DP SST Foil Open Thick Proton Energy-Angle Distributions",
+      "description": "WIND 3DP SST Foil Open Thick Proton Energy-Angle Distributions",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "WIND 3DP SST Open  Thick Alpha Energy-Angle Distributions",
+      "description": "WIND 3DP SST Foil Open  Thick Alpha  Energy-Angle Distributions",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_ISEE_OMTI_RIK_ATP_Rotational_Temp.jsonld",
+  "name": "OMTI Airglow Temperature Photometer (ATP) at Rikubetsu, Japan",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_ISEE_OMTI_RIK_ATP_Rotational_Temp.jsonld",
+  "sdDatePublished": "2014-09-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://stdb2.isee.nagoya-u.ac.jp/omti/",
+      "encodingFormat": "GIF",
+      "name": "Optical Mesosphere Thermosphere Imagers (OMTIs)",
+      "description": "Website of the Optical Mesosphere Thermosphere Imagers (OMTIs), containing quick-look plots of all the OMTIs instruments, description of the stations and instruments, and 1-hour status of sky condition."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/DisplayData/ISEE/OMTI/RIK/ATP/Rotational_Temp",
+  "creditText": "OMTI Airglow Temperature Photometer (ATP) at Rikubetsu, Japan.",
+  "description": "Optical Mesosphere Thermosphere Imagers (OMTIs) Airglow Temperature Photometer (ATP) Data. The ATP measures airglow rotational temperature and airglow intensity in the mesopause region at 80-100km altitudes through the OH and O2 airglow emission lines. It also measures airglow and auroral intensities at 557.7nm, 630nm, 589.3nm, 777.4nm, 427.8nm, and 486.1nm. For more information, see http://stdb2.isee.nagoya-u.ac.jp/omti/. Digital data are available upon request to PI. For details of the instrument, please take a look at Shiokawa, K., Y. Otsuka, S. Suzuki, T. Katoh, Y. Katoh, M. Satoh, T. Ogawa, H. Takahashi, D. Gobbi, T. Nakamura, B. P. Williams, C.-Y. She, M. Taguchi, and T. Shimomai, Development of airglow temperature photometers with cooled-CCD detectors, Earth Planets Space, 59, 585-599, 2007.",
+  "abstract": "Optical Mesosphere Thermosphere Imagers (OMTIs) Airglow Temperature Photometer (ATP) Data. The ATP measures airglow rotational temperature and airglow intensity in the mesopause region at 80-100km altitudes through the OH and O2 airglow emission lines. It also measures airglow and auroral intensities at 557.7nm, 630nm, 589.3nm, 777.4nm, 427.8nm, and 486.1nm. For more information, see http://stdb2.isee.nagoya-u.ac.jp/omti/. Digital data are available upon request to PI. For details of the instrument, please take a look at Shiokawa, K., Y. Otsuka, S. Suzuki, T. Katoh, Y. Katoh, M. Satoh, T. Ogawa, H. Takahashi, D. Gobbi, T. Nakamura, B. P. Williams, C.-Y. She, M. Taguchi, and T. Shimomai, Development of airglow temperature photometers with cooled-CCD detectors, Earth Planets Space, 59, 585-599, 2007.",
+  "temporalCoverage": "Start date: 2004-03-15T00:00:00. Relative stop date: -P5D",
+  "variableMeasured": "Spectrum",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE mesosphere thermosphere rotational temperature airglow intensity",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_CRRES_PROTEL_PT1M.jsonld",
+  "name": "CRRES PROTEL 1-min proton distribution functions",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_CRRES_PROTEL_PT1M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/E.Gary.Mullen",
+    "url": "http://hpde.io/SMWG/Person/E.Gary.Mullen"
+  },
+  "sdDatePublished": "2021-03-10",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/crres/particle_protel/",
+      "encodingFormat": "Binary",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/crres/particle_protel/",
+      "encodingFormat": "Binary",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/CRRES/PROTEL/PT1M",
+  "creditText": "CRRES PROTEL 1-min proton distribution functions.",
+  "description": "This data set holds 1-min resolution proton distributions\n(19 5-deg pitch angles vs. 24 energies) from the Proton Telescope (PROTEL) \non the CRRES spacecraft.  The energy range covered is 1-100 MeV.  The data \nare in SGI(UNIX) binary format.  Read software is contained within the \ncompanion documentation.",
+  "abstract": "This data set holds 1-min resolution proton distributions\n(19 5-deg pitch angles vs. 24 energies) from the Proton Telescope (PROTEL) \non the CRRES spacecraft.  The energy range covered is 1-100 MeV.  The data \nare in SGI(UNIX) binary format.  Read software is contained within the \ncompanion documentation.",
+  "temporalCoverage": "Start date: 1990-08-01T00:00:00. Relative stop date: None",
+  "variableMeasured": "EnergeticParticles",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

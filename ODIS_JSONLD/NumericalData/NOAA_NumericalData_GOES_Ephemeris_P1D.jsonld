@@ -1,0 +1,116 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NOAA_NumericalData_GOES_Ephemeris_P1D.jsonld",
+  "name": "GOES 2 through GOES 12 Satellite West Longitudes, Geographic (GEO) Coordinates, Daily Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NOAA_NumericalData_GOES_Ephemeris_P1D.jsonld",
+  "sdDatePublished": "2018-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.ngdc.noaa.gov/stp/satellite/goes/",
+      "encodingFormat": "Text.ASCII",
+      "name": "HTTP access to GOES 2 through GOES 12 Spacecraft Longitude Position Data",
+      "description": "HTTP access to GOES Longitudinal Position Data in ASCII Format at Daily Time Resolution. The Data are sorted by Spacecraft."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NOAA/NumericalData/GOES/Ephemeris/P1D",
+  "creditText": "GOES 2 through GOES 12 Satellite West Longitudes, Geographic (GEO) Coordinates, Daily Data.",
+  "description": "The GOES longitudinal location information consists of the west geographic longitude in degrees. The data are separated into spacecraft (GOES 2-12), year, and month. The location is given for each day of the month is in units of degrees and the geographic latitude is assumed to be 0\u00af.",
+  "abstract": "The GOES longitudinal location information consists of the west geographic longitude in degrees. The data are separated into spacecraft (GOES 2-12), year, and month. The location is given for each day of the month is in units of degrees and the geographic latitude is assumed to be 0\u00af.",
+  "temporalCoverage": "Start date: 1986-01-01T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Name",
+      "description": "Spacecraft name in the format of GOES XX where XX is in a 2-digit numeric format. At this time there is only information from GOES 2-14.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Year and Month of Longitude Information",
+      "description": "Year and Month information is in a 4-digit format of YYMM.",
+      "unitText": "",
+      "minValue": "8601",
+      "maxValue": "1004",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "YYMM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GOES West Geographic Longitude Location at 1 day Time Resolution",
+      "description": "The GOES Geographic Longitude in degrees is an array of 31 numbers. One for each day of the month. Flag values are 0.0 for no data or for days of the month that do not exist such as February 31st. The latitude is assumed to be zero and the radius is geosynchronous orbit.",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Spherical GEO",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GOES West Geographic Longitude"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    "1 day",
+    "geosynchronous",
+    "GOES",
+    "Longitude"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

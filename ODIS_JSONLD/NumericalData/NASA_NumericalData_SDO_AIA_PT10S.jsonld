@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SDO_AIA_PT10S.jsonld",
+  "name": "SDO/AIA Data Products at LMSAL",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SDO_AIA_PT10S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Alan.M.Title",
+    "url": "http://hpde.io/SMWG/Person/Alan.M.Title"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://aia.lmsal.com/public/data.htm",
+      "encodingFormat": "FITS",
+      "name": "AIA data access page at LMSAL",
+      "description": "Selection of digital and browse AIA data products and access \npaths"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://sdac.virtualsolar.org/cgi/search?time=1&instrument=1&version=current&build=1",
+      "encodingFormat": "FITS",
+      "name": "VSO path to SDO data",
+      "description": "VSO path to JSOC-resident SDO HMI and AIA data files;\nJSOC is Joint Science Operations Center at Stanford U."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/SDO/AIA/PT10S",
+  "creditText": "SDO/AIA Data Products at LMSAL.",
+  "description": "Lockheed Martin Solar and Astrophysics Laboratory\n(LMSAL) provides multiple access paths to a variety of SDO (Solar \nDynamics Observatory)/AIA (Atmospheric Imaging Assembly) digital and \ndisplay solar images and movies, as well as to tools (e.g., the \nHeliophysics Events Knowledgebase, HEK) for selecting and viewing\ndata.  Data include full-disk, 1-arcsec-resolution solar images taken \nin each of 10 UV/EUV wavelengths every 10 seconds.",
+  "abstract": "Lockheed Martin Solar and Astrophysics Laboratory\n(LMSAL) provides multiple access paths to a variety of SDO (Solar \nDynamics Observatory)/AIA (Atmospheric Imaging Assembly) digital and \ndisplay solar images and movies, as well as to tools (e.g., the \nHeliophysics Events Knowledgebase, HEK) for selecting and viewing\ndata.  Data include full-disk, 1-arcsec-resolution solar images taken \nin each of 10 UV/EUV wavelengths every 10 seconds.",
+  "temporalCoverage": "Start date: 2010-05-20T00:00:00. Relative stop date: P1D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

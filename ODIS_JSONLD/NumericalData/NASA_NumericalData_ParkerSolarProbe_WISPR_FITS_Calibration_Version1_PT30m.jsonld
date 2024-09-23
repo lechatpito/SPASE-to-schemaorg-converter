@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ParkerSolarProbe_WISPR_FITS_Calibration_Version1_PT30m.jsonld",
+  "name": "Parker Solar Probe, WISPR Calibration Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ParkerSolarProbe_WISPR_FITS_Calibration_Version1_PT30m.jsonld",
+  "sdDatePublished": "2023-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://wispr.nrl.navy.mil/data/rel/fits/CAL1/",
+      "encodingFormat": "FITS",
+      "name": "HTTPS from NRL",
+      "description": "In FITS via http from NRL"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ParkerSolarProbe/WISPR/FITS/Calibration/Version1/PT30m",
+  "creditText": "Parker Solar Probe, WISPR Calibration Data.",
+  "description": "Certain calibration data products are available via this website and WISPR database. These are clearly identified as calibration products. It is strongly emphasize here that these data products are for testing and calibration purposes only and under no circumstances should be used for science without the explicit involvement of a WISPR Team member.",
+  "abstract": "Certain calibration data products are available via this website and WISPR database. These are clearly identified as calibration products. It is strongly emphasize here that these data products are for testing and calibration purposes only and under no circumstances should be used for science without the explicit involvement of a WISPR Team member.",
+  "temporalCoverage": "Start date: 2018-08-11T00:35:11. Relative stop date: -P6M",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

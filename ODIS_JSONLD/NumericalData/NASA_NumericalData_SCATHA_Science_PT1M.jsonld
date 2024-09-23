@@ -1,0 +1,1452 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SCATHA_Science_PT1M.jsonld",
+  "name": "SCATHA Science Summary Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SCATHA_Science_PT1M.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://mag.gmu.edu/ftp/users/obrien/scatha/cdf/SCATHA_Summary_CDF_Files/",
+      "encodingFormat": "CDF",
+      "name": "SCATHA Summary CDF Files",
+      "description": "Top-level page for this data set"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/SCATHA/Science/PT1M",
+  "creditText": "SCATHA Science Summary Data.",
+  "description": "SCATHA Science Summary Data",
+  "abstract": "SCATHA Science Summary Data",
+  "temporalCoverage": "Start date: 1979-02-06T00:00:00.00000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "NSSDC Standard Time",
+      "description": "",
+      "unitText": "ms",
+      "minValue": "01-Jan-1979 00:00:00.000",
+      "maxValue": "21-May-1990 23:59:59.000",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Averaging time interval",
+      "description": "",
+      "unitText": "ms",
+      "minValue": "1.0",
+      "maxValue": "1.0E8",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "AveInt"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mag. field in GSM coordinates",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Count rate error of averaged B-field coordinates",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BSigma_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field VLF wave amplitude",
+      "description": "",
+      "unitText": "dBV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EVLFAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field VLF peak wave amplitude",
+      "description": "",
+      "unitText": "dBV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EVLFPAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field VLF center frequency",
+      "description": "",
+      "unitText": "kHz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EVLFFrq"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field VLF upper frequency range value",
+      "description": "",
+      "unitText": "kHz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EVLFFHi"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field VLF lower frequency range value",
+      "description": "",
+      "unitText": "kHz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EVLFFLo"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-field VLF wave amplitude",
+      "description": "",
+      "unitText": "dBnT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BVLFAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Peak B-field VLF peak wave amplitude",
+      "description": "",
+      "unitText": "dBnT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BVLFPAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-field VLF center frequency",
+      "description": "",
+      "unitText": "kHz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BVLFFrq"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-field VLF upper frequency range value",
+      "description": "",
+      "unitText": "kHz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BVLFFHi"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-field VLF lower frequency range value",
+      "description": "",
+      "unitText": "kHz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BVLFFLo"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Common mode S/C potential, +/-15 volts",
+      "description": "",
+      "unitText": "V",
+      "minValue": "-15.0",
+      "maxValue": "15.0",
+      "defaultValue": "-99.999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CM1SCPot"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Common mode S/C potential, +/-300 volts",
+      "description": "",
+      "unitText": "V",
+      "minValue": "-300.0",
+      "maxValue": "300.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CM2SCPot"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Common mode S/C potential, +/-5000 volts",
+      "description": "",
+      "unitText": "V",
+      "minValue": "-5000.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-9999.9",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CM3SCPot"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DC E-field magnitude low gain (gain = 0.025",
+      "description": "",
+      "unitText": "mV/m",
+      "minValue": "-3000.0",
+      "maxValue": "3000.0",
+      "defaultValue": "-9999.9",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EDCLo"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RMS E-field amplitude",
+      "description": "",
+      "unitText": "RMS volts",
+      "minValue": "0.0",
+      "maxValue": "15.0",
+      "defaultValue": "-99.999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EAC"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DC E-field magnitude high gain (gain = 0.25",
+      "description": "",
+      "unitText": "mV/m",
+      "minValue": "-150.0",
+      "maxValue": "150.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EDCHi"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field ELF wave amplitude",
+      "description": "",
+      "unitText": "TM V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EELFAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Peak E-field ELF wave amplitude",
+      "description": "",
+      "unitText": "TM V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EELFPAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field ELF upper frequency range value",
+      "description": "",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EELFFHi"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field ELF lower frquency range value",
+      "description": "",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EELFFLo"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-field ELF wave amplitude",
+      "description": "",
+      "unitText": "TM V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BELFAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Peak B-field ELF wave amplitude",
+      "description": "",
+      "unitText": "TM V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BELFPAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-field ELF upper frequency range value",
+      "description": "",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BELFFHi"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-field ELF lower frequency range value",
+      "description": "",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BELFFLo"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential electron flux perpendicular to B",
+      "description": "",
+      "unitText": "electrons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EPpDfFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-perp differential flux fractional error",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EEPpDfFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential electron flux parallel to B",
+      "description": "",
+      "unitText": "electrons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EPlDfFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-parl differential flux fractional error",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EEPlDfFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential electron flux center energy",
+      "description": "",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EDfFlxEn"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron energy flux perpendicular to B",
+      "description": "",
+      "unitText": "keV/(cm^2 sec str)",
+      "minValue": "0.0",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EPpEnFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron number flux perpendicular to B",
+      "description": "",
+      "unitText": "electrons/(cm^2 sec str)",
+      "minValue": "0.0",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EPpNmFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron energy flux parallel to B",
+      "description": "",
+      "unitText": "keV/(cm^2 sec str)",
+      "minValue": "0.0",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EPlEnFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential electron flux perpendicular to B",
+      "description": "",
+      "unitText": "electrons/(cm^2 sec str)",
+      "minValue": "0.0",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EPlNmFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential proton flux perpendicular to B",
+      "description": "",
+      "unitText": "protons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPpDfFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "P-perp differential flux fractional error",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EPPpDfFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential proton flux parallel to B",
+      "description": "",
+      "unitText": "protons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPlDfFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "P-parl differential flux fractional error",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EPPlDfFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential proton flux center energy",
+      "description": "",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PDfFlxEn"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton energy flux perpendicular to B",
+      "description": "",
+      "unitText": "keV/(cm^2 sec str)",
+      "minValue": "0.0",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPpEnFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton number flux perpendicular to B",
+      "description": "",
+      "unitText": "protons/(cm^2 sec str)",
+      "minValue": "0.0",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPpNmFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton energy flux parallel to B",
+      "description": "",
+      "unitText": "keV/(cm^2 sec str)",
+      "minValue": "0.0",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPlEnFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton number flux perpendicular to B",
+      "description": "",
+      "unitText": "protons/(cm^2 sec str)",
+      "minValue": "0.0",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPlNmFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron density (.1-20keV)",
+      "description": "",
+      "unitText": "cm-3",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-999.9999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EDensity"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron (.1-20keV) drift velocity perpendicular to B",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "-1.0E10",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EPpDrfVel"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron pressure (.1-20keV)",
+      "description": "",
+      "unitText": "ndynes/cm2",
+      "minValue": "0.0",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EPress"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron average energy (.1-20keV)",
+      "description": "",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-99.99999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EAveEn"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton density (.1-133keV)",
+      "description": "",
+      "unitText": "cm-3",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-999.9999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PDensity"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton (.1-15keV) drift velocity perpendicular to B",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "-1.0E10",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPpDrfVel"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton pressure (.1-133keV)",
+      "description": "",
+      "unitText": "ndynes/cm2",
+      "minValue": "0.0",
+      "maxValue": "1.0E10",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PPress"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton average energy (.1-133keV)",
+      "description": "",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-99.99999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PAveEn"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C geographic longitude",
+      "description": "",
+      "unitText": "deg E",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SCGeoLon"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C geographic latitude",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-99.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SCGeoLat"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C geocentric radius",
+      "description": "",
+      "unitText": "km",
+      "minValue": "0.0",
+      "maxValue": "1000000.0",
+      "defaultValue": "-99999.9",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SCGeoRad"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C position (ECI coordinates)",
+      "description": "",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SCECIPos"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C velocity (ECI coordinates)",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SCECIVel"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic local time at equator",
+      "description": "",
+      "unitText": "hours",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-99.999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MLT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic latitude",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-99.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MagLat"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L - shell",
+      "description": "",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "LShell"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B equator model",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "-500.0",
+      "maxValue": "500.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BEqModl"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Angle between B-field and S/C spin axis",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BF2Spin"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model mag. field coordinates",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BModl"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion/Electron gun operation flag",
+      "description": "",
+      "unitText": "",
+      "minValue": "-128.0",
+      "maxValue": "127.0",
+      "defaultValue": "-128.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GunStat"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Variable quality indicator",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "FFFFFFFFFFF",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Status%SC_SP"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

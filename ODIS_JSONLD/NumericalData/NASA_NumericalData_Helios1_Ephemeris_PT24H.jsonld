@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Helios1_Ephemeris_PT24H.jsonld",
+  "name": "Helios 1 Daily Trajectory Data ",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Helios1_Ephemeris_PT24H.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Jan.Merka",
+    "url": "http://hpde.io/SMWG/Person/Jan.Merka"
+  },
+  "sdDatePublished": "2021-03-11",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/helios/helios1/traj/day/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Via ftp in ASCII from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/helios/helios1/traj/day/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Helios1/Ephemeris/PT24H",
+  "creditText": "Helios 1 Daily Trajectory Data .",
+  "description": "This data set contains orbital parameters for Helios 1: Helios-Sun distance, heliographic longitude from the ascending node, heliographic latitude, ecliptical longitude from the mean equinox, ecliptical longitude from the Earth-Sun line, ecliptical latitude, Helios - Earth distance, \nand number of rotations of the Sun referred to Helios since launch.",
+  "abstract": "This data set contains orbital parameters for Helios 1: Helios-Sun distance, heliographic longitude from the ascending node, heliographic latitude, ecliptical longitude from the mean equinox, ecliptical longitude from the Earth-Sun line, ecliptical latitude, Helios - Earth distance, \nand number of rotations of the Sun referred to Helios since launch.",
+  "temporalCoverage": "Start date: 1974-12-10T00:00:00.000Z. Relative stop date: None",
+  "variableMeasured": "Ephemeris",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

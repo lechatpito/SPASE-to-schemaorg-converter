@@ -1,0 +1,210 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_ISEE_IPS_vlist_text.jsonld",
+  "name": "Raw data of IPS measurements",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_ISEE_IPS_vlist_text.jsonld",
+  "sdDatePublished": "2011-04-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://stesun5.isee.nagoya-u.ac.jp/ips_data.html",
+      "encodingFormat": "Text.ASCII",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/ISEE/IPS/vlist_text",
+  "creditText": "Raw data of IPS measurements.",
+  "description": "Raw data of Interplanetary Scintillation (IPS) meaurements",
+  "abstract": "Raw data of Interplanetary Scintillation (IPS) meaurements",
+  "temporalCoverage": "Start date: 1985-01-01T00:00:00. Relative stop date: -P1Y",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Source",
+      "description": "Source star name",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Observation date",
+      "description": "Date: Year-1900, Month, Day",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Observation time",
+      "description": "Observation time in Universal time (Hour)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radial distance",
+      "description": "Radial distance, of P-point, from the sun (AU)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliocentric latitude",
+      "description": "Heliocentric latitude of P-point (deg.)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliocentric longitude",
+      "description": "Heliocentric longitude of P-point (deg.)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic latitude",
+      "description": "Heliographic latitude of P-point (deg.)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic longitude",
+      "description": "Heliographic latitude of P-point (deg.)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Carrington rotation number",
+      "description": "Carrington rotation number of P-point",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar wind velocity",
+      "description": "Solar wind velocity (km/s). The value of -999 means that no velocity estimate is available.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error in velocity",
+      "description": "The error in velocity estimation (km/s). The vale of -999 means either that only two station could be used to calculate the speed, or that no velocity estimate is available.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Scintillation level",
+      "description": "Scintillation level (in arbitrary unit) observed at either Fuji or Kiso station.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Solar Velocity Fields",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

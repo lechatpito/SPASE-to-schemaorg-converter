@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_SOLIS_ISS_P1D.jsonld",
+  "name": "SOLIS ISS Spectra, FITS",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_SOLIS_ISS_P1D.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/John.W.Harvey",
+    "url": "http://hpde.io/SMWG/Person/John.W.Harvey"
+  },
+  "sdDatePublished": "2018-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftp://solis.nso.edu/synoptic/level2/iss/",
+      "encodingFormat": "FITS",
+      "name": "NSO_SOLIS_ISS ftp area",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/SOLIS/ISS/P1D",
+  "creditText": "SOLIS ISS Spectra, FITS.",
+  "description": "This data product from the Integrated SOLIS\nSpectrometer (ISS) consists of high spectral resolution, disk-\nintegrated spectra across various spectral bands of interest.  \nMany are for the Ca II K line.  The data are available as both \nJPEG images for browsing and as FITS files for quantitative work.",
+  "abstract": "This data product from the Integrated SOLIS\nSpectrometer (ISS) consists of high spectral resolution, disk-\nintegrated spectra across various spectral bands of interest.  \nMany are for the Ca II K line.  The data are available as both \nJPEG images for browsing and as FITS files for quantitative work.",
+  "temporalCoverage": "Start date: 2006-12-02T00:00:00. Relative stop date: P5D",
+  "variableMeasured": "Spectrum",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

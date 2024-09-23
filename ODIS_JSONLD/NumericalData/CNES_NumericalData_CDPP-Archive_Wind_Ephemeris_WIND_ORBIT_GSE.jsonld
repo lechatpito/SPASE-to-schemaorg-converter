@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Wind_Ephemeris_WIND_ORBIT_GSE.jsonld",
+  "name": "WIND Orbit data (GSE frame, 10 min resolution)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Wind_Ephemeris_WIND_ORBIT_GSE.jsonld",
+  "sdDatePublished": "2022-09-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:WIND_ORBIT_GSE",
+      "encodingFormat": "Text.ASCII",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Wind/Ephemeris/WIND_ORBIT_GSE",
+  "creditText": "WIND Orbit data (GSE frame, 10 min resolution).",
+  "description": "This data set contains WIND Spacecraft Position and Velocity (GSE frame, 10 min resolution)",
+  "abstract": "This data set contains WIND Spacecraft Position and Velocity (GSE frame, 10 min resolution)",
+  "temporalCoverage": "Start date: 1994-11-01T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "WIND Position (GSE, 10 min resolution)",
+      "description": "WIND Position (GSE, 10 min resolution)",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional",
+        "description": "Vector"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "WIND Velocity (GSE, 10 min resolution)",
+      "description": "WIND Velocity (km/s) in GSE coordinates, 10 min resolution",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Velocity",
+        "description": "Vector"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

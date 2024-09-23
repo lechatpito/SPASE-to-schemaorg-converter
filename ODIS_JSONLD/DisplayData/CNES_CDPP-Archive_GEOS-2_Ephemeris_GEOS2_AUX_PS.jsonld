@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_CDPP-Archive_GEOS-2_Ephemeris_GEOS2_AUX_PS.jsonld",
+  "name": "GEOS-2 Geographic Position and Auxiliary Data Level-2 (PostScripts)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_CDPP-Archive_GEOS-2_Ephemeris_GEOS2_AUX_PS.jsonld",
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GEOS2_AUX_PS",
+      "encodingFormat": "Postscript",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/DisplayData/CDPP-Archive/GEOS-2/Ephemeris/GEOS2_AUX_PS",
+  "creditText": "GEOS-2 Geographic Position and Auxiliary Data Level-2 (PostScripts).",
+  "description": "This  dataset contains plots GEOS-2 ephemeris data:\n\n    Geographic Position\n    Sat-E-Sun\n    Spin Axis Tilt\n    Spin Axis in VHD\n    Dipole Axis in VHD\n    Sun Dir. in VHD\n    Quality",
+  "abstract": "This  dataset contains plots GEOS-2 ephemeris data:\n\n    Geographic Position\n    Sat-E-Sun\n    Spin Axis Tilt\n    Spin Axis in VHD\n    Dipole Axis in VHD\n    Sun Dir. in VHD\n    Quality",
+  "temporalCoverage": "Start date: 1978-07-27T00:00:00Z. Relative stop date: None",
+  "variableMeasured": "Ephemeris",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

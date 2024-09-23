@@ -1,0 +1,122 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_ROSETTA_RPC_MIP_ROSETTA_RPC_MIP_S3HLF.jsonld",
+  "name": "ROSETTA RPC-MIP Calibrated Electric Field Phase Spectrum in Active LDL Full Mode (CDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_ROSETTA_RPC_MIP_ROSETTA_RPC_MIP_S3HLF.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-Archive/Pierre.Henri",
+    "url": "http://hpde.io/CNES/Person/CDPP-Archive/Pierre.Henri"
+  },
+  "sdDatePublished": "2022-05-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ROSETTA_RPC_MIP_S3HLF",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ROSETTA/RPC_MIP/ROSETTA_RPC_MIP_S3HLF",
+  "creditText": "ROSETTA RPC-MIP Calibrated Electric Field Phase Spectrum in Active LDL Full Mode (CDF).",
+  "description": "This dataset contains E-field phase spectra acquired in active LDL mode. The frequency table is fixed, with 24 frequency bins in the [7 kHz - 168 kHz] range. The time resolution depends on the operational mode.",
+  "abstract": "This dataset contains E-field phase spectra acquired in active LDL mode. The frequency table is fixed, with 24 frequency bins in the [7 kHz - 168 kHz] range. The time resolution depends on the operational mode.",
+  "temporalCoverage": "Start date: 2005-03-01T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Mode",
+      "description": "Possible value is LDL",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "InstrumentMode"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Sub_Mode",
+      "description": "Possible value is FULL",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "InstrumentMode"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spectrum Type",
+      "description": "Possible value is PHASE",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "InstrumentMode"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Fixed frequency table: 24 frequency bins with 7 kHz resolution in the [7-168] kHz range",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field Phase",
+      "description": "Field Phase Spectrum (Active LDL mode)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "0.0174532925>rad"
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

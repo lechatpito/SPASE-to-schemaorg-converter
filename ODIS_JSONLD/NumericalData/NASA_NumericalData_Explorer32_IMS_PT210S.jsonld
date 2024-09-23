@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Explorer32_IMS_PT210S.jsonld",
+  "name": "Explorer 32 ion mass spectrometer data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Explorer32_IMS_PT210S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Dieter.K.Bilitza",
+    "url": "http://hpde.io/SMWG/Person/Dieter.K.Bilitza"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/explorer32.html",
+      "encodingFormat": "Text",
+      "name": "FTPBrowser",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/explorer/explorer32/plasma_ims/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/explorer/explorer32/plasma_ims/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Explorer32/IMS/PT210S",
+  "creditText": "Explorer 32 ion mass spectrometer data.",
+  "description": "Explorer 32 (AE-B) ion mass spectrometer, densities of H+, He+, N+, O+,",
+  "abstract": "Explorer 32 (AE-B) ion mass spectrometer, densities of H+, He+, N+, O+,",
+  "temporalCoverage": "Start date: 1966-06-10T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    "ThermalPlasma",
+    "IonComposition"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Wind_MFI_PT15S.jsonld",
+  "name": "Wind Magnetic Field Investigation (MFI) 15-sec magnetic field data, solar wind only",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Wind_MFI_PT15S.jsonld",
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/wind/mfi/ascii/15sec_ascii/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/wind/mfi/ascii/15sec_ascii/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/wind_mag15s.html",
+      "encodingFormat": "Text",
+      "name": "OMNIWeb-Plus",
+      "description": "FTPBrowser graphical display interface to ASCII data"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Wind/MFI/PT15S",
+  "creditText": "Wind Magnetic Field Investigation (MFI) 15-sec magnetic field data, solar wind only.",
+  "description": "Data consist of 15-sec averages of magnetic field magnitude and GSE Cartesian components, from the MFI magnetometer on Wind. Data are for only the solar wind phases of the Wind orbit.",
+  "abstract": "Data consist of 15-sec averages of magnetic field magnitude and GSE Cartesian components, from the MFI magnetometer on Wind. Data are for only the solar wind phases of the Wind orbit.",
+  "temporalCoverage": "Start date: 1994-11-16T00:00:00. Relative stop date: -P30D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Universal time at start of average",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_1, Column_2, Column_3, Column_4, Column_5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Magnitude",
+      "description": "Average magnitude magnitude",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_10"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector",
+      "description": "GSE Cartesian components of magnetic field vector",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_7, Column_8, Column_9"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

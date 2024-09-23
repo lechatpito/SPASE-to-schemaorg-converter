@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Yohkoh_MSU_X-Ray.Images.jsonld",
+  "name": "Yohkoh Solar X-ray Images via VSO/MSU",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Yohkoh_MSU_X-Ray.Images.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Piet.C.Martens",
+    "url": "http://hpde.io/SMWG/Person/Piet.C.Martens"
+  },
+  "sdDatePublished": "2018-08-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sdac.virtualsolar.org/cgi/search",
+      "encodingFormat": "FITS",
+      "name": "VSO interface at Stanford",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://JAXA/NumericalData/Yohkoh/MSU/X-Ray.Images",
+  "creditText": "Yohkoh Solar X-ray Images via VSO/MSU.",
+  "description": "Yohkoh Solar X-ray Images from Montana State via Virtual Solar Observatory",
+  "abstract": "Yohkoh Solar X-ray Images from Montana State via Virtual Solar Observatory",
+  "temporalCoverage": "Start date: 1991-09-01T00:00:00. Relative stop date: None",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

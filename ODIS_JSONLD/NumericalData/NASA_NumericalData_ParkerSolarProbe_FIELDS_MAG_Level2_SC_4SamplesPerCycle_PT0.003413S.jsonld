@@ -1,0 +1,377 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ParkerSolarProbe_FIELDS_MAG_Level2_SC_4SamplesPerCycle_PT0.003413S.jsonld",
+  "name": "PSP FIELDS Fluxgate Magnetometer (MAG) Magnetic Field Vectors, Spacecraft, SC, Coordinates, 4 samples/cycle, Level 2 (L2), 3.413 ms Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ParkerSolarProbe_FIELDS_MAG_Level2_SC_4SamplesPerCycle_PT0.003413S.jsonld",
+  "sdDatePublished": "2022-05-25",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ParkerSolarProbe/FIELDS/MAG/Level2/SC/4SamplesPerCycle/PT0.003413S",
+  "creditText": "PSP FIELDS Fluxgate Magnetometer (MAG) Magnetic Field Vectors, Spacecraft, SC, Coordinates, 4 samples/cycle, Level 2 (L2), 3.413 ms Data.",
+  "description": "Parker Solar Probe FIELDS Instrument Suite Fluxgate Magnetometer, MAG, Data: The time resolution of the MAG time series data varies with instrument mode ranging from 2.289 samples/s to 292.9 samples/s. These two data sampling rates corresponding to 2 samples or 256 samples per 0.874 s where 0.874 s is equal to 2^25 divided 38.4 MHz. See reference [2] for a complete explanation of the MAG instrument sampling methodology. The Magnetometer has four ranges: \u00b11024 nT, \u00b14096 nT, \u00b116,384 nT, and \u00b165,536 nT. The Magnetometer Range is selected by an algorithm based on the strength of the ambient magnetic field. The magnetic field measurement precision is \u00b115 bits, based on the 16-bit Analog to Digital Converter, ADC.\n\nReferences:\n\n* 1. Fox, N.J., Velli, M.C., Bale, S.D. et al. Space Sci Rev (2016) 204: 7. https://doi.org/10.1007/s11214-015-0211-6\n* 2. Bale, S.D., Goetz, K., Harvey, P.R. et al. Space Sci Rev (2016) 204: 49. https://doi.org/10.1007/s11214-016-0244-5",
+  "abstract": "Parker Solar Probe FIELDS Instrument Suite Fluxgate Magnetometer, MAG, Data: The time resolution of the MAG time series data varies with instrument mode ranging from 2.289 samples/s to 292.9 samples/s. These two data sampling rates corresponding to 2 samples or 256 samples per 0.874 s where 0.874 s is equal to 2^25 divided 38.4 MHz. See reference [2] for a complete explanation of the MAG instrument sampling methodology. The Magnetometer has four ranges: \u00b11024 nT, \u00b14096 nT, \u00b116,384 nT, and \u00b165,536 nT. The Magnetometer Range is selected by an algorithm based on the strength of the ambient magnetic field. The magnetic field measurement precision is \u00b115 bits, based on the 16-bit Analog to Digital Converter, ADC.\n\nReferences:\n\n* 1. Fox, N.J., Velli, M.C., Bale, S.D. et al. Space Sci Rev (2016) 204: 7. https://doi.org/10.1007/s11214-015-0211-6\n* 2. Bale, S.D., Goetz, K., Harvey, P.R. et al. Space Sci Rev (2016) 204: 49. https://doi.org/10.1007/s11214-016-0244-5",
+  "temporalCoverage": "Start date: 2018-10-06T00:00:00.000. Relative stop date: -P6M",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, four Samples per Cycle Cadence",
+      "description": "Epoch Time Tags in Terrestrial Time 2000, TT2000, for four Samples per Cycle Cadence Magnetic Field Vector Waveform Data",
+      "unitText": "ns",
+      "minValue": "2010-01-01T00:00:00.000000000",
+      "maxValue": "2049-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "unitCode": "1.0e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "epoch_mag_SC_4_Sa_per_Cyc"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This Parameter exhibits an increasing Monotonic Progression"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.003413S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I22"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.3717818619904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.3717905019904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, SC, Cartesian, four Samples per Cycle Cadence",
+      "description": "Magnetic Field Vector, B, Spacecraft, SC, Cartesian Coordinates, four Samples per Cycle Cadence Waveform Data",
+      "unitText": "nT",
+      "minValue": "-65536.0",
+      "maxValue": "65536.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0e-9>T",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "B_X",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "B_Y",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "B_Z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Array"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_fld_l2_mag_SC_4_Sa_per_Cyc"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.003413S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B_SC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, Sensor Offsets",
+      "description": "Epoch Time Tags in Terrestrial Time 2000, TT2000, for Magnetic Field Instrument, Sensor Zero Offsets, 1 min Time Resolution",
+      "unitText": "ns",
+      "minValue": "2010-01-01T00:00:00.000000000",
+      "maxValue": "2049-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "unitCode": "1.0e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "epoch_mag_SC_zero"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This Parameter exhibits an increasing Monotonic Progression"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.003413S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.3717818619904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.3717905019904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetometer Instrument, Sensor Zero Offset Tensor, Counts",
+      "description": "Magnetometer Instrument, Sensor Zero Offset Tensor measured in Counts with one Offset for each of three Axes and four Measurement Ranges, 1 min Time Resolution",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Array"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_fld_l2_mag_SC_zero"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "The Magnetometer Sensor Zero Levels are based on time-varying, in-flight calibrations. Zero levels are reported in counts and expressed in Magnetometer sensor coordinates."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.003413S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MAG Zeros"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, FIELDS Instrument Suite, Data Quality Flags",
+      "description": "Epoch Time Tags in Terrestrial Time 2000, TT2000, for FIELDS Instrument Suite, Data Quality Flags",
+      "unitText": "ns",
+      "minValue": "2010-01-01T00:00:00.000000000",
+      "maxValue": "2050-01-01T00:00:00.000000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "unitCode": "1.0e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "epoch_quality_flags"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This Parameter exhibits an increasing Monotonic Progression"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.003413S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I22"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.3717818619904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.3717905019904e+13"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIELDS Data Quality Flags",
+      "description": "FIELDS Instrument Suite Data Quality Flags",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1023",
+      "defaultValue": "4294967295",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_fld_l2_quality_flags"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "FIELDS quality flags: These flags are bitwise variables, meaning that multiple flags can be set simultaneously for a single time by adding flag values. Current flagged values are:\n\n* 1: FIELDS Antenna Bias Sweep\n* 2: PSP Thruster Firing\n* 4: SCM Calibration\n* 8: PSP Rotations for MAG Calibration, MAG Rolls\n* 16: FIELDS MAG Calibration Sequence\n* 32: SWEAP SPC in Electron Mode\n* 64: PSP Solar Limb Sensor, SLS, Test\n* 128: PSP Spacecraft is off Umbra Pointing, Heat Shield not pointed Sunward\n* 256: High Frequency Noise affecting RFS and TDS Receivers\n* 512: Antennas driven towards the FIELDS Power Supply Rails\n\nA value of zero corresponds to no set flags. Not all flags are relevant to all FIELDS data products, refer to notes in the CDF metadata and on the FIELDS Satellite Operations Center, SOC, website for information on how the various flags impact FIELDS data. For more information on the quality flags describing high frequency noise and antennas driven to the rails, see release notes for PSP/FIELDS releases 8 and 9. Additional flagged items may be added in the future."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.003413S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "flag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I10"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

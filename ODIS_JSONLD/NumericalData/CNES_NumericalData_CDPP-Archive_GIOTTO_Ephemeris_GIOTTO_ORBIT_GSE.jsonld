@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_GIOTTO_Ephemeris_GIOTTO_ORBIT_GSE.jsonld",
+  "name": "GIOTTO orbit data (GSE frame, 1 min resolution)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_GIOTTO_Ephemeris_GIOTTO_ORBIT_GSE.jsonld",
+  "sdDatePublished": "2022-03-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GIOTTO_ORBIT_GSE",
+      "encodingFormat": "Text.ASCII",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/GIOTTO/Ephemeris/GIOTTO_ORBIT_GSE",
+  "creditText": "GIOTTO orbit data (GSE frame, 1 min resolution).",
+  "description": "This data set contains 1 min resolution  GIOTTO position and velocity.  \n\nData in  records are separated by commas and blanks.\n\nCaution: For the first row, the velocity is NaN (Not a Number) initialized.",
+  "abstract": "This data set contains 1 min resolution  GIOTTO position and velocity.  \n\nData in  records are separated by commas and blanks.\n\nCaution: For the first row, the velocity is NaN (Not a Number) initialized.",
+  "temporalCoverage": "Start date: 1986-03-05T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "GIOTTO position",
+      "description": "GIOTTO position  (GSE,  1-min resolution)",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional",
+        "description": "Vector"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GIOTTO position",
+      "description": "GIOTTO velocity (GSE,  1-min resolution)",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Velocity",
+        "description": "Vector"
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_TohokuU_radio_obs_rik_lf_lfrto_rik_numerical.jsonld",
+  "name": "Standard radio wave phase-amplitude variation data (Rikubetsu station)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_TohokuU_radio_obs_rik_lf_lfrto_rik_numerical.jsonld",
+  "sdDatePublished": "2012-12-12",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://iprt.gp.tohoku.ac.jp/",
+      "encodingFormat": "CDF",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/TohokuU/radio_obs/rik/lf/lfrto_rik_numerical",
+  "creditText": "Standard radio wave phase-amplitude variation data (Rikubetsu station).",
+  "description": "Amplitude and phase time series of low frequency standard radio transmitter signals at 40.0 (JJY), 60.0(JJY), and 67.5kHz(BPC) received at the Rikubetsu observatory (Hokkaido, Japan) of Nagoya University. Variations in the phase and amplitude reflect changes of the ionization state in the lower ionosphere which is caused by energetic electron precipitation from inner magnetosphere (radiation belt), solar x-rays, lightning dischanges, and so on.",
+  "abstract": "Amplitude and phase time series of low frequency standard radio transmitter signals at 40.0 (JJY), 60.0(JJY), and 67.5kHz(BPC) received at the Rikubetsu observatory (Hokkaido, Japan) of Nagoya University. Variations in the phase and amplitude reflect changes of the ionization state in the lower ionosphere which is caused by energetic electron precipitation from inner magnetosphere (radiation belt), solar x-rays, lightning dischanges, and so on.",
+  "temporalCoverage": "Start date: 2000-01-01T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Radio amplitude",
+      "description": "Amplitude time series of standard radio signals at at 40.0 (JJY), 60.0(JJY), and 67.5kHz (BPC)",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radio phase",
+      "description": "Phase time series of standard radio signals at at 40.0 (JJY), 60.0(JJY), and 67.5kHz (BPC)",
+      "unitText": "degree",
+      "minValue": "0",
+      "maxValue": "360",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Observed Time",
+      "unitText": "Julian day",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": "LFRTO, LF-STD",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

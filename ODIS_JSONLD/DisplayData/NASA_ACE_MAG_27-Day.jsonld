@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_ACE_MAG_27-Day.jsonld",
+  "name": "ACE 27-day Survey Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_ACE_MAG_27-Day.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/gif_walk?plot_type=ace_kp_plots_27_day",
+      "encodingFormat": "GIF",
+      "name": "Polar-Wind-Geotail 'gif-walk' site",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/ACE/MAG/27-Day",
+  "creditText": "ACE 27-day Survey Plots.",
+  "description": "27-day gif_walk plots, selected ACE mag field and plasma data ",
+  "abstract": "27-day gif_walk plots, selected ACE mag field and plasma data ",
+  "temporalCoverage": "Start date: 1997-08-25T00:00:00. Relative stop date: -P1M",
+  "variableMeasured": [
+    "MagneticField",
+    "ThermalPlasma"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

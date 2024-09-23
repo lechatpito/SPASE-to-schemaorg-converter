@@ -1,0 +1,381 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_COSPIN_HET_Housekeeping_PT256S.jsonld",
+  "name": "Ulysses Cosmic Ray and Solar Particle Investigation (COSPIN) High Energy Telescope (HET) Full Resolution Housekeeping Parameters, 256 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_COSPIN_HET_Housekeeping_PT256S.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ufa.esac.esa.int/ufa/#data",
+      "encodingFormat": "Text",
+      "name": "Ulysses Final Archive Access to COSPIN/HET Full Resolution Housekeeping Parameters",
+      "description": "Parent Directory containing FTP downloadable Daily Files with the Format described below"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Ulysses/COSPIN/HET/Housekeeping/PT256S",
+  "creditText": "Ulysses Cosmic Ray and Solar Particle Investigation (COSPIN) High Energy Telescope (HET) Full Resolution Housekeeping Parameters, 256 s Data.",
+  "description": "A Directory containing Daily FTP downloadable Files containing Readout-by-Readout Listings of HET Housekeeping Parameters (Voltages, Temperatures, Offsets). The Naming Convention of the Files is uly_het_full_house_YYYDDD.txt, where YYY indicates the three digit Year since 1900 (e.g. YYY=090 for 1990, and YYY=102 for 2002) and DDD indicates the three digit Day of Year (January 1 = 1). In each File, following a detailed Description of the Format, the Data consist of a Listing of HET Housekeeping Parameters measured at the Time listed in the first four Columns of each Line. Each Line contains Data for one Readout of the Parameters. The first four Columns give the Time of the Measurement as Fractional Year (to 12 Decimal Places) and as Year since 1900, Day of Year, and Milliseconds of Day. At the most common Science Telemetry Rate, 2048 bps, each Parameter in this File is Readout once every 256 s. The Measurements are instantaneous, and do not represent an Average of Values over the Interval since the last Readout. The sole Function of these Parameters is to monitor Instrument Health. No Noise Removal or Despiking has been done, so Caution must be used in interpreting isolated large Increases or Decreases in the measured Parameters.",
+  "abstract": "A Directory containing Daily FTP downloadable Files containing Readout-by-Readout Listings of HET Housekeeping Parameters (Voltages, Temperatures, Offsets). The Naming Convention of the Files is uly_het_full_house_YYYDDD.txt, where YYY indicates the three digit Year since 1900 (e.g. YYY=090 for 1990, and YYY=102 for 2002) and DDD indicates the three digit Day of Year (January 1 = 1). In each File, following a detailed Description of the Format, the Data consist of a Listing of HET Housekeeping Parameters measured at the Time listed in the first four Columns of each Line. Each Line contains Data for one Readout of the Parameters. The first four Columns give the Time of the Measurement as Fractional Year (to 12 Decimal Places) and as Year since 1900, Day of Year, and Milliseconds of Day. At the most common Science Telemetry Rate, 2048 bps, each Parameter in this File is Readout once every 256 s. The Measurements are instantaneous, and do not represent an Average of Values over the Interval since the last Readout. The sole Function of these Parameters is to monitor Instrument Health. No Noise Removal or Despiking has been done, so Caution must be used in interpreting isolated large Increases or Decreases in the measured Parameters.",
+  "temporalCoverage": "Start date: 1990-10-22T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time of Measurement",
+      "description": "Time at which the Measurements were made",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Decimal Year",
+          "description": "",
+          "position": "1",
+          "defaultValue": "0.00000000000"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "2",
+          "defaultValue": "0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day of Year",
+          "description": "",
+          "position": "3",
+          "defaultValue": "0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Milliseconds of Day",
+          "description": "",
+          "position": "4",
+          "defaultValue": "0"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT256S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ADC Offset",
+      "description": "Offset of Analogue to Digital Converter Base from Zero Volts",
+      "unitText": "mV",
+      "minValue": "-9600",
+      "maxValue": "3200",
+      "defaultValue": "-99999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "During In-Flight-Calibrate Sequences, the ADC Offset Measurement is disabled and is replaced in the Telemetry by the +15 V Monitor Measurement. During these Times, the ADC Offset Measurement in this Listing is replaced by fill."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT256S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/HET +15 V Monitor",
+      "description": "Measurement of the Voltage on the +15 V regulated Power Line from the COSPIN Converter.",
+      "unitText": "mV",
+      "minValue": "0",
+      "maxValue": "18750",
+      "defaultValue": "-99999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This Measurement is reported only during In-Flight-Calibrate Sequences. At all other Times it is represented in this Listing by fill."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT256S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/HET +10 V Monitor",
+      "description": "Measurement of the Voltage on the +10 V Line from the COSPIN Converter.",
+      "unitText": "mV",
+      "minValue": "0",
+      "maxValue": "12700",
+      "defaultValue": "-99999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "None"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT256S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/HET -6 V Monitor",
+      "description": "Measurement of the Voltage on the -6 V Line from the COSPIN Converter.",
+      "unitText": "mV",
+      "minValue": "-7700",
+      "maxValue": "0",
+      "defaultValue": "-99999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_8"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "None"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT256S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/HET -15 V Monitor",
+      "description": "Measurement of the Voltage on the -15 V Line from the COSPIN Converter.",
+      "unitText": "mV",
+      "minValue": "-19000",
+      "maxValue": "0",
+      "defaultValue": "-99999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_9"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "None"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT256S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/HET PMT Voltage",
+      "description": "Operating Voltage of the PMT viewing the HET Anti-Coincidence Cylinder.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1275000",
+      "defaultValue": "-9999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_10"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "None"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT256S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/HET K1 Voltage",
+      "description": "Bias Voltage for Detectors KX,KY,KZ (DX,DY,DZ). Documentation available in 2009 does not make clear whether the Detectors were K1,K2,K3 (D7,D8,D9) or K4,K5,K6 (D10,D11,D12).",
+      "unitText": "mV",
+      "minValue": "0.0",
+      "maxValue": "1020000",
+      "defaultValue": "-9999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_11"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "None"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT256S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/HET K2 Voltage",
+      "description": "Bias Voltage for Detectors KA,KB,KC (DA,DB,DC). Documentation available in 2009 does not make clear whether the Detectors were K1,K2,K3 (D7,D8,D9) or K4,K5,K6 (D10,D11,D12).",
+      "unitText": "mV",
+      "minValue": "0.0",
+      "maxValue": "1020000",
+      "defaultValue": "-9999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_12"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "None"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT256S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/HET Electronics Temperature",
+      "description": "Temperature of the HET Electronics.",
+      "unitText": "1000 \u00b0",
+      "minValue": "-60000",
+      "maxValue": "70000",
+      "defaultValue": "-99999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column_13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "None"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT256S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

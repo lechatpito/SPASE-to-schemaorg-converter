@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_CRRES_MEA_PT1M.jsonld",
+  "name": "CRRES MEA 1-min electron distribution functions",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_CRRES_MEA_PT1M.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/CRRES/MEA/PT1M",
+  "creditText": "CRRES MEA 1-min electron distribution functions.",
+  "description": "This data set holds 1-min resolution electron distributions from the Medium Electron Sensor/Analyzer (MEA) on the CRRES spacecraft. The data consists of counting rates from 17 energy channels in the range of 0.1-2 MeV and 19 pitch angle bins at 1 minute time intervals. The average flux, 90 degree flux and N value are included. Also included are the spacecraft geographic coordinates and altitude, L shell, and the local and equatorial magnetic field magnitudes from the 1977 Olson-Pfitzer model of the earth's geomagnetic field. The raw high resolution (0.512 sec) data and documentation of raw data can be obtained via ftp from NSSDC.",
+  "abstract": "This data set holds 1-min resolution electron distributions from the Medium Electron Sensor/Analyzer (MEA) on the CRRES spacecraft. The data consists of counting rates from 17 energy channels in the range of 0.1-2 MeV and 19 pitch angle bins at 1 minute time intervals. The average flux, 90 degree flux and N value are included. Also included are the spacecraft geographic coordinates and altitude, L shell, and the local and equatorial magnetic field magnitudes from the 1977 Olson-Pfitzer model of the earth's geomagnetic field. The raw high resolution (0.512 sec) data and documentation of raw data can be obtained via ftp from NSSDC.",
+  "temporalCoverage": "Start date: 1990-07-28T00:00:00. Relative stop date: None",
+  "variableMeasured": "EnergeticParticles",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

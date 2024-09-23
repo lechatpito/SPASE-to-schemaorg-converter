@@ -1,0 +1,163 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_GEOS-2_S-300_GEOS2_UBF_VTL1_RFF.jsonld",
+  "name": "GEOS-2 Ultra Low Frequency Magnetic Field Components Level-1 (RFF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_GEOS-2_S-300_GEOS2_UBF_VTL1_RFF.jsonld",
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GEOS2_UBF_VTL1_RFF",
+      "encodingFormat": "Text.ASCII",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/GEOS-2/S-300/GEOS2_UBF_VTL1_RFF",
+  "creditText": "GEOS-2 Ultra Low Frequency Magnetic Field Components Level-1 (RFF).",
+  "description": "This  dataset contains magnetic field components  from GEOS-2 S-300 wave experiment (search coil magnetometer) given in Instrument Spinning System in TM counts. Time resolution is 43 ms. \nThe data format is RFF (Roproc File Format ftp://ftp.lpp.polytechnique.fr/robert/keep/Biblio_et_CV/Working_documents/2015_Robert_The_Roproc_File_Format_V2p3.pdf)\n\n    Bx, By, Bz: Magnetic field\n    Gx, Gy, Gz: adaptative gains that take values 5, 25 or 125\n    Dx, Dy: despin signals corresponding To the continuous magnetic field rotation\n\nThe conversion to Volt units is given by:\nBx(V) = -(Bx*5.1/255.0 - 2.5)/Gx\nDx(V) = (Dx*5.1/255.0 -2.5)/10.0",
+  "abstract": "This  dataset contains magnetic field components  from GEOS-2 S-300 wave experiment (search coil magnetometer) given in Instrument Spinning System in TM counts. Time resolution is 43 ms. \nThe data format is RFF (Roproc File Format ftp://ftp.lpp.polytechnique.fr/robert/keep/Biblio_et_CV/Working_documents/2015_Robert_The_Roproc_File_Format_V2p3.pdf)\n\n    Bx, By, Bz: Magnetic field\n    Gx, Gy, Gz: adaptative gains that take values 5, 25 or 125\n    Dx, Dy: despin signals corresponding To the continuous magnetic field rotation\n\nThe conversion to Volt units is given by:\nBx(V) = -(Bx*5.1/255.0 - 2.5)/Gx\nDx(V) = (Dx*5.1/255.0 -2.5)/10.0",
+  "temporalCoverage": "Start date: 1978-07-26T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Sampling frequency",
+      "description": "Sampling frequency",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voltage range min",
+      "description": "Voltage range min",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voltage range max",
+      "description": "Voltage range max",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Telemetry range min",
+      "description": "Telemetry range min",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Telemetry range max",
+      "description": "Telemetry range max",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin period",
+      "description": "Spin period",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Phase Angle",
+      "description": "Spin Phase is given in the S/C system and S/C sens",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "0.0174532925>rad",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "SpinPhase"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field components  in the instrument coordinate system",
+      "description": "Magnetic field components given in the instrument coordinate system \nBx, By, Bz: Magnetic field\nGx, Gy, Gz: adaptative gains that take values 5, 25 or 125\nDx, Dy: despin signals corresponding to the continuous magnetic field rotation",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

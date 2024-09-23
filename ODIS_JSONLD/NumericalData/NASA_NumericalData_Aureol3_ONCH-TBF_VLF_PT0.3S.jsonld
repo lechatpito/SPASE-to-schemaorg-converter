@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Aureol3_ONCH-TBF_VLF_PT0.3S.jsonld",
+  "name": "Aureol 3 VLF Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Aureol3_ONCH-TBF_VLF_PT0.3S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Natalia.E.Papitashvili",
+    "url": "http://hpde.io/SMWG/Person/Natalia.E.Papitashvili"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/arcad/vlf/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Arcad_VLF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/arcad/vlf/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "Arcad_VLF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Aureol3/ONCH-TBF/VLF/PT0.3S",
+  "creditText": "Aureol 3 VLF Data.",
+  "description": "This data set contains power of electromagnetic wave components from \nnarrow band (10%) filters at 140, 450, 800, 4500, and 15000 Hz.  For \nany given time segment the power for any one of five predefined pairs \nof the five measurable field components (EZ, EH, BZ, BX, BX45) were \nmeasured and are included. The components of electromagnetic field \nare named by their direction in the satellite frame.\nSpacecraft position in geographic and \nmagnetic coordinates are also included, along with time and an \nindication of which pair of components were measured.\n  Each data file corresponds to one memory readout, and \ntypically consists of a few continuous-data segments.  The first \nseveral records in each file constitute a header giving the time spans \nof the segments, the time resolution, and other common information.  \nThe data records are in ASCII.",
+  "abstract": "This data set contains power of electromagnetic wave components from \nnarrow band (10%) filters at 140, 450, 800, 4500, and 15000 Hz.  For \nany given time segment the power for any one of five predefined pairs \nof the five measurable field components (EZ, EH, BZ, BX, BX45) were \nmeasured and are included. The components of electromagnetic field \nare named by their direction in the satellite frame.\nSpacecraft position in geographic and \nmagnetic coordinates are also included, along with time and an \nindication of which pair of components were measured.\n  Each data file corresponds to one memory readout, and \ntypically consists of a few continuous-data segments.  The first \nseveral records in each file constitute a header giving the time spans \nof the segments, the time resolution, and other common information.  \nThe data records are in ASCII.",
+  "temporalCoverage": "Start date: 1981-09-30T00:00:00. Relative stop date: None",
+  "variableMeasured": "Waves",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

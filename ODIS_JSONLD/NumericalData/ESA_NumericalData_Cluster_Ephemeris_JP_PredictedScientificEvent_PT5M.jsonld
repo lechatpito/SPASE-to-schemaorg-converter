@@ -1,0 +1,533 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Cluster_Ephemeris_JP_PredictedScientificEvent_PT5M.jsonld",
+  "name": "Cluster Predicted Scientific Events (PSE), JSOC Parameter (JP), 5 min Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Cluster_Ephemeris_JP_PredictedScientificEvent_PT5M.jsonld",
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/NumericalData/Cluster/Ephemeris/JP/PredictedScientificEvent/PT5M",
+  "creditText": "Cluster Predicted Scientific Events (PSE), JSOC Parameter (JP), 5 min Data.",
+  "description": "M.A. Hapgood et al, The Joint Science Operations Centre, Space Sci. Rev. 79, 487-525 (1997)\n                   NS S Southbound neutral sheet\n                   NT I Enter north tail lobe from inner magnetosphere\n                   ST O Leave south tail lobe for inner magnetosphere",
+  "abstract": "M.A. Hapgood et al, The Joint Science Operations Centre, Space Sci. Rev. 79, 487-525 (1997)\n                   NS S Southbound neutral sheet\n                   NT I Enter north tail lobe from inner magnetosphere\n                   ST O Leave south tail lobe for inner magnetosphere",
+  "temporalCoverage": "Start date: 2000-08-01T00:00:00.000. Relative stop date: P3Y",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Half Interval",
+      "description": "Half Interval, Half of the Mean Time Duration between Time Tags, equal to the Average of the Half Interval over the File",
+      "unitText": "ms",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Half_interval__CT_JP_PSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Half Sample Time Interval"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time Tags",
+      "description": "Epoch Time Tags, the Interval centred Time Tag, rounded to nearest Millisecond",
+      "unitText": "ms",
+      "minValue": "01-Jan-1994 00:00:00.000",
+      "maxValue": "01-Jan-2010 00:00:00.000",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch__CT_JP_PSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This Parameter exhibits an increasing Monotonic Progression."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.3145505019904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.3148183419904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Code for Predicted Spacecraft Event",
+      "description": "Event Code for Predicted Spacecraft Event, PSE, not for Plotting",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0>(code)",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "event_code__CT_JP_PSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: none"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Event Code"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Orbit Number",
+      "description": "Spacecraft Orbit Number, Integer Part, Non-Event Times not plotted",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": "-32768",
+      "unitCode": "1.0>(orbit)",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "orbit_num__CT_JP_PSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Orb Num"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "500"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Code Sub Type",
+      "description": "Event Code Sub Type, not for Plotting",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0>(subcode)",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "event_sub_code__CT_JP_PSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: none"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Sub Event Code"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Orbit Phase",
+      "description": "Spacecraft Orbit Phase, Fractional Part, Non-Event Times not plotted",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0>(orbit phase)",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "orbit_phase__CT_JP_PSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Orb Phase"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E10.3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Predicted Latitude",
+      "description": "Spacecraft Position, Predicted Latitude, Elevation Angle from Ecliptic Plane, Non-Event Times not plotted",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": [
+            "DirectionAngle.ElevationAngle",
+            "Scalar"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_lat__CT_JP_PSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: angle_degrees"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Predicted Lat (GSM)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "90.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Predicted Magnetic Local Time",
+      "description": "Spacecraft Position, Predicted Magnetic Local Time, MLT, Non-Event Times not plotted",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "3600>s",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": [
+            "DirectionAngle.AzimuthAngle",
+            "Scalar"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_mag_local_time__CT_JP_PSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Predicted Magnetic Local Time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "24.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position Vector Components, Geocentric Solar Ecliptic Cartesian Coordinates, at the Predicted Spacecraft Event Time",
+      "description": "Spacecraft Position Vector Components, Geocentric Solar Ecliptic, GSE, Cartesian Coordinates, at the Predicted Spacecraft Event, PSE, Time, Non-Event Times not plotted",
+      "unitText": "km",
+      "minValue": "-130000.0",
+      "maxValue": "130000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0e3>m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x (GSE) pred",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y (GSE) pred",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z (GSE) pred",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_rT_xyz_gse__CT_JP_PSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-150000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "150000.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

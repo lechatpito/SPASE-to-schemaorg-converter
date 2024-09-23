@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_SuperMAG_Magnetometers_PT1M.jsonld",
+  "name": "SuperMAG 1-minute data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_SuperMAG_Magnetometers_PT1M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Jesper.W.Gjerloev",
+    "url": "http://hpde.io/SMWG/Person/Jesper.W.Gjerloev"
+  },
+  "sdDatePublished": "2018-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://supermag.jhuapl.edu/",
+      "encodingFormat": "IDL",
+      "name": "SuperMAG data access at JHU_APL",
+      "description": "Password-required pathway to data"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/SuperMAG/Magnetometers/PT1M",
+  "creditText": "SuperMAG 1-minute data.",
+  "description": "These data consist of uniformized magnetic variation \ndata created by SuperMAG from data received from over 200 ground \nobservatories worldwide.  Data are made into 1-min resolution, are \ncleaned for errors and artifacts, are converted to a NEZ coordinate \nsystem (N and E are local magnetic North and East, Z is vertical down), \nand have their dominant and slowly varying Earth field components \n(i.e., baselines) subtracted out.  Thus the data are intended for \nstudies of effects of variable ionospheric and magnetospheric current\nsystems.  Data are available as line plots, as northern and southern\nhemisphere maps, and as underlying IDL saveset files.  User registration\nis required prior to data access.",
+  "abstract": "These data consist of uniformized magnetic variation \ndata created by SuperMAG from data received from over 200 ground \nobservatories worldwide.  Data are made into 1-min resolution, are \ncleaned for errors and artifacts, are converted to a NEZ coordinate \nsystem (N and E are local magnetic North and East, Z is vertical down), \nand have their dominant and slowly varying Earth field components \n(i.e., baselines) subtracted out.  Thus the data are intended for \nstudies of effects of variable ionospheric and magnetospheric current\nsystems.  Data are available as line plots, as northern and southern\nhemisphere maps, and as underlying IDL saveset files.  User registration\nis required prior to data access.",
+  "temporalCoverage": "Start date: 1997-01-01T00:00:00. Relative stop date: None",
+  "variableMeasured": "MagneticField",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

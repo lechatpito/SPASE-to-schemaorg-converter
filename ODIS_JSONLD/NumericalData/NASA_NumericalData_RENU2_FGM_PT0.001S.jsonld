@@ -1,0 +1,157 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_RENU2_FGM_PT0.001S.jsonld",
+  "name": "RENU2 Science Magnetometer (FGM) Magnetic Field, High Time Resolution (H0), 1 ms Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_RENU2_FGM_PT0.001S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/RENU2/FGM/PT0.001S",
+  "creditText": "RENU2 Science Magnetometer (FGM) Magnetic Field, High Time Resolution (H0), 1 ms Data.",
+  "description": "Rocket Experiment for Neutral Upwelling 2, RENU2, Science Magnetometer, Magnetic Field Measurements",
+  "abstract": "Rocket Experiment for Neutral Upwelling 2, RENU2, Science Magnetometer, Magnetic Field Measurements",
+  "temporalCoverage": "Start date: 2015-12-13T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time, Terrestrial Time 2000, Interval Centered Time",
+      "unitText": "ns",
+      "minValue": "2015-01-01T00:00:00.000000000",
+      "maxValue": "2016-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "unitCode": "1.0e-9>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This Parameter exhibits an increasing Monotonic Progression."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.001S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field, Geomagnetic Coordinates, Despun",
+      "description": "Magnetic Field, Geomagnetic, GM, Coordinates, Despun",
+      "unitText": "G",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0e-4>T",
+      "measurementTechnique": "Cartesian MAG",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.001S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.5"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.Topside"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_CASSINI_RPWS-HFR_CAS_RPWS_HFR_NATIVE_N2.jsonld",
+  "name": "HFR Native L2 Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_CASSINI_RPWS-HFR_CAS_RPWS_HFR_NATIVE_N2.jsonld",
+  "sdDatePublished": "2022-06-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CAS_RPWS_HFR_NATIVE_N2",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/CASSINI/RPWS-HFR/CAS_RPWS_HFR_NATIVE_N2",
+  "creditText": "HFR Native L2 Data.",
+  "description": "This data set contains the CASSINI RPWS HFR calibrated measurements in physical values (V^2/Hz.) It is composed of hourly binary files.",
+  "abstract": "This data set contains the CASSINI RPWS HFR calibrated measurements in physical values (V^2/Hz.) It is composed of hourly binary files.",
+  "temporalCoverage": "Start date: 1997-10-25T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS  Auto-correlation 'X'",
+      "description": "CASSINI RPWS  Auto-correlation 'X'",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS  Auto-correlation 'Z'",
+      "description": "CASSINI RPWS  Auto-correlation 'Z'",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS  Cross-correlation (real)",
+      "description": "CASSINI RPWS  Cross-correlation (real)",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS  Cross-correlation (Imaginary)",
+      "description": "CASSINI RPWS  Cross-correlation (Imaginary)",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

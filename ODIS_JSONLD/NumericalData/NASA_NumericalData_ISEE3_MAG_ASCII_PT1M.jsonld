@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ISEE3_MAG_ASCII_PT1M.jsonld",
+  "name": "ISEE 3 Vector Helium Magnetometer (MAG), Magnetic Field, 1 min ASCII Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ISEE3_MAG_ASCII_PT1M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Edward.J.Smith",
+    "url": "http://hpde.io/SMWG/Person/Edward.J.Smith"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/isee_3_mag.html",
+      "encodingFormat": "Text",
+      "name": "FTPBrowser",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/isee/isee3/magnetic_fields/1min_ascii_extracted/1min_hgi_1984_1990/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/isee/isee3/magnetic_fields/1min_ascii_extracted/1min_hgi_1984_1990/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ISEE3/MAG/ASCII/PT1M",
+  "creditText": "ISEE 3 Vector Helium Magnetometer (MAG), Magnetic Field, 1 min ASCII Data.",
+  "description": "ISEE 3 (ICE) 1-m magnetic field data, monthly ASCII files, deep space orbit phases 1984-1990",
+  "abstract": "ISEE 3 (ICE) 1-m magnetic field data, monthly ASCII files, deep space orbit phases 1984-1990",
+  "temporalCoverage": "Start date: 1984-01-01T00:00:00. Relative stop date: None",
+  "variableMeasured": "MagneticField",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ELFIN_B_Ephemeris_DEFN_PT1S.jsonld",
+  "name": "ELFIN-B Definitive Ephemeris Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ELFIN_B_Ephemeris_DEFN_PT1S.jsonld",
+  "sdDatePublished": "2024-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/elfin/elfinb/ephemeris/defn/",
+      "encodingFormat": "CDF",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftps from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/elfin/elfinb/ephemeris/defn/",
+      "encodingFormat": "CDF",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via https from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ELB_l1_STATE_DEFN&index=sp_phys",
+      "encodingFormat": "CDF",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ELFIN/B/Ephemeris/DEFN/PT1S",
+  "creditText": "ELFIN-B Definitive Ephemeris Data.",
+  "description": "The Electron Losses and Fields Investigation (ELFIN) mission is a space weather mission using three scientific instruments in a 3U+ CubeSat. The instruments measure wave and particle data. These ELFIN-B state files contain definitive position, attitude and orbit events.",
+  "abstract": "The Electron Losses and Fields Investigation (ELFIN) mission is a space weather mission using three scientific instruments in a 3U+ CubeSat. The instruments measure wave and particle data. These ELFIN-B state files contain definitive position, attitude and orbit events.",
+  "temporalCoverage": "Start date: 2018-09-16T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time since Jan 1, 2000",
+      "description": "Coordinated universal time (UTC) in seconds.",
+      "unitText": "s",
+      "minValue": "2010-01-01T00:00:00.000000000",
+      "maxValue": "2029-12-31T23:59:58.999000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_state_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "elb_state_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Position XYZ",
+      "description": "Spacecraft Position XYZ in GEI-J2000",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_pos_gei"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Velocity",
+      "description": "Spacecraft Velocity Vxyz",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Velocity",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_vel_gei"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time since Jan 1, 2000",
+      "description": "Attitude time, UTC, in seconds.",
+      "unitText": "s",
+      "minValue": "2010-01-01T00:00:00.000000000",
+      "maxValue": "2029-12-31T23:59:58.999000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_att_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "elb_att_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Attitude XYZ",
+      "description": "Spacecraft Attitude XYZ",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_att_gei"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time since Jan 1, 2000",
+      "description": "Date of attitude solution, UTC, in seconds",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "0.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_att_solution_date"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "att_solution_date"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncertainty of Attitude",
+      "description": "Uncertainty of the attitude.",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_att_uncertainty"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "att_uncertainty"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Attitude Flag",
+      "description": "Flag indicating if the attitude is interpolated=0, modeled=1.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_att_flag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "attitude flag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "i1"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Calculated Spin Period",
+      "description": "Calculated spin period.",
+      "unitText": "sec",
+      "minValue": "0",
+      "maxValue": "40",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_att_spinper"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "spinper"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Vector and Orbit Normal Angle",
+      "description": "Angle between spin vector and orbit normal.",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Orientation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_spin_orbnorm_angle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "spin_orbnorm_angle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Angle between Spin Vector and Sun",
+      "description": "Angle between spin vector and sun.",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Orientation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_spin_sun_angle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "spin_sun_angle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ELFIN B Sun Flag",
+      "description": "ELFIN B sun flag. Spacecraft in sun = 1.",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "elb_sun"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "spacecraft in sun"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I1"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

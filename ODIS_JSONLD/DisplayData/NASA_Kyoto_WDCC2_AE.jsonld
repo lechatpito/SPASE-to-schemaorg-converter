@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_Kyoto_WDCC2_AE.jsonld",
+  "name": "Minute AE Index Plots to Today",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_Kyoto_WDCC2_AE.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Toyo.Kamei",
+    "url": "http://hpde.io/SMWG/Person/Toyo.Kamei"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://wdc.kugi.kyoto-u.ac.jp/ae_realtime/presentmonth/index.html",
+      "encodingFormat": "GIF",
+      "name": "Site of WDC-C2, Kyoto U - Real-time (quicklook) AE Index in this month",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://wdc.kugi.kyoto-u.ac.jp/wdc/Sec3.html",
+      "encodingFormat": "GIF",
+      "name": "Site of WDC-C2, Kyoto U - Geomagnetic Data Service",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/Kyoto/WDCC2/AE",
+  "creditText": "Minute AE Index Plots to Today.",
+  "description": "Quicklook 1-min AE, AU, AL indices through today from WDC-C2 at Kyoto-U, also earlier definitive minute and hourly AE, AU, AL",
+  "abstract": "Quicklook 1-min AE, AU, AL indices through today from WDC-C2 at Kyoto-U, also earlier definitive minute and hourly AE, AU, AL",
+  "temporalCoverage": "Start date: 1957-01-01T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": [
+    "MagneticField",
+    "ActivityIndex"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

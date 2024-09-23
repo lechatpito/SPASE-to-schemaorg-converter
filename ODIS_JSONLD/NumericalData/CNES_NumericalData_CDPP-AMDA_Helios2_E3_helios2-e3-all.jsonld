@@ -1,0 +1,260 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Helios2_E3_helios2-e3-all.jsonld",
+  "name": "Helios2 - E3 - magnetic field 6-sec average",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Helios2_E3_helios2-e3-all.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-AMDA/David.Stansby",
+    "url": "http://hpde.io/CNES/Person/CDPP-AMDA/David.Stansby"
+  },
+  "sdDatePublished": "2020-08-18",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Helios2/E3/helios2-e3-all",
+  "creditText": "Helios2 - E3 - magnetic field 6-sec average.",
+  "description": "\n            The instrument is a dual configuration of two tri-axial fluxgate magnetometers\n            operating at four different sensitivities (from 0.84 to 0.03 nT).\n            The time resolution, depending the operation mode, telemetry format, and \n            bit rate, for most cases varied from 0.07 to 1.5 seconds.\n            \n            The present data set contains six-second averages of the magnetic field\n            elements in solar-ecliptic (SE) spacecraft-centered coordinates.\n            Data are stored in files on a daily basis.\n",
+  "abstract": "\n            The instrument is a dual configuration of two tri-axial fluxgate magnetometers\n            operating at four different sensitivities (from 0.84 to 0.03 nT).\n            The time resolution, depending the operation mode, telemetry format, and \n            bit rate, for most cases varied from 0.07 to 1.5 seconds.\n            \n            The present data set contains six-second averages of the magnetic field\n            elements in solar-ecliptic (SE) spacecraft-centered coordinates.\n            Data are stored in files on a daily basis.\n",
+  "temporalCoverage": "Start date: 1976-01-17T07:34:06Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Average"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "helios2_e3_bmag"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_se",
+      "description": "Magnetic field in solar ecliptic spacecraft centered coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "helios2_e3_bse"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_rtn",
+      "description": "Magnetic field in RTN coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "br",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bt",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bn",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "helios2_e3_brtn"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "std_b",
+      "description": "Magnetic field standard deviation",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "helios2_e3_std"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi",
+      "description": "Magnetic field phi angle",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9&gt;T",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "helios2_e3_brtn_phi"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta",
+      "description": "Magnetic field theta angle",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9&gt;T",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "helios2_e3_brtn_theta"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

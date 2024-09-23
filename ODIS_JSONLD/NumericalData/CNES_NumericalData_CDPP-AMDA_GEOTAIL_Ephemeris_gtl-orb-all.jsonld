@@ -1,0 +1,162 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_GEOTAIL_Ephemeris_gtl-orb-all.jsonld",
+  "name": "Geotail - Ephemeris - orbit",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_GEOTAIL_Ephemeris_gtl-orb-all.jsonld",
+  "sdDatePublished": "2024-04-14",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/GEOTAIL/Ephemeris/gtl-orb-all",
+  "creditText": "Geotail - Ephemeris - orbit.",
+  "description": "Definitive Geotail spacecraft positions in various coordinate systems",
+  "abstract": "Definitive Geotail spacecraft positions in various coordinate systems",
+  "temporalCoverage": "Start date: 1992-07-27T16:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gse",
+      "description": "Spacecraft position vector in GSE coordinates",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_xyz"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gsm",
+      "description": "Spacecraft position vector in GSM coordinates",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_xyz_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance gtl-earth",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_r"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

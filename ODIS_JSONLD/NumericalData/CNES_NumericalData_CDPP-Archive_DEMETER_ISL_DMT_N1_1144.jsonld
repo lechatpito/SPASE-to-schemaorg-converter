@@ -1,0 +1,137 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DEMETER_ISL_DMT_N1_1144.jsonld",
+  "name": "DMT_N1_1144 : ISL - Langmuir Probe Results (Plasma Parameters) in Survey Mode",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DEMETER_ISL_DMT_N1_1144.jsonld",
+  "sdDatePublished": "2022-01-10",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DMT_N1_1144",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/DEMETER/ISL/DMT_N1_1144",
+  "creditText": "DMT_N1_1144 : ISL - Langmuir Probe Results (Plasma Parameters) in Survey Mode.",
+  "description": "This data set contains DEMETER ISL  Langmuir Probe Results (Plasma Parameters) in Survey Mode",
+  "abstract": "This data set contains DEMETER ISL  Langmuir Probe Results (Plasma Parameters) in Survey Mode",
+  "temporalCoverage": "Start date: 2004-07-16T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Density in Burst Mode",
+      "description": "Electron Density in Survey Mode",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Temperature in Survey Mode",
+      "description": "Electron Temperature in Survey Mode",
+      "unitText": "K",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion Density in Survey Mode",
+      "description": "Ion Density in Survey Mode",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Plasma Potential in Survey Mode",
+      "description": "Plasma Potential in Survey Mode",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Floating Potential in Survey Mode",
+      "description": "Floating Potential in Survey Mode",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Satellite Potential in Survey Mode",
+      "description": "Satellite Potential in Survey Mode",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

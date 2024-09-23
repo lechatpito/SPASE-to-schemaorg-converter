@@ -1,0 +1,382 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ACE_MAG_L2_PT16S.jsonld",
+  "name": "ACE Magnetic Field 16-Second Level 2 Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ACE_MAG_L2_PT16S.jsonld",
+  "sdDatePublished": "2022-08-19",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ACE/MAG/L2/PT16S",
+  "creditText": "ACE Magnetic Field 16-Second Level 2 Data.",
+  "description": "ACE Magnetometer level 2 data, 16-second averages of field magnitude and GSE and GSM Cartesian components, plus standard deviations, plus ACE location data. The data are accessible via ftp in HDF and CDF from the ACE Science Center and CDAWeb, respectively, and in ASCII format from the value-added interfaces at those sites. The \"parameter keys\" given below are as used by CDAWeb. One-sec, 4-min, 1-hr, 1-day and 27-day averages are also available via the access paths given below.",
+  "abstract": "ACE Magnetometer level 2 data, 16-second averages of field magnitude and GSE and GSM Cartesian components, plus standard deviations, plus ACE location data. The data are accessible via ftp in HDF and CDF from the ACE Science Center and CDAWeb, respectively, and in ASCII format from the value-added interfaces at those sites. The \"parameter keys\" given below are as used by CDAWeb. One-sec, 4-min, 1-hr, 1-day and 27-day averages are also available via the access paths given below.",
+  "temporalCoverage": "Start date: 1997-09-02T00:00:12Z. Relative stop date: -P2M",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Number of milliseconds since CDF_EPOCH: 0000-01-01T00:00:00.000. Timestamp marks beginning of interval",
+      "unitText": "ms",
+      "minValue": "1996-01-01T00:00:00.000Z",
+      "maxValue": "2020-01-01T00:00:00.000Z",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time PB5",
+      "description": "Time of observation in year, day of year, and milliseconds. Timestamp marks beginning of interval",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "1",
+          "defaultValue": "-2147483648"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day of year",
+          "description": "",
+          "position": "2",
+          "defaultValue": "-2147483648"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Elapsed milliseconds of day",
+          "description": "",
+          "position": "3",
+          "defaultValue": "-2147483648"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time_PB5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bmagnitude",
+      "description": "Magnetic field magnitude",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "500.0",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Average",
+            "Magnitude"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Magnitude"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B GSE",
+      "description": "Magnetic field vector in GSE Cartesian coordinates (16 sec)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Component.I",
+            "Component.J",
+            "Component.K"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BGSEc"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B GSM",
+      "description": "Magnetic field vector in GSM coordinates (16 sec)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx GSM",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By GSM",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz GSM",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Component.I",
+            "Component.J",
+            "Component.K"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BGSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B RMS",
+      "description": "RMS of magnetic field magnitude (16 sec period)",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "StandardDeviation",
+            "Magnitude"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "dBrms"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag",
+      "description": "Data Quality Flag: 0 = good; 1 = S/C Maneuver and subsequent high-nutation period (~4 hr) 2 = Bad data/missing data",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "2",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Q_FLAG"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C position in GSE",
+      "description": "ACE s/c position in GSE coordinates",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_pos_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C position in GSM",
+      "description": "ACE s/c position in GSM coordinates",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X GSM",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y GSM",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z GSM",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_pos_GSM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "\n         "
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

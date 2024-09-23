@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ISWI_AWESOME_VLF_Narrowband_P1D.jsonld",
+  "name": "AWESOME receiver system quick-look Narrowband Summary Charts",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ISWI_AWESOME_VLF_Narrowband_P1D.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Morris.Cohen",
+    "url": "http://hpde.io/SMWG/Person/Morris.Cohen"
+  },
+  "sdDatePublished": "2021-03-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://waldo.world/summary-and-availability-charts/#NarrowbandSummary",
+      "encodingFormat": "PNG",
+      "name": "Worldwide Archive of Low-Frequency Data and Observations (WALDO) Narrowband Summary Charts",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ISWI/DisplayData/AWESOME/VLF/Narrowband/P1D",
+  "creditText": "AWESOME receiver system quick-look Narrowband Summary Charts.",
+  "description": "The narrowband summary chart shows amplitude and\r\n   phase. The rows represent each transmitter-receiver path, as\r\n   labeled in the top left corner. The four columns represent channel\r\n   0 amplitude (NS), channel 0 phase(NS), channel 1 amplitude(EW), and channel 0\r\n   phase(EW), in that order, over the 24-hour period. The colors simply\r\n   indicate when software reboots took place.  The title of the chart indicates the name of the\r\n   station and the year-month-day of the observation.\r\n\r\n   These charts are a quick and easy\r\n   way to evaluate the operation of the receiver and the noise\r\n   environment, but more detailed analysis requires downloading the actual data. \r\n\r\n   These summary charts are derived from the Narrowband data which are\r\n   the amplitudes and phase of specific frequencies, usually\r\n   corresponding to VLF transmitters that are used for communications\r\n   and navigation. Sampling rate is usually either 1 Hz or 50 Hz. They\r\n   are a useful diagnostic of the ionosphere. Most of these\r\n   transmitters use minimum shift keying (MSK) modulation. The\r\n   recording software extracts the amplitude, and the phase is\r\n   calculated by demodulating the MSK modulation.\r\n   \r\n   ",
+  "abstract": "The narrowband summary chart shows amplitude and\r\n   phase. The rows represent each transmitter-receiver path, as\r\n   labeled in the top left corner. The four columns represent channel\r\n   0 amplitude (NS), channel 0 phase(NS), channel 1 amplitude(EW), and channel 0\r\n   phase(EW), in that order, over the 24-hour period. The colors simply\r\n   indicate when software reboots took place.  The title of the chart indicates the name of the\r\n   station and the year-month-day of the observation.\r\n\r\n   These charts are a quick and easy\r\n   way to evaluate the operation of the receiver and the noise\r\n   environment, but more detailed analysis requires downloading the actual data. \r\n\r\n   These summary charts are derived from the Narrowband data which are\r\n   the amplitudes and phase of specific frequencies, usually\r\n   corresponding to VLF transmitters that are used for communications\r\n   and navigation. Sampling rate is usually either 1 Hz or 50 Hz. They\r\n   are a useful diagnostic of the ionosphere. Most of these\r\n   transmitters use minimum shift keying (MSK) modulation. The\r\n   recording software extracts the amplitude, and the phase is\r\n   calculated by demodulating the MSK modulation.\r\n   \r\n   ",
+  "variableMeasured": "Waves.Passive",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Yohkoh_SDAC_X-Ray.Images.jsonld",
+  "name": "Yohkoh Solar X-ray Images via SDAC",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Yohkoh_SDAC_X-Ray.Images.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Joseph.B.Gurman",
+    "url": "http://hpde.io/SMWG/Person/Joseph.B.Gurman"
+  },
+  "sdDatePublished": "2018-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://umbra.nascom.nasa.gov/yohkoh_archive.html",
+      "encodingFormat": "FITS",
+      "name": "Multi-instrument Yohkoh Image data through SDAC",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://JAXA/NumericalData/Yohkoh/SDAC/X-Ray.Images",
+  "creditText": "Yohkoh Solar X-ray Images via SDAC.",
+  "description": "Yohkoh Solar X-ray Images and Movies via Solar Data Analysis Center",
+  "abstract": "Yohkoh Solar X-ray Images and Movies via Solar Data Analysis Center",
+  "temporalCoverage": "Start date: 1991-09-01T00:00:00. Relative stop date: None",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

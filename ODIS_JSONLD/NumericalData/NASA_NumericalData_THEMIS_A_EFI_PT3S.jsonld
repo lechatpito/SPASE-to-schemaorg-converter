@@ -1,0 +1,1514 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_THEMIS_A_EFI_PT3S.jsonld",
+  "name": "THEMIS-A (P5), Electric Field Instrument (EFI) Spacecraft measured Electric Field",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_THEMIS_A_EFI_PT3S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/THEMIS/A/EFI/PT3S",
+  "creditText": "THEMIS-A (P5), Electric Field Instrument (EFI) Spacecraft measured Electric Field.",
+  "description": "THEMIS-A: Electric Field Instrument, EFI, Electric Field Measurements. The L2 Product is a 3D Estimate of the perpnedicular Electric Field, Eperp, derived from the Spin Plane E-Field Measurements assuming E \u22c5 B = 0, using relevant Flux-Gate Magnetometer, FGM, Data. This Data Product includes Spin-Averaged, and Fast Survey Field Data. The Spin-Averaged Data, EFS_DOT0, has approximately 3 s Time Resolution. Fast Survey, EFF_DOT0, Data has 0.125 s Time Resolution.",
+  "abstract": "THEMIS-A: Electric Field Instrument, EFI, Electric Field Measurements. The L2 Product is a 3D Estimate of the perpnedicular Electric Field, Eperp, derived from the Spin Plane E-Field Measurements assuming E \u22c5 B = 0, using relevant Flux-Gate Magnetometer, FGM, Data. This Data Product includes Spin-Averaged, and Fast Survey Field Data. The Spin-Averaged Data, EFS_DOT0, has approximately 3 s Time Resolution. Fast Survey, EFF_DOT0, Data has 0.125 s Time Resolution.",
+  "temporalCoverage": "Start date: 2007-02-24T00:00:00.000. Relative stop date: -P7D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch for Electric Field, Slow Survey using E\u22c5B=0, 3 s",
+      "description": "Epoch for Electric Field Vector, Slow Survey using E\u22c5B=0, 3 s Data",
+      "unitText": "",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_dot0_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: tha_efs_dot0_epoch0, tha_efs_dot0_time."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field, Slow Survey using E\u22c5B=0, GSE XYZ, 3 s",
+      "description": "Electric Field Vector, Slow Survey using E\u22c5B=0, Geocentric Solar Ecliptic, GSE, Cartesian Coordinates, 3 s Data",
+      "unitText": "mV/m",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-3>V/m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex GSE EFS_dot0-A",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey GSE EFS_dot0-A",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez GSE EFS_dot0-A",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_dot0_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Units are in mV/m Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field, Slow Survey using E\u22c5B=0, GSM XYZ, 3 s",
+      "description": "Electric Field Vector, Slow Survey using E\u22c5B=0, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, 3 s Data",
+      "unitText": "mV/m",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-3>V/m",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex GSM EFS_dot0-A",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey GSM EFS_dot0-A",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez GSM EFS_dot0-A",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_dot0_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Units are in mV/m Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field, Slow Survey using E\u22c5B=0, DSL XYZ, 3 s",
+      "description": "Electric Field Vector, Slow Survey using E\u22c5B=0, Despun Spacecraft, DSL, Cartesian Coordinates, 3 s Data",
+      "unitText": "mV/m",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-3>V/m",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex DSL EFS_dot0-A",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey DSL EFS_dot0-A",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez DSL EFS_dot0-A",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_dot0_dsl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Units are in mV/m Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, for Electric Field, Slow Survey using E\u22c5B=0, 3 s",
+      "description": "Time, UTC, in Seconds since 1970-01-01, for Electric Field Vector, Slow Survey using E\u22c5B=0, 3 s Data",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0e+09",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_dot0_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Magnitude Data Quality Parameter",
+      "description": "Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Vector Magnitude Data Quality Parameter, set to Not a Number, NaN, as there is no Good Measure of Data Quality for Fast Survey",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_q_mag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "No Units"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "tha_efs_q_mag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, for Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Magnitude Data Quality Parameter, 3 s",
+      "description": "Time, UTC, in Seconds since 1970-01-01, for Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Vector Magnitude Data Quality Parameter, 3 s Data",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0e+09",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_q_mag_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch for Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Magnitude Data Quality Parameter, 3 s",
+      "description": "Epoch for Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Vector Magnitude Data Quality Parameter, 3 s Data",
+      "unitText": "",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_q_mag_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: tha_efs_dot0_epoch0, tha_efs_q_mag_time."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Phase Data Quality Parameter",
+      "description": "Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Vector Phase Data Quality Parameter, set to Not a Number, NaN, as there is no Good Measure of Data Quality for Fast Survey",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_q_pha"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "No Units"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "tha_efs_q_pha"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, for Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Phase Data Quality Parameter, 3 s",
+      "description": "Time, UTC, in Seconds since 1970-01-01, for Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Vector Phase Data Quality Parameter, 3 s Data",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0e+09",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_q_pha_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch for Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Phase Data Quality Parameter, 3 s",
+      "description": "Epoch for Spin Plane Electric Field, Slow Survey Ground Spin-Fit, Vector Phase Data Quality Parameter, 3 s Data",
+      "unitText": "",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_q_pha_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: tha_efs_dot0_epoch0, tha_efs_q_pha_time."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch0 for Electric Field, Slow Survey using E\u22c5B=0, 3 s",
+      "description": "Epoch0 for Electric Field Vector, Slow Survey using E\u22c5B=0",
+      "unitText": "ms",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_efs_dot0_epoch0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "EPOCH of 01-Jan-1970 00:00:00"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "timebase"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch for Electric Field, Fast Survey using E\u22c5B=0, 1/8 s",
+      "description": "Epoch for Electric Field Vector, Fast Survey using E\u22c5B=0, 1/8 s Data",
+      "unitText": "",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_dot0_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: tha_eff_dot0_epoch0, tha_eff_dot0_time."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field, Fast Survey using E\u22c5B=0, GSE XYZ, 1/8 s",
+      "description": "Electric Field Vector, Fast Survey using E\u22c5B=0, Geocentric Solar Ecliptic, GSE, Cartesian Coordinates, 1/8 s Data",
+      "unitText": "mV/m",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-3>V/m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex GSE EFF_dot0-A",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey GSE EFF_dot0-A",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez GSE EFF_dot0-A",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_dot0_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Units are in mV/m Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field, Fast Survey using E\u22c5B=0, GSM XYZ, 1/8 s",
+      "description": "Electric Field Vector, Fast Survey using E\u22c5B=0, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, 1/8 s Data",
+      "unitText": "mV/m",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-3>V/m",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex GSM EFF_dot0-A",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey GSM EFF_dot0-A",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez GSM EFF_dot0-A",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_dot0_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Units are in mV/m Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field, Fast Survey using E\u22c5B=0, DSL XYZ, 1/8 s",
+      "description": "Electric Field Vector, Fast Survey using E\u22c5B=0, Despun Spacecraft, DSL, Cartesian Coordinates, 1/8 s Data",
+      "unitText": "mV/m",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-3>V/m",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex DSL EFF_dot0-A",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey DSL EFF_dot0-A",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez DSL EFF_dot0-A",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_dot0_dsl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Units are in mV/m Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, for Electric Field, Fast Survey using E\u22c5B=0, 1/8 s",
+      "description": "Time, UTC, in Seconds since 1970-01-01, for Electric Field Vector, Fast Survey using E\u22c5B=0, 1/8 s Data",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0e+09",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_dot0_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Magnitude Data Quality Parameter",
+      "description": "Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Vector Magnitude Data Quality Parameter, equal to the Spin-Fit Short Boom DC-Coupled E34 Channel Electric Field Magnitude divided by the Spin-Fit Long Boom DC-Coupled E12 Channel Electric Field Magnitude: Good Values are near 1.0",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_q_mag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "No Units"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "tha_eff_q_mag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, for Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Magnitude Data Quality Parameter, 3 s",
+      "description": "Time, UTC, in Seconds since 1970-01-01, for Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Vector Magnitude Data Quality Parameter, 3 s Data",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0e+09",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_q_mag_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch for Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Magnitude Data Quality Parameter, 3 s",
+      "description": "Epoch for Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Vector Magnitude Data Quality Parameter, 3 s Data",
+      "unitText": "",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_q_mag_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: tha_eff_dot0_epoch0, tha_eff_q_mag_time."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Phase Data Quality Parameter",
+      "description": "Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Vector Phase Data Quality Parameter, equal to the Cosine of the Angle between the Spin-Fit Short Boom DC-Coupled E34 Channel Electric Field Vector and the Spin-Fit Long Boom DC-Coupled E12 Channel Electric Field Vector, Good Values are near 1.0",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_q_pha"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "No Units"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "tha_eff_q_pha"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, for Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Phase Data Quality Parameter, 3 s",
+      "description": "Time, UTC, in Seconds since 1970-01-01, for Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Vector Phase Data Quality Parameter, 3 s Data",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0e+09",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_q_pha_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch for Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Phase Data Quality Parameter, 3 s",
+      "description": "Epoch for Spin Plane Electric Field, Fast Survey Ground Spin-Fit, Vector Phase Data Quality Parameter, 3 s Data",
+      "unitText": "",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_q_pha_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: tha_eff_dot0_epoch0, tha_eff_q_pha_time."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch for Spin Plane Electric Field, Fast Survey Ground Spin-Fit using E12, DSL XYZ",
+      "description": "Epoch for Spin Plane Electric Field Vector, Fast Survey Ground Spin-Fit using the Long Boom DC-Coupled E12 Channel, Despun Spacecraft, DSL, Cartesian Coordinates, 3 s",
+      "unitText": "",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_e12_efs_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: tha_eff_dot0_epoch0, tha_eff_e12_efs_time."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Plane Electric Field, Fast Survey Ground Spin-Fit using E12, DSL XYZ, 3 s",
+      "description": "Spin Plane Electric Field Vector, Fast Survey Ground Spin-Fit using the Long Boom DC-Coupled E12 Channel, Despun Spacecraft, DSL, Cartesian Coordinates, 3 s Data",
+      "unitText": "mV/m",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-3>V/m",
+      "measurementTechnique": "Cartesian SR2",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex DSL EFF_E12_EFS-A",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey DSL EFF_E12_EFS-A",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez DSL EFF_E12_EFS-A",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_e12_efs"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Units are in mV/m, Z, non-spin plane, component is NaN Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, for Spin Plane Electric Field, Fast Survey Ground Spin-Fit using E12, DSL XYZ, 3 s",
+      "description": "Time, UTC, in Seconds since 1970-01-01, for Spin Plane Electric Field Vector, Fast Survey Ground Spin-Fit using the Long Boom DC-Coupled E12 Channel, Despun Spacecraft, DSL, Cartesian Coordinates, 3 s Data",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0e+09",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_e12_efs_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch for Spin Plane Electric Field, Fast Survey Ground Spin-Fit using E34, DSL XYZ",
+      "description": "Epoch for Spin Plane Electric Field Vector, Fast Survey Ground Spin-Fit using the Short Boom DC-Coupled E34 Channel, Despun Spacecraft, DSL, Cartesian Coordinates, 3 s",
+      "unitText": "",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_e34_efs_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: tha_eff_dot0_epoch0, tha_eff_e34_efs_time."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Plane Electric Field, Fast Survey Ground Spin-Fit using E34, DSL XYZ, 3 s",
+      "description": "Spin Plane Electric Field Vector, Fast Survey Ground Spin-Fit using the Short Boom DC-Coupled E34 Channel, Despun Spacecraft, DSL, Cartesian Coordinates, 3 s Data",
+      "unitText": "mV/m",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-3>V/m",
+      "measurementTechnique": "Cartesian SR2",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex DSL EFF_E34_EFS-A",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey DSL EFF_E34_EFS-A",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez DSL EFF_E34_EFS-A",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_e34_efs"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Units are in mV/m, Z, non-spin plane, component is NaN Average Type: standard"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, for Spin Plane Electric Field, Fast Survey Ground Spin-Fit using E34, DSL XYZ, 3 s",
+      "description": "Time, UTC, in Seconds since 1970-01-01, for Spin Plane Electric Field Vector, Fast Survey Ground Spin-Fit using the Short Boom DC-Coupled E34 Channel, Despun Spacecraft, DSL, Cartesian Coordinates, 3 s Data",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0e+09",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_e34_efs_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F12.8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch0 for Electric Field, Fast Survey using E\u22c5B=0, 1/8 s",
+      "description": "Epoch0 for Electric Field Vector, Fast Survey using E\u22c5B=0",
+      "unitText": "ms",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "tha_eff_dot0_epoch0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "EPOCH of 01-Jan-1970 00:00:00"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "timebase"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Range Epoch",
+      "description": "Range Epoch",
+      "unitText": "ms",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "range_epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "UT"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

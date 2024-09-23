@@ -1,0 +1,262 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_RISH_misc_BDG_Radiosonde_radiosonde_bdg_csv.jsonld",
+  "name": "Observation data of the troposphere and lower stratosphere taken by the radiosonde soundings at Bandung (CSV format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_RISH_misc_BDG_Radiosonde_radiosonde_bdg_csv.jsonld",
+  "sdDatePublished": "2016-07-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/iugonet/sonde/index-idr.html",
+      "encodingFormat": "Text.ASCII",
+      "name": "Radiosonde Observation Data in Indonesia",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/RISH/misc/BDG/Radiosonde/radiosonde_bdg_csv",
+  "creditText": "Observation data of the troposphere and lower stratosphere taken by the radiosonde soundings at Bandung (CSV format).",
+  "description": "Radiosonde sounding data at Bandung, Indonesia (6.98S, 107.59E, 740m MSL) since November 5, 1992. The data are stored in the CSV (Comma Separated Values) file named (year)(month)(day)(hour)(minute).csv in universal time, for each launch of the balloon. The first line of each CSV file represents launching universal date, launching universal time, time zone (hour), latitude, longitude, sea level and sonde serial number. The second and below are time, height, pressure, temperature, relative humidity and zonal and meridional winds. The value of -999 means missing data.",
+  "abstract": "Radiosonde sounding data at Bandung, Indonesia (6.98S, 107.59E, 740m MSL) since November 5, 1992. The data are stored in the CSV (Comma Separated Values) file named (year)(month)(day)(hour)(minute).csv in universal time, for each launch of the balloon. The first line of each CSV file represents launching universal date, launching universal time, time zone (hour), latitude, longitude, sea level and sonde serial number. The second and below are time, height, pressure, temperature, relative humidity and zonal and meridional winds. The value of -999 means missing data.",
+  "temporalCoverage": "Start date: 1992-11-05T03:05:00. Relative stop date: -P6M",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "launching date",
+      "description": "Date in the form YYYY/MM/DD where YYYY= Gregorian Year AD, MM = month of year (01-12), and DD = day of month (01-31).",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "launching time",
+      "description": "Time in the form hh:mm:ss where hh = hour of day (0-23), mm = minute of hour (00-59) and ss = second of minute (00-59). Local time (UT+09:00:00) is used for time data.",
+      "unitText": "hour",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "hour",
+      "description": "Time zone (GMT+0)",
+      "unitText": "hour",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude",
+      "description": "Geographical latitude",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude",
+      "description": "Geographical longitude",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sea level",
+      "description": "Mean sea level at launching station",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sonde serial number",
+      "description": "Serial number of transmitter",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Elapsed time from launch",
+      "unitText": "second",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "height",
+      "description": "Height above sea level",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure",
+      "description": "Pressure",
+      "unitText": "hPa",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "description": "Temperature",
+      "unitText": "degree C",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "relative humidity",
+      "description": "Relative humidity",
+      "unitText": "%",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "zonal wind",
+      "description": "Zonal wind (Eastward direction is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "meridional wind",
+      "description": "Meridional wind (Northward direction is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Stratosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Altitude Geopotential Height Tropopause Hydrostatic Pressure Atmospheric Temperature Profiles Water Vapor Humidity Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

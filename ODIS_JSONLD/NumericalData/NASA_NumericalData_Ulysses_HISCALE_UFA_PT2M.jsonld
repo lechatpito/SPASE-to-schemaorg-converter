@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_HISCALE_UFA_PT2M.jsonld",
+  "name": "Ulysses HISCALE ion and electron fluxes at UDS",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_HISCALE_UFA_PT2M.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ufa.esac.esa.int/ufa/#data",
+      "encodingFormat": "Text",
+      "name": "annual gzipped-ASCII files from ESA",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Ulysses/HISCALE/UFA/PT2M",
+  "creditText": "Ulysses HISCALE ion and electron fluxes at UDS.",
+  "description": "High-resolution and hourly ion and electron fluxes",
+  "abstract": "High-resolution and hourly ion and electron fluxes",
+  "temporalCoverage": "Start date: 1990-11-14T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    "EnergeticParticles",
+    "IonComposition"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

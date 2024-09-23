@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DEMETER_ICE_DMT_N1_1133.jsonld",
+  "name": "DMT_N1_1133 : ICE - Waveform of the HF Electric Field (1 component)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DEMETER_ICE_DMT_N1_1133.jsonld",
+  "sdDatePublished": "2021-11-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DMT_N1_1133",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/DEMETER/ICE/DMT_N1_1133",
+  "creditText": "DMT_N1_1133 : ICE - Waveform of the HF Electric Field (1 component).",
+  "description": "This data set contains DEMETER ICE (electric field experiment) waveform of the HF Electric Field (1 component,   frequency range 10 kHz-3.175 MHz)",
+  "abstract": "This data set contains DEMETER ICE (electric field experiment) waveform of the HF Electric Field (1 component,   frequency range 10 kHz-3.175 MHz)",
+  "temporalCoverage": "Start date: 2004-07-05T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "HF Electric Field E12",
+      "description": "HF electric field component E12 in sensor coordinate system,",
+      "unitText": "uV m^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-6>V m^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HF Electric Field E13",
+      "description": "HF electric field component E13 (or E24, E23, E14 in case of sensor failure)",
+      "unitText": "uV m^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-6>V m^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HF  Electric Field E34",
+      "description": "HF electric field component E34 in sensor coordinate system",
+      "unitText": "uV m^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-6>V m^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HF Electric Field Ex",
+      "description": "HF electric field component Ex in satellite coordinate system",
+      "unitText": "uV m^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-6>V m^-1",
+      "measurementTechnique": "Cartesian SC"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HF Electric Field Ey",
+      "description": "HF electric field component Ey in satellite coordinate system",
+      "unitText": "uV m^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-6>V m^-1",
+      "measurementTechnique": "Cartesian SC"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HF Electric Field Ez",
+      "description": "HF electric field component Ez in satellite coordinate system",
+      "unitText": "uV m^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-6>V m^-1"
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

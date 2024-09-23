@@ -1,0 +1,109 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_MMS-1_Fields_SCM_MMS_SCM_1_L2_BPSD_SLOW.jsonld",
+  "name": "MMS-1 SCM Search Coil Magnetometer Level-2 Onboard Slow Survey Power Spectral Density (CDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_MMS-1_Fields_SCM_MMS_SCM_1_L2_BPSD_SLOW.jsonld",
+  "sdDatePublished": "2022-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:MMS_SCM_1_L2_BPSD_SLOW",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/MMS-1/Fields/SCM/MMS_SCM_1_L2_BPSD_SLOW",
+  "creditText": "MMS-1 SCM Search Coil Magnetometer Level-2 Onboard Slow Survey Power Spectral Density (CDF).",
+  "description": "This data sets contains  MMS-1 SCM (search coil magnetometer) calibrated  power spectral density of Magnetic field fluctuations computed by onboard FFTs by the Digital Signal Processor (DSP) from SCM waveforms during slow survey modes between 0 and 8192 Hz. Their nominal time resolution is 16 s, and nominal number of frequency channels is 56 with logarithmic frequency scale.\nThis product is computed in space from individual components that are not synchronized to the 1 second pulse. Therefore, the timing between channels can be inaccurate by a fraction of a second. The samples times are interval start times taken from the x component.\n- SCM1 (spin plane component, -x SCM sensor) component magnetic power spectral density.\n- SCM3 (spin axis component, -y SCM sensor) component magnetic power spectral density.\n- Omni-directional magnetic power spectral density: square root of the sum of the squares of 2 components (SCM1 and SCM3).",
+  "abstract": "This data sets contains  MMS-1 SCM (search coil magnetometer) calibrated  power spectral density of Magnetic field fluctuations computed by onboard FFTs by the Digital Signal Processor (DSP) from SCM waveforms during slow survey modes between 0 and 8192 Hz. Their nominal time resolution is 16 s, and nominal number of frequency channels is 56 with logarithmic frequency scale.\nThis product is computed in space from individual components that are not synchronized to the 1 second pulse. Therefore, the timing between channels can be inaccurate by a fraction of a second. The samples times are interval start times taken from the x component.\n- SCM1 (spin plane component, -x SCM sensor) component magnetic power spectral density.\n- SCM3 (spin axis component, -y SCM sensor) component magnetic power spectral density.\n- Omni-directional magnetic power spectral density: square root of the sum of the squares of 2 components (SCM1 and SCM3).",
+  "temporalCoverage": "Start date: 2015-03-17T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 SCM1 component  Onboard Slow Survey  magnetic power spectral  density",
+      "description": "MMS-1 SCM1 component Onboard Slow Survey magnetic power spectral  density (spin plane component, -x SCM sensor)",
+      "unitText": "nT^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-18>T^2 Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 SCM3 component   Onboard Slow Survey magnetic power spectral  density",
+      "description": "MMS-1 SCM3 component Onboard Slow Survey magnetic power spectral  density (spin axis component, -y SCM sensor)",
+      "unitText": "nT^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-18>T^2 Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 SCM omni-directional   Onboard Slow Survey magnetic power spectral  density",
+      "description": "MMS-1 SCM Omni-directional magnetic power spectral density: square root of the sum of the squares of 2 components (SCM1 and SCM3).",
+      "unitText": "nT^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-18>T^2 Hz^-1"
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

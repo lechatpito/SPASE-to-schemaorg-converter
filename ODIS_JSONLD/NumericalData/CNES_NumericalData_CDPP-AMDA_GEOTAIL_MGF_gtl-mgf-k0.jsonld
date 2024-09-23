@@ -1,0 +1,193 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_GEOTAIL_MGF_gtl-mgf-k0.jsonld",
+  "name": "Geotail - MGF - key parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_GEOTAIL_MGF_gtl-mgf-k0.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Tsugunobu.Nagai",
+    "url": "http://hpde.io/SMWG/Person/Tsugunobu.Nagai"
+  },
+  "sdDatePublished": "2024-04-14",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/GEOTAIL/MGF/gtl-mgf-k0",
+  "creditText": "Geotail - MGF - key parameters.",
+  "description": "This data set contains the investigator-selected Key Parameters from the Magnetic Field instrument (MGF) on Geotail, as made available via NSSDC's interactive WWW interface CDAWeb.\n\n            Selected references:\n\n            Kokubun, S., et al., Magnetic field measurement (MGF), In Geotail Prelaunch Report, SES-TD-92-007SY, Institute of Space and Astronautical Science, SES Data Center, pp. 58-70, Apr. 1992.\n\n            Nishida, A., et al., Geotail mission to explore earth's magnetotail, EOS, 73, No. 40, Oct. 1992.\n\n            Kokubun, S., et al., The GEOTAIL Magnetic Field Experiment, J. Geomag. Geoelectr., 46, No. 1, 7-21, 1994.",
+  "abstract": "This data set contains the investigator-selected Key Parameters from the Magnetic Field instrument (MGF) on Geotail, as made available via NSSDC's interactive WWW interface CDAWeb.\n\n            Selected references:\n\n            Kokubun, S., et al., Magnetic field measurement (MGF), In Geotail Prelaunch Report, SES-TD-92-007SY, Institute of Space and Astronautical Science, SES Data Center, pp. 58-70, Apr. 1992.\n\n            Nishida, A., et al., Geotail mission to explore earth's magnetotail, EOS, 73, No. 40, Oct. 1992.\n\n            Kokubun, S., et al., The GEOTAIL Magnetic Field Experiment, J. Geomag. Geoelectr., 46, No. 1, 7-21, 1994.",
+  "temporalCoverage": "Start date: 1992-09-04T19:14:06Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "description": "Observed magnetic field vector in GSE coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-32768"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-32768"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-32768"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Average",
+            "Vector"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_b"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "description": "Observed magnetic field vector in GSM coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-32768"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-32768"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-32768"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Average",
+            "Vector"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_b_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Observed magnetic field intensity",
+      "unitText": "nT",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Average",
+            "Magnitude"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_bmag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

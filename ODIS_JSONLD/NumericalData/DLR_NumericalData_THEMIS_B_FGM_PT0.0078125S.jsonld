@@ -1,0 +1,943 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/DLR_NumericalData_THEMIS_B_FGM_PT0.0078125S.jsonld",
+  "name": "THEMIS-B: Fluxgate Magnetometer Measurements 1/128s",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/DLR_NumericalData_THEMIS_B_FGM_PT0.0078125S.jsonld",
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://DLR/NumericalData/THEMIS/B/FGM/PT0.0078125S",
+  "creditText": "THEMIS-B: Fluxgate Magnetometer Measurements 1/128s.",
+  "description": "Spacecraft-collected fluxgate magnetometer measurements: Decimated TeleMetry High, DSL, GSE and GSM coordinates, cadence 3s-1/128s. The high-resolution data is available only for time intervals when the instrument was switched into a high-resolution mode. Sensor and electronics design provided by TUBS (Glassmeier, Auster) and IWF (Baumjohann, Magnes)",
+  "abstract": "Spacecraft-collected fluxgate magnetometer measurements: Decimated TeleMetry High, DSL, GSE and GSM coordinates, cadence 3s-1/128s. The high-resolution data is available only for time intervals when the instrument was switched into a high-resolution mode. Sensor and electronics design provided by TUBS (Glassmeier, Auster) and IWF (Baumjohann, Magnes)",
+  "temporalCoverage": "Start date: 2007-02-16T00:00:00Z. Relative stop date: -P07D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "B FGE SSL",
+      "description": "FGE (engineering) magnetic field B in XYZ Spinning Spacecraft Coordinates (SSL)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SR",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fge_ssl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.125S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGE DSL",
+      "description": "FGE (engineering) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SR2",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fge_dsl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.125S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGE GSE",
+      "description": "FGE (engineering) magnetic field B in XYZ GSE Coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fge_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.125S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGE GSM",
+      "description": "FGE (engineering) magnetic field B in XYZ GSM Coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fge_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.125S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FGE Time",
+      "description": "FGE time, UTC, in seconds since 01-Jan-1970 00:00:00",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0E9",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fge_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.125S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGL SSL",
+      "description": "FGL (low-resolution) magnetic field B in XYZ Spinning Spacecraft Coordinates (SSL)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SR",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGL",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGL",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGL",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgl_ssl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGL DSL",
+      "description": "FGL (low-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SR2",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGL",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGL",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGL",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgl_dsl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGL GSE",
+      "description": "FGL (low-resolution) magnetic field B in XYZ GSE Coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGL",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGL",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGL",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgl_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGL GSM",
+      "description": "FGL (low-resolution) magnetic field B in XYZ GSM Coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGL",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGL",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGL",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgl_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FGL Time",
+      "description": "FGL time, UTC, in seconds since 01-Jan-1970 00:00:00",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0E9",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgl_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.25S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGH SSL",
+      "description": "FGH (high-resolution) magnetic field B in XYZ Spinning Spacecraft Coordinates (SSL)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SR",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGH",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGH",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGH",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgh_ssl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.0078125S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGH DSL",
+      "description": "FGH (high-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SR2",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGH",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGH",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGH",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgh_dsl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.0078125S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGH GSE",
+      "description": "FGH (high-resolution) magnetic field B in XYZ GSE Coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGH",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGH",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGH",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgh_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.0078125S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGH GSM",
+      "description": "FGH (high-resolution) magnetic field B in XYZ GSM Coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGH",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGH",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGH",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgh_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.0078125S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FGH Time",
+      "description": "FGH time, UTC, in seconds since 01-Jan-1970 00:00:00",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0E9",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgh_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.0078125S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGS DSL",
+      "description": "FGS (spin-resolution/3s) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SR2",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGS",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGS",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGS",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgs_dsl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGS GSE",
+      "description": "FGS (spin-resolution/3s) magnetic field B in XYZ GSE Coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGS",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGS",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGS",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgs_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B FGS GSM",
+      "description": "FGS (spin-resolution/3s) magnetic field B in XYZ GSM Coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx FGS",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By FGS",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz FGS",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgs_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FGS Time",
+      "description": "FGS time, UTC, in seconds since 01-Jan-1970 00:00:00",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0E9",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thb_fgs_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

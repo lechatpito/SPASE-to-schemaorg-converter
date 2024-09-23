@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_ACE_SWEPAM_PLOTS.jsonld",
+  "name": "ACE SWEPAM STEA Electron Pitch Angle Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_ACE_SWEPAM_PLOTS.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Ruth.Skoug",
+    "url": "http://hpde.io/SMWG/Person/Ruth.Skoug"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.srl.caltech.edu/ACE/ASC/DATA/level3/swepam/index.html",
+      "encodingFormat": "PNG",
+      "name": "plots at LANL site",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/ACE/SWEPAM/PLOTS",
+  "creditText": "ACE SWEPAM STEA Electron Pitch Angle Plots.",
+  "description": "ACE SWEPAM STEA electron pitch angle plots, 12 hours per frame, 10 energy channels from 73 eV to 1.73 keV, one panel per energy channel",
+  "abstract": "ACE SWEPAM STEA electron pitch angle plots, 12 hours per frame, 10 energy channels from 73 eV to 1.73 keV, one panel per energy channel",
+  "temporalCoverage": "Start date: 1997-10-27T00:00:00. Relative stop date: -P6M",
+  "variableMeasured": [
+    "ThermalPlasma",
+    "EnergeticParticles"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

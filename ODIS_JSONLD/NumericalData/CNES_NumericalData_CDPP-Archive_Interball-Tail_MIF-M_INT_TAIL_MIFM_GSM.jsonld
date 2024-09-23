@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Interball-Tail_MIF-M_INT_TAIL_MIFM_GSM.jsonld",
+  "name": "INT-TAIL MIFM : DC/AC Magn. Field (0-64 Hz and 1 Hz - 40 kHz) - GSM Frame",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Interball-Tail_MIF-M_INT_TAIL_MIFM_GSM.jsonld",
+  "sdDatePublished": "2022-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_TAIL_MIFM_GSM",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Interball-Tail/MIF-M/INT_TAIL_MIFM_GSM",
+  "creditText": "INT-TAIL MIFM : DC/AC Magn. Field (0-64 Hz and 1 Hz - 40 kHz) - GSM Frame.",
+  "description": "This data set contains the DC/AC Magnetic Field (0-64 Hz and 1 Hz - 40 kHz) in GSM from the MIF-M magnetometer on board Interball-Tail.",
+  "abstract": "This data set contains the DC/AC Magnetic Field (0-64 Hz and 1 Hz - 40 kHz) in GSM from the MIF-M magnetometer on board Interball-Tail.",
+  "temporalCoverage": "Start date: 1995-08-06T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "INT-TAIL MIFM   Magnetic field in the GSM coordinate system",
+      "description": "INT-TAIL MIFM   Magnetic field in the GSM coordinate system",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT-TAIL MIFM  Total magnetic field",
+      "description": "INT-TAIL MIFM  Total magnetic field",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

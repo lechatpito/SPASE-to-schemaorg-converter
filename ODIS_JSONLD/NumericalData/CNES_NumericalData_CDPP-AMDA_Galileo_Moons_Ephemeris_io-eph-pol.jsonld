@@ -1,0 +1,177 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Galileo_Moons_Ephemeris_io-eph-pol.jsonld",
+  "name": "Galileo - Ephemeris : Jupiter Moons : special - Io",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Galileo_Moons_Ephemeris_io-eph-pol.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-AMDA/Joseph.Groene",
+    "url": "http://hpde.io/CNES/Person/CDPP-AMDA/Joseph.Groene"
+  },
+  "sdDatePublished": "2012-03-06",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Galileo/Moons_Ephemeris/io-eph-pol",
+  "creditText": "Galileo - Ephemeris : Jupiter Moons : special - Io.",
+  "description": "Some special Jovian moons ephemeris calculated by Joseph Groene tool (University of Iowa)",
+  "abstract": "Some special Jovian moons ephemeris calculated by Joseph Groene tool (University of Iowa)",
+  "temporalCoverage": "Start date: 1995-01-01T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "lon",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "io_pol_lon"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "io_pol_lat"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mlat",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "io_pol_mlat"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "local time",
+      "description": "",
+      "unitText": "hours",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "io_pol_lt"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance io-jupiter",
+      "description": "",
+      "unitText": "Rj",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "io_pol_r"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IoPhase",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "io_pol_iophase"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Io"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

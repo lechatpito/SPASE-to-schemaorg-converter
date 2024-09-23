@@ -1,0 +1,225 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_FREJA_MFE_fja-mfe-1hz.jsonld",
+  "name": "Freja - MFE - 1 Hz data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_FREJA_MFE_fja-mfe-1hz.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Larry.J.Zanetti",
+    "url": "http://hpde.io/SMWG/Person/Larry.J.Zanetti"
+  },
+  "sdDatePublished": "2023-04-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/FREJA/MFE/fja-mfe-1hz",
+  "creditText": "Freja - MFE - 1 Hz data.",
+  "description": "survey data of the DC peturbation magnetic field at 1 Hz resolution. \n                These data are for survey purposes only, they are not intended for publication or formal presentation.\n                The data result from the removal of the Earth's main field and removing the spacecraft spin motion, \n                and are plotted in geomagnetic coordinates with the N-axis +ve toward magnetic north and the E-axis +ve \n                to the east. For reference, we used the system described in:\n                \n                Eccentric Dipole Coordinates For Magsat Data Presentation,\n                D.D.Wallis, J.R. Burrows, T.J. Hughes and M.D.Wilson\n                Geophysical Research Letters,\n                Vol. 9 No.4, pp 353-356, April 1982.\n                \n                Such data are mainly useful for a qualitative assessment of the DC data and \"eyeballing\" interesting geophysical phenomena.\n                \n                Please contact Dr. L. J. Zanetti (zanetti@ jhuapl.edu) before using any of this data in scientific analyses or publications.\n            ",
+  "abstract": "survey data of the DC peturbation magnetic field at 1 Hz resolution. \n                These data are for survey purposes only, they are not intended for publication or formal presentation.\n                The data result from the removal of the Earth's main field and removing the spacecraft spin motion, \n                and are plotted in geomagnetic coordinates with the N-axis +ve toward magnetic north and the E-axis +ve \n                to the east. For reference, we used the system described in:\n                \n                Eccentric Dipole Coordinates For Magsat Data Presentation,\n                D.D.Wallis, J.R. Burrows, T.J. Hughes and M.D.Wilson\n                Geophysical Research Letters,\n                Vol. 9 No.4, pp 353-356, April 1982.\n                \n                Such data are mainly useful for a qualitative assessment of the DC data and \"eyeballing\" interesting geophysical phenomena.\n                \n                Please contact Dr. L. J. Zanetti (zanetti@ jhuapl.edu) before using any of this data in scientific analyses or publications.\n            ",
+  "temporalCoverage": "Start date: 1992-10-24T22:22:10Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_geo",
+      "description": "magnetic field in geographic coordinates",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "fja_mfe_b"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "perturbation",
+      "description": "DC perturbaton magnetic field, North, East and Parallel components",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "north",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "east",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "parallel",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "fja_mfe_pert"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "altitude",
+      "description": "spacecraft altitude in geographic coordinates",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "fja_mfe_alt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude_geo",
+      "description": "spacecraft latitude in geographic coordinates",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "fja_mfe_lat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude_geo",
+      "description": "spacecraft longitude in geographic coordinates",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "fja_mfe_lon"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

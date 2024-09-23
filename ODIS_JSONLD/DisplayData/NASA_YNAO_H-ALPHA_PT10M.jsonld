@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_YNAO_H-ALPHA_PT10M.jsonld",
+  "name": "YNAO H-alpha Solar Images",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_YNAO_H-ALPHA_PT10M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Jun.Lin",
+    "url": "http://hpde.io/SMWG/Person/Jun.Lin"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www1.ynao.ac.cn/en/index.html",
+      "encodingFormat": "FITS",
+      "name": "YNAO site",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.virtualsolar.org/",
+      "encodingFormat": "FITS",
+      "name": "Virtual Solar Observatory",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/YNAO/H-ALPHA/PT10M",
+  "creditText": "YNAO H-alpha Solar Images.",
+  "description": "H-alpha solar imagery from Yunnan Astronomical Observatory (YNAO) of Chinese Academy of Sciences",
+  "abstract": "H-alpha solar imagery from Yunnan Astronomical Observatory (YNAO) of Chinese Academy of Sciences",
+  "temporalCoverage": "Start date: 2000-11-27T00:00:00. Relative stop date: -P3D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Photosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

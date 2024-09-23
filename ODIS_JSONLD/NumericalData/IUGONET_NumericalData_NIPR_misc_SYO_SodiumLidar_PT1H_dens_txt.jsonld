@@ -1,0 +1,89 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_NIPR_misc_SYO_SodiumLidar_PT1H_dens_txt.jsonld",
+  "name": "Sodium atom number density measured with the sodium temperature lider at Syowa Station, Antarctica.",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_NIPR_misc_SYO_SodiumLidar_PT1H_dens_txt.jsonld",
+  "sdDatePublished": "2011-04-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://polaris.nipr.ac.jp/~spuas/index_e.php",
+      "encodingFormat": "Text.ASCII",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/NIPR/misc/SYO/SodiumLidar/PT1H_dens_txt",
+  "creditText": "Sodium atom number density measured with the sodium temperature lider at Syowa Station, Antarctica..",
+  "description": "Sodium atom number density measured with the sodium temperature lider at Syowa Station, Antarctica.",
+  "abstract": "Sodium atom number density measured with the sodium temperature lider at Syowa Station, Antarctica.",
+  "temporalCoverage": "Start date: 2000-02-17T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Temporal resolution: 1 hour",
+      "unitText": "hour",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Altitude",
+      "description": "Altitude resolution: 3.7km. Altitude range: 70-120 km (In Antarctic winter the signal from the sodium layer was usually between 75 and 110 km in altitude.)",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sodium atom number density",
+      "description": "Sodium atom number density",
+      "unitText": "m^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Pressure Gravity Wave",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

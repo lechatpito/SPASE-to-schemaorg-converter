@@ -1,0 +1,137 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DoubleStar2_FGM_DSTAR_PP_T2_FGM.jsonld",
+  "name": "Double Star 2 FGM Prime Parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DoubleStar2_FGM_DSTAR_PP_T2_FGM.jsonld",
+  "sdDatePublished": "2021-11-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_PP_T2_FGM",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/DoubleStar2/FGM/DSTAR_PP_T2_FGM",
+  "creditText": "Double Star 2 FGM Prime Parameters.",
+  "description": "The Double Star 2 Flux Gate Magnetometer (FGM) summary parameter data set contains various parameters in GSE coordinates at 1 min resolution. These parameters include  the instrument status, the magnetic field vector in GSE coordinates, and the magnetic field variances.",
+  "abstract": "The Double Star 2 Flux Gate Magnetometer (FGM) summary parameter data set contains various parameters in GSE coordinates at 1 min resolution. These parameters include  the instrument status, the magnetic field vector in GSE coordinates, and the magnetic field variances.",
+  "temporalCoverage": "Start date: 2004-05-15T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 FGM DC Magnetic Field Vector Prime Parameter",
+      "description": "Double Star 2 FGM magnetic field vectors at spin resolution in GSE Coordinates in units of nT.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 FGM Magnetic Variance Summed Prime Parameter",
+      "description": "Double Star 2 FGM normalised magnetic variance including summed component variances at spin resolution.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Variance"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 FGM Magnetic Variance of the Magnitude Prime Parameter",
+      "description": "Double Star 2 FGM magnetic variance of the magnitude at spin resolution.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Variance"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 FGM Status Prime Parameter",
+      "description": "Double Star 2 FGM status at spin resolution.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

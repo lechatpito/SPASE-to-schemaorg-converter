@@ -1,0 +1,215 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Cluster-3_EFW_CLU_PP_C3_EFW.jsonld",
+  "name": "Cluster 3 EFW Prime Parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Cluster-3_EFW_CLU_PP_C3_EFW.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-Archive/Mats.Andre",
+    "url": "http://hpde.io/CNES/Person/CDPP-Archive/Mats.Andre"
+  },
+  "sdDatePublished": "2022-02-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CLU_PP_C3_EFW",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Cluster-3/EFW/CLU_PP_C3_EFW",
+  "creditText": "Cluster 3 EFW Prime Parameters.",
+  "description": "This data set contains the Cluster 3 EFW Prime Parameters (spin averaged).\n\nCaveats\n\nThe CSDS data are intended for event identification and are not for publication. Some obviously incorrect data have been removed in the validation process, but there may still be occasional data with poor quality in the PPDB and SPDB. Please always contact the EFW PI or the CSDS file validator (information given in the global attributes of each CDF file) for questions on data validity.\n\nThe electric field E_dusk has not been corrected for offsets present due to, e.g., photoelectron asymmetries.\n\nThe parameter U_probe_sc can be used as an approximate indicator of the electron density, except during periods when ASPOC is operating. Such periods have not been removed from the data. A more (less) negative value of U_probe_sc indicates lower (higher) density.\n\nThe operation of WHISPER in the active mode sometimes disturbs the EFW measurements. Such disturbed data have most likely been removed in all quantities except U_probe_sc, where the disturbance is least severe.",
+  "abstract": "This data set contains the Cluster 3 EFW Prime Parameters (spin averaged).\n\nCaveats\n\nThe CSDS data are intended for event identification and are not for publication. Some obviously incorrect data have been removed in the validation process, but there may still be occasional data with poor quality in the PPDB and SPDB. Please always contact the EFW PI or the CSDS file validator (information given in the global attributes of each CDF file) for questions on data validity.\n\nThe electric field E_dusk has not been corrected for offsets present due to, e.g., photoelectron asymmetries.\n\nThe parameter U_probe_sc can be used as an approximate indicator of the electron density, except during periods when ASPOC is operating. Such periods have not been removed from the data. A more (less) negative value of U_probe_sc indicates lower (higher) density.\n\nThe operation of WHISPER in the active mode sometimes disturbs the EFW measurements. Such disturbed data have most likely been removed in all quantities except U_probe_sc, where the disturbance is least severe.",
+  "temporalCoverage": "Start date: 2001-01-01T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 EFW Duskward Electric Field E_dusk",
+      "description": "Cluster 3 Prime Parameter Electric Field and Waves duskward electric field at spin time resolution",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-3>V/m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 EFW  F1 Band Spectral Density E_pow_f1",
+      "description": "Cluster 3 Prime Parameter Electric Field and Waves f1 band spectral density at spin time resolution",
+      "unitText": "V^2 m^-2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Spectral"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 EFW  F2 Band Spectral Density E_pow_f2",
+      "description": "Cluster 3 Prime Parameter Electric Field and Waves f2 band spectral density at spin time resolution",
+      "unitText": "V^2 m^-2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Spectral"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 EFW Electric Field Variation E_sigma",
+      "description": "Cluster 3 Prime Parameter Electric Field and Waves electric field variation at spin time resolution",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-3>V/m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 EFW Probe Current I_probe",
+      "description": "Cluster 3 Prime Parameter Electric Field and Waves probe current at spin time resolution",
+      "unitText": "uA",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-6>A",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Current",
+          "description": "Scalar"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 EFW  Probe Potential U_probe",
+      "description": "Cluster 3 Prime Parameter Electric Field and Waves probe potential at spin time resolution",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 EFW Status",
+      "description": "Cluster 3 Prime Parameter Electric Field and Waves status at spin time resolution",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

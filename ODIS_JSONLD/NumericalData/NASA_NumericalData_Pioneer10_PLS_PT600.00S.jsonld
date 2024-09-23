@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Pioneer10_PLS_PT600.00S.jsonld",
+  "name": "Pioneer 10 full resolution plasma data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Pioneer10_PLS_PT600.00S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Paul.R.Gazis",
+    "url": "http://hpde.io/SMWG/Person/Paul.R.Gazis"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/pioneer/pioneer10/plasma/version31/v31_summary_ascii/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/pioneer/pioneer10/plasma/version31/v31_summary_ascii/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Pioneer10/PLS/PT600.00S",
+  "creditText": "Pioneer 10 full resolution plasma data.",
+  "description": "Pioneer 10 plasma ion density, temperature, flow speed and direction angles, full resolution (10 minutes or lower resolution)",
+  "abstract": "Pioneer 10 plasma ion density, temperature, flow speed and direction angles, full resolution (10 minutes or lower resolution)",
+  "temporalCoverage": "Start date: 1972-04-19T00:00:00. Relative stop date: None",
+  "variableMeasured": "ThermalPlasma",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

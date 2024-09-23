@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_IMP6_BAME_PT60M.jsonld",
+  "name": "IMP 6 LANL 1-hr plasma data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_IMP6_BAME_PT60M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/John.T.Gosling",
+    "url": "http://hpde.io/SMWG/Person/John.T.Gosling"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/imp/imp6/plasma_lanl/solarwind_1hr/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/imp/imp6/plasma_lanl/solarwind_1hr/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/IMP6/BAME/PT60M",
+  "creditText": "IMP 6 LANL 1-hr plasma data.",
+  "description": "This set of IMP 6 LANL 1-hr solar wind plasma parameter data includes temperature anisotropy and alpha/proton ratio.  This hourly resolution data set was created at NSSDC in the year 2003 by averaging 2-min resolution solar wind data provided over the years by LANL.  Magnetosheath data were excluded from the 2-min data by LANL.  This data set supersedes hourly solar wind data provided by LANL over the years.",
+  "abstract": "This set of IMP 6 LANL 1-hr solar wind plasma parameter data includes temperature anisotropy and alpha/proton ratio.  This hourly resolution data set was created at NSSDC in the year 2003 by averaging 2-min resolution solar wind data provided over the years by LANL.  Magnetosheath data were excluded from the 2-min data by LANL.  This data set supersedes hourly solar wind data provided by LANL over the years.",
+  "temporalCoverage": "Start date: 1971-03-18T00:00:00. Relative stop date: None",
+  "variableMeasured": "ThermalPlasma",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

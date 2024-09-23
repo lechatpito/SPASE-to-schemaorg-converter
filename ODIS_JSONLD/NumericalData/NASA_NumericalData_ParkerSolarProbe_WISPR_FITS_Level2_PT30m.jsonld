@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ParkerSolarProbe_WISPR_FITS_Level2_PT30m.jsonld",
+  "name": "Parker Solar Probe, WISPR Level 2 Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ParkerSolarProbe_WISPR_FITS_Level2_PT30m.jsonld",
+  "sdDatePublished": "2023-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://wispr.nrl.navy.mil/data/rel/fits/L2/",
+      "encodingFormat": "FITS",
+      "name": "HTTPS from NRL",
+      "description": "In FITS via http from NRL"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ParkerSolarProbe/WISPR/FITS/Level2/PT30m",
+  "creditText": "Parker Solar Probe, WISPR Level 2 Data.",
+  "description": "calibrated data in units of Mean Solar Brightness (MSB), with bias, pointing and vignetting corrections applied.",
+  "abstract": "calibrated data in units of Mean Solar Brightness (MSB), with bias, pointing and vignetting corrections applied.",
+  "temporalCoverage": "Start date: 2018-11-01T00:00:05. Relative stop date: -P6M",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

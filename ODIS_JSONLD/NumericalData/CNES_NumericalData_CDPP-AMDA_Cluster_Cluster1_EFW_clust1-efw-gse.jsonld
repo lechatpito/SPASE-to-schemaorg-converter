@@ -1,0 +1,309 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Cluster_Cluster1_EFW_clust1-efw-gse.jsonld",
+  "name": "Cluster 1 - EFW - electric field - 3D gse",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Cluster_Cluster1_EFW_clust1-efw-gse.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Mats.Andre",
+    "url": "http://hpde.io/SMWG/Person/Mats.Andre"
+  },
+  "sdDatePublished": "2023-12-17",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Cluster/Cluster1/EFW/clust1-efw-gse",
+  "creditText": "Cluster 1 - EFW - electric field - 3D gse.",
+  "description": "               \n                Electric Field in GSE is obtained from CSA C[1-4]_CP_EFW_L3_E3D_GSE. \n                Note that Pi has not validated this product.\n                This dataset contains the electric field in the inertial frame (i.e., VxB removed) in the GSE coordinate system, \n                using EFW electric field data from file C[1-4]_CP_EFW_L3_E and interpolated FGM magnetic field data from C[1-4]_CP_FGM_5VPS products. \n                The spin-axis component of the electric field is calculated with assumption of (E.B) = 0 and with use of 2 electric field \n                components in the spin plane and three magnetic field components.\n                \n                Data quality description : \n                * 4 : Excellent data which have received special treatment\n                * 3 : Good for publication, subject to PI approval\n                * 2 : Survey data, not for publication\n                * 1 : Known problems, use at your own risk\n                * 0 : Bad data\n            ",
+  "abstract": "               \n                Electric Field in GSE is obtained from CSA C[1-4]_CP_EFW_L3_E3D_GSE. \n                Note that Pi has not validated this product.\n                This dataset contains the electric field in the inertial frame (i.e., VxB removed) in the GSE coordinate system, \n                using EFW electric field data from file C[1-4]_CP_EFW_L3_E and interpolated FGM magnetic field data from C[1-4]_CP_FGM_5VPS products. \n                The spin-axis component of the electric field is calculated with assumption of (E.B) = 0 and with use of 2 electric field \n                components in the spin plane and three magnetic field components.\n                \n                Data quality description : \n                * 4 : Excellent data which have received special treatment\n                * 3 : Good for publication, subject to PI approval\n                * 2 : Survey data, not for publication\n                * 1 : Known problems, use at your own risk\n                * 0 : Bad data\n            ",
+  "temporalCoverage": "Start date: 2001-02-01T00:00:06Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e_gse",
+      "description": "Electric Field in GSE at spin time (4s) resolution (3 components)",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.e31",
+      "unitCode": "1.0e-3>V m^-1",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "ex",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ey",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ez",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "c1_e_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e_gsm",
+      "description": "Electric Field in GSM at spin time (4s) resolution (3 components)",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-3>V m^-1",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "ex",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ey",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ez",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "c1_e_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|e|",
+      "description": "Electric Field Magnitude at spin time (4s) resolution",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.e31",
+      "unitCode": "1.0e-3>V m^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "c1_etot"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e_quality",
+      "description": "\n                Data quality: 0 (Bad data) to 4 (Excellent data)\n            ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "c1_e_gse_qual"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ez_error",
+      "description": "\n                Error on the (reconstructed) Z component of the electric field\n            ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.e31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "c1_ez_error"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "keywords": [
+    "4 second",
+    "magnetosphere",
+    "auroral region",
+    "polar cap",
+    "cusp",
+    "bow shock",
+    "solar wind",
+    "magnetosheath",
+    "Cluster",
+    "magnetotail",
+    "lobe"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

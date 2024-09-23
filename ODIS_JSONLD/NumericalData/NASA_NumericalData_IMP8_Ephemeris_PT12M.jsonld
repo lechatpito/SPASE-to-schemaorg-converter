@@ -1,0 +1,295 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_IMP8_Ephemeris_PT12M.jsonld",
+  "name": "IMP 8 Spacecraft Positions",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_IMP8_Ephemeris_PT12M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Adam.Szabo",
+    "url": "http://hpde.io/SMWG/Person/Adam.Szabo"
+  },
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/IMP8/Ephemeris/PT12M",
+  "creditText": "IMP 8 Spacecraft Positions.",
+  "description": "IMP-8 spacecraft positions in various coordinate systems",
+  "abstract": "IMP-8 spacecraft positions in various coordinate systems",
+  "temporalCoverage": "Start date: 1973-10-30T00:00:00Z. Relative stop date: P0D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Number of milliseconds since the epoch 01-Jan-1956 00:00:00",
+      "unitText": "ms",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Latitude",
+      "description": "Spacecraft latitude in GSE coordinates",
+      "unitText": "deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSE_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Longitude",
+      "description": "Spacecraft longitude in GSE coordinates",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSE_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Local Time",
+      "description": "Local time in GSE coordinates",
+      "unitText": "hr",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "3600>s",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSE_LCT_T"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Latitude",
+      "description": "Spacecraft latitude in GSM coordinates",
+      "unitText": "deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Spherical GSM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSM_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Longitude",
+      "description": "Spacecraft longitude in GSM coordinates",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Spherical GSM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSM_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radial distance",
+      "description": "Radial distance from the center of Earth",
+      "unitText": "Re",
+      "minValue": "0.0",
+      "maxValue": "250.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "6.378e6>m",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RADIUS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Position Vector",
+      "description": "Position in cartesian GSE coordinates",
+      "unitText": "Re",
+      "minValue": "-250.0",
+      "maxValue": "250.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "6.378e6>m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "GSE X",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "GSE Y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "GSE Z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "XYZ_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Position Vector",
+      "description": "Position in cartesian GSM coordinates",
+      "unitText": "Re",
+      "minValue": "-250.0",
+      "maxValue": "250.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "6.378e6>m",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "GSM X",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "GSM Y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "GSM Z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "XYZ_GSM"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

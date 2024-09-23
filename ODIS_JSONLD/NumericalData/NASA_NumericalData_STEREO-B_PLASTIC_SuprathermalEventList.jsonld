@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-B_PLASTIC_SuprathermalEventList.jsonld",
+  "name": "STEREO-B PLASTIC Suprathermal Event List",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-B_PLASTIC_SuprathermalEventList.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Antoinette.B.Galvin",
+    "url": "http://hpde.io/SMWG/Person/Antoinette.B.Galvin"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://stereo-ssc.nascom.nasa.gov/data/ins_data/plastic/level3/Suprathermals/",
+      "encodingFormat": "Text",
+      "name": "STEREO Science Center - ASCII",
+      "description": "In ASCII via ftp from SSC"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/STEREO-B/PLASTIC/SuprathermalEventList",
+  "creditText": "STEREO-B PLASTIC Suprathermal Event List.",
+  "description": "This data product contains a list of automatically identified suprathermal proton events measured on the Wide Angle Partition without a Solid State Detector (WAP non-SSD) portion of the STEREO/PLASTIC instrument. This list in conjunction with the IMPACT magnetic field information and PLASTIC solar wind data can aid a user in identifying energetic proton events related to Stream Interaction Regions (SIRs), shocks, upstream events, magnetospheric events, etc.",
+  "abstract": "This data product contains a list of automatically identified suprathermal proton events measured on the Wide Angle Partition without a Solid State Detector (WAP non-SSD) portion of the STEREO/PLASTIC instrument. This list in conjunction with the IMPACT magnetic field information and PLASTIC solar wind data can aid a user in identifying energetic proton events related to Stream Interaction Regions (SIRs), shocks, upstream events, magnetospheric events, etc.",
+  "temporalCoverage": "Start date: 2007-01-19T00:00:00. Relative stop date: -P1Y",
+  "variableMeasured": "ThermalPlasma",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

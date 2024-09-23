@@ -1,0 +1,180 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_RISH_misc_MND_AWS_aws_mnd_csv.jsonld",
+  "name": "Surface meteorological data at Manado (CSV format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_RISH_misc_MND_AWS_aws_mnd_csv.jsonld",
+  "sdDatePublished": "2016-09-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/radar-group/surface/manado/aws/",
+      "encodingFormat": "Text.ASCII",
+      "name": "Surface Meteorological Data at Manado, Indonesia",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/RISH/misc/MND/AWS/aws_mnd_csv",
+  "creditText": "Surface meteorological data at Manado (CSV format).",
+  "description": "The surface meteorological data taken by the automatical weather station (AWS) at Manado, Indonesia (1.55N, 124.39E, 90m MSL), which has been operated since January 16, 2009. The data are stored in the CSV (Comma Separated Values) file named (year)(month)(day).csv. The first two lines of each file represent header information, and the third and below are observational date and local time (year/month/day hour:minute:second) which corresponds to the center time of averaging period (first column) and data including pressure, precipitation, relative humidity, solar radiation, temperature, wind direction and speed (the other columns). The left columns of each parameter represent the status code.",
+  "abstract": "The surface meteorological data taken by the automatical weather station (AWS) at Manado, Indonesia (1.55N, 124.39E, 90m MSL), which has been operated since January 16, 2009. The data are stored in the CSV (Comma Separated Values) file named (year)(month)(day).csv. The first two lines of each file represent header information, and the third and below are observational date and local time (year/month/day hour:minute:second) which corresponds to the center time of averaging period (first column) and data including pressure, precipitation, relative humidity, solar radiation, temperature, wind direction and speed (the other columns). The left columns of each parameter represent the status code.",
+  "temporalCoverage": "Start date: 2009-01-16T04:05:04. Relative stop date: -P6M",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "date",
+      "description": "Date in the form YYYY-MM-DD where YYYY= Gregorian Year AD, MM = month of year (01-12), and DD = day of month (01-31).",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Time in the form hh:mm:ss where hh = hour of day (00-23), mm = minute of hour and ss = second of minute. Local time (UT+08:00:00) is used for time data.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PA",
+      "description": "Pressure",
+      "unitText": "hPa",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PR",
+      "description": "Precipitation",
+      "unitText": "mm",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RH",
+      "description": "Relative humidity",
+      "unitText": "%",
+      "minValue": "0",
+      "maxValue": "100",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SR",
+      "description": "Solar radiation",
+      "unitText": "kW/m^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TA",
+      "description": "Temperature",
+      "unitText": "degree C",
+      "minValue": "20",
+      "maxValue": "40",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DirAvg",
+      "description": "1-minute average of wind direction",
+      "unitText": "degree",
+      "minValue": "0",
+      "maxValue": "360",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SpdAvg",
+      "description": "1-minute average of wind speed",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "status",
+      "description": "Status code. Data with the status code 'VALID' are available.",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Phenomena",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Juno_Ephemeris_juno-ephem-orb1.jsonld",
+  "name": "Juno - Ephemeris - orbit jupiter - 1 sec@PDS",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Juno_Ephemeris_juno-ephem-orb1.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-AMDA/NAIF",
+    "url": "http://hpde.io/CNES/Person/CDPP-AMDA/NAIF"
+  },
+  "sdDatePublished": "2024-02-13",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Juno/Ephemeris/juno-ephem-orb1",
+  "creditText": "Juno - Ephemeris - orbit jupiter - 1 sec@PDS.",
+  "description": "Ephemeris extracted from JNO-J-3-FGM-CAL-V1.0 PDS volume",
+  "abstract": "Ephemeris extracted from JNO-J-3-FGM-CAL-V1.0 PDS volume",
+  "temporalCoverage": "Start date: 2016-07-07T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "distance juno-jup",
+      "description": "",
+      "unitText": "Rj",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "juno_eph_orb_r"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_iau_jupiter",
+      "description": "Juno position in IAU Jupiter (pc) coordinates",
+      "unitText": "Rj",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "juno_eph_orb_xyz"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_jso",
+      "description": "Juno position in JSO (ss) coordinates",
+      "unitText": "Rj",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "71.492e6",
+      "measurementTechnique": "Cartesian JSO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "juno_eph_orb_jso"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

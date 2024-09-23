@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_URAP_UFA_PT144S.jsonld",
+  "name": "Ulysses URAP digital data via ESA",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_URAP_UFA_PT144S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Bob.McDowell",
+    "url": "http://hpde.io/SMWG/Person/Bob.McDowell"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ufa.esac.esa.int/ufa/#data",
+      "encodingFormat": "Text",
+      "name": "annual gzipped-ASCII files from ESA",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Ulysses/URAP/UFA/PT144S",
+  "creditText": "Ulysses URAP digital data via ESA.",
+  "description": "10 Minute Averaged and Peak Radio and Plasma Wave Intensities and 144 Second Averaged Radio Intensities via Ulysses Data System",
+  "abstract": "10 Minute Averaged and Peak Radio and Plasma Wave Intensities and 144 Second Averaged Radio Intensities via Ulysses Data System",
+  "temporalCoverage": "Start date: 1990-11-03T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    "Waves.Passive",
+    "Waves.Passive"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

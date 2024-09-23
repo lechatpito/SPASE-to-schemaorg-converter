@@ -1,0 +1,81 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_DE1_PWI_SFC_LFC_PT409M.jsonld",
+  "name": "DE 1 Plasma Wave Instrument (PWI) Step Frequency and Low Frequency Correlator Spectrogram Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_DE1_PWI_SFC_LFC_PT409M.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/DE1/PWI/SFC_LFC/PT409M",
+  "creditText": "DE 1 Plasma Wave Instrument (PWI) Step Frequency and Low Frequency Correlator Spectrogram Plots.",
+  "description": "This dataset contains dynamic spectrogram PNG plots of the DE-1/PWI Step Frequency Correlator and Low Frequency Correlator data. Each plot spans one orbital period (6 hours 49 minutes). There are three types of files in this dataset. Those derived from data using: 1) the spin-plane 200m electric antenna (Ex), 2) the spin-axis 8m electric antenna (Ez) and 3) the magnetic antennas (B-H) consisting of a 1.0m^2 loop antenna in the spin plane and a search coil on the spin axis. Each image consists of two panels. The title above each panel indicates the instrument, antenna and frequency range. Each panel is a plot of the power spectral density of received signal (color scale) as a function of operating frequency (in a logarithmic scale on the vertical axis) and time (horizontal axis). Beneath the time labels on the horizontal axis of the spectrograms are ephemeris data: position of the spacecraft in radial distance (Earth radii), McIlwain L-shell, magnetic local time, and geomagnetic latitude. Overlaid on each image are traces of the electron cyclotron frequencies. The file naming convention is: de1_pwi_0000_YYYYMMDD_HHMM_AAA.png where: 0000 - Replace with orbit number YYYYMMDD - Replace with date HHMM - Replace with start time AAA - Replace with antenna string",
+  "abstract": "This dataset contains dynamic spectrogram PNG plots of the DE-1/PWI Step Frequency Correlator and Low Frequency Correlator data. Each plot spans one orbital period (6 hours 49 minutes). There are three types of files in this dataset. Those derived from data using: 1) the spin-plane 200m electric antenna (Ex), 2) the spin-axis 8m electric antenna (Ez) and 3) the magnetic antennas (B-H) consisting of a 1.0m^2 loop antenna in the spin plane and a search coil on the spin axis. Each image consists of two panels. The title above each panel indicates the instrument, antenna and frequency range. Each panel is a plot of the power spectral density of received signal (color scale) as a function of operating frequency (in a logarithmic scale on the vertical axis) and time (horizontal axis). Beneath the time labels on the horizontal axis of the spectrograms are ephemeris data: position of the spacecraft in radial distance (Earth radii), McIlwain L-shell, magnetic local time, and geomagnetic latitude. Overlaid on each image are traces of the electron cyclotron frequencies. The file naming convention is: de1_pwi_0000_YYYYMMDD_HHMM_AAA.png where: 0000 - Replace with orbit number YYYYMMDD - Replace with date HHMM - Replace with start time AAA - Replace with antenna string",
+  "temporalCoverage": "Start date: 1981-09-16T05:20:00Z. Relative stop date: None",
+  "variableMeasured": "Waves.Passive",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "keywords": [
+    "Dynamic Spectrogram",
+    "Spectrogram",
+    "AKR",
+    "Auroral hiss",
+    "Auroral Kilometric Radiation",
+    "Banded emissions",
+    "Broadband Electrostatic Noise (BEN)",
+    "Chorus",
+    "Continuum radiation",
+    "Electromagnetic Ion Cyclotron waves",
+    "EMIC",
+    "Electron Cyclotron Harmonics",
+    "Kilometric Continuum radiation",
+    "Myriametric radiation",
+    "Plasmaspheric Hiss",
+    "Solar radio burst",
+    "Terrestrial Kilometric Radiation",
+    "TKR",
+    "UHR",
+    "Upper hybrid resonance",
+    "Whistler mode",
+    "Whistlers"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

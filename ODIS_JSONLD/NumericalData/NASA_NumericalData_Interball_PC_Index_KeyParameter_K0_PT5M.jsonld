@@ -1,0 +1,356 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Interball_PC_Index_KeyParameter_K0_PT5M.jsonld",
+  "name": "Polar Cap (PC), Northern and Southern Hemisphere Activity Indices, 5 min Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Interball_PC_Index_KeyParameter_K0_PT5M.jsonld",
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Interball/PC_Index/KeyParameter/K0/PT5M",
+  "creditText": "Polar Cap (PC), Northern and Southern Hemisphere Activity Indices, 5 min Data.",
+  "description": "The PC Index is an Empirical Magnetic Activity Index based on Data from Single Near-Pole Station, Thule for the Northern Hemisphere and Vostok for the Southern Hemisphere, respectively). Its Derivation Procedure is optimized to achieve the Best Correlation of PC Index with the Solar Wind Electric Field, SWEF, Magnitude quantified by v*B*sin((theta/2)^2). The Average Horizontal Magnetic Disturbance Vector, Quiet Value subtracted, is projected onto the Optimal Direction, which is defined empirically for each UT Hour and each Season based on the Best COrrelation with the SWEF. After Normalization to the Equivalent Value of the SWEF, the PC Index is expressed in Units of mV/m. Although the PC Index is formally expressed in mV/m, it actually represents the Measure of Magnetic Activity, the Normalization Procedure to SWEF helps to reduce Seasonal and Diurnal Effects to facilitate the Intercomparison. The Time Resolution of the Northern Cap PC Index is 5 min while it is 15 min form the Southern PC Index. However, one Time SCale with a 5 min Step is used for both Indices and each 15 min averaged Value of southern index is, hence, repeated three Times. References: 1. Troshichev, O.A., et al., Planet. Space Sci., 36, 1095, 1988, 2. Vennerstrom, S., et al., Report UAG-103, World Data Center A for STP, Boulder, April 1994.",
+  "abstract": "The PC Index is an Empirical Magnetic Activity Index based on Data from Single Near-Pole Station, Thule for the Northern Hemisphere and Vostok for the Southern Hemisphere, respectively). Its Derivation Procedure is optimized to achieve the Best Correlation of PC Index with the Solar Wind Electric Field, SWEF, Magnitude quantified by v*B*sin((theta/2)^2). The Average Horizontal Magnetic Disturbance Vector, Quiet Value subtracted, is projected onto the Optimal Direction, which is defined empirically for each UT Hour and each Season based on the Best COrrelation with the SWEF. After Normalization to the Equivalent Value of the SWEF, the PC Index is expressed in Units of mV/m. Although the PC Index is formally expressed in mV/m, it actually represents the Measure of Magnetic Activity, the Normalization Procedure to SWEF helps to reduce Seasonal and Diurnal Effects to facilitate the Intercomparison. The Time Resolution of the Northern Cap PC Index is 5 min while it is 15 min form the Southern PC Index. However, one Time SCale with a 5 min Step is used for both Indices and each 15 min averaged Value of southern index is, hence, repeated three Times. References: 1. Troshichev, O.A., et al., Planet. Space Sci., 36, 1095, 1988, 2. Vennerstrom, S., et al., Report UAG-103, World Data Center A for STP, Boulder, April 1994.",
+  "temporalCoverage": "Start date: 1995-08-07T00:02:30. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, Centered",
+      "description": "Epoch Time, Centered",
+      "unitText": "ms",
+      "minValue": "01-Jan-1994 00:00:00.000",
+      "maxValue": "31-Dec-2020 23:59:59.000",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter exhibits an increasing monotonic progression."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.2974951569904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.2975556069904e+13"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Southern PC Index, PCS, Vostok",
+      "description": "Southern Polar Cap Magnetic Activity Index, PCS, Vostok",
+      "unitText": "mV/m",
+      "minValue": "-10.0",
+      "maxValue": "30.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>V/m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PC_Vostok"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "15 min averaged value of southern index is repeated for three times."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PCS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F5.1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-5.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "15.0"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Northern PC Index, PCN, Thule",
+      "description": "Northern Polar Cap Magnetic Activity Index, PCN, Thule",
+      "unitText": "mV/m",
+      "minValue": "-10.0",
+      "maxValue": "30.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>V/m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PC_Thule"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "5 min. resolution"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "PCN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F5.1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-5.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "15.0"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Status Flag, PCS",
+      "description": "Status Flag, PCS: 0=Good Data, 2=Missing Data, 5=Data Delayed",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "5",
+      "defaultValue": "128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Flag_Vostok"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: none"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "FLag_S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Status Flag, PCN",
+      "description": "Status Flag, PCN: 0=Good Data, 2=Missing Data, 5=Data Delayed",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "5",
+      "defaultValue": "128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Flag_Thule"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: none"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Flag_N"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Post Gap Flag",
+      "description": "Post Gap Flag: 0=No Gap before this Point, Values 1 to 5 denote Specific Gap Types",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "5",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Gap_Flag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: none"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT5M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "GAP_FLAG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "5"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

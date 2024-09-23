@@ -1,0 +1,228 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Weygand_Geotail_MGF_Propagated.LEP_GSE_PT60S.jsonld",
+  "name": "Geotail Weimer Propagated using LEP 60 s Resolution Tri-axial Fluxgate Magnetometer in GSE Coordinates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Weygand_Geotail_MGF_Propagated.LEP_GSE_PT60S.jsonld",
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://vmo.igpp.ucla.edu/data1/Weygand/PropagatedSolarWindGSE/weimer/Geotail/mag_lep/",
+      "encodingFormat": "Text",
+      "name": "IGPP UCLA Geotail Magnetometer Data JMW Propagated Archive",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Weygand/Geotail/MGF/Propagated.LEP/GSE/PT60S",
+  "creditText": "Geotail Weimer Propagated using LEP 60 s Resolution Tri-axial Fluxgate Magnetometer in GSE Coordinates.",
+  "description": "Geotail Weimer propagated solar wind data using LEP and linearly interpolated to have the measurements on the minute at 60 s resolution tri-axial fluxgate magnetometer data in GSE coordinates. This data set consists of propagated solar wind data that has first been propagated to a position just outside of the nominal bow shock (about 17, 0, 0 Re) and then linearly interpolated to 1 min resolution using the interp1.m function in MATLAB. The input data for this data set is a 1 min resolution processed solar wind data constructed by Dr. J.M. Weygand. The method of propagation is similar to the minimum variance technique and is outlined in Dan Weimer et al. [2003; 2004]. The basic method is to find the minimum variance direction of the magnetic field in the plane orthogonal to the mean magnetic field direction. This minimum variance direction is then dotted with the difference between final position vector minus the original position vector and the quantity is divided by the minimum variance dotted with the solar wind velocity vector, which gives the propagation time. This method does not work well for shocks and minimum variance directions with tilts greater than 70 degrees of the sun-earth line. This data set was originally constructed by Dr. J.M. Weygand for Prof. R.L. McPherron, who was the principle investigator of two National Science Foundation studies: GEM Grant ATM 02-1798 and a Space Weather Grant ATM 02-08501. These data were primarily used in superposed epoch studies. References: Weimer, D. R. (2004), Correction to \u2018\u2018Predicting interplanetary magnetic field (IMF) propagation delay times using the minimum variance technique,\u2019\u2019 J. Geophys. Res., 109, A12104, doi:10.1029/2004JA010691. Weimer, D.R., D.M. Ober, N.C. Maynard, M.R. Collier, D.J. McComas, N.F. Ness, C. W. Smith, and J. Watermann (2003), Predicting interplanetary magnetic field (IMF) propagation delay times using the minimum variance technique, J. Geophys. Res., 108, 1026, doi:10.1029/2002JA009405.",
+  "abstract": "Geotail Weimer propagated solar wind data using LEP and linearly interpolated to have the measurements on the minute at 60 s resolution tri-axial fluxgate magnetometer data in GSE coordinates. This data set consists of propagated solar wind data that has first been propagated to a position just outside of the nominal bow shock (about 17, 0, 0 Re) and then linearly interpolated to 1 min resolution using the interp1.m function in MATLAB. The input data for this data set is a 1 min resolution processed solar wind data constructed by Dr. J.M. Weygand. The method of propagation is similar to the minimum variance technique and is outlined in Dan Weimer et al. [2003; 2004]. The basic method is to find the minimum variance direction of the magnetic field in the plane orthogonal to the mean magnetic field direction. This minimum variance direction is then dotted with the difference between final position vector minus the original position vector and the quantity is divided by the minimum variance dotted with the solar wind velocity vector, which gives the propagation time. This method does not work well for shocks and minimum variance directions with tilts greater than 70 degrees of the sun-earth line. This data set was originally constructed by Dr. J.M. Weygand for Prof. R.L. McPherron, who was the principle investigator of two National Science Foundation studies: GEM Grant ATM 02-1798 and a Space Weather Grant ATM 02-08501. These data were primarily used in superposed epoch studies. References: Weimer, D. R. (2004), Correction to \u2018\u2018Predicting interplanetary magnetic field (IMF) propagation delay times using the minimum variance technique,\u2019\u2019 J. Geophys. Res., 109, A12104, doi:10.1029/2004JA010691. Weimer, D.R., D.M. Ober, N.C. Maynard, M.R. Collier, D.J. McComas, N.F. Ness, C. W. Smith, and J. Watermann (2003), Predicting interplanetary magnetic field (IMF) propagation delay times using the minimum variance technique, J. Geophys. Res., 108, 1026, doi:10.1029/2002JA009405.",
+  "temporalCoverage": "Start date: 1993-10-01T00:00:00.000. Relative stop date: -P1Y",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Universal Time AFTER Propagation columns from left to right are: day month year hour minute sec in the format of dd mm yyyy hh mm ss.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Minute",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Second",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geotail Magnetic Field Vector Weimer Propagated using LEP 1 min Resolution Data in GSE Coordiates",
+      "description": "Weimer propagated magnetic field vector for Geotail using LEP in GSE coordinates in units of nT.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "BX-GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BY-GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BZ-GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Magnetic Field Vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geotail Spacecraft Weimer Propagated Position Vector Interpolated to 1 min Resolution in GSE Coordinates",
+      "description": "Weimer propagated location of the spacecraft in GSE coordinates in units of Re",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X-GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y-GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z-GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Position Vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    "1 min",
+    "solar wind",
+    "magnetotail",
+    "bow shock",
+    "magnetopause",
+    "magnetic fields",
+    "MGF",
+    "magnetometer",
+    "Propagated solar wind data",
+    "Geotail"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

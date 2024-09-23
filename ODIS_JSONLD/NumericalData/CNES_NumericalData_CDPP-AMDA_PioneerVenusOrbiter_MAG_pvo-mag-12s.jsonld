@@ -1,0 +1,124 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_PioneerVenusOrbiter_MAG_pvo-mag-12s.jsonld",
+  "name": "PVO - MAG - orbits 1-3601",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_PioneerVenusOrbiter_MAG_pvo-mag-12s.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Raymond.J.Walker",
+    "url": "http://hpde.io/SMWG/Person/Raymond.J.Walker"
+  },
+  "sdDatePublished": "2012-03-06",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/PioneerVenusOrbiter/MAG/pvo-mag-12s",
+  "creditText": "PVO - MAG - orbits 1-3601.",
+  "description": "This dataset includes vectors collected by the Pioneer Venus Orbiter          \nMagnetometer.  The data are provided in spacecraft   \ncoordinates.  In one format, apoapsis B, the magnetometer can be commanded   \nto return 3 vectors per minor frame. In most others it transmits one vector  \nper minor frame.  In one format, periapsis E, it has no words in a minor     \nframe.  At very low sampling rates at which time the sine wave due to        \nspacecraft spin could not be resolved.  The magnetometer values are despun,  \nand averaged on board using a Walsh transform (square wave) in phase and     \nin quadiatune with the sun.",
+  "abstract": "This dataset includes vectors collected by the Pioneer Venus Orbiter          \nMagnetometer.  The data are provided in spacecraft   \ncoordinates.  In one format, apoapsis B, the magnetometer can be commanded   \nto return 3 vectors per minor frame. In most others it transmits one vector  \nper minor frame.  In one format, periapsis E, it has no words in a minor     \nframe.  At very low sampling rates at which time the sine wave due to        \nspacecraft spin could not be resolved.  The magnetometer values are despun,  \nand averaged on board using a Walsh transform (square wave) in phase and     \nin quadiatune with the sun.",
+  "temporalCoverage": "Start date: 1978-12-05T07:20:18Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_sc",
+      "description": "Magnetic field vector components in SpaceCraft coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "bx",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "by",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bz",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "pvo_b_12s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "pvo_bmag_12s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_Vostok_Magnetometer_NGDC_PT1M.jsonld",
+  "name": "PCI (Polar Cap Index), Antarctica",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_Vostok_Magnetometer_NGDC_PT1M.jsonld",
+  "sdDatePublished": "2024-05-03",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://ftp.ngdc.noaa.gov/STP/SOLAR_DATA/RELATED_INDICES/PC_INDEX/VOSTOK/",
+      "encodingFormat": "Text",
+      "name": "In ASCII via ftp from NGDC",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/Vostok/Magnetometer/NGDC/PT1M",
+  "creditText": "PCI (Polar Cap Index), Antarctica.",
+  "description": "PCI (Polar Cap Index), Vostok, Antarctica. 15-m data 1978-1991 and 1-m data thereafter. Via CEDAR database. Also called PCS - Polar Cap South",
+  "abstract": "PCI (Polar Cap Index), Vostok, Antarctica. 15-m data 1978-1991 and 1-m data thereafter. Via CEDAR database. Also called PCS - Polar Cap South",
+  "temporalCoverage": "Start date: 1978-01-01T00:00:00. Relative stop date: -P15M",
+  "variableMeasured": [
+    "MagneticField",
+    "ActivityIndex"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

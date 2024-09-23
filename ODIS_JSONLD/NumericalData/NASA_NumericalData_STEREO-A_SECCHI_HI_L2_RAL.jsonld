@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-A_SECCHI_HI_L2_RAL.jsonld",
+  "name": "STEREO-A SECCHI HI Level 2 produced by UK Solar System Data Centre",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-A_SECCHI_HI_L2_RAL.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/William.T.Thompson",
+    "url": "http://hpde.io/SMWG/Person/William.T.Thompson"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/STEREO-A/SECCHI/HI/L2_RAL",
+  "creditText": "STEREO-A SECCHI HI Level 2 produced by UK Solar System Data Centre.",
+  "description": "\nSTEREO-A SECCHI HI Level 2 FITS files produced by the UK Solar System Data Centre, calibrated and background subtracted.  Images stored in FITS files with filenames such as \"20140101_180501_24h1A_br11.fts\". The meaning of the different parts of this filename is as follows:\n\n* 20140101 is the observation date, 2014-01-01;\n* 180501 is the observation time, 18:05:01 UT;\n* 2 represents Level-2;\n* 4 is a code for the data units, where 4=Dn/Sec/Pixel, b=Mean Solar Brightness (MSB), and t=S10. MSB \\& S10 have the diffuse source correction applied;\n* h1 or h2 for HI-1 or HI-2;\n* A or B for STEREO-A or STEREO-B;\n* br for Buffinton/RAL background subtracted--a full running window where the F-corona is computed as the mean of the lowest quartile of pixels;\n* 11 is the length of the running window in days, usually either 01 or 11 for HI-1, and 03 or 11 for HI-2.\n",
+  "abstract": "\nSTEREO-A SECCHI HI Level 2 FITS files produced by the UK Solar System Data Centre, calibrated and background subtracted.  Images stored in FITS files with filenames such as \"20140101_180501_24h1A_br11.fts\". The meaning of the different parts of this filename is as follows:\n\n* 20140101 is the observation date, 2014-01-01;\n* 180501 is the observation time, 18:05:01 UT;\n* 2 represents Level-2;\n* 4 is a code for the data units, where 4=Dn/Sec/Pixel, b=Mean Solar Brightness (MSB), and t=S10. MSB \\& S10 have the diffuse source correction applied;\n* h1 or h2 for HI-1 or HI-2;\n* A or B for STEREO-A or STEREO-B;\n* br for Buffinton/RAL background subtracted--a full running window where the F-corona is computed as the mean of the lowest quartile of pixels;\n* 11 is the length of the running window in days, usually either 01 or 11 for HI-1, and 03 or 11 for HI-2.\n",
+  "temporalCoverage": "Start date: 2006-10-01T00:00:00Z. Relative stop date: -P15D",
+  "variableMeasured": "ImageIntensity",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

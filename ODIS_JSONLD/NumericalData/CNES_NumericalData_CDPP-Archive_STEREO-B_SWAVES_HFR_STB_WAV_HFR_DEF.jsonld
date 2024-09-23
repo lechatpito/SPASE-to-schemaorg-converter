@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_STEREO-B_SWAVES_HFR_STB_WAV_HFR_DEF.jsonld",
+  "name": "HFR STEREO-B 'DEF' High Frequency Receiver (125 - 16025 kHz) - Spectral Density",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_STEREO-B_SWAVES_HFR_STB_WAV_HFR_DEF.jsonld",
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:STB_WAV_HFR_DEF",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/STEREO-B/SWAVES/HFR/STB_WAV_HFR_DEF",
+  "creditText": "HFR STEREO-B 'DEF' High Frequency Receiver (125 - 16025 kHz) - Spectral Density.",
+  "description": "This data set contains the  definitive spectral density from the STEREO-B SWAVES High Frequency Receiver (HFR) in the frequency range 125 - 16025 kHz.",
+  "abstract": "This data set contains the  definitive spectral density from the STEREO-B SWAVES High Frequency Receiver (HFR) in the frequency range 125 - 16025 kHz.",
+  "temporalCoverage": "Start date: 2006-10-27T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "HFR STEREO-B AGC1 output (spectral density) related to a step and a configuration loop",
+      "description": "HFR STEREO-B AGC1 output (spectral density) related to a step and a configuration loop",
+      "unitText": "V^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR STEREO-B AGC2 output (spectral density) related to a step and a configuration loop",
+      "description": "HFR STEREO-B AGC2 output (spectral density) related to a step and a configuration loop",
+      "unitText": "V^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR STEREO-B auto-correlation (C1 channel)",
+      "description": "HFR STEREO-B auto-correlation (C1 channel) related to a frequency and a configuration loop.",
+      "unitText": "V^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR STEREO-B auto-correlation (C2 channel)",
+      "description": "HFR STEREO-B auto-correlation (C2 channel) related to a frequency and a configuration loop.",
+      "unitText": "V^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR STEREO-B normalized cross-correlation (Real Part)",
+      "description": "HFR STEREO-B  normalized cross-correlation (Real Part) related to a frequency and a configuration loop",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other",
+        "description": "Scalar"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR STEREO-B normalized cross-correlation (Imaginary Part)",
+      "description": "HFR STEREO-B normalized cross-correlation (Imaginary Part) related to a frequency and a configuration loop.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other",
+        "description": "Scalar"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

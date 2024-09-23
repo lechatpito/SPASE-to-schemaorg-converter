@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ACE_MAG_SWEPAM_PT240S.jsonld",
+  "name": "ACE MAG SWEPAM 4-min merged IMF+plasma data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ACE_MAG_SWEPAM_PT240S.jsonld",
+  "sdDatePublished": "2022-05-17",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/ace_merge.html",
+      "encodingFormat": "Text",
+      "name": "FTPBrowser",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/ace/merged/4_min_merged_mag_plasma/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/ace/merged/4_min_merged_mag_plasma/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ACE/MAG_SWEPAM/PT240S",
+  "creditText": "ACE MAG SWEPAM 4-min merged IMF+plasma data.",
+  "description": "ACE MAG and SWEPAM 4-min merged magnetic field and plasma parameter moments data at NSSDC",
+  "abstract": "ACE MAG and SWEPAM 4-min merged magnetic field and plasma parameter moments data at NSSDC",
+  "temporalCoverage": "Start date: 1998-02-05T00:00:00. Relative stop date: -P5M",
+  "variableMeasured": [
+    "ThermalPlasma",
+    "MagneticField"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

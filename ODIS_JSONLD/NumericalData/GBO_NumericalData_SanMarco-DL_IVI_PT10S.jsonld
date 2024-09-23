@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_SanMarco-DL_IVI_PT10S.jsonld",
+  "name": "San Marco-DL Ion Velocity Instrument (IVI) 10-s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_SanMarco-DL_IVI_PT10S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/William.B.Hanson",
+    "url": "http://hpde.io/SMWG/Person/William.B.Hanson"
+  },
+  "sdDatePublished": "2020-07-03",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/san_marco/plasma_ivi/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/san_marco/plasma_ivi/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/SanMarco-DL/IVI/PT10S",
+  "creditText": "San Marco-DL Ion Velocity Instrument (IVI) 10-s Data.",
+  "description": "This set of plasma data came from the Retarding Potential Analyzer and\nIon Drift Meter instruments that constituted the San Marco Ion Velocitiy\nInvestigation (IVI). The data were submitted by the PI team in ASCII\nformat with SFDU Voldesc and Format description files. The data are\nprovided as monthly files. Each data record contains the following\nparameters deduced from the IVI measurements: ion temperature, spacecraft\npotential, vertical and horizontal component of the ion velocity, total\nion density, H+ ion density, O+ ion density, and the density of molecular\nions. In addition the following parameters are included with each record:\ndate, time, dip latitude, altitude, geographic longitude and latitude,\nsolar local time, and solar zenith angle. The time resolution is\napproximately 10 seconds. The data have been screened for errors due to\nlack of appropriate vehicle orientation information or to failure of the\nleast-squares analysis routine. More information about the satellite\nmission, the IVI experiment and the format of the data can be found in\nthe voldesc and format files. Both files are ASCII text files.\n\nFurther details about the San Marco spacecraft, experiment, and data sets can be found at the San Marco home page, http://crpsm.psm.uniroma1.it/\n",
+  "abstract": "This set of plasma data came from the Retarding Potential Analyzer and\nIon Drift Meter instruments that constituted the San Marco Ion Velocitiy\nInvestigation (IVI). The data were submitted by the PI team in ASCII\nformat with SFDU Voldesc and Format description files. The data are\nprovided as monthly files. Each data record contains the following\nparameters deduced from the IVI measurements: ion temperature, spacecraft\npotential, vertical and horizontal component of the ion velocity, total\nion density, H+ ion density, O+ ion density, and the density of molecular\nions. In addition the following parameters are included with each record:\ndate, time, dip latitude, altitude, geographic longitude and latitude,\nsolar local time, and solar zenith angle. The time resolution is\napproximately 10 seconds. The data have been screened for errors due to\nlack of appropriate vehicle orientation information or to failure of the\nleast-squares analysis routine. More information about the satellite\nmission, the IVI experiment and the format of the data can be found in\nthe voldesc and format files. Both files are ASCII text files.\n\nFurther details about the San Marco spacecraft, experiment, and data sets can be found at the San Marco home page, http://crpsm.psm.uniroma1.it/\n",
+  "temporalCoverage": "Start date: 1988-04-20T00:00:00. Relative stop date: None",
+  "variableMeasured": "ThermalPlasma",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

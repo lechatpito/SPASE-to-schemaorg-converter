@@ -1,0 +1,535 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_WDC_Kyoto_WDC_ASC_Magnetometer_PT1H.jsonld",
+  "name": "Ascension Island geomagnetic field 1-hour digital data in WDC format",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_WDC_Kyoto_WDC_ASC_Magnetometer_PT1H.jsonld",
+  "sdDatePublished": "2011-02-17",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://wdc.kugi.kyoto-u.ac.jp/wdc/Sec3.html",
+      "encodingFormat": "Text",
+      "name": "Geomagnetic Data Service",
+      "description": "Geomagnetic Data Service at World Data Center for Geomagnetism, Kyoto."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/WDC_Kyoto/WDC/ASC/Magnetometer/PT1H",
+  "creditText": "Ascension Island geomagnetic field 1-hour digital data in WDC format.",
+  "description": "The geomagnetic field 1-hour digital data observed at Ascension Island (ASC) in WDC format.",
+  "abstract": "The geomagnetic field 1-hour digital data observed at Ascension Island (ASC) in WDC format.",
+  "temporalCoverage": "Start date: 1994-01-01T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ASC D hourly values in WDC format",
+      "description": "Each data record is stored according to element and day. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/hyplt/format/wdchrformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "OBSERVATORY 3-LETTER CODE, left adjusted",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "YEAR (last 2 digits, 82 = 1982)",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MONTH (01-12)",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ELEMENT (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DAY OF MONTH (01-31)",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Tabular Base",
+          "description": "",
+          "position": "17",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Twenty-four 4-digit Hourly Values for the day",
+          "description": "",
+          "position": "21",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Daily Mean",
+          "description": "",
+          "position": "117",
+          "defaultValue": "9999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1H"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ASC H hourly values in WDC format",
+      "description": "Each data record is stored according to element and day. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/hyplt/format/wdchrformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "OBSERVATORY 3-LETTER CODE, left adjusted",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "YEAR (last 2 digits, 82 = 1982)",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MONTH (01-12)",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ELEMENT (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DAY OF MONTH (01-31)",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Tabular Base",
+          "description": "",
+          "position": "17",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Twenty-four 4-digit Hourly Values for the day",
+          "description": "",
+          "position": "21",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Daily Mean",
+          "description": "",
+          "position": "117",
+          "defaultValue": "9999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1H"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ASC X hourly values in WDC format",
+      "description": "Each data record is stored according to element and day. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/hyplt/format/wdchrformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "OBSERVATORY 3-LETTER CODE, left adjusted",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "YEAR (last 2 digits, 82 = 1982)",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MONTH (01-12)",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ELEMENT (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DAY OF MONTH (01-31)",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Tabular Base",
+          "description": "",
+          "position": "17",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Twenty-four 4-digit Hourly Values for the day",
+          "description": "",
+          "position": "21",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Daily Mean",
+          "description": "",
+          "position": "117",
+          "defaultValue": "9999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1H"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ASC Y hourly values in WDC format",
+      "description": "Each data record is stored according to element and day. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/hyplt/format/wdchrformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "OBSERVATORY 3-LETTER CODE, left adjusted",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "YEAR (last 2 digits, 82 = 1982)",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MONTH (01-12)",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ELEMENT (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DAY OF MONTH (01-31)",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Tabular Base",
+          "description": "",
+          "position": "17",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Twenty-four 4-digit Hourly Values for the day",
+          "description": "",
+          "position": "21",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Daily Mean",
+          "description": "",
+          "position": "117",
+          "defaultValue": "9999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1H"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ASC Z hourly values in WDC format",
+      "description": "Each data record is stored according to element and day. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/hyplt/format/wdchrformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "OBSERVATORY 3-LETTER CODE, left adjusted",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "YEAR (last 2 digits, 82 = 1982)",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MONTH (01-12)",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ELEMENT (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DAY OF MONTH (01-31)",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Tabular Base",
+          "description": "",
+          "position": "17",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Twenty-four 4-digit Hourly Values for the day",
+          "description": "",
+          "position": "21",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Daily Mean",
+          "description": "",
+          "position": "117",
+          "defaultValue": "9999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1H"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ASC F hourly values in WDC format",
+      "description": "Each data record is stored according to element and day. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/hyplt/format/wdchrformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "OBSERVATORY 3-LETTER CODE, left adjusted",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "YEAR (last 2 digits, 82 = 1982)",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MONTH (01-12)",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ELEMENT (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DAY OF MONTH (01-31)",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Tabular Base",
+          "description": "",
+          "position": "17",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Twenty-four 4-digit Hourly Values for the day",
+          "description": "",
+          "position": "21",
+          "defaultValue": "9999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Daily Mean",
+          "description": "",
+          "position": "117",
+          "defaultValue": "9999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1H"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "keywords": [
+    "EARTH SCIENCE Atmosphere Solid Earth Geomagnetism Magnetic Field",
+    "EARTH SCIENCE Atmosphere Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Magnetic Fields/Magnetic Currents"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

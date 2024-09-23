@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_NIPR_UAPM_SYO_induction_PT1S_bin.jsonld",
+  "name": "Magnetic field data with 1sec resolution from the induction magnetometer at Syowa Station, Antarctica.",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_NIPR_UAPM_SYO_induction_PT1S_bin.jsonld",
+  "sdDatePublished": "2011-04-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://scidbase.nipr.ac.jp/modules/metadata/index.php?content_id=103",
+      "encodingFormat": "Binary",
+      "name": "Upper Atmosphere Physics Monitoring Observation at Syowa Station",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://polaris.nipr.ac.jp/~aurora/uapm/ConjugateObsTop.html",
+      "encodingFormat": "Binary",
+      "name": "Conjugate Observation between Syowa Station and Iceland",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/NIPR/UAPM/SYO/induction/PT1S_bin",
+  "creditText": "Magnetic field data with 1sec resolution from the induction magnetometer at Syowa Station, Antarctica..",
+  "description": "Magnetic field data with 1sec resolution from the induction magnetometer at Syowa Station, Antarctica. The data is originally measured at 0.05sec intervals and stored together with the magnetic field from the fluxgate magnetometer, CNA from the broad-beam riometer, and ELF/VLF emissions from the 9-channel ELF/VLF receiver.",
+  "abstract": "Magnetic field data with 1sec resolution from the induction magnetometer at Syowa Station, Antarctica. The data is originally measured at 0.05sec intervals and stored together with the magnetic field from the fluxgate magnetometer, CNA from the broad-beam riometer, and ELF/VLF emissions from the 9-channel ELF/VLF receiver.",
+  "temporalCoverage": "Start date: 1998-01-02T00:00:00. Relative stop date: -P7D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Time label in CDF_EPOCH (the number of milliseconds since 01-Jan-0000)",
+      "unitText": "second",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vector magnetic field",
+      "description": "Three components measured with the induction magnetometer. dH/dt: northward component, dD/dt: eastward component, dZ/dt: vertically downward component.",
+      "unitText": "nT/sec",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian LGM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "dH/dt",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "dD/dt",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "dZ/dt",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earch Interaction Ionosphere/Magnetosphere Dynamics Magnetic Fields/Magnetic Currents",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

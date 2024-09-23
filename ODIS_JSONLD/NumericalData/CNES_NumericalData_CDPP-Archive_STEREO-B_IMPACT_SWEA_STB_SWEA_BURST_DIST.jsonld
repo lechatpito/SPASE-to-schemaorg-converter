@@ -1,0 +1,118 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_STEREO-B_IMPACT_SWEA_STB_SWEA_BURST_DIST.jsonld",
+  "name": "STEREO-B IMPACT SWEA Level-1 Burst raw electron distribution functions in counts",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_STEREO-B_IMPACT_SWEA_STB_SWEA_BURST_DIST.jsonld",
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:STB_SWEA_BURST_DIST",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/STEREO-B/IMPACT/SWEA/STB_SWEA_BURST_DIST",
+  "creditText": "STEREO-B IMPACT SWEA Level-1 Burst raw electron distribution functions in counts.",
+  "description": "This dataset provides the electron distribution functions at the BURST cadence (2 s).\nThe data is provided in units of counts. The reference frame is related to the instrument frame.",
+  "abstract": "This dataset provides the electron distribution functions at the BURST cadence (2 s).\nThe data is provided in units of counts. The reference frame is related to the instrument frame.",
+  "temporalCoverage": "Start date: 2006-11-01T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA Mode ID",
+      "description": "STEREO-B SWEA Mode ID",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "InstrumentMode"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA Distribution Angle Bins",
+      "description": "STEREO-B SWEA 3D Distribution Angle Bins",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "0.0174532925>rad",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA 3D Distribution",
+      "description": "STEREO-B SWEA 3D Distribution in cnts",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA V0 Value",
+      "description": "STEREO-B SWEA V0 Value",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA Energy",
+      "description": "STEREO-B SWEA Energy Bins",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.160445e4>K",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

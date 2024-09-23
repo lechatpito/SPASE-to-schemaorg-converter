@@ -1,0 +1,265 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NSF_NumericalData_AALPIP_magnetometer_PG3_PT1S.jsonld",
+  "name": "PG3 Ground-based Vector Magnetic Field 1 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NSF_NumericalData_AALPIP_magnetometer_PG3_PT1S.jsonld",
+  "sdDatePublished": "2024-07-08",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NSF/NumericalData/AALPIP/magnetometer/PG3/PT1S",
+  "creditText": "PG3 Ground-based Vector Magnetic Field 1 s Data.",
+  "description": "PG3 is located at -84.81 deg GeoLat, 37.62 deg GeoLong and is part of an autonomous adaptive low-power instrument platform (AAL-PIP) chain of six stations has been established on East Antarctic Plateau along the 40 deg geomagnetic meridian, to investigate interhemispheric geomagnetically conjugate current systems, waves, and other space weather phenomena in Polar Regions. These six stations, PG0 to PG5, which host low-power Fluxgate magnetometers, dual frequency GPS receivers, HF radio experiment, and run autonomously with solar power and two-way satellite communication, are designated at the geomagnetically conjugate (based on the International Geomagnetic Reference Field) locations of the West Greenland geomagnetic chain covering magnetic latitudes from 70 deg to 80 deg.",
+  "abstract": "PG3 is located at -84.81 deg GeoLat, 37.62 deg GeoLong and is part of an autonomous adaptive low-power instrument platform (AAL-PIP) chain of six stations has been established on East Antarctic Plateau along the 40 deg geomagnetic meridian, to investigate interhemispheric geomagnetically conjugate current systems, waves, and other space weather phenomena in Polar Regions. These six stations, PG0 to PG5, which host low-power Fluxgate magnetometers, dual frequency GPS receivers, HF radio experiment, and run autonomously with solar power and two-way satellite communication, are designated at the geomagnetically conjugate (based on the International Geomagnetic Reference Field) locations of the West Greenland geomagnetic chain covering magnetic latitudes from 70 deg to 80 deg.",
+  "temporalCoverage": "Start date: 2013-01-05T00:00:00. Relative stop date: -PT600S",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "HDZ Magnetic Field Components ",
+      "description": "HDZ magnetic field components",
+      "unitText": "nT",
+      "minValue": "-60000",
+      "maxValue": "+60000",
+      "defaultValue": "-1.0000e+31",
+      "measurementTechnique": "Cartesian LGM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1: H component of the magnetic field.",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2: D component of the magnetic field.",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3: Z component of the magnetic field.",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_pg3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "HDZ Component Number"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "f9.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Component Labels",
+      "description": "This is metadata: Units for the magnetic field component. These should all be nT.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_pg3_unit"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Component Labels",
+      "description": "This is metadata: Labels for the magnetic field component.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_pg3_labl"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Component Number",
+      "description": "Number of the magnetic field component.",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "3",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Orientation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_pg3_compno"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Seconds since Jan 1, 1970",
+      "description": "Second since Jan 1, 1970 00:00:00",
+      "unitText": "s",
+      "minValue": "0",
+      "maxValue": "5.0000e+09",
+      "defaultValue": "-1.0000e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_pg3_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Date and Time",
+      "description": "Date and Time",
+      "unitText": "msec",
+      "minValue": "01-Jan-2001 00:00:00.000",
+      "maxValue": "31-Dec-2100 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_pg3_epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Zero Time",
+      "description": "'01-Jan-1970 00:00:00'",
+      "unitText": "msec",
+      "minValue": "01-Jan-1900 00:00:00.000",
+      "maxValue": "31-Dec-2029 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "thg_mag_pg3_epoch0"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time Range of Data",
+      "description": "Time range of data in the data file.",
+      "unitText": "msec",
+      "minValue": "01-Jan-2001 00:00:00.000",
+      "maxValue": "31-Dec-2100 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "range_epoch"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

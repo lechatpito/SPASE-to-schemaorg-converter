@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Akebono_SMS_PT8S.jsonld",
+  "name": "Akebono SMS digital binary ion count rates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Akebono_SMS_PT8S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Andrew.W.Yau",
+    "url": "http://hpde.io/SMWG/Person/Andrew.W.Yau"
+  },
+  "sdDatePublished": "2021-03-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.darts.isas.ac.jp/stp/akebono/SMS.html",
+      "encodingFormat": "Binary",
+      "name": "DARTS_JAXA",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://JAXA/NumericalData/Akebono/SMS/PT8S",
+  "creditText": "Akebono SMS digital binary ion count rates.",
+  "description": "These count rate data reside in the DARTS/Akebono\nbinary Science DataBase (SDB).  They consist of count rates at 8-sec \nspacecraft spin resolution, separately for thermal and suprathermal \nH+, He+ and O+ ions.  Detailed information and a data-read program\nare found at https://www.darts.isas.jaxa.jp/akbn/readme/readme.sms.txt.",
+  "abstract": "These count rate data reside in the DARTS/Akebono\nbinary Science DataBase (SDB).  They consist of count rates at 8-sec \nspacecraft spin resolution, separately for thermal and suprathermal \nH+, He+ and O+ ions.  Detailed information and a data-read program\nare found at https://www.darts.isas.jaxa.jp/akbn/readme/readme.sms.txt.",
+  "temporalCoverage": "Start date: 1989-02-26T00:00:00. Relative stop date: None",
+  "variableMeasured": "IonComposition",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

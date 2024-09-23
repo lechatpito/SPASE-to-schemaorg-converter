@@ -1,0 +1,89 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_MMS_MMS1_Models_mms1-msph-models.jsonld",
+  "name": "MMS1 - Analytical Models - distance to neutral sheet",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_MMS_MMS1_Models_mms1-msph-models.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Christian.Jacquey",
+    "url": "http://hpde.io/SMWG/Person/Christian.Jacquey"
+  },
+  "sdDatePublished": "2024-05-23",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MMS/MMS1/Models/mms1-msph-models",
+  "creditText": "MMS1 - Analytical Models - distance to neutral sheet.",
+  "description": "\n            * Distance (Re) from s/c location to Fairfield1970 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle. Valid for Ysm less than 15 Re.\n            * Distance (Re) from s/c location to Fairfield1980 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle.\n         ",
+  "abstract": "\n            * Distance (Re) from s/c location to Fairfield1970 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle. Valid for Ysm less than 15 Re.\n            * Distance (Re) from s/c location to Fairfield1980 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle.\n         ",
+  "temporalCoverage": "Start date: 2015-03-13T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "dZ Fairfield70",
+      "description": "Distance (Re) from s/c location to Fairfield1970 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle. Valid for Ysm less than 15 Re.",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "dz_fairfield70_mms1_xyz_gse"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dZ Fairfield80",
+      "description": "Distance (Re) from s/c location to Fairfield1980 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle.",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "dz_fairfield80_mms1_xyz_gse"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

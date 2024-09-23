@@ -1,0 +1,5454 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_FMI_Magnetometer_PT10S.jsonld",
+  "name": "International Monitor for Auroral Geomagnetic Effects (IMAGE) Finnish Meterological Institute 10 s Ground Magnetometer Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_FMI_Magnetometer_PT10S.jsonld",
+  "sdDatePublished": "2023-09-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://space.fmi.fi/image/www/?page=user_defined",
+      "encodingFormat": "Text",
+      "name": "International Monitor for Auroral Geomagnetic Effects (IMAGE)",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/FMI/Magnetometer/PT10S",
+  "creditText": "International Monitor for Auroral Geomagnetic Effects (IMAGE) Finnish Meterological Institute 10 s Ground Magnetometer Data.",
+  "description": "The International Monitor for Auroral Geomagnetic Effects (IMAGE) consists of 52 magnetometer stations maintained by 10 institutes from Finland, Germany, Norway, Poland, Russia, Sweden, Denmark, and Iceland. The prime objectives of IMAGE are to study auroral electrojets and moving two-dimensional current systems. The long profile covering geographic latitudes from 51 to 82 degrees is especially favorable for electrojet studies. Together with other ground-based recordings (by radars, riometers, all-sky cameras) and satellite observations, IMAGE is an essential part in the investigations of high-latitude magnetospheric-ionospheric physics. Together with its predecessor, the EISCAT magnetometer cross started in 1982, IMAGE also provides high-quality data useful for studies of geomagnetic induction and long-term geomagnetic activity in the auroral region.\r\n\t\t \r\n\t\t The Finnish Meterological Institute operates the following stations:  ALT, KAU, KEV, MAS, KIL, IVA, MUO, PEL, RAN, OUJ, MEK, HAN, NUR, and TAR.\r\n\t\t ",
+  "abstract": "The International Monitor for Auroral Geomagnetic Effects (IMAGE) consists of 52 magnetometer stations maintained by 10 institutes from Finland, Germany, Norway, Poland, Russia, Sweden, Denmark, and Iceland. The prime objectives of IMAGE are to study auroral electrojets and moving two-dimensional current systems. The long profile covering geographic latitudes from 51 to 82 degrees is especially favorable for electrojet studies. Together with other ground-based recordings (by radars, riometers, all-sky cameras) and satellite observations, IMAGE is an essential part in the investigations of high-latitude magnetospheric-ionospheric physics. Together with its predecessor, the EISCAT magnetometer cross started in 1982, IMAGE also provides high-quality data useful for studies of geomagnetic induction and long-term geomagnetic activity in the auroral region.\r\n\t\t \r\n\t\t The Finnish Meterological Institute operates the following stations:  ALT, KAU, KEV, MAS, KIL, IVA, MUO, PEL, RAN, OUJ, MEK, HAN, NUR, and TAR.\r\n\t\t ",
+  "temporalCoverage": "Start date: 1999-11-29T00:00:00. Relative stop date: -PT600S",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Record length",
+      "description": "Record length. 4 characters [for example 1440].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Total"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1-4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Length of one record",
+      "description": "Length of one record. 3 characters [in minutes].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Total"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 5-7"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Type of data",
+      "description": "Type of data 2 characters [00 = observatory; 01 = temporary station]",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping",
+          "description": "Group"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 8-9"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Station identification",
+      "description": "Station identification 6 characters\t[e.g. 3 numbers, 3 letters].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping",
+          "description": "Group"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 10-15"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic latitude",
+      "description": "Geographic latitude 5 characters [in 0.01o (space or sign and 4 numbers)]. ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 16-20"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic longitude",
+      "description": "Geographic longitude 5 characters [in 0.01oE].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 21-25"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Free space",
+      "description": "Free space 23 characters.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Total"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 26-48"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Year 4 characters",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 49-52"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Month",
+      "description": "Month 2 characters.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 53-54"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day",
+      "description": "Day 2 characters.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 55-56"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour",
+      "description": "Hour 2 characters [00...23 UT]",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 57-58"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minute",
+      "description": "Minute 2 characters [00...59. The first minute of the record]",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 59-60"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Interval",
+      "description": "Interval between datapoints 2 characters [in seconds].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 61-62"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "How data produced.",
+      "description": "How data produced 1 character [0 = digital recording; 1 = digitized from primary recordings; 2 = digitized from supplementary recording; 9 = unknown].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping",
+          "description": "Group"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 63"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Filter breakpoint",
+      "description": "Filter breakpoint 4 characters [0000 if values are means between datapoints. Otherwize period in seconds at which low pass filter is 3 db down (0.7 amplitude). 9999 if no filtering was employed.] ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 64-67"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Filter slope",
+      "description": "Filter slope 2 characters [Number of db per octave, i.e. 6, 12, 18 db/octave or measured equivalent for numerical filter.] ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 68-69"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Base line information.",
+      "description": "Base line information 1 character [1 = final data, absolute base line, accuracy about 1 nT; 2 = final data but no absolute measurements; 3 = preliminary data; 4 = data relative to quiet day night values.], Probable base line change 2 characters [in 0.1 nT within one day].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 70"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Probable base line change",
+      "description": "Probable base line change 2 characters [in 0.1 nT within one day]",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 71-72"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Components",
+      "description": "Components 1 character [1 = X ,Y, Z; 2 = H, D (0.1), Z; 3 = A, B, Z]. For the 10 s resolution this should always be 1.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping",
+          "description": "Component"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 73"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Character of the day",
+      "description": "Character of the day 1 character [0 = normal; 1 = one of the 5 international quietest days; 2 = one of the 5 international disturbed days]",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Housekeeping",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 74"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Free space",
+      "description": "Free space 85 charaters",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Total"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 75-159 "
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 160-166 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 167-173 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 174-180 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 181-187 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 188-194 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 195-201 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 202-208 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 209-215 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 216-222 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 223-229 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 230-236 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 237-243 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 244-250 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 251-257 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 258-264 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 265-271 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 272-278 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 279-285 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 286-292 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 293-299 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 300-306 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 307-313 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 314-320 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 321-327 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 328-334 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 335-341 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 342-348 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 349-355 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 356-362 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 363-369 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 370-376 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 377-383 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 384-390 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 391-397 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 398-404 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 405-411 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 412-418 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 419-425 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 426-432 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 433-439 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 440-446 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 447-453 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 454-460 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 461-467 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 468-474 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 475-481 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 482-488 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 489-495 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 496-502 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 503-509 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 510-516 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 517-523 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 524-530 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 531-537 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 538-544 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 545-551 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 552-558 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 559-565 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 566-572 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 573-579 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 580-586 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 587-593 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 594-600 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 601-607 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 608-614 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 615-621 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 622-628 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 629-635 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 636-642 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 643-649 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 650-656 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 657-663 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 664-670 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 671-677 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 678-684 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 685-691 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 692-698 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 699-705 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 706-712 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 713-719 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 720-726 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 727-733 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 734-740 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 741-747 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 748-754 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 755-761 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 762-768 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 769-775 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 776-782 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 783-789 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 790-796 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 797-803 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 804-810 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 811-817 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 818-824 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 825-831 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 832-838 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 839-845 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 846-852 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 853-859 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 860-866 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 867-873 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 874-880 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 881-887 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 888-894 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 895-901 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 902-908 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 909-915 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 916-922 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 923-929 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 930-936 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 937-943 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 944-950 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 951-957 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 958-964 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 965-971 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 972-978 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 979-985 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 986-992 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 993-999 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1000-1006 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1007-1013 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1014-1020 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1021-1027 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1028-1034 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1035-1041 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1042-1048 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1049-1055 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1056-1062 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1063-1069 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1070-1076 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1077-1083 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1084-1090 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1091-1097 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1098-1104 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1105-1111 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1112-1118 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1119-1125 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1126-1132 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1133-1139 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1140-1146 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1147-1153 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1154-1160 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1161-1167 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1168-1174 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1175-1181 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1182-1188 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1189-1195 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1196-1202 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1203-1209 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1210-1216 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1217-1223 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1224-1230 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1231-1237 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1238-1244 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1245-1251 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1252-1258 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1259-1265 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1266-1272 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1273-1279 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1280-1286 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1287-1293 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1294-1300 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1301-1307 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1308-1314 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1315-1321 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1322-1328 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1329-1335 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1336-1342 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1343-1349 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1350-1356 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1357-1363 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1364-1370 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1371-1377 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1378-1384 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1385-1391 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1392-1398 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic North",
+      "description": "Northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1399-1405 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Geographic East",
+      "description": "Eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1406-1412 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1413-1419 "
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component coordinate system strongly depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hourly Mean B Geographic North",
+      "description": "Hourly mean northward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "000000 if not the last part of the hour",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1420-1426"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component strong depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hourly Mean B Geographic East",
+      "description": "Hourly mean  eastward magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "000000 if not the last part of the hour",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1427-1433"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component strong depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hourly Mean Bz",
+      "description": "Hourly Mean of the Z component of the magnetic field.",
+      "unitText": "0.1 nT (0.1' if D)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "000000 if not the last part of the hour",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Columns 1434-1440"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This component strong depends of the Components parameter. The first character from left is the sign, which is minus or, for positive values, space."
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ACE_EPAM_RATES_P1D.jsonld",
+  "name": "ACE Electron Proton Alpha Monitor (EPAM) Daily Count Rate Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ACE_EPAM_RATES_P1D.jsonld",
+  "sdDatePublished": "2022-08-04",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://data.ftecs.com/VHO/VEPO/ace_epam/rates/Daily/",
+      "encodingFormat": "Text",
+      "name": "FTECS site",
+      "description": "Parent directory containing the daily count rates for the ACE/EPAM instrument for the entire mission."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ACE/EPAM/RATES/P1D",
+  "creditText": "ACE Electron Proton Alpha Monitor (EPAM) Daily Count Rate Data.",
+  "description": "This descriptor identifies an ensemble of 8 data sets of EPAM count rates averaged over 1-day intervals in each of several energy bins. One data set (PG65) has spin-averaged rates while the other 7 have rates in each of 4 or 8 spin sectors. Each of the 7 sectored data sets is specific to a given one of the several EPAM instruments (apertures). Each of the 8 data sets is individually described in the VHO/VEPO interface at https://vho.gsfc.nasa.gov.",
+  "abstract": "This descriptor identifies an ensemble of 8 data sets of EPAM count rates averaged over 1-day intervals in each of several energy bins. One data set (PG65) has spin-averaged rates while the other 7 have rates in each of 4 or 8 spin sectors. Each of the 7 sectored data sets is specific to a given one of the several EPAM instruments (apertures). Each of the 8 data sets is individually described in the VHO/VEPO interface at https://vho.gsfc.nasa.gov.",
+  "temporalCoverage": "Start date: 1990-01-01T00:00:00.000. Relative stop date: -P1Y",
+  "variableMeasured": "EnergeticParticles",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

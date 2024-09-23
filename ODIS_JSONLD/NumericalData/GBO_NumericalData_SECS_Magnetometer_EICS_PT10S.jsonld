@@ -1,0 +1,139 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_SECS_Magnetometer_EICS_PT10S.jsonld",
+  "name": "Spherical Elementary Currents Systems (SECS) technique North American Equivalent Ionospheric Currents (EICs) derived at 10 sec Resolution in Geographic Coordinates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_SECS_Magnetometer_EICS_PT10S.jsonld",
+  "sdDatePublished": "2024-06-13",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://vmo.igpp.ucla.edu/data1/SECS/",
+      "encodingFormat": "Text",
+      "name": "Virtual Magnetospheric Observatory",
+      "description": "Equivalent ionsheric current data produced over North America and Greenland"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/SECS/Magnetometer/EICS/PT10S",
+  "creditText": "Spherical Elementary Currents Systems (SECS) technique North American Equivalent Ionospheric Currents (EICs) derived at 10 sec Resolution in Geographic Coordinates.",
+  "description": "The Equivalent Ionospheric Currents (EICs) data set contains horizontal ionospheric current data (Jx and Jy) derived using the SECS technique [Amm and Viljanen, Earth Planets Space, v. 51 pp. 431-440, 1999]. Positive Jx points to the geographic north pole. Positive Jy points to geographic east. The location of these currents is in geographic coordinates at 10s resolution. The distribution of these currents is not the same as the spherical elementary current amplitudes. The UT and date are obtained from the file name. For more information see Weygand et al. J. Geophys. Res. 116, A03305, doi:10.1029/2010JA016177, 2011.",
+  "abstract": "The Equivalent Ionospheric Currents (EICs) data set contains horizontal ionospheric current data (Jx and Jy) derived using the SECS technique [Amm and Viljanen, Earth Planets Space, v. 51 pp. 431-440, 1999]. Positive Jx points to the geographic north pole. Positive Jy points to geographic east. The location of these currents is in geographic coordinates at 10s resolution. The distribution of these currents is not the same as the spherical elementary current amplitudes. The UT and date are obtained from the file name. For more information see Weygand et al. J. Geophys. Res. 116, A03305, doi:10.1029/2010JA016177, 2011.",
+  "temporalCoverage": "Start date: 2007-01-01T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Location of Equivalent Ionospheric Current",
+      "description": "These data are the geographic location in units of degrees of the derived equivalent ionospheric current at 10 s resolution. The Altitude of the current vector is 100 km above the surface of the Earth.",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Spherical GEO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Geographic Latitude",
+          "description": "DirectionAngle.ElevationAngle",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Geographic Longitude",
+          "description": "DirectionAngle.AzimuthAngle",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "geo_loc"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "The date and time are obtained from the file name."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Equivalent Ionospheric Currents (Jx and Jy)",
+      "description": "These data are the Equivalent Ionospheric Currents (only the currents horizontal to the surface of the Earth: Jx and Jy) in units of mA/m at 10 s resolution. The Altitude of the current vector is 100 km above the surface of the Earth.",
+      "unitText": "mA/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Spherical GEO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Jx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Jy",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Jx_Jy"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "The date and time are obtained from the file name. These are not the Hall currents, but a combination of the Hall and Pederson currents."
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    "10 sec",
+    "ground magnetometer data",
+    "equivalent ionospheric currents",
+    "spherical elementary current systms"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

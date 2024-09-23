@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_RISH_misc_SGK_Ionosonde_ionosonde_sgk_png.jsonld",
+  "name": "Ionogram (frequency-height plot) of observation data taken by the ionosonde at Shigaraki MU Observatory (png format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_RISH_misc_SGK_Ionosonde_ionosonde_sgk_png.jsonld",
+  "sdDatePublished": "2016-07-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/mudb/ionosonde/",
+      "encodingFormat": "PNG",
+      "name": "Ionogram at Shigraki",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/DisplayData/RISH/misc/SGK/Ionosonde/ionosonde_sgk_png",
+  "creditText": "Ionogram (frequency-height plot) of observation data taken by the ionosonde at Shigaraki MU Observatory (png format).",
+  "description": "The ionogram (frequency-height plot) of observation data taken by the ionosonde at Shigaraki MU Observatory in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL). The data include reflection height and echo power of electromagnetic waves in a frequency range of 2-18 MHz transmitted by the ionosonde. The reflection height is derived from the observed length of time under the assumption that the transmitted waves propagate with the velocity of light. The echo traces of ordinary or extraordinary mode in the ionogram show several characteristic patterns which reflect electron density structure of the D (80-90 km), E (90-120 km), and F (>120km) layers in the ionosphere. Therefore, several important ionospheric parameters (virtual heights designated as h'E, h'F, and h'F2 and frequencies as foE, foF1, and foF2) for each layer are estimated from the echo traces. Details of these parameters and ionograms have been described in B. W. Reinisch et al. [JASTP, 67, 1054-1062, 2005]. The file names are composed of date and time: (year)(month)(day)(hour)(minute)_ionogram.png (color scale) and (year)(month)(day)(hour)(minute)_ionogram_g.png (grey scale). Local time is used for time data. The horizontal and vertical axes are sweep frequency (2.0-18.0 MHz) and height (50-700 km). The unit of echo power is dBV.",
+  "abstract": "The ionogram (frequency-height plot) of observation data taken by the ionosonde at Shigaraki MU Observatory in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL). The data include reflection height and echo power of electromagnetic waves in a frequency range of 2-18 MHz transmitted by the ionosonde. The reflection height is derived from the observed length of time under the assumption that the transmitted waves propagate with the velocity of light. The echo traces of ordinary or extraordinary mode in the ionogram show several characteristic patterns which reflect electron density structure of the D (80-90 km), E (90-120 km), and F (>120km) layers in the ionosphere. Therefore, several important ionospheric parameters (virtual heights designated as h'E, h'F, and h'F2 and frequencies as foE, foF1, and foF2) for each layer are estimated from the echo traces. Details of these parameters and ionograms have been described in B. W. Reinisch et al. [JASTP, 67, 1054-1062, 2005]. The file names are composed of date and time: (year)(month)(day)(hour)(minute)_ionogram.png (color scale) and (year)(month)(day)(hour)(minute)_ionogram_g.png (grey scale). Local time is used for time data. The horizontal and vertical axes are sweep frequency (2.0-18.0 MHz) and height (50-700 km). The unit of echo power is dBV.",
+  "temporalCoverage": "Start date: 2001-01-18T08:14:00. Relative stop date: -P3M",
+  "variableMeasured": "Profile",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Ion Chemistry/Ionization",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

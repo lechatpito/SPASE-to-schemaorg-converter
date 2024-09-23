@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_POLAR_VIS_PT300S.jsonld",
+  "name": "Polar Visible Imaging System Earth Camera Key Parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_POLAR_VIS_PT300S.jsonld",
+  "sdDatePublished": "2024-06-24",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/POLAR/VIS/PT300S",
+  "creditText": "Polar Visible Imaging System Earth Camera Key Parameters.",
+  "description": "This dataset contains the investigator-selected Earth Camera Key Parameters from the Polar Visible Imaging System (VIS). It contains:\nglobal images of the auroral oval at ultraviolet wavelengths. One or more Earth camera images of 256 x 256 pixels are produced every five minutes, depending on the commanded mode.  Some coordinate information is included for viewer orientation. Coordinates are calculated for a grid of 18 x 18 points corresponding to one pixel out of every 15 x 15 pixel block. In addition, a rotation matrix and a table of distortion-correcting look direction unit vectors are provided for the purpose of calculating coordinates for every pixel.\n\nTo facilitate viewing of the images, a mapping of pixel value to a recommended color table based on the characteristics of the selected filter is included with each image.\n\nA relative intensity scale is provided by the uncompressed count table of variable 27. Approximate intensity levels in kiloRayleighs are given in the intensity table of variable 28. The VIS site at http://eiger.physics.uiowa.edu/~vis/software contains information on the availability of more precisely calibrated intensities.\n\nThe data set also contains various imager-related parameters, plus spacecraft position and velocity vectors, spin axis unit vector, and the sun position unit vector, all in GCI coordinates. Times are given in both the CDF-standard Epoch and the ISTP-standard Time_PB5.",
+  "abstract": "This dataset contains the investigator-selected Earth Camera Key Parameters from the Polar Visible Imaging System (VIS). It contains:\nglobal images of the auroral oval at ultraviolet wavelengths. One or more Earth camera images of 256 x 256 pixels are produced every five minutes, depending on the commanded mode.  Some coordinate information is included for viewer orientation. Coordinates are calculated for a grid of 18 x 18 points corresponding to one pixel out of every 15 x 15 pixel block. In addition, a rotation matrix and a table of distortion-correcting look direction unit vectors are provided for the purpose of calculating coordinates for every pixel.\n\nTo facilitate viewing of the images, a mapping of pixel value to a recommended color table based on the characteristics of the selected filter is included with each image.\n\nA relative intensity scale is provided by the uncompressed count table of variable 27. Approximate intensity levels in kiloRayleighs are given in the intensity table of variable 28. The VIS site at http://eiger.physics.uiowa.edu/~vis/software contains information on the availability of more precisely calibrated intensities.\n\nThe data set also contains various imager-related parameters, plus spacecraft position and velocity vectors, spin axis unit vector, and the sun position unit vector, all in GCI coordinates. Times are given in both the CDF-standard Epoch and the ISTP-standard Time_PB5.",
+  "temporalCoverage": "Start date: 1996-11-01T00:00:00. Relative stop date: None",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SOHO_LASCO_Near_Real_Time.jsonld",
+  "name": "SOHO LASCO Near Real-Time Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SOHO_LASCO_Near_Real_Time.jsonld",
+  "sdDatePublished": "2024-05-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://umbra.nascom.nasa.gov/pub/lasco/lastimage/level_05/",
+      "encodingFormat": "FITS",
+      "name": "SOHO/LASCO Near Real-Time Data",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/SOHO/LASCO/Near_Real_Time",
+  "creditText": "SOHO LASCO Near Real-Time Data.",
+  "description": "SOHO/LASCO Near Real-Time data. ",
+  "abstract": "SOHO/LASCO Near Real-Time data. ",
+  "temporalCoverage": "Start date: 1995-12-08T00:00:00. Relative stop date: -PT60M",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

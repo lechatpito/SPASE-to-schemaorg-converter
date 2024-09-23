@@ -1,0 +1,661 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_WDC_Kyoto_WDC_SYO_Magnetometer_PT1M.jsonld",
+  "name": "Syowa Station geomagnetic field 1-minute digital data in WDC format",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_WDC_Kyoto_WDC_SYO_Magnetometer_PT1M.jsonld",
+  "sdDatePublished": "2011-03-04",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://wdc.kugi.kyoto-u.ac.jp/wdc/Sec3.html",
+      "encodingFormat": "Text",
+      "name": "Geomagnetic Data Service",
+      "description": "Geomagnetic Data Service at World Data Center for Geomagnetism, Kyoto."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/WDC_Kyoto/WDC/SYO/Magnetometer/PT1M",
+  "creditText": "Syowa Station geomagnetic field 1-minute digital data in WDC format.",
+  "description": "The geomagnetic field 1.0 minute digital data observed at Syowa Station (SYO) in WDC format.",
+  "abstract": "The geomagnetic field 1.0 minute digital data observed at Syowa Station (SYO) in WDC format.",
+  "temporalCoverage": "Start date: 1981-04-01T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "SYO D 1.0 minute values in WDC format",
+      "description": "Each data record is stored according to element and hour. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/mdplt/format/wdcformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "North polar distance",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Longitude",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "17",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "19",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "20",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Observatory code",
+          "description": "",
+          "position": "22",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Data origin code",
+          "description": "",
+          "position": "25",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sixty 4-digit 1.0 minute values for one hour",
+          "description": "",
+          "position": "35",
+          "defaultValue": "99999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hourly mean",
+          "description": "",
+          "position": "396",
+          "defaultValue": "99999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SYO H 1.0 minute values in WDC format",
+      "description": "Each data record is stored according to element and hour. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/mdplt/format/wdcformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "North polar distance",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Longitude",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "17",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "19",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "20",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Observatory code",
+          "description": "",
+          "position": "22",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Data origin code",
+          "description": "",
+          "position": "25",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sixty 4-digit 1.0 minute values for one hour",
+          "description": "",
+          "position": "35",
+          "defaultValue": "99999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hourly mean",
+          "description": "",
+          "position": "396",
+          "defaultValue": "99999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SYO X 1.0 minute values in WDC format",
+      "description": "Each data record is stored according to element and hour. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/mdplt/format/wdcformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "North polar distance",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Longitude",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "17",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "19",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "20",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Observatory code",
+          "description": "",
+          "position": "22",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Data origin code",
+          "description": "",
+          "position": "25",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sixty 4-digit 1.0 minute values for one hour",
+          "description": "",
+          "position": "35",
+          "defaultValue": "99999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hourly mean",
+          "description": "",
+          "position": "396",
+          "defaultValue": "99999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SYO Y 1.0 minute values in WDC format",
+      "description": "Each data record is stored according to element and hour. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/mdplt/format/wdcformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "North polar distance",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Longitude",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "17",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "19",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "20",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Observatory code",
+          "description": "",
+          "position": "22",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Data origin code",
+          "description": "",
+          "position": "25",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sixty 4-digit 1.0 minute values for one hour",
+          "description": "",
+          "position": "35",
+          "defaultValue": "99999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hourly mean",
+          "description": "",
+          "position": "396",
+          "defaultValue": "99999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SYO Z 1.0 minute values in WDC format",
+      "description": "Each data record is stored according to element and hour. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/mdplt/format/wdcformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "North polar distance",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Longitude",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "17",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "19",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "20",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Observatory code",
+          "description": "",
+          "position": "22",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Data origin code",
+          "description": "",
+          "position": "25",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sixty 4-digit 1.0 minute values for one hour",
+          "description": "",
+          "position": "35",
+          "defaultValue": "99999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hourly mean",
+          "description": "",
+          "position": "396",
+          "defaultValue": "99999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SYO F 1.0 minute values in WDC format",
+      "description": "Each data record is stored according to element and hour. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/mdplt/format/wdcformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "North polar distance",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Longitude",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "17",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element (D,H,X,Y,Z,or F)",
+          "description": "",
+          "position": "19",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "20",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Observatory code",
+          "description": "",
+          "position": "22",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Data origin code",
+          "description": "",
+          "position": "25",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sixty 4-digit 1.0 minute values for one hour",
+          "description": "",
+          "position": "35",
+          "defaultValue": "99999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hourly mean",
+          "description": "",
+          "position": "396",
+          "defaultValue": "99999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "keywords": [
+    "EARTH SCIENCE Atmosphere Solid Earth Geomagnetism Magnetic Field",
+    "EARTH SCIENCE Atmosphere Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Magnetic Fields/Magnetic Currents"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

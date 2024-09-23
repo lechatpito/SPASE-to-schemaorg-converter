@@ -1,0 +1,1384 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SNOE_Ephemeris_PT1M.jsonld",
+  "name": "SNOE 1-min Position Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SNOE_Ephemeris_PT1M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Robert.E.McGuire",
+    "url": "http://hpde.io/SMWG/Person/Robert.E.McGuire"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sscweb.gsfc.nasa.gov/cgi-bin/Locator.cgi",
+      "encodingFormat": "CDF",
+      "name": "SSCWeb",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/SNOE/Ephemeris/PT1M",
+  "creditText": "SNOE 1-min Position Data.",
+  "description": "SNOE satellite position and magnetic field model information.",
+  "abstract": "SNOE satellite position and magnetic field model information.",
+  "temporalCoverage": "Start date: 1998-02-27T00:00:00.000Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Number of milliseconds since the CDF epoch",
+      "unitText": "ms",
+      "minValue": "01-Jan-1956 00:00:00.000",
+      "maxValue": "01-Jan-2083 00:00:00.000",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GEI position",
+      "description": "Spacecraft position in GEI",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEI",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "XYZ_GEI"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GEI latitude",
+      "description": "Latitude of the spacecraft position in GEI",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GEI longitude",
+      "description": "Longitude of the spacecraft position in GEI",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GEI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEI_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "J2000 position",
+      "description": "Spacecraft position in J2000",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian J2000",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "XYZ_J2000"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "J2000 latitude",
+      "description": "Latitude of the spacecraft position in J2000",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical J2000",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "J2000_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "J2000 longitude",
+      "description": "Longitude of the spacecraft position in J2000",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical J2000",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "J2000_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GEO position",
+      "description": "Spacecraft position in GEO",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "XYZ_GEO"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GEO latitude",
+      "description": "Latitude of the spacecraft position in GEO",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEO_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GEO longitude",
+      "description": "Longitude of the spacecraft position in GEO",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEO_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GEO local time",
+      "description": "",
+      "unitText": "hours",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GEO_LCT_T"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GM position",
+      "description": "Spacecraft position in GM",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian MAG",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "XYZ_GM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GM latitude",
+      "description": "Latitude of the spacecraft position in GM",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GM_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GM longitude",
+      "description": "Longitude of the spacecraft position in GM",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GM_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GM local time",
+      "description": "",
+      "unitText": "hours",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GM_LCT_T"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE position",
+      "description": "Spacecraft position in GSE",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "XYZ_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE latitude",
+      "description": "Latitude of the spacecraft position in GSE",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSE_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE longitude",
+      "description": "Longitude of the spacecraft position in GSE",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSE_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE local time",
+      "description": "",
+      "unitText": "hours",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSE_LCT_T"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM position",
+      "description": "Spacecraft position in GSM",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "XYZ_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM latitude",
+      "description": "Latitude of the spacecraft position in GSM",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GSM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSM_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM longitude",
+      "description": "Longitude of the spacecraft position in GSM",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GSM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSM_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SM position",
+      "description": "Spacecraft position in SM",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian SM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "XYZ_SM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SM latitude",
+      "description": "Latitude of the spacecraft position in SM",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical SM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SM_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SM longitude",
+      "description": "Longitude of the spacecraft position in SM",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical SM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SM_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SM local time",
+      "description": "",
+      "unitText": "hours",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SM_LCT_T"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Space Region",
+      "description": "Region in space where the spacecraft is located.  Values are: 1 = INTERPLANETARY_MEDIUM, 2 = DAYSIDE_MAGNETOSHEATH, 3 = NIGHTSIDE_MAGNETOSHEATH, 4 = DAYSIDE_MAGNETOSPHERE, 5 = NIGHTSIDE_MAGNETOSPHERE, 6 = PLASMA_SHEET, 7 = TAIL_LOBE, 8 = LOW_LATITUDE_BOUNDARY_LAYER, 9 = HIGH_LATITUDE_BOUNDARY_LAYER, 10 = DAYSIDE_PLASMASPHERE, 11 = NIGHTSIDE_PLASMASPHERE.",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "11",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SPACECRAFT_REGIONS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radial Traced Footpoint Region",
+      "description": "Region on the Earth's surface where a straight line would intersect when connecting the spacecraft and the Earth's center. Values are: 0 = NOT_APPLICABLE, 1 = NORTH_CUSP, 2 = SOUTH_CUSP, 3 = NORTH_CLEFT, 4 = SOUTH_CLEFT, 5 = NORTH_AURORAL_OVAL, 6 = SOUTH_AURORAL_OVAL, 7 = NORTH_POLAR_CAP, 8 = SOUTH_POLAR_CAP, 9 = NORTH_MID_LATITUDE, 10 = SOUTH_MID_LATITUDE, 11 = LOW_LATITUDE.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "11",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RADIAL_TRACED_REGIONS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "North B Traced Footpoint Region",
+      "description": "Region on the Earth's surface where the magnetic field line that passes through the spacecraft intersects the Earth's surface in the Earth's northern magnetic hemisphere. Values are: 0 = NOT_APPLICABLE, 1 = NORTH_CUSP, 3 = NORTH_CLEFT, 5 = NORTH_AURORAL_OVAL, 7 = NORTH_POLAR_CAP, 9 = NORTH_MID_LATITUDE, 11 = LOW_LATITUDE.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "11",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NORTH_BTRACED_REGIONS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "South B Traced Region",
+      "description": "Region on the Earth's surface where the magnetic field line that passes through the spacecraft intersects the Earth's surface in the Earth's southern magnetic hemisphere. Values are: 0 = NOT_APPLICABLE, 2 = SOUTH_CUSP, 4 = SOUTH_CLEFT, 6 = SOUTH_AURORAL_OVAL, 8 = SOUTH_POLAR_CAP, 10 = SOUTH_MID_LATITUDE, 11 = LOW_LATITUDE.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "11",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SOUTH_BTRACED_REGIONS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radial Distance",
+      "description": "Radial distance of the spacecraft",
+      "unitText": "km",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RADIUS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Strength",
+      "description": "Model predicted magnetic field strength",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MAG_STRTH"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dipole L Value",
+      "description": "Mcllwain L value at the spacecraft's location",
+      "unitText": "",
+      "minValue": "1.5",
+      "maxValue": "5.0",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "L_VALUE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dipole Invariant Lattitude",
+      "description": "Dipole invariant latitudes at the spacecraft's location",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "INVAR_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Distance to neutral sheet",
+      "description": "Distance from satellite to neutral sheet",
+      "unitText": "Km",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DNEUTS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Distance to bow shock",
+      "description": "Distance from satellite to bow shock",
+      "unitText": "Km",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BOW_SHOCK"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Distance to magnetopause",
+      "description": "Distance from satellite to magnetopause",
+      "unitText": "Km",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MAG_PAUSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Strength along the GSE X axis",
+      "description": "Model predicted magnetic field strength along the GSE X axis",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MAG_X"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Strength along the GSE Y axis",
+      "description": "Model predicted magnetic field strength along the GSE Y axis",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MAG_Y"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Strength along the GSE Z axis",
+      "description": "Model predicted magnetic field strength along the GSE Z axis",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MAG_Z"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "North Hemisphere B Trace GEO latitude",
+      "description": "Latitude of the northern magnetic field traced footpoint in GEO",
+      "unitText": "Deg",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NorthBtrace_GEO_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "North Hemisphere B Trace GEO longitude",
+      "description": "Longitude of the northern magnetic field traced footpoint in GEO",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NorthBtrace_GEO_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "North Hemisphere B Trace GEO arc length",
+      "description": "Length of the magnetic field traced arc from the spacecraft to the northern footpoint in GEO",
+      "unitText": "Km",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NorthBtrace_GEO_ARCLEN"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "South Hemisphere B Trace GEO latitude",
+      "description": "Latitude of the southern magnetic field traced footpoint in GEO",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "0.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SouthBtrace_GEO_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "South Hemisphere B Trace GEO longitude",
+      "description": "Longitude of the southern magnetic field traced footpoint in GEO",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SouthBtrace_GEO_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "South Hemisphere B Trace GEO arc length",
+      "description": "Length of the magnetic field traced arc from the spacecraft to the southern footpoint in GEO",
+      "unitText": "Km",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SouthBtrace_GEO_ARCLEN"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "North Hemisphere B Trace GM latitude",
+      "description": "Latitude of the northern magnetic field traced footpoint in GM",
+      "unitText": "Deg",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NorthBtrace_GM_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "North Hemisphere B Trace GM longitude",
+      "description": "Longitude of the northern magnetic field traced footpoint in GM",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NorthBtrace_GM_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "North Hemisphere B Trace GM arc length",
+      "description": "Length of the magnetic field traced arc from the spacecraft to the northern footpoint in GM",
+      "unitText": "Km",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NorthBtrace_GM_ARCLEN"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "South Hemisphere B Trace GM latitude",
+      "description": "Latitude of the southern magnetic field traced footpoint in GM",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "0.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SouthBtrace_GM_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "South Hemisphere B Trace GM longitude",
+      "description": "Longitude of the southern magnetic field traced footpoint in GM",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SouthBtrace_GM_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "South Hemisphere B Trace GM arc length",
+      "description": "Length of the magnetic field traced arc from the spacecraft to the southern footpoint in GM",
+      "unitText": "Km",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SouthBtrace_GM_ARCLEN"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_ISEE1_PWE_SFR_P1D.jsonld",
+  "name": "ISEE 1 Plasma Wave Instrument Sweep Frequency Receiver Spectrogram Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_ISEE1_PWE_SFR_P1D.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/ISEE1/PWE/SFR/P1D",
+  "creditText": "ISEE 1 Plasma Wave Instrument Sweep Frequency Receiver Spectrogram Plots.",
+  "description": "This dataset contains dynamic spectrogram PNG plots of the ISEE1/PWI Sweep Frequency Receiver (SFR) data. Each plot spans one day. These data were obtained from the Ev long wire antenna in the spin plane and the Eu two-sphere antenna via the SFR receiver. The title above each spectrogram is \"ISEE-1 PWI Sweep Frequency Receiver Ev and Eu Antennas\" Each spectrogram is a plot of the power spectral density of received signal (color scale) as a function of operating frequency (in a logarithmic scale on the vertical axis) and time (horizontal axis). Beneath the time labels on the horizontal axis of the spectrograms are ephemeris data: position of the spacecraft in radial distance (Earth radii), geomagnetic latitude, magnetic local time, and McIlwain L-shell. Overlaid on each image are traces of the electron cyclotron frequencies. Located in the same directory are are the 12 hour ISEE-1 PWI Spectrum Analyzer (SA) spectrograms.",
+  "abstract": "This dataset contains dynamic spectrogram PNG plots of the ISEE1/PWI Sweep Frequency Receiver (SFR) data. Each plot spans one day. These data were obtained from the Ev long wire antenna in the spin plane and the Eu two-sphere antenna via the SFR receiver. The title above each spectrogram is \"ISEE-1 PWI Sweep Frequency Receiver Ev and Eu Antennas\" Each spectrogram is a plot of the power spectral density of received signal (color scale) as a function of operating frequency (in a logarithmic scale on the vertical axis) and time (horizontal axis). Beneath the time labels on the horizontal axis of the spectrograms are ephemeris data: position of the spacecraft in radial distance (Earth radii), geomagnetic latitude, magnetic local time, and McIlwain L-shell. Overlaid on each image are traces of the electron cyclotron frequencies. Located in the same directory are are the 12 hour ISEE-1 PWI Spectrum Analyzer (SA) spectrograms.",
+  "temporalCoverage": "Start date: 1977-10-26T00:00:00Z. Relative stop date: None",
+  "variableMeasured": "Waves.Passive",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "keywords": [
+    "Dynamic Spectrogram",
+    "Spectrogram",
+    "AKR",
+    "Auroral hiss",
+    "Auroral Kilometric Radiation",
+    "Banded emissions",
+    "Broadband Electrostatic Noise (BEN)",
+    "Chorus",
+    "Continuum radiation",
+    "Electron Acoustic Waves",
+    "Electron Foreshock Waves",
+    "Electromagnetic Ion Cyclotron waves",
+    "EMIC",
+    "Electron Cyclotron Harmonics",
+    "Equatorial Noise",
+    "Ion Acoustic Waves",
+    "Ion Foreshock Waves",
+    "Kilometric Continuum radiation",
+    "Lion Roard",
+    "Myriametric radiation",
+    "Plasmaspheric Hiss",
+    "Solar radio burst",
+    "Terrestrial Kilometric Radiation",
+    "TKR",
+    "UHR",
+    "Upper hybrid resonance",
+    "Whistler mode",
+    "Whistlers"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,777 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_DE2_VEFI_DC_CDF_PT0.5S.jsonld",
+  "name": "DE 2 Vector Electric Field Instrument (VEFI) DC Electric Field X and Y components, Spacecraft, SC, coordinates, PT0.5S Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_DE2_VEFI_DC_CDF_PT0.5S.jsonld",
+  "sdDatePublished": "2024-02-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/DE2/VEFI/DC/CDF/PT0.5S",
+  "creditText": "DE 2 Vector Electric Field Instrument (VEFI) DC Electric Field X and Y components, Spacecraft, SC, coordinates, PT0.5S Data.",
+  "description": "The Dynamics Explorer 2, DE 2, Vector Electric Field Instrument, VEFI, used flight-proven double-probe techniques with 20-m baselines to obtain measurements of DC electric fields. This electric field investigation had the following objectives:\n\n* 1) Obtain accurate and comprehensive triaxial DC electric field measurements at ionospheric altitudes in order to refine the basic spatial patterns\n* 2) Define the large-scale time history of these patterns\n* 3) Study the small-scale temporal and spatial variations within the overall patterns\n* 4) Study the degree to which and in what region the electric field projects to the equatorial plane\n* 5) Obtain measurements of extreme low frequency, ELF, and lower frequency irregular structures\n* 6) Perform numerous correlative studies\n\nThe VEFI instrument consisted of six cylindrical elements 11 m long and 28 mm in diameter. Each antenna was insulated from the plasma except for the outer 2 m. The baseline, or distance between the midpoints of these 2-m active elements, was 20 m. The antennas were interlocked along the edges to prevent oscillation and to increase their rigidity against drag forces. The antenna pair perpendicular to the orbit plane did not deploy. The basic electronic system was very similar in concept to those used on IMP-8 and ISEE 1, but modified for a three-axis measurement on a nonspinning spacecraft. At the core of the system were the high-impedance 1.0E12 ohm preamplifiers whose outputs were accurately subtracted and digitized at 14-bit analog to digital, A/D, conversion for sensitivity to about 0.1 \u00b5V/m to maintain high resolution, for subsequent removal of the cross-product of the spacecraft velocity, Vsc, and magnetic field, B, vectors in data processing. This provided the basic DC measurement. Other circuitry was used to aid in interpreting the DC data and to measure rapid variations in the signals detected by the antennas. The planned DC electric field range was i\u00b11 V/m, the planned resolution was 0.1 mV/m, and the variational electric field was measured from 4 Hz to 1024 Hz. The DC electric field was measured at 16 samples/s. The variational electric field was measured from 1 \u00b5V/m to 10 mV/m root mean square, RMS. Additional details are found in N.C. Maynard et al., Space Sci. Instrum., 5(4), 523, 1981.",
+  "abstract": "The Dynamics Explorer 2, DE 2, Vector Electric Field Instrument, VEFI, used flight-proven double-probe techniques with 20-m baselines to obtain measurements of DC electric fields. This electric field investigation had the following objectives:\n\n* 1) Obtain accurate and comprehensive triaxial DC electric field measurements at ionospheric altitudes in order to refine the basic spatial patterns\n* 2) Define the large-scale time history of these patterns\n* 3) Study the small-scale temporal and spatial variations within the overall patterns\n* 4) Study the degree to which and in what region the electric field projects to the equatorial plane\n* 5) Obtain measurements of extreme low frequency, ELF, and lower frequency irregular structures\n* 6) Perform numerous correlative studies\n\nThe VEFI instrument consisted of six cylindrical elements 11 m long and 28 mm in diameter. Each antenna was insulated from the plasma except for the outer 2 m. The baseline, or distance between the midpoints of these 2-m active elements, was 20 m. The antennas were interlocked along the edges to prevent oscillation and to increase their rigidity against drag forces. The antenna pair perpendicular to the orbit plane did not deploy. The basic electronic system was very similar in concept to those used on IMP-8 and ISEE 1, but modified for a three-axis measurement on a nonspinning spacecraft. At the core of the system were the high-impedance 1.0E12 ohm preamplifiers whose outputs were accurately subtracted and digitized at 14-bit analog to digital, A/D, conversion for sensitivity to about 0.1 \u00b5V/m to maintain high resolution, for subsequent removal of the cross-product of the spacecraft velocity, Vsc, and magnetic field, B, vectors in data processing. This provided the basic DC measurement. Other circuitry was used to aid in interpreting the DC data and to measure rapid variations in the signals detected by the antennas. The planned DC electric field range was i\u00b11 V/m, the planned resolution was 0.1 mV/m, and the variational electric field was measured from 4 Hz to 1024 Hz. The DC electric field was measured at 16 samples/s. The variational electric field was measured from 1 \u00b5V/m to 10 mV/m root mean square, RMS. Additional details are found in N.C. Maynard et al., Space Sci. Instrum., 5(4), 523, 1981.",
+  "temporalCoverage": "Start date: 1981-08-10T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time Tags, time elapsed since 0 A.D., NSSDC standard-reference time value",
+      "unitText": "ms",
+      "minValue": "15-Sep-1981 00:00:00.000",
+      "maxValue": "18-Feb-1991 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "unitCode": "1.0e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Average Type: standard This Parameter exhibits an increasing Monotonic Progression."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F14.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.2536662219904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.2834069019904e+13"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbit Number",
+      "description": "Orbit Number",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "8577",
+      "defaultValue": "999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "orbitNumber"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "orbit number"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Contact Potential x-component, Spacecraft Cartesian coordinates",
+      "description": "Contact Potential x-component, Ecx, Spacecraft, SC, Cartesian coordinates",
+      "unitText": "mV/m",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "999.99",
+      "unitCode": "1.0e-3>V/m",
+      "measurementTechnique": "Cartesian SC",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ecx"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Contact pot. Ecx"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F6.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Contact Potential y-component, Spacecraft Cartesian coordinates",
+      "description": "Contact Potential y-component, Ecy, Spacecraft, SC, Cartesian coordinates",
+      "unitText": "mV/m",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "999.99",
+      "unitCode": "1.0e-3>V/m",
+      "measurementTechnique": "Cartesian SC",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ecy"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Contact pot. Ecy"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F6.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Contact Potential z-component, Spacecraft Cartesian coordinates",
+      "description": "Contact Potential z-component, Ecz, Spacecraft, SC, Cartesian coordinates",
+      "unitText": "mV/m",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "999.99",
+      "unitCode": "1.0e-3>V/m",
+      "measurementTechnique": "Cartesian SC",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ecz"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Contact pot. Ecz"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F6.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field x-component, Spacecraft Cartesian coordinates",
+      "description": "Electric Field x-component, Ex, Spacecraft, SC, Cartesian coordinates",
+      "unitText": "mV/m",
+      "minValue": "-999.99",
+      "maxValue": "9999.98",
+      "defaultValue": "9999.99",
+      "unitCode": "1.0e-3>V/m",
+      "measurementTechnique": "Cartesian SC",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ex"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Ex"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field y-component, Spacecraft Cartesian coordinates",
+      "description": "Electric Field x-component, Ey, Spacecraft, SC, Cartesian coordinates",
+      "unitText": "mV/m",
+      "minValue": "-999.99",
+      "maxValue": "9999.98",
+      "defaultValue": "9999.99",
+      "unitCode": "1.0e-3>V/m",
+      "measurementTechnique": "Cartesian SC",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ey"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Ey"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Integrated Potential x-component, Spacecraft Cartesian coordinates",
+      "description": "Integrated Potential x-component, Ecx, Spacecraft, SC, Cartesian coordinates",
+      "unitText": "kV",
+      "minValue": "-999.99",
+      "maxValue": "9999.98",
+      "defaultValue": "9999.99",
+      "unitCode": "1.0e3>V",
+      "measurementTechnique": "Cartesian SC",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "potentialX"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Integrated Potential X"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field x-component, unadjusted, Spacecraft Cartesian coordinates",
+      "description": "Electric Field x-component, Ex, unadjusted, Spacecraft, SC, Cartesian coordinates",
+      "unitText": "mV/m",
+      "minValue": "-999.99",
+      "maxValue": "9999.98",
+      "defaultValue": "9999.99",
+      "unitCode": "1.0e-3>V/m",
+      "measurementTechnique": "Cartesian SC",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ex_nonadj"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Ex not adj"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field y-component, unadjusted, Spacecraft Cartesian coordinates",
+      "description": "Electric Field x-component, Ey, unadjusted, Spacecraft, SC, Cartesian coordinates",
+      "unitText": "mV/m",
+      "minValue": "-999.99",
+      "maxValue": "9999.98",
+      "defaultValue": "9999.99",
+      "unitCode": "1.0e-3>V/m",
+      "measurementTechnique": "Cartesian SC",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ey_nonadj"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Ey non adj"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Integrated Potential x-component, unadjusted, Spacecraft Cartesian coordinates",
+      "description": "Integrated Potential x-component, Ecx, unadjusted, Spacecraft, SC, Cartesian coordinates",
+      "unitText": "kV",
+      "minValue": "-999.99",
+      "maxValue": "9999.98",
+      "defaultValue": "9999.99",
+      "unitCode": "1.0e3>V",
+      "measurementTechnique": "Cartesian SC",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "potentialX_nonadj"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Integrated Potential X non adj"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Altitude",
+      "description": "Spacecraft Position, Altitude",
+      "unitText": "km",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "9999.99",
+      "unitCode": "1.0e3>m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": [
+            "Magnitude",
+            "Scalar"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "alt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Altitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Latitude, Geographic spherical coordinates",
+      "description": "Spacecraft Position, Latitude, Geographic, GEO, spherical coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "9999.99",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "glat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Geog Latitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Longitude, Geographic spherical coordinates",
+      "description": "Spacecraft Position, Longitude, Geographic, GEO, spherical coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "9999.99",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "glon"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Geog Longitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Magnetic Local Time",
+      "description": "Spacecraft Position, Magnetic Local Time, MLT",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "9999.99",
+      "unitCode": "3600>s",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "mlt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MLT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Invariant Latitude",
+      "description": "Spacecraft Position, Invariant Latitude",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "9999.99",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ilat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.5S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Inv Lat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7.2"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

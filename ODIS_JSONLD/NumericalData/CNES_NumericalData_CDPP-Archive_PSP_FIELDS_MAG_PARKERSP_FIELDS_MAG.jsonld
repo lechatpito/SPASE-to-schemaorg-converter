@@ -1,0 +1,156 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_PSP_FIELDS_MAG_PARKERSP_FIELDS_MAG.jsonld",
+  "name": "PARKER SOLAR PROBE FIELDS Level 2 Fluxgate Magnetometer (MAG) Data (CDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_PSP_FIELDS_MAG_PARKERSP_FIELDS_MAG.jsonld",
+  "sdDatePublished": "2022-07-04",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:PARKERSP_FIELDS_MAG",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/PSP/FIELDS/MAG/PARKERSP_FIELDS_MAG",
+  "creditText": "PARKER SOLAR PROBE FIELDS Level 2 Fluxgate Magnetometer (MAG) Data (CDF).",
+  "description": "This data set contains  the PARKER SOLAR PROBE FIELDS Level 2 Fluxgate Magnetometer (MAG) data.\nThe waveforms consist of 3 components of the magnetic field, expressed in RTN coordinates (BR, BT, BN) and in spacecraft coordinates (Bx, By, Bz). The MAG has a bandwidth of approximately 100 Hz and operates almost continuously during the full orbit. The time resolution for the waveforms is 150000 Hz / 2^N. During encounter phases (i.e. during a period of typically two weeks around each perihelion) either N=9, giving 292.969 samples per second or N=10, giving 146.484 samples per second. The measurement dynamic range of MAG is \u00b165,536 nT with a resolution of 16 bits.\nMAG data are in nT units. Time (epoch) is in TT2000 format and corresponds to nanoseconds since 1 Jan 2000 12:00:00 with leap seconds included.\nCalculation of the PSP-Sun distance for the selection criterion (see Filter tab) is realized each day at 00:00.\nReferences:\nFIELDS website: https://fields.ssl.berkeley.edu/\nBale, S. et al. (2016), The FIELDS Instrument Suite for Solar Probe Plus. Measuring the Coronal Plasma and Magnetic Field, Plasma Waves and Turbulence, and Radio Signatures of Solar Transients, Space Science Reviews, Volume 204, Issue 1-4, pp.49-82, doi:10.1007/s11214-016-0244-5",
+  "abstract": "This data set contains  the PARKER SOLAR PROBE FIELDS Level 2 Fluxgate Magnetometer (MAG) data.\nThe waveforms consist of 3 components of the magnetic field, expressed in RTN coordinates (BR, BT, BN) and in spacecraft coordinates (Bx, By, Bz). The MAG has a bandwidth of approximately 100 Hz and operates almost continuously during the full orbit. The time resolution for the waveforms is 150000 Hz / 2^N. During encounter phases (i.e. during a period of typically two weeks around each perihelion) either N=9, giving 292.969 samples per second or N=10, giving 146.484 samples per second. The measurement dynamic range of MAG is \u00b165,536 nT with a resolution of 16 bits.\nMAG data are in nT units. Time (epoch) is in TT2000 format and corresponds to nanoseconds since 1 Jan 2000 12:00:00 with leap seconds included.\nCalculation of the PSP-Sun distance for the selection criterion (see Filter tab) is realized each day at 00:00.\nReferences:\nFIELDS website: https://fields.ssl.berkeley.edu/\nBale, S. et al. (2016), The FIELDS Instrument Suite for Solar Probe Plus. Measuring the Coronal Plasma and Magnetic Field, Plasma Waves and Turbulence, and Radio Signatures of Solar Transients, Space Science Reviews, Volume 204, Issue 1-4, pp.49-82, doi:10.1007/s11214-016-0244-5",
+  "temporalCoverage": "Start date: 2018-10-02T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field in SC coordinates (full cadence)",
+      "description": "Magnetic field in SC coordinates (full cadence)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SC",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Array"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetometer Instrument, Range",
+      "description": "Magnetometer Instrument, Measurement Range.\nMagnetometer has four ranges: \u00b11024 nT, \u00b14096 nT, \u00b116,384 nT, and \u00b165,536 nT. The Magnetometer Range is selected by an algorithm based on the strength of the ambient magnetic field. The magnetic field measurement precision is \u00b115 bits, based on the 16-bit Analog to Digital Converter, ADC.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "InstrumentMode",
+        "description": "Scalar"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetometer Instrument, Sensor Mode",
+      "description": "Magnetometer Instrument, Sensor Inboard/Outboard Mode.\nThe Magnetometer Mode indicates which sensor is the source of the data: 0=Outboard Sensor, 1=Inboard Sensor. Each Magnetometer sensor has a corresponding electronics board in the FIELDS Main Electronics Package, MEP. For enhanced reliability, the outboard sensor is controlled by the Data Control Board, DCB, and the inboard sensor is controlled by the Time Domain Sampler instrument, TDS.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "InstrumentMode",
+        "description": "Scalar"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetometer Instrument, Rate in Samples per Cycle",
+      "description": "Magnetometer Instrument, Measurement Rate, measured in Samples per Cycle",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "InstrumentMode",
+        "description": "Scalar"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetometer Instrument, Sensor Zero Offset Tensor (Counts)",
+      "description": "Magnetometer Instrument, Sensor Zero Offset Tensor measured in Counts with one Offset for each of three Axes and four Measurement Ranges, 1 min Time Resolution.\nThe Magnetometer Sensor Zero Levels are based on time-varying, in-flight calibrations. Zero levels are reported in counts and expressed in Magnetometer sensor coordinates.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other",
+        "description": "Array"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIELDS Data Quality Flags",
+      "description": "FIELDS Instrument Suite Data Quality Flags.\nThese flags are bitwise variables, meaning that multiple flags can be set simultaneously for a single time by adding flag values. Current flagged values are:\n 1: FIELDS Antenna Bias Sweep\n 2: PSP Thruster Firing\n 4: SCM Calibration\n 8: PSP Rotations for MAG Calibration, MAG Rolls\n 16: FIELDS MAG Calibration Sequence\n 32: SWEAP SPC in Electron Mode\n 64: PSP Solar Limb Sensor, SLS, Test\n 128: PSP Spacecraft is off Umbra Pointing, Heat Shield not pointed Sunward\n 256: High Frequency Noise affecting RFS and TDS Receivers\n 512: Antennas driven towards the FIELDS Power Supply Rails\nA value of zero corresponds to no set flags. Not all flags are relevant to all FIELDS data products, refer to notes in the CDF metadata and on the FIELDS Satellite Operations Center, SOC, website for information on how the various flags impact FIELDS data. For more information on the quality flags describing high frequency noise and antennas driven to the rails, see release notes for PSP/FIELDS releases 8 and 9. Additional flagged items may be added in the future.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

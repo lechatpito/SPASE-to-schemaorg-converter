@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NOAA_NumericalData_NGDC_Cosmic.Ray_PT3600S.jsonld",
+  "name": "Cosmic ray count rates at NGDC",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NOAA_NumericalData_NGDC_Cosmic.Ray_PT3600S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Helen.E.Coffey",
+    "url": "http://hpde.io/SMWG/Person/Helen.E.Coffey"
+  },
+  "sdDatePublished": "2018-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftp://ftp.ngdc.noaa.gov/STP/SOLAR_DATA/COSMIC_RAYS/",
+      "encodingFormat": "Text",
+      "name": "ftp site at NOAA/NGDC",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NOAA/NumericalData/NGDC/Cosmic.Ray/PT3600S",
+  "creditText": "Cosmic ray count rates at NGDC.",
+  "description": "Cosmic ray count rates from many ground-based stations.  Some station-year files at hourly resolution, others at daily resolution.  Included are data from Climax, Deep River, Huancayo, Thule and others",
+  "abstract": "Cosmic ray count rates from many ground-based stations.  Some station-year files at hourly resolution, others at daily resolution.  Included are data from Climax, Deep River, Huancayo, Thule and others",
+  "temporalCoverage": "Start date: 1989-01-01T00:00:00. Relative stop date: -P2Y",
+  "variableMeasured": "EnergeticParticles",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_STEREO_SSC_CarringtonPlots.jsonld",
+  "name": "STEREO Science Center In Situ Carrington Rotation Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_STEREO_SSC_CarringtonPlots.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/William.T.Thompson",
+    "url": "http://hpde.io/SMWG/Person/William.T.Thompson"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://stereo-ssc.nascom.nasa.gov/browse/insitu.shtml",
+      "encodingFormat": "HTML",
+      "name": "STEREO SSC Daily Browse Plots",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/STEREO/SSC/CarringtonPlots",
+  "creditText": "STEREO Science Center In Situ Carrington Rotation Plots.",
+  "description": "\nCarrington rotation plots from the STEREO in situ (IMPACT, PLASTIC) instruments are available on the STEREO Science Center (SSC) website.  The in situ data are derived from the low cadence space weather telemetry and are not publishable quality.  These are the same data as those shown on the daily browse plots, but covering 28 days, and organized by Carrington rotation number.  Browse pages are available for both whole rotations and for the half rotation points, i.e. covering the last 14 days of the previous rotation, and the first 14 days of the following rotation.  For example, the page for Carrington rotation 2182 covers the period from September 23 to October 20, 2016, while the page for Carrington rotation 2182.5 covers the period from October 6, 2016 to November 3, 2016.\n\nThe Carrington rotation in situ browse pages are split up into two sections.  At the top is a plot of solar wind magnetic field data from IMPACT/MAG, and solar wind proton density, velocity, and ion temperature from PLASTIC.  Data from STEREO Ahead is plotted in red, and data from STEREO Behind is plotted in blue.  Also overplotted in brown is the equivalent data from either ACE or DSCOVR depending on the date.  The second section shows solar energetic particle fluxes from IMPACT in various energy ranges.  STEREO Ahead data are plotted on one side, and STEREO Behind data are plotted on the other, with the order depending on whether or not the date is before or after solar conjunction.\n\nUpon entering the daily browse tool, one is initially taken to the browse page for the most recently completed rotation or mid-rotation.  From there, one can navigate back and forth in time by half rotation steps.\n\t    ",
+  "abstract": "\nCarrington rotation plots from the STEREO in situ (IMPACT, PLASTIC) instruments are available on the STEREO Science Center (SSC) website.  The in situ data are derived from the low cadence space weather telemetry and are not publishable quality.  These are the same data as those shown on the daily browse plots, but covering 28 days, and organized by Carrington rotation number.  Browse pages are available for both whole rotations and for the half rotation points, i.e. covering the last 14 days of the previous rotation, and the first 14 days of the following rotation.  For example, the page for Carrington rotation 2182 covers the period from September 23 to October 20, 2016, while the page for Carrington rotation 2182.5 covers the period from October 6, 2016 to November 3, 2016.\n\nThe Carrington rotation in situ browse pages are split up into two sections.  At the top is a plot of solar wind magnetic field data from IMPACT/MAG, and solar wind proton density, velocity, and ion temperature from PLASTIC.  Data from STEREO Ahead is plotted in red, and data from STEREO Behind is plotted in blue.  Also overplotted in brown is the equivalent data from either ACE or DSCOVR depending on the date.  The second section shows solar energetic particle fluxes from IMPACT in various energy ranges.  STEREO Ahead data are plotted on one side, and STEREO Behind data are plotted on the other, with the order depending on whether or not the date is before or after solar conjunction.\n\nUpon entering the daily browse tool, one is initially taken to the browse page for the most recently completed rotation or mid-rotation.  From there, one can navigate back and forth in time by half rotation steps.\n\t    ",
+  "temporalCoverage": "Start date: 2007-06-21T00:00:00. Relative stop date: -P14D",
+  "variableMeasured": [
+    "MagneticField",
+    "ThermalPlasma",
+    "EnergeticParticles",
+    "Waves"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

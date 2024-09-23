@@ -1,0 +1,131 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Interball-Tail_Ephemeris-Tail_INT_TAIL_ORBITE.jsonld",
+  "name": "INT_TAIL : Orbit Data and Geomagnetic Parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_Interball-Tail_Ephemeris-Tail_INT_TAIL_ORBITE.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-Archive/Elena.Ryazanova",
+    "url": "http://hpde.io/CNES/Person/CDPP-Archive/Elena.Ryazanova"
+  },
+  "sdDatePublished": "2022-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_TAIL_ORBITE",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Interball-Tail/Ephemeris-Tail/INT_TAIL_ORBITE",
+  "creditText": "INT_TAIL : Orbit Data and Geomagnetic Parameters.",
+  "description": "This data set contains orbit data and geomagnetic parameters of Interball-Tail.",
+  "abstract": "This data set contains orbit data and geomagnetic parameters of Interball-Tail.",
+  "temporalCoverage": "Start date: 1995-08-03T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL  Position of the spacecraft in GEI coordinate system",
+      "description": "INT_TAIL  Position of the spacecraft in GEI (Geocentric Equatorial Inertial) coordinate system",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1000>m",
+      "measurementTechnique": "Cartesian GEI",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional",
+        "description": "Vector"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL  Position of the spacecraft in GSE coordinate system",
+      "description": "INT_TAIL Position of the spacecraft in GSE (Geocentric Solar Ecliptic) coordinate system",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1000>m",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional",
+        "description": "Vector"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL Spacecraft Invariant Latitude",
+      "description": "Interball-Tail Invariant latitude",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "0.0174532925>rad",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional",
+        "description": "DirectionAngle.ElevationAngle"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL Spacecraft Magnetic Local Time",
+      "description": "Interball-Tail  Magnetic Local Time",
+      "unitText": "h",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "3600>s",
+      "measurementTechnique": "Spherical MAG",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional",
+        "description": "DirectionAngle.AzimuthAngle"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL Magnetospheric regions",
+      "description": "Magnetospheric Regions where the satellite may be located (the determination of the regions uses a statistical model so that you can find one or more regions).\nSolar wind\nBow Shock\nMagnetosheath\nMagnetopause\nMagnetosphere\nPlasma Sheet\nFairfield neutral sheet\nSouth polar cap\nSouth auroral oval\nSouth cusp\nNorth polar cap\nNorth auroral oval\nNorth cusp\nChappel plasmasphere\nOuter radiation belt\nInner radiation belt\nIonosphere",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

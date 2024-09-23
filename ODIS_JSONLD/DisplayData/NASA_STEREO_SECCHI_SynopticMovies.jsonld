@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_STEREO_SECCHI_SynopticMovies.jsonld",
+  "name": "SECCHI Weekly and Bi-weekly Synoptic Movies from all Telescopes",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_STEREO_SECCHI_SynopticMovies.jsonld",
+  "sdDatePublished": "2022-02-24",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://stereo-ssc.nascom.nasa.gov/data/ins_data/secchi/synoptic_mpegs/",
+      "encodingFormat": "MPEG",
+      "name": "STEREO Science Center",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://secchi.nrl.navy.mil/index.php/synoptic-movies/",
+      "encodingFormat": "MPEG",
+      "name": "NRL SECCHI Site",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/STEREO/SECCHI/SynopticMovies",
+  "creditText": "SECCHI Weekly and Bi-weekly Synoptic Movies from all Telescopes.",
+  "description": "Weekly and Bi-weekly summaries of the SECCHI observations from all telescopes in MPG format.",
+  "abstract": "Weekly and Bi-weekly summaries of the SECCHI observations from all telescopes in MPG format.",
+  "temporalCoverage": "Start date: 2007-01-01T00:00:00. Relative stop date: -P7D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

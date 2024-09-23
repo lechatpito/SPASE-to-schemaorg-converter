@@ -1,0 +1,174 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ACE_Ephemeris_PT12M.jsonld",
+  "name": "ACE GSE 12-min Position Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ACE_Ephemeris_PT12M.jsonld",
+  "sdDatePublished": "2022-08-19",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ACE/Ephemeris/PT12M",
+  "creditText": "ACE GSE 12-min Position Data.",
+  "description": "ACE satellite positions.",
+  "abstract": "ACE satellite positions.",
+  "temporalCoverage": "Start date: 1997-08-26T00:00:00Z. Relative stop date: -P7D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Number of milliseconds since the CDF epoch",
+      "unitText": "ms",
+      "minValue": "01-Jan-1956 00:00:00.000",
+      "maxValue": "01-Jan-2083 00:00:00.000",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE latitude",
+      "description": "Latitude of the spacecraft position in GSE",
+      "unitText": "Deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSE_LAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE longitude",
+      "description": "Longitude of the spacecraft position in GSE",
+      "unitText": "Deg",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0E31",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GSE_LON"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE radial distance",
+      "description": "Radial distance of the spacecraft in GSE",
+      "unitText": "km",
+      "minValue": "0.0",
+      "maxValue": "1594535.0",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Spherical GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RADIUS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE position",
+      "description": "Spacecraft position in GSE",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "XYZ_GSE"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

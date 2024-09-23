@@ -1,0 +1,168 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_ICESTAR_McMurdo_Magnetometer_PT10S.jsonld",
+  "name": "ICESTAR McMurdo Fluxgate Magnetometer PT10S Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_ICESTAR_McMurdo_Magnetometer_PT10S.jsonld",
+  "sdDatePublished": "2019-05-05",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://vmo.igpp.ucla.edu/data1/ICESTAR/",
+      "encodingFormat": "Text",
+      "name": "ICESTAR Data Set URL Address",
+      "description": "URL for ICESTAR data hosted on the UCLA VMO Data Repository"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/ICESTAR/McMurdo/Magnetometer/PT10S",
+  "creditText": "ICESTAR McMurdo Fluxgate Magnetometer PT10S Data.",
+  "description": "McMurdo Magnetometer PT10S data; Station Id: MCM; Vector Elements: HDZ; Instrument: fluxgate magnetometer",
+  "abstract": "McMurdo Magnetometer PT10S data; Station Id: MCM; Vector Elements: HDZ; Instrument: fluxgate magnetometer",
+  "temporalCoverage": "Start date: 1984-01-11T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Time is expressed by using a six column format with the following order:  year, month, day, hour, minute, and second, each stored in interger format.  The ICESTAR data are stored in dayfiles with 10 second time resolution.  The files have an eleven line header followed by 8640 data records.  The year, month, and day of the data records are inferred the file header while the hour, minute, and seconds for the time series are listed in each data record.  The hour-minute-second format may be either hhmm:ss or hh:mm:ss (file dependent).",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Minute",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Second",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "McMurdo PT10S Magnetic Field HDZ",
+      "description": "McMurdo PT10S Magnetic Field HDZ",
+      "unitText": "nT",
+      "minValue": "70000",
+      "maxValue": "-70000",
+      "defaultValue": "",
+      "unitCode": "10^9 nT/T",
+      "measurementTechnique": "Cylindrical CGM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "H",
+          "description": "Magnitude",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "D",
+          "description": "DirectionAngle.AzimuthAngle",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Magnetometer HDZ"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT10S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

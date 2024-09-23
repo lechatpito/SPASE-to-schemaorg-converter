@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_ISEE_VLF_ELF_ATH_VLF_ELF_cdf_data.jsonld",
+  "name": "CDF data of VLF/ELF measurements at Athabasca, Canada",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_ISEE_VLF_ELF_ATH_VLF_ELF_cdf_data.jsonld",
+  "sdDatePublished": "2016-06-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://stdb2.isee.nagoya-u.ac.jp/vlf/index2.html",
+      "encodingFormat": "CDF",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/ISEE/VLF_ELF/ATH/VLF_ELF_cdf_data",
+  "creditText": "CDF data of VLF/ELF measurements at Athabasca, Canada.",
+  "description": "CDF Data of ISEE VLF/ELF antenna observation at Athabasca, Canada cooperated by the Athabasca University. 9min50s spectrum is available in every 10 min. 20kHz sampling, sensitivity peak at 2-8kHz. Only one channel (VLF-EW): N-S antenna measureing east-west magnetic field variation.",
+  "abstract": "CDF Data of ISEE VLF/ELF antenna observation at Athabasca, Canada cooperated by the Athabasca University. 9min50s spectrum is available in every 10 min. 20kHz sampling, sensitivity peak at 2-8kHz. Only one channel (VLF-EW): N-S antenna measureing east-west magnetic field variation.",
+  "temporalCoverage": "Start date: 2012-02-19T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "VLF spectra (NS)",
+      "description": "north-south B-field wave spectra (Ch.1)",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VLF spectra (EW)",
+      "description": "east-west B-field wave spectra (Ch.2)",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE,Ionosphere, Magnetosphere dynamic plasma waves",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

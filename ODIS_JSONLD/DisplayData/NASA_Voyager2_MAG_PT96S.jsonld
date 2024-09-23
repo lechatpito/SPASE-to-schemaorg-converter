@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_Voyager2_MAG_PT96S.jsonld",
+  "name": "Voyager 2 MAG 2-day plots at MAG team site",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_Voyager2_MAG_PT96S.jsonld",
+  "sdDatePublished": "2021-03-29",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/voyager/vgrmag-data/plots/",
+      "encodingFormat": "Postscript",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/voyager/vgrmag-data/plots/",
+      "encodingFormat": "Postscript",
+      "name": "HTTPS from SPDF",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/Voyager2/MAG/PT96S",
+  "creditText": "Voyager 2 MAG 2-day plots at MAG team site.",
+  "description": "Voyager 2 magnetic field data plots at the Voyager MAG team site. Plots show magnetic field magnitude, direction angles, and Cartesian components in RTN coordinates. Plots typically cover 2 days.",
+  "abstract": "Voyager 2 magnetic field data plots at the Voyager MAG team site. Plots show magnetic field magnitude, direction angles, and Cartesian components in RTN coordinates. Plots typically cover 2 days.",
+  "temporalCoverage": "Start date: 1977-08-20T00:00:00. Relative stop date: None",
+  "variableMeasured": "MagneticField",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

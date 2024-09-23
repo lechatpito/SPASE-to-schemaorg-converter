@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_GAS_Interstellar-Helium_PT24H.jsonld",
+  "name": "Ulysses GAS Interstellar Helium Maps",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_GAS_Interstellar-Helium_PT24H.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/ulysses/gas/is_helium/data/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Via ftp in ASCII from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/ulysses/gas/is_helium/data/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Ulysses/GAS/Interstellar-Helium/PT24H",
+  "creditText": "Ulysses GAS Interstellar Helium Maps.",
+  "description": "This Ulysses GAS experiment data set consists of pixel map data and image files for sky maps generated from GAS measurements in the mode primarily sensitive to neutral helium atoms from inflow of interstellar gas into the heliosphere. The accumulated counts and Ecliptic (spacecraft-centered) angle coordinates for each sky map pixel are given in the ascii files *.TXT. The positions of the Sun and the planets vary with time and with the position of the spacecraft along its trajectory, while the positions of stars remain fixed. The full images are provided in GIF (*.GIF files) and postscript (*.PS files) format, the GIF files being easily viewed on-line (see below) with an Internet web browser. The actual positions of Sun, Earth, and Jupiter are indicated by yellow, green and white dots, respectively. The area around the Sun is excluded from observation to avoid damaging intensities from direct sunlight. The files USER_GUIDE.TXT, FORMAT.TXT, and REFERENCE.TXT, respectively, give an overall description of the various datatypes, the record format for the DATA datatype, and a list of GAS-related publications. The users guide defines the nomenclature of the file names. Further details about the data and the experiment may be found in Witte et al., Astron. Astrophys. Suppl. Ser., 92, No. 2, 333-348, 1992 (NSSDC TRF # B40459-000A). Data analysis methods for interstellar helium are described in Banaszkiewicz et al., Astron. Astrophys. Suppl. Ser., 120, 587-602, 1996 (B45706-000A).",
+  "abstract": "This Ulysses GAS experiment data set consists of pixel map data and image files for sky maps generated from GAS measurements in the mode primarily sensitive to neutral helium atoms from inflow of interstellar gas into the heliosphere. The accumulated counts and Ecliptic (spacecraft-centered) angle coordinates for each sky map pixel are given in the ascii files *.TXT. The positions of the Sun and the planets vary with time and with the position of the spacecraft along its trajectory, while the positions of stars remain fixed. The full images are provided in GIF (*.GIF files) and postscript (*.PS files) format, the GIF files being easily viewed on-line (see below) with an Internet web browser. The actual positions of Sun, Earth, and Jupiter are indicated by yellow, green and white dots, respectively. The area around the Sun is excluded from observation to avoid damaging intensities from direct sunlight. The files USER_GUIDE.TXT, FORMAT.TXT, and REFERENCE.TXT, respectively, give an overall description of the various datatypes, the record format for the DATA datatype, and a list of GAS-related publications. The users guide defines the nomenclature of the file names. Further details about the data and the experiment may be found in Witte et al., Astron. Astrophys. Suppl. Ser., 92, No. 2, 333-348, 1992 (NSSDC TRF # B40459-000A). Data analysis methods for interstellar helium are described in Banaszkiewicz et al., Astron. Astrophys. Suppl. Ser., 120, 587-602, 1996 (B45706-000A).",
+  "temporalCoverage": "Start date: 1990-10-27T00:00:00. Relative stop date: None",
+  "variableMeasured": "Dust",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

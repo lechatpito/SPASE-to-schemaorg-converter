@@ -1,0 +1,1068 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_THEMIS_E_Fits_PT3S.jsonld",
+  "name": "THEMIS-E: On Board spin fits (FIT) of Electric (EFI) and Magnetic (FGM) field. On-Board Spin-fit electric and magnetic field data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_THEMIS_E_Fits_PT3S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/THEMIS/E/Fits/PT3S",
+  "creditText": "THEMIS-E: On Board spin fits (FIT) of Electric (EFI) and Magnetic (FGM) field. On-Board Spin-fit electric and magnetic field data.",
+  "description": "THEMIS-E: On Board spin fits of Electric (EFI) and Magnetic (FGM) fields. This file contains data EFI and FGM that has been despun on-board to 3 second resolution. It stores meta information like the number of points that contributed to each spin and the standard deviation of those points. For the EFI data it also stores variables with the Z component of the EFI data zeroed and the Z component of the EFI estimated using the E.B=0 equality. The need to use an estimated Z axis for the EFI is due to error in measurements from the EFI axial booms. These data are provided in DSL (despun spacecraft L-Z vector), GSM, and GSE coordinates.",
+  "abstract": "THEMIS-E: On Board spin fits of Electric (EFI) and Magnetic (FGM) fields. This file contains data EFI and FGM that has been despun on-board to 3 second resolution. It stores meta information like the number of points that contributed to each spin and the standard deviation of those points. For the EFI data it also stores variables with the Z component of the EFI data zeroed and the Z component of the EFI estimated using the E.B=0 equality. The need to use an estimated Z axis for the EFI is due to error in measurements from the EFI axial booms. These data are provided in DSL (despun spacecraft L-Z vector), GSM, and GSE coordinates.",
+  "temporalCoverage": "Start date: 2008-01-14T17:00:00. Relative stop date: -P7D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Fluxgate Magnetometer Spin Fit Deviation",
+      "description": "Fluxgate magnetometer on-board instrument measurements are at higher resolution. This parameter stores the standard deviation of the fluxgate magentometer spin fit for each spin resolution element of this data quantity in nT.",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "25000.0",
+      "defaultValue": "NaN",
+      "unitCode": "10e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "StandardDeviation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_fgs_sigma"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Fluxgate Magnetometer Spin Fit Data DSL",
+      "description": "FGS (spin-fit) magnetic field vector in despun spacecraft coordinates (DSL). To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). These coordinates (DSL) use the Z axis of the spin plane (L Vector), not the probe geometric Z axis.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-9>T",
+      "measurementTechnique": "Cartesian SR2",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx DSL FGS-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By DSL FGS-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz DSL FGS-E",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_fgs_dsl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Fluxgate Magnetometer Spin Fit Data GSE",
+      "description": "FGS (spin-fit) magnetic field vector in GSE coordinates. These data are despun. To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Then they are converted to GSE on the ground.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx GSE FGS-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By GSE FGS-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz GSE FGS-E",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_fgs_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Fluxgate Magnetometer Spin Fit Data GSM",
+      "description": "FGS (spin-fit) magnetic field vector in GSM coordinates. These data are despun. To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Then they are converted to GSM coordinates on the ground.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx GSM FGS-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By GSM FGS-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz GSM FGS-E",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_fgs_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Fluxgate Magnetometer Spin-Fit Data Times",
+      "description": "Dates/Times for each measurement in seconds since 01-Jan-1970 00:00:00 UTC",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0E9",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_fgs_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument Spin Fit Deviation",
+      "description": "Electric Field Instrument on-board measurements are at higher resolution. This parameter stores the standard deviation of the electric field instrument spin fit for each spin resolution element of this data quantity in mV/m.",
+      "unitText": "mV/m",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "NaN",
+      "unitCode": "10e-3>V/m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "StandardDeviation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_sigma"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS E were deployed on June 7,2007 at 1900 UT. Measurements should not be considered valid before the deploy date. Z-axis measurements should be treated very carefully. Because the Z-axis booms are much shorter than the spin plane booms, the measurements in the Z-axis are much more inaccurate."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument Spin Fit Data DSL",
+      "description": "EFS (spin-fit) electric field vector in despun spacecraft coordinates (DSL) To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). These coordinates use the Z axis of the spin plane(L Vector), not the probe geometric Z axis.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-3>V/m",
+      "measurementTechnique": "Cartesian SR2",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex DSL EFS-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey DSL EFS-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez DSL EFS-E",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_dsl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS E were deployed on June 7,2007 at 1900 UT. Measurments should not be considered valid before the deploy date. Z-axis measurements should be treated very carefully. Because the Z-axis booms are much shorter than the spin plane booms, the measurements in the Z-axis are much more inaccurate."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument Z=0 Spin-Fit Data DSL",
+      "description": "EFS (spin-fit) electric field vector with Z=0 in despun spacecraft coordinates. (DSL) To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Since the Z component of the electric field has large error, it has been set to zero in this data quantity. These coordinates use the Z axis of the spin plane(L Vector), not the probe geometric Z axis.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-3>V/m",
+      "measurementTechnique": "Cartesian SR2",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex DSL EFS_0-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey DSL EFS_0-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez DSL EFS_0-E",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_0_dsl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS E were deployed on June 7,2007 at 1900 UT. Measurments should not be considered valid before the deploy date. The Z axis is zeroed for this quantity because the Z-axis booms are much shorter than the spin plane booms and thus the measurements in the Z axis are much more inaccurate."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument E dot B = 0 Spin-Fit Data DSL",
+      "description": "EFS (spin-fit) electric field vector with E dot B = 0 in despun spacecraft coordinates. (DSL) To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Since the Z component of the electric field has large error, the value of Ez that makes the dot product of E and B closest to zero is used in this data product, rather than the measured Z value. These coordinates use the Z axis of the spin plane (L Vector), not the probe geometric Z axis.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-3>V/m",
+      "measurementTechnique": "Cartesian SR2",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex DSL EFS_dot0-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey DSL EFS_dot0-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez DSL EFS_dot0-E",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_dot0_dsl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS E were deployed on June 7,2007 at 1900 UT. Measurments should not be considered valid before the deploy date. The Z axis is estimated for this quantity because the Z-axis booms are much shorter than the spin plane booms and thus the measurements in the Z axis are much more inaccurate."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument Spin Fit Data GSE",
+      "description": "EFS (spin-fit) electric field vector in GSE coordinates. Data are first despun on-board, then converted to GSE coordinates on the ground. To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-3>V/m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex GSE EFS-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey GSE EFS-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez GSE EFS-E",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS E were deployed on June 7,2007 at 1900 UT. Measurments should not be considered valid before the deploy date. Z-axis measurements should be treated very carefully. Because the Z-axis booms are much shorter than the spin plane booms, the measurements in the Z-axis are much more inaccurate."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument Z=0 Spin-Fit Data GSE",
+      "description": "EFS (spin-fit) electric field vector with Z=0 in GSE coordinates. Data are first despun on-board, then converted to GSE coordinates on the ground. To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Since the Z component of the electric field has large error, it has been set to zero in this data quantity.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-3>V/m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex GSE EFS_0-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey GSE EFS_0-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez GSE EFS_0-E",
+          "description": "Component.I",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_0_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS E were deployed on June 7,2007 at 1900 UT. Measurments should not be considered valid before the deploy date. The Z axis is zeroed for this quantity because the Z-axis booms are much shorter than the spin plane booms and thus the measurements in the Z axis are much more inaccurate. The Z-axis is zeroed prior to conversion to GSE coordinates, so the zeroed axis will probably not be colinear with the Z axis of the GSE coordinate system."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument E dot B = 0 Spin-Fit Data GSE",
+      "description": "EFS (spin-fit) electric field vector with E dot B = 0 in GSE coordinates. Data are first despun on-board, then converted to GSE coordinates on the ground. To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Since the Z component of the electric field has large error, the value of Ez that makes the dot product of E and B closest to zero is used in this data product, rather than the measured Z value.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-3>V/m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex GSE EFS_dot0-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey GSE EFS_dot0-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez GSE EFS_dot0-E",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_dot0_gse"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS E were deployed on June 7,2007 at 1900 UT. Measurments should not be considered valid before the deploy date. The Z axis is estimated for this quantity because the Z-axis booms are much shorter than the spin plane booms and thus the measurements in the Z axis are much more inaccurate. The Z-axis is estimated prior to conversion to GSE coordinates, so the estimated axis will probably not be colinear with the Z axis of the GSE coordinate system."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument Spin Fit Data GSM",
+      "description": "EFS (spin-fit) electric field vector in GSM coordinates. Data are first despun on-board, then converted to GSM coordinates on the ground. To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-3>V/m",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex GSM EFS-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey GSM EFS-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez GSM EFS-E",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS E were deployed on June 7,2007 at 1900 UT. Measurments should not be considered valid before the deploy date. Z-axis measurements should be treated very carefully. Because the Z-axis booms are much shorter than the spin plane booms, the measurements in the Z-axis are much more inaccurate."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument Z=0 Spin-Fit Data GSM",
+      "description": "EFS (spin-fit) electric field vector with Z=0 in GSM coordinates. Data are first despun on-board, then converted to GSM coordinates on the ground. To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Since the Z component of the electric field has large error, it has been set to zero in this data quantity.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-3>V/m",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex GSM EFS_0-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey GSM EFS_0-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez GSM EFS_0-E",
+          "description": "Component.I",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_0_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS E were deployed on June 7,2007 at 1900 UT. Measurments should not be considered valid before the deploy date. The Z axis is zeroed for this quantity because the Z-axis booms are much shorter than the spin plane booms and thus the measurements in the Z axis are much more inaccurate. The Z-axis is zeroed prior to conversion to GSM coordinates, so the zeroed axis will probably not be colinear with the Z axis of the GSM coordinate system."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument E dot B = 0 Spin-Fit Data GSM",
+      "description": "EFS (spin-fit) electric field vector with E dot B = 0 in GSM coordinates. Data are first despun on-board, then converted to GSM coordinates on the ground. To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Since the Z component of the electric field has large error, the value of Ez that makes the dot product of E and B closest to zero is used in this data product, rather than the measured Z value.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-3>V/m",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ex GSM EFS_dot0-E",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ey GSM EFS_dot0-E",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ez GSM EFS_dot0-E",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_dot0_gsm"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS E were deployed on June 7,2007 at 1900 UT. Measurments should not be considered valid before the deploy date. The Z axis is estimated for this quantity because the Z-axis booms are much shorter than the spin plane booms and thus the measurements in the Z axis are much more inaccurate. The Z-axis is estimated prior to conversion to GSM coordinates, so the estimated axis will probably not be colinear with the Z axis of the GSM coordinate system."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument Spin-Fit Data Times",
+      "description": "Dates/Times for each measurement in seconds since 01-Jan-1970 00:00:00 UTC",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0E9",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_efs_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Fluxgate Magnetometer Spin Fit Model DSL",
+      "description": "This parameter contains the calibrated fluxgate magnetometer spin model data in despun spacecraft coordinates (DSL). The spin model uses a sine-wave spin model to calculate the spin and despin. These coefficients(A,B,C), the standard deviation(Sigma), and the average value(Avg.) are provided. The equations used for the model are F = Sum(i=1 to N)[E(t_i) - (A + B*sin(omega*t_i)+C*cos(omega*t_i))]^2 , delta F/delta A = Sum(i=1 to N)-2*[E(t_i) - (A + B*sin(omega*t_i) + C*cos(omega*t_i))] , delta F/delta B = Sum(i=1 to N)-2*[E(t_i) - (A + B*sin(omega*t_i) + C*cos(omega*t_i))]-sin(omega*t_i) , delta F/delta C = Sum(i=1 to N)-2*[E(t_i) - (A + B*sin(omega*t_i) + C*cos(omega*t_i))]*cos(omega*t_i) , Gamma = sqrt(F/(N-1)) The system of equations is solved and outliers are removed until no more outliers can be removed.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-9>T",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "A FIT_BFIT FGM-E",
+          "description": "",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "B FIT_BFIT FGM-E",
+          "description": "",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "C FIT_BFIT FGM-E",
+          "description": "",
+          "position": "3",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sigma FIT_BFIT FGM-E",
+          "description": "",
+          "position": "4",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Avg. FIT_BFIT FGM-E",
+          "description": "",
+          "position": "5",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_fit_bfit"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit is performed on-board. The B,C, and Average components of this parameter are very close to the X,Y and Z components(respectively) of the fgs quantity. In this parameter scaling factors are applied, but the data do not have finer calibrations applied. These data are also in despun sensor coordinates, rather than despun spacecraft coordinates. Practically, this means the Z axis is the opposite of the normal DSL coordinate system."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Fluxgate Magnetometer Spin-Fit Model Times",
+      "description": "Dates/Times for each measurement in seconds since 01-Jan-1970 00:00:00 UTC",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0E9",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_fit_bfit_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument Spin Fit Model DSL",
+      "description": "This parameter contains the calibrated electric field instrument spin model data in despun spacecraft coordinates (DSL). The spin model uses a sine-wave spin model to calculate the spin and despin. These coefficients(A,B,C), the standard deviation(Sigma), and the average value(Avg.) are provided. The equations used for the model are F = Sum(i=1 to N)[E(t_i) - (A + B*sin(omega*t_i)+C*cos(omega*t_i))]^2 , delta F/delta A = Sum(i=1 to N)-2*[E(t_i) - (A + B*sin(omega*t_i) + C*cos(omega*t_i))] , delta F/delta B = Sum(i=1 to N)-2*[E(t_i) - (A + B*sin(omega*t_i) + C*cos(omega*t_i))]-sin(omega*t_i) , delta F/delta C = Sum(i=1 to N)-2*[E(t_i) - (A + B*sin(omega*t_i) + C*cos(omega*t_i))]*cos(omega*t_i) , Gamma = sqrt(F/(N-1)) The system of equations is solved and outliers are removed until no more outliers can be removed.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "10e-3>V/m",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "A FIT_EFIT EFI-E",
+          "description": "",
+          "position": "1",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "B FIT_EFIT EFI-E",
+          "description": "",
+          "position": "2",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "C FIT_EFIT EFI-E",
+          "description": "",
+          "position": "3",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sigma FIT_EFIT EFI-E",
+          "description": "",
+          "position": "4",
+          "defaultValue": "NaN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Avg. FIT_EFIT EFI-E",
+          "description": "",
+          "position": "5",
+          "defaultValue": "NaN"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_fit_efit"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculations of spin-fit is performed on-board. The B,C, and Average components of this parameter are very close to the X,Y and Z components(respectively) of the efs quantity. In this parameter scaling factors are applied, but the data do not have finer calibrations applied."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS E Electric Field Instrument Spin-Fit Model Times",
+      "description": "Dates/Times for each measurement in seconds since 01-Jan-1970 00:00:00 UTC",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0E9",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "the_fit_bfit_time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Unleaped seconds"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT3S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

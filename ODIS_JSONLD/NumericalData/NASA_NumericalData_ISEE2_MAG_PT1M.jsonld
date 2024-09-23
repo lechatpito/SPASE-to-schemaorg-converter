@@ -1,0 +1,1226 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ISEE2_MAG_PT1M.jsonld",
+  "name": "ISEE 2 magnetometer 1-min data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_ISEE2_MAG_PT1M.jsonld",
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ISEE2/MAG/PT1M",
+  "creditText": "ISEE 2 magnetometer 1-min data.",
+  "description": "This data set contains magnetic field component and magnitude averages every minute, with components given in spacecraft, GSE and GSM coordinates. Standard deviations in the averages are given, as are differences between the averages and model field vectors. Geocentric (GSE and GSM) spacecraft position information is given, as is ISEE1-ISEE2 separation vector information. ISEE 2 spin vector direction and ISEE 2 velocity vector information, relative to the Earth and to ISEE 1, are given. Miscellaneous other parameters are also given.",
+  "abstract": "This data set contains magnetic field component and magnitude averages every minute, with components given in spacecraft, GSE and GSM coordinates. Standard deviations in the averages are given, as are differences between the averages and model field vectors. Geocentric (GSE and GSM) spacecraft position information is given, as is ISEE1-ISEE2 separation vector information. ISEE 2 spin vector direction and ISEE 2 velocity vector information, relative to the Earth and to ISEE 1, are given. Miscellaneous other parameters are also given.",
+  "temporalCoverage": "Start date: 1977-10-22T21:04:19. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "DD-MON-YY HH:MM:SS.SSS",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, SC Coordinates",
+      "description": "Triaxial magnetic field vector in spacecraft coordinates (SC)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BX, BY, BZ"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Magnitude",
+      "description": "Magnetic field magnitude",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BTOT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, GSM Coordinates",
+      "description": "Triaxial magnetic field vector in GSM coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BX_GSM, BY_GSM, BZ_GSM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, GSE Coordinates",
+      "description": "Triaxial magnetic field vector in GSM coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BX_GSE, BY_GSE, BZ_GSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard Deviations in field component averages",
+      "description": "Standard deviations in the field component averages in SC coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "StandardDeviation",
+            "Vector"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SDX, SDY, SDZ"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard Deviations in field magnitude averages",
+      "description": "Standard deviations in the field magnitude averages",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "StandardDeviation",
+            "Magnitude"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SDT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Composite Standard Deviations in field average",
+      "description": "Difference between magnitudes of model internal field and observed field",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "StandardDeviation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SDC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model internal field minus observed field, magnitudes",
+      "description": "Difference between magnitudes of model internal field and observed field",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Deviation",
+            "Magnitude"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BINT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model internal field minus observed field, GSM components",
+      "description": "Difference between GSM components of model internal field and observed field",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Deviation",
+            "Component"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BXIM_GSM, BYIM_GSM, BZIM_GSM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model internal plus external field minus observed field, magnitudes",
+      "description": "Difference between magnitudes of model internal plus external field and observed field",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Deviation",
+            "Magnitude"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BINTEXT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model internal plus external field minus observed field, GSM components",
+      "description": "Difference between GSM components of model internal plus external field and observed field",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0E-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Deviation",
+            "Component"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BXIE_GSM, BYIE_GSM, BZIE_GSM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geocentric distance of spacecraft",
+      "description": "Geocentric distance of spacecraft, in Earth radii",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "R"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft position vector, GSM",
+      "description": "Spacecraft position vector, GSM Cartesian components, in Earth radii",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "X_GSM, Y_GSM, Z_GSM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft position vector, GSE",
+      "description": "Spacecraft position vector, GSE Cartesian components, in Earth radii",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "X_GSE, Y_GSE, Z_GSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Z position of nominal Russell Brody neutral sheet, GSM",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ZNS_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dipole tilt angle",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "TILT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L Shell parameter",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "L"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Local time",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Local_time"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic latitude",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MLAT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sun-Earth-Satellite angle",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SES"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Clock angle",
+      "description": "Clock angle from Y GSM axis, positive toward +Z GSM",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "PHI"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft spin period",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SPIN"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM longitude of spin axis",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SLNG_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM latitude of spin axis",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SLT_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE longitude of spin axis",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SLNG_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE latitude of spin axis",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SLT_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM X component of spacecraft velocity",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "VX_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Y component of spacecraft velocity",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "VY_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Z component of spacecraft velocity",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "VZ_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft speed",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "V"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM X component of ISEE 1 velocity relative to ISEE 2",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DVX_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Y component of ISEE 1 velocity relative to ISEE 2",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DVY_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Z component of ISEE 1 velocity relative to ISEE 2",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DVZ_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE 1 speed relative to ISEE 2",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DV"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM X separation of ISEE 2 to ISEE 1",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DX_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Y separation of ISEE 2 to ISEE 1",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DY_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Z separation of ISEE 2 to ISEE 1",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DZ_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE X separation of ISEE 2 to ISEE 1",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DX_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Y separation of ISEE 2 to ISEE 1",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DY_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Z separation of ISEE 2 to ISEE 1",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DZ_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Distance between ISEE 2 to ISEE 1",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DR"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE X component of vector to magnetopause",
+      "description": "GSE X component of the vector that starts at the spacecraft and intersects the model magnetopause perpendicularly",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NMPX_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Y component of vector to magnetopause",
+      "description": "GSE Y component of the vector that starts at the spacecraft and intersects the model magnetopause perpendicularly",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NMPY_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Z component of vector to magnetopause",
+      "description": "GSE Z component of the vector that starts at the spacecraft and intersects the model magnetopause perpendicularly",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NMPZ_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Component of ISEE_1-ISEE_2 vector, MP",
+      "description": "Component of the ISEE_1-ISEE_2 separation vector along the vector that starts at the spacecraft and intersects the model magnetopause perpendicularly",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MPS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE X component of vector to bow shock",
+      "description": "GSE X component of the vector that starts at the spacecraft and intersects the model bow shock perpendicularly",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NSX_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Y component of vector to bow shock",
+      "description": "GSE Y component of the vector that starts at the spacecraft and intersects the model bow shock perpendicularly",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NSY_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Z component of vector to bow shock",
+      "description": "GSE Z component of the vector that starts at the spacecraft and intersects the model bow shock perpendicularly",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NSZ_GSE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Component of ISEE_1-ISEE_2 vector, BS",
+      "description": "Component of the ISEE_1-ISEE_2 separation vector along the vector that starts at the spacecraft and intersects the model bow shock perpendicularly",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MPS"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

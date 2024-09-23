@@ -1,0 +1,339 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_RISH_misc_SGK_MUradar_mur_sgk_faispc_netcdf.jsonld",
+  "name": "Field-aligned irregularity (FAI) observation data of the ionosphere taken by the MU radar (netCDF format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_RISH_misc_SGK_MUradar_mur_sgk_faispc_netcdf.jsonld",
+  "sdDatePublished": "2016-12-05",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/mu/fai/",
+      "encodingFormat": "NetCDF",
+      "name": "MU FAI Observation",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/RISH/misc/SGK/MUradar/mur_sgk_faispc_netcdf",
+  "creditText": "Field-aligned irregularity (FAI) observation data of the ionosphere taken by the MU radar (netCDF format).",
+  "description": "The field-aligned irregularity (FAI) observation data in the ionosphere between 80 km and 130 km taken by the MU radar at Shigaraki in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL), which has been operated in the special observation mode of the FAI. The data are stored in the netCDF (network Common Data From) file named (year)(month)(day).(observation parameter).nc. The netCDF file includes the range, height, time, radial Doppler velocity, echo power, spectral width and noise level for each beam number and so on. The value of 1.0e+10 means missing data.",
+  "abstract": "The field-aligned irregularity (FAI) observation data in the ionosphere between 80 km and 130 km taken by the MU radar at Shigaraki in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL), which has been operated in the special observation mode of the FAI. The data are stored in the netCDF (network Common Data From) file named (year)(month)(day).(observation parameter).nc. The netCDF file includes the range, height, time, radial Doppler velocity, echo power, spectral width and noise level for each beam number and so on. The value of 1.0e+10 means missing data.",
+  "temporalCoverage": "Start date: 1986-07-27T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "lat",
+      "description": "Latitude of radar location",
+      "unitText": "degree_north",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon",
+      "description": "Longitude of radar location",
+      "unitText": "degree_east",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "range",
+      "description": "Range of radar beam",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "height",
+      "description": "Height",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "az",
+      "description": "Azimuth angle of each radar beam",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ze",
+      "description": "Zenith angle of each radar beam",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sealvl",
+      "description": "Mean sea level of radar location",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "bmwdh",
+      "description": "Radar beam width in one-way half-power full width",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "freq",
+      "description": "TX Frequency",
+      "unitText": "kHz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ipp",
+      "description": "Inter pulse period",
+      "unitText": "micro sec",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ndata",
+      "description": "Number of recorded data points",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "nfft",
+      "description": "Number of FFT points",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ncoh",
+      "description": "Number of coherent integrations",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "nicoh",
+      "description": "Number of incoherent integrations",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "beam",
+      "description": "Index of radar beam",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "date",
+      "description": "Observational date",
+      "unitText": "year, month, day",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Local time",
+      "unitText": "minute",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dpl",
+      "description": "Radial Doppler velocity",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "1.0e+10"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr",
+      "description": "Echo power",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "1.0e+10"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "width",
+      "description": "Spectral width",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "1.0e+10"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pnoise",
+      "description": "Noise level",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "1.0e+10",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Ion Chemistry/Ionization",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

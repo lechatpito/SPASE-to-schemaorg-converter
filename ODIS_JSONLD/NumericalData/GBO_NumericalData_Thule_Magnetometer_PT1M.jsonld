@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_Thule_Magnetometer_PT1M.jsonld",
+  "name": "PCI (Polar Cap Index), Greenland",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_Thule_Magnetometer_PT1M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Juergen.Matzka",
+    "url": "http://hpde.io/SMWG/Person/Juergen.Matzka"
+  },
+  "sdDatePublished": "2018-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftp://ftp.space.dtu.dk/WDC/indices/pcn/",
+      "encodingFormat": "Text",
+      "name": "WDC/Geomagnetism at the Technical University of Denmark (DTU) in Copenhagen",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftp://ftp.ngdc.noaa.gov/STP/SOLAR_DATA/RELATED_INDICES/PC_INDEX/VOSTOK",
+      "encodingFormat": "Text",
+      "name": "In ASCII via ftp from NGDC",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/Thule/Magnetometer/PT1M",
+  "creditText": "PCI (Polar Cap Index), Greenland.",
+  "description": "PCI (Polar Cap Index), Thule (now Qaanaaq), Greenland; also called PCN - Polar Cap North",
+  "abstract": "PCI (Polar Cap Index), Thule (now Qaanaaq), Greenland; also called PCN - Polar Cap North",
+  "temporalCoverage": "Start date: 1975-01-01T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": [
+    "MagneticField",
+    "ActivityIndex"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

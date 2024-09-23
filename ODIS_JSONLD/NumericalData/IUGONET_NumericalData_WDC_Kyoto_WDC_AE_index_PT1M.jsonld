@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_WDC_Kyoto_WDC_AE_index_PT1M.jsonld",
+  "name": "Geomagnetic Auroral Electrojet Index AE",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_WDC_Kyoto_WDC_AE_index_PT1M.jsonld",
+  "sdDatePublished": "2011-02-17",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://wdc.kugi.kyoto-u.ac.jp/wdc/Sec3.html",
+      "encodingFormat": "Text",
+      "name": "Geomagnetic Data Service",
+      "description": "Geomagnetic Data Service at World Data Center for Geomagnetism, Kyoto."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/WDC_Kyoto/WDC/AE/index/PT1M",
+  "creditText": "Geomagnetic Auroral Electrojet Index AE.",
+  "description": "The geomagnetic auroral electrojet index at 1-min time resolution, derived at World Data Center for Geomagnetism, Kyoto, Kyoto University.",
+  "abstract": "The geomagnetic auroral electrojet index at 1-min time resolution, derived at World Data Center for Geomagnetism, Kyoto, Kyoto University.",
+  "temporalCoverage": "Start date: 1975-01-01T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Time is expressed with year, month, day, hour, and min, each stored in integer format. Details of the data record format is described at http://wdc.kugi.kyoto-u.ac.jp/aeasy/format/aeformat.html",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Auroral Electrojet index AE",
+      "description": "The AE index is expressed in integer format. Details of the data record format is described at http://wdc.kugi.kyoto-u.ac.jp/aeasy/format/aeformat.html",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "99999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "AE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "keywords": "AE INDEX",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

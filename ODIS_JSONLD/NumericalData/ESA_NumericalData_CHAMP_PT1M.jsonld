@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_CHAMP_PT1M.jsonld",
+  "name": "CHAMP data (all-inclusive) via CHAMP Data Center",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_CHAMP_PT1M.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Bernd.Ritschel",
+    "url": "http://hpde.io/SMWG/Person/Bernd.Ritschel"
+  },
+  "sdDatePublished": "2018-08-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://isdc.gfz-potsdam.de/champ-isdc/",
+      "encodingFormat": "Text",
+      "name": "GFZ/ISDC CHAMP page",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/NumericalData/CHAMP/PT1M",
+  "creditText": "CHAMP data (all-inclusive) via CHAMP Data Center.",
+  "description": "A wealth of CHAMP data at various time resolutions \nand processing levels, including vector and scalar magnetic field data, \ncoefficients for a CHAMP-based main magnetic field model, electron density \nprofiles, etc., are available from the CHAMP Data Center which is hosted by \nISDC (Information Systems and Data Center) at GFZ (GeoForschungsZentrum, \nPotsdam).  Registration is required for open data access.",
+  "abstract": "A wealth of CHAMP data at various time resolutions \nand processing levels, including vector and scalar magnetic field data, \ncoefficients for a CHAMP-based main magnetic field model, electron density \nprofiles, etc., are available from the CHAMP Data Center which is hosted by \nISDC (Information Systems and Data Center) at GFZ (GeoForschungsZentrum, \nPotsdam).  Registration is required for open data access.",
+  "temporalCoverage": "Start date: 2000-07-16T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": [
+    "ThermalPlasma",
+    "MagneticField"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

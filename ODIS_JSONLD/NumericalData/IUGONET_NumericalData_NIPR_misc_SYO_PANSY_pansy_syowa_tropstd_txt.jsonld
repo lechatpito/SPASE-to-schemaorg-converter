@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_NIPR_misc_SYO_PANSY_pansy_syowa_tropstd_txt.jsonld",
+  "name": "Standard observation data of the troposphere and lower stratosphere taken by the PANSY radar (text format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_NIPR_misc_SYO_PANSY_pansy_syowa_tropstd_txt.jsonld",
+  "sdDatePublished": "2018-03-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://pansy.eps.s.u-tokyo.ac.jp/en/data/",
+      "encodingFormat": "Text.ASCII",
+      "name": "PANSY Radar Data Archive",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/NIPR/misc/SYO/PANSY/pansy_syowa_tropstd_txt",
+  "creditText": "Standard observation data of the troposphere and lower stratosphere taken by the PANSY radar (text format).",
+  "description": "6-hourly horizontal wind velocity data in the troposphere and the lower stratosphere (1.5-13 km) observed by PANSY radar on a regular basis after May 2012. The vertical wind component is omitted. The files are written in text (ascii code). Although the data have been processed after a careful screening for unexpected noise and interferences, they may contain systematic errors nevertheless. It is therefore recommended that you contact us and be advised for the use of data.",
+  "abstract": "6-hourly horizontal wind velocity data in the troposphere and the lower stratosphere (1.5-13 km) observed by PANSY radar on a regular basis after May 2012. The vertical wind component is omitted. The files are written in text (ascii code). Although the data have been processed after a careful screening for unexpected noise and interferences, they may contain systematic errors nevertheless. It is therefore recommended that you contact us and be advised for the use of data.",
+  "temporalCoverage": "Start date: 2018-03-31T00:00:00. Relative stop date: -P2Y",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Date/Time",
+      "description": "Date and time is in the form yyyy-mm-dd-HH:MM in UT.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Altitude",
+      "description": "Altitude (above the ground)",
+      "unitText": "km",
+      "minValue": "1.50",
+      "maxValue": "13.05",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "U",
+      "description": "Zonal wind (eastward wind is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999.0",
+      "measurementTechnique": "Spherical GEO"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "V",
+      "description": "Meridional wind (northward wind is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999.0",
+      "measurementTechnique": "Spherical GEO"
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Stratosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

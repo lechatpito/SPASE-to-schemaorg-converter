@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Akebono_RDM_PT8S.jsonld",
+  "name": "Akebono RDM digital binary e, H+, He++ count rates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Akebono_RDM_PT8S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Akira.S.Yukimatu",
+    "url": "http://hpde.io/SMWG/Person/Akira.S.Yukimatu"
+  },
+  "sdDatePublished": "2021-03-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.darts.isas.ac.jp/stp/akebono/RDM.html",
+      "encodingFormat": "Binary",
+      "name": "DARTS_JAXA",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://JAXA/NumericalData/Akebono/RDM/PT8S",
+  "creditText": "Akebono RDM digital binary e, H+, He++ count rates.",
+  "description": "These count rate data from the High Energy Particle\nMonitor (HPM) of the Radiation Monitor (RDM) reside in the DARTS/Akebono\nbinary Science DataBase (SDB).  They consist of count rates at 8-sec \nspacecraft spin resolution for 0.3-0.95, 0.95-2.5 and >2.5 MeV electrons, \n6.3-15, 15-29, 29-62 MeV protons, and 16-52 MeV alpha particles.  Detailed \ninformation is found at \nhttps://www.darts.isas.jaxa.jp/akbn/readme/readme.rdm.txt.",
+  "abstract": "These count rate data from the High Energy Particle\nMonitor (HPM) of the Radiation Monitor (RDM) reside in the DARTS/Akebono\nbinary Science DataBase (SDB).  They consist of count rates at 8-sec \nspacecraft spin resolution for 0.3-0.95, 0.95-2.5 and >2.5 MeV electrons, \n6.3-15, 15-29, 29-62 MeV protons, and 16-52 MeV alpha particles.  Detailed \ninformation is found at \nhttps://www.darts.isas.jaxa.jp/akbn/readme/readme.rdm.txt.",
+  "temporalCoverage": "Start date: 1989-04-01T00:00:00. Relative stop date: None",
+  "variableMeasured": "EnergeticParticles",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

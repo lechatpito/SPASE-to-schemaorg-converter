@@ -1,0 +1,5873 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Voyager2_MAG_CDF_PT1.92S.jsonld",
+  "name": "Voyager 2 1.92-s Averaged Triaxial Fluxgate Magnetometer (MAG) Interplanetary Magnetic Field in CDF Format",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Voyager2_MAG_CDF_PT1.92S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Voyager2/MAG/CDF/PT1.92S",
+  "creditText": "Voyager 2 1.92-s Averaged Triaxial Fluxgate Magnetometer (MAG) Interplanetary Magnetic Field in CDF Format.",
+  "description": "This data set includes the Voyager spacecraft number (1 or 2), the date-time in decimal year (90.00000 is day 1 of 1990), the magnetic field strength, F1, computed from high-resolution magnitudes, the elevation and azimuth angles in heliographic (RTN) coordinates, and the magnetic field strength, F2, computed from 1-hr averages of the components. The vector components of B can be computed from F2 and the two angles. The elevation angle is the latitude angle above or below the solar equatorial plane, and the azimuth angle is in the direction orbital motion around the Sun from the projection of the Sun-to-spacecraft axis into the solar equatorial plane. The Voyager MAG experiment and coordinates are further described in the following publication: Behannon, K.W., M.H. Acuna, L.F. Burlaga, R.P. Lepping, N.F. Ness, and F.M. Neubauer, Magnetic-Field Experiment for Voyager-1 and Voyager-2, Space Sci. Rev., 21 (3), 235-257, 1977. At the time of experiment proposal, it was expected that the required accuracy of the measurements would be 0.1 nT, determined by the combined noise of the sensors and the spacecraft field. The spacecraft magnetic field at the outboard magnetic field sensor, referred to as the primary unit, was expected to be 0.2 nT and highly variable, consistent with current estimates. Hence, the dual magnetometer design (Ness et al., 1971, 1973; Behannon et al., 1977). At distances > 40 AU, the heliospheric magnetic fields are generally much weaker than 0.4 nT; the average magnetic field strength near 40 AU and 85 AU is about 0.15 nT and 0.05 nT, respectively. The use of roll calibrations lasting about 6 hours permits determination of the effective zero levels for the two independent magnetic axes that are perpendicular to the roll axis, which is nearly parallel to the radius vector to the Sun, at intervals of about 3 months. There is no roll calibration for the third magnetic axis. Comparison of the two derived magnetic vectors from the two magnetometers permits validation of the primary magnetometer data with an accuracy of 0.02 to 0.05 nT. A discussion of the uncertainties that must be considered when using these data is given in the Appendix of Burlaga et al. (1994) and in Appendix A of Burlaga et al. (2002). References: Behannon, K.W., M.H. Acuna, L.F. Burlaga, R.P. Lepping, N.F. Ness, and F.M. Neubauer, Magnetic-Field Experiment for Voyager-1 and Voyager-2, Space Science Reviews, 21 (3), 235-257, 1977. Burlaga, L.F., Merged interaction regions and large-scale magnetic field fluctuations during 1991 - Voyager-2 observations, J. Geophys. Res., 99 (A10), 19341-19350, 1994. Burlaga, L.F., N.F. Ness, Y.-M. Wang, and N.R. Sheeley, Jr., Heliospheric magnetic field strength and polarity from 1 to 81 AU during the ascending phase of solar cycle 23, J. Geophys. Res., 107 (A11), 1410, 2002. Ness, N., K.W. Behannon, R. Lepping, and K.H. Schatten, J. Geophys. Res., 76, 3564, 1971. Ness et al., 1973. Coordinate Systems: Interplanetary magnetic field studies make use of two important coordinate systems, the Heliographic Inertial (HGI) coordinate system and the Heliographic (HG) coordinate system. The HGI coordinate system is used to define the spacecraft's position. The HGI system is defined with its origin at the Sun. There are three orthogonal axes, X(HGI), Y(HGI), and Z(HGI). The Z(HGI) axis points northward along the Sun's spin axis. The X(HGI)-Y(HGI) plane lays in the solar equatorial plane. The intersection of the solar equatorial plane with the ecliptic plane defines a line, the longitude of the ascending node, which is taken to be the X(HGI) axis. The X(HGI) axis drifts slowly with time, approximately one degree per 72 years. The magnetic field orientation is defined in relation to the spacecraft. Drawing a line from the Sun's center (HGI origin) to the spacecraft defines the X axis of the HG coordinate system. The HG coordinate system is defined with its origin centered at the spacecraft. Three orthogonal axes are defined, X(HG), Y(HG), and Z(HG). The X(HG) axis points radially away from the Sun and the Y(HG) axis is parallel to the solar equatorial plane and therefore parallel to the X(HGI)-Y(HGI) plane as well. The Z(HG) axis is chosen to complete the orthonormal triad. An excellent reference guide with diagrams explaining the HGI and HG systems may be found in L.F. Burlaga, MHD Processes in the Outer Heliosphere, Space Sci. Rev., 39, 255-316, 1984.",
+  "abstract": "This data set includes the Voyager spacecraft number (1 or 2), the date-time in decimal year (90.00000 is day 1 of 1990), the magnetic field strength, F1, computed from high-resolution magnitudes, the elevation and azimuth angles in heliographic (RTN) coordinates, and the magnetic field strength, F2, computed from 1-hr averages of the components. The vector components of B can be computed from F2 and the two angles. The elevation angle is the latitude angle above or below the solar equatorial plane, and the azimuth angle is in the direction orbital motion around the Sun from the projection of the Sun-to-spacecraft axis into the solar equatorial plane. The Voyager MAG experiment and coordinates are further described in the following publication: Behannon, K.W., M.H. Acuna, L.F. Burlaga, R.P. Lepping, N.F. Ness, and F.M. Neubauer, Magnetic-Field Experiment for Voyager-1 and Voyager-2, Space Sci. Rev., 21 (3), 235-257, 1977. At the time of experiment proposal, it was expected that the required accuracy of the measurements would be 0.1 nT, determined by the combined noise of the sensors and the spacecraft field. The spacecraft magnetic field at the outboard magnetic field sensor, referred to as the primary unit, was expected to be 0.2 nT and highly variable, consistent with current estimates. Hence, the dual magnetometer design (Ness et al., 1971, 1973; Behannon et al., 1977). At distances > 40 AU, the heliospheric magnetic fields are generally much weaker than 0.4 nT; the average magnetic field strength near 40 AU and 85 AU is about 0.15 nT and 0.05 nT, respectively. The use of roll calibrations lasting about 6 hours permits determination of the effective zero levels for the two independent magnetic axes that are perpendicular to the roll axis, which is nearly parallel to the radius vector to the Sun, at intervals of about 3 months. There is no roll calibration for the third magnetic axis. Comparison of the two derived magnetic vectors from the two magnetometers permits validation of the primary magnetometer data with an accuracy of 0.02 to 0.05 nT. A discussion of the uncertainties that must be considered when using these data is given in the Appendix of Burlaga et al. (1994) and in Appendix A of Burlaga et al. (2002). References: Behannon, K.W., M.H. Acuna, L.F. Burlaga, R.P. Lepping, N.F. Ness, and F.M. Neubauer, Magnetic-Field Experiment for Voyager-1 and Voyager-2, Space Science Reviews, 21 (3), 235-257, 1977. Burlaga, L.F., Merged interaction regions and large-scale magnetic field fluctuations during 1991 - Voyager-2 observations, J. Geophys. Res., 99 (A10), 19341-19350, 1994. Burlaga, L.F., N.F. Ness, Y.-M. Wang, and N.R. Sheeley, Jr., Heliospheric magnetic field strength and polarity from 1 to 81 AU during the ascending phase of solar cycle 23, J. Geophys. Res., 107 (A11), 1410, 2002. Ness, N., K.W. Behannon, R. Lepping, and K.H. Schatten, J. Geophys. Res., 76, 3564, 1971. Ness et al., 1973. Coordinate Systems: Interplanetary magnetic field studies make use of two important coordinate systems, the Heliographic Inertial (HGI) coordinate system and the Heliographic (HG) coordinate system. The HGI coordinate system is used to define the spacecraft's position. The HGI system is defined with its origin at the Sun. There are three orthogonal axes, X(HGI), Y(HGI), and Z(HGI). The Z(HGI) axis points northward along the Sun's spin axis. The X(HGI)-Y(HGI) plane lays in the solar equatorial plane. The intersection of the solar equatorial plane with the ecliptic plane defines a line, the longitude of the ascending node, which is taken to be the X(HGI) axis. The X(HGI) axis drifts slowly with time, approximately one degree per 72 years. The magnetic field orientation is defined in relation to the spacecraft. Drawing a line from the Sun's center (HGI origin) to the spacecraft defines the X axis of the HG coordinate system. The HG coordinate system is defined with its origin centered at the spacecraft. Three orthogonal axes are defined, X(HG), Y(HG), and Z(HG). The X(HG) axis points radially away from the Sun and the Y(HG) axis is parallel to the solar equatorial plane and therefore parallel to the X(HGI)-Y(HGI) plane as well. The Z(HG) axis is chosen to complete the orthonormal triad. An excellent reference guide with diagrams explaining the HGI and HG systems may be found in L.F. Burlaga, MHD Processes in the Outer Heliosphere, Space Sci. Rev., 39, 255-316, 1984.",
+  "temporalCoverage": "Start date: 1977-08-20T15:57:30.323. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time, Beginning of Interval",
+      "description": "Time, Beginning of Interval",
+      "unitText": "ms",
+      "minValue": "01-Jan-1996 00:00:00.000",
+      "maxValue": "01-Jan-2020 00:00:00.000",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter exhibits an increasing monotonic progression."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E14.8"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.2987652219904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.3745034619904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time, beginning of interval, 2second variables",
+      "unitText": "ms",
+      "minValue": "01-Jan-1996 00:00:00.000",
+      "maxValue": "01-Jan-2020 00:00:00.000",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.0e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter exhibits an increasing monotonic progression."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E14.8"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "6.2987652219904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "6.3745034619904e+13"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Identifier, HDR1 or LFM",
+      "description": "Data Identifier, the Value is set to either HDR1 or LFM, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "dataID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Telemetry Format",
+      "description": "Telemetry Format, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "telemetryFormat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "ENG,CR-1,CR-2,CR-3,CR-4,CR-5,CR-6,CR-7,CR5A,GS-2,GS-3,GS-4,GS-6,GS-7,GS-8,GS10,G10A,OC-1,OC-2,UV5A,****)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Identification",
+      "description": "Spacecraft Identification. 1 for Voyager 1, 2 for Voyager 2, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SCid"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "FLT1,FLT2,PTM ,SIM1,SIM2,UKWN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Decimal Day of Year",
+      "description": "Decimal Day of Year, January 1 is Day 0",
+      "unitText": "d",
+      "minValue": "0.0",
+      "maxValue": "366.0",
+      "defaultValue": "999.0",
+      "unitCode": "86400>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "decimalDOY"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "DOY (Jan01=0)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F10.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Decimal Day Count",
+      "description": "Decimal Day Count since August 20, 1977",
+      "unitText": "d",
+      "minValue": "0.0",
+      "maxValue": "366.0",
+      "defaultValue": "999.0",
+      "unitCode": "86400>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "decimalDayCnt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Decimal Day Count"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time Type, SCET or ERTS",
+      "description": "Time Type, the Value is set to either SCET, the Spacecraft Event Time, or ERTS, the Earth Receive Time Start, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "timeType"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time Period of the Data Block",
+      "description": "Time Period of the Data Block, 48-s",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "999.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "timePeriod"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Time period"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F6.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "48-min Counter, 2^16 Sequence Counter",
+      "description": "48-min Counter, 2^16 Sequence Counter of Data at Time of Telemetry Readout",
+      "unitText": "",
+      "minValue": "-32767",
+      "maxValue": "32767",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "min48ctr"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "48 Minute Counter"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "48-s Counter, Modulo 60 Sequence Counter",
+      "description": "48-s Counter, Modulo 60 Sequence Counter of Data at Time of Telemetry Readout",
+      "unitText": "",
+      "minValue": "-32767",
+      "maxValue": "32767",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sec48ctr"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "48 Second Counter"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "60-ms Counter, Line Counter",
+      "description": "60-ms Counter, Line Counter of Data at Time of Telemetry Readout",
+      "unitText": "",
+      "minValue": "-32767",
+      "maxValue": "32767",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "msec60ctr"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "60 Millisecond Counter"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MAG Status Word",
+      "description": "MAG Instrument Status Word",
+      "unitText": "",
+      "minValue": "-2147483647",
+      "maxValue": "2147483647",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "magStatus"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MagStatus"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I10"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MAG Command Word",
+      "description": "MAG Instrument Command Word",
+      "unitText": "",
+      "minValue": "-2147483647",
+      "maxValue": "2147483647",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MagCommand"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "MagCommand"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I10"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Identifier, LFM or HDR1",
+      "description": "Data Identifier, 2 denotes LFM, 8 denotes HDR1",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "10",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DataIdInt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Data Identifier"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Rate",
+      "description": "Data Rate",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "10",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DataRate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "GS-X=0,CR-1=1,CR-2=2,CR-3=3,CR-4=4,CR-5=5,CR-6=6,CR-7=9,ENG=8,CR5A=13,UV5A=13: CR5A and UV5A are both VIM-5 modes"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Data Rate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MAG Data Confidence Flag",
+      "description": "MAG Data Confidence Flag, Indicates Reduced Data Confidence due to Software/Hardware Intervention",
+      "unitText": "",
+      "minValue": "-128",
+      "maxValue": "127",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 4",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 5",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 6",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 7",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 8",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "dataConfidence"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Appears to be all fill data - REM 2/27/2014"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Primary Data Words",
+      "description": "Number of Primary Data Words",
+      "unitText": "",
+      "minValue": "-32767",
+      "maxValue": "32767",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "numPrimaryData"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Number of primary data words"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Secondary Data Words",
+      "description": "Number of Secondary Data Words",
+      "unitText": "",
+      "minValue": "-32767",
+      "maxValue": "32767",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "numSecondaryData"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Number of Secondary data words"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Primary Full Words",
+      "description": "Number of Primary Full Words",
+      "unitText": "",
+      "minValue": "-32767",
+      "maxValue": "32767",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "numPrimaryFull"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Number of primary Full words"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Secondary Full Words",
+      "description": "Number of Secondary Full Words",
+      "unitText": "",
+      "minValue": "-32767",
+      "maxValue": "32767",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "numSecondaryFull"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Number of Secondary Full words"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Record Number in File",
+      "description": "Record Number in File",
+      "unitText": "",
+      "minValue": "-32767",
+      "maxValue": "32767",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "recNumber"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Record number in file"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Words remaining in Logical Record",
+      "description": "Number of Words remaining in Logical Record",
+      "unitText": "",
+      "minValue": "-32767",
+      "maxValue": "32767",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "numWordsRemaining"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Number of words remaining in logical record"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voyager 2 Fixed B Field Error",
+      "description": "Voyager 2 Fixed Magnetic Field Error",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Uncertainty"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_error"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Hard-coded V2/2 component uncertainty of 0.02 nT This parameter is virtual. It is calculated by calling the function ERROR_BAR_ARRAY with the following input parameters: F1."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "V2 Fixed B Error"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Field Magnitude by Method 1, F1",
+      "description": "Magnetic Field Magnitude by Method 1, F1, 48-s Average of 9.6-s Magnitudes",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Magnitude (F1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Field Magnitude by Method 2, F2",
+      "description": "Magnetic Field Magnitude by Method 2, F2, 1.92-s Average derived from 1.92-s Averages of the B1, B2, and B3 Component Data by using sqrt(B1^2+B2^2+B3^2)",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Magnitude (F2)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BR, B1, 1.92-s BR, HG Coordinates",
+      "description": "BR, B1, 1.92-s Average of Detail Averages of the Magnetic Field Radial Component in Heliographic (HG) Coordinates",
+      "unitText": "nT",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.I",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BR (B1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BT, B2, 1.92-s HG Coordinates",
+      "description": "BT, B2, 1.92-s Average of Detail Averages of the Magnetic Field Tangential Component in Heliographic (HG) Coordinates",
+      "unitText": "nT",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.J",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BT (B2)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BN, B3, 1.92-s HG Coordinates",
+      "description": "BN, B3, 1.92-s Average of Detail Averages of the Magnetic Field Normal Component in Heliographic (HG) Coordinates",
+      "unitText": "nT",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.K",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BN (B3)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Field Magnitude by Method 1, F1, 100 nT Plot Scale",
+      "description": "Magnetic Field Magnitude by Method 1, F1, 48-s Average of 9.6-s Magnitudes, for 100 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F1_100nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: F1."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Magnitude (F1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Field Magnitude by Method 2, F2, 100 nT Plot Scale",
+      "description": "Magnetic Field Magnitude by Method 2, F2, 1.92-s Average derived from 1.92-s Averages of the B1, B2, and B3 Component Data by using sqrt(B1^2+B2^2+B3^2), 100 nt Plot Scale",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F2_100nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: F2."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Magnitude (F2)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BR, B1, 1.92-s HG Coordinates, 100 nT Plot Scale",
+      "description": "BR, B1, 1.92-s Average of Detail Averages of the Magnetic Field Radial Component in Heliographic (HG) Coordinates, for 100 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.I",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B1_100nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B1."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BR (B1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BT, B2, 1.92-s HG Coordinates, 100 nT Plot Scale",
+      "description": "BT, B2, 1.92-s Average of Detail Averages of the Magnetic Field Tangential Component in Heliographic (HG) Coordinates, for 100 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.J",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B2_100nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B2."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BT (B2)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BN, B3, 1.92-s HG Coordinates, 100 nT Plot Scale",
+      "description": "BN, B3, 1.92-s Average of Detail Averages of the Magnetic Field Normal Component in Heliographic (HG) Coordinates, for 100 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.K",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B3_100nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B3."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BN (B3)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Field Magnitude by Method 1, F1, 10 nT Plot Scale",
+      "description": "Magnetic Field Magnitude by Method 1, F1, 48-s Average of 9.6-s Magnitudes, for 10 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F1_10nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: F1."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Magnitude (F1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Field Magnitude by Method 2, F2, 10 nT Plot Scale",
+      "description": "Magnetic Field Magnitude by Method 2, F2, 1.92-s Average derived from 1.92-s Averages of the B1, B2, and B3 Component Data by using sqrt(B1^2+B2^2+B3^2), 10 nt Plot Scale",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F2_10nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: F2."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Magnitude (F2)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BR, B1, 1.92-s HG Coordinates, 10 nT Plot Scale",
+      "description": "BR, B1, 1.92-s Average of Detail Averages of the Magnetic Field Radial Component in Heliographic (HG) Coordinates, for 10 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.I",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B1_10nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B1."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BR (B1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BT, B2, 1.92-s HG Coordinates, 10 nT Plot Scale",
+      "description": "BT, B2, 1.92-s Average of Detail Averages of the Magnetic Field Tangential Component in Heliographic (HG) Coordinates, for 10 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.J",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B2_10nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B2."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BT (B2)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BN, B3, 1.92-s HG Coordinates, 10 nT Plot Scale",
+      "description": "BN, B3, 1.92-s Average of Detail Averages of the Magnetic Field Normal Component in Heliographic (HG) Coordinates, for 10 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.K",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B3_10nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B3."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BN (B3)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Field Magnitude by Method 1, F1, 1 nT Plot Scale",
+      "description": "Magnetic Field Magnitude by Method 1, F1, 48-s Average of 9.6-s Magnitudes, for 1 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F1_1nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: F1."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Magnitude (F1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Field Magnitude by Method 2, F2, 1 nT Plot Scale",
+      "description": "Magnetic Field Magnitude by Method 2, F2, 1.92-s Average derived from 1.92-s Averages of the B1, B2, and B3 Component Data by using sqrt(B1^2+B2^2+B3^2), 1 nt Plot Scale",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F2_1nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: F2."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Magnitude (F2)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BR, B1, 1.92-s HG Coordinates, 1 nT Plot Scale",
+      "description": "BR, B1, 1.92-s Average of Detail Averages of the Magnetic Field Radial Component in Heliographic (HG) Coordinates, for 1 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.I",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B1_1nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B1."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BR (B1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BT, B2, 1.92-s HG Coordinates, 1 nT Plot Scale",
+      "description": "BT, B2, 1.92-s Average of Detail Averages of the Magnetic Field Tangential Component in Heliographic (HG) Coordinates, for 1 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.J",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B2_1nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B2."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BT (B2)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BN, B3, 1.92-s HG Coordinates, 1 nT Plot Scale",
+      "description": "BN, B3, 1.92-s Average of Detail Averages of the Magnetic Field Normal Component in Heliographic (HG) Coordinates, for 1 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.K",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B3_1nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B3."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BN (B3)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Field Magnitude by Method 1, F1, 0.1 nT Plot Scale",
+      "description": "Magnetic Field Magnitude by Method 1, F1, 48-s Average of 9.6-s Magnitudes, for 0.1 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "0.1",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F1_dot1nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: F1."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Magnitude (F1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Field Magnitude by Method 2, F2, 0.1 nT Plot Scale",
+      "description": "Magnetic Field Magnitude by Method 2, F2, 1.92-s Average derived from 1.92-s Averages of the B1, B2, and B3 Component Data by using sqrt(B1^2+B2^2+B3^2), 0.1 nt Plot Scale",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "0.1",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F2_dot1nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: F2."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Magnitude (F2)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BR, B1, 1.92-s HG Coordinates, 0.1 nT Plot Scale",
+      "description": "BR, B1, 1.92-s Average of Detail Averages of the Magnetic Field Radial Component in Heliographic (HG) Coordinates, for 0.1 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-0.1",
+      "maxValue": "0.1",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.I",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B1_dot1nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B1."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BR (B1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BT, B2, 1.92-s HG Coordinates, 0.1 nT Plot Scale",
+      "description": "BT, B2, 1.92-s Average of Detail Averages of the Magnetic Field Tangential Component in Heliographic (HG) Coordinates, for 0.1 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-0.1",
+      "maxValue": "0.1",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.J",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B2_dot1nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B2."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BT (B2)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BN, B3, 1.92-s HG Coordinates, 0.1 nT Plot Scale",
+      "description": "BN, B3, 1.92-s Average of Detail Averages of the Magnetic Field Normal Component in Heliographic (HG) Coordinates, for 0.1 nT Plot Scale",
+      "unitText": "nT",
+      "minValue": "-0.1",
+      "maxValue": "0.1",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.K",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B3_dot1nt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: B3."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "BN (B3)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Latitudinal B Field Angle, HG Coordinates",
+      "description": "Latitudinal Magnetic Field Angle in Heliographic (HG) Coordinates computed by using asin(B3/F2)",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "999.0",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Cartesian HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "lat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Latitude HG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F6.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Longitudinal B Field Angle, HG Coordinates",
+      "description": "Longitudinal Magnetic Field Angle in Heliographic (HG) Coordinates computed by using 180\u00b0-atan(B2,-B1)",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "999.0",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Cartesian HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "lon"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B-Long HG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F6.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Root Mean Square of BR",
+      "description": "Root Mean Square of the Magnetic Field Radial Component, BR",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RMSB1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "RMS-BR"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Root Mean Square of BT",
+      "description": "Root Mean Square of the Magnetic Field Tangential Component, BT",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RMSB2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "RMS-BT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Root Mean Square of BN",
+      "description": "Root Mean Square of the Magnetic Field Normal Component, BN",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RMSB3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "RMS-BN"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Spacecraft B Field Detail Averages per 1.92-s Average",
+      "description": "Number of Spacecraft Magnetic Field Detail Averages per 1.92-s Average, 0<n<5",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "5",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "numDetailPoints"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "# detail avgs per 1.92s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "48-s Average of Spacecraft BR",
+      "description": "48-s Average of Spacecraft Magnetic Field Radial Component, BR",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.I",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "avg1_48"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Appears to be all fill data - REM 2/27/2014"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "s/c_BR_48s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "48-s Average of Spacecraft BT",
+      "description": "48-s Average of Spacecraft Magnetic Field Tangential Component, BT",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.J",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "avg2_48"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Appears to be all fill data - REM 2/27/2014"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "s/c_BT_48s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "48-s Average Spacecraft BN",
+      "description": "48-s Average Spacecraft Magnetic Field Normal Component, BN",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian HG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Component.K",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "avg3_48"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Appears to be all fill data - REM 2/27/2014"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "s/c_BN_48s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Norm of 48-s Spacecraft B Field Component Averages",
+      "description": "Norm of 48-s Spacecraft Magnetic Field Component Averages",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "norm48"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Appears to be all fill data - REM 2/27/2014"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "s/c_Bmag_48s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RMS of 48-s Averaged Spacecraft BR",
+      "description": "Root Mean Square of 48-s Averaged Spacecraft Magnetic Field Radial Component, BR",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RMS1_48"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Appears to be all fill data - REM 2/27/2014"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "s/c_BRrms_48s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RMS of 48-s Averaged Spacecraft BT",
+      "description": "Root Mean Square of 48-s Averaged Spacecraft Magnetic Field Tangential Component, BT",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RMS2_48"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Appears to be all fill data - REM 2/27/2014"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "s/c_BTrms_48s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RMS of 48-s Averaged Spacecraft BN",
+      "description": "Root Mean Square of 48-s Averaged Spacecraft Magnetic Field Normal Component, BN",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RMS3_48"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Appears to be all fill data - REM 2/27/2014"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "s/c_BNrms_48s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of 9.6-s Spacecraft B Field Averages per 48-s Average",
+      "description": "Number of 9.6-s Spacecraft Magnetic Field Averages per 48-s Average, 0<n<5",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "99",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "num_9_6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Appears to be all fill data - REM 2/27/2014"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Numb 9.6 fld avg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TN, Epic Day of Navigation Block Closest to Data Time",
+      "description": "TN, Epic Day of Navigation Block Closest to Data Time",
+      "unitText": "d",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "999.0",
+      "unitCode": "86400>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "epicDayNav"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epic day nav block"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TP, Epic Day of Pointing Vector Block Closest to Data Time",
+      "description": "TP, Epic Day of Pointing Vector Block Closest to Data Time",
+      "unitText": "d",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "999.0",
+      "unitCode": "86400>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "epicDayVec"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epic day vec block"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F13.6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voyager 2 Spacecraft Position X Component, HGI Coordinates",
+      "description": "Voyager 2 Spacecraft Position X Component in Heliographic Inertial (HGI) Coordinates",
+      "unitText": "ua",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1.495978706961e11>m",
+      "measurementTechnique": "Cartesian HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "x"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Xihg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voyager 2 Spacecraft Position Y Component, HGI Coordinates",
+      "description": "Voyager 2 Spacecraft Position Y Component in Heliographic Inertial (HGI) Coordinates",
+      "unitText": "ua",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1.495978706961e11>m",
+      "measurementTechnique": "Cartesian HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "y"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Yihg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voyager 2 Spacecraft Position Z Component, HGI Coordinates",
+      "description": "Voyager 2 Spacecraft Position Z Component in Heliographic Inertial (HGI) Coordinates",
+      "unitText": "ua",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1.495978706961e11>m",
+      "measurementTechnique": "Cartesian HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "z"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Zihg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voyager 2 X Velocity, HGI Coordinates",
+      "description": "Voyager 2 Velocity X Component in Heliographic Inertial (HGI) Coordinates",
+      "unitText": "km/s",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Velocity",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "xvel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "VX_ihg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voyager 2 Y Velocity, HGI Coordinates",
+      "description": "Voyager 2 Velocity Y Component in Heliographic Inertial (HGI) Coordinates",
+      "unitText": "km/s",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Velocity",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "yvel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "VY_ihg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voyager 2 Z Velocity, HGI Coordinates",
+      "description": "Voyager 2 Velocity Z Component in Heliographic Inertial (HGI) Coordinates",
+      "unitText": "km/s",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Velocity",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "zvel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "VZ_ihg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voyager 2 Radial Distance from Sun",
+      "description": "Voyager 2 Radial Distance from the Sun",
+      "unitText": "ua",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "unitCode": "1.495978706961e11>m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "scDistance"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "V2 Dist"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voyager 2 Spacecraft Position Longitude, HGI Coordinates",
+      "description": "Voyager 2 Spacecraft Position Longitude in Heliographic Inertial (HGI) Coordinates computed by using atan(Y/X)",
+      "unitText": "rad",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "measurementTechnique": "Spherical HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "scLon"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "V2 Long_ihg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voyager 2 Spacecraft Position Latitude, HGI Coordinates",
+      "description": "Voyager 2 Spacecraft Position Latitude in Heliographic Inertial (HGI) Coordinates computed by using asin(Z/R)",
+      "unitText": "rad",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "measurementTechnique": "Spherical HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "scLat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "V2 Lat_ihg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Matrix1 Rotation Matrix, HGI to HG",
+      "description": "Matrix1, Rotation Matrix that Transforms a 3-Element Vector from Heliographic Inertial (HGI) Coordinates to Heliographic (HG) Coordinates",
+      "unitText": "",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "M1:E1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M1:E2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M1:E3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M1:E4",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M1:E5",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M1:E6",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M1:E7",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M1:E8",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M1:E9",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Tensor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "matrix1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Matrix 1 transforms three element vector from Inertial Heliographic to heliographic coordinates."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Matrix2 Rotation Matrix, EME 50 to HG",
+      "description": "Matrix2, Rotation Matrix that Transforms a 3-Element Vector from Earth Mean Ecliptic, Equinox of 1950 (EME 50) Coordinates to Heliographic (HG) Coordinates",
+      "unitText": "",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "M2:E1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M2:E2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M2:E3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M2:E4",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M2:E5",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M2:E6",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M2:E7",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M2:E8",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M2:E9",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Tensor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "matrix2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Matrix 2 transforms three element vector from Earth Mean ecliptic, Equinox of 1950 (EME 50) to Heliographic (HG) coordinates."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Matrix3 Rotation Matrix, Payload to HG",
+      "description": "Matrix3, Rotation Matrix that Transforms a 3-Element Vector from Payload Coordinates to Heliographic (HG) Coordinates",
+      "unitText": "",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "999.0",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "M3:E1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M3:E2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M3:E3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M3:E4",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M3:E5",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M3:E6",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M3:E7",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M3:E8",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "M3:E9",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Tensor"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "matrix3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Matrix 3 transforms three element vector from payload coordinates to Heliographic coordinates."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F8.3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Record Type, Header",
+      "description": "Record Type, Header, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "recTypeHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Telemetry Format, Header",
+      "description": "Telemetry Format, Header, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "telFmtHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft ID, Header",
+      "description": "Spacecraft ID, Header, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "scIDHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time, Header",
+      "description": "Time, Header",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": "-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 4",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 5",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 6",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "timeHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Run Year, Header",
+      "description": "Run Year, Header",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "99",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "runYearHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "run year (header)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Calendar Day, Header",
+      "description": "Calendar Day, Header",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "366",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "calDayHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "calendar day (header)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Run Month, Header",
+      "description": "Run Month, Header, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "runMonthHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Run Day, Header",
+      "description": "Run Day, Header",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "31",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "runDayHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "run day (header)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Run Type, Header",
+      "description": "Run Type, Header, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "runTypeHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Coordinate, Header",
+      "description": "Coordinate, Header, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "coordHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data ID, Header",
+      "description": "Data ID, Header",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": "-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "dataIDHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Word 32, Header",
+      "description": "Word 32, Header",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": "-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "word32Head"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EDR System, Header",
+      "description": "EDR System, Header",
+      "unitText": "",
+      "minValue": "-128",
+      "maxValue": "127",
+      "defaultValue": "-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 4",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 5",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 6",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 7",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 8",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 9",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 10",
+          "description": "",
+          "position": "10",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 11",
+          "description": "",
+          "position": "11",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 12",
+          "description": "",
+          "position": "12",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 13",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 14",
+          "description": "",
+          "position": "14",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 15",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 16",
+          "description": "",
+          "position": "16",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 17",
+          "description": "",
+          "position": "17",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 18",
+          "description": "",
+          "position": "18",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 19",
+          "description": "",
+          "position": "19",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 20",
+          "description": "",
+          "position": "20",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 21",
+          "description": "",
+          "position": "21",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 22",
+          "description": "",
+          "position": "22",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 23",
+          "description": "",
+          "position": "23",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 24",
+          "description": "",
+          "position": "24",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 25",
+          "description": "",
+          "position": "25",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 26",
+          "description": "",
+          "position": "26",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 27",
+          "description": "",
+          "position": "27",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 28",
+          "description": "",
+          "position": "28",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 29",
+          "description": "",
+          "position": "29",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 30",
+          "description": "",
+          "position": "30",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 31",
+          "description": "",
+          "position": "31",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 32",
+          "description": "",
+          "position": "32",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "edrsysHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MAG System, Header",
+      "description": "MAG System, Header",
+      "unitText": "",
+      "minValue": "-128",
+      "maxValue": "127",
+      "defaultValue": "-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 4",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 5",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 6",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 7",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 8",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 9",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 10",
+          "description": "",
+          "position": "10",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 11",
+          "description": "",
+          "position": "11",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 12",
+          "description": "",
+          "position": "12",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 13",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 14",
+          "description": "",
+          "position": "14",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 15",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 16",
+          "description": "",
+          "position": "16",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 17",
+          "description": "",
+          "position": "17",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 18",
+          "description": "",
+          "position": "18",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 19",
+          "description": "",
+          "position": "19",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 20",
+          "description": "",
+          "position": "20",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 21",
+          "description": "",
+          "position": "21",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 22",
+          "description": "",
+          "position": "22",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 23",
+          "description": "",
+          "position": "23",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 24",
+          "description": "",
+          "position": "24",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 25",
+          "description": "",
+          "position": "25",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 26",
+          "description": "",
+          "position": "26",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 27",
+          "description": "",
+          "position": "27",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 28",
+          "description": "",
+          "position": "28",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 29",
+          "description": "",
+          "position": "29",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 30",
+          "description": "",
+          "position": "30",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 31",
+          "description": "",
+          "position": "31",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 32",
+          "description": "",
+          "position": "32",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "magsysHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zero Name, Header",
+      "description": "Zero Name, Header, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "zeroNameHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sensor Name, Header",
+      "description": "Sensor Name, Header, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sensNameHead"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Record Type, Trailer",
+      "description": "Record Type, Trailer, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "recTypeTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Telemetry Format, Trailer",
+      "description": "Telemetry Format, Trailer, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "telFmtTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft ID, Trailer",
+      "description": "Spacecraft ID, Trailer, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "scIDTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time, Trailer",
+      "description": "Time, Trailer",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": "-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 4",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 5",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 6",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "timeTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Run Year, Trailer",
+      "description": "Run Year, Trailer",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "99",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "runYearTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "run year (trailer)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Calendar Day, Trailer",
+      "description": "Calendar Day, Trailer",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "366",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "calDayTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "calendar day (trailer)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Run Month, Trailer",
+      "description": "Run Month, Trailer, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "runMonthTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Run Day, Trailer",
+      "description": "Run Day, Trailer",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "31",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "runDayTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "run day (trailer)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Run Type, Trailer",
+      "description": "Run Type, Trailer, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "runTypeTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Coordinate, Trailer",
+      "description": "Coordinate, Trailer, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "coordTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data ID, Trailer",
+      "description": "Data ID, Trailer",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": "-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "dataIDTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Word 32, Trailer",
+      "description": "Word 32, Trailer",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": "-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "word32Trail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EDR System, Trailer",
+      "description": "EDR System, Trailer",
+      "unitText": "",
+      "minValue": "-128",
+      "maxValue": "127",
+      "defaultValue": "-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 4",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 5",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 6",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 7",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 8",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 9",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 10",
+          "description": "",
+          "position": "10",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 11",
+          "description": "",
+          "position": "11",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 12",
+          "description": "",
+          "position": "12",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 13",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 14",
+          "description": "",
+          "position": "14",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 15",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 16",
+          "description": "",
+          "position": "16",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 17",
+          "description": "",
+          "position": "17",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 18",
+          "description": "",
+          "position": "18",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 19",
+          "description": "",
+          "position": "19",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 20",
+          "description": "",
+          "position": "20",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 21",
+          "description": "",
+          "position": "21",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 22",
+          "description": "",
+          "position": "22",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 23",
+          "description": "",
+          "position": "23",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 24",
+          "description": "",
+          "position": "24",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 25",
+          "description": "",
+          "position": "25",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 26",
+          "description": "",
+          "position": "26",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 27",
+          "description": "",
+          "position": "27",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 28",
+          "description": "",
+          "position": "28",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 29",
+          "description": "",
+          "position": "29",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 30",
+          "description": "",
+          "position": "30",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 31",
+          "description": "",
+          "position": "31",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 32",
+          "description": "",
+          "position": "32",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "edrsysTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MAG System, Trailer",
+      "description": "MAG System, Trailer",
+      "unitText": "",
+      "minValue": "-128",
+      "maxValue": "127",
+      "defaultValue": "-1",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Element 1",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 2",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 3",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 4",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 5",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 6",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 7",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 8",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 9",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 10",
+          "description": "",
+          "position": "10",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 11",
+          "description": "",
+          "position": "11",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 12",
+          "description": "",
+          "position": "12",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 13",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 14",
+          "description": "",
+          "position": "14",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 15",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 16",
+          "description": "",
+          "position": "16",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 17",
+          "description": "",
+          "position": "17",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 18",
+          "description": "",
+          "position": "18",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 19",
+          "description": "",
+          "position": "19",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 20",
+          "description": "",
+          "position": "20",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 21",
+          "description": "",
+          "position": "21",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 22",
+          "description": "",
+          "position": "22",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 23",
+          "description": "",
+          "position": "23",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 24",
+          "description": "",
+          "position": "24",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 25",
+          "description": "",
+          "position": "25",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 26",
+          "description": "",
+          "position": "26",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 27",
+          "description": "",
+          "position": "27",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 28",
+          "description": "",
+          "position": "28",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 29",
+          "description": "",
+          "position": "29",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 30",
+          "description": "",
+          "position": "30",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 31",
+          "description": "",
+          "position": "31",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Element 32",
+          "description": "",
+          "position": "32",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "magsysTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zero Name, Trailer",
+      "description": "Zero Name, Trailer, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "zeroNameTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sensor Name, Trailer",
+      "description": "Sensor Name, Trailer, List only",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sensNameTrail"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1.92S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "A8"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Heliosheath"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

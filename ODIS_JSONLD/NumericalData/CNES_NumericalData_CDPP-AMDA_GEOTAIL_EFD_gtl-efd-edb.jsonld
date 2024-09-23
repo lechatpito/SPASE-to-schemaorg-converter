@@ -1,0 +1,151 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_GEOTAIL_EFD_gtl-efd-edb.jsonld",
+  "name": "Geotail - EFD - editor B",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_GEOTAIL_EFD_gtl-efd-edb.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Koichiro.Tsuruda",
+    "url": "http://hpde.io/SMWG/Person/Koichiro.Tsuruda"
+  },
+  "sdDatePublished": "2023-08-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/GEOTAIL/EFD/gtl-efd-edb",
+  "creditText": "Geotail - EFD - editor B.",
+  "description": "3-second Editor-B electric field data from the Geotail spacecraft.\n                EFD-P does not measure the electric field component parallel to the spin axis.\n                The Ex and Ey components in downloaded ASCII files are in satellite coordinates, which are nearly equivalent to GSE coordinates.\n                The Ex component should not be used because of the offset due to photoelectrons.\n      \n            ",
+  "abstract": "3-second Editor-B electric field data from the Geotail spacecraft.\n                EFD-P does not measure the electric field component parallel to the spin axis.\n                The Ex and Ey components in downloaded ASCII files are in satellite coordinates, which are nearly equivalent to GSE coordinates.\n                The Ex component should not be used because of the offset due to photoelectrons.\n      \n            ",
+  "temporalCoverage": "Start date: 1992-09-18T00:00:08Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e_gse",
+      "description": "Electric field vector in SC cartesian coordinates, which are nearly equivalent to GSE coordinates",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "ex",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ey",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_e_edb"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c potential",
+      "description": "spacecraft potential",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-90",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_e_edb_pot"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rem",
+      "description": "Deviation of the electric field from a sine wave",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-90",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "gtl_e_edb_rem"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

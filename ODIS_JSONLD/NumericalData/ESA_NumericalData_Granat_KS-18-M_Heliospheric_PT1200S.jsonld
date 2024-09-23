@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Granat_KS-18-M_Heliospheric_PT1200S.jsonld",
+  "name": "Russian MSU Granat Heliopsheric Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Granat_KS-18-M_Heliospheric_PT1200S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Natalia.E.Papitashvili",
+    "url": "http://hpde.io/SMWG/Person/Natalia.E.Papitashvili"
+  },
+  "sdDatePublished": "2020-07-03",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/russian_msu/granat/heliospheric_data/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In ASCII via nssdcftp"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/russian_msu/granat/heliospheric_data/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/NumericalData/Granat/KS-18-M/Heliospheric/PT1200S",
+  "creditText": "Russian MSU Granat Heliopsheric Data.",
+  "description": "This set of heliospheric data in ASCII contains measurements of energetic particles by the KS-18-M instrument onboard the high-altitude satellite GRANAT at large distances from the Earth. Besides the geographic coordinates of the spacecraft, the altitude is also plotted for 1989-95 as an illustration of evolution of the GRANAT's perigee.",
+  "abstract": "This set of heliospheric data in ASCII contains measurements of energetic particles by the KS-18-M instrument onboard the high-altitude satellite GRANAT at large distances from the Earth. Besides the geographic coordinates of the spacecraft, the altitude is also plotted for 1989-95 as an illustration of evolution of the GRANAT's perigee.",
+  "temporalCoverage": "Start date: 1989-12-02T00:00:00. Relative stop date: None",
+  "variableMeasured": "EnergeticParticles",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

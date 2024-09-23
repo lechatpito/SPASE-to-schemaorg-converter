@@ -1,0 +1,1452 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SCATHA_Science_PT1S.jsonld",
+  "name": "SCATHA Science Full Resolution Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SCATHA_Science_PT1S.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://mag.gmu.edu/ftp/users/obrien/scatha/cdf/scatha_high_res/",
+      "encodingFormat": "CDF",
+      "name": "SCATHA High Resolution CDF Files",
+      "description": "Top-level page for this data set"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/SCATHA/Science/PT1S",
+  "creditText": "SCATHA Science Full Resolution Data.",
+  "description": "SCATHA Science Full Resolution Data",
+  "abstract": "SCATHA Science Full Resolution Data",
+  "temporalCoverage": "Start date: 1979-02-06T00:00:00.00000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "NSSDC Standard Time",
+      "description": "",
+      "unitText": "ms",
+      "minValue": "01-Jan-1979 00:00:00.000",
+      "maxValue": "21-May-1990 23:59:59.000",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data quality/status indicator",
+      "description": "",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Rec_Status"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Satelite period associated time",
+      "description": "",
+      "unitText": "ms",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Sat_per_Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Satelite period",
+      "description": "",
+      "unitText": "s/spin",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Sat_period"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mag. Field in Cartesian Spacecraft coordinates",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_Sat"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mag. Field in Cartesian Spacecraft coordinates",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_ECI"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mag. Field in Cartesian Spacecraft coordinates",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_GSM"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field VLF wave amplitude",
+      "description": "",
+      "unitText": "dBV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EVLFAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-field VLF wave amplitude",
+      "description": "",
+      "unitText": "dBnT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BVLFAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Antenna mode - 'E'/'M'",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "AntMode"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ele. Antenna look angle for VLF exp. (old calc)",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "AntELA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mag. Antenna look angle (SC1-8a)",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "AntMLA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Common mode S/C postive potential - unconverted",
+      "description": "",
+      "unitText": "",
+      "minValue": "-128.0",
+      "maxValue": "127.0",
+      "defaultValue": "-128.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CMPSCPot"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Common mode S/C potential, +/-15 volts",
+      "description": "",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CM1SCPot"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Common mode S/C potential, +/-300 volts",
+      "description": "",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CM2SCPot"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Common mode S/C potential, +/-5000 volts",
+      "description": "",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "CM3SCPot"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DC E-field magnitude low gain (gain = 0.025",
+      "description": "",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EDCLo"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DC E-field magnitude AC range (gain = 2.5",
+      "description": "",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EAC"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DC E-field magnitude high gain (gain = 0.25",
+      "description": "",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EDCHi"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field ELF wave amplitude",
+      "description": "",
+      "unitText": "TM V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "EELFAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-field ELF wave amplitude",
+      "description": "",
+      "unitText": "TM V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BELFAmp"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1,-2, -3 status bit word",
+      "description": "",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "65535.0",
+      "defaultValue": "-128.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC2Stat"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1 pitch angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC21PA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1 sun angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC21SA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1 probe voltage",
+      "description": "",
+      "unitText": "V",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-9999.9",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC2PV1"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1,-2 detector bias boost indicator",
+      "description": "",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "2.0",
+      "defaultValue": "-9.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC21DBias"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1 Differential Electron Plasma Flux",
+      "description": "",
+      "unitText": "electrons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC21EFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1 Differential Proton Plasma Flux",
+      "description": "",
+      "unitText": "protons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC21PFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1 program id",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC21Prog"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1 mode",
+      "description": "",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "63.0",
+      "defaultValue": "-99.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC21Mode"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1 energy step number",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC21Step"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1 mode/step0/step4 identifier",
+      "description": "",
+      "unitText": "",
+      "minValue": "-128.0",
+      "maxValue": "63.0",
+      "defaultValue": "64.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC21ModeCheck"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-2 pitch angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC22PA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-2 sun angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC22SA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-2 probe voltage",
+      "description": "",
+      "unitText": "V",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-9999.9",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC2PV2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-1,-2 detector bias boost indicator",
+      "description": "",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "2.0",
+      "defaultValue": "-9.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC22DBias"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-2 Differential Electron Plasma Flux",
+      "description": "",
+      "unitText": "electrons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC22EFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-2 Differential Proton Plasma Flux",
+      "description": "",
+      "unitText": "protons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC22PFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-2 program id",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC22Prog"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-2 mode",
+      "description": "",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "63.0",
+      "defaultValue": "-99.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC22Mode"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-2 energy step number",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC22Step"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-2 mode/step0/step4 identifier",
+      "description": "",
+      "unitText": "",
+      "minValue": "-128.0",
+      "maxValue": "63.0",
+      "defaultValue": "64.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC22ModeCheck"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-3 pitch angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23PA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-3 sun angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23SA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-3 detector bias boost indicator",
+      "description": "",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "2.0",
+      "defaultValue": "-9.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23DBias"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-3 Differential Electron Plasma Flux",
+      "description": "",
+      "unitText": "electrons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23EFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-3 Differentail Proton Plasma Flux",
+      "description": "",
+      "unitText": "protons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23PFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-3 program id",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23Prog"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-3 mode",
+      "description": "",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "63.0",
+      "defaultValue": "-99.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23Mode"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-3 energy step",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23Step"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-3 mode/step0/step4 identifier",
+      "description": "",
+      "unitText": "",
+      "minValue": "-128.0",
+      "maxValue": "63.0",
+      "defaultValue": "64.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23ModeCheck"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC23B Heavier Ion Particle Flux",
+      "description": "",
+      "unitText": "ions/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23BPFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC2-3B ion pitch angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC23BPA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC26 Differential Proton Particle Flux",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC26PFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC26 pitch angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC26PA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC26 sun angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC26SA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC3 status bit word",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC3Stat"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC3 Differential Electron raw particle count",
+      "description": "",
+      "unitText": "counts",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC3ECnts"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC3 pitch angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC3PA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC8 status bit word",
+      "description": "",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "65535.0",
+      "defaultValue": "0.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC8Stat"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC8 electron flux",
+      "description": "",
+      "unitText": "electrons/(cm^2 sec str keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC8EFlx"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC8 electron pitch angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC8EPA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC10 electric antenna look angle (new calc)",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC10ELA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC10 magnetic antenna look angle (new calc)",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC10MLA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC10 electric antenna sun angle",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-999.99",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC10SA"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC10 instrument status byte",
+      "description": "",
+      "unitText": "",
+      "minValue": "-128.0",
+      "maxValue": "127.0",
+      "defaultValue": "-128.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC10Stat"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion/Electron gun operation flag",
+      "description": "",
+      "unitText": "",
+      "minValue": "-128.0",
+      "maxValue": "127.0",
+      "defaultValue": "-128.0",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "GunStat"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

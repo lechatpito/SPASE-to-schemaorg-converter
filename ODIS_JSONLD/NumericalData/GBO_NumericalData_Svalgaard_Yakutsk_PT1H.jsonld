@@ -1,0 +1,187 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_Svalgaard_Yakutsk_PT1H.jsonld",
+  "name": "Magnetic Field Hourly Mean Yakutsk Station",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_Svalgaard_Yakutsk_PT1H.jsonld",
+  "sdDatePublished": "2019-05-05",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://vmo.igpp.ucla.edu/data1/Svalgaard/YAK.TXT",
+      "encodingFormat": "Text",
+      "name": "VMO Data Repository",
+      "description": "The Virtual Magnetospheric Observatory Data Repository hosted by the Institute of Geophysics and Planetary Physics, University of California, Los Angeles."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/Svalgaard/Yakutsk/PT1H",
+  "creditText": "Magnetic Field Hourly Mean Yakutsk Station.",
+  "description": "Hourly mean magnetic field data determined for magnetometer data from the Yakutsk station (IAGA Station Code: YAK).  The field observations that have been corrected for possible errors in timing, calibration, sign, transcription, omission, and misunderstanding. The hourly mean is calculated using data from the beginning of the hour to the end.",
+  "abstract": "Hourly mean magnetic field data determined for magnetometer data from the Yakutsk station (IAGA Station Code: YAK).  The field observations that have been corrected for possible errors in timing, calibration, sign, transcription, omission, and misunderstanding. The hourly mean is calculated using data from the beginning of the hour to the end.",
+  "temporalCoverage": "Start date: 1956-01-01T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Universal Time (UT) Start of Hour",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field (DHZ)",
+      "description": "Magnetic Field Vector expressed by using H, D and Z.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cylindrical CGM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "D",
+          "description": "DirectionAngle.AzimuthAngle",
+          "position": "1",
+          "defaultValue": "999999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "H",
+          "description": "Projection.IJ",
+          "position": "2",
+          "defaultValue": "999999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "999999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field (XYZ)",
+      "description": "Total Magnetic Field Vector expressed by using X, Y, and Z",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian CGM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "999999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "999999"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "999999"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "keywords": [
+    "Yakutsk",
+    "YAK",
+    "IAGA:YAK",
+    "Magnetic Field",
+    "Magnetometer",
+    "Ground Station"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

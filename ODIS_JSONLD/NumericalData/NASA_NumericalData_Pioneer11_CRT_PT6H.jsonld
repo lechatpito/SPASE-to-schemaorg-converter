@@ -1,0 +1,182 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Pioneer11_CRT_PT6H.jsonld",
+  "name": "Pioneer 11 Cosmic-Ray Telescope (CRT) 6-hr fluxes and rates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Pioneer11_CRT_PT6H.jsonld",
+  "sdDatePublished": "2021-03-11",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/p11_part_crt_6h.html",
+      "encodingFormat": "Text",
+      "name": "FTPBrowser",
+      "description": "For display and retrieval of parameter subsets"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/flux_spectr_m.html",
+      "encodingFormat": "Text",
+      "name": "Multi-Source Spectral Plot",
+      "description": "Multi-source spectral plots (MSSP) of energetic particle fluxes for Z less than or equal to 2."
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/pioneer/pioneer11/particle/crt/ip_6hour_ascii/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "For ftp downloading of annual files"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/pioneer/pioneer11/particle/crt/ip_6hour_ascii/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Pioneer11/CRT/PT6H",
+  "creditText": "Pioneer 11 Cosmic-Ray Telescope (CRT) 6-hr fluxes and rates.",
+  "description": "This data set has eight 6-hour fluxes (3.45-5.15, 30.55-56.47 and 120.7-227.3 MeV protons, 3.44-4.97, 10.03-21.7, 30.67-56.7 and 112.7-413 MeV/n alpha particles, and 2-6 MeV electrons), 28 count rates, and Poisson uncertainties in the fluxes and rates, as determined from the Cosmic Ray Telescope (CRT) on the Pioneer 11 spacecraft.  Data are in annual files with consistent end-of-record marks.  Spacecraft position data are not given in the data records but are accessible from Helioweb at http://cohoweb.gsfc.nasa.gov/helios/heli.html",
+  "abstract": "This data set has eight 6-hour fluxes (3.45-5.15, 30.55-56.47 and 120.7-227.3 MeV protons, 3.44-4.97, 10.03-21.7, 30.67-56.7 and 112.7-413 MeV/n alpha particles, and 2-6 MeV electrons), 28 count rates, and Poisson uncertainties in the fluxes and rates, as determined from the Cosmic Ray Telescope (CRT) on the Pioneer 11 spacecraft.  Data are in annual files with consistent end-of-record marks.  Spacecraft position data are not given in the data records but are accessible from Helioweb at http://cohoweb.gsfc.nasa.gov/helios/heli.html",
+  "temporalCoverage": "Start date: 1973-04-02T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Flux 3.45-5.15 MeV",
+      "description": "This flux is obtained from LET-I and is derived from pulse height data using R11A for normalization",
+      "unitText": "particles/(cm**2 sec ster MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.000000e+00",
+      "valueReference": []
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Flux 30.55-56.47 MeV",
+      "description": "This flux is obtained from HET and is derived from pulse height data using R1 for normalization",
+      "unitText": "particles/(cm**2 sec ster MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.000000e+00",
+      "valueReference": []
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Flux 120.7-227.3 MeV",
+      "description": "This flux is obtained from HET and is derived from pulse height data using R2 for normalization",
+      "unitText": "particles/(cm**2 sec ster MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.000000e+00",
+      "valueReference": []
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium Flux 3.44-4.97 MeV/n",
+      "description": "This flux is obtained from LET-1 and is derived from pulse height data using R11B for normalization",
+      "unitText": "particles/(cm**2 sec ster MeV/n)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.000000e+00",
+      "valueReference": []
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium Flux 10.03-21.7 MeV/n",
+      "description": "This flux is obtained from LET-1 and is derived from pulse height data using R11B for normalization",
+      "unitText": "particles/(cm**2 sec ster MeV/n)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.000000e+00",
+      "valueReference": []
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium Flux 30.67-56.7 MeV/n",
+      "description": "This flux is obtained from HET and is derived from pulse height data using R2B for normalization",
+      "unitText": "particles/(cm**2 sec ster MeV/n)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.000000e+00",
+      "valueReference": []
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium Flux 112.7-413 MeV/n",
+      "description": "This flux is obtained from HET and is derived from pulse height data using R3A for normalization",
+      "unitText": "particles/(cm**2 sec ster MeV/n)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.000000e+00",
+      "valueReference": []
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux 2-6 MeV",
+      "description": "This flux is obtained from HET and is derived from pulse height data using R1 for normalization",
+      "unitText": "particles/(cm**2 sec ster MeV/n)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.000000e+00",
+      "valueReference": []
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Poisson uncertainties in fluxes",
+      "description": "These are the Poisson uncertainties in the eight fluxes named above as scalars.  In the data records, each immediately follows the flux it refers to.",
+      "unitText": "particles/(cm**2 sec ster MeV/n)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.000000e+00",
+      "valueReference": []
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Count rates",
+      "description": "These are 28 6-hour-averaged count rates corresponding to various telescope sensors singly and in coincidence, and, for some, for various levels of energy deposition in sensors.  The documentation cited above gives conditions for each rate: which sensors, which species (one or more), etc.",
+      "unitText": "particles/sec",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.000000e+00",
+      "valueReference": []
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Count rate uncertainties",
+      "description": "These are Poisson uncertainties in each of the above-identified 28 6-hour-averaged count rates corresponding to various telescope sensors singly and in coincidence, and, for some, for various levels of energy deposition in sensors.  The documentation cited above gives conditions for each rate: which sensors, which species (one or more), etc.  The uncertainty for each count rate immediately follows that count rate in the data records.",
+      "unitText": "particles/sec",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.000000e+00",
+      "valueReference": []
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

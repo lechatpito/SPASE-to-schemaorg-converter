@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_Learmonth_GONG_PT86400S.jsonld",
+  "name": "GONG Solar Data from Learmonth",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_Learmonth_GONG_PT86400S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/NISP.Contact",
+    "url": "http://hpde.io/SMWG/Person/NISP.Contact"
+  },
+  "sdDatePublished": "2021-04-23",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://gong.nso.edu/",
+      "encodingFormat": "FITS",
+      "name": "about GONG, from NSO",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://nso.edu/data/nisp-data/",
+      "encodingFormat": "FITS",
+      "name": "NISP Data Site",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sdac.virtualsolar.org/cgi/search",
+      "encodingFormat": "FITS",
+      "name": "Virtual Solar Observatory",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/Learmonth/GONG/PT86400S",
+  "creditText": "GONG Solar Data from Learmonth.",
+  "description": "GONG (Global Oscillations Network Group) helioseismology data from Learmonth Observatory, LOS_velocity and LOS_magnetic field data, 6768 A.",
+  "abstract": "GONG (Global Oscillations Network Group) helioseismology data from Learmonth Observatory, LOS_velocity and LOS_magnetic field data, 6768 A.",
+  "temporalCoverage": "Start date: 2001-04-30T00:00:00. Relative stop date: -P3M",
+  "variableMeasured": [
+    "Dopplergram",
+    "Magnetogram",
+    "ImageIntensity"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Photosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

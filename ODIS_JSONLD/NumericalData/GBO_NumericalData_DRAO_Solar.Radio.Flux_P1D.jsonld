@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_DRAO_Solar.Radio.Flux_P1D.jsonld",
+  "name": "F10.7 Solar Radio Flux",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_DRAO_Solar.Radio.Flux_P1D.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Ken.Tapping",
+    "url": "http://hpde.io/SMWG/Person/Ken.Tapping"
+  },
+  "sdDatePublished": "2018-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftp://ftp.ngdc.noaa.gov/STP/space-weather/solar-data/solar-features/solar-radio/noontime-flux/penticton/",
+      "encodingFormat": "Text",
+      "name": "F10.7 and related data from NOAA/NGDC's ftp area",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/DRAO/Solar.Radio.Flux/P1D",
+  "creditText": "F10.7 Solar Radio Flux.",
+  "description": "F10.7 cm (2800 MHz) solar radio flux observed at Ottowa (1947-1991) and now at Dominion Radio Astrophysical Observatory, Solar Radio Monitoring Program, National Research Council, Canada. Three flux measurements daily; cf. J. Geophys. Res., v. 92, p. 829, 1987",
+  "abstract": "F10.7 cm (2800 MHz) solar radio flux observed at Ottowa (1947-1991) and now at Dominion Radio Astrophysical Observatory, Solar Radio Monitoring Program, National Research Council, Canada. Three flux measurements daily; cf. J. Geophys. Res., v. 92, p. 829, 1987",
+  "temporalCoverage": "Start date: 1947-02-14T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": [
+    "Irradiance",
+    "ActivityIndex"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

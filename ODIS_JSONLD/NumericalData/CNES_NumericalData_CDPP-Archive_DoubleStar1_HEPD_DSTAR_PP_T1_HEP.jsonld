@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DoubleStar1_HEPD_DSTAR_PP_T1_HEP.jsonld",
+  "name": "Double Star 1 HEPD Prime Parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_DoubleStar1_HEPD_DSTAR_PP_T1_HEP.jsonld",
+  "sdDatePublished": "2021-11-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_PP_T1_HEP",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/DoubleStar1/HEPD/DSTAR_PP_T1_HEP",
+  "creditText": "Double Star 1 HEPD Prime Parameters.",
+  "description": "The High Energy Proton Detector instruments (HEPD) are located on board of both the equatorial (Double Star 1) and polar (Double Star 2) satellites. They detect protons with energies between 3 MeV and 400 MeV.\n\nThis data set contains the Double Star 1 HEPD prime  parameters at spin resolution  (proton fluxes in three energy bands and instrument status)",
+  "abstract": "The High Energy Proton Detector instruments (HEPD) are located on board of both the equatorial (Double Star 1) and polar (Double Star 2) satellites. They detect protons with energies between 3 MeV and 400 MeV.\n\nThis data set contains the Double Star 1 HEPD prime  parameters at spin resolution  (proton fluxes in three energy bands and instrument status)",
+  "temporalCoverage": "Start date: 2005-07-28T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HEPD Proton flux (30 - 410 MeV) Prime  Parameter",
+      "description": "Double Star 1 HEPD  Proton flux (30 - 410 MeV energy range,\nnon-standard time resolution: 19.8 s) Prime Parameter",
+      "unitText": "cm^-2 s^-1 sr^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HEPD Instrument Status Prime Parameter",
+      "description": "Double Star 1 HEPD Instrument Status Prime Parameter",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

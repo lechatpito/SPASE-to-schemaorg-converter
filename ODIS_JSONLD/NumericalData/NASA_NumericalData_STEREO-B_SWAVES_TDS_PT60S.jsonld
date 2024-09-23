@@ -1,0 +1,173 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-B_SWAVES_TDS_PT60S.jsonld",
+  "name": "STEREO-B SWAVES One minute Time Domain Sampler Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_STEREO-B_SWAVES_TDS_PT60S.jsonld",
+  "sdDatePublished": "2020-07-10",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/stereo/behind/swaves/tds/",
+      "encodingFormat": "Text.ASCII",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "FTPS access to SWAVES ASCII data"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/stereo/behind/swaves/tds/",
+      "encodingFormat": "Text.ASCII",
+      "name": "HTTPS from SPDF",
+      "description": "HTTPS access to SWAVES ASCII data"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/STEREO-B/SWAVES/TDS/PT60S",
+  "creditText": "STEREO-B SWAVES One minute Time Domain Sampler Data.",
+  "description": "The two STEREO radio receivers measure wave intensity, source direction and angular size in the frequency \n\t  range 40 kHz to 16 MHz, corresponding to heliocentric source distances of about 1 Rs to 1 AU. One 10-40 kHz \n\t  receiver measures radio and plasma waves near the 1 AU electron plasma frequency. One receiver makes high \n\t  time resolution measurements at 50 MHz. Time Domain Samplers make simultaneous wideband waveform measurements \n\t  on three electric components at 250,000 samples/second. Antenna systems include three mutually orthogonal 6-meter monopoles. \n\t  ",
+  "abstract": "The two STEREO radio receivers measure wave intensity, source direction and angular size in the frequency \n\t  range 40 kHz to 16 MHz, corresponding to heliocentric source distances of about 1 Rs to 1 AU. One 10-40 kHz \n\t  receiver measures radio and plasma waves near the 1 AU electron plasma frequency. One receiver makes high \n\t  time resolution measurements at 50 MHz. Time Domain Samplers make simultaneous wideband waveform measurements \n\t  on three electric components at 250,000 samples/second. Antenna systems include three mutually orthogonal 6-meter monopoles. \n\t  ",
+  "temporalCoverage": "Start date: 2006-10-27T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time, ms of day",
+      "description": "Millisecond of the day. The filename provides the date.",
+      "unitText": "ms",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal",
+          "description": "Total"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ex",
+      "description": "Electric field in the X direction.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Component"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ey",
+      "description": "Electric field in the Y direction.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Component"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ez",
+      "description": "Electric field in the Z direction.",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Component"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E1 - E2",
+      "description": "Electric field of antenna 1 minus the electric field of antenna 2 (antennas 1 and 2 vary in pseudo-dipole mode).",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Electric",
+          "description": "Component"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT60S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "keywords": [
+    "Time Domain Sampler",
+    "STEREO-B",
+    "SWAVES"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

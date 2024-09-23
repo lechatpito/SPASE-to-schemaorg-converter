@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_San.Fernando_CFDT1_PT86400.00S.jsonld",
+  "name": "SFO CFDT1 Solar Image Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_San.Fernando_CFDT1_PT86400.00S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Stephen.Walton",
+    "url": "http://hpde.io/SMWG/Person/Stephen.Walton"
+  },
+  "sdDatePublished": "2018-08-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.csun.edu/sfo/",
+      "encodingFormat": "FITS",
+      "name": "SFO site at Cal State U. Northbridge",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sdac.virtualsolar.org/cgi/search",
+      "encodingFormat": "FITS",
+      "name": "Virtual Solar Observatory",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/San.Fernando/CFDT1/PT86400.00S",
+  "creditText": "SFO CFDT1 Solar Image Data.",
+  "description": "San Fernando Observatory daily solar images, FITS-formatted, at several visible wavelengths from CFDT1",
+  "abstract": "San Fernando Observatory daily solar images, FITS-formatted, at several visible wavelengths from CFDT1",
+  "temporalCoverage": "Start date: 1986-05-26T00:00:00. Relative stop date: -P1D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Photosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

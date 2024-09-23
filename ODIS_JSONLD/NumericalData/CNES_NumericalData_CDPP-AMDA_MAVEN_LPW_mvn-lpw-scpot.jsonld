@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_MAVEN_LPW_mvn-lpw-scpot.jsonld",
+  "name": "MAVEN - LPW - merged s/c potential",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_MAVEN_LPW_mvn-lpw-scpot.jsonld",
+  "sdDatePublished": "2021-03-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MAVEN/LPW/mvn-lpw-scpot",
+  "creditText": "MAVEN - LPW - merged s/c potential.",
+  "description": " This data set contains fully calibrated, science quality data produced by the LPW \n            instrument. The data include spacecraft potential.                      \n         ",
+  "abstract": " This data set contains fully calibrated, science quality data produced by the LPW \n            instrument. The data include spacecraft potential.                      \n         ",
+  "temporalCoverage": "Start date: 2014-10-08T00:00:01Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot",
+      "description": "spacecraft potential",
+      "unitText": "V",
+      "minValue": "-20.0",
+      "maxValue": "20.0",
+      "defaultValue": "nan",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Potential",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "mav_lpw_pot"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot quality",
+      "description": "Quality of Potential.The uncertainty of the\n values with a scale of 0-100. 100 is the best quality.  Use data with flag value\n above 50",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "100",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "mav_lpw_flag"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

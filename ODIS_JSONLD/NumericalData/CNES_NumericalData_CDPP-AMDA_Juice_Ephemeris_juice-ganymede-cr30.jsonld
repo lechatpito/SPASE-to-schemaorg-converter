@@ -1,0 +1,155 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Juice_Ephemeris_juice-ganymede-cr30.jsonld",
+  "name": "JUICE - Ephemeris - CReMA 3.0 - orbit ganymede",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Juice_Ephemeris_juice-ganymede-cr30.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-AMDA/ESA.SPICE.Service",
+    "url": "http://hpde.io/CNES/Person/CDPP-AMDA/ESA.SPICE.Service"
+  },
+  "sdDatePublished": "2020-06-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Juice/Ephemeris/juice-ganymede-cr30",
+  "creditText": "JUICE - Ephemeris - CReMA 3.0 - orbit ganymede.",
+  "description": "CReMA stands for Consolidated Reports on Mission Analysis which describe different mission profiles. They are detailed at https://www.cosmos.esa.int/web/spice/spice-for-juice . Each CReMA corresponds to a specific metakernel.",
+  "abstract": "CReMA stands for Consolidated Reports on Mission Analysis which describe different mission profiles. They are detailed at https://www.cosmos.esa.int/web/spice/spice-for-juice . Each CReMA corresponds to a specific metakernel.",
+  "temporalCoverage": "Start date: 2030-05-01T07:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gphio",
+      "description": "",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GPHIO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "juice_gacr30_xyz"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance juice-ganymede",
+      "description": "",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "juice_gacr30_r"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_gphio",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "juice_gacr30_lon"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_gphio",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "juice_gacr30_lat"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter.Ganymede"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

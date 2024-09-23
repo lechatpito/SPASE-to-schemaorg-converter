@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/INAF_OAC_OACT_H-ALPHA.jsonld",
+  "name": "OAC H-alpha Solar Images",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/INAF_OAC_OACT_H-ALPHA.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Daniele.Spadaro",
+    "url": "http://hpde.io/SMWG/Person/Daniele.Spadaro"
+  },
+  "sdDatePublished": "2021-02-12",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://woac.ct.astro.it/",
+      "encodingFormat": "TIFF",
+      "name": "OAC site",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.virtualsolar.org/",
+      "encodingFormat": "TIFF",
+      "name": "Virtual Solar Observatory",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://INAF/DisplayData/OAC/OACT/H-ALPHA",
+  "creditText": "OAC H-alpha Solar Images.",
+  "description": "H-alpha solar imagery from Osservatorio Astrofisica di Catania (OAC), Sicily, Italy",
+  "abstract": "H-alpha solar imagery from Osservatorio Astrofisica di Catania (OAC), Sicily, Italy",
+  "temporalCoverage": "Start date: 2002-02-26T00:00:00. Relative stop date: -P3D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Photosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

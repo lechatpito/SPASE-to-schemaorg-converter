@@ -1,0 +1,268 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Genesis_GIM_B-Proxy_PT160S.jsonld",
+  "name": "Genesis interplanetary field orientation proxy",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Genesis_GIM_B-Proxy_PT160S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/John.T.Steinberg",
+    "url": "http://hpde.io/SMWG/Person/John.T.Steinberg"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://cdaweb.gsfc.nasa.gov/pub/data/genesis/gim/",
+      "encodingFormat": "Text",
+      "name": "Genesis magnetic field proxy data",
+      "description": "Wind magnetic field data deteremined for Genesis determined by LANL"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Genesis/GIM/B-Proxy/PT160S",
+  "creditText": "Genesis interplanetary field orientation proxy.",
+  "description": "The vector direction of peak suprathermal electron flux as measured with the Genesis Electron Monitor (GEM) instrument. This direction serves as a proxy for the interplanetary field orientation. The suprathermal electron flux is either parallel or anti-parallel to the interplanetary magnetic field. The true field polarity (+ or -) cannot be determined from GEM. Angles are given in Geocentric Solar Ecliptic (GSE) coordinates.",
+  "abstract": "The vector direction of peak suprathermal electron flux as measured with the Genesis Electron Monitor (GEM) instrument. This direction serves as a proxy for the interplanetary field orientation. The suprathermal electron flux is either parallel or anti-parallel to the interplanetary magnetic field. The true field polarity (+ or -) cannot be determined from GEM. Angles are given in Geocentric Solar Ecliptic (GSE) coordinates.",
+  "temporalCoverage": "Start date: 2001-08-24T00:02:06Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Year",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 1"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOY",
+      "description": "Day of Year",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour",
+      "description": "Hour",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Min",
+      "description": "Minute",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second",
+      "description": "Fractional Second",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Elevation Angle",
+      "description": "Magnetic Field Elevation Angle (Degrees)",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0000",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Azimuth Angle",
+      "description": "Magnetic Field Azimuth Angle (Degrees)",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0000",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 7"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Elevation Angle RTN",
+      "description": "Magnetic Field Elevation Angle (Degrees)",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0000",
+      "measurementTechnique": "Cartesian RTN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Azimuth Angle RTN",
+      "description": "Magnetic Field Azimuth Angle (Degrees)",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0000",
+      "measurementTechnique": "Cartesian RTN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 9"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Chi Square",
+      "description": "Chi Square",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 10"
+        }
+      ]
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

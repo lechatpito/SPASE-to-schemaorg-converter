@@ -1,0 +1,149 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_STEREO-A_IMPACT_SWEA_STA_SWEA_SURVEY_PAD.jsonld",
+  "name": "STEREO-A IMPACT SWEA Level-2 Survey electron pitch-angle distributions in phase space density",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_STEREO-A_IMPACT_SWEA_STA_SWEA_SURVEY_PAD.jsonld",
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:STA_SWEA_SURVEY_PAD",
+      "encodingFormat": "CEF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/STEREO-A/IMPACT/SWEA/STA_SWEA_SURVEY_PAD",
+  "creditText": "STEREO-A IMPACT SWEA Level-2 Survey electron pitch-angle distributions in phase space density.",
+  "description": "This data set contains the electron pitch angle distributions (from 0\u00b0 to 180\u00b0) as a function of energy at the SURVEY cadence (30 s).\nThe pitch-angles are calculated in the plasma frame based on ion velocity from the PLASTIC instrument (if data is available, according to a flag given in the dataset).\nThe data is provided in units of phase space density. The reference frame is related to the instrument frame.",
+  "abstract": "This data set contains the electron pitch angle distributions (from 0\u00b0 to 180\u00b0) as a function of energy at the SURVEY cadence (30 s).\nThe pitch-angles are calculated in the plasma frame based on ion velocity from the PLASTIC instrument (if data is available, according to a flag given in the dataset).\nThe data is provided in units of phase space density. The reference frame is related to the instrument frame.",
+  "temporalCoverage": "Start date: 2006-10-01T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron pitch angle distributions quality_index_0",
+      "description": "quality_index_0 = 0 --> B field INSIDE instrument field-of-view: ALL PA covered.\nquality_index_0 = 1 --> B field OUTSIDE instrument field-of-view: NOT ALL PA covered.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "DataQuality"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron pitch angle distributions  quality_index_1",
+      "description": "quality_index_1 = 0 --> PA distributions corrected for ion bulk flow (from STEREO/PLASTIC) \nquality_index_1 = 1 --> PA distributions NOT corrected for ion bulk flow (Data unavailable)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "DataQuality"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron pitch angle distributions  energy table",
+      "description": "STEREO-A SWEA electron pitch angle distributions  energy table",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.160445e4>K",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron pitch angle distributions delta plus energy table",
+      "description": "STEREO-A SWEA electron pitch angle distributions delta plus energy table",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.160445e4>K",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron pitch angle distributions delta minus energy table",
+      "description": "STEREO-A SWEA electron pitch angle distributions delta minus energy table",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.160445e4>K",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron pitch angle distributions Phase Space Density",
+      "description": "STEREO-A SWEA electron pitch angle distributions Phase Space Density",
+      "unitText": "s^3/km^6",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "s^3/1e18>m^6"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron pitch angle distributions Pitchangle Table",
+      "description": "STEREO-A SWEA electron pitch angle distributions Pitchangle Table",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "0.0174532925>rad",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

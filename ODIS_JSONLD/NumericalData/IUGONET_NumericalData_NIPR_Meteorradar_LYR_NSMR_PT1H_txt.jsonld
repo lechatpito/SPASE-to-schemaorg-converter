@@ -1,0 +1,132 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_NIPR_Meteorradar_LYR_NSMR_PT1H_txt.jsonld",
+  "name": "Horizontal wind measured with Meteor radar in Svalbard, Norway.",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_NIPR_Meteorradar_LYR_NSMR_PT1H_txt.jsonld",
+  "sdDatePublished": "2012-08-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://scidbase.nipr.ac.jp/modules/metadata/index.php?content_id=108",
+      "encodingFormat": "Text.ASCII",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/NIPR/Meteorradar/LYR/NSMR/PT1H_txt",
+  "creditText": "Horizontal wind measured with Meteor radar in Svalbard, Norway..",
+  "description": "Hourly-averaged horizontal wind at 80-100km altitude measured with NSMR (Nippon-Svalbard Meteor Radar)",
+  "abstract": "Hourly-averaged horizontal wind at 80-100km altitude measured with NSMR (Nippon-Svalbard Meteor Radar)",
+  "temporalCoverage": "Start date: 2001-03-15T00:00:00. Relative stop date: -P90D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Universal Time. 0.5 (hour) means time for averaged data from 0 to 1 UT.",
+      "unitText": "hour",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Altitude",
+      "description": "Altitude",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zonal wind",
+      "description": "Zonal wind. Positive means eastward wind.",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard deviation of zonal wind",
+      "description": "Standard deviation of zonal wind",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Velocity",
+        "description": "StandardDeviation"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Meridional wind",
+      "description": "Meridional wind. Positive means northward wind",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard deviation of meridional wind",
+      "description": "Standard deviation of meridional wind",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Velocity",
+        "description": "StandardDeviation"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

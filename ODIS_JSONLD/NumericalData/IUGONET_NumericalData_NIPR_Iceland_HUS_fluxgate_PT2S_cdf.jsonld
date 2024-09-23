@@ -1,0 +1,130 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_NIPR_Iceland_HUS_fluxgate_PT2S_cdf.jsonld",
+  "name": "Magnetic field measured at 2sec intervals with the fluxgate magnetometer at Husafell, Iceland.",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_NIPR_Iceland_HUS_fluxgate_PT2S_cdf.jsonld",
+  "sdDatePublished": "2011-04-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://scidbase.nipr.ac.jp/modules/metadata/index.php?content_id=115",
+      "encodingFormat": "CDF",
+      "name": "Conjugate Observation at Iceland",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://polaris.nipr.ac.jp/~aurora/uapm/ConjugateObsTop.html",
+      "encodingFormat": "CDF",
+      "name": "Conjugate Observation between Syowa Station and Iceland",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://iugonet0.nipr.ac.jp/data/",
+      "encodingFormat": "CDF",
+      "name": "IUGONET Database in NIPR",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/NIPR/Iceland/HUS/fluxgate/PT2S_cdf",
+  "creditText": "Magnetic field measured at 2sec intervals with the fluxgate magnetometer at Husafell, Iceland..",
+  "description": "Magnetic field measured at 2sec intervals with the fluxgate magnetometer at Husafell, Iceland.",
+  "abstract": "Magnetic field measured at 2sec intervals with the fluxgate magnetometer at Husafell, Iceland.",
+  "temporalCoverage": "Start date: 1984-07-10T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Time label in CDF_EPOCH (the number of milliseconds since 01-Jan-0000)",
+      "unitText": "second",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vector magnetic field",
+      "description": "Three components of the magnetic field measured with the fluxgate magnetometer. H: northward component, D: eastward component, Z: vertically downward component.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian LGM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "H",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "D",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT2S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earch Interaction Ionosphere/Magnetosphere Dynamics Magnetic Fields/Magnetic Currents",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

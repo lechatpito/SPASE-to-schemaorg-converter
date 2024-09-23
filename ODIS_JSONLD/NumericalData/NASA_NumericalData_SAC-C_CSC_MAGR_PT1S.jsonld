@@ -1,0 +1,318 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SAC-C_CSC_MAGR_PT1S.jsonld",
+  "name": "SAC-C Mag-R: Calibrated CSC and raw IST data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SAC-C_CSC_MAGR_PT1S.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://vmo.igpp.ucla.edu/data1/SAC-C/",
+      "encodingFormat": "Text",
+      "name": "Virtual Magnetospheric Observatory",
+      "description": "Compact Spherical Coil Fluxgate Vector Magnetometer MAG-R data."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/SAC-C/CSC/MAGR/PT1S",
+  "creditText": "SAC-C Mag-R: Calibrated CSC and raw IST data.",
+  "description": "This dataset contains 1 second measurements of the magnetic field vector from the Compact Spherical Coil (CSC) Fluxgate Vector Magnetometer and matrices describing rotation from J2000 reference system to stellar compass coordinate system and Earth Centered, Earth Fixed polar coordinates to J2000 reference system on the SAC-C spacecraft.",
+  "abstract": "This dataset contains 1 second measurements of the magnetic field vector from the Compact Spherical Coil (CSC) Fluxgate Vector Magnetometer and matrices describing rotation from J2000 reference system to stellar compass coordinate system and Earth Centered, Earth Fixed polar coordinates to J2000 reference system on the SAC-C spacecraft.",
+  "temporalCoverage": "Start date: 2001-02-01T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Universal time columns from left to right are: year-month-day (yyyy-mm-dd) and seconds of the day.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Year-Month-Day",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Second",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SAC-C Spacecraft Position Vector in ECEF polar coordinates",
+      "description": "Location of the spacecraft in Earth Centered, Earth Fixed polar coordinates in units of Re and degrees.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Spherical ECEF",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Radius",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Theta",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Phi",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Position Vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SAC-C CSC Magnetic Field Vector in CSC coordinates",
+      "description": "Magnetic field vector for SAC-C in CSC coordinate system in units of nT.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "B1",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "B2",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "B3",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Magnetic Field Vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "J2000 to Stella compass quaternion",
+      "description": "A quaternion describing the rotation from j2000 star coordinate system to the Italian Star Tracker system.",
+      "unitText": "unitless",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Q1",
+          "description": "Tensor",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Q2",
+          "description": "Tensor",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Q3",
+          "description": "Tensor",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Q4",
+          "description": "Tensor",
+          "position": "4",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "J2000 2 SIM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Earth Centered, Earth Fixed to J2000 quaternion",
+      "description": "A quaternion describing the rotation from ECEF (Earth Centered, Earth Fixed) coordinate system (Note: not the local system) to the j2000 star coordinate system.",
+      "unitText": "unitless",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Q1",
+          "description": "Tensor",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Q2",
+          "description": "Tensor",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Q3",
+          "description": "Tensor",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Q4",
+          "description": "Tensor",
+          "position": "4",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ECEF 2 J2000"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

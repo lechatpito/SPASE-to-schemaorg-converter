@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_FAST_HResDATA.jsonld",
+  "name": "FAST high resolution data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_FAST_HResDATA.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://sprg.ssl.berkeley.edu/fast/hires/",
+      "encodingFormat": "CDF",
+      "name": "FAST Hi_Resolution CDFs",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/FAST/HResDATA",
+  "creditText": "FAST high resolution data.",
+  "description": "High resolution data obtained by various instruments in the auroral region are available from UCB. They include electric and magnetic AC and DC fields data, energetic particle data, plasma waves and plasma data.",
+  "abstract": "High resolution data obtained by various instruments in the auroral region are available from UCB. They include electric and magnetic AC and DC fields data, energetic particle data, plasma waves and plasma data.",
+  "temporalCoverage": "Start date: 1996-09-20T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    "MagneticField",
+    "ElectricField",
+    "EnergeticParticles",
+    "Waves"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

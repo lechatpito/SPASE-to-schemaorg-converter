@@ -1,0 +1,120 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_POLAR_EFI_SC_GSE_Attitude_PT600S.jsonld",
+  "name": "Polar Electric Fields Instrument (EFI), Spacecraft Attitude in GSE coordinates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_POLAR_EFI_SC_GSE_Attitude_PT600S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/POLAR/EFI/SC/GSE/Attitude/PT600S",
+  "creditText": "Polar Electric Fields Instrument (EFI), Spacecraft Attitude in GSE coordinates.",
+  "description": "the Polar spacecraft positive spin axis direction vector (normalized to magnitude 1), in GSE coordinates.",
+  "abstract": "the Polar spacecraft positive spin axis direction vector (normalized to magnitude 1), in GSE coordinates.",
+  "temporalCoverage": "Start date: 1996-03-16T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Data point time-tags which are double precision floating point numbers which represent the number of seconds, UTC, from midnight of the day represented by the file.",
+      "unitText": "seconds",
+      "minValue": "0.0",
+      "maxValue": "86460.0",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "TIME_TAG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT600S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SCAttitudeGSEVector",
+      "description": "Data point vector values which are a triplet of single precision floating point numbers which represent the normalized X,Y,Z components of the GSE spacecraft attitude (i.e. the direction of the spacecraft positive spin axis).",
+      "unitText": "Numeric",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "",
+      "unitCode": "1.0",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DATA_VALUES"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT600S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

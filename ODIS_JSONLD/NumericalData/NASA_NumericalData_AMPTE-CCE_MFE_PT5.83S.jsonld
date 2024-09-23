@@ -1,0 +1,310 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_AMPTE-CCE_MFE_PT5.83S.jsonld",
+  "name": "AMPTE-CCE Spin-averaged Magnetic Field Measurements",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_AMPTE-CCE_MFE_PT5.83S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Brian.J.Anderson",
+    "url": "http://hpde.io/SMWG/Person/Brian.J.Anderson"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://vmo.nasa.gov/mission/ampte_cce/mag/",
+      "encodingFormat": "Text",
+      "name": "AMPTE/CCE Magnetic Field Data Download",
+      "description": "A web-accessible directory hosting AMPTE/CCE spin-averaged magnetic field data."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/AMPTE-CCE/MFE/PT5.83S",
+  "creditText": "AMPTE-CCE Spin-averaged Magnetic Field Measurements.",
+  "description": "AMPTE-CCE spin-averaged DC magnetic field at ~5.83 second resolution.",
+  "abstract": "AMPTE-CCE spin-averaged DC magnetic field at ~5.83 second resolution.",
+  "temporalCoverage": "Start date: 1984-08-20T23:59:54.98Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Time tag: Two-digit year",
+      "unitText": "year",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 1"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day of year",
+      "description": "Time tag: Day of year",
+      "unitText": "day",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "86400>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour",
+      "description": "Time tag: Hour of the day",
+      "unitText": "hr",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "3600>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minute",
+      "description": "Time tag: Minute of the hour",
+      "unitText": "min",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "60>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second",
+      "description": "Time tag: Decimal second of the minute",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft position GSE X component",
+      "description": "Spacecraft position GSE X component (Re=6378 km).",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "6.378e6>m",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft position GSE Y component",
+      "description": "Spacecraft position GSE Y component (Re=6378 km).",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "6.378e6>m",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 7"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft position GSE Z component",
+      "description": "Spacecraft position GSE Z component (Re=6378 km).",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "6.378e6>m",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field cartesian GSE X component",
+      "description": "Magnetic field cartesian GSE X component",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 9"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field cartesian GSE Y component",
+      "description": "Magnetic field cartesian GSE Y component",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 10"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field cartesian GSE Z component",
+      "description": "Magnetic field cartesian GSE Z component",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Column 11"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "keywords": "Magnetic field",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

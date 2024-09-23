@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_IMAGE_RPI_PGM_PT5M.jsonld",
+  "name": "IMAGE radio plasma imager (RPI) Plasmagram Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_IMAGE_RPI_PGM_PT5M.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://giro.uml.edu/rpi/plsearch.php",
+      "encodingFormat": "PNG",
+      "name": "RPI Plasmagram Browser",
+      "description": "Repository of RPI plasmagram images at University of Massachusetts Lowell, containing web query form to retrieve individual images."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/DisplayData/IMAGE/RPI/PGM/PT5M",
+  "creditText": "IMAGE radio plasma imager (RPI) Plasmagram Plots.",
+  "description": "Collection of RPI Plasmagram images at University of Massachusetts Lowell, covering complete mission period from 2000-04-21 to 2005-12-18. Access to images is arranged via a webpage containing a query form with the time period of interest and options for search of expert-annotated plasmagrams. The query returns a list of qualifying plasmagrams with URLs pointing to images. RPI plasmagrams are visualized by plotting images in which received signal strength (color scale) is a function of echo delay (range in vertical scale) and radio-sounder frequency (horizontal scale) of the sounder pulses. Echoes that can be used to derive remote, long-range, magnetospheric electron-density profiles, appear as discrete traces on plasmagrams. These plasmagram traces are intermixed with vertical signatures with greater intensity at shorter ranges, corresponding to locally excited plasma resonances, and other vertical signatures that cover the entire listening period, i.e., the entire virtual-range scale, corresponding to various natural and/or man-made emissions propagating in space and/or local interference.",
+  "abstract": "Collection of RPI Plasmagram images at University of Massachusetts Lowell, covering complete mission period from 2000-04-21 to 2005-12-18. Access to images is arranged via a webpage containing a query form with the time period of interest and options for search of expert-annotated plasmagrams. The query returns a list of qualifying plasmagrams with URLs pointing to images. RPI plasmagrams are visualized by plotting images in which received signal strength (color scale) is a function of echo delay (range in vertical scale) and radio-sounder frequency (horizontal scale) of the sounder pulses. Echoes that can be used to derive remote, long-range, magnetospheric electron-density profiles, appear as discrete traces on plasmagrams. These plasmagram traces are intermixed with vertical signatures with greater intensity at shorter ranges, corresponding to locally excited plasma resonances, and other vertical signatures that cover the entire listening period, i.e., the entire virtual-range scale, corresponding to various natural and/or man-made emissions propagating in space and/or local interference.",
+  "temporalCoverage": "Start date: 2000-04-21T20:24:42Z. Relative stop date: None",
+  "variableMeasured": "Waves.Active",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "keywords": [
+    "Plasmagram",
+    "Echo",
+    "Trace",
+    "Field-Aligned Propagation",
+    "Ducted Echo",
+    "Epsilon",
+    "Discrete Echo",
+    "Diffuse Echo",
+    "Plasma Resonance",
+    "Proton Echo",
+    "Proton Spur",
+    "Ion Spur"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

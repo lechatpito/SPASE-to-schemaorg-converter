@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SORCE_TIM_PT6H.jsonld",
+  "name": "SORCE TIM 6-hr and 1-day Total Solar Irradiance",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_SORCE_TIM_PT6H.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Greg.Kopp",
+    "url": "http://hpde.io/SMWG/Person/Greg.Kopp"
+  },
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://lasp.colorado.edu/home/sorce/",
+      "encodingFormat": "Text",
+      "name": "U.Colorado LASP site",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/SORCE/TIM/PT6H",
+  "creditText": "SORCE TIM 6-hr and 1-day Total Solar Irradiance.",
+  "description": "SORCE TIM 6-hour and daily Total Solar Irradiance Data",
+  "abstract": "SORCE TIM 6-hour and daily Total Solar Irradiance Data",
+  "temporalCoverage": "Start date: 2003-03-02T00:00:00. Relative stop date: -P21D",
+  "variableMeasured": "Irradiance",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

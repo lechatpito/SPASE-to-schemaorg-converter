@@ -1,0 +1,187 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_MACCS_MAG_PT0.5S.jsonld",
+  "name": "MACCS 0.5 s Ground Magnetometer Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_MACCS_MAG_PT0.5S.jsonld",
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://space.augsburg.edu/maccs/",
+      "encodingFormat": "Text",
+      "name": "MACCS web site at Augsburg University",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/MACCS/MAG/PT0.5S",
+  "creditText": "MACCS 0.5 s Ground Magnetometer Data.",
+  "description": "The Magnetometer Array for Cusp and Cleft Studies (MACCS) program operates magnetometers in the arctic to study the near-Earth space environment and have been providing 0.5 s resolution since 2011.",
+  "abstract": "The Magnetometer Array for Cusp and Cleft Studies (MACCS) program operates magnetometers in the arctic to study the near-Earth space environment and have been providing 0.5 s resolution since 2011.",
+  "temporalCoverage": "Start date: 2011-01-01T00:00:00. Relative stop date: -PT600S",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Date",
+      "description": "Date of measurement in YYYY-MM-DD format.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal",
+        "description": "Total"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time in HH:MM:SS.SSS format.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal",
+        "description": "Total"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day of Year",
+      "description": "Day of the year given in the date paramter.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal",
+        "description": "Total"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bh",
+      "description": "Values are reported in local geomagnetic coordinates.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "99999.99",
+      "measurementTechnique": "Cartesian MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Values are collected in local geomagnetic coordinates."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bd",
+      "description": "Values are reported in local geomagnetic coordinates.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "99999.99",
+      "measurementTechnique": "Cartesian MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Values are collected in local geomagnetic coordinates."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Values are reported in local geomagnetic coordinates.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "99999.99",
+      "measurementTechnique": "Cartesian MAG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Values are collected in local geomagnetic coordinates."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bf",
+      "description": "Magnetic field magnitude.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "88888.88",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "F is not detected as an independent observable."
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

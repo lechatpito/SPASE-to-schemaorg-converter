@@ -1,0 +1,193 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Interball-1_MIFM_PT6S.jsonld",
+  "name": "Interball Tail 6-sec magnetic field data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Interball-1_MIFM_PT6S.jsonld",
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Interball-1/MIFM/PT6S",
+  "creditText": "Interball Tail 6-sec magnetic field data.",
+  "description": " Magnetic field measurements on-board the Interball 1 probe are carried out by the FM-3I and MFI (FGM-I) instruments. Data presented here are the combination of the data of all magnetometers. First, all FM-3I M1 data are used, if they are absent, the MFI data are used, and if data from both magnetometer are absent, FM-3I M2 data presented. The FM-3 M1 and MFI data are averaged over 6-second time intervals.",
+  "abstract": " Magnetic field measurements on-board the Interball 1 probe are carried out by the FM-3I and MFI (FGM-I) instruments. Data presented here are the combination of the data of all magnetometers. First, all FM-3I M1 data are used, if they are absent, the MFI data are used, and if data from both magnetometer are absent, FM-3I M2 data presented. The FM-3 M1 and MFI data are averaged over 6-second time intervals.",
+  "temporalCoverage": "Start date: 1995-08-06T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Time in miliseconds since CDF epoch",
+      "unitText": "ms",
+      "minValue": "01-Jan-1990 00:00:00.000",
+      "maxValue": "31-Dec-2010 00:00:00.000",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B",
+      "description": "Magnetic Field Magnitude, 6 sec, scalar ",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "350.0",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "BF1"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bxyz GSE",
+      "description": "Magnetic Field, 6 sec, cartesian GSE ",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_GSE_cart"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Brtp GSE",
+      "description": "Magnetic Field, 6 sec, polar GSE. Br is the radial component, Bt is the elevation angle from the XY plane, Bp is the azimuthal angle from the X axis.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Spherical GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Br GSE",
+          "description": "Magnitude",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bt GSE",
+          "description": "DirectionAngle.ElevationAngle",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bp GSE",
+          "description": "DirectionAngle.AzimuthAngle",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_GSE_polar"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

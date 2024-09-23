@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Geotail_MGF_PT3.00S.jsonld",
+  "name": "Geotail 3-sec magnetic field data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Geotail_MGF_PT3.00S.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Susumu.K.Kokubun",
+    "url": "http://hpde.io/SMWG/Person/Susumu.K.Kokubun"
+  },
+  "sdDatePublished": "2021-01-11",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.darts.isas.ac.jp/stp/geotail/",
+      "encodingFormat": "Text",
+      "name": "3-s data at ISAS/DARTS",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://JAXA/NumericalData/Geotail/MGF/PT3.00S",
+  "creditText": "Geotail 3-sec magnetic field data.",
+  "description": "Geotail 3-sec magnetic field data from ISAS/DARTS",
+  "abstract": "Geotail 3-sec magnetic field data from ISAS/DARTS",
+  "temporalCoverage": "Start date: 1992-09-18T00:00:00. Relative stop date: -P11M",
+  "variableMeasured": "MagneticField",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

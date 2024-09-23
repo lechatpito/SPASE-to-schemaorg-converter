@@ -1,0 +1,1316 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_DMSP_5D-3_F17_SESS_SSM-Boom_PT1S.jsonld",
+  "name": "DMSP F17 Special Sensor Magnetometer, SESS/SSM-Boom, Magnetic Field Measurements taken at 850 km, 1 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_DMSP_5D-3_F17_SESS_SSM-Boom_PT1S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/DMSP_5D-3/F17/SESS/SSM-Boom/PT1S",
+  "creditText": "DMSP F17 Special Sensor Magnetometer, SESS/SSM-Boom, Magnetic Field Measurements taken at 850 km, 1 s Data.",
+  "description": "Defense Meteorology Satellite Program, DMSP, F17 Vector Magnetometer Measurements, 850 km Altitude",
+  "abstract": "Defense Meteorology Satellite Program, DMSP, F17 Vector Magnetometer Measurements, 850 km Altitude",
+  "temporalCoverage": "Start date: 2010-01-01T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time, Default",
+      "unitText": "ms",
+      "minValue": "01-Jan-1990 00:00:00.000",
+      "maxValue": "31-Dec-2029 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This parameter exhibits an increasing monotonic progression."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, ECI",
+      "description": "Spacecraft Position, Earth Centered Inertial, ECI, Cartesian Coordinates",
+      "unitText": "km",
+      "minValue": "-7500.0",
+      "maxValue": "7500.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e3>m",
+      "measurementTechnique": "Cartesian GEI",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "x_ECI",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "y_ECI",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "z_ECI",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_ECI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Epoch is True of Date, TOD. These ECI Coordinates are calculated from an SPDF SSC Locator 1 min Ephemeris using an Eight Order Interpolation, Burden, R.L., and Faires, J.D., Numerical Analysis, 5th Ed., PWS Publishing Company, Boston, 1993. Using SPDF Methods, the expected Accuracy is on the Order of a few km."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Latitude, GEO",
+      "description": "Spacecraft Latitude, Geographic Inertial, GEO, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "NaN",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_GEOCENTRIC_LAT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated by using IDL Astro Library Function ECI2GEO"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC_GEOCENTRIC_LAT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Longitude, GEO",
+      "description": "Spacecraft Longitude, Geographic Inertial, GEO, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "NaN",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical GEO",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_GEOCENTRIC_LON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated by using IDL Astro Library Function ECI2GEO"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC_GEOCENTRIC_LON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Geocentric Distance",
+      "description": "Spacecraft Geocentric Distance",
+      "unitText": "km",
+      "minValue": "6378.0",
+      "maxValue": "7500.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e3>m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_GEOCENTRIC_R"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC_GEOCENTRIC_R"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Latitude, AACGM",
+      "description": "Spacecraft Latitude, Altitude Adjusted Corrected Geomagnetic, AACGM, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "NaN",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical CGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_AACGM_LAT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated by using the SuperDARN AACGM IDL Library. Values are the Result of linearly interpolating between two nearest AACGM 5 Year Epochs."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC_AACGM_LAT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Longitude, AACGM",
+      "description": "Spacecraft Longitude, Altitude Adjusted Corrected Geomagnetic, AACGM, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "NaN",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical CGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_AACGM_LON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated by using the SuperDARN AACGM IDL Library. Values are the Result of linearly interpolating between two nearest AACGM 5 Year Epochs."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC_AACGM_LON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Local Time, AACGM",
+      "description": "Spacecraft Local Time, Altitude Adjusted Corrected Geomagnetic, AACGM, Coordinates",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "NaN",
+      "unitCode": "3600>s",
+      "measurementTechnique": "Spherical CGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_AACGM_LTIME"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated by using the SuperDARN AACGM IDL Library. Values are the Result of linearly interpolating between two nearest AACGM 5 Year Epochs."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC_AACGM_LTIME"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field, Spacecraft Frame",
+      "description": "Magnetic Field as originally measured in Spacecraft Frame",
+      "unitText": "nT",
+      "minValue": "-100000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx_SC",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By_SC",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz_SC",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_SC_OBS_ORIG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "X is Geodedic Nadir, Down, Y is along Spacecraft Track, the Ram Direction, Z is Across-Track to the Right. Note, the Pertrubations in this Variable have been recomputed from the Observed B-Field. IGRF11 was run using this Day as Epoch to compute a new, more accurate Geocentric Location that was rotated into Spacecraft Coordinates and then removed."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Delta-B, measured minus IGRF, Spacecraft Frame",
+      "description": "Delta Magnetic Field, Delta-B, which is equal to the originally measured Magnetic Field minus the International Geomagnetic Reference Field, IGRF, Model Magnetic Field, Spacecraft Frame",
+      "unitText": "nT",
+      "minValue": "-2000.0",
+      "maxValue": "2000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "dB X_SC",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "dB Y_SC",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "dB Z_SC",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DELTA_B_SC_ORIG"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "X is Geodedic Nadir, Down, Y is along Spacecraft Track, the Ram Direction, Z is Across-Track to the Right"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Baseline corrected Delta-B, GEO",
+      "description": "Baseline corrected Delta-B, Geographic, GEO, Spherical, East, North, Up, Coordinates",
+      "unitText": "nT",
+      "minValue": "-2000.0",
+      "maxValue": "2000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Spherical GEO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "BC dB East",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BC dB North",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BC dB Up",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DELTA_B_GEO"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Finite Differences between adjacent Points on Spacecraft Track were used to determine along Track and across Track Unit Vectors in GEO. No Altitude Change between adjacent Points was assumed. Baseline Correction, F. Rich's MFIT Procedure, is Polynomial Fit every Half-Pass to each Component of Delta-B in Spacecraft Coordinates by using only Data from Regions equatorward of the DMSP Auroral Boundary from the CEDAR Database."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Baseline corrected Delta-B, APX",
+      "description": "Baseline corrected Delta-B, Modified Apex, APX, Coordinates, Reference Height 110 km",
+      "unitText": "nT",
+      "minValue": "-2000.0",
+      "maxValue": "2000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Spherical LGM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "BC dB d1, nearly eastward",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BC dB d2, nearly equatorward",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BC dB d3, nearly upward",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DELTA_B_APX"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Coordinates transformed with APEX-PYTHON, NCAR HAO, with Reference Altitude equal to 110 km, See Richmond, J. Geomag. Geoelec., 1995. Baseline Correction, F. Rich's MFIT Procedure, is Polynomial Fit every Half-Pass to each Component of Delta-B in Spacecraft Coordinates by using only Data from Regions equatorward of the DMSP Auroral Boundary from the CEDAR Database."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Baseline corrected Delta-B, Spacecraft Frame",
+      "description": "Baseline corrected Delta-B, Spacecraft Frame",
+      "unitText": "nT",
+      "minValue": "-2000.0",
+      "maxValue": "2000.0",
+      "defaultValue": "NaN",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "BC dB X_SC",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BC dB Y_SC",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BC dB Z_SC",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DELTA_B_SC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "X is Geodedic Nadir, Down, Y is along Spacecraft Track, the Ram Direction, Z is Across-Track to the Right. Baseline Correction, F. Rich's MFIT Procedure, is Polynomial Fit every Half-Pass to each Component of Delta-B in Spacecraft Coordinates by using only Data from Regions equatorward of the DMSP Auroral Boundary from the CEDAR Database."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Latitude, APX",
+      "description": "Spacecraft Latitude, Modified Apex Geomagnetic, APXGM, Coordinates, Reference Height 110 km",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "NaN",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical LGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_APEX_LAT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated by using Apex-Python, which is based on Apex Fortran Code available from CEDAR Database with the nearest Year Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC_APEX_LAT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Longitude, APX",
+      "description": "Spacecraft Longitude, Modified Apex Geomagnetic, APXGM, Coordinates, Reference Height 110 km",
+      "unitText": "\u00b0",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "NaN",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical LGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_APEX_LON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated by using Apex-Python, which is based on Apex Fortran Code available from CEDAR Database with the nearest Year Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC_APEX_LON"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Local Time, APX",
+      "description": "Spacecraft Local Time, Modified Apex Geomagnetic, APXGM, Coordinates, Reference Height 110 km",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "NaN",
+      "unitCode": "3600>s",
+      "measurementTechnique": "Spherical LGM",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_APEX_MLT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated by using Apex-Python, which is based on Apex Fortran Code available from CEDAR Database with the nearest Year Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC_APEX_MLT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Region Code",
+      "description": "Spacecraft Region Code: 1=Equatorial, 2=Auroral, 3=Polar",
+      "unitText": "(2=Auroral)",
+      "minValue": "0.0",
+      "maxValue": "3.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "AURORAL_REGION"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "0-No Boundary Identified, 1-Equatorward of the Auroral Zone, 2-Auroral Zone, 3-Polar Cap"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "AURORAL_REGION"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Auroral Boundary Determination, FOM",
+      "description": "Auroral Boundary Determination Figure of Merit, FOM: OK if Equal to 2 or Greater",
+      "unitText": "(OK>=2)",
+      "minValue": "0.0",
+      "maxValue": "5.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Uncertainty"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "AURORAL_BOUNDARY_FOM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Typical Range 0-4. Less than 2 is Suspect. See the DMSP CDF User Manual for full Specification of FOM Computation."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "AURORAL_BOUNDARY_FOM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbit Index by Day",
+      "description": "Integer representing the Orbit of the Day, signed by Hemisphere: >0=Northern, <0=Southern",
+      "unitText": "",
+      "minValue": "-18.0",
+      "maxValue": "18.0",
+      "defaultValue": "NaN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ORBIT_INDEX"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Orbit Start and End are determined by Crossings of the Apex Magnetic Equator. A value of 0 denotes the first Equator Crossing of the Day."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "ORBIT_INDEX"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Ram Velocity Direction, Unit Vector, GEO",
+      "description": "Spacecraft Ram Velocity Direction, Unit Vector, Geographic, GEO, Coordinates",
+      "unitText": "",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "NaN",
+      "measurementTechnique": "Cartesian GEO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "along_SC East",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "along_SC North",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "along_SC Up",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_ALONG_GEO"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This is an Estimate, based on a Spherical Trigonometry Approach by using a Great-Circle Arc between adjacent Points, See the User Manual."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Unit Vector across the Spacecraft Track, GEO",
+      "description": "Unit Vector across the Spacecraft Track to the Left and Orthogonal to the Spacecraft Ram Velocity Direction, Geographic, GEO, Coordinates",
+      "unitText": "",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "NaN",
+      "measurementTechnique": "Cartesian GEO",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "across_SC East",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "across_SC North",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "across_SC Up",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_ACROSS_GEO"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "This is an Estimate, based on a Spherical Trigonometry Approach by using a Great-Circle Arc between adjacent Points, See the User Manual."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "E12.2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleType",
+          "value": "LinearScale"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

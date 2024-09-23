@@ -1,0 +1,450 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_IMP8_MAG_PT15.36S.jsonld",
+  "name": "IMP 8 MAG 15.36s Magnetic Field Measurements",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_IMP8_MAG_PT15.36S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/IMP8/MAG/PT15.36S",
+  "creditText": "IMP 8 MAG 15.36s Magnetic Field Measurements.",
+  "description": "IMP 8 magnetic field measurements from tri-axis magnetometer. Time resolution is 15.36 second. Data are based on a 2010 data reprocessing by the PI team. Parameter details below are based on the version of the data in CDAWeb.",
+  "abstract": "IMP 8 magnetic field measurements from tri-axis magnetometer. Time resolution is 15.36 second. Data are based on a 2010 data reprocessing by the PI team. Parameter details below are based on the version of the data in CDAWeb.",
+  "temporalCoverage": "Start date: 1973-10-30T15:00:32Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Epoch of the data point (last data in the 15.36-second average)",
+      "unitText": "Milliseconds",
+      "minValue": "01-Jan-1973 00:00:00.000",
+      "maxValue": "31-Dec-2000 00:00:00.000",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15.36S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Sequences",
+      "description": "The number of vectors used in the data average is 4 times this value.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "999",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "N_Sequences"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15.36S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position GSE",
+      "description": "Spacecraft position in GSE coordinates",
+      "unitText": "Re",
+      "minValue": "-50.0",
+      "maxValue": "50.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "6.378e6>m",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Xgse",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ygse",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Zgse",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_Pos_GSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15.36S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position GSM",
+      "description": "Spacecraft position in GSM coordinates",
+      "unitText": "Re",
+      "minValue": "-50.0",
+      "maxValue": "50.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "6.378e6>m",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Xgsm",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ygsm",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Zgsm",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "SC_Pos_GSM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15.36S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B magnitude",
+      "description": "Magnitude of the magnetic field",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Average",
+            "Magnitude"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "F1_Average_B_15s"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15.36S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B vector GSE",
+      "description": "Magnetic field vector in GSE coordinates",
+      "unitText": "nT",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_Vector_GSE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15.36S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B vector GSM",
+      "description": "Magnetic field vector in GSM coordinates",
+      "unitText": "nT",
+      "minValue": "-100.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx GSM",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By GSM",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz GSM",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_Vector_GSM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15.36S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Diagonal Variances",
+      "description": "Matrix containing magnetic field variances; diagonal elements Bxx, Byy, Bzz in GSE coordinates",
+      "unitText": "nT^2",
+      "minValue": "0.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-18>T^2",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bxx GSE",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Byy GSE",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bzz GSE",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Variance"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_jj_Variances"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15.36S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B off-diagonal variances",
+      "description": "Matrix containing magnetic field variances; off-diagonal elements Byx, Bzx, Bzy in GSE coordinates",
+      "unitText": "nT^2",
+      "minValue": "-5000.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-18>T^2",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Byx GSE",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bzx GSE",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bzy GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Variance"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_jk_Variances"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT15.36S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    }
+  ],
+  "keywords": "Magnetic field",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

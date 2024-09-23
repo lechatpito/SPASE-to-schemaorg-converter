@@ -1,4 +1,4 @@
-# SPASE to ODIS Conversion
+# Helio-KNOW ODIS Conversion Tools
 
 This project focuses on converting [SPASE (Space Physics Archive Search and Extract)](https://spase-group.org/) metadata to [ODIS (Ocean Data and Information System)](https://book.odis.org/) compatible JSON-LD format. This conversion is a crucial step in integrating heliophysics data into a broader, interoperable framework that adheres to schema.org vocabulary.
 
@@ -18,7 +18,7 @@ Our conversion process involves two main scripts:
 
 1. `SPASE_JSONLD_converter.py`: This script handles the actual conversion of SPASE JSON to schema.org compatible JSON-LD.
 
-2. `HPDE_crawler.py`: This script crawls through the HPDE (Heliophysics Data Environment) directory structure, identifies SPASE JSON files, and applies the conversion process.
+2. `HPDE_crawler.py`: This script crawls through the HPDE (Heliophysics Data Environment) directory structure, identifies SPASE JSON files, and applies the conversion process based on the specified data types.
 
 The conversion maps SPASE metadata fields to appropriate schema.org types and properties, ensuring that the rich information contained in SPASE records is accurately represented in the resulting JSON-LD.
 
@@ -80,10 +80,17 @@ This repository contains tools to convert SPASE (Space Physics Archive Search an
 
 2. Ensure your SPASE JSON files are in the `../hpde.io` directory (or modify the `root_dir` in `HPDE_crawler.py` accordingly).
 
-3. Run the HPDE crawler:
+
+3. Specify the desired data types to process in the `datatypes` variable in the `main` function of `HPDE_crawler.py`. For example:
+   ```python
+   datatypes = ['DisplayData', 'NumericalData']
+   ```
+
+4. Run the HPDE crawler:
    ```
    python HPDE_crawler.py
    ```
+
 
 This script will:
 - Crawl the HPDE file directory

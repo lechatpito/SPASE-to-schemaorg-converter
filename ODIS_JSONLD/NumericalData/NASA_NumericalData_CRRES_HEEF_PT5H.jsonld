@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_CRRES_HEEF_PT5H.jsonld",
+  "name": "CRRES HEEF electron equatorial distributions vs.L",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_CRRES_HEEF_PT5H.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Donald.H.Brautigam",
+    "url": "http://hpde.io/SMWG/Person/Donald.H.Brautigam"
+  },
+  "sdDatePublished": "2021-03-10",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/crres/particle_heef/",
+      "encodingFormat": "Binary",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/crres/particle_heef/",
+      "encodingFormat": "Binary",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/CRRES/HEEF/PT5H",
+  "creditText": "CRRES HEEF electron equatorial distributions vs.L.",
+  "description": "This data set holds half-orbit (~5 hour) resolution \nelectron distributions (19 5-deg equatorial pitch angles vs. 19 energies) \nfrom the High Energy Electron Fluxmeter (HEEF) on the CRRES spacecraft.  \nThe energy range covered is 0.3-7.5 MeV.  These data are developed from \nthe 1-min insitu pitch angle distributions by assigning each 5-deg bin \nin pitch angle a corresponding McIlwain L value and then by mapping the \ninsitu pitch angle distribution to the equator, into 0.05-wide L bins, \nassuming first adiabatic invariant conservation.  The mapping yields \nequivalent equatorial pitch angles.  Flux data are for a given half-orbit, \ngiven 0.05-wide L bin,  given equatorial pitch angle and given energy bin\nare then averaged.  Data records are for a given half-orbit and given\nL bin; each record contains averaged fluxes vs. equatorial pitch angle\nand energy.  The data are in SGI(UNIX) binary format.  Read software\nis contained within the companion documentation.",
+  "abstract": "This data set holds half-orbit (~5 hour) resolution \nelectron distributions (19 5-deg equatorial pitch angles vs. 19 energies) \nfrom the High Energy Electron Fluxmeter (HEEF) on the CRRES spacecraft.  \nThe energy range covered is 0.3-7.5 MeV.  These data are developed from \nthe 1-min insitu pitch angle distributions by assigning each 5-deg bin \nin pitch angle a corresponding McIlwain L value and then by mapping the \ninsitu pitch angle distribution to the equator, into 0.05-wide L bins, \nassuming first adiabatic invariant conservation.  The mapping yields \nequivalent equatorial pitch angles.  Flux data are for a given half-orbit, \ngiven 0.05-wide L bin,  given equatorial pitch angle and given energy bin\nare then averaged.  Data records are for a given half-orbit and given\nL bin; each record contains averaged fluxes vs. equatorial pitch angle\nand energy.  The data are in SGI(UNIX) binary format.  Read software\nis contained within the companion documentation.",
+  "temporalCoverage": "Start date: 1990-08-01T00:00:00. Relative stop date: None",
+  "variableMeasured": "EnergeticParticles",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

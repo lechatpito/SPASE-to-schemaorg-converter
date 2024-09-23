@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_IMAGE_RPI_PT1M.jsonld",
+  "name": "IMAGE RPI Monthly Electron Density Values",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_IMAGE_RPI_PT1M.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/IMAGE/RPI/PT1M",
+  "creditText": "IMAGE RPI Monthly Electron Density Values.",
+  "description": "The electron density values listed in this file are derived from the IMAGE Radio Plasma Imager (B.W. Reinisch, PI) data using an automatic fitting program written by Phillip Webb with manual correction. The electron number densities were produced using an automated procedure (with manual correction when necessary) which attempted to self-consistently fit an enhancement in the IMAGE RPI Dynamic Spectra to either 1) the Upper Hybrid Resonance band, 2) the Z-mode or 3) the continuum edge. The automatic algorithm works by rules determined by comparison of the active and passive RPI data [Benson et al., GRL, vol. 31, L20803, doi:10.1029/2004GL020847, 2004]. The manual data points are not from frequencies chosen freely by a human. Rather the human specifies that the computer should search for a peak or continuum edge in a certain frequency region. Thus even the manual points are determined, in part, by the automatic algorithms. Of course that does not guarantee that the data points are right, but it does eliminate some human bias.",
+  "abstract": "The electron density values listed in this file are derived from the IMAGE Radio Plasma Imager (B.W. Reinisch, PI) data using an automatic fitting program written by Phillip Webb with manual correction. The electron number densities were produced using an automated procedure (with manual correction when necessary) which attempted to self-consistently fit an enhancement in the IMAGE RPI Dynamic Spectra to either 1) the Upper Hybrid Resonance band, 2) the Z-mode or 3) the continuum edge. The automatic algorithm works by rules determined by comparison of the active and passive RPI data [Benson et al., GRL, vol. 31, L20803, doi:10.1029/2004GL020847, 2004]. The manual data points are not from frequencies chosen freely by a human. Rather the human specifies that the computer should search for a peak or continuum edge in a certain frequency region. Thus even the manual points are determined, in part, by the automatic algorithms. Of course that does not guarantee that the data points are right, but it does eliminate some human bias.",
+  "temporalCoverage": "Start date: 2001-01-01T00:00:00.000Z. Relative stop date: None",
+  "variableMeasured": "Waves.Active",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

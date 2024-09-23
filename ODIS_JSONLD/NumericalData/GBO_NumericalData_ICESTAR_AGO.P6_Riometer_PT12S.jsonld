@@ -1,0 +1,257 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_ICESTAR_AGO.P6_Riometer_PT12S.jsonld",
+  "name": "ICESTAR AGO P6 Riometer PT12S Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_NumericalData_ICESTAR_AGO.P6_Riometer_PT12S.jsonld",
+  "sdDatePublished": "2019-05-05",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://vmo.igpp.ucla.edu/data1/ICESTAR/",
+      "encodingFormat": "Text",
+      "name": "ICESTAR Data Set URL Address",
+      "description": "URL for ICESTAR data hosted on the UCLA VMO Data Repository"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/NumericalData/ICESTAR/AGO.P6/Riometer/PT12S",
+  "creditText": "ICESTAR AGO P6 Riometer PT12S Data.",
+  "description": "AGO P6 Riometer PT12S data; Station Id: AP6; The ICESTAR riometer measures absorption for 16 different directions organized in a four-by-four pattern with beam numbers 00-15.; The data are expressed in units of dB.;",
+  "abstract": "AGO P6 Riometer PT12S data; Station Id: AP6; The ICESTAR riometer measures absorption for 16 different directions organized in a four-by-four pattern with beam numbers 00-15.; The data are expressed in units of dB.;",
+  "temporalCoverage": "Start date: 1997-02-03T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Time is expressed by using a six column format with the following order:  year, month, day, hour, minute, and second, each stored in interger format.  The ICESTAR data are stored in dayfiles with 12 second time resolution.  The files have an eleven line header followed by 7200 data records.  The year, month, and day of the data records are inferred the file header while the hour, minute, and seconds for the time series are listed in each data record.  The hour-minute-second format may be either hhmm:ss or hh:mm:ss (file dependent).",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Month",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Hour",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Minute",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Second",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AGO P6 Riometer PT12S",
+      "description": "AGO P6 Riometer PT12S",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 00",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 01",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 02",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 03",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 04",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 05",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 06",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 07",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 08",
+          "description": "",
+          "position": "9",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 09",
+          "description": "",
+          "position": "10",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 10",
+          "description": "",
+          "position": "11",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 11",
+          "description": "",
+          "position": "12",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 12",
+          "description": "",
+          "position": "13",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 13",
+          "description": "",
+          "position": "14",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 14",
+          "description": "",
+          "position": "15",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Beam # 15",
+          "description": "",
+          "position": "16",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "PoyntingFlux",
+          "description": "Scalar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Riometer data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT12S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

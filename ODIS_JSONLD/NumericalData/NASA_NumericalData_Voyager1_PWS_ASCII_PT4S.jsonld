@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Voyager1_PWS_ASCII_PT4S.jsonld",
+  "name": "Voyager 1 PWS full resolution plasma wave data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Voyager1_PWS_ASCII_PT4S.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www-pw.physics.uiowa.edu/voyager/",
+      "encodingFormat": "Binary",
+      "name": "PI site at U. Iowa for many PWS data sets",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Voyager1/PWS/ASCII/PT4S",
+  "creditText": "Voyager 1 PWS full resolution plasma wave data.",
+  "description": "Full resolution plasma wave spectrum analyzer data from Voyager 1 PWS instrument",
+  "abstract": "Full resolution plasma wave spectrum analyzer data from Voyager 1 PWS instrument",
+  "temporalCoverage": "Start date: 1977-09-07T00:00:00. Relative stop date: -P3D",
+  "variableMeasured": "Waves.Passive",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

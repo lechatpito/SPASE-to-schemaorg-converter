@@ -1,0 +1,158 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_PSP_psp-fld-qfl.jsonld",
+  "name": "PSP - FIELDS MAG - quality flag",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_PSP_psp-fld-qfl.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Stuart.D.Bale",
+    "url": "http://hpde.io/SMWG/Person/Stuart.D.Bale"
+  },
+  "sdDatePublished": "2024-03-18",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/PSP/psp-fld-qfl",
+  "creditText": "PSP - FIELDS MAG - quality flag.",
+  "description": " \n             The quality flags is a bitwise variable, meaning that multiple flags can be set for a single time, by adding flag values. Current flagged values are: \n             * 1: FIELDS antenna bias sweep, \n             * 2: PSP thruster firing, \n             * 4: SCM Calibration, \n             * 8: PSP rotations for MAG calibration (MAG rolls), \n             * 16: FIELDS MAG calibration sequence, \n             * 32: SWEAP SPC in electron mode, \n             * 64: PSP Solar limb sensor (SLS) test. \n             * 128: PSP spacecraft is off umbra pointing (heat shield not pointed sunward). \n             * 0: A value of zero corresponds to no set flags\n             The data is available both in the form of an integer and as a vector of 8 components corresponding to the flagging of each scenarii.\n         ",
+  "abstract": " \n             The quality flags is a bitwise variable, meaning that multiple flags can be set for a single time, by adding flag values. Current flagged values are: \n             * 1: FIELDS antenna bias sweep, \n             * 2: PSP thruster firing, \n             * 4: SCM Calibration, \n             * 8: PSP rotations for MAG calibration (MAG rolls), \n             * 16: FIELDS MAG calibration sequence, \n             * 32: SWEAP SPC in electron mode, \n             * 64: PSP Solar limb sensor (SLS) test. \n             * 128: PSP spacecraft is off umbra pointing (heat shield not pointed sunward). \n             * 0: A value of zero corresponds to no set flags\n             The data is available both in the form of an integer and as a vector of 8 components corresponding to the flagging of each scenarii.\n         ",
+  "temporalCoverage": "Start date: 2018-10-02T03:48:30Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "q value",
+      "description": "\n             Bitwise variable quality\n         ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_fld_qfl"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "q vector",
+      "description": "\n              Quality flags described as a vector. Each component corresponds to a flag value\n          ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "antenna sweep",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "thruster firing",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "SCM calibr.",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PSP rotations",
+          "description": "",
+          "position": "4",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "MAG calibr. seq.",
+          "description": "",
+          "position": "5",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "SWP cup e- mode",
+          "description": "",
+          "position": "6",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "SLS test",
+          "description": "",
+          "position": "7",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "off umbra",
+          "description": "",
+          "position": "8",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "psp_fld_qflbin"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

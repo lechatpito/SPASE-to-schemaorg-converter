@@ -1,0 +1,129 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_UCLA_MHD-IPIC3D_2008-02-15_PT0S.jsonld",
+  "name": "UCLA MHD and iPic3D model Agyrotropy results",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_UCLA_MHD-IPIC3D_2008-02-15_PT0S.jsonld",
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://vmo.igpp.ucla.edu/data1/UCLA-SPSG/MHD-IPIC3D/2008-02-15/Agyrotropy_34000.dat",
+      "encodingFormat": "Text",
+      "name": "UCLA MHD-iPic3D Repository",
+      "description": "Results from the UCLA MHD and iPic3D model run for the event on 2008-02-15."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/UCLA/MHD-IPIC3D/2008-02-15/PT0S",
+  "creditText": "UCLA MHD and iPic3D model Agyrotropy results.",
+  "description": "Agyrotropy and position vector results from UCLA MHD and iPic3D model run for the event on 2008-02-15.",
+  "abstract": "Agyrotropy and position vector results from UCLA MHD and iPic3D model run for the event on 2008-02-15.",
+  "temporalCoverage": "Start date: 2008-02-15T03:49:48Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Position values from UCLA MHD and iPic3D model",
+      "description": "Position vector from UCLA MHD and iPic3D model",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "measurementTechnique": "Cartesian GSM",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Position vectors"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Agyrotropy",
+      "description": "Agyrotropy (ratio of Eigen values) from UCLA MHD and iPic3D model.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other",
+          "description": "Ratio"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Agyrotropy Ratio"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0S"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_DoubleStar2_FGM_PrimeParameters_PT4S.jsonld",
+  "name": "Double Star 2 Spacecraft Flux Gate Magnetometer (FGM) Prime Parameters Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_DoubleStar2_FGM_PrimeParameters_PT4S.jsonld",
+  "sdDatePublished": "2019-05-05",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/NumericalData/DoubleStar2/FGM/PrimeParameters/PT4S",
+  "creditText": "Double Star 2 Spacecraft Flux Gate Magnetometer (FGM) Prime Parameters Data.",
+  "description": "The Double Star 2 Flux Gate Magnetometer (FGM) prime parameter data set contains various parameters in GSE coordinates at spin resolution. These parameters include universal time, the instrument status, the magnetic field vector in GSE coordinates, and the magnetic field variances. These parameters are available through Double Star Science Data Centre The Data Ring with restricted access.",
+  "abstract": "The Double Star 2 Flux Gate Magnetometer (FGM) prime parameter data set contains various parameters in GSE coordinates at spin resolution. These parameters include universal time, the instrument status, the magnetic field vector in GSE coordinates, and the magnetic field variances. These parameters are available through Double Star Science Data Centre The Data Ring with restricted access.",
+  "temporalCoverage": "Start date: 2004-07-30T07:00:49. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 FGM Universal Time Prime Parameter",
+      "description": "Universal Time in data cell: day, month, year hour, min, seconds. Ex: '01-Jan-1981 00:00:00.000'. The time is an interval centered time tag rounded to nearest msecond.",
+      "unitText": "ms",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e31",
+      "unitCode": "1.0e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch__T2_PP_FGM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 FGM Half Interval Prime Parameter",
+      "description": "Double Star 2 FGM half the mean separation between time tags, averaged over the file.",
+      "unitText": "ms",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e31",
+      "unitCode": "1.0e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Half_interval__T2_PP_FGM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Half sample time interval"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 FGM Status Prime Parameter",
+      "description": "Double Star 2 FGM status at spin resolution.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Status__T2_PP_FGM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 FGM DC Magnetic Field Vector Prime Parameter",
+      "description": "Double Star 2 FGM magnetic field vectors at spin resolution in GSE Coordinates in units of nT.",
+      "unitText": "nT",
+      "minValue": "-32768.0",
+      "maxValue": "32768.0",
+      "defaultValue": "-1.0e31",
+      "unitCode": "1.0e-9>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "BX-GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BY-GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BZ-GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_xyz_gse__T2_PP_FGM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "-32768.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "32768.0"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 FGM Magnetic Variance Summed Prime Parameter",
+      "description": "Double Star 2 FGM normalised magnetic variance including summed component variances at spin resolution.",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Variance"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_nsigma_t__T2_PP_FGM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "dB_t^2/B^2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 FGM Magnetic Variance of the Magnitude Prime Parameter",
+      "description": "Double Star 2 FGM magnetic variance of the magnitude at spin resolution.",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Variance"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_nsigma_b__T2_PP_FGM"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT4S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "dB_b^2/B^2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMin",
+          "value": "0.0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ScaleMax",
+          "value": "1.0"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "keywords": [
+    "Double Star",
+    "Tan Ce 2",
+    "TC 2",
+    "FGM",
+    "magnetic field",
+    "4 second",
+    "auroral region",
+    "cusp",
+    "lobe",
+    "magnetosphere",
+    "magnetotail",
+    "polar cap"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

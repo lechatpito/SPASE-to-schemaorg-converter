@@ -1,0 +1,649 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_LANL_2001_SOPA+ESP_PT1H.jsonld",
+  "name": "LANL 2001 H2 Data Set",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_LANL_2001_SOPA+ESP_PT1H.jsonld",
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://mag.gmu.edu/ftp/LANL/LANL01A/SOPA+ESP/H2/",
+      "encodingFormat": "CDF",
+      "name": "Data files",
+      "description": "FTP site for this dataset"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/LANL/2001/SOPA+ESP/PT1H",
+  "creditText": "LANL 2001 H2 Data Set.",
+  "description": "LANL 2001 H2 Data Set",
+  "abstract": "LANL 2001 H2 Data Set",
+  "temporalCoverage": "Start date: 2000-10-14T09:29:56.000Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Default time",
+      "unitText": "ms",
+      "minValue": "6.15360672E13",
+      "maxValue": "3.15569519999999E14",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1.0e3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Epoch, UT"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Satellite position (GEO)",
+      "description": "Position of the satellite in geographic coordinates",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.0e-3>m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Position"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Origin = Earth's center of mass. X = Intersection of Greenwich meridian and geographic equator. Z = Geographic North Pole. Y = completes a right-handed Cartesian triad"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Position_Quality",
+      "description": "Position Quality flag",
+      "unitText": "",
+      "minValue": "-32767",
+      "maxValue": "32767",
+      "defaultValue": "-32767",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Position_Quality"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "0 denotes highest quality."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field strength",
+      "description": "Calculated magnetic field strength",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "1.0E31",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1.0e9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_Calc"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated using ONERA-DESP library Internal field: DGRF/IGRF External field: Olson & Pfitzer quiet"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Equatorial magnetic field strength",
+      "description": "Calculated magnetic field strength at magnetic equator",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "1.0E31",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1.0e9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_Eq"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated using ONERA-DESP library Internal field: DGRF/IGRF External field: Olson & Pfitzer quiet"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "McIlwain's L parameter",
+      "description": "Calculated McIlwain's L parameter (Earth's radii)",
+      "unitText": "R_E",
+      "minValue": "0.0",
+      "maxValue": "1.0E31",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1.5696e-7>m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "L"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated using ONERA-DESP library Internal field: DGRF/IGRF External field: Olson & Pfitzer quiet"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roederer's L* parameter",
+      "description": "Calculated Roederer's L* parameter (Earth's radii)",
+      "unitText": "R_E",
+      "minValue": "0.0",
+      "maxValue": "1.0E31",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1.5696e-7>m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "L_star"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated using ONERA-DESP library Internal field: DGRF/IGRF External field: Olson & Pfitzer quiet"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Adiabatic invariant (bounce)",
+      "description": "Adiabatic invariant (bounce)",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0E31",
+      "defaultValue": "-1.0E31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated using ONERA-DESP library Internal field: DGRF/IGRF External field: Olson & Pfitzer quiet"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Local Time",
+      "description": "Calculated Magnetic Local Time (hours)",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0E31",
+      "unitCode": "2.778e-4>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MLT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated using ONERA-DESP library Internal field: DGRF/IGRF External field: Olson & Pfitzer quiet"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch angle",
+      "description": "Pitch angle",
+      "unitText": "degrees",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0E31",
+      "unitCode": "57.296>rad",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Alpha"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated using ONERA-DESP library Internal field: DGRF/IGRF External field: Olson & Pfitzer quiet"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Equat. Pitch angle",
+      "description": "Equatorial pitch angle",
+      "unitText": "degrees",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0E31",
+      "unitCode": "57.296>rad",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Alpha_Eq"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Calculated using ONERA-DESP library Internal field: DGRF/IGRF External field: Olson & Pfitzer quiet"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FPDO",
+      "description": "Omnidirectional Differential Proton Flux",
+      "unitText": "cm^-2 s^-1 sr^-1 MeV^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.602e-17>m^-2 s^-1 sr^-1 J^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FPDO"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Dimension 1 holds channels."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FPDO Energy",
+      "description": "Energy levels for FPDO",
+      "unitText": "MeV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "6.242e12>J",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FPDO_Energy"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Energy levels and number of channels will vary across instruments in the first stage."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FPDO_Quality",
+      "description": "FPDO Quality flag",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FPDO_Quality"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "0 denotes highest quality, 1 denotes problem with time resolution,2 denotes possible contamination, 3 denotes saturation and 4 denotes any other problem"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FPDO Crosscalib",
+      "description": "Crosscalibration factors for FPDO",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FPDO_Crosscalib"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FEIO",
+      "description": "Omnidirectional Integral Electron Flux",
+      "unitText": "cm^-2 s^-1 sr^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.602e-17>m^-2 s^-1 sr^-1 J^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FEIO"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Dimension 1 holds channels."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FEDO Energy",
+      "description": "Energy levels for FEIO",
+      "unitText": "MeV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "6.242e12>J",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FEIO_Energy"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Energy levels and number of channels will vary across instruments in the first stage."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FEIO_Quality",
+      "description": "FEIO Quality flag",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FEIO_Quality"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "0 denotes highest quality, 1 denotes problem with time resolution,2 denotes possible contamination, 3 denotes saturation and 4 denotes any other problem"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FEIO Crosscalib",
+      "description": "Crosscalibration factors for FEIO",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FEIO_Crosscalib"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FEDO",
+      "description": "Omnidirectional Differential Electron Flux",
+      "unitText": "cm^-2 s^-1 sr^-1 MeV^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.602e-17>m^-2 s^-1 sr^-1 J^-1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FEDO"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Dimension 1 holds channels."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FEDO Energy",
+      "description": "Energy levels for FEDO",
+      "unitText": "MeV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "6.242e12>J",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FEDO_Energy"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "Energy levels and number of channels will vary across instruments in the first stage."
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FEDO_Quality",
+      "description": "FEDO Quality flag",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FEDO_Quality"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Caveats",
+          "value": "0 denotes highest quality, 1 denotes problem with time resolution,2 denotes possible contamination, 3 denotes saturation and 4 denotes any other problem"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FEDO Crosscalib",
+      "description": "Crosscalibration factors for FEDO",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FEDO_Crosscalib"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

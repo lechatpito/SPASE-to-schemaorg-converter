@@ -1,0 +1,375 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Geotail_MGF_PT64S.jsonld",
+  "name": "Geotail KP Magnetic Field Data (64s)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/JAXA_NumericalData_Geotail_MGF_PT64S.jsonld",
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://JAXA/NumericalData/Geotail/MGF/PT64S",
+  "creditText": "Geotail KP Magnetic Field Data (64s).",
+  "description": "This data set contains the investigator-selected Key Parameters from the Magnetic Field instrument (MGF) on Geotail, as made available via NSSDC's interactive WWW interface CDAWeb.\n\n            Selected references:\n\n            Kokubun, S., et al., Magnetic field measurement (MGF), In Geotail Prelaunch Report, SES-TD-92-007SY, Institute of Space and Astronautical Science, SES Data Center, pp. 58-70, Apr. 1992.\n\n            Nishida, A., et al., Geotail mission to explore earth's magnetotail, EOS, 73, No. 40, Oct. 1992.\n\n            Kokubun, S., et al., The GEOTAIL Magnetic Field Experiment, J. Geomag. Geoelectr., 46, No. 1, 7-21, 1994.",
+  "abstract": "This data set contains the investigator-selected Key Parameters from the Magnetic Field instrument (MGF) on Geotail, as made available via NSSDC's interactive WWW interface CDAWeb.\n\n            Selected references:\n\n            Kokubun, S., et al., Magnetic field measurement (MGF), In Geotail Prelaunch Report, SES-TD-92-007SY, Institute of Space and Astronautical Science, SES Data Center, pp. 58-70, Apr. 1992.\n\n            Nishida, A., et al., Geotail mission to explore earth's magnetotail, EOS, 73, No. 40, Oct. 1992.\n\n            Kokubun, S., et al., The GEOTAIL Magnetic Field Experiment, J. Geomag. Geoelectr., 46, No. 1, 7-21, 1994.",
+  "temporalCoverage": "Start date: 1992-09-04T19:14:06. Relative stop date: -P0D",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time in miliseconds since CDF epoch",
+      "unitText": "ms",
+      "minValue": "01-Aug-1992 00:00:00.000",
+      "maxValue": "31-Dec-2000 23:59:59.000",
+      "defaultValue": "-1.0E31",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time as an array (year, day of year and elapsed milliseconds of day).",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Year",
+          "description": "",
+          "position": "1",
+          "defaultValue": "-2147483648"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Day of Year (jan 1 = day 1)",
+          "description": "",
+          "position": "2",
+          "defaultValue": "-2147483648"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Elapsed ms of day",
+          "description": "",
+          "position": "3",
+          "defaultValue": "-2147483648"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Time_PB5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time of day",
+      "description": "Elapsed milliseconds of day",
+      "unitText": "ms",
+      "minValue": "0",
+      "maxValue": "86400000",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "MSEC"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Intensity",
+      "description": "Observed magnetic field intensity",
+      "unitText": "0.1nT",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "unitCode": "1e-10>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Average",
+            "Magnitude"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "IB"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field (GSE)",
+      "description": "Observed magnetic field vector in GSE coordinates",
+      "unitText": "0.1nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-10>T",
+      "measurementTechnique": "Cartesian GSE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-32768"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-32768"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-32768"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Average",
+            "Vector"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "IB_vector"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B RMS (sensor coord)",
+      "description": "Standard deviation of sin fitting for magnetic field in sensor coordinates",
+      "unitText": "0.01nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-11>T",
+      "measurementTechnique": "Cartesian SC",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Bx-RMS",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-32768"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "By-RMS",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-32768"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bz-RMS",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-32768"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "StandardDeviation",
+            "Vector"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "IS_vector"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MGF Range",
+      "description": "Range status of the fluxgate magnetometer.\n\n            * 0 = Not valid\n            * 1 = +/-    16 nT\n            * 2 = +/-    64 nT\n            * 3 = +/-   256 nT\n            * 4 = +/-  1024 nT\n            * 5 = +/-  4096 nT\n            * 6 = +/- 16384 nT\n            * 7 = +/- 65536 nT",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "7",
+      "defaultValue": "-32768",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "RANGE_STATUS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Satellite Position (GSE)",
+      "description": "Satellite position vector in GSE coordinates",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X-GSE",
+          "description": "Component.I",
+          "position": "1",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y-GSE",
+          "description": "Component.J",
+          "position": "2",
+          "defaultValue": "-1.0E31"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z-GSE",
+          "description": "Component.K",
+          "position": "3",
+          "defaultValue": "-1.0E31"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "POS"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag",
+      "description": "Data quality flag: Good/Bad/Fill (0: good; 1,2,3: poor 4: fill value)",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "DQF"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Post Gap Flag",
+      "description": "Post gap flag.\n\n             * 0: no gap occurred;\n             * 1: gap occurred because SIRIUS data were illegal or because the instrument was not in a mode that allowed KP's\n             * 2: gap occurred because of the jump of MGF RANGE or MGF SENSE during 64 s",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "2",
+      "defaultValue": "-2147483648",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Gap_Flag"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

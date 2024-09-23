@@ -1,0 +1,151 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Cassini_MAG_Saturn_Orbit_cass-mag-krtphr.jsonld",
+  "name": "Cassini - MAG - orbit saturn - 0.02 sec",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Cassini_MAG_Saturn_Orbit_cass-mag-krtphr.jsonld",
+  "sdDatePublished": "2020-02-17",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Cassini/MAG/Saturn_Orbit/cass-mag-krtphr",
+  "creditText": "Cassini - MAG - orbit saturn - 0.02 sec.",
+  "description": "High-resolution magnetic field data from the Cassini magnetometer during the Saturn orbital phase in KRTP coordinates obtained from NASA/PDS plasma node",
+  "abstract": "High-resolution magnetic field data from the Cassini magnetometer during the Saturn orbital phase in KRTP coordinates obtained from NASA/PDS plasma node",
+  "temporalCoverage": "Start date: 2004-05-11T00:00:04Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_krtp",
+      "description": "Magnetic Field in KRTP coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "br",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "btheta",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "bphi",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Vector"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "cass_b_krtphr"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field vector magnitude",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "cass_bmag_krtphr"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Titan"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Enceladus"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Dione"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Rhea"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Tethys"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Mimas"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Iapetus"
+    },
+    {
+      "@type": "Place",
+      "name": "Interstellar"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Cluster_PEACE_DATA.jsonld",
+  "name": "Cluster Plasma Electrons and Currents Experiment (PEACE) Digital Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/ESA_NumericalData_Cluster_PEACE_DATA.jsonld",
+  "sdDatePublished": "2020-05-11",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sci.esa.int/web/cluster/-/52770-csds",
+      "encodingFormat": "Binary",
+      "name": "PEACE data at the Cluster Science Data System (CSDS) ",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ESA/NumericalData/Cluster/PEACE/DATA",
+  "creditText": "Cluster Plasma Electrons and Currents Experiment (PEACE) Digital Data.",
+  "description": "Data products of the Cluster Plasma Electron \nand Current Experiment (PEACE) instruments which have been produced or the Cluster Active Archive. The Plasma Electron And Current Experiment (PEACE) measurements \nof the thermal electron plasma population enable characterisation of the \nlocal plasma \u2013 its density, bulk flow, electron temperature \u2013 and electron \npitch angle data reveal whether the local region is magnetically connected \nto regions of electron acceleration or lies between magnetic mirrors. \nPEACE electron data reveals whether electron pitch angle or energy scat-\ntering processes are active, for example as wave-particle interactions oc-\ncur",
+  "abstract": "Data products of the Cluster Plasma Electron \nand Current Experiment (PEACE) instruments which have been produced or the Cluster Active Archive. The Plasma Electron And Current Experiment (PEACE) measurements \nof the thermal electron plasma population enable characterisation of the \nlocal plasma \u2013 its density, bulk flow, electron temperature \u2013 and electron \npitch angle data reveal whether the local region is magnetically connected \nto regions of electron acceleration or lies between magnetic mirrors. \nPEACE electron data reveals whether electron pitch angle or energy scat-\ntering processes are active, for example as wave-particle interactions oc-\ncur",
+  "temporalCoverage": "Start date: 2001-01-09T00:00:00. Relative stop date: -P3D",
+  "variableMeasured": [
+    "ThermalPlasma",
+    "EnergeticParticles"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

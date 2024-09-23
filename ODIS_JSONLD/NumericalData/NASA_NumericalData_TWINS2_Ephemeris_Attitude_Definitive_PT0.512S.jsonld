@@ -1,0 +1,337 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_TWINS2_Ephemeris_Attitude_Definitive_PT0.512S.jsonld",
+  "name": "TWINS-2 Ephemeris, Definitive Spacecraft Attitude, PT0.512S Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_TWINS2_Ephemeris_Attitude_Definitive_PT0.512S.jsonld",
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/twins/twins2/ephemeris/att/",
+      "encodingFormat": "CDF",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/twins/twins2/ephemeris/att/",
+      "encodingFormat": "CDF",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=TWINS2_AT_DEF&index=sp_phys",
+      "encodingFormat": "CDF",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/TWINS2/Ephemeris/Attitude/Definitive/PT0.512S",
+  "creditText": "TWINS-2 Ephemeris, Definitive Spacecraft Attitude, PT0.512S Data.",
+  "description": "Two Wide-angle Imaging Neutral-atom Spectrometers 2, TWINS 2, Spacecraft Attitude data, Earth Centered Inertial, ECI, coordinates. This TWINS data set contains spacecraft attitude data as polar and azimuthal instrument pointing vectors. The polar vector points along the TWINS rotation axis. The azimuthal vector lies in the plane normal to the polar vector and points toward the central scanning position, which is defined as the zero-point location. Such pointing is derived from both the spacecraft attitude history, SAH, file and the sensor mounting orientation. The computation employed is designed to achieve a pointing accuracy of 0.5\u00b0. Any deviation from this accuracy level is indicated in the header record metadata.",
+  "abstract": "Two Wide-angle Imaging Neutral-atom Spectrometers 2, TWINS 2, Spacecraft Attitude data, Earth Centered Inertial, ECI, coordinates. This TWINS data set contains spacecraft attitude data as polar and azimuthal instrument pointing vectors. The polar vector points along the TWINS rotation axis. The azimuthal vector lies in the plane normal to the polar vector and points toward the central scanning position, which is defined as the zero-point location. Such pointing is derived from both the spacecraft attitude history, SAH, file and the sensor mounting orientation. The computation employed is designed to achieve a pointing accuracy of 0.5\u00b0. Any deviation from this accuracy level is indicated in the header record metadata.",
+  "temporalCoverage": "Start date: 2008-04-14T00:53:59.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time Tags",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.512S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Epoch"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start Time, MJD",
+      "description": "Start Time, Mission Julian Date, MJD, time key of data point",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "ISTARTTIMEMJD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.512S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Start Time MJD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F30.12"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Attitude, Polar Pointing Vector, ECI Cartesian Coordinates",
+      "description": "Spacecraft Attitude, Polar Pointing Vector, Earth Centered Inertial, ECI, Cartesian Coordinates",
+      "unitText": "",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Cartesian GEI",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "FPOLARPOINTECI X",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "FPOLARPOINTECI Y",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "FPOLARPOINTECI Z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Velocity",
+          "description": [
+            "DirectionAngle.PolarAngle",
+            "Vector"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FPOLARPOINTECI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.512S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Polar ECI XYZ"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F16.12"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Attitude, Azimuthal Pointing Vector, ECI Cartesian Coordinates",
+      "description": "Spacecraft Attitude, Azimuthal Pointing Vector, Earth Centered Inertial, ECI, Cartesian Coordinates",
+      "unitText": "",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "measurementTechnique": "Cartesian GEI",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "FAZIMUTHALPOINTECI X",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "FAZIMUTHALPOINTECI Y",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "FAZIMUTHALPOINTECI Z",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Velocity",
+          "description": [
+            "DirectionAngle.AzimuthAngle",
+            "Vector"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FAZIMUTHALPOINTECI"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.512S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "Azimuthal ECI XYZ"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F16.12"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TWINS Data File ID",
+      "description": "TWINS Data File ID as used in TWINS database storage system",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "2147483647",
+      "defaultValue": "-2012696540",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Other"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "NDATAFILEID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT0.512S"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "DataFile ID"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F7"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

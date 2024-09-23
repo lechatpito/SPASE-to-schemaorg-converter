@@ -1,0 +1,461 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Cassini_MAG_CDF_PT1M.jsonld",
+  "name": "Cassini 1-min cruise phase magnetic field data in CDF Format",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Cassini_MAG_CDF_PT1M.jsonld",
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Cassini/MAG/CDF/PT1M",
+  "creditText": "Cassini 1-min cruise phase magnetic field data in CDF Format.",
+  "description": "Cassini Magnetic Field 1 min Averages for the Year 2020 in RTN Coordinates. RTN Coordinates consist of the Radial Component, R, from the Sun to the Spacecraft), the Tangential Component, T, parallel to the Solar Equatorial Plane and perpendicular to R, and the Normal Component, N, that completes Right-Handed Set. This File contains a Subset of all of the Cassini MAG Data for 2001 consisting of only the Data after the Day of the last Jupiter Bowshock Crossing, 2001-01-15. The Data are mostly from the Fluxgate Magnetometer (FGM). The Table at vhm.txt identifies the 52 Days in 2000 to 2004 for which the Data are solely from the Vector Helium Magnetometer (VHM). Days not in the Table contain only FGM Data. VHM_mode Variable indicates (value 1) whether Data are from VHM. This File was produced from raw, L1A, Data at the PDS/PPI node using Software provided by the Cassini MAG Team, and employing the latest Calibration available. The PDS/PPI Node produced both 1 s vectors and 1 min averages. The MAG team reports that while Range 0 data are well calibrated for both the Fluxgate Magnetometer, FGM and the Vector Helium Magnetometer, VHM, the higher Range Data need Improvement, See the RANGE_CHANGES.ASC Document for a Time History of Range Changes. These Data will be replaced as the Calibration is improved. The FGM_mode Variable indicates (Value 0) if Data is Range 0. See https://www.igpp.ucla.edu/cgi-bin/ditdos?volume=COMAG_0XXX&folder=DOCUMENT/DATA_QUALITY&file=RANGE_CHANGES for Details. In particular, this Documentation reports that FGM was in Range=0 for the following extended Intervals plus other brief Intervals, YYYY/DDD/HH, inclusive: 1999/230/05 to 1999/245/07, 1999/245/09 to 2000/037/12, 2000/039/00 to 2000/053/18, 2000/053/20 to 2000/056/01, 2000/057/23 to 2002/334/13, 2002/334/17 to 2003/292/18, 2003/292/22 to 2004/046/11, 2004/046/15 to 2004/088/08, 2004/088/12 to 2004/136/06, 2004/136/11 to 2004/174/01, 2004/174/06 to 2004/182/17",
+  "abstract": "Cassini Magnetic Field 1 min Averages for the Year 2020 in RTN Coordinates. RTN Coordinates consist of the Radial Component, R, from the Sun to the Spacecraft), the Tangential Component, T, parallel to the Solar Equatorial Plane and perpendicular to R, and the Normal Component, N, that completes Right-Handed Set. This File contains a Subset of all of the Cassini MAG Data for 2001 consisting of only the Data after the Day of the last Jupiter Bowshock Crossing, 2001-01-15. The Data are mostly from the Fluxgate Magnetometer (FGM). The Table at vhm.txt identifies the 52 Days in 2000 to 2004 for which the Data are solely from the Vector Helium Magnetometer (VHM). Days not in the Table contain only FGM Data. VHM_mode Variable indicates (value 1) whether Data are from VHM. This File was produced from raw, L1A, Data at the PDS/PPI node using Software provided by the Cassini MAG Team, and employing the latest Calibration available. The PDS/PPI Node produced both 1 s vectors and 1 min averages. The MAG team reports that while Range 0 data are well calibrated for both the Fluxgate Magnetometer, FGM and the Vector Helium Magnetometer, VHM, the higher Range Data need Improvement, See the RANGE_CHANGES.ASC Document for a Time History of Range Changes. These Data will be replaced as the Calibration is improved. The FGM_mode Variable indicates (Value 0) if Data is Range 0. See https://www.igpp.ucla.edu/cgi-bin/ditdos?volume=COMAG_0XXX&folder=DOCUMENT/DATA_QUALITY&file=RANGE_CHANGES for Details. In particular, this Documentation reports that FGM was in Range=0 for the following extended Intervals plus other brief Intervals, YYYY/DDD/HH, inclusive: 1999/230/05 to 1999/245/07, 1999/245/09 to 2000/037/12, 2000/039/00 to 2000/053/18, 2000/053/20 to 2000/056/01, 2000/057/23 to 2002/334/13, 2002/334/17 to 2003/292/18, 2003/292/22 to 2004/046/11, 2004/046/15 to 2004/088/08, 2004/088/12 to 2004/136/06, 2004/136/11 to 2004/174/01, 2004/174/06 to 2004/182/17",
+  "temporalCoverage": "Start date: 2000-01-01T00:00:00.000. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Default Time",
+      "unitText": "ms",
+      "minValue": "01-Jan-1000 00:00:00.000",
+      "maxValue": "01-Jan-3000 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "unitCode": "1e-3>s",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Epoch"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, RTN",
+      "description": "Magnetic Field Vector, Radial-Tangential-Normal, RTN, Coordinates",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian RTN",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "Br",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bt",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Bn",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Vector",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_comp"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F13.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Magnitude",
+      "description": "Magnetic Field Magnitude",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": [
+            "Magnitude",
+            "Average"
+          ]
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "B_mag"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "B_tot, nT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F13.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VHM Mode",
+      "description": "Flag for Data Source: FGM=Fluxgate Magnetometer VHM=Vector Helium Magnetometer",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "VHM_mode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "FGM(0)/VHM(1)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I1"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FGM Mode",
+      "description": "FGM Range Mode, Range 0 is the only well-calibrated Data currently available",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "InstrumentMode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "FGM_mode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "FGM range mode"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "I1"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Heliocentric Distance",
+      "description": "Spacecraft Heliocentric Distance",
+      "unitText": "ua",
+      "minValue": "0.0",
+      "maxValue": "9.9",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.495978706 e11>m",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_r"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "S/C dist, AU"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F13.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Latitude, HGI, RTN",
+      "description": "Spacecraft Heliographic Latitude, Heliographic Inertial, HGI, Radial-Tangential-Normal, RTN, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-1000.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "0.0174532925>rad",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_lat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC latitude, deg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F13.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Longitude, HGI, RTN",
+      "description": "Spacecraft Heliographic Longitude, Heliographic Inertial, HGI, Radial-Tangential-Normal, RTN, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-1000.0",
+      "maxValue": "400.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "0.0174532925>rad",
+      "measurementTechnique": "Spherical HGI",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.AzimuthAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_long"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "AxisLabel",
+          "value": "SC longitude, deg"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F13.2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, HGI, RTN",
+      "description": "Spacecraft Coordinates, Heliographic Inertial, HGI, Radial-Tangential-Normal, RTN, Coordinates",
+      "unitText": "ua",
+      "minValue": "-100.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "unitCode": "1.495978706 e11>m",
+      "measurementTechnique": "Spherical HGI",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "X_HGI",
+          "description": "",
+          "position": "1",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Y_HGI",
+          "description": "",
+          "position": "2",
+          "defaultValue": ""
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Z_HGI",
+          "description": "",
+          "position": "3",
+          "defaultValue": ""
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional",
+          "description": "DirectionAngle.ElevationAngle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "sc_pos"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Cadence",
+          "value": "PT1M"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ValueFormat",
+          "value": "F13.2"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

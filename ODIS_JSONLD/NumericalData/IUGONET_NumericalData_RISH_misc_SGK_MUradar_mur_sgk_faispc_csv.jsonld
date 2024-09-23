@@ -1,0 +1,157 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_RISH_misc_SGK_MUradar_mur_sgk_faispc_csv.jsonld",
+  "name": "Field-aligned irregularity (FAI) observation data of the ionosphere taken by the MU radar (CSV format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_RISH_misc_SGK_MUradar_mur_sgk_faispc_csv.jsonld",
+  "sdDatePublished": "2016-12-05",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/mu/fai/",
+      "encodingFormat": "Text.ASCII",
+      "name": "MU FAI Observation",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/RISH/misc/SGK/MUradar/mur_sgk_faispc_csv",
+  "creditText": "Field-aligned irregularity (FAI) observation data of the ionosphere taken by the MU radar (CSV format).",
+  "description": "The field-aligned irregularity (FAI) observation data in the ionosphere between 80 km and 130 km taken by the MU radar at Shigaraki in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL), which has been operated in the special observation mode of the FAI. The data are stored in the CSV (Comma Separated Values) file named (year)(month)(day).(observation parameter).(variable)(beam number).csv. The variable abbreviations are dpl, wdt, dpl, and pn, which mean radial Doppler velocity, echo power, spectral width and noise level for each beam number, respectively. The numbers of the first and second lines of each file represent ranges and heights, respectively, and the third and below are observational local date and time (year/month/day hour:minute) which corresponds to the center time of averaging period and data at each range and height. The value of -999 means missing data. The time resolution depends on each observation parameter. The noise level is the height-averaged value.",
+  "abstract": "The field-aligned irregularity (FAI) observation data in the ionosphere between 80 km and 130 km taken by the MU radar at Shigaraki in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL), which has been operated in the special observation mode of the FAI. The data are stored in the CSV (Comma Separated Values) file named (year)(month)(day).(observation parameter).(variable)(beam number).csv. The variable abbreviations are dpl, wdt, dpl, and pn, which mean radial Doppler velocity, echo power, spectral width and noise level for each beam number, respectively. The numbers of the first and second lines of each file represent ranges and heights, respectively, and the third and below are observational local date and time (year/month/day hour:minute) which corresponds to the center time of averaging period and data at each range and height. The value of -999 means missing data. The time resolution depends on each observation parameter. The noise level is the height-averaged value.",
+  "temporalCoverage": "Start date: 1986-07-27T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "date",
+      "description": "Date in the form YYYY/MM/DD where YYYY= Gregorian Year AD, MM = month of year (01-12), and DD = day of month (01-31).",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Time in the form hh:mm where hh = hour of day (00-23) and mm = minute of hour. Local time (UT+07:00:00) is used for time data.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Temporal"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "range",
+      "description": "Range of radar beam",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "height",
+      "description": "Height",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Positional"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dpl",
+      "description": "Radial Doppler velocity",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr",
+      "description": "Echo power",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wdt",
+      "description": "Spectral width",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pn",
+      "description": "Noise level (height-averaged value)",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "Other"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Ion Chemistry/Ionization",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

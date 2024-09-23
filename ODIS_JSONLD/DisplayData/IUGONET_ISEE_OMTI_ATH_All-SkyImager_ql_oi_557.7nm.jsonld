@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_ISEE_OMTI_ATH_All-SkyImager_ql_oi_557.7nm.jsonld",
+  "name": "OMTI All-Sky Imager Quick-Look Data (OI emission, 557.7nm, 5s) at Athabasca",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_ISEE_OMTI_ATH_All-SkyImager_ql_oi_557.7nm.jsonld",
+  "sdDatePublished": "2017-03-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://stdb2.isee.nagoya-u.ac.jp/omti/",
+      "encodingFormat": "GIF",
+      "name": "Optical Mesosphere Thermosphere Imagers (OMTIs)",
+      "description": "Website of the Optical Mesosphere Thermosphere Imagers (OMTIs), containing quick-look plots of all the OMTIs instruments, description of the stations and instruments, and 1-hour status of sky condition."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/DisplayData/ISEE/OMTI/ATH/All-SkyImager/ql_oi_557.7nm",
+  "creditText": "OMTI All-Sky Imager Quick-Look Data (OI emission, 557.7nm, 5s) at Athabasca.",
+  "description": "Optical Mesosphere Thermosphere Imagers (OMTI) All-Sky Imager Quick-Look Data of OI emission taken with the 557.7nm filter at Athabasca, Canada",
+  "abstract": "Optical Mesosphere Thermosphere Imagers (OMTI) All-Sky Imager Quick-Look Data of OI emission taken with the 557.7nm filter at Athabasca, Canada",
+  "temporalCoverage": "Start date: 2005-09-03T00:00:00. Relative stop date: P1D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Ion Chemistry/Ionization",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

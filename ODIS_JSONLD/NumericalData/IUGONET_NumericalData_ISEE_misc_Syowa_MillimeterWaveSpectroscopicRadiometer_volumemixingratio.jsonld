@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_ISEE_misc_Syowa_MillimeterWaveSpectroscopicRadiometer_volumemixingratio.jsonld",
+  "name": "Observations of atmospheric minor constituents with millimeter-wave spectroscopic radiometer at Syowa station, Antarctica",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/IUGONET_NumericalData_ISEE_misc_Syowa_MillimeterWaveSpectroscopicRadiometer_volumemixingratio.jsonld",
+  "sdDatePublished": "2014-12-03",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://skx1.isee.nagoya-u.ac.jp/",
+      "encodingFormat": "Binary",
+      "name": "Webpage of Mizuno group, Atmospheric Environment Division",
+      "description": "Mizuno group, Atmospheric Environment Division, ISEE, Nagoya University"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/ISEE/misc/Syowa/MillimeterWaveSpectroscopicRadiometer/volumemixingratio",
+  "creditText": "Observations of atmospheric minor constituents with millimeter-wave spectroscopic radiometer at Syowa station, Antarctica.",
+  "description": "Atmospheric partial column (between 65 and 100 km) of nitric oxide (NO) and vertical ozone profiles from 20 to 80 km retrived from continuous ground-based millimeter-wave (250 GHz) measurements at Syowa station, Antarctica. Further details of the instrument, data processing and error analysis were described in Isono et al. (2014) (doi:10.1002/2014JA019881).",
+  "abstract": "Atmospheric partial column (between 65 and 100 km) of nitric oxide (NO) and vertical ozone profiles from 20 to 80 km retrived from continuous ground-based millimeter-wave (250 GHz) measurements at Syowa station, Antarctica. Further details of the instrument, data processing and error analysis were described in Isono et al. (2014) (doi:10.1002/2014JA019881).",
+  "temporalCoverage": "Start date: 1999-10-01T00:00:00. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Column density of NO",
+      "description": "Partial column density of NO in mol/cm2",
+      "unitText": "mol/cm2",
+      "minValue": "-1.00E+16",
+      "maxValue": "1.00E+17",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "O3 volume mixing ratio",
+      "description": "O3 volume mixing ratio in ppmv",
+      "unitText": "ppmv",
+      "minValue": "-0.1",
+      "maxValue": "20",
+      "defaultValue": ""
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Stratosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    }
+  ],
+  "keywords": "ATMOSPHERIC PHYSICS REMOTE SENSING GROUNDBASED",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_VEX_ASPERA4_VEX_ASPERA4_SWM_L2.jsonld",
+  "name": "VENUS EXPRESS: ASPERA-4 IMA Proton and Heavy Ions Moments Level 2 (CDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-Archive_VEX_ASPERA4_VEX_ASPERA4_SWM_L2.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://CNES/Person/CDPP-Archive/Stas.Barabash",
+    "url": "http://hpde.io/CNES/Person/CDPP-Archive/Stas.Barabash"
+  },
+  "sdDatePublished": "2022-06-06",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:VEX_ASPERA4_SWM_L2",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/VEX/ASPERA4/VEX_ASPERA4_SWM_L2",
+  "creditText": "VENUS EXPRESS: ASPERA-4 IMA Proton and Heavy Ions Moments Level 2 (CDF).",
+  "description": "This data set contains  protons and heavy ions moments obtained from calibrated ion data from the ASPERA-4 Ion Mass Analyzer (IMA).",
+  "abstract": "This data set contains  protons and heavy ions moments obtained from calibrated ion data from the ASPERA-4 Ion Mass Analyzer (IMA).",
+  "temporalCoverage": "Start date: 2006-04-30T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Proton density",
+      "description": "The proton  density.",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e6>m^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen (O+) density",
+      "description": "The oxigen (O+)  density.",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e6>m^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton velocity",
+      "description": "The proton velocity.",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian VSO"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen (O+) velocity",
+      "description": "The oxygen (O+) velocity.",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e3>m/s",
+      "measurementTechnique": "Cartesian VSO"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton temperature",
+      "description": "The proton temperature, calculated from 3D velocity distribution function",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.60217646E-19>J",
+      "measurementTechnique": "Cartesian VSO"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen (O+) temperature",
+      "description": "The oxygen (O+) temperature, calculated from 3D velocity distribution function",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.60217646E-19>J",
+      "measurementTechnique": "Cartesian VSO"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton thermal energy",
+      "description": "The proton thermal energy, calculated from energy spectrum",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.60217646E-19>J"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen (O+) thermal energy",
+      "description": "The oxygen (O+) thermal energy, calculated from energy spectrum",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1.60217646E-19>J"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton measurement quality",
+      "description": "The proton measurement quality",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "DataQuality"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen (O+) measurement quality",
+      "description": "The oxygen (O+) measurement quality",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Support",
+        "value": "DataQuality"
+      }
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

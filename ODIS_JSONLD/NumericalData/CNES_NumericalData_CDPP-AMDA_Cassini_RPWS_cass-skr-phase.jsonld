@@ -1,0 +1,203 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Cassini_RPWS_cass-skr-phase.jsonld",
+  "name": "Cassini - RPWS - skr phase",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/CNES_NumericalData_CDPP-AMDA_Cassini_RPWS_cass-skr-phase.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Laurent.Lamy",
+    "url": "http://hpde.io/SMWG/Person/Laurent.Lamy"
+  },
+  "sdDatePublished": "2012-03-06",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-skr-phase",
+  "creditText": "Cassini - RPWS - skr phase.",
+  "description": "The Saturn Kilometric Radiation (SKR) is an intense non-thermal radio emission produced in auroral regions by accelerated electrons moving along magnetic field lines, predominantly on the dawn sector. Its regular pulsation, whose origin remains unexplained yet, was originally interpreted as a clock-like rotational modulation triggered by the planetary magnetic field, and thus directly relating to the planetary interior.               \n               South and North SKR periods have been computed separately by Dr.Laurent Lamy (Observatory of Paris/LESIA). \n                For each kronian hemisphere (North and South), the following parameters are available:\n                * period : SKR dominant period in hours\n                * phi : SKR phase system (in which SKR maxima peak about 0deg)\n                * drift: SKR peak phase with respect to an arbitrary period (10.7928h in S and 10.6h in N)\n",
+  "abstract": "The Saturn Kilometric Radiation (SKR) is an intense non-thermal radio emission produced in auroral regions by accelerated electrons moving along magnetic field lines, predominantly on the dawn sector. Its regular pulsation, whose origin remains unexplained yet, was originally interpreted as a clock-like rotational modulation triggered by the planetary magnetic field, and thus directly relating to the planetary interior.               \n               South and North SKR periods have been computed separately by Dr.Laurent Lamy (Observatory of Paris/LESIA). \n                For each kronian hemisphere (North and South), the following parameters are available:\n                * period : SKR dominant period in hours\n                * phi : SKR phase system (in which SKR maxima peak about 0deg)\n                * drift: SKR peak phase with respect to an arbitrary period (10.7928h in S and 10.6h in N)\n",
+  "temporalCoverage": "Start date: 2004-01-01T00:00:00Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "period south",
+      "description": "Southern SKR dominant period",
+      "unitText": "hours",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "cass_skr_ps"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "period north",
+      "description": "Northern SKR dominant period",
+      "unitText": "hours",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "cass_skr_pn"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi south",
+      "description": "Southern SKR phase",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "cass_skr_phis"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi north",
+      "description": "Northern SKR phase",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "cass_skr_phin"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "drift south",
+      "description": "Southern SKR phase drift from fixed 10.7928h period)",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "cass_skr_drifts"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "drift north",
+      "description": "Northern SKR phase drift from fixed 10.6h period)",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Positional"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "cass_skr_driftn"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DisplayType",
+          "value": "TimeSeries"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

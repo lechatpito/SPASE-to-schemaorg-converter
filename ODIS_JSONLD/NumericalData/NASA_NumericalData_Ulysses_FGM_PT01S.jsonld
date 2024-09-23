@@ -1,0 +1,250 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_FGM_PT01S.jsonld",
+  "name": "Ulysses High Resolution Magnetic Field Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/NASA_NumericalData_Ulysses_FGM_PT01S.jsonld",
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Ulysses/FGM/PT01S",
+  "creditText": "Ulysses High Resolution Magnetic Field Data.",
+  "description": "This data set contains high resolution samples at about one-second intervals of the interplanetary magnetic field measured by the Ulysses Magnetic Field experiment. Field vector components are given in units of nanoteslas and in RTN coordinates, where R is the sun-s/c axis, T is the cross product of the solar rotation axis and R, and T is the cross product of R and T. The field magnitudes in nT are averages of scalar magnitudes at higher time resolution. Times are computed at the mid-point of each averaging interval and expressed in Spacecraft Event Time - UT (SCET-UT). Data gaps have not been flagged in any way - if there were no available data in a particular hour then there is no data record for that hour. No data from the Feb. 1992 encounter with Jupiter are included. Each file includes one day of data. Parameter key information given below is specific to the data version at nssdcftp and at the ESA Research and Scientific Support Department site identified below. Further details on the magnetic field measurements can be found in the following reference: Balogh, A., et al., Astron. Astrophys. Suppl. Ser., 92(2), 221, 1992.",
+  "abstract": "This data set contains high resolution samples at about one-second intervals of the interplanetary magnetic field measured by the Ulysses Magnetic Field experiment. Field vector components are given in units of nanoteslas and in RTN coordinates, where R is the sun-s/c axis, T is the cross product of the solar rotation axis and R, and T is the cross product of R and T. The field magnitudes in nT are averages of scalar magnitudes at higher time resolution. Times are computed at the mid-point of each averaging interval and expressed in Spacecraft Event Time - UT (SCET-UT). Data gaps have not been flagged in any way - if there were no available data in a particular hour then there is no data record for that hour. No data from the Feb. 1992 encounter with Jupiter are included. Each file includes one day of data. Parameter key information given below is specific to the data version at nssdcftp and at the ESA Research and Scientific Support Department site identified below. Further details on the magnetic field measurements can be found in the following reference: Balogh, A., et al., Astron. Astrophys. Suppl. Ser., 92(2), 221, 1992.",
+  "temporalCoverage": "Start date: 1990-10-25T16:50:46Z. Relative stop date: None",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Two digit year",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 1"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day of Year",
+      "description": "Day of Year - DOY 1 = January 1",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 2"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour of the Day",
+      "description": "Hour of the day",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 3"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minute of the Hour",
+      "description": "Minute of the Hour",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 4"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second of the Minute",
+      "description": "Second of the Minute",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Support",
+          "value": "Temporal"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 5"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radial Component of vector magnetic field",
+      "description": "Radial Component (RTN system) of vector magnetic field in nT",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian RTN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.I"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 6"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Transverse Component of vector magnetic field",
+      "description": "Transverse Component (RTN system) of vector magnetic field in nT",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian RTN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.J"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 7"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Normal Component of vector magnetic field",
+      "description": "Normal Component (RTN system) of vector magnetic field in nT",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "measurementTechnique": "Cartesian RTN",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Component.K"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 8"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Field Magnitude",
+      "description": "Scalar magnitude of the magnetic field in nT",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "unitCode": "1e-9>T",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Field",
+          "value": "Magnetic",
+          "description": "Magnitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ParameterKey",
+          "value": "Field 9"
+        }
+      ]
+    }
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

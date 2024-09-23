@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_BBSO_IM.jsonld",
+  "name": "BBSO solar images",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/./ODIS_JSONLD/GBO_BBSO_IM.jsonld",
+  "publisher": {
+    "@type": "Person",
+    "identifier": "spase://SMWG/Person/Philip.Goode",
+    "url": "http://hpde.io/SMWG/Person/Philip.Goode"
+  },
+  "sdDatePublished": "2018-08-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ftp.bbso.njit.edu/pub/archive/",
+      "encodingFormat": "JPEG",
+      "name": "Big Bear Solar Observatory",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sdac.virtualsolar.org/cgi/search",
+      "encodingFormat": "JPEG",
+      "name": "Virtual Solar Observatory",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://GBO/DisplayData/BBSO/IM",
+  "creditText": "BBSO solar images.",
+  "description": "Big Bear Solar Observatory (BBSO) solar images of the following types or sources:  broadband, Calcium II K line, Dopplergram, H alpha, Vectomagnetogram components I, Q, U and V, white light, He I line (10830 A), He I D3 line (5876 A o), He I  D3 line (5876 A), Ca I line (6103 A), IR camera",
+  "abstract": "Big Bear Solar Observatory (BBSO) solar images of the following types or sources:  broadband, Calcium II K line, Dopplergram, H alpha, Vectomagnetogram components I, Q, U and V, white light, He I line (10830 A), He I D3 line (5876 A o), He I  D3 line (5876 A), Ca I line (6103 A), IR camera",
+  "temporalCoverage": "Start date: 1991-02-01T00:00:00. Relative stop date: -P2D",
+  "variableMeasured": "ImageIntensity",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Photosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}
