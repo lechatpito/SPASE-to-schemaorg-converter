@@ -1,0 +1,255 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT3H30M.jsonld",
+  "name": "Ulysses Solar Wind Ion Composition Spectrometer (SWICS) Average Solar Wind Velocity, Isotope Ratios, and Iron Charge States, (M1), 3.5 h Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT3H30M.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Johannes.Geiss",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Johannes.Geiss"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/George.Gloeckler",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/George.Gloeckler"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.E.McGuire",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.E.McGuire"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/ulysses/plasma/swics_cdaweb/scs_m1/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/ulysses/plasma/swics_cdaweb/scs_m1/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/index.html/",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Ulysses/SWICS/GSFC/SPDF/ChargeStates/PT3H30M",
+  "description": "This Data Set contains 3.5 hour Averages of the Solar Wind Ion Density Ratio (to O6+), Velocity And Temperature from the Ulysses Solar Wind Ion Composition Spectrometer. Data Set Contact: R. von Steiger, International Space Science Institute, Bern, Switzerland. Principal Investigators: J. Geiss, International Space Science Institute, Bern, Switzerland, and G. Gloeckler, University of Maryland, College Park, Maryland, USA. Reference: Astron. Astrophys. Suppl. Ser., 92(2), 267-289 (1992). Relevant Web Sites: http://space.umd.edu/UMD_sensors/uls_swics.html.",
+  "abstract": "This Data Set contains 3.5 hour Averages of the Solar Wind Ion Density Ratio (to O6+), Velocity And Temperature from the Ulysses Solar Wind Ion Composition Spectrometer. Data Set Contact: R. von Steiger, International Space Science Institute, Bern, Switzerland. Principal Investigators: J. Geiss, International Space Science Institute, Bern, Switzerland, and G. Gloeckler, University of Maryland, College Park, Maryland, USA. Reference: Astron. Astrophys. Suppl. Ser., 92(2), 267-289 (1992). Relevant Web Sites: http://space.umd.edu/UMD_sensors/uls_swics.html.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time, NSSDC Format",
+      "unitText": "ms",
+      "minValue": "06-Oct-1990 00:00:00.000",
+      "maxValue": "30-Jun-2009 23:59:59.999",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PB5 Time",
+      "description": "Time in PB5 Format",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-2.14748e+09",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "year",
+            "Index": "1",
+            "Units": "year",
+            "ValidMin": "1990.0",
+            "ValidMax": "2009.0",
+            "RenderingHints": {
+              "AxisLabel": "year",
+              "ScaleMin": "1990.0",
+              "ScaleMax": "2009.0"
+            }
+          },
+          {
+            "Name": "day of year",
+            "Index": "2",
+            "Units": "d",
+            "ValidMin": "279.0",
+            "ValidMax": "181.0",
+            "RenderingHints": {
+              "AxisLabel": "day",
+              "ScaleMin": "279.0",
+              "ScaleMax": "181.0"
+            }
+          },
+          {
+            "Name": "ms of day",
+            "Index": "3",
+            "Units": "ms",
+            "ValidMin": "0.0",
+            "ValidMax": "8.64e+07",
+            "RenderingHints": {
+              "AxisLabel": "ms",
+              "ScaleMin": "0.0",
+              "ScaleMax": "8.64e+07"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses Mission Time",
+      "description": "Ulysses Mission Time in Days elapsed since October 6, 1990",
+      "unitText": "d",
+      "minValue": "0.0",
+      "maxValue": "6661.9",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Velocity",
+      "description": "Alpha Particle Velocity",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ratio of Carbon 6+ to Carbon 5+",
+      "description": "Abundance Ratio of Carbon 6+ to 5+",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ratio of Oxygen 7+ to Oxygen 6+",
+      "description": "Abundance Ratio of Oxygen 7+ to 6+",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ratio of Iron to Oxygen",
+      "description": "Abundance Ratio of Iron to Oxygen",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron Charge State",
+      "description": "Iron Charge State",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "26.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Instrument Cycles",
+      "description": "Number of Instrument Cycles",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "16",
+      "defaultValue": "999"
+    }
+  ]
+}

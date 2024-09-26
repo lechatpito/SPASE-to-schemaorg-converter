@@ -1,0 +1,128 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT1.9S.jsonld",
+  "name": "Hawkeye Magnetometer 1.9-s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT1.9S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Scott.Boardsen",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Scott.Boardsen"
+    }
+  ],
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/hawkeye/h0/mag/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "FTP access to repository of Hawkeye Magnometer data in CDF format at NASA CDAWeb."
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/hawkeye/h0/mag/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Hawkeye/MAG/PT1.9S",
+  "description": "This level 0 data set contains investigator-provided magnetic field data at 1.9-second resolution from the Hawkeye magnetometer instrument.  The data set contains despun data including the following parameters: scalar magnetic field strength; vector magnetic field in Cartesian GSM and SM coordinates; spacecraft radial distance from the center of Earth; spacecraft position in Cartesian GSM and SM coordinates; despin method indicator (0: not despun; 1: optical aspect; 2: sun pulse; 3: array voltage; 4: mag field model; 4/5: solar array method); and an estimate of the angular uncertainty in magnetic field direction (set to zero for despin = 1 or 2).  For a reference paper on despinning technique, see Boardsen, S. and R.L. Kessel, Spin Index Determination of the Hawkeye Spacecraft, J. Spacecraft and Rockets, 39, 780-787, 2002. ",
+  "abstract": "This level 0 data set contains investigator-provided magnetic field data at 1.9-second resolution from the Hawkeye magnetometer instrument.  The data set contains despun data including the following parameters: scalar magnetic field strength; vector magnetic field in Cartesian GSM and SM coordinates; spacecraft radial distance from the center of Earth; spacecraft position in Cartesian GSM and SM coordinates; despin method indicator (0: not despun; 1: optical aspect; 2: sun pulse; 3: array voltage; 4: mag field model; 4/5: solar array method); and an estimate of the angular uncertainty in magnetic field direction (set to zero for despin = 1 or 2).  For a reference paper on despinning technique, see Boardsen, S. and R.L. Kessel, Spin Index Determination of the Hawkeye Spacecraft, J. Spacecraft and Rockets, 39, 780-787, 2002. ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

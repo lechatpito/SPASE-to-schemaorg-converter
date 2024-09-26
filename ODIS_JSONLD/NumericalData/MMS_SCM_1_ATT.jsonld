@@ -1,0 +1,230 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/MMS_SCM_1_ATT.jsonld",
+  "name": "MMS-1 Definitive Attitude (ASCII)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/MMS_SCM_1_ATT.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/James.L.Burch",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/James.L.Burch"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Olivier.Le.Contel",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Olivier.Le.Contel"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Malik.Mansour",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Malik.Mansour"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Dominique.Alison",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Dominique.Alison"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Laurent.Mirioni",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Laurent.Mirioni"
+    }
+  ],
+  "sdDatePublished": "2022-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:MMS_SCM_1_ATT",
+      "encodingFormat": "Text.ASCII",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/MMS-1/Fields/SCM/MMS_SCM_1_ATT",
+  "description": "This dataset contains definitive attitude data.",
+  "abstract": "This dataset contains definitive attitude data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 q1 quaternion",
+      "description": "MMS-1 spacecraft   quaternion  components q1, q2, q3, q4, qc",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1  X,Y,Z rotation rate components",
+      "description": "MMS-1  X,Y,Z rotation rate components (deg/s) (instantaneous spin axis in body frame)",
+      "unitText": "\u00b0/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 w-Phase",
+      "description": "MMS-1 w-phase (Sun-to-body-X dihedral angle about rotation rate vector) (deg)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 Z-RA",
+      "description": "MMS-1  right ascension (deg) of body Z-axis",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 Z-Dec",
+      "description": "MMS-1  declination (deg) of body Z-axis",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 Z-Phase",
+      "description": "MMS-1 Z-phase (Sun-to-body-X dihedral angle about body Z-axis) (deg)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 L-RA",
+      "description": "MMS-1  right ascension (deg)  of angular momentum (L)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 L-Dec",
+      "description": "MMS-1 MMS-1  declination (deg) of angular momentum (L)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 L-Phase",
+      "description": "MMS-1 L-phase (Sun-to-body-X dihedral angle about angular momentum vector L) (deg)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 P-RA",
+      "description": "MMS-1 right ascension (deg)  of major principal axis (P)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 P-Dec",
+      "description": "MMS-1 declination (deg) of major principal axis (P)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 P-Phase",
+      "description": "MMS-1 P-phase (Sun-to-body-X dihedral angle about major principal axis P) (deg)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 Nut",
+      "description": "MMS-1 nutation angle (deg)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 quality flag",
+      "description": "MMS-1  quality flag: \n                      EKF=good extended Kalman filter solution with star tracker data\n                      CNV=filter not yet converged\n                      SUN=no tracker data, spin phase obtained from Sun sensor data\n                      INT=no tracker or Sun sensor data, phase interpolated from neighboring tracker data\n                      BAD=no tracker or Sun sensor data for a time span too large for interpolation",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

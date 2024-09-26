@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PHOBOS2_ORBIT_GSE.jsonld",
+  "name": "PHOBOS 2 orbit data (GSE frame, 1 min resolution)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PHOBOS2_ORBIT_GSE.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/CDPP.general.contact",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/CDPP.general.contact"
+    }
+  ],
+  "sdDatePublished": "2022-05-03",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:PHOBOS2_ORBIT_GSE",
+      "encodingFormat": "Text.ASCII",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/PHOBOS-2/Ephemeris/PHOBOS2_ORBIT_GSE",
+  "description": "This data set contains the GSE  position and velocity of PHOBOS-2 spacecraft at 1 min resolution.",
+  "abstract": "This data set contains the GSE  position and velocity of PHOBOS-2 spacecraft at 1 min resolution.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "PHOBOS 2 GSE position (1 min resolution)",
+      "description": "PHOBOS 2 orbit data (GSE frame, 1 min resolution)",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PHOBOS 2 GSE velocity (1 min resolution)",
+      "description": "PHOBOS 2 velocity in GSE frame, 1 min resolution",
+      "unitText": "km s^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

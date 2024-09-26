@@ -1,0 +1,161 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mgs-orb-all.jsonld",
+  "name": "MGS - Ephemeris - orbit mars",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mgs-orb-all.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/NAIF",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/NAIF"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Elena.Budnik",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Elena.Budnik"
+    }
+  ],
+  "sdDatePublished": "2018-06-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MGS/Ephemeris/mgs-orb-all",
+  "description": "Orbital data are calculated based on SPICE kernels",
+  "abstract": "Orbital data are calculated based on SPICE kernels",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_mso",
+      "description": "",
+      "unitText": "Rm",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_mgs_mso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_mgs_mso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_mgs_mso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance mgs-mars",
+      "description": "",
+      "unitText": "Rma",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_iau_mars",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_iau_mars",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.00004S.jsonld",
+  "name": "Siple Experiment broadband VLF data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.00004S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Morris.Cohen",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Morris.Cohen"
+    }
+  ],
+  "sdDatePublished": "2021-06-14",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://waldo.world/broadband-data/",
+      "encodingFormat": "MATLAB_4",
+      "name": "Worldwide Archive of Low-Frequency Data and Observations (WALDO) Broadband Data",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ISWI/NumericalData/SipleExperiment/VLF/PT0.00004S",
+  "description": "\r\n   The Siple Station experiment ran from 1973-1988, during which time\r\n   a long horizontal ELF transmitter was erected over a thick ice\r\n   sheet in Antarctica, described by Raghuram et al [1974]. The\r\n   transmitter broadcast tones and frequency ramps to probe the\r\n   magnetosphere\u2019s excitation and response to injected ELF/VLF\r\n   signals, including amplification and triggered emissions from\r\n   wave-particle interactions, along with natural signals like\r\n   whistlers and chorus. Receivers were setup at Siple station (75.93\r\n   deg. S, 84.25 deg. W geographic, corresponding to an invariant\r\n   latitude of 60.4 deg. S, at L = 4.2), and \r\n   near the geomagnetic conjugate point (first at Roberval, Quebec,\r\n   Canada (48.52 deg. N, 72.23 deg. W) and in 1986\r\n   near Lake Mistissini, Canada (50.42 deg. N, 73.87 deg. W)). Complete results of the Siple\r\n   station experiment are summarized in Helliwell [1988] but analysis\r\n   work on this dataset continued well after the experiment\r\n   ended. These data were originally stored on Ampex magnetic tapes,\r\n   then converted over to a digitized format with some error\r\n   correction applied as described by Li et al [2014]. \r\n\r\n\r\n   The sampling rate of these data are 25 kHz.\r\n\r\n   The filename naming convention is:\r\n \r\n   XXYYMMDDHHMMSS_ACC.mat\r\n\r\n   where\r\n\r\n   XX - Station ID\r\n   \r\n   YY - Year\r\n   \r\n   MM - Month\r\n   \r\n   DD - Day\r\n   \r\n   HH - Hour\r\n   \r\n   MM - Minute\r\n   \r\n   SS - Second\r\n   \r\n   A - Sampling rate. 0 for 100 kHz sampled data (VLF), 1 for 1 MHz\r\n   sampled data (LF), 2 for 25 kHz sampled data (Siple station\r\n   experiment).\r\n\r\n   CC - 00 for N/S channel, 01 for E/W channel\r\n   \r\n",
+  "abstract": "\r\n   The Siple Station experiment ran from 1973-1988, during which time\r\n   a long horizontal ELF transmitter was erected over a thick ice\r\n   sheet in Antarctica, described by Raghuram et al [1974]. The\r\n   transmitter broadcast tones and frequency ramps to probe the\r\n   magnetosphere\u2019s excitation and response to injected ELF/VLF\r\n   signals, including amplification and triggered emissions from\r\n   wave-particle interactions, along with natural signals like\r\n   whistlers and chorus. Receivers were setup at Siple station (75.93\r\n   deg. S, 84.25 deg. W geographic, corresponding to an invariant\r\n   latitude of 60.4 deg. S, at L = 4.2), and \r\n   near the geomagnetic conjugate point (first at Roberval, Quebec,\r\n   Canada (48.52 deg. N, 72.23 deg. W) and in 1986\r\n   near Lake Mistissini, Canada (50.42 deg. N, 73.87 deg. W)). Complete results of the Siple\r\n   station experiment are summarized in Helliwell [1988] but analysis\r\n   work on this dataset continued well after the experiment\r\n   ended. These data were originally stored on Ampex magnetic tapes,\r\n   then converted over to a digitized format with some error\r\n   correction applied as described by Li et al [2014]. \r\n\r\n\r\n   The sampling rate of these data are 25 kHz.\r\n\r\n   The filename naming convention is:\r\n \r\n   XXYYMMDDHHMMSS_ACC.mat\r\n\r\n   where\r\n\r\n   XX - Station ID\r\n   \r\n   YY - Year\r\n   \r\n   MM - Month\r\n   \r\n   DD - Day\r\n   \r\n   HH - Hour\r\n   \r\n   MM - Minute\r\n   \r\n   SS - Second\r\n   \r\n   A - Sampling rate. 0 for 100 kHz sampled data (VLF), 1 for 1 MHz\r\n   sampled data (LF), 2 for 25 kHz sampled data (Siple station\r\n   experiment).\r\n\r\n   CC - 00 for N/S channel, 01 for E/W channel\r\n   \r\n",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "start_year",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "start_month",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "start_day",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "start_hour",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "start_minute",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "start_second",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "altitude",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fs",
+      "description": "Sampling rate of the data, 25 kHz. ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "gps_quality",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "adc_channel_number",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "adc_sn",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "adc_type",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "antenna_bearings",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "antenna_description",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cal_factor",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "computer_sn",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "gps_sn",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "hardware_description",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "is_broadband",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "station_description",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "station_name",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VERSION",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "data",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

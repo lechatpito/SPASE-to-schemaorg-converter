@@ -1,0 +1,212 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mes-orb-orb.jsonld",
+  "name": "MESSENGER - Ephemeris - orbit mercury",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mes-orb-orb.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/NAIF",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/NAIF"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Elena.Budnik",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Elena.Budnik"
+    }
+  ],
+  "sdDatePublished": "2016-04-04",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MESSENGER/ephemeris/mes-orb-orb",
+  "description": "MESSENGER orbital data during orbital phase at Mercury. Orbital data are calculated based on SPICE kernels",
+  "abstract": "MESSENGER orbital data during orbital phase at Mercury. Orbital data are calculated based on SPICE kernels",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "M"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "c"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "y"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_mso",
+      "description": "MESSENGER trajectory in MSO coordinates",
+      "unitText": "Rme",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mes_xyz_orbmso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mes_xyz_orbmso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mes_xyz_orbmso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_msm",
+      "description": "MESSENGER trajectory in MSM coordinates",
+      "unitText": "Rme",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mes_xyz_orbmsm(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mes_xyz_orbmsm(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mes_xyz_orbmsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance mess-mercury",
+      "description": "",
+      "unitText": "Rm",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mess_orbit_num",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

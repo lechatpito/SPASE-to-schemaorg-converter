@@ -1,0 +1,140 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mex-marsis-ele.jsonld",
+  "name": "MEX - MARSIS - total electron content",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mex-marsis-ele.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/W.Kofman",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/W.Kofman"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/C.Grima",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/C.Grima"
+    }
+  ],
+  "sdDatePublished": "2016-01-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MEX/MARSIS/mex-marsis-ele",
+  "description": "The level 5 TEC data are derived following a method described in \n             details by Mouginot et al. Planetary Space Science, V56, 2008. \n             The correction method consists in finding the three parameters [ a1 ; a2 ; a3 ] \n             defining the signal distortion phase \u0394\u03c6 induced by the ionosphere. \n             In the time domain, the ionosphere distortion generates a delay and a spreading \n             of the radar pulse. It is clearly visible on MARSIS radargram without correction. \n             A by-product of the ionospheric correction is the TEC, that can be easily obtained\n             from the [ a1 ; a2 ; a3 ] parameters. [ a1 ; a2 ; a3 ] are \n             investigated in ordrer to get \u0394\u03c6 with the best SNR As initial conditions for this\n             optimization, we use the parameters fitting with a simplified Gaussian \n             density-profile of the ionosphere.\nThen the optimization is done by using the following constraints:\n * A constraint on the vertical position of the surface echo estimated with the digital elevation model MOLA.\n * A constraint on the SNR. The signal amplitude must be maximal after correction.\n",
+  "abstract": "The level 5 TEC data are derived following a method described in \n             details by Mouginot et al. Planetary Space Science, V56, 2008. \n             The correction method consists in finding the three parameters [ a1 ; a2 ; a3 ] \n             defining the signal distortion phase \u0394\u03c6 induced by the ionosphere. \n             In the time domain, the ionosphere distortion generates a delay and a spreading \n             of the radar pulse. It is clearly visible on MARSIS radargram without correction. \n             A by-product of the ionospheric correction is the TEC, that can be easily obtained\n             from the [ a1 ; a2 ; a3 ] parameters. [ a1 ; a2 ; a3 ] are \n             investigated in ordrer to get \u0394\u03c6 with the best SNR As initial conditions for this\n             optimization, we use the parameters fitting with a simplified Gaussian \n             density-profile of the ionosphere.\nThen the optimization is done by using the following constraints:\n * A constraint on the vertical position of the surface echo estimated with the digital elevation model MOLA.\n * A constraint on the SNR. The signal amplitude must be maximal after correction.\n",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "M"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "tec",
+      "description": "Total electron content derived from the ionosphere        \n                   distortion correction",
+      "unitText": "m-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

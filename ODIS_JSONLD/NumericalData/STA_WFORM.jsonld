@@ -1,0 +1,134 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/STA_WFORM.jsonld",
+  "name": "STEREO-A WAVES TDS L3 Langmuir waveforms",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/STA_WFORM.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Milan.Maksimovic",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Milan.Maksimovic"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Keith.Goetz",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Keith.Goetz"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Janet.Luhmann",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Janet.Luhmann"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Stuart.Bale",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Stuart.Bale"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Carine.Briand",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Carine.Briand"
+    }
+  ],
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:STA_WFORM",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/STEREO-A/SWAVES/TDS/STA_WFORM",
+  "description": "This dataset gives access to waveforms with Langmuir waves signature. They were observed by STEREO-A/WAVES TDS instrument from December 2006 to August 2014, thus covering observation in the Earth environment (at the beginning of the mission) and the interplanetary medium.\nThe dataset is provided as zip compressed files which contain:\n  *  A CDF file with IMPACT magnetic field components in spacecraft and variance frame (3 min interval around the time of the Langmuir event)\n   * A CDF file with the three components electric waveform in the local frame (B, BxV, Bx(BxV))\n   * A PDF file which represents CDF data graphically (that is, the waveform and the magnetic configuration at the time of the Langmuir event).\nAll data are in physical units and calibrated.",
+  "abstract": "This dataset gives access to waveforms with Langmuir waves signature. They were observed by STEREO-A/WAVES TDS instrument from December 2006 to August 2014, thus covering observation in the Earth environment (at the beginning of the mission) and the interplanetary medium.\nThe dataset is provided as zip compressed files which contain:\n  *  A CDF file with IMPACT magnetic field components in spacecraft and variance frame (3 min interval around the time of the Langmuir event)\n   * A CDF file with the three components electric waveform in the local frame (B, BxV, Bx(BxV))\n   * A PDF file which represents CDF data graphically (that is, the waveform and the magnetic configuration at the time of the Langmuir event).\nAll data are in physical units and calibrated.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A TDS Magnetic field components in the spaccraft frame (3min interval)",
+      "description": "Magnetic field components in the spacecraft frame: +/- 1.5 min interval around the time of a Langmuir event.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A TDS  Magnetic field components in the variance frame (3min interval)",
+      "description": "Magnetic field components in the variance frame: +/- 1.5 min interval around the time of a Langmuir event.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A TDS  Vector with the eigenvalues of the variance frame transformation of the magnetic field",
+      "description": "Vector with the eigenvalues link to the minimum variance frame transformation. Maximum, intermediate and minimum eigenvalues.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A TDS  Langmuir event frequency in kHz",
+      "description": "Langmuir event frequency in kHz",
+      "unitText": "kHz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A TDS  Spectral width around the Langmuir peak (in kHz)",
+      "description": "Spectral width around the Langmuir peak (in kHz)",
+      "unitText": "kHz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A TDS  Electric field components in the (B, BxV, Bx(BxV)) frame",
+      "description": "Electric field components in the (B, BxV, Bx(BxV)) frame",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

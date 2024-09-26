@@ -1,0 +1,207 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/cass-rpws-skr.jsonld",
+  "name": "Cassini - RPWS - skr",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/cass-rpws-skr.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Laurent.Lamy",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Laurent.Lamy"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Baptiste.Cecconi",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Baptiste.Cecconi"
+    }
+  ],
+  "sdDatePublished": "2018-06-08",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-rpws-skr",
+  "description": "Cassini Saturn kilometric Radiation (SKR) data produced from LESIA/Observatoire de Paris.",
+  "abstract": "Cassini Saturn kilometric Radiation (SKR) data produced from LESIA/Observatoire de Paris.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "S"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "total emitted power",
+      "description": "SKR total emitted power",
+      "unitText": "W/sr",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "RH:100-400kHz",
+            "Index": "1",
+            "ParameterKey": "skr_e(0)"
+          },
+          {
+            "Name": "LH:100-400kHz",
+            "Index": "2",
+            "ParameterKey": "skr_e(1)"
+          },
+          {
+            "Name": "RH:10-1000kHz",
+            "Index": "3",
+            "ParameterKey": "skr_e(2)"
+          },
+          {
+            "Name": "LH:10-1000kHz",
+            "Index": "4",
+            "ParameterKey": "skr_e(3)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux RH",
+      "description": "SKR flux densities in Right-Hand Circular polarization ",
+      "unitText": "W/m^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux LH",
+      "description": "SKR flux densities in Left-Hand Circular polarization ",
+      "unitText": "W/m^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "polarisation",
+      "description": "SKR Circular polarization degree",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    }
+  ]
+}

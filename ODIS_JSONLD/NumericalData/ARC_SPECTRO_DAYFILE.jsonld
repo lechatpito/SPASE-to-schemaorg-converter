@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARC_SPECTRO_DAYFILE.jsonld",
+  "name": "ARCAD3 SPECTRO : Informal file on processing status",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARC_SPECTRO_DAYFILE.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Henri.Reme",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Henri.Reme"
+    }
+  ],
+  "sdDatePublished": "2022-03-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ARC_SPECTRO_DAYFILE",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ARCAD-3/Spectro/ARC_SPECTRO_DAYFILE",
+  "description": "This data set contains an  informal file with information about the processing status of the ARCAD3 SPECTRO experiment\nEach data ION file has an associated informal file. Its name is given in the file general header.\nThe informal file is a sequential ASCII file. It contains information about ROBE data too.",
+  "abstract": "This data set contains an  informal file with information about the processing status of the ARCAD3 SPECTRO experiment\nEach data ION file has an associated informal file. Its name is given in the file general header.\nThe informal file is a sequential ASCII file. It contains information about ROBE data too.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

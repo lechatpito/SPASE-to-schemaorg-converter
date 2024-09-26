@@ -1,0 +1,169 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/Histograms.jsonld",
+  "name": "IBEX-Lo Histograms",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/Histograms.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/David.J.McComas",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/David.J.McComas"
+    }
+  ],
+  "sdDatePublished": "2021-03-11",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/time_series/histograms/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Directory with energy-range-specific subdirectories"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/time_series/histograms/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/IBEX/Lo/Histograms",
+  "description": "Each record captures the number of arriving ENA's\nof a specific energy band, coincidence type, species (hydrogen or \noxygen) and spin phase.  Data for each full ~15s spacecraft spin \nare given at each of 60 spin phases in sequential records, with \nthe J2000 right ascension and declination for look directions \ncorresponding to each spin phase being given in the corresponding \nrecord.  Also included in each record are a time tag (seconds since \n00:00 UT of January 6, 1980), the IBEX location, ENA energy band,\nspecies and coincidence type.  Data files are given for each 8-day \norbit and for each of the 8 IBEX-Lo energy bands.  The data files \nare in ASCII.",
+  "abstract": "Each record captures the number of arriving ENA's\nof a specific energy band, coincidence type, species (hydrogen or \noxygen) and spin phase.  Data for each full ~15s spacecraft spin \nare given at each of 60 spin phases in sequential records, with \nthe J2000 right ascension and declination for look directions \ncorresponding to each spin phase being given in the corresponding \nrecord.  Also included in each record are a time tag (seconds since \n00:00 UT of January 6, 1980), the IBEX location, ENA energy band,\nspecies and coincidence type.  Data files are given for each 8-day \norbit and for each of the 8 IBEX-Lo energy bands.  The data files \nare in ASCII.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "H"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "H"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ENA arrival direction",
+      "description": "ENA arrival direction",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ENA counts",
+      "description": "ENA counts of specific energy band, coincidence\ntype, and spin phase (look direction)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.00006S.jsonld",
+  "name": "Van Allen Probe B Electric Field and Waves Suite (EFW) Burst Waveform MSCB2 High Resolution Magnetic Field in Spacecraft Spin (UVW) Coordinates and Instrument Status, Level 1 (L1), 0.06 ms Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.00006S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/John.R.Wygant",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/John.R.Wygant"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2022-08-18",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l1/efw/mscb2/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l1/efw/mscb2/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=RBSPB_L1_MSCB2&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/RBSP/B/EFW/L1/B2/UVW/SearchCoilMagneticField/PT0.00006S",
+  "description": "The EFW Burst Modes provide targeted Measurements over Brief Time Intervals of 3-D Electric Fields, 3-D Wave Magnetic Fields, and Spacecraft Potential. There are two EFW Burst Modes: BURST1, B1, Medium-Rate 512 samples/s nominal and BURST2, B2, Higher-Rate, 16384 samples/s nominal. The Burst 1 Mode Data includes three components of the Electric Field, E12_B1, E34_B1, and E56_B1, six Components of the Spacecraft Sensor Potential, V1_B1 through V6_B1, and three Components of the AC Magnetic Field, SCM_U_B1, SCM_V_B1, and SCM_W_B1, from the EMFISIS Search Coil Magnetometer. The Burst 2 Mode Data returns a similar Complement of Electric Field, E_12ac_B2, E34ac_B2, and E56ac_B2, Search Coil, SCM_B2, SCM_2B2, and SCM_B2, again from the EMFISIS Search Coil Magnetometer and Single-ended Potential Measurements, V1ac_B1 through V6ac_B2, with the exception that in the Default Mode the Single-ended Potential and Electric Field Signals are AC coupled with a higher Gain. All Quantities are in UVW Coordinates where, U, and, V, are the Sensor Coordinates rotating with the Spacecraft and, W, points along the Spacecraft Spin Axis. Burst Waveform CDF Files are available. The three Data Types available are the Electric Field, E, the Searchcoil Magnetic Field, MSC, and Antenna Potential, V. The Suffix on each of these is either, B1 or B2. B1 or Burst 1 is the Human-in-the-Loop Burst Type, meaning that both Collection and Playback for arbitrary Lengths of Time are requested on the Ground. B2 or Burst 2 is automatically telemetered as short Bursts based on an onboard Triggering Algorithm, typically set to trigger on large Amplitude Signals near 1 kHz. Sample Rates for B1 and B2 can and are changed depending on varying Science Goals.",
+  "abstract": "The EFW Burst Modes provide targeted Measurements over Brief Time Intervals of 3-D Electric Fields, 3-D Wave Magnetic Fields, and Spacecraft Potential. There are two EFW Burst Modes: BURST1, B1, Medium-Rate 512 samples/s nominal and BURST2, B2, Higher-Rate, 16384 samples/s nominal. The Burst 1 Mode Data includes three components of the Electric Field, E12_B1, E34_B1, and E56_B1, six Components of the Spacecraft Sensor Potential, V1_B1 through V6_B1, and three Components of the AC Magnetic Field, SCM_U_B1, SCM_V_B1, and SCM_W_B1, from the EMFISIS Search Coil Magnetometer. The Burst 2 Mode Data returns a similar Complement of Electric Field, E_12ac_B2, E34ac_B2, and E56ac_B2, Search Coil, SCM_B2, SCM_2B2, and SCM_B2, again from the EMFISIS Search Coil Magnetometer and Single-ended Potential Measurements, V1ac_B1 through V6ac_B2, with the exception that in the Default Mode the Single-ended Potential and Electric Field Signals are AC coupled with a higher Gain. All Quantities are in UVW Coordinates where, U, and, V, are the Sensor Coordinates rotating with the Spacecraft and, W, points along the Spacecraft Spin Axis. Burst Waveform CDF Files are available. The three Data Types available are the Electric Field, E, the Searchcoil Magnetic Field, MSC, and Antenna Potential, V. The Suffix on each of these is either, B1 or B2. B1 or Burst 1 is the Human-in-the-Loop Burst Type, meaning that both Collection and Playback for arbitrary Lengths of Time are requested on the Ground. B2 or Burst 2 is automatically telemetered as short Bursts based on an onboard Triggering Algorithm, typically set to trigger on large Amplitude Signals near 1 kHz. Sample Rates for B1 and B2 can and are changed depending on varying Science Goals.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC",
+      "description": "Epoch Time, Coordinated Universal Time, UTC",
+      "unitText": "ms",
+      "minValue": "01-Jan-2009 00:00:00.000",
+      "maxValue": "31-Dec-2100 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MSCB1 Searchcoil Magnetic Field, Sensor or Field-aligned Cartesian Coordinates, ADC units",
+      "description": "MSCB1 Mode, Searchcoil Magnetic Field, Sensor or onboard Field-aligned Cartesian Coordinates, Raw ADC units",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "5",
+        "elements": [
+          {
+            "Name": "MSCX",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "MSCY",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "MSCZ",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          },
+          {
+            "Name": "MSCpar",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "4"
+            }
+          },
+          {
+            "Name": "MSCprp",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MSCB2 X Component Enabled Flag",
+      "description": "MSCB2 Mode, Searchcoil Magnetic Field, B, X component, Enabled Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MSCB2 Y Component Enabled Flag",
+      "description": "MSCB2 Mode, Searchcoil Magnetic Field, B, Y Component, Enabled Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MSCB2 Z Component Enabled Flag",
+      "description": "MSCB2 Mode, Searchcoil Magnetic Field, B, Z Component, Enabled Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MSCB2, Magnetic Field Parallel Enabled Flag",
+      "description": "MSCB2 Mode, Searchcoil Magnetic Field, B, Parallel, PAR, Enabled Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MSCB2, Magnetic Field Perpendicular Enabled Flag",
+      "description": "MSCB2 Mode, Searchcoil Magnetic Field, B, Perpendicular, PRP, Enabled Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GDH Size",
+      "description": "Generic Data Header, GDH, Size",
+      "unitText": "",
+      "minValue": "3",
+      "maxValue": "32767",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GDH Type",
+      "description": "Generic Data Header, GDH, Type",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA Spacecraft Identifier",
+      "description": "Ground Annotation, GA, Spacecraft Identifier",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA GRT Epoch Day",
+      "description": "Ground Annotation, GA, Ground Receipt Time, GRT, Epoch Day, Days since January 1, 1958",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA GRT Milliseconds of Day",
+      "description": "Ground Annotation, GA, Ground Receipt Time, GRT, Milliseconds of Day",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "86400000",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA GRT Tenths of Microseconds since the Millisecond",
+      "description": "Ground Annotation, GA, Ground Reciept Time, GRT, Tenths of Microseconds since the Millisecond",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA Source",
+      "description": "Ground Annotation, GA, Source",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GA Path",
+      "description": "Ground Annotation, GA, Path, Front-End or Ground Station Identifier",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Version, always Zero",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Version, always Zero",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "0",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Type",
+      "description": "CCSDS Header Type: 0=Telemetry, TLM, 1=Command, CMD",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Secondary Header Flag",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Secondary Header Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header APID",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Application ID, APID",
+      "unitText": "",
+      "minValue": "-32768",
+      "maxValue": "32767",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Grouping",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Grouping",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "3",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Sequence Count",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Sequence Count",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "16383",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header Packet Length",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Packet Length",
+      "unitText": "",
+      "minValue": "3",
+      "maxValue": "249",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Header MET",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Header Mission Elapsed Time, MET",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "2147483647",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Packet Sample Index",
+      "description": "Packet Sample Index, Index of the first Sample from this Packet",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "2147483647",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Header Epoch Time, UTC",
+      "description": "Header Epoch Time, Coordinated Universal Time, UTC",
+      "unitText": "ms",
+      "minValue": "01-Jan-2009 00:00:00.000",
+      "maxValue": "31-Dec-2100 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Data Subseconds",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Data Subseconds",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Data Compression Flag",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Data Compression Flag, 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Data BEB Configuration Bits",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Data Boom Electronics Board, BEB, Configuration Bits",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "127",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Data DFB Configuration Bits",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Data Digital Fields Board, DFB, Configuration BitSee a to be determined, TBD, Document for the Modes designated by these eight Bits",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCSDS Data Speed Code",
+      "description": "Consultative Committee for Space Data Systems CDF Common Data Format, CCSDS, Data Speed Code",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "15",
+      "defaultValue": "-128"
+    }
+  ]
+}

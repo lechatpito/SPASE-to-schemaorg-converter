@@ -1,0 +1,159 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT1S_cna_cdf.jsonld",
+  "name": "CDF data of cosmic noise absorption measured with the 30MHz imaging riometer at Syowa Station, Antarctica.",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT1S_cna_cdf.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Hisao.Yamagishi",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Hisao.Yamagishi"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Yuka.Sato",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Yuka.Sato"
+    }
+  ],
+  "sdDatePublished": "2013-08-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://scidbase.nipr.ac.jp/modules/metadata/index.php?content_id=104",
+      "encodingFormat": "CDF",
+      "name": "Imaging Riometer Observation at Syowa Station",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/NIPR/misc/SYO/IRIO30MHz/PT1S_cna_cdf",
+  "description": "Cosmic Noise Absorption (CNA) measured at 1-sec intervals with the 30MHz imaging riometer (IRIO) at Syowa Station, Antarctica. The data are distributed in the Common Data Format (CDF).",
+  "abstract": "Cosmic Noise Absorption (CNA) measured at 1-sec intervals with the 30MHz imaging riometer (IRIO) at Syowa Station, Antarctica. The data are distributed in the Common Data Format (CDF).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earch Interaction Ionosphere/Magnetosphere Dynamics Aurorae",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch for the cna data",
+      "description": "time label in CDF_EPOCH (the number of milliseconds since 01-Jan-0000) for the cna data. All time values are in the universal time.",
+      "unitText": "millisecond",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cosmic Noise Absorption (CNA)",
+      "description": "CNA values at 30 MHz measured with 8x8-element Imaging Riometer.",
+      "unitText": "decibel (dB)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Quiet-Day Curve (QDC)",
+      "description": "QDC values derived at 1-min resolution for the 8x8-element Imaging Riometer.",
+      "unitText": "decibel (dB)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Azimuth angle of each antenna beam",
+      "description": "",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zenith angle of each antenna beam",
+      "description": "",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic latitude of each antenna beam center at D-region altitude",
+      "description": "",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic longitude of each antenna beam center at D-region altitude",
+      "description": "",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8 8",
+        "elements": []
+      }
+    }
+  ]
+}

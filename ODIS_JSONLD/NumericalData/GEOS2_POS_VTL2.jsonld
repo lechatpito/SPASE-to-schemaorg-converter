@@ -1,0 +1,128 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/GEOS2_POS_VTL2.jsonld",
+  "name": "GEOS-2 Geographic Position and Auxiliary Data Level-2 (CDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/GEOS2_POS_VTL2.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Patrick.Robert",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Patrick.Robert"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/CDPP.general.contact",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/CDPP.general.contact"
+    }
+  ],
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GEOS2_POS_VTL2",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/GEOS-2/Ephemeris/GEOS2_POS_VTL2",
+  "description": "This dataset contains GEOS-2 ephemeris:\n\n    Low Speed Format,right ascension and declination of the spin axis in S/C system\n    Cartesian coordinates of the spin axis SpinX, SpinY, SpinZ in VDH\n    Cartesian coordinates of the sun direction from Earth center in VDH\n    Angle (Earth-Spacecraft,Earth-Sun direction). All angles in degrees\n    Latitude Longitude and Distance given in GEO (Geocentric equatorial coord) system\n\nOrbital Parameters\n\n- Apogee    : 38456.4 km\n- Perigee     :    2696.5 km\n- Period       : 12 h 14 mn\n- Inclination: 27.67 deg\n- Eccentricity:  0.66",
+  "abstract": "This dataset contains GEOS-2 ephemeris:\n\n    Low Speed Format,right ascension and declination of the spin axis in S/C system\n    Cartesian coordinates of the spin axis SpinX, SpinY, SpinZ in VDH\n    Cartesian coordinates of the sun direction from Earth center in VDH\n    Angle (Earth-Spacecraft,Earth-Sun direction). All angles in degrees\n    Latitude Longitude and Distance given in GEO (Geocentric equatorial coord) system\n\nOrbital Parameters\n\n- Apogee    : 38456.4 km\n- Perigee     :    2696.5 km\n- Period       : 12 h 14 mn\n- Inclination: 27.67 deg\n- Eccentricity:  0.66",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Sample rate",
+      "description": "Sample rate",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Low Speed Format",
+      "description": "The corresponding duration is 1.37601 s",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Right ascension and declination",
+      "description": "Right ascension and declination of the spin axis in S/C system",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin axis orientation in VDH",
+      "description": "Cartesian coordinates of the spin axis: SpinX, SpinY, SpinZ in VHD",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sun direction",
+      "description": "Cartesian coordinates of the sun direction from Earth center in VHD",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Angle",
+      "description": "Earth spacecraft direction and Earth Sun direction",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Position",
+      "description": "Position data: Latitude, Longitude and Distance given in GEO (Geocentric equatorial coord) system",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

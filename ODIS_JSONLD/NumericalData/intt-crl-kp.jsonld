@@ -1,0 +1,216 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/intt-crl-kp.jsonld",
+  "name": "Interball Tail - Corall - key parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/intt-crl-kp.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Andrey.Fedorov",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Andrey.Fedorov"
+    }
+  ],
+  "sdDatePublished": "2013-05-24",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/INTERBALL-Tail/CORALL/intt-crl-kp",
+  "description": "CORALL is the ion spectrometer with energy range 30eV - 25keV onboard INTERBALL/TAIL satellite. It has a fan-shape aperture wich plane has a sunward spin axis of spacecraft. The full distribution function is obtained for one spacecraft revolution. So for every revolution plasma parameters ( V, T, N) can be calculated. ",
+  "abstract": "CORALL is the ion spectrometer with energy range 30eV - 25keV onboard INTERBALL/TAIL satellite. It has a fan-shape aperture wich plane has a sunward spin axis of spacecraft. The full distribution function is obtained for one spacecraft revolution. So for every revolution plasma parameters ( V, T, N) can be calculated. ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Ion density",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gse",
+      "description": "Ion velocity in GSE coordinates",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "it_v_gse(0)",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "it_v_gse(1)",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "it_v_gse(2)",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gsm",
+      "description": "Ion velocity in GSM coordinates",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "it_v_gsm(0)",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "it_v_gsm(1)",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "it_v_gsm(2)",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v|",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "description": "Ion temperature",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

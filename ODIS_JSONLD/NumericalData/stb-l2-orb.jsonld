@@ -1,0 +1,337 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/stb-l2-orb.jsonld",
+  "name": "STEREO B - Ephemeris - orbit",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/stb-l2-orb.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Elena.Budnik",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Elena.Budnik"
+    }
+  ],
+  "sdDatePublished": "2020-06-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/STEREO-B/Ephemeris/stb-l2-orb",
+  "description": "STEREO-B orbit is calculated using SPICE kernels from https://sohowww.nascom.nasa.gov at IRAP",
+  "abstract": "STEREO-B orbit is calculated using SPICE kernels from https://sohowww.nascom.nasa.gov at IRAP",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "H"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gse",
+      "description": "",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "stb_xyz_gse(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "stb_xyz_gse(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "stb_xyz_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hee",
+      "description": "",
+      "unitText": "AU",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "stb_xyz_hee(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "stb_xyz_hee(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "stb_xyz_hee(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hci",
+      "description": "",
+      "unitText": "AU",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "stb_xyz_hci(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "stb_xyz_hci(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "stb_xyz_hci(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_iau_sun",
+      "description": "",
+      "unitText": "AU",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "stb_xyz_iausun(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "stb_xyz_iausun(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "stb_xyz_iausun(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance stb-earth",
+      "description": "",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance stb-sun",
+      "description": "",
+      "unitText": "AU",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon iau_sun",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat iau_sun",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon hee",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat hee",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon hci",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat hci",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

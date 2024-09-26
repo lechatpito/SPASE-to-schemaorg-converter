@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT10H.jsonld",
+  "name": "CRRES magnetic field orbital data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT10H.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Howard.J.Singer",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Howard.J.Singer"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/crres/magnetic_field/data/",
+      "encodingFormat": "Binary",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/crres/magnetic_field/data/",
+      "encodingFormat": "Binary",
+      "name": "HTTPS from SPDF",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/CRRES/MAG/PT10H",
+  "description": "The magnetic field files (CRnnnn.FPM) contains magnetic field components converted from the CRRES tri-axial fluxgate magnetometer sensor output.  This data set, however, is different from the ones on the Aerospace agency tapes.  The experimenter magnetic field files (which had neither the full time resolution nor the magnetic field intensity resolution of the original magnetometer outputs) were converted to field components in magnetometer sensor coordinates using the software and final calibration coefficient files provided by the magnetometer PI (Dr. Howard Singer, SEL).  The original magnetic field files for orbits 6-350 were not readilly available, but the converted files were, so for the sake of uniformity, it was decided to provide the converted files\ninstead of the originals.  For those who might wish to get back to the original data, the source code (MAGMPC5.FOR) and calibration files (MAGnn.CAL)\nwhich were used to generate the .FPM files are provided.  The original CR0237.MAG file is available on CD-8 for comparison with any results of an\ninversion program written by the user.  A program which dumps the CRnnnn.FPM files is also provided on CD-35 (FPMTEST.EXE).  This program prints out the\nUT, three magnetic field components in magnetometer coordinates, total B, and the pitch-angle calculated for the MEA (or a user-selected set of direction\ncosines).  The source code, FPMTEST.FOR, is also provided.",
+  "abstract": "The magnetic field files (CRnnnn.FPM) contains magnetic field components converted from the CRRES tri-axial fluxgate magnetometer sensor output.  This data set, however, is different from the ones on the Aerospace agency tapes.  The experimenter magnetic field files (which had neither the full time resolution nor the magnetic field intensity resolution of the original magnetometer outputs) were converted to field components in magnetometer sensor coordinates using the software and final calibration coefficient files provided by the magnetometer PI (Dr. Howard Singer, SEL).  The original magnetic field files for orbits 6-350 were not readilly available, but the converted files were, so for the sake of uniformity, it was decided to provide the converted files\ninstead of the originals.  For those who might wish to get back to the original data, the source code (MAGMPC5.FOR) and calibration files (MAGnn.CAL)\nwhich were used to generate the .FPM files are provided.  The original CR0237.MAG file is available on CD-8 for comparison with any results of an\ninversion program written by the user.  A program which dumps the CRnnnn.FPM files is also provided on CD-35 (FPMTEST.EXE).  This program prints out the\nUT, three magnetic field components in magnetometer coordinates, total B, and the pitch-angle calculated for the MEA (or a user-selected set of direction\ncosines).  The source code, FPMTEST.FOR, is also provided.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

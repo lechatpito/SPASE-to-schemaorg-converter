@@ -1,0 +1,655 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT1M.jsonld",
+  "name": "NOAA 08 Space Environment Monitor-1 (SEM-1) Medium Energy Proton and Electron Detector (MEPED) Re-processed Particle Count Rates, Fluxes, and Model Fields, 1 min Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT1M.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Donald.J.Williams",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Donald.J.Williams"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Shing.F.Fung",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Shing.F.Fung"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.E.McGuire",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.E.McGuire"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/noaa/noaa08/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/noaa/noaa08/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=NOAA08_MEPED1MIN_SEM&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NOAA/NumericalData/POES/8/SEM/MEPED/KeyParameter/PT1M",
+  "description": "TIROS/NOAA SEM MEPED Reprocessed Data Archive.                      \r\n      This is the Reprocessed Version of the Medium Energy Proton Electron Detector, MEPED, Data Archive from the TIROS/NOAA Spacecraft. The raw Data from the NOAA Archive have been processed to 1 min Resolution. Magnetic Field Parameters including Geocentric Solar Magnetospheric, GSM, Bx, By, Bz, B/Bmin, and L Shell Values are derived by using four Magnetic Field Models:\r\n \r\n*  International Geomagnetic Reference Field, IGRF, \r\n*  Tsyganenko 1989, T89, \r\n*  Tsyganenko 1996, T96, and \r\n*  Tsyganenko 2001, T01.\r\n\r\nThe T89, T96, and T01 Magnetic Field Models have been driven with Solar Wind Input Parameters and Geomagnetic Indices obtained from the OMNI-2 Data Set. Detector Counts, Omnidirectional and Perpendicular Electron and Proton Fluxes are archived.  Processing was done by: S.F. Fung, L.C. Tan, and X. Shao, Space Physics Data Facility, Goddard Space Flight Center, NASA, Greenbelt, MD 20771, USA, e-mail: Shing.F.Fung@nasa.gov.",
+  "abstract": "TIROS/NOAA SEM MEPED Reprocessed Data Archive.                      \r\n      This is the Reprocessed Version of the Medium Energy Proton Electron Detector, MEPED, Data Archive from the TIROS/NOAA Spacecraft. The raw Data from the NOAA Archive have been processed to 1 min Resolution. Magnetic Field Parameters including Geocentric Solar Magnetospheric, GSM, Bx, By, Bz, B/Bmin, and L Shell Values are derived by using four Magnetic Field Models:\r\n \r\n*  International Geomagnetic Reference Field, IGRF, \r\n*  Tsyganenko 1989, T89, \r\n*  Tsyganenko 1996, T96, and \r\n*  Tsyganenko 2001, T01.\r\n\r\nThe T89, T96, and T01 Magnetic Field Models have been driven with Solar Wind Input Parameters and Geomagnetic Indices obtained from the OMNI-2 Data Set. Detector Counts, Omnidirectional and Perpendicular Electron and Proton Fluxes are archived.  Processing was done by: S.F. Fung, L.C. Tan, and X. Shao, Space Physics Data Facility, Goddard Space Flight Center, NASA, Greenbelt, MD 20771, USA, e-mail: Shing.F.Fung@nasa.gov.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time Tags",
+      "description": "Epoch Time Tags",
+      "unitText": "",
+      "minValue": "02-Nov-1978 00:00:00.000",
+      "maxValue": "01-Jan-2020 00:00:00.000",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time PB5",
+      "description": "Time in PB5 Format: Year, Day, Milliseconds, Observation Time",
+      "unitText": "",
+      "minValue": "1978",
+      "maxValue": "2020",
+      "defaultValue": "-2147483648",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day of Year, Fractional",
+      "description": "Day of Year, DOY, Fractional",
+      "unitText": "",
+      "minValue": "1.0",
+      "maxValue": "400.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Altitude, Geographic Spherical Coordinates",
+      "description": "Spacecraft Position, Altitude, Geographic, GEO, Spherical Coordinates",
+      "unitText": "km",
+      "minValue": "100.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Latitude, Geographic Spherical Coordinates",
+      "description": "Spacecraft Position, Latitude, Geographic, GEO, Spherical Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Longitude, Geographic Spherical Coordinates",
+      "description": "Spacecraft Position, Longitude, Geographic, GEO, Spherical Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Magnetic Local Time, Solar Magnetospheric Coordinates",
+      "description": "Spacecraft Position, Magnetic Local Time, Solar Magnetospheric, SM, Spherical Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle for MEPED Proton and Electron 0\u00b0 Telescopes",
+      "description": "Pitch Angle for MEPED Proton and Electron 0\u00b0 Telescopes",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle for MEPED Proton 81\u00b0 Telescope",
+      "description": "Pitch Angle for MEPED Proton 81\u00b0 Telescope",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle for MEPED Electron 83\u00b0 Telescope",
+      "description": "Pitch Angle for MEPED Electron 83\u00b0 Telescope",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED Detector, Data Quality Flag",
+      "description": "MEPED Detector, Data Quality Flag: 0=Good, -1=Bad",
+      "unitText": "",
+      "minValue": "-1",
+      "maxValue": "0",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED Count Rates 0\u00b0 Telescopes",
+      "description": "MEPED Count Rates 0\u00b0 Telescopes, five Proton and three Electron Energy Bands, counts_0dg",
+      "unitText": "s^-1",
+      "minValue": "0.0001",
+      "maxValue": "1.0e+09",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "30-80kev_prtn(0_dg)",
+            "Index": "1"
+          },
+          {
+            "Name": "80-250kev_prtn(0_dg)",
+            "Index": "2"
+          },
+          {
+            "Name": "250-800kev_prtn(0_dg)",
+            "Index": "3"
+          },
+          {
+            "Name": "800-2500kev_prtn(0_dg)",
+            "Index": "4"
+          },
+          {
+            "Name": ">2500kev_prtn(0_dg)",
+            "Index": "5"
+          },
+          {
+            "Name": ">30kev_elec(0_dg)",
+            "Index": "6"
+          },
+          {
+            "Name": ">100kev_elec(0_dg)",
+            "Index": "7"
+          },
+          {
+            "Name": ">300kev_elec(0_dg)",
+            "Index": "8"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED Count Rates, 81\u00b0 and 83\u00b0 Telescopes",
+      "description": "MEPED Count Rates, 81\u00b0 and 83\u00b0 Telescopes, five Proton and three Electron Energy Bands",
+      "unitText": "s^-1",
+      "minValue": "0.0001",
+      "maxValue": "1.0e+09",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "30-80kev_prtn(81_dg)",
+            "Index": "1"
+          },
+          {
+            "Name": "80-250kev_prtn(81_dg)",
+            "Index": "2"
+          },
+          {
+            "Name": "250-800kev_prtn(81_dg)",
+            "Index": "3"
+          },
+          {
+            "Name": "800-2500kev_prtn(81_dg)",
+            "Index": "4"
+          },
+          {
+            "Name": ">2500kev_prtn(81_dg)",
+            "Index": "5"
+          },
+          {
+            "Name": ">30kev_elec(83_dg)",
+            "Index": "6"
+          },
+          {
+            "Name": ">100kev_elec(83_dg)",
+            "Index": "7"
+          },
+          {
+            "Name": ">300kev_elec(83_dg)",
+            "Index": "8"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED Count Rates, Omnidirectional Telescope",
+      "description": "MEPED Count Rates, Omnidirectional Telescope, three Proton Energy Bands",
+      "unitText": "s^-1",
+      "minValue": "0.0001",
+      "maxValue": "1.0e+09",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": ">16MeV_prtn(Omni)",
+            "Index": "1"
+          },
+          {
+            "Name": ">36MeV_prtn(Omni)",
+            "Index": "2"
+          },
+          {
+            "Name": ">80MeV_prtn(Omni)",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED calculated Perpendicular Proton Flux",
+      "description": "MEPED calculated Perpendicular Proton Flux, five Energy Bands",
+      "unitText": "(cm^2 s sr)^-1",
+      "minValue": "0.0001",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "5",
+        "elements": [
+          {
+            "Name": "Jperp_(30-80kev_prtn)",
+            "Index": "1"
+          },
+          {
+            "Name": "Jperp_(80-250kev_prtn)",
+            "Index": "2"
+          },
+          {
+            "Name": "Jperp_(250-800kev_prtn)",
+            "Index": "3"
+          },
+          {
+            "Name": "Jperp_(800-2500kev_prtn)",
+            "Index": "4"
+          },
+          {
+            "Name": "Jperp_(>2500kev_prtn)",
+            "Index": "5"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED calculated Perpendicular Electron Flux",
+      "description": "MEPED calculated Perpendicular Electron Flux, three Energy Bands",
+      "unitText": "(cm^2 s sr q^-1)^-1",
+      "minValue": "0.0001",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Jperp_(>30kev_elec)",
+            "Index": "1"
+          },
+          {
+            "Name": "Jperp_(>100kev_elec)",
+            "Index": "2"
+          },
+          {
+            "Name": "Jperp_(>300kev_elec)",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED calculated Omnidirectional Proton Flux",
+      "description": "MEPED calculated Omnidirectional Proton Flux, five Energy Bands from the 0\u00b0 Telescope, the 81\u00b0 Telescope, and three Omnidirectional Telescopes",
+      "unitText": "(cm^2 s sr)^-1",
+      "minValue": "0.0001",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "Jomni (30-80kev_prtn)",
+            "Index": "1"
+          },
+          {
+            "Name": "Jomni (80-250kev_prtn)",
+            "Index": "2"
+          },
+          {
+            "Name": "Jomni (250-800kev_prtn)",
+            "Index": "3"
+          },
+          {
+            "Name": "Jomni (800-2500kev_prtn)",
+            "Index": "4"
+          },
+          {
+            "Name": "Jomni (>2500kev_prtn)",
+            "Index": "5"
+          },
+          {
+            "Name": "Jomni (>16MeV_prtn)",
+            "Index": "6"
+          },
+          {
+            "Name": "Jomni (>36MeV_prtn)",
+            "Index": "7"
+          },
+          {
+            "Name": "Jomni (>80MeV_prtn)",
+            "Index": "8"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED calculated Omnidirectional Electron Flux",
+      "description": "MEPED calculated Omnidirectional Electron Flux, three Energy Bands from the 0\u00b0 Telescope and the 83\u00b0 Telescopes",
+      "unitText": "(cm^2 s sr q^-1)^-1",
+      "minValue": "0.0001",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Jomni (>30kev_elec)",
+            "Index": "1"
+          },
+          {
+            "Name": "Jomni (>100kev_elec)",
+            "Index": "2"
+          },
+          {
+            "Name": "Jomni (>300kev_elec)",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, Geocentric Solar Magnetospheric Cartesian Coordinates, IGRF Model",
+      "description": "Magnetic Field Vector, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the International Geomagnetic Reference Field, IGRF, Model",
+      "unitText": "nT",
+      "minValue": "-100000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "IGRF_GSM_Bx",
+            "Index": "1"
+          },
+          {
+            "Name": "IGRF_GSM_By",
+            "Index": "2"
+          },
+          {
+            "Name": "IGRF_GSM_Bz",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ratio of the Magnetic Field Magnitude divided by the Minimum Magnitude on the Field Line, B/Bmin, Geocentric Solar Magnetospheric Cartesian Coordinates, IGRF Model",
+      "description": "Ratio of the Magnetic Field Magnitude divided by the Minimum Magnitude on the Field Line, B/Bmin, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the International Geomagnetic Reference Field, IGRF, Model",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, McIlwain L Shell Value, Geocentric Solar Magnetospheric Cartesian Coordinates, IGRF Model",
+      "description": "Spacecraft Position, McIlwain L Shell Value, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the International Geomagnetic Reference Field, IGRF, Model",
+      "unitText": "",
+      "minValue": "1.0",
+      "maxValue": "15.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, Geocentric Solar Magnetospheric Cartesian Coordinates, T89 Model",
+      "description": "Magnetic Field Vector, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the Tsyganenko 1989, T89, Model",
+      "unitText": "nT",
+      "minValue": "-100000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "T89_GSM_Bx",
+            "Index": "1"
+          },
+          {
+            "Name": "T89_GSM_By",
+            "Index": "2"
+          },
+          {
+            "Name": "T89_GSM_Bz",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ratio of the Magnetic Field Magnitude divided by the Minimum Magnitude on the Field Line, B/Bmin, Geocentric Solar Magnetospheric Cartesian Coordinates, T89 Model",
+      "description": "Ratio of the Magnetic Field Magnitude divided by the Minimum Magnitude on the Field Line, B/Bmin, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the Tsyganenko 1989, T89, Model",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, McIlwain L Shell Value, Geocentric Solar Magnetospheric Cartesian Coordinates, T89 Model",
+      "description": "Spacecraft Position, McIlwain L Shell Value, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the Tsyganenko 1989, T89, Model",
+      "unitText": "",
+      "minValue": "1.0",
+      "maxValue": "15.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, Geocentric Solar Magnetospheric Cartesian Coordinates, T96 Model",
+      "description": "Magnetic Field Vector, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the Tsyganenko 1996, T96, Model",
+      "unitText": "nT",
+      "minValue": "-100000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "T96_GSM_Bx",
+            "Index": "1"
+          },
+          {
+            "Name": "T96_GSM_By",
+            "Index": "2"
+          },
+          {
+            "Name": "T96_GSM_Bz",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ratio of the Magnetic Field Magnitude divided by the Minimum Magnitude on the Field Line, B/Bmin, Geocentric Solar Magnetospheric Cartesian Coordinates, T96 Model",
+      "description": "Ratio of the Magnetic Field Magnitude divided by the Minimum Magnitude on the Field Line, B/Bmin, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the Tsyganenko 1996, T96, Model",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, McIlwain L Shell Value, Geocentric Solar Magnetospheric Cartesian Coordinates, T96 Model",
+      "description": "Spacecraft Position, McIlwain L Shell Value, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the Tsyganenko 1996, T96, Model",
+      "unitText": "",
+      "minValue": "1.0",
+      "maxValue": "15.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, Geocentric Solar Magnetospheric Cartesian Coordinates, T01 Model",
+      "description": "Magnetic Field Vector, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the Tsyganenko 2001, T01, Model",
+      "unitText": "nT",
+      "minValue": "-100000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "T01_GSM_Bx",
+            "Index": "1"
+          },
+          {
+            "Name": "T01_GSM_By",
+            "Index": "2"
+          },
+          {
+            "Name": "T01_GSM_Bz",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ratio of the Magnetic Field Magnitude divided by the Minimum Magnitude on the Field Line, B/Bmin, Geocentric Solar Magnetospheric Cartesian Coordinates, T01 Model",
+      "description": "Ratio of the Magnetic Field Magnitude divided by the Minimum Magnitude on the Field Line, B/Bmin, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the Tsyganenko 2001, T01, Model",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, McIlwain L Shell Value, Geocentric Solar Magnetospheric Cartesian Coordinates, T01 Model",
+      "description": "Spacecraft Position, McIlwain L Shell Value, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates, calculated by using the Tsyganenko 2001, T01, Model",
+      "unitText": "",
+      "minValue": "1.0",
+      "maxValue": "15.0",
+      "defaultValue": "-1.0e+31"
+    }
+  ]
+}

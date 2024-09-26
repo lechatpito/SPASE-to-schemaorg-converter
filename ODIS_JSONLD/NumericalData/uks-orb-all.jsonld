@@ -1,0 +1,296 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/uks-orb-all.jsonld",
+  "name": "AMPTE - UKS - Ephemeris - orbit",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/uks-orb-all.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/David.J.Southwood",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/David.J.Southwood"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Malcolm.W.Dunlop",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Malcolm.W.Dunlop"
+    }
+  ],
+  "sdDatePublished": "2020-02-04",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/UKS/ORBIT/uks-orb-all",
+  "description": "           \n         ",
+  "abstract": "           \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gse",
+      "description": "\n             Spacecraft position in GSE Cartesian coordinates\n         ",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "uks_orb_xyz(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "uks_orb_xyz(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "uks_orb_xyz(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gsm",
+      "description": "\n               Spacecraft position in GSM Cartesian coordinates\n           ",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "uks_orb_gsm(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "uks_orb_gsm(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "uks_orb_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IRM_to_UKS_gse",
+      "description": "\n               UKS Spacecraft position relative to IRM in GSE Cartesian coordinates\n           ",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "uks_orb_scdist(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "uks_orb_scdist(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "uks_orb_scdist(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vel_gse",
+      "description": "\n               Spacecraft velocity in GSE Cartesian coordinates\n           ",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "uks_orb_v(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "uks_orb_v(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "uks_orb_v(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vel_gsm",
+      "description": "\n               Spacecraft velocity in GSM Cartesian coordinates\n           ",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "uks_orb_vgsm(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "uks_orb_vgsm(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "uks_orb_vgsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance uks-earth",
+      "description": "\n               Spacecraft distance to earth center\n           ",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ISEE3_ORBIT_GSE.jsonld",
+  "name": "ISEE3 orbit data (GSE frame, 1 min resolution)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ISEE3_ORBIT_GSE.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Jan.Merka",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Jan.Merka"
+    }
+  ],
+  "sdDatePublished": "2022-02-04",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ISEE3_ORBIT_GSE",
+      "encodingFormat": "Text.ASCII",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ISEE3/Ephemeris/ISEE3_ORBIT_GSE",
+  "description": "This data set contains the ISEE3 GSE  position and velocity  at 1 min resolution.",
+  "abstract": "This data set contains the ISEE3 GSE  position and velocity  at 1 min resolution.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE3 GSE position (1 min resolution)",
+      "description": "ISEE3 Spacecraft position in GSE (1 min resolution)",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE3 GSE Velocity (1 min resolution)",
+      "description": "ISEE3 Spacecraft velocity  in GSE (1 min resolution)",
+      "unitText": "km s^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

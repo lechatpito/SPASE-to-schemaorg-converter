@@ -1,0 +1,473 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/MMS_FPI_4_L2_FAST_DES_MOM.jsonld",
+  "name": "MMS-4 FPI DES Level-2 Fast electron moments (CDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/MMS_FPI_4_L2_FAST_DES_MOM.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/James.L.Burch",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/James.L.Burch"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Barbara.Giles",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Barbara.Giles"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Vincent.Genot",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Vincent.Genot"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Jean-Andre.Sauvaud",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Jean-Andre.Sauvaud"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Benoit.Lavraud",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Benoit.Lavraud"
+    }
+  ],
+  "sdDatePublished": "2022-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:MMS_FPI_4_L2_FAST_DES_MOM",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/MMS-4/FPI/DES/MMS_FPI_4_L2_FAST_DES_MOM",
+  "description": "This dataset provides the moments of the electron distribution at the FAST cadence (4.5 s) computed from the full distribution function and corrected from a number of effects (including the spacecraft electrostatic potential). The dataset comprises the main moments: density, velocity vector, temperatures (and associated pressure tensor), and heat flux. They are provided in GSE frame.\nFor more information on the FPI instruments, data set, and user guide, please see:\n MMS Science Data Center (https://lasp.colorado.edu/mms/sdc/public/datasets/fpi/)\n MMS FPI Data Users and Products Guide (https://lasp.colorado.edu/galaxy/display/MFDPG/MMS+FPI+Data+Users+and+Products+Guide)\n FPI Release Notes (https://lasp.colorado.edu/mms/sdc/public/datasets/fpi/mms-FPIReleaseNotes-220217.pdf)",
+  "abstract": "This dataset provides the moments of the electron distribution at the FAST cadence (4.5 s) computed from the full distribution function and corrected from a number of effects (including the spacecraft electrostatic potential). The dataset comprises the main moments: density, velocity vector, temperatures (and associated pressure tensor), and heat flux. They are provided in GSE frame.\nFor more information on the FPI instruments, data set, and user guide, please see:\n MMS Science Data Center (https://lasp.colorado.edu/mms/sdc/public/datasets/fpi/)\n MMS FPI Data Users and Products Guide (https://lasp.colorado.edu/galaxy/display/MFDPG/MMS+FPI+Data+Users+and+Products+Guide)\n FPI Release Notes (https://lasp.colorado.edu/mms/sdc/public/datasets/fpi/mms-FPIReleaseNotes-220217.pdf)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Error Flags",
+      "description": "MMS4 FPI/DES dataQuality errorFlags",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Compression Flag",
+      "description": "MMS4 FPI/DES Compression Lossless/Lossy Indicator Flag at Survey Start Time",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start Del-Phi Count",
+      "description": "MMS4 FPI/DES Del-Phi (obs spin-phase)   count at survey-start time",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start Del-Phi Angle",
+      "description": "MMS4 FPI/DES Del-Phi (obs spin-phase) angle at survey-start time",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Pitch Angle Distribution, Low Energies",
+      "description": "MMS4 FPI/DES electron pitch-angle distribution for low energies during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Pitch Angle Distribution, Mid Energies",
+      "description": "MMS4 FPI/DES electron pitch-angle distribution for mid  energies during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Pitch Angle Distribution, High Energies",
+      "description": "MMS4 FPI/DES electron pitch-angle distribution for high energies during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy Spectrum, DBCS +X Direction",
+      "description": "MMS4 FPI/DES electron energy spectrum near +X_DBCS during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy Spectrum, DBCS -X Direction",
+      "description": "MMS4 FPI/DES electron energy spectrum near X_DBCS during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy Spectrum, DBCS +Y Direction",
+      "description": "MMS4 FPI/DES electron energy spectrum near +Y_DBCS during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy Spectrum, DBCS -Y Direction",
+      "description": "MMS4 FPI/DES electron energy spectrum near Y_DBCS during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy Spectrum, DBCS +Z Direction",
+      "description": "MMS4 FPI/DES electron energy spectrum near +Z_DBCS during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy Spectrum, DBCS -Z Direction",
+      "description": "MMS4 FPI/DES electron energy spectrum near Z_DBCS during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy Spectrum, B Parallel Direction",
+      "description": "MMS4 FPI/DES electron energy parallel  to the magnetic field direction during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy Spectrum, B Anti-Parallel Direction",
+      "description": "MMS4 FPI/DES electron energy anti-parallel to the magnetic field direction during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy Spectrum, B Perpendicular Direction",
+      "description": "MMS4 FPI/DES electron energy perpendicular to the magnetic field direction during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy Spectrum, Omni-Directional",
+      "description": "MMS4 FPI/DES omni-directional electron energy spectrum during this survey",
+      "unitText": "keV/(cm^2 s sr keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Number Density",
+      "description": "MMS4 FPI/DES electron number density during this survey",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Number Density, Error",
+      "description": "MMS4 FPI/DES electron number density error during this survey",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Number Density, Extrapolation, Low",
+      "description": "MMS4 FPI/DES estimated (via extrapolation to 0) contribution to density integral below 10eV",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Number Density, Extrapolation, High",
+      "description": "MMS4 FPI/DES estimated (via extrapolation to infinity) contribution to density integral above 30keV",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Bulk Velocity Vector, DBCS",
+      "description": "MMS4 FPI/DES electron bulk-velocity vector in De-spun Body Spacecraft Coordinate System during this survey",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Bulk Velocity Spintone Vector, DBCS",
+      "description": "MMS4 FPI/DES electron bulk-velocity estimated spintone vector in De-spun Body Spacecraft Coordinate System during this survey",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Bulk Velocity Vector, GSE",
+      "description": "MMS4 FPI/DES electron bulk-velocity vector in GSE during this survey",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Bulk Velocity Spintone Vector, GSE",
+      "description": "MMS4 FPI/DES electron bulk-velocity estimated spintone vector in GSE during this survey",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Bulk Velocity Error Vector",
+      "description": "MMS4 FPI/DES electron bulk-velocity error vector during this survey",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Pressure Tensor, DBCS",
+      "description": "MMS4 FPI/DES electron pressure tensor in De-spun Body Spacecraft Coordinate System during this survey",
+      "unitText": "nPa",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Pressure Tensor, GSE",
+      "description": "MMS4 FPI/DES electron pressure tensor in GSE during this survey",
+      "unitText": "nPa",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Pressure Tensor, Error",
+      "description": "MMS4 FPI/DES electron pressure tensor error during this survey",
+      "unitText": "nPa",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Temperature Tensor, DBCS",
+      "description": "MMS4 FPI/DES electron temperature tensor in De-spun Body Spacecraft Coordinate System during this survey",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Temperature Tensor, GSE",
+      "description": "MMS4 FPI/DES electron temperature tensor in GSE during this survey",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Temperature Tensor, Error, DBCS",
+      "description": "MMS4 FPI/DES electron temperature tensor error during this survey",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Heat Flux Vector, DBCS",
+      "description": "MMS4 FPI/DES electron heat-flux vector in DBCS during this survey",
+      "unitText": "mW/m^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Heat Flux Vector, GSE",
+      "description": "MMS4 FPI/DES electron heat-flux vector in GSE during this survey",
+      "unitText": "mW/m^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Heat Flux Error Vector",
+      "description": "MMS4 FPI/DES electron heat-flux error vector during this survey",
+      "unitText": "mW/m^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Pitch Angle, Alpha",
+      "description": "MMS4 FPI/DES fast survey sky-map pitch angles",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Pitch Angle, Alpha, Delta Value",
+      "description": "MMS4 FPI/DES fast survey sky-map pitch angle deltas",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Energy",
+      "description": "MMS4 FPI/DES fast survey sky-map energies",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Energy, Delta Value",
+      "description": "MMS4 FPI/DES fast survey sky-map delta energies",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Parallel Temperature",
+      "description": "MMS4 FPI/DES electron parallel temperature during this BP",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Perpendicular Temperature",
+      "description": "MMS4 FPI/DES electron perpendicular temperature during this BP",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

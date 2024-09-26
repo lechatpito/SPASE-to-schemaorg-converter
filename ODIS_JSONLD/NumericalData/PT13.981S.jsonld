@@ -1,0 +1,360 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT13.981S.jsonld",
+  "name": "PSP Solar Wind Electrons Alphas and Protons (SWEAP) SPE Electron Pitch Angle Distribution, Level 3 (L3), 13.981 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT13.981S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Justin.C.Kasper",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Justin.C.Kasper"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/psp/sweap/spe/l3/spe_sf0_pad/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/psp/sweap/spe/l3/spe_sf0_pad/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=PSP_SWP_SPE_SF0_L3_PAD&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ParkerSolarProbe/SWEAP/SPAN-E/Level3/PitchAngleDistribution/PT13.981S",
+  "description": "* SPAN-Electron, SPAN-E, Instrument SPE Level 3 Data\n* --------------------------------------------------\n\nFile Naming Format: psp_swp_spe_sf0_l3_pad_YYYYMMDD_v01.cdf\n\nThis data product contains measurements of the Electron Pitch Angle Distribution from the SPAN-Electron instrument.\n\n* Parker Solar Probe SWEAP Rules of the Road\n* ------------------------------------------\n\nAs part of the development of collaboration with the broader Heliophysics community, the mission has drafted a \"Rules of the Road\" to govern how PSP instrument data are to be used.\n\n* 1) Users should consult with the PI to discuss the appropriate use of instrument data or model results and to ensure that the users are accessing the most recently available versions of the data and of the analysis routines. Instrument team Science Operations Centers, SOCs, and/or Virtual Observatories, VOs, should facilitate this process serving as the contact point between PI and users in most cases.\n* 2) Users should heed the caveats of investigators to the interpretations and limitations of data or model results. Investigators supplying data or models may insist that such caveats be published. Data and model version numbers should also be specified.\n* 3) Browse products, Quicklook, and Planning data are not intended for science analysis or publication and should not be used for those purposes without consent of the PI.\n* 4) Users should acknowledge the sources of data used in all publications, presentations, and reports: \"We acknowledge the NASA Parker Solar Probe Mission and the SWEAP team led by J. Kasper for use of data.\".\n* 5) Users are encouraged to provide the PI a copy of each manuscript that uses the PI data prior to submission of that manuscript for consideration of publication. On publication, the citation should be transmitted to the PI and any other providers of data.",
+  "abstract": "* SPAN-Electron, SPAN-E, Instrument SPE Level 3 Data\n* --------------------------------------------------\n\nFile Naming Format: psp_swp_spe_sf0_l3_pad_YYYYMMDD_v01.cdf\n\nThis data product contains measurements of the Electron Pitch Angle Distribution from the SPAN-Electron instrument.\n\n* Parker Solar Probe SWEAP Rules of the Road\n* ------------------------------------------\n\nAs part of the development of collaboration with the broader Heliophysics community, the mission has drafted a \"Rules of the Road\" to govern how PSP instrument data are to be used.\n\n* 1) Users should consult with the PI to discuss the appropriate use of instrument data or model results and to ensure that the users are accessing the most recently available versions of the data and of the analysis routines. Instrument team Science Operations Centers, SOCs, and/or Virtual Observatories, VOs, should facilitate this process serving as the contact point between PI and users in most cases.\n* 2) Users should heed the caveats of investigators to the interpretations and limitations of data or model results. Investigators supplying data or models may insist that such caveats be published. Data and model version numbers should also be specified.\n* 3) Browse products, Quicklook, and Planning data are not intended for science analysis or publication and should not be used for those purposes without consent of the PI.\n* 4) Users should acknowledge the sources of data used in all publications, presentations, and reports: \"We acknowledge the NASA Parker Solar Probe Mission and the SWEAP team led by J. Kasper for use of data.\".\n* 5) Users are encouraged to provide the PI a copy of each manuscript that uses the PI data prior to submission of that manuscript for consideration of publication. On publication, the citation should be transmitted to the PI and any other providers of data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, Midpoint of Integration",
+      "description": "Epoch Time Tags, TT2000, Nanoseconds since J2000 at Midpoint of the Integration",
+      "unitText": "ns",
+      "minValue": "1990-01-01T00:00:00.000000000",
+      "maxValue": "2029-12-31T23:59:58.999000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time",
+      "unitText": "s",
+      "minValue": "1.2623e+09",
+      "maxValue": "4.10244e+09",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Parker Solar Probe, Mission Elapsed Time",
+      "description": "Parker Solar Probe, PSP, Mission Elapsed Time, MET, in string format",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "F0",
+      "description": "F0",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Accumulation Period",
+      "description": "Total Accumulation Period",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Accumulations",
+      "description": "Number of Accumulations",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SMP Bits",
+      "description": "SMP Bits",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCH Bits",
+      "description": "ARCH Bits",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LTCS NNNN Bits",
+      "description": "LTCS NNNN Bits",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Status Bits",
+      "description": "Status Bits",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Product Bits",
+      "description": "Product Bits",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mode 2",
+      "description": "Mode Number 2",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Quality Flag",
+      "description": "Quality Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "255"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy Flux versus Pitch Angle and Energy",
+      "description": "Energy Flux versus Pitch Angle, PA, and Energy, E",
+      "unitText": "eV/(cm^2 s sr eV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle",
+      "description": "Pitch Angle",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Particle Energy",
+      "description": "Particle Energy",
+      "unitText": "eV",
+      "minValue": "0.01",
+      "maxValue": "100000.0",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Energy Flux versus Energy",
+      "description": "Differential Energy Flux versus Energy",
+      "unitText": "eV/(cm^2 s sr eV)",
+      "minValue": "0.001",
+      "maxValue": "1.0e+12",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SPX, SPAN-Ae or SPAN-B, versus Pitch Angle and Energy",
+      "description": "SPX, SPAN-Ae or SPAN-B, versus Pitch Angle, PA, and Energy, E",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Samples versus Pitch Angle and Energy",
+      "description": "Number of Samples versus Pitch Angle, PA, and Energy, E",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field, Spacecraft Coordinates",
+      "description": "Magnetic Field, Spacecraft, SC, Coordinates",
+      "unitText": "nT",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Valid",
+      "description": "Valid",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gap",
+      "description": "Gap",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

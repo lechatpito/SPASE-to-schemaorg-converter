@@ -1,0 +1,203 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT20M.jsonld",
+  "name": "Vega 2 solar wind parameters (20-min)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT20M.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Mikhail.I.Verigin",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Mikhail.I.Verigin"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Natalia.E.Papitashvili",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Natalia.E.Papitashvili"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Jan.Merka",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Jan.Merka"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/zzz_old/vega_data_from_nssdc/plasma/",
+      "encodingFormat": "Text.ASCII",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "FTP access to Vega mission data at NSSDC."
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/zzz_old/vega_data_from_nssdc/plasma/",
+      "encodingFormat": "Text.ASCII",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Vega2/PLASMAG/PT20M",
+  "description": "This data set is a 20-min-resolution collection of solar wind plasma parameters from the interplanetary phases of the Soviet Vega 2 mission to Comet Halley. The data consist of proton flow speeds, densities and temperatures determined by fitting counts-vs-energy data measured on the sunward-looking electrostatic analyzer to a convecting Maxwellian. There are actually two sets of parameters, one (\"linear\") obtained by minimizing the sum of squares of measured and modelled counts and the other (\"log\") used logs of counts rather than counts themselves. Also included are numbers of energy intervals used in the linear and log determinations less than and greater than the spectral peaks. The data are at 20-min resolution because the during cruise phase only one or two 10-sec spectra were determined every 20 minutes. Further, the data have long gaps between the first and last days of coverage. The major data gaps are +---------------------------------------------------------------+   Vega 1:   Vega 2:    ----------------------------------------------------------------+   85/04/20 - 85/07/23   85/04/16 - 85/07/24     85/12/21 - 86/01/05   85/09/27 - 85/11/27     86/04/29 - 86/08/04   85/12/03 - 86/02/20       86/02/23 - 86/03/06   +----------------------------------------------------------------+ Discussions of this investigation are found in Gringauz et al (Nature, v321, p282, 1986), Galeev et al (JGR, v93, p7527, 1988) and references therein.",
+  "abstract": "This data set is a 20-min-resolution collection of solar wind plasma parameters from the interplanetary phases of the Soviet Vega 2 mission to Comet Halley. The data consist of proton flow speeds, densities and temperatures determined by fitting counts-vs-energy data measured on the sunward-looking electrostatic analyzer to a convecting Maxwellian. There are actually two sets of parameters, one (\"linear\") obtained by minimizing the sum of squares of measured and modelled counts and the other (\"log\") used logs of counts rather than counts themselves. Also included are numbers of energy intervals used in the linear and log determinations less than and greater than the spectral peaks. The data are at 20-min resolution because the during cruise phase only one or two 10-sec spectra were determined every 20 minutes. Further, the data have long gaps between the first and last days of coverage. The major data gaps are +---------------------------------------------------------------+   Vega 1:   Vega 2:    ----------------------------------------------------------------+   85/04/20 - 85/07/23   85/04/16 - 85/07/24     85/12/21 - 86/01/05   85/09/27 - 85/11/27     86/04/29 - 86/08/04   85/12/03 - 86/02/20       86/02/23 - 86/03/06   +----------------------------------------------------------------+ Discussions of this investigation are found in Gringauz et al (Nature, v321, p282, 1986), Galeev et al (JGR, v93, p7527, 1988) and references therein.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Time of observation (year)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Month",
+      "description": "Time of observation (month of year)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day",
+      "description": "Time of observation (day of month)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour",
+      "description": "Time of observation (hour of day)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minute",
+      "description": "Time of observation (minute)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second",
+      "description": "Time of observation (second)",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ID",
+      "description": "Spacecraft ID: * 1 = Vega 1 * 2 = Vega 2",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "2",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vp (lin)",
+      "description": "Proton speed (km/s), linear fit.",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "9999.90"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vp (log)",
+      "description": "Proton speed (km/s), log fit.",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "9999.90"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Np (lin)",
+      "description": "Proton density (cm^-3), linear fit",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999.990"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Np (log)",
+      "description": "Proton density (cm^-3), log fit",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "999.990"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tp (lin)",
+      "description": "Proton temperature (K), linear fit",
+      "unitText": "K",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.1E35"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tp (log)",
+      "description": "Proton temperature (K), log fit",
+      "unitText": "K",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "0.1E35"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Code",
+      "description": "4-digit number abcd that codes the number of ion energy intervals used in lin (a+b+1) or log (c+d+1) maxwellian fitting procedures. * a,c - number of intervals used with energies less than energy of ion spectra maximum. * b,d - number of intervals used with energies more than energy of ion spectra maximum.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

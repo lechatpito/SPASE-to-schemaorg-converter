@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/CLU_C1_WHI_ACT2PAS_RATIO.jsonld",
+  "name": "CLU1 WHISPER Active to Passive Spectral Power Density Coded Ratio",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/CLU_C1_WHI_ACT2PAS_RATIO.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Pierrette.Decreau",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Pierrette.Decreau"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Patrick.Canu",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Patrick.Canu"
+    }
+  ],
+  "sdDatePublished": "2022-02-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CLU_C1_WHI_ACT2PAS_RATIO",
+      "encodingFormat": "CEF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Cluster-1/WHISPER/CLU_C1_WHI_ACT2PAS_RATIO",
+  "description": "This data set contains the active to passive power spectral density ratio when WHISPER is in sounding mode on Cluster 1. There are\n512 values, one for each frequency, indicating the ratio (Active received power) / (Passive received power), coded as follows :\n\n0 indicates Active/Passive <= 2    \n1 indicates 2 < Active/Passive <= 4 \n2 indicates 4 < Active/Passive <= 16 \n3 indicates 16 < Active/Passive",
+  "abstract": "This data set contains the active to passive power spectral density ratio when WHISPER is in sounding mode on Cluster 1. There are\n512 values, one for each frequency, indicating the ratio (Active received power) / (Passive received power), coded as follows :\n\n0 indicates Active/Passive <= 2    \n1 indicates 2 < Active/Passive <= 4 \n2 indicates 4 < Active/Passive <= 16 \n3 indicates 16 < Active/Passive",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": []
+}

@@ -1,0 +1,241 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/vex-ima-param.jsonld",
+  "name": "VEX - IMA - imaextra moments",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/vex-ima-param.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Stas.Barabash",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Stas.Barabash"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Andrey.Fedorov",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Andrey.Fedorov"
+    }
+  ],
+  "sdDatePublished": "2021-05-11",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/VEX/IMA/vex-ima-param",
+  "description": "Venux Express (VEX) ASPERA-4 Ion Mass Analyzer (IMA) data (moments)\n                Calculated using Andrei Fedorov (IRAP) procedure",
+  "abstract": "Venux Express (VEX) ASPERA-4 Ion Mass Analyzer (IMA) data (moments)\n                Calculated using Andrei Fedorov (IRAP) procedure",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    },
+    {
+      "@type": "Place",
+      "name": "Venus.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "protons: moments quality",
+      "description": "Proton moments quality flag",
+      "unitText": "0-1",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy: moments quality",
+      "description": "Heavy ion moments quality flag",
+      "unitText": "0-1",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "protons: density",
+      "description": "Proton density",
+      "unitText": "cm-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy: density",
+      "description": "Heavy ion density",
+      "unitText": "cm-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "protons: temperature",
+      "description": "Proton temperature",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy: temperature",
+      "description": "Heavy ion temperature",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "protons: v_vso",
+      "description": "Proton bulk velocity components in VSO coordinates",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "vex_h_vel(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "vex_h_vel(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "vex_h_vel(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy: v_vso",
+      "description": "Heavy ion bulk velocity components in VSO coordinates",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "vex_o_vel(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "vex_o_vel(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "vex_o_vel(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "scan flag",
+      "description": "Scan flag : 0 - no scanning; 1 - scanning",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

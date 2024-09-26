@@ -1,0 +1,117 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ROSETTA_RPC_MIP_S3ESF.jsonld",
+  "name": "ROSETTA RPC-MIP Calibrated Electric Field Power Spectrum in Passive SDL Full Mode (CDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ROSETTA_RPC_MIP_S3ESF.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Pierre.Henri",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Pierre.Henri"
+    }
+  ],
+  "sdDatePublished": "2022-05-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ROSETTA_RPC_MIP_S3ESF",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ROSETTA/RPC_MIP/ROSETTA_RPC_MIP_S3ESF",
+  "description": "This dataset contains E-Field power spectra acquired in passive SDL mode. The frequency table is fixed, with 96 frequency bins in the [7 kHz - 3584 kHz] range. The time resolution depends on the operational mode.",
+  "abstract": "This dataset contains E-Field power spectra acquired in passive SDL mode. The frequency table is fixed, with 96 frequency bins in the [7 kHz - 3584 kHz] range. The time resolution depends on the operational mode.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "C"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "m"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Mode",
+      "description": "Possible value is PASSIVE",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Sub_Mode",
+      "description": "Possible value is FULL",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spectrum Type",
+      "description": "Possible value is POWER",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Fixed frequency table: 96 frequency bins with non-constant resolution in the [7-3584] kHz range",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field Power  (Passive SDL mode)",
+      "description": "Electric Field Power Spectrum (Passive SDL mode)",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

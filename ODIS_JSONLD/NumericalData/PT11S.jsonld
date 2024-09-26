@@ -1,0 +1,345 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT11S.jsonld",
+  "name": "Van Allen Probe B Electric Fields and Waves (EFW) Spin-fit Electric field in modified-GSE (MGSE) coord, density, and other products",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT11S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/John.R.Wygant",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/John.R.Wygant"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Sheng.Tian",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Sheng.Tian"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Aaron.W.Breneman",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Aaron.W.Breneman"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2022-08-18",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l3/efw/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In CDF via ftp from CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l3/efw/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/RBSP/B/EFW/L3/MGSE/PT11S",
+  "description": "This data set contains Level 3 wave electric field and search coil wave magnetic fields data from the Electric Field and Waves Suite (EFW) onboard Van Allen Probe A. The spin-fit electric field (spin period resolution) tends to be the most accurate electric field measurement. However, as always, due diligence by the user/scientists must be exercised in using these data. The spin-fit electric field is provided in both an inertial and co-rotating frame. The electric field is presented in a MGSE (modified GSE) coordinate system. We provide two components (Y MGSE and Z MGSE) of the electric field. Both components are in the spin plane of the spacecraft and are measured with the long 50 m booms. The X MGSE component is along the spin-axis. The spin-axis of the spacecraft is oriented within 37 degrees of the Earth sun line. So the Y GSE direction is most nearly aligned with the Y MGSE axis and the Z MGSE direction is most nearly aligned with Z GSE.",
+  "abstract": "This data set contains Level 3 wave electric field and search coil wave magnetic fields data from the Electric Field and Waves Suite (EFW) onboard Van Allen Probe A. The spin-fit electric field (spin period resolution) tends to be the most accurate electric field measurement. However, as always, due diligence by the user/scientists must be exercised in using these data. The spin-fit electric field is provided in both an inertial and co-rotating frame. The electric field is presented in a MGSE (modified GSE) coordinate system. We provide two components (Y MGSE and Z MGSE) of the electric field. Both components are in the spin plane of the spacecraft and are measured with the long 50 m booms. The X MGSE component is along the spin-axis. The spin-axis of the spacecraft is oriented within 37 degrees of the Earth sun line. So the Y GSE direction is most nearly aligned with the Y MGSE axis and the Z MGSE direction is most nearly aligned with Z GSE.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time, UTC",
+      "description": "Time tags for the data quantities",
+      "unitText": "UTC",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Density estimation from sc potential",
+      "description": "Density estimation from sc potential, determined from the form density = A1*exp(b*x)+A2*exp(c*x), where x=(V1 + V2)/2, where the constants are found by comparison to upper hybrid line from EMFISIS. The fit is updated approximately monthly. For a more accurate density (or verification) for a specific time period contact the EFW team. Values below 10cm-3 and above 3000 cm-3 are untrustworthy and are removed",
+      "unitText": "cm-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EFW Global Data Quality",
+      "description": "0=OK",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EFW Data Quality Flags",
+      "description": "The quality of EFW data products can be affected by a variety of observatory and instrument-level conditions. efw_qual is a collection of flags that show the estimate of each of these contributors over time. ..See the EFW-FAQ (http://www.space.umn.edu/rbspefw-data-policy-the-rules-of-the-road/) for a detailed description of the determination and meaning of each of the elements of efw_qual...If the value of a particular element of efw_qual is not relevant to the quality of a particular data product, it shall receive the value -2...If the value of a particular element of efw_qual is relevant to the quality of a particular data product but is not known at the time lf L2 data production, it shall receive the value -1...A quality value of 0 indicates that there are no known issues with the data product due to that particular element of efw_qual...The quality values are meant to be conservative, and values other than 0 should lead the user back to a member of the EFW instrument team for discussion and advice on the nature of the data quality as needed.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Charging, Bias and Eclipse flags",
+      "description": "For Spacecraft Charging Issues see http://www.space.umn.edu/rbspefw-data-policy-the-rules-of-the-road/",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ein - Inertial frame spinfit electric field in MGSE coord system",
+      "description": "Inertial frame spinfit electric field in MGSE coord system. Derived from the V1 and V2 spinplane booms. The Vsc x B field is subtracted off, where Vsc is the spacecraft velocity and B is the measured ambient magnetic field",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Eco - Corotation frame spinfit electric field in MGSE coord system",
+      "description": "Corotation frame spinfit electric field in MGSE coord system. Derived from the V1 and V2 spinplane booms. The Vsc x B field is subtracted off, where Vsc is the spacecraft velocity and B is the measured ambient magnetic field",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vco x B - Corotation vxB Efield in MGSE coord.",
+      "description": "Corotation Efield calculated from Omega x R x B in MGSE coord. Omega is the Earth's spin axis vector and R is the vector from the Earth's center to the satellite",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vsc x B - Spacecraft vxB Efield calculated in MGSE coord.",
+      "description": "Vsc x B in MGSE coord, where Vsc is the spacecraft velocity and B is the DC magnetic field",
+      "unitText": "mV/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE position (km) from SPICE",
+      "description": "GSE position (km) from SPICE",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE velocity in km/s from SPICE",
+      "description": "GSE position (km) from SPICE",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spinaxis unit vector in GSE coord",
+      "description": "Spinaxis unit vector in GSE coord",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vavg - SCpot (neg) as average of opposing boom potentials (V1+V2)/2 and a proxy for plasma density.",
+      "description": "Average of opposing boom potentials (V1+V2)/2. This is a proxy for plasma density. Positive excursions can indicate negative spacecraft charging.",
+      "unitText": "volts",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MLT, Lshell and Mlat",
+      "description": "MLT, Lshell and Mlat",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Nominal Sensor Saturation Voltage (V)",
+      "description": "The maximum magnitude of the sensor potential relative to SC potential at which the sensor preamp likely to be saturated during nominal biasing conditions..If the magnitude of a given sensor potential exceeds vsvy_maxval then the corresponding element of efw_qua.l (v1_saturation .. v6-saturation) shall be set to indicate that state. vsvy_maxval is set in the L1>L2 processing scripts, and shall be copied into this variable during L2 CDF creation.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EFW_QUAL_NR",
+      "description": "EFW_QUAL_NR is the value (typ. -2) an element of efw_qual takes when the criterion represented by that element is not relevant for the given data product.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EFW_QUAL_GOOD",
+      "description": "EFW_QUAL_GOOD is the value (0) of an element of efw_qual that indicates good data.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EFW_QUAL_UNK",
+      "description": "EFW_QUAL_UNK is the value (typ. -1) an element of efw_qual that indicates the quality is unknown.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

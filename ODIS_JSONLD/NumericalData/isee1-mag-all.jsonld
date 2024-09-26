@@ -1,0 +1,187 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/isee1-mag-all.jsonld",
+  "name": "ISEE 1 - FGM - key parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/isee1-mag-all.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Elena.Budnik",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Elena.Budnik"
+    }
+  ],
+  "sdDatePublished": "2012-03-06",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/ISEE/ISEE1/MAG/isee1-mag-all",
+  "description": "This data set contains magnetic field component\nand magnitude averages every minute, with components given in spacecraft, \nGSE and GSM coordinates.  Standard deviations in the averages are given,\nas are differences between the averages and model field vectors.\nGeocentric (GSE and GSM) spacecraft position information is given,\nas is ISEE1-ISEE2 separation vector information.  ISEE 1 spin vector\ndirection and ISEE 1 velocity vector information, relative to the \nEarth and to ISEE 2, are given.  Miscellaneous other parameters are \nalso given.  Data are accessible as plots, lists and files from \nCDAWeb, and as CDF files from CDAWeb's ftp area.",
+  "abstract": "This data set contains magnetic field component\nand magnitude averages every minute, with components given in spacecraft, \nGSE and GSM coordinates.  Standard deviations in the averages are given,\nas are differences between the averages and model field vectors.\nGeocentric (GSE and GSM) spacecraft position information is given,\nas is ISEE1-ISEE2 separation vector information.  ISEE 1 spin vector\ndirection and ISEE 1 velocity vector information, relative to the \nEarth and to ISEE 2, are given.  Miscellaneous other parameters are \nalso given.  Data are accessible as plots, lists and files from \nCDAWeb, and as CDF files from CDAWeb's ftp area.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "description": "Triaxial magnetic field vector in GSM coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "b_isee1(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "b_isee1(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "b_isee1(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "description": "Triaxial magnetic field vector in GSM coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "b_isee1_gse(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "b_isee1_gse(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "b_isee1_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/so-het-south.4.jsonld",
+  "name": "SolarOrbiter - EPD/HET - L2 : e- / h high cadence flux - northward flow",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/so-het-south.4.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/J.Rodrigues-Pacheco",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/J.Rodrigues-Pacheco"
+    }
+  ],
+  "sdDatePublished": "2024-05-20",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/EPD/so-het-south.4",
+  "description": "Solar Orbiter, Level 2 Data, Energetic Particle Detector, High Energy Telescope, Rates. \n              \nHET  measures the upper part of the energetic particle spectrum. It is equipped with several solid \nstate detectors and a BGO crystal to provide identification of particle species from the relative energy\ndeposited in the different detectors. Thus, HET  measures count rates for different ion species, as\nwell as electrons. HET provides measurements in the same 4 fields of view covered by EPT (Sun,\nAnti-Sun, south and South)\n\nParameter ID uses Detector looking directon.\n          ",
+  "abstract": "Solar Orbiter, Level 2 Data, Energetic Particle Detector, High Energy Telescope, Rates. \n              \nHET  measures the upper part of the energetic particle spectrum. It is equipped with several solid \nstate detectors and a BGO crystal to provide identification of particle species from the relative energy\ndeposited in the different detectors. Thus, HET  measures count rates for different ion species, as\nwell as electrons. HET provides measurements in the same 4 fields of view covered by EPT (Sun,\nAnti-Sun, south and South)\n\nParameter ID uses Detector looking directon.\n          ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- flux: northward",
+      "description": "Electron flux",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "0.45-1.04 MeV",
+            "Index": "1",
+            "ParameterKey": "solo_het_south_eflux(0)"
+          },
+          {
+            "Name": "1.05-2.4 MeV",
+            "Index": "2",
+            "ParameterKey": "solo_het_south_eflux(1)"
+          },
+          {
+            "Name": "2.4-6.0 MeV",
+            "Index": "3",
+            "ParameterKey": "solo_het_south_eflux(2)"
+          },
+          {
+            "Name": "6.0-18.8 MeV",
+            "Index": "4",
+            "ParameterKey": "solo_het_south_eflux(3)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- flux unc: northward",
+      "description": "Electron flux uncertainty",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "0.45-1.04 MeV",
+            "Index": "1",
+            "ParameterKey": "solo_het_south_eunc(0)"
+          },
+          {
+            "Name": "1.05-2.4 MeV",
+            "Index": "2",
+            "ParameterKey": "solo_het_south_eunc(1)"
+          },
+          {
+            "Name": "2.4-6.0 MeV",
+            "Index": "3",
+            "ParameterKey": "solo_het_south_eunc(2)"
+          },
+          {
+            "Name": "6.0-18.8 MeV",
+            "Index": "4",
+            "ParameterKey": "solo_het_south_eunc(3)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h flux: northward",
+      "description": "Hydrogen flux",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "6.9-9.6 MeV",
+            "Index": "1",
+            "ParameterKey": "solo_het_south_hhcflux(0)"
+          },
+          {
+            "Name": "10.8-18.2 MeV",
+            "Index": "2",
+            "ParameterKey": "solo_het_south_hhcflux(1)"
+          },
+          {
+            "Name": "18.2-43.0 MeV",
+            "Index": "3",
+            "ParameterKey": "solo_het_south_hhcflux(2)"
+          },
+          {
+            "Name": "43.0-105 MeV",
+            "Index": "4",
+            "ParameterKey": "solo_het_south_hhcflux(3)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h flux unc: northward",
+      "description": "Hydrogen flux uncertainty",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "6.9-9.6 MeV",
+            "Index": "1",
+            "ParameterKey": "solo_het_south_hhcunc(0)"
+          },
+          {
+            "Name": "10.8-18.2 MeV",
+            "Index": "2",
+            "ParameterKey": "solo_het_south_hhcunc(1)"
+          },
+          {
+            "Name": "18.2-43.0 MeV",
+            "Index": "3",
+            "ParameterKey": "solo_het_south_hhcunc(2)"
+          },
+          {
+            "Name": "43.0-105 MeV",
+            "Index": "4",
+            "ParameterKey": "solo_het_south_hhcunc(3)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag: northward",
+      "description": "0: Bad, 1: Known problems, 2: Survey data, 3: Good, 4: Excellent",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

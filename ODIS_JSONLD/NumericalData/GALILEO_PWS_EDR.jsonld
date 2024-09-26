@@ -1,0 +1,113 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/GALILEO_PWS_EDR.jsonld",
+  "name": "GALILEO PWS EDR",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/GALILEO_PWS_EDR.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Donald.A.Gurnett",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Donald.A.Gurnett"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Philippe.Louarn",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Philippe.Louarn"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/William.S.Kurth",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/William.S.Kurth"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/CDPP.general.contact",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/CDPP.general.contact"
+    }
+  ],
+  "sdDatePublished": "2022-03-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GALILEO_PWS_EDR",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Galileo/PWS/EDR/GALILEO_PWS_EDR",
+  "description": "This data set includes wideband waveform measurements from the Galileo plasma wave receiver obtained during Venus encounter (1990/02/10), the first Earth encounter (1990/11/08 \u2013 1990/12/16) and the second Earth encounter (1992/11/08 \u2013 1992/12/20).\n\nThese measurements are electric or magnetic waveforms obtained by rapidly sampling the potential at the input to the receiver from either the electric dipole antenna or the magnetic search coil antenna.\nThe sample rates are 201,600 s^-1, 25, 200 s^-1, or 3,150 s^-1 taken through bandpass filters of 80, 10, or 1 kHz, respectively.\nEach sample is a 4-bit measurement after an automatic gain control (AGC) amplifier designed to keep the signal amplitude in a range commensurate with the optimal analog-to-digital converter dynamic range with a time constant of about 500 msec.\n\nAs such, the measurements are not absolutely calibrated, although it is possible to determine the approximate AGC gain from a digital performance parameter available every 2.667 seconds, assuming the signal amplitude does not vary appreciably over the 2.667 second interval.\n\nAlternately, the sweep frequency receiver (low rate) portion of the instrument can be used to determine the absolute amplitude of waves.\n\nIn many cases, the waveform data are used without any calibration for the purposes of identifying characteristic frequencies of the plasma via resonances or cutoffs, observing discrete emissions such as chorus or whistlers, or looking at the detailed form of the waveforms.",
+  "abstract": "This data set includes wideband waveform measurements from the Galileo plasma wave receiver obtained during Venus encounter (1990/02/10), the first Earth encounter (1990/11/08 \u2013 1990/12/16) and the second Earth encounter (1992/11/08 \u2013 1992/12/20).\n\nThese measurements are electric or magnetic waveforms obtained by rapidly sampling the potential at the input to the receiver from either the electric dipole antenna or the magnetic search coil antenna.\nThe sample rates are 201,600 s^-1, 25, 200 s^-1, or 3,150 s^-1 taken through bandpass filters of 80, 10, or 1 kHz, respectively.\nEach sample is a 4-bit measurement after an automatic gain control (AGC) amplifier designed to keep the signal amplitude in a range commensurate with the optimal analog-to-digital converter dynamic range with a time constant of about 500 msec.\n\nAs such, the measurements are not absolutely calibrated, although it is possible to determine the approximate AGC gain from a digital performance parameter available every 2.667 seconds, assuming the signal amplitude does not vary appreciably over the 2.667 second interval.\n\nAlternately, the sweep frequency receiver (low rate) portion of the instrument can be used to determine the absolute amplitude of waves.\n\nIn many cases, the waveform data are used without any calibration for the purposes of identifying characteristic frequencies of the plasma via resonances or cutoffs, observing discrete emissions such as chorus or whistlers, or looking at the detailed form of the waveforms.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "J"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "GALILEO PWS EDR electric waveforms raw data",
+      "description": "GALILEO PWS EDR uncalibrated    electric  waveforms obtained by rapidly sampling the potential at the input to the receiver from either the electric dipole antenna",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GALILEO PWS EDR magnetic waveforms raw data",
+      "description": "GALILEO PWS EDR uncalibrated    magnetic waveforms obtained by rapidly sampling the potential at the input to the receiver from the magnetic search coil antenna.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

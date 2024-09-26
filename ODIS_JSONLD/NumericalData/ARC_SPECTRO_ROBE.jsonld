@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARC_SPECTRO_ROBE.jsonld",
+  "name": "ARCAD3 SPECTRO ROBE : Auroral Ion/Electron Energy Spectra",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARC_SPECTRO_ROBE.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Henri.Reme",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Henri.Reme"
+    }
+  ],
+  "sdDatePublished": "2022-03-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ARC_SPECTRO_ROBE",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ARCAD-3/Spectro/ARC_SPECTRO_ROBE",
+  "description": "This data set contains ARCAD-3 Auroral Ion/Electron Energy Spectra from ROBE experiment. \nThe SPECTRO/ROBE experiment onboard the AUREOL-3 satellite has been designed to measure auroral particle energy spectra, angular distributions in the energy range 10 eV- 21 keV/q. A number of various studies have been carried out, e.g., acceleration of auroral electrons, heating and acceleration of ionospheric ions, structure of large and small scale field aligned currents in the cusp, structure of the cusp region for various interplanetary conditions, auroral signature of acceleration mechanisms acting in the near Earth and distant tail.\nArchived data were provided by a set of independent and complementary instruments: (1) the low-energy plasma instrument ROBE, (2) the very low energy sensor TBE:\n1. The main ROBE high sensitive instrument (double quadrispherical analyzer + an array of channel electron multipliers, CEMs) is designed to obtain the 2D distributions of precipitating and trapped electrons and protons (ions) from ~200 eV to ~21 keV in 8 or 16 logarithmically spaced energy steps, without a mass selection. As AUREOL-3 was a 3-axis stabilized satellite (with ~30\u00b0 oscillations), an array of 18 detectors (E1-E9 for electrons, P1-P9 for ions) can be potentially used to cover the pitch angle range between ~0\u00b0 and 90\u00b0. Basic characteristics of the instrument were DE/E ~28% (FWHM) and a field-of-view of ~13\u00b0x 6\u00b0. According to the operating DATA MODE chosen that depends of the telemetry rate, ROBE count rates can be transmitted in different ways through 3 count rate chains named BE1, ROT, and BE2. The BE1 chain transmits count rates from a pair (Ei-Pi) of detectors from the group E1-E4/P1-P4 (low pitch angles), while a pair (Ej-Pj) from the group E5-E9/P5-P9 is transmitted through the BE2 chain (large pitch angles). For the ROT chain, the data may either come from only 1 pair (Ek-Pk) from the group E2-E9/P2-P9, or sequentially from the full set of detectors E2-E9/P2-P9 (pitch angle scanning mode).\nThe SPECTRO particle instruments operated successfully until the end of the mission at different basic bit-rate modes depending of the telemetry rate and/or the chosen sharing between instruments. Among these modes the most useful for the ROBE instrument included record of 2D electron and proton distributions (16 energies x 9 pitch angle pixels) in ~1.6 s.\n2. The TBE instrument (double hemispherical analyzer + CEMs) was designed to study field aligned (pitch angle 0-20\u00b0) low-energy (~10 eV - ~1000 eV) precipitating electrons and protons (ions) in 16 linear-spaced energy steps. Characteristics of the instrument are: deltaE/E ~7% and field-of-view: ~6 x 21\u00b0.\nEach archived sequence of ROBE and TBE data includes all needed information. Results are organized in time sequences of successive electron and proton spectra, presented in corrected physical units (differential fluxes in (cm2.sec.sr.keV)^-1) and accompanied by corresponding energy and background tables, as well as by the full set of useful geophysical and orbital parameters (MLT, ILAT, ...).",
+  "abstract": "This data set contains ARCAD-3 Auroral Ion/Electron Energy Spectra from ROBE experiment. \nThe SPECTRO/ROBE experiment onboard the AUREOL-3 satellite has been designed to measure auroral particle energy spectra, angular distributions in the energy range 10 eV- 21 keV/q. A number of various studies have been carried out, e.g., acceleration of auroral electrons, heating and acceleration of ionospheric ions, structure of large and small scale field aligned currents in the cusp, structure of the cusp region for various interplanetary conditions, auroral signature of acceleration mechanisms acting in the near Earth and distant tail.\nArchived data were provided by a set of independent and complementary instruments: (1) the low-energy plasma instrument ROBE, (2) the very low energy sensor TBE:\n1. The main ROBE high sensitive instrument (double quadrispherical analyzer + an array of channel electron multipliers, CEMs) is designed to obtain the 2D distributions of precipitating and trapped electrons and protons (ions) from ~200 eV to ~21 keV in 8 or 16 logarithmically spaced energy steps, without a mass selection. As AUREOL-3 was a 3-axis stabilized satellite (with ~30\u00b0 oscillations), an array of 18 detectors (E1-E9 for electrons, P1-P9 for ions) can be potentially used to cover the pitch angle range between ~0\u00b0 and 90\u00b0. Basic characteristics of the instrument were DE/E ~28% (FWHM) and a field-of-view of ~13\u00b0x 6\u00b0. According to the operating DATA MODE chosen that depends of the telemetry rate, ROBE count rates can be transmitted in different ways through 3 count rate chains named BE1, ROT, and BE2. The BE1 chain transmits count rates from a pair (Ei-Pi) of detectors from the group E1-E4/P1-P4 (low pitch angles), while a pair (Ej-Pj) from the group E5-E9/P5-P9 is transmitted through the BE2 chain (large pitch angles). For the ROT chain, the data may either come from only 1 pair (Ek-Pk) from the group E2-E9/P2-P9, or sequentially from the full set of detectors E2-E9/P2-P9 (pitch angle scanning mode).\nThe SPECTRO particle instruments operated successfully until the end of the mission at different basic bit-rate modes depending of the telemetry rate and/or the chosen sharing between instruments. Among these modes the most useful for the ROBE instrument included record of 2D electron and proton distributions (16 energies x 9 pitch angle pixels) in ~1.6 s.\n2. The TBE instrument (double hemispherical analyzer + CEMs) was designed to study field aligned (pitch angle 0-20\u00b0) low-energy (~10 eV - ~1000 eV) precipitating electrons and protons (ions) in 16 linear-spaced energy steps. Characteristics of the instrument are: deltaE/E ~7% and field-of-view: ~6 x 21\u00b0.\nEach archived sequence of ROBE and TBE data includes all needed information. Results are organized in time sequences of successive electron and proton spectra, presented in corrected physical units (differential fluxes in (cm2.sec.sr.keV)^-1) and accompanied by corresponding energy and background tables, as well as by the full set of useful geophysical and orbital parameters (MLT, ILAT, ...).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD-3 SPECTRO Ion Energy Spectra",
+      "description": "ARCAD-3 SPECTRO Ion Energy Spectra",
+      "unitText": "1/(cm^2.s.sr.keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD-3 SPECTRO Electron Energy Spectra",
+      "description": "ARCAD-3 SPECTRO Electron Energy Spectra",
+      "unitText": "1/(cm^2.s.sr.keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

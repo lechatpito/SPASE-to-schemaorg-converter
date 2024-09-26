@@ -1,0 +1,152 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/radiosonde_sgk_snd.jsonld",
+  "name": "Observation data of the troposphere and lower stratosphere taken by the radiosonde soundings at Shigaraki MU Observatory (text format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/radiosonde_sgk_snd.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Hiroyuki.Hashiguchi",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Hiroyuki.Hashiguchi"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/MU.Radar.Management.Group",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/MU.Radar.Management.Group"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/RISH.Metadata.Management.Group",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/RISH.Metadata.Management.Group"
+    }
+  ],
+  "sdDatePublished": "2016-07-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "www.rish.kyoto-u.ac.jp/radar-group/mu/sondedb/",
+      "encodingFormat": "Text.ASCII",
+      "name": "Radiosonde Observation Data at Shigaraki MU Observatory",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/RISH/misc/SGK/Radiosonde/radiosonde_sgk_snd",
+  "description": "Radiosonde sounding data at Shigaraki MU observatory in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL) from September 26, 1986 to November 16, 2005. The data are averaged values for 30 m height in original data, and stored in the text file named (year)(month)(day)(hour).snd. The file name represents launching local time of the balloon. The first line of each file is serial number of sonde transmitter and launching local date (year, month, day) and time (hour, minute, second). In the second line and below, height, pressure, temperature, relative humidity, vertical velocity estimated from ascending speed and height data corresponding to the vertical velocity are listed. The value of -999 means missing data.",
+  "abstract": "Radiosonde sounding data at Shigaraki MU observatory in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL) from September 26, 1986 to November 16, 2005. The data are averaged values for 30 m height in original data, and stored in the text file named (year)(month)(day)(hour).snd. The file name represents launching local time of the balloon. The first line of each file is serial number of sonde transmitter and launching local date (year, month, day) and time (hour, minute, second). In the second line and below, height, pressure, temperature, relative humidity, vertical velocity estimated from ascending speed and height data corresponding to the vertical velocity are listed. The value of -999 means missing data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Stratosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Altitude Geopotential Height Hydrostatic Pressure Atmospheric Temperature Profiles Water Vapor Humidity Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Observation year",
+      "unitText": "YY",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Month",
+      "description": "Observation month",
+      "unitText": "MM",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "day",
+      "description": "Observation day",
+      "unitText": "DD",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sonde serial number",
+      "description": "Serial number of transmitter",
+      "unitText": "none",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pressure",
+      "description": "Pressure",
+      "unitText": "hPa",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Temperature",
+      "description": "Description",
+      "unitText": "degree C",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Relative humidity",
+      "description": "Relative humidity",
+      "unitText": "%",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vertical velocity estimated from ascending speed",
+      "description": "Vertical velocity estimated from ascending speed",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Height",
+      "description": "Height corresponding to the vertical velocity",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

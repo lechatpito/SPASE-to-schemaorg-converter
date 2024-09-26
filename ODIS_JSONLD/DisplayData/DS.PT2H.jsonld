@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/DisplayData/DS.PT2H.jsonld",
+  "name": "Geotail PWI 2 hour dynamic spectrograms",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/DisplayData/DS.PT2H.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Hiroshi.Matsumoto",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Hiroshi.Matsumoto"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Hirotsugu.Kojima",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Hirotsugu.Kojima"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Guan.Le",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Guan.Le"
+    }
+  ],
+  "sdDatePublished": "2012-02-24",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/space/gtlpwi/2hour/",
+      "encodingFormat": "GIF",
+      "name": "Directory of Geotail PWI 2 Hour Dynamic Spectrograms",
+      "description": "A directory containing Geotail PWI 2 hour dynamic spectrograms"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://VWO/DisplayData/Geotail/PWI/DS.PT2H",
+  "description": "Geotail PWI SFA and MCA dynamic spectrogram plots with frequency in Hz on the vertical axis and time in UT on the horizontal axis. Each file contains one spectrogram from the electric field antennas and one from the magnetic field search coils. \n\t\tThe electric field spectrograms span the frequency range 5.62 to 24 Hz (the Multi-Channel Analyzer - MCA instrument) and 24 Hz to 800 kHz (the Sweep Frequency Analyzer - SFA instrument). The intensity values are color coded and are expressed in units of dBV/m/root-Hz. \n\t\tThe magnetic field spectrograms also combine the MCA and SFA instruments and span the frequency range 5.62 Hz to 12.5 kHz. The intensity values are color coded and are expressed in units of dB nT/root-Hz. \n\t\tEach plot spans 2 hours. Information on the instrument and antenna status is also provided above each spectrogram.",
+  "abstract": "Geotail PWI SFA and MCA dynamic spectrogram plots with frequency in Hz on the vertical axis and time in UT on the horizontal axis. Each file contains one spectrogram from the electric field antennas and one from the magnetic field search coils. \n\t\tThe electric field spectrograms span the frequency range 5.62 to 24 Hz (the Multi-Channel Analyzer - MCA instrument) and 24 Hz to 800 kHz (the Sweep Frequency Analyzer - SFA instrument). The intensity values are color coded and are expressed in units of dBV/m/root-Hz. \n\t\tThe magnetic field spectrograms also combine the MCA and SFA instruments and span the frequency range 5.62 Hz to 12.5 kHz. The intensity values are color coded and are expressed in units of dB nT/root-Hz. \n\t\tEach plot spans 2 hours. Information on the instrument and antenna status is also provided above each spectrogram.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "keywords": [
+    "Dynamic Spectrogram",
+    "Spectrogram",
+    "AKR",
+    "Auroral Kilometric Radiation",
+    "Chorus",
+    "Continuum radiation",
+    "Myriametric radiation",
+    "Solar radio burst",
+    "Terrestrial Kilometric Radiation",
+    "TKR",
+    "Type II Solar radio burst",
+    "Type III Solar radio burst"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

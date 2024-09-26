@@ -1,0 +1,196 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/WPR_bin.jsonld",
+  "name": "Observation data taken by 1.3GHz transportable wind profiler radar (called LQ4) at Koganei, Japan (binary format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/WPR_bin.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Seiji.Kawamura",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Seiji.Kawamura"
+    }
+  ],
+  "sdDatePublished": "2013-03-06",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://salmon.nict.go.jp/",
+      "encodingFormat": "Binary",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/NICT/SALMON/KOG/LQ4/WPR_bin",
+  "description": "The 10-minute average observation data in the lower troposphere (0.1-8 km) taken by the1.3GHz transportable wind profiler radar (called LQ4) at Koganei, Tokyo (35.71N, 139.49E, 80m MSL). The profiles of peak power, Doppler frequency, and spectral width for each beam are stored in the binary file named koglq4-YYYYMMDDhhmm.dat.",
+  "abstract": "The 10-minute average observation data in the lower troposphere (0.1-8 km) taken by the1.3GHz transportable wind profiler radar (called LQ4) at Koganei, Tokyo (35.71N, 139.49E, 80m MSL). The profiles of peak power, Doppler frequency, and spectral width for each beam are stored in the binary file named koglq4-YYYYMMDDhhmm.dat.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "E"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "N"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "S"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "f"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "c"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "T"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "PO",
+      "description": "Echo intensity (arbitrary unit) for each beam",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fd",
+      "description": "Doppler freqency",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sigma",
+      "description": "Spectral width (half power full width) for each beam",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

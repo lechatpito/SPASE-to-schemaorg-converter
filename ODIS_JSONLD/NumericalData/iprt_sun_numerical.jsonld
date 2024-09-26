@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/iprt_sun_numerical.jsonld",
+  "name": "IPRT solar radio spectral data in VHF-band",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/iprt_sun_numerical.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Hiroaki.Misawa",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Hiroaki.Misawa"
+    }
+  ],
+  "sdDatePublished": "2012-12-12",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://pparc.gp.tohoku.ac.jp/data/iprt/",
+      "encodingFormat": "FITS",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/TohokuU/radio_obs/iit/iprt/iprt_sun_numerical",
+  "description": "Polarized frequency spectrum of solar radio emission containing various kinds of solar radio bursts in the 150-500 MHz range measured using the high-time resolution spectropolarimeter system installed on the Iitate Planetary radio Telescope (IPRT/AMATERAS).",
+  "abstract": "Polarized frequency spectrum of solar radio emission containing various kinds of solar radio bursts in the 150-500 MHz range measured using the high-time resolution spectropolarimeter system installed on the Iitate Planetary radio Telescope (IPRT/AMATERAS).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "S"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    }
+  ],
+  "keywords": "IPRT Solar Radio Emission",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Radio intensity",
+      "description": "Description",
+      "unitText": "db",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Spectral range",
+      "unitText": "MHz",
+      "minValue": "100",
+      "maxValue": "500",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Observed Time",
+      "unitText": "Julian day",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

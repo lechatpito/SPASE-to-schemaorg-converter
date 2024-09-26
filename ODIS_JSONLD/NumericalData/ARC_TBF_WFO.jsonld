@@ -1,0 +1,177 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARC_TBF_WFO.jsonld",
+  "name": "ARCAD3 TBF Waveforms : E and B fields",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARC_TBF_WFO.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Michel.Parrot",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Michel.Parrot"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Dominique.Lagoutte",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Dominique.Lagoutte"
+    }
+  ],
+  "sdDatePublished": "2022-03-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ARC_TBF_WFO",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ARCAD-3/TBF/ARC_TBF_WFO",
+  "description": "This data set contains ARCAD3 TBF waveforms, E and B fields.\nThe TBF experiment onboard the AUREOL3 satellite (ARCAD3 project) was designed to measure two electric and three magnetic wave field components in the range from 10 Hz to 16 kHz. Two telemetry systems were available on AUREOL3, high bit-rate real-time telemetry (TMF) and tape-recorded telemetry (TMS). The Waveform data are related to the TMF one. The ground stations mostly used are Troms\u00f6 (Norway) and Terre-Ad\u00e9lie (French Antartica).\nTwo electric and three magnetic components were digitized with a sampling frequency of 5000 Hz. The electric field is measured using spherical probes located at the tip of booms and the alternative magnetic field is measured using a search-coil instrument. \nThe set of data contains : general information (date, time, orbit, telemetry, ...), orbit parameters (latitude, longitude, ...), attitude parameters (angles, matrices for coordinate system changes), waveform data (component, unit, gain, amplitude).\nTBF Waveforms data use\nTBF data presented in the 'Waveform' archive have to be validated prior to any interpretation. Questionable electric and magnetic field data can be due to :\n    telemetry noise,\n    calibrations performed every 128 seconds,\n    possible saturation of the input electronics (ULF turbulence),\n    wrong gain variations,\n    gain variation inside a 960 ms data frame.\nThe transfer functions used for the conversion in physical values do not allow any utilization of the data below 5 Hz.\nConcerning the ancillary data, for several sets, the orbit parameters can be equal to zero even the related flag is correctly set (OK_AUXI).",
+  "abstract": "This data set contains ARCAD3 TBF waveforms, E and B fields.\nThe TBF experiment onboard the AUREOL3 satellite (ARCAD3 project) was designed to measure two electric and three magnetic wave field components in the range from 10 Hz to 16 kHz. Two telemetry systems were available on AUREOL3, high bit-rate real-time telemetry (TMF) and tape-recorded telemetry (TMS). The Waveform data are related to the TMF one. The ground stations mostly used are Troms\u00f6 (Norway) and Terre-Ad\u00e9lie (French Antartica).\nTwo electric and three magnetic components were digitized with a sampling frequency of 5000 Hz. The electric field is measured using spherical probes located at the tip of booms and the alternative magnetic field is measured using a search-coil instrument. \nThe set of data contains : general information (date, time, orbit, telemetry, ...), orbit parameters (latitude, longitude, ...), attitude parameters (angles, matrices for coordinate system changes), waveform data (component, unit, gain, amplitude).\nTBF Waveforms data use\nTBF data presented in the 'Waveform' archive have to be validated prior to any interpretation. Questionable electric and magnetic field data can be due to :\n    telemetry noise,\n    calibrations performed every 128 seconds,\n    possible saturation of the input electronics (ULF turbulence),\n    wrong gain variations,\n    gain variation inside a 960 ms data frame.\nThe transfer functions used for the conversion in physical values do not allow any utilization of the data below 5 Hz.\nConcerning the ancillary data, for several sets, the orbit parameters can be equal to zero even the related flag is correctly set (OK_AUXI).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF   component name",
+      "description": "ARCAD3 TBF Waveforms : component_name (EH,EZ,BX,BY or BZ)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF  physical unit",
+      "description": "ARCAD3 TBF Waveforms  physical unit\n\n    MV = mV/m\n\n    NT = nT",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF  gain values",
+      "description": "ARCAD3 TBF Waveforms : gain values",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF  validated gain values",
+      "description": "ARCAD3 TBF Waveforms : validated gain values",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF  gain index",
+      "description": "ARCAD3 TBF Waveforms :  gain index",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF  sampling frequency",
+      "description": "ARCAD3 TBF Waveforms : sampling frequency",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF  number of samples",
+      "description": "ARCAD3 TBF Waveforms : number of samples",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF EH electric field component",
+      "description": "ARCAD3 TBF Waveforms : EH electric field horizontal component",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF  EZ electric field component",
+      "description": "ARCAD3 TBF Waveforms : EZ electric field component along  the satellite Z axis",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF  BX magnetic field  component",
+      "description": "ARCAD3 TBF Waveforms :  BX magnetic field component in satellite frame",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF  BY magnetic field  component",
+      "description": "ARCAD3 TBF Waveforms :  BY magnetic field component in satellite frame",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD3 TBF  BZ magnetic field  component",
+      "description": "ARCAD3 TBF Waveforms :  BZ magnetic field component in satellite frame",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

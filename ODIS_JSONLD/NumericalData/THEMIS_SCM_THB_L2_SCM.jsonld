@@ -1,0 +1,186 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/THEMIS_SCM_THB_L2_SCM.jsonld",
+  "name": "THEMIS-B SCM (Search Coil Magnetometer) calibrated magnetic field in  FAST SURVEY, PARTICLE BURST and WAVE BURST modes.",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/THEMIS_SCM_THB_L2_SCM.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Vassilis.Angelopoulos",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Vassilis.Angelopoulos"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Olivier.Le.Contel",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Olivier.Le.Contel"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/CDPP.general.contact",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/CDPP.general.contact"
+    }
+  ],
+  "sdDatePublished": "2022-01-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:THEMIS_SCM_THB_L2_SCM",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/THEMIS-B/SCM/THEMIS_SCM_THB_L2_SCM",
+  "description": "This dataset contains calibrated THEMIS-B SCM (Search Coil Magnetometer) magnetic field in  FAST SURVEY, PARTICLE BURST and WAVE BURST modes.\n\nThe time resolutions are: \n\nFAST SURVEY (SCF): 1/8 s. \n\nPARTICLE BURST (SCP): 1/128 s (only short bursts of data).\n\nWAVE BURST (SCW): 1/8192 s (only short bursts of data).",
+  "abstract": "This dataset contains calibrated THEMIS-B SCM (Search Coil Magnetometer) magnetic field in  FAST SURVEY, PARTICLE BURST and WAVE BURST modes.\n\nThe time resolutions are: \n\nFAST SURVEY (SCF): 1/8 s. \n\nPARTICLE BURST (SCP): 1/128 s (only short bursts of data).\n\nWAVE BURST (SCW): 1/8192 s (only short bursts of data).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Fast-Survey Magnetic Field Magnitude",
+      "description": "THEMIS-B Total B-field magnitude from SCF data (fast-survey, 1/8 sec time resolution).",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Fast-Survey Magnetic Field Vector (GSE)",
+      "description": "THEMIS-B B-Field vector from fast survey mode (1/8 sec time resolution) in GSE Coordinates.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Fast-Survey Magnetic Field Vector (GSM)",
+      "description": "THEMIS-B B-Field vector from fast survey mode (1/8 sec time resolution) in GSM Coordinates.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Fast-Survey Magnetic Field Vector (DSL)",
+      "description": "THEMIS-B B-Field vector from fast survey mode (1/8 sec time resolution) in DSL (despun spacecraft) coordinates.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Particle-Burst Magnetic Field Magnitude",
+      "description": "THEMIS-B Total B-Field magnitude from SCP data(particle burst, 1/128 second time resolution)",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Particle-Burst Magnetic Field Vector (GSE)",
+      "description": "THEMIS-B B-Field vector from particle burst mode (1/128 second time resolution) in GSE coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Particle-Burst Magnetic Field Vector (GSM)",
+      "description": "THEMIS-B B-Field vector from particle burst mode (1/128 second time resolution) in GSM coordinates.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Particle-Burst Magnetic Field Vector (DSL)",
+      "description": "THEMIS-B B-Field vector from particle burst mode (1/128 second time resolution) in DSL (despun spacecraft) coordinates.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Wave-Burst Magnetic field Magnitude",
+      "description": "THEMIS-B  Total B-Field magnitude from SCW data(wave burst mode, 1/8192 second time resolution).",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Wave-Burst Magnetic Field Vector (GSE)",
+      "description": "THEMIS-B  B-Field vector from wave burst mode(1/8192 second time resolution) in GSE coordinates.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Wave-Burst Magnetic Field Vector (GSM)",
+      "description": "THEMIS-B  B-Field vector from wave burst mode(1/8192 second time resolution) in GSM coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B SCM Wave-Burst Magnetic Field Vector (DSL)",
+      "description": "THEMIS-B B-Field vector from wave burst mode(1/8192 second time resolution) in DSL (despun spacecraft) coordinates.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

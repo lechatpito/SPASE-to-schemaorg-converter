@@ -1,0 +1,184 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/p10-gtt-ion.jsonld",
+  "name": "Pioneer 10 - GTT - flyby jupiter - ion flux",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/p10-gtt-ion.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Elena.Budnik",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Elena.Budnik"
+    }
+  ],
+  "sdDatePublished": "2012-09-13",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Pioneer10/GTT/p10-gtt-ion",
+  "description": "Pionner 10\n                GTT - Geiger Tube Telescope - \n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "abstract": "Pionner 10\n                GTT - Geiger Tube Telescope - \n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "J"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux_dif",
+      "description": "",
+      "unitText": "cm-2.sr-1.s-1.MeV-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "E0",
+            "Index": "1",
+            "ParameterKey": "p10_gtt_fpdo(0)"
+          },
+          {
+            "Name": "E1",
+            "Index": "2",
+            "ParameterKey": "p10_gtt_fpdo(1)"
+          },
+          {
+            "Name": "E2",
+            "Index": "3",
+            "ParameterKey": "p10_gtt_fpdo(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux_int",
+      "description": "",
+      "unitText": "cm-2.sr-1.s-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "E0",
+            "Index": "1",
+            "ParameterKey": "p10_gtt_fpio(0)"
+          },
+          {
+            "Name": "E1",
+            "Index": "2",
+            "ParameterKey": "p10_gtt_fpio(1)"
+          }
+        ]
+      }
+    }
+  ]
+}

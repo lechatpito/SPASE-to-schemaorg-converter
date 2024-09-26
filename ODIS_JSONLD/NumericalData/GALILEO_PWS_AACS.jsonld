@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/GALILEO_PWS_AACS.jsonld",
+  "name": "GALILEO PWS AACS",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/GALILEO_PWS_AACS.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Donald.A.Gurnett",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Donald.A.Gurnett"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Philippe.Louarn",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Philippe.Louarn"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/William.S.Kurth",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/William.S.Kurth"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/CDPP.general.contact",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/CDPP.general.contact"
+    }
+  ],
+  "sdDatePublished": "2022-03-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GALILEO_PWS_AACS",
+      "encodingFormat": "Text.ASCII",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Galileo/PWS/AACS/GALILEO_PWS_AACS",
+  "description": "This data set contains values of Rotor Attitudes (RA Right Ascension, DEC Declination, Twist) from the Galileo PWS AACS (Attitude and Articulation Control System). The period covered by a data file is 3 or 4 h maximum per day (February 10th, 1990 to December 14th, 1992).",
+  "abstract": "This data set contains values of Rotor Attitudes (RA Right Ascension, DEC Declination, Twist) from the Galileo PWS AACS (Attitude and Articulation Control System). The period covered by a data file is 3 or 4 h maximum per day (February 10th, 1990 to December 14th, 1992).",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "GALILEO PWS Rotor Attitude Right Ascension",
+      "description": "GALILEO PWS Rotor Attitude Right Ascension in EME50 (Earth Mean Equatorial equinox of 1950)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GALILEO PWS Rotor Attitude Declination",
+      "description": "GALILEO PWS  Rotor Attitude Declination in EME50 (Earth Mean Equatorial equinox of 1950)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GALILEO PWS Rotor Attitude Twist",
+      "description": "GALILEO PWS  Rotor Attitude Twist in EME50 (Earth Mean Equatorial equinox of 1950)",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

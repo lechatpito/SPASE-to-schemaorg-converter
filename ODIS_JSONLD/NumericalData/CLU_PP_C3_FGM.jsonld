@@ -1,0 +1,141 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/CLU_PP_C3_FGM.jsonld",
+  "name": "Cluster 3 FGM Prime Parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/CLU_PP_C3_FGM.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Elizabeth.Lucek",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Elizabeth.Lucek"
+    }
+  ],
+  "sdDatePublished": "2022-02-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CLU_PP_C3_FGM",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Cluster-3/FGM/CLU_PP_C3_FGM",
+  "description": "This data set contains the Cluster  3 FGM Prime Parameters (spin averaged). The parameters are a status word, the three averaged components of the magnetic field vector in the GSE coordinate system and 2 variances.",
+  "abstract": "This data set contains the Cluster  3 FGM Prime Parameters (spin averaged). The parameters are a status word, the three averaged components of the magnetic field vector in the GSE coordinate system and 2 variances.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 FGM Magnetic Field Vector",
+      "description": "Cluster 3  Prime Parameter Fluxgate Magnetometer magnetic field vector at spin time resolution",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 FGM Magnetic field magnitude",
+      "description": "Cluster 3  Prime Parameter Fluxgate Magnetometer magnetic field magnitude at spin time resolution",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 FGM Normalized Magnetic Field Variance Summed B_nsigma_t",
+      "description": "Cluster 3 Prime Parameter Fluxgate Magnetometer normalized magnetic field variance summed, which is equivalent to the sum over the component variances, at spin time resolution",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 FGM Normalized Variance of the Magnetic Field Magnitude B_nsigma_b",
+      "description": "Cluster 3 Prime Parameter Fluxgate Magnetometer normalized variance of the magnetic field magnitude at spin time resolution",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3  FGM Status",
+      "description": "Cluster 3 Prime Parameter Fluxgate Magnetometer status at spin time resolution",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

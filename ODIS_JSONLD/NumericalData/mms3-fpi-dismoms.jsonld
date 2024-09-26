@@ -1,0 +1,305 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mms3-fpi-dismoms.jsonld",
+  "name": "MMS3 - FPI - fast mode - DIS : ions",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mms3-fpi-dismoms.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.L.Burch",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.L.Burch"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/B.Giles",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/B.Giles"
+    }
+  ],
+  "sdDatePublished": "2024-05-23",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MMS/MMS3/FPI/mms3-fpi-dismoms",
+  "description": "FPI usually operates in Fast Survey (FS) Mode in the MMS Region Of Interest (ROI) for  \nthe current Mission Phase.  Data are taken at burst (30/150 ms for DES/DIS) resolution in this mode. Data are also made \n available at survey (4.5 s) resolution.  Per mission design, not all burst-resolution data are downlinked, but all sur vey data are downlinked. Planning around calibration activities, avoidance of Earth radiation belts, etc, when possible\n, FPI usually operates in Slow Survey (SS) Mode (60 s resolution) outside of ROI. This moments product contains results\n from integrating the standard moments of phase-space distributions formed from the indicated data type (DES/DIS burst,\n FS or SS). For convenience, some additional parameters are included to augment those most commonly found in a moments \nproduct of this sort, plus time-stamps and other annotation characterizing the state of the instrument system at the in\ndicated time.",
+  "abstract": "FPI usually operates in Fast Survey (FS) Mode in the MMS Region Of Interest (ROI) for  \nthe current Mission Phase.  Data are taken at burst (30/150 ms for DES/DIS) resolution in this mode. Data are also made \n available at survey (4.5 s) resolution.  Per mission design, not all burst-resolution data are downlinked, but all sur vey data are downlinked. Planning around calibration activities, avoidance of Earth radiation belts, etc, when possible\n, FPI usually operates in Slow Survey (SS) Mode (60 s resolution) outside of ROI. This moments product contains results\n from integrating the standard moments of phase-space distributions formed from the indicated data type (DES/DIS burst,\n FS or SS). For convenience, some additional parameters are included to augment those most commonly found in a moments \nproduct of this sort, plus time-stamps and other annotation characterizing the state of the instrument system at the in\ndicated time.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density : err",
+      "description": "",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gse",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms3_dis_vgse(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms3_dis_vgse(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms3_dis_vgse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gse : err",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms3_dis_v_err(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms3_dis_v_err(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms3_dis_v_err(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_para",
+      "description": "",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_perp",
+      "description": "",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heatq_gse",
+      "description": "",
+      "unitText": "mW/m^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mms3_dis_heatq(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mms3_dis_heatq(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mms3_dis_heatq(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure_gse",
+      "description": "",
+      "unitText": "nPa",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "xx",
+            "Index": "1",
+            "ParameterKey": "mms3_dis_press(0)"
+          },
+          {
+            "Name": "xy",
+            "Index": "2",
+            "ParameterKey": "mms3_dis_press(1)"
+          },
+          {
+            "Name": "xz",
+            "Index": "3",
+            "ParameterKey": "mms3_dis_press(2)"
+          },
+          {
+            "Name": "yx",
+            "Index": "4",
+            "ParameterKey": "mms3_dis_press(3)"
+          },
+          {
+            "Name": "yy",
+            "Index": "5",
+            "ParameterKey": "mms3_dis_press(4)"
+          },
+          {
+            "Name": "yz",
+            "Index": "6",
+            "ParameterKey": "mms3_dis_press(5)"
+          },
+          {
+            "Name": "zx",
+            "Index": "7",
+            "ParameterKey": "mms3_dis_press(6)"
+          },
+          {
+            "Name": "zy",
+            "Index": "8",
+            "ParameterKey": "mms3_dis_press(7)"
+          },
+          {
+            "Name": "zz",
+            "Index": "9",
+            "ParameterKey": "mms3_dis_press(8)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion eflux : omni",
+      "description": "",
+      "unitText": "keV/(cm^2-s-sr-keV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

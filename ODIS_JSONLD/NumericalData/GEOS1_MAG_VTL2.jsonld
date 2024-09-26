@@ -1,0 +1,142 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/GEOS1_MAG_VTL2.jsonld",
+  "name": "GEOS-1 Direct Current Magnetic Field Component Level-2 (CDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/GEOS1_MAG_VTL2.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Ermanno.Amata",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Ermanno.Amata"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Patrick.Robert",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Patrick.Robert"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/CDPP.general.contact",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/CDPP.general.contact"
+    }
+  ],
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GEOS1_MAG_VTL2",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/GEOS-1/S-331/GEOS1_MAG_VTL2",
+  "description": "This data set contains the calibrated  DC magnetic field from the GEOS-1 S-331 fluxgate magnetometer given in VDH Coordinate System in nT. Time resolution is 88.064s.",
+  "abstract": "This data set contains the calibrated  DC magnetic field from the GEOS-1 S-331 fluxgate magnetometer given in VDH Coordinate System in nT. Time resolution is 88.064s.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Sample rate",
+      "description": "",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Warning code",
+      "description": "This  warning indicates if there is any problem on the data :\n0 no problem \n1 the quality of all or some of the frames in the format is suspect \n2 the telemetry format is missing and dumny data has been substituted",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Low speed format",
+      "description": "Low speed format\nThe corresponding duration is 1.37601 s",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Frequency",
+      "description": "This dataset contains spin frequency given in Hz",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Euler Angles",
+      "description": "The Euler angles allow transition from rotating antennas frame into reference VDH frame.\n First component: precession \nSecond: nutation \nThird: own rotation/gyration",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Direction of Rotation",
+      "description": "The direction of rotation of the probe.\ne : electron \np : proton",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Phase Angle",
+      "description": "The spin phase is given in the S/C system andS/C sens",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field components",
+      "description": "Magnetic field components given in VDH Coordinate System.\n\nVDH frame (Vertical Dusk Horizontal system)\nThe V-axis is the outwards local vertical, to the point of observation.The H-axis is parallel to the horizontal local plane, positive to the North.The V-H plane is a geographic meridian plane.  The D-axis is azimuthal, eastwards.",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT10M.jsonld",
+  "name": "Wind predicted Spacecraft Positions, 10 min Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT10M.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Adam.Szabo",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Adam.Szabo"
+    }
+  ],
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/wind/orbit/pre_or/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/wind/orbit/pre_or/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=WI_OR_PRE&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Wind/Ephemeris/predicted/PT10M",
+  "description": "Predicted (calculated) Wind spacecraft positions in various coordinate systems",
+  "abstract": "Predicted (calculated) Wind spacecraft positions in various coordinate systems",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Number of milliseconds since the epoch",
+      "unitText": "ms",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PB5 Time",
+      "description": "PB5 Time value of point",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-2147483648",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1"
+          },
+          {
+            "Name": "Day of year",
+            "Index": "2"
+          },
+          {
+            "Name": "Milisecond of day",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GEI Position",
+      "description": "Position in Geocentric Equatorial Inertial coordinates (GEI, formerly GCI)",
+      "unitText": "km",
+      "minValue": "-1.8e+06",
+      "maxValue": "1.8e+06",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GEI Velocity",
+      "description": "Spacecraft velocity in Geocentric Equatorial Inertial coordinates (GEI, formerly GCI)",
+      "unitText": "km/s",
+      "minValue": "-12.0",
+      "maxValue": "12.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Vx",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Vy",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Vz",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Position",
+      "description": "Position in GSE coordinates",
+      "unitText": "km",
+      "minValue": "-1.8e+06",
+      "maxValue": "1.8e+06",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE Velocity",
+      "description": "Velocity in GSE coordinates",
+      "unitText": "km/s",
+      "minValue": "-12.0",
+      "maxValue": "12.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Vx",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Vy",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Vz",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Position",
+      "description": "Position in GSM coordinates",
+      "unitText": "km",
+      "minValue": "-1.8e+06",
+      "maxValue": "1.8e+06",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSM Velocity",
+      "description": "Velocity in GSM coordinates",
+      "unitText": "km/s",
+      "minValue": "-12.0",
+      "maxValue": "12.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Vx",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Vy",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Vz",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sun Vector",
+      "description": "Sun position vector in GEI (GCI) coordinates",
+      "unitText": "km",
+      "minValue": "-1.6e+08",
+      "maxValue": "1.6e+08",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HEC Position",
+      "description": "Position in HEC (SE) coordinates",
+      "unitText": "km",
+      "minValue": "-1.8e+06",
+      "maxValue": "1.8e+06",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HEC Velocity",
+      "description": "Velocity in HEC (SE) coordinates",
+      "unitText": "km/s",
+      "minValue": "-12.0",
+      "maxValue": "12.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Vx",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Vy",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Vz",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Carrington Rotation Number",
+      "description": "Carrington rotation number: A method of numbering rotations of the sun based on a mean rotation period of sunspots of 27.2753 days, and starting with rotation number 1 on November 9, 1853.",
+      "unitText": "unitless",
+      "minValue": "1857",
+      "maxValue": "2239",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic Longitude of Earth",
+      "description": "Heliographic longitude of Earth",
+      "unitText": "rad",
+      "minValue": "0.0",
+      "maxValue": "6.28319",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic Latitude of Earth",
+      "description": "Heliographic latitude of Earth",
+      "unitText": "rad",
+      "minValue": "-1.5708",
+      "maxValue": "1.5708",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic Longitude of Spacecraft",
+      "description": "Heliographic longitude of the spacecraft",
+      "unitText": "rad",
+      "minValue": "0.0",
+      "maxValue": "6.28319",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic Latitude of Spacecraft",
+      "description": "Heliographic latitude of the spacecraft",
+      "unitText": "rad",
+      "minValue": "-1.5708",
+      "maxValue": "1.5708",
+      "defaultValue": "-1.0e+31"
+    }
+  ]
+}

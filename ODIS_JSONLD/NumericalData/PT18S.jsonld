@@ -1,0 +1,224 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT18S.jsonld",
+  "name": "Wind Plasma and Radio Waves (WAVES) Electron Plasma Densities, Level H0 (H0), 17.664 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT18S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.J.MacDowall",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.J.MacDowall"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Karine.Issautier",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Karine.Issautier"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/wind/waves/wav_h0/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/wind/waves/wav_h0/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=WI_H0_WAV&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Wind/WAVES/PlasmaDensity/H0/PT18S",
+  "description": "Wind Waves high time resolution plasma densities estimated by using the electron density inferred from the thermal noise peak as recognized by a neural network.",
+  "abstract": "Wind Waves high time resolution plasma densities estimated by using the electron density inferred from the thermal noise peak as recognized by a neural network.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC",
+      "description": "Epoch Time Tags, Coordinated Universal Time, UTC",
+      "unitText": "ms",
+      "minValue": "13-Mar-1986 00:00:00.000",
+      "maxValue": "13-Mar-2020 23:59:59.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time, PB5 format",
+      "description": "Time in PB5 format: Year, Day, and Milliseconds of Day",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-2147483648",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1",
+            "Units": "a",
+            "ValidMin": "1986",
+            "ValidMax": "2020",
+            "RenderingHints": {
+              "AxisLabel": "year",
+              "ScaleMin": "1986",
+              "ScaleMax": "2020"
+            }
+          },
+          {
+            "Name": "Day of Year (Jan 1 = Day 1)",
+            "Index": "2",
+            "Units": "d",
+            "ValidMin": "72",
+            "ValidMax": "72",
+            "RenderingHints": {
+              "AxisLabel": "day",
+              "ScaleMin": "72",
+              "ScaleMax": "72"
+            }
+          },
+          {
+            "Name": "Elapsed millisecond of day",
+            "Index": "3",
+            "Units": "ms",
+            "ValidMin": "68400000",
+            "ValidMax": "86400000",
+            "RenderingHints": {
+              "AxisLabel": "msec",
+              "ScaleMin": "68400000",
+              "ScaleMax": "86400000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Number Density",
+      "description": "Electron Number Density, determined from the in situ electron plasma frequency, Fpe, line position as recognized by a neural network",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "264.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field Power, Thermal Noise Peak",
+      "description": "Electric Field Power, in dB at the peak frequency as selected by the neural network algorithm",
+      "unitText": "dB",
+      "minValue": "-200.0",
+      "maxValue": "-50.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Electron Density",
+      "description": "Data Quality Flag, Electron Density: <50=Bad, >50=Fair, >150=OK, >200=Good",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Post Gap Flag",
+      "description": "Post Gap Flag: 0=No gap, 1=No valid data",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "9",
+      "defaultValue": "-2147483648"
+    }
+  ]
+}

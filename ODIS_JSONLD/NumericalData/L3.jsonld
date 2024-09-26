@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/L3.jsonld",
+  "name": "TIMED SEE Level 3 Solar Irradiance Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/L3.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Thomas.N.Woods",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Thomas.N.Woods"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://lasp.colorado.edu/home/see/data/",
+      "encodingFormat": "NetCDF",
+      "name": "SEE Data Products web page",
+      "description": "This web page allows the request of data files for this product.  To request data: for the L3 data type of interest, click the year of interest to go the the ftp directory of files and download the desired day-long file by clicking on it."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/TIMED/SEE/L3",
+  "description": "SEE Level 3 data files contain one daily averaged solar irradiance spectrum in 1 nm intervals extracted from the EGS Level 2 and XPS Level 2 data products. Shortward of 27 nm, a solar model is scaled to match the XPS broadband data. SEE Level 3 data files also contain 38 emission lines extracted from EGS Level 2 spectra, and the XPS Level 2 diode irradiances.\n\nFor normal operations, SEE observes the Sun for about 3 minutes every orbit (97 minutes), which usually gives 14-15 measurements per day. The SEE Level 3 data are time averaged over the entire day, after applying corrections for atmospheric absorption, degradation, flare removal, and to 1-AU.",
+  "abstract": "SEE Level 3 data files contain one daily averaged solar irradiance spectrum in 1 nm intervals extracted from the EGS Level 2 and XPS Level 2 data products. Shortward of 27 nm, a solar model is scaled to match the XPS broadband data. SEE Level 3 data files also contain 38 emission lines extracted from EGS Level 2 spectra, and the XPS Level 2 diode irradiances.\n\nFor normal operations, SEE observes the Sun for about 3 minutes every orbit (97 minutes), which usually gives 14-15 measurements per day. The SEE Level 3 data are time averaged over the entire day, after applying corrections for atmospheric absorption, degradation, flare removal, and to 1-AU.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "S"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "SEE",
+    "Sun"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": []
+}

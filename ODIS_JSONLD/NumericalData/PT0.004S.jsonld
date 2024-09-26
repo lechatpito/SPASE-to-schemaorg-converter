@@ -1,0 +1,184 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.004S.jsonld",
+  "name": "RENU2 PhotoMultiplier Tube (PMT) Auroral Red and Green Line Luminosity in Raylieghs, Background subtracted, High Time Resolution (H0), 4 ms Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.004S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Marc.R.Lessard",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Marc.R.Lessard"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.H.Hecht",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.H.Hecht"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2024-02-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/sounding_rockets/renu2/pmt/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/sounding_rockets/renu2/pmt/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=RENU2_H0_PMT&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/RENU2/PMT/PT0.004S",
+  "description": "RENU2 PMT Counts converted to Rayleighs and Background subtracted",
+  "abstract": "RENU2 PMT Counts converted to Rayleighs and Background subtracted",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.Topside"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, Red Line",
+      "description": "Epoch Time, Red Line, Terrestrial Time 2000, Interval Centered Time",
+      "unitText": "ns",
+      "minValue": "2015-01-01T00:00:00.000000000",
+      "maxValue": "2016-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, Green Line",
+      "description": "Epoch Time, Green Line, Terrestrial Time 2000, Interval Centered Time",
+      "unitText": "ns",
+      "minValue": "2015-01-01T00:00:00.000000000",
+      "maxValue": "2016-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Auroral Red Line",
+      "description": "Auroral Red Line, 557.7 nm, Luminosity",
+      "unitText": "R",
+      "minValue": "-600000.0",
+      "maxValue": "600000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Auroral Green Line",
+      "description": "Auroral Green Line, 630.0 nm, Luminosity",
+      "unitText": "R",
+      "minValue": "-600000.0",
+      "maxValue": "600000.0",
+      "defaultValue": "-1.0e+31"
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/EDB.PT3S.jsonld",
+  "name": "Geotail Editor-B 3-second Magnetic Field Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/EDB.PT3S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Tsugunobu.Nagai",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Tsugunobu.Nagai"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Donald.H.Fairfield",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Donald.H.Fairfield"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Jan.Merka",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Jan.Merka"
+    }
+  ],
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/geotail/mgf/edb3sec_mgf/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/geotail/mgf/edb3sec_mgf/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=GE_EDB3SEC_MGF&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://JAXA/NumericalData/Geotail/MGF/EDB.PT3S",
+  "description": "3-second Editor-B magnetic field data from the Geotail spacecraft.\n\n            As of February 1 2008 the Bz component of the magnetic field has been corrected in the data set.\n\n            The Geotail satellite has two editors onboard: The Editor-A data are only acquired with the real-time operation in Usuda Deep Space Center (UDSC) or Uchinoura Space Center (USC), Japan, while the Editor-B data are continuously recorded in the onboard tape recorders for 24 hours and are dumped to the NASA JPL Deep Space Network (DSN) stations.",
+  "abstract": "3-second Editor-B magnetic field data from the Geotail spacecraft.\n\n            As of February 1 2008 the Bz component of the magnetic field has been corrected in the data set.\n\n            The Geotail satellite has two editors onboard: The Editor-A data are only acquired with the real-time operation in Usuda Deep Space Center (UDSC) or Uchinoura Space Center (USC), Japan, while the Editor-B data are continuously recorded in the onboard tape recorders for 24 hours and are dumped to the NASA JPL Deep Space Network (DSN) stations.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time Line",
+      "description": "Number of milliseconds since the CDF epoch",
+      "unitText": "ms",
+      "minValue": "12-Nov-1994 00:00:00.000",
+      "maxValue": "31-Dec-2020 00:00:00.000",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B (GSE)",
+      "description": "Magnetic field vector in GSE cartesian coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Bx (GSE)",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "By (GSE)",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Bz (GSE)",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geotail position (GSE)",
+      "description": "Geotail position in GSE cartesian coordinates",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "X (GSE)",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ValidMin": "-500.0",
+            "ValidMax": "500.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "Y (GSE)",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ValidMin": "-500.0",
+            "ValidMax": "500.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "Z (GSE)",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ValidMin": "-500.0",
+            "ValidMax": "500.0",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B (GSM)",
+      "description": "Magnetic field vector in GSM coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Bx (GSM)",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "By (GSM)",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Bz (GSM)",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geotail position (GSM)",
+      "description": "Geotail position in GSM cartesian coordinates",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "X (GSM)",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ValidMin": "-500.0",
+            "ValidMax": "500.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "Y (GSM)",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ValidMin": "-500.0",
+            "ValidMax": "500.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "Z (GSM)",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ValidMin": "-500.0",
+            "ValidMax": "500.0",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B (SM)",
+      "description": "Magnetic field vector in SM coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Bx (SM)",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "By (SM)",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Bz (SM)",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geotail position (SM)",
+      "description": "Geotail position in SM cartesian coordinates",
+      "unitText": "Re",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "X (SM)",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ValidMin": "-500.0",
+            "ValidMax": "500.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "Y (SM)",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ValidMin": "-500.0",
+            "ValidMax": "500.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "Z (SM)",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ValidMin": "-500.0",
+            "ValidMax": "500.0",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sdev_SinFit",
+      "description": "Standard deviation of sin fitting for magnetic field in sensor coordinates",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "sdev_SinFit(x)",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "20.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "sdev_SinFit(y)",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ValidMin": "0.0",
+            "ValidMax": "20.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "sdev_SinFit(z)",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ValidMin": "0.0",
+            "ValidMax": "20.0",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    }
+  ]
+}

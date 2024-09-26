@@ -1,0 +1,665 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mfr_pam_binary.jsonld",
+  "name": "Observation data in the equatorial mesosphere and lower thermosphere taken by the MF radar at Pameungpeuk (binary format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mfr_pam_binary.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Toshitaka.Tsuda",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Toshitaka.Tsuda"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Timbul.Manik",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Timbul.Manik"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Noriko.Hashiguchi",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Noriko.Hashiguchi"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/RISH.Metadata.Management.Group",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/RISH.Metadata.Management.Group"
+    }
+  ],
+  "sdDatePublished": "2016-07-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/iugonet/index-idr.html",
+      "encodingFormat": "Binary",
+      "name": "Meteor Wind and Medium Frequency Radar Data over Indonesia",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/RISH/misc/PAM/MFradar/mfr_pam_binary",
+  "description": "The eastward, northward and vertical wind data in the equatorial mesosphere and lower thermosphere (52-122 km) estimated from the observation data of the MF radar at Pameungpeuk, Indonesia (7.65S, 107.69E). The data are stored in the binary (SSWMA: Spaced Sensor Wind Measurement Analysis) file named (year)(month)(day).sswma. The SSWMA file also includes radar status data (operation frequency, receiver amplitude and signal noise ratio etc.) and general information about the data file itself. The upper limit of observation range was changed from 98 km to 122 km on the nightside (17:30-06:00 LT) as a regular operation after October 18, 2007. There were occasionally test operations extended up to 122 km in the period from April 19 to October 17, 2007.",
+  "abstract": "The eastward, northward and vertical wind data in the equatorial mesosphere and lower thermosphere (52-122 km) estimated from the observation data of the MF radar at Pameungpeuk, Indonesia (7.65S, 107.69E). The data are stored in the binary (SSWMA: Spaced Sensor Wind Measurement Analysis) file named (year)(month)(day).sswma. The SSWMA file also includes radar status data (operation frequency, receiver amplitude and signal noise ratio etc.) and general information about the data file itself. The upper limit of observation range was changed from 98 km to 122 km on the nightside (17:30-06:00 LT) as a regular operation after October 18, 2007. There were occasionally test operations extended up to 122 km in the period from April 19 to October 17, 2007.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "File magic number",
+      "description": "File magic number (0x23110001)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SSWMA record number",
+      "description": "The number of SSWMA records in this file (0 or more)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Offset number",
+      "description": "Offset to start of first record from start of file",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Unit ID or serial number",
+      "description": "Unit ID or serial number",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Site name",
+      "description": "Site name",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Record magic number",
+      "description": "Record magic number (0x23120001)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Record counter",
+      "description": "Record counter (0, 1, ...)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Offset to start of next record from start of this record",
+      "description": "Offset to start of next record from start of this record (bytes)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Offset to start of data from start of this record",
+      "description": "Offset to start of data from start of this record (bytes)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch time stamp",
+      "description": "Epoch time stamp of start of acquisition",
+      "unitText": "second",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Millisecond component of time stamp",
+      "description": "Millisecond component of time stamp (0,..,999)",
+      "unitText": "millisecond",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Experiment tag name",
+      "description": "Experiment tag name (null terminated)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Experiment comment",
+      "description": "Experiment comment (null terminated)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Site latitude",
+      "description": "Site latitude (from GPS) in degrees (positive implies North)",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Site longitude",
+      "description": "Site longitude (from GPS) in degrees (positive implies East)",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RTC GPS engine status",
+      "description": "RTC GPS engine status (0 = SEEK, 1 = LOCK, 2 = NOT FITTED, 3 = UNAVAILABLE)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Operating frequency",
+      "description": "Operating frequency",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "First local oscillator frequency",
+      "description": "First local oscillator frequency",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of IP/QP channels",
+      "description": "Number of IP/QP channels acquired (number of receivers * 2) or 2*N",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sampling resolution",
+      "description": "Sampling resolution",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of range gates sampled",
+      "description": "Number of range gates sampled",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start range of sampling",
+      "description": "Start range of sampling",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PRF",
+      "description": "Pulse repetition frequency",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Integrations",
+      "description": "Integrations",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of data points acquired",
+      "description": "Number of data points acquired",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Polarization",
+      "description": "Polarization (0 = \"O\" mode, 1 = \"E\" mode, 2 = linear mode1, 3 = linear mode 2)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Receiver filter setting index",
+      "description": "Receiver filter setting index (0, 1, 2, 3)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of modes in use",
+      "description": "Number of modes in use (1 or 2)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dual mode index number for these data",
+      "description": "Dual mode index number for these data (0 or 1)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dual mode range correction",
+      "description": "Dual mode range correction applied to these data",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of receivers used in analysis, K",
+      "description": "Number of receivers used in analysis, K (normally, K = 3)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ACF length",
+      "description": "ACF length to calculate in seconds",
+      "unitText": "second",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ACF length of fit in lags",
+      "description": "ACF length of fit in lags",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sea scatter to atmospheric power ratio limit",
+      "description": "Sea scatter to atmospheric power ratio limit",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sea scatter notch",
+      "description": "Sea scatter notch (0 = no, 1 = yes)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Lowest height to notch sea scatter",
+      "description": "Lowest height to notch sea scatter",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Highest height to notch sea scatter",
+      "description": "Highest height to notch sea scatter",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of spectral bins to notch to remove sea scatter",
+      "description": "Number of spectral bins to notch to remove sea scatter",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minimum receiver signal-to-noise ratio allowable",
+      "description": "Minimum receiver signal-to-noise ratio allowable",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minimum cross correlation allowable",
+      "description": "Minimum cross correlation allowable",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Maximum normalized time discrepancy allowable",
+      "description": "Maximum normalized time discrepancy allowable",
+      "unitText": "percentage",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Antenna coordinates",
+      "description": "Antenna coordinates (Range (m), Bearing (deg)) - N pairs",
+      "unitText": "m, degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Receiver gains",
+      "description": "Receiver gains (dB) - N values",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "List of receivers used for analysis",
+      "description": "List of receivers used for analysis - K values between 1 and N",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Range",
+      "description": "Range",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Analysis status code",
+      "description": "Analysis status code",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zonal wind",
+      "description": "Zonal wind (eastward wind is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Meridional wind",
+      "description": "Meridional wind (northward wind is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vertical wind",
+      "description": "Vertical wind (upflow is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncorrected zonal wind",
+      "description": "Uncorrected zonal wind (eastward wind is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncorrected meridional wind",
+      "description": "Uncorrected meridional wind (northward wind is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Corrected fading time",
+      "description": "Corrected fading time",
+      "unitText": "second",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncorrected fading time",
+      "description": "Uncorrected fading time",
+      "unitText": "second",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Normalized time discrepancy",
+      "description": "Normalized time discrepancy",
+      "unitText": "percentage",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ellipse major axis length",
+      "description": "Ellipse major axis length",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ellipse axial ratio",
+      "description": "Ellipse axial ratio (major/minor)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ellipse orientation",
+      "description": "Ellipse orientation (bearing in degrees)",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sea scatter power calculated for this range",
+      "description": "Sea scatter power calculated for this range (0 = no, 1 = yes)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sea scatter removal algorithm applied to this range",
+      "description": "Sea scatter removal algorithm applied to this range (0 = no, 1 = yes)",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Receiver saturation",
+      "description": "Receiver saturation (number of data points), one per acquired receiver channel",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Channel offset",
+      "description": "Channel offset (digitiser units), one per acquired digital channel",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Receiver amplitude",
+      "description": "Receiver amplitude (linear units), one per acquired receiver channel",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Receiver SNR",
+      "description": "Receiver SNR (dB), one per acquired receiver channel",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cross channel NSR",
+      "description": "Cross channel NSR (dB), one per analyzed receiver channel pair",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sea scatter relative power",
+      "description": "Sea scatter relative power (dB), one per acquired receiver channel",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

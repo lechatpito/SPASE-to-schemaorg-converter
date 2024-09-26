@@ -1,0 +1,262 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/pvo-orb-pos.jsonld",
+  "name": "PVO - Ephemeris - orbit venus",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/pvo-orb-pos.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Raymond.J.Walker",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Raymond.J.Walker"
+    }
+  ],
+  "sdDatePublished": "2012-03-06",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/PioneerVenusOrbiter/Ephemeris/pvo-orb-pos",
+  "description": "This dataset is   \nsampled every 12 seconds near periapsis, and at 1 minute or 10 minute rates  \nin the solar wind, the lowest rates near apoapsis.  Planetocentric and       \nheliocentric position vectors and solar zenith angle (Sun-Venus-PVO) are     \nalso provided. The VSO parameters are derived from the PVO Supplemental      \nExperimenter Data Records (SEDR), other parameters are taken                 \ndirectly from the SEDR dataset. Due to the way the source trajectory files were generated and the\n     lack of good quality tracking data for some periods during the\n     mission the trajectory coverage during the interval above is NOT\n     continuous and has almost 100 gaps ranging in size from minutes to\n     hours to days to many months",
+  "abstract": "This dataset is   \nsampled every 12 seconds near periapsis, and at 1 minute or 10 minute rates  \nin the solar wind, the lowest rates near apoapsis.  Planetocentric and       \nheliocentric position vectors and solar zenith angle (Sun-Venus-PVO) are     \nalso provided. The VSO parameters are derived from the PVO Supplemental      \nExperimenter Data Records (SEDR), other parameters are taken                 \ndirectly from the SEDR dataset. Due to the way the source trajectory files were generated and the\n     lack of good quality tracking data for some periods during the\n     mission the trajectory coverage during the interval above is NOT\n     continuous and has almost 100 gaps ranging in size from minutes to\n     hours to days to many months",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "V"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_vso",
+      "description": "Pioneer Venus Orbiter trajectory in VSO coordinates",
+      "unitText": "Rv",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "pvo_orb_xyzvso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "pvo_orb_xyzvso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "pvo_orb_xyzvso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance pvo-venus",
+      "description": "Range of the spacecraft from the Jupiter center of mass",
+      "unitText": "Rv",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "altitude",
+      "description": "",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "solar_zenith_angle",
+      "description": "",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon planetographic (east)",
+      "description": "Planetographic longitude of the spacecraft",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat planetographic",
+      "description": "Planetographic latitude of the spacecraft",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_spin_axis_vso",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "pvo_orb_spvso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "pvo_orb_spvso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "pvo_orb_spvso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_iau_sun",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_iau_sun",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "earth lon_iau_sun",
+      "description": "",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance pvo-sun",
+      "description": "",
+      "unitText": "AU",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

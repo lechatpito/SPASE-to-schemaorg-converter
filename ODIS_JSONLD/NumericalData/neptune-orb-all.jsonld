@@ -1,0 +1,261 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/neptune-orb-all.jsonld",
+  "name": "Astronomical Objects Ephemerides - Planets and Moons - Neptune",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/neptune-orb-all.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/NAIF",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/NAIF"
+    }
+  ],
+  "sdDatePublished": "2018-06-28",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Ephemerides/neptune-orb-all",
+  "description": "Heliocentric Inertial (HCI) Frame : \n                * The solar rotation axis is the primary vector: the Z axis points in the solar north direction;  \n             * The solar ascending node on the ecliptic of J2000 forms the X axis. \n             * The Y axis is Z cross X, completing the right-handed reference frame.\n            Heliocentric Earth Ecliptic (HEE) Frame :\n              * The position of the earth relative to the sun is the primary vector: the X axis points from the sun to the earth.\n              * The northern surface normal to the mean ecliptic of date is the secondary vector: the Z axis is the component of this vector orthogonal to the X axis.\n              * The Y axis is Z cross X, completing the right-handed reference frame.              \n              Solar longitude (Ls) :\n  * The solar longitude Ls is the Planet-Sun angle, measured from the Northern Hemisphere spring equinox where Ls=0.\nLs=90 thus corresponds to northern summer solstice, just as Ls=180 marks the northern autumn equinox and Ls=270 the northern winter solstice.",
+  "abstract": "Heliocentric Inertial (HCI) Frame : \n                * The solar rotation axis is the primary vector: the Z axis points in the solar north direction;  \n             * The solar ascending node on the ecliptic of J2000 forms the X axis. \n             * The Y axis is Z cross X, completing the right-handed reference frame.\n            Heliocentric Earth Ecliptic (HEE) Frame :\n              * The position of the earth relative to the sun is the primary vector: the X axis points from the sun to the earth.\n              * The northern surface normal to the mean ecliptic of date is the secondary vector: the Z axis is the component of this vector orthogonal to the X axis.\n              * The Y axis is Z cross X, completing the right-handed reference frame.              \n              Solar longitude (Ls) :\n  * The solar longitude Ls is the Planet-Sun angle, measured from the Northern Hemisphere spring equinox where Ls=0.\nLs=90 thus corresponds to northern summer solstice, just as Ls=180 marks the northern autumn equinox and Ls=270 the northern winter solstice.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "N"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hee",
+      "description": "",
+      "unitText": "AU",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_neptune_hee(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_neptune_hee(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_neptune_hee(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hci",
+      "description": "",
+      "unitText": "AU",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_neptune_hci(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_neptune_hci(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_neptune_hci(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance neptune-sun",
+      "description": "",
+      "unitText": "AU",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude HCI",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude HCI",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude IAU_sun",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude IAU_sun",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "solar longitude (Ls)",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude HEE",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude HEE",
+      "description": "",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

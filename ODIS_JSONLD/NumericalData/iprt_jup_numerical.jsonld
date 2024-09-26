@@ -1,0 +1,108 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/iprt_jup_numerical.jsonld",
+  "name": "Jupiter's synchrotron radiation data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/iprt_jup_numerical.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Hiroaki.Misawa",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Hiroaki.Misawa"
+    }
+  ],
+  "sdDatePublished": "2012-12-12",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://iprt.gp.tohoku.ac.jp/",
+      "encodingFormat": "FITS",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/TohokuU/radio_obs/iit/iprt/iprt_jup_numerical",
+  "description": "Absolute flux densities of Jupiter's synchrotron radiation at frequencyes of 325 and/or 785 MHz measured using the Iitate Planetary Radio Telescope.",
+  "abstract": "Absolute flux densities of Jupiter's synchrotron radiation at frequencyes of 325 and/or 785 MHz measured using the Iitate Planetary Radio Telescope.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "J"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    }
+  ],
+  "keywords": "Jupiter synchrotron radiation",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Radio intensity",
+      "description": "Description",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Spectral range",
+      "unitText": "MHz",
+      "minValue": "325",
+      "maxValue": "785",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Observed Time",
+      "unitText": "Julian day",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

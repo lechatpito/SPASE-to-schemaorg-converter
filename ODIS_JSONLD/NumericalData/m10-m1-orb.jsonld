@@ -1,0 +1,192 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/m10-m1-orb.jsonld",
+  "name": "Mariner 10 - Ephemeris - flyby mercury 1",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/m10-m1-orb.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Norman.F.Ness",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Norman.F.Ness"
+    }
+  ],
+  "sdDatePublished": "2021-02-12",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Mariner10/Ephemeris/m10-m1-orb",
+  "description": "Mariner 10 orbit data.\n\t\t    * MSO : X (Mercury to Sun), Z (X-Z plane contains Mercury's centered magnetic dipole axis), and Y (completes the right-hand set)\n\t\t    * MSEQ : X (Mercury to Sun), Z (X-Z plane contains Mercury's centered magnetic dipole axis), and Y (completes the right-hand set)\n\t\t    * PC : Position vectors are given as a range (Rm = 2439.7 km), Latitude, and East Longitude. Field vectors at the spacecraft are given as a radial compoment from Mercury to the spacecraft, an azimuthal component that is parallel to the equator and perpendicular to the radial direction, and a north/south component that completes the right-handed set.\n    ",
+  "abstract": "Mariner 10 orbit data.\n\t\t    * MSO : X (Mercury to Sun), Z (X-Z plane contains Mercury's centered magnetic dipole axis), and Y (completes the right-hand set)\n\t\t    * MSEQ : X (Mercury to Sun), Z (X-Z plane contains Mercury's centered magnetic dipole axis), and Y (completes the right-hand set)\n\t\t    * PC : Position vectors are given as a range (Rm = 2439.7 km), Latitude, and East Longitude. Field vectors at the spacecraft are given as a radial compoment from Mercury to the spacecraft, an azimuthal component that is parallel to the equator and perpendicular to the radial direction, and a north/south component that completes the right-handed set.\n    ",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_mso",
+      "description": "",
+      "unitText": "Rme",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "m10_m1_xyz_mso(0)",
+            "FillValue": "9999.999"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "m10_m1_xyz_mso(1)",
+            "FillValue": "9999.999"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "m10_m1_xyz_mso(2)",
+            "FillValue": "9999.999"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_mseq",
+      "description": "",
+      "unitText": "Rme",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "m10_m1_xyz_mseq(0)",
+            "FillValue": "9999.999"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "m10_m1_xyz_mseq(1)",
+            "FillValue": "9999.999"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "m10_m1_xyz_mseq(2)",
+            "FillValue": "9999.999"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance m10-mercury",
+      "description": "",
+      "unitText": "Rme",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_pc_mercury",
+      "description": "",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_pc_mercury",
+      "description": "",
+      "unitText": "degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT12S.jsonld",
+  "name": "Wind Solar Wind Experiment (SWE) Strahl Detector Two Dimensional Electron Angular Distributions, (H4), 12 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT12S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Keith.W.Ogilvie",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Keith.W.Ogilvie"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.E.McGuire",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.E.McGuire"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/wind/swe/strahl0/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/wind/swe/strahl0/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/index.html/",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Wind/SWE/Strahl/PT12S",
+  "description": "Explanatory Notes: The 2D Electron Angular Distributions included in this Data Set were measured by the Wind/SWE Strahl Detector (see Ogilvie et al., \"SWE, a Comprehensive Plasma Instrument for the Wind Spacecraft\", Space Sci. Rev., 71, 55, 1995). Each Angular Distribution was measured at a single Electron Energy. The Energy was selected by applying a Voltage between the Electrostatic Analyzer Plates. The Detector sampled 32 Energies between 19 eV and 1238 eV, and during normal Operation would Sweep through these Energies one at a Time with approximately 12 s Cadence. The 12 Anodes of the Instrument are set in a vertical Pattern in a Plane that contains the Spacecraft Spin Axis, spanning a Field of View +/-28\u00b0 centered around the Ecliptic (with uneven Angular spacing between Anodes). The Wind Spacecraft Spin Axis is set at a Right Angle with the Ecliptic Plane, allowing different Azimuthal Angles to be sampled as the Spacecraft Spins (3 s Spin Period). These Azimuthal Bins have a Fixed Separation of 3.53\u00b0. Each Strahl (and Antistrahl) Distribution measured by the Spacecraft consists of a 14 \u2a2f 12 Angular Grid of Electron Counts, that was measured at a Fixed Energy during a single Spacecraft Spin. Counts are converted into Physical Units of f(v) (e.g., cm^-6s^3) in the standard Fashion by accounting for the Detector Efficiency and Geometric Factor. The Data Set reported here contains: f_strahl, f_antistrahl, f_strahl_counts, f_antistrahl_counts, phi_strahl, phi_antistrahl, theta, energy.",
+  "abstract": "Explanatory Notes: The 2D Electron Angular Distributions included in this Data Set were measured by the Wind/SWE Strahl Detector (see Ogilvie et al., \"SWE, a Comprehensive Plasma Instrument for the Wind Spacecraft\", Space Sci. Rev., 71, 55, 1995). Each Angular Distribution was measured at a single Electron Energy. The Energy was selected by applying a Voltage between the Electrostatic Analyzer Plates. The Detector sampled 32 Energies between 19 eV and 1238 eV, and during normal Operation would Sweep through these Energies one at a Time with approximately 12 s Cadence. The 12 Anodes of the Instrument are set in a vertical Pattern in a Plane that contains the Spacecraft Spin Axis, spanning a Field of View +/-28\u00b0 centered around the Ecliptic (with uneven Angular spacing between Anodes). The Wind Spacecraft Spin Axis is set at a Right Angle with the Ecliptic Plane, allowing different Azimuthal Angles to be sampled as the Spacecraft Spins (3 s Spin Period). These Azimuthal Bins have a Fixed Separation of 3.53\u00b0. Each Strahl (and Antistrahl) Distribution measured by the Spacecraft consists of a 14 \u2a2f 12 Angular Grid of Electron Counts, that was measured at a Fixed Energy during a single Spacecraft Spin. Counts are converted into Physical Units of f(v) (e.g., cm^-6s^3) in the standard Fashion by accounting for the Detector Efficiency and Geometric Factor. The Data Set reported here contains: f_strahl, f_antistrahl, f_strahl_counts, f_antistrahl_counts, phi_strahl, phi_antistrahl, theta, energy.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time, Nominal Time of the Strahl Measurement, Milliseconds since 1 AD",
+      "unitText": "ms",
+      "minValue": "01-Jan-1990 00:00:00.000",
+      "maxValue": "31-Dec-2029 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "f Strahl Intensities versus Phi and Theta, Log Scale",
+      "description": "f Strahl Intensities versus Phi and Theta Angles in Sweep Energy Order, Logarithmic Scale, Animated GIFs",
+      "unitText": "cm^-3 (cm/s)^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "14 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "f Strahl Intensities versus Phi and Theta, Linear Scale",
+      "description": "f Strahl Intensities versus Phi and Theta Angles in Sweep Energy Order, Linear Scale, Animated GIFs",
+      "unitText": "cm^-3 (cm/s)^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "14 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "f Antistrahl Intensities versus Phi and Theta, Log Scale",
+      "description": "f Antistrahl Intensities versus Phi and Theta Angles in Sweep Energy Order, Logarithmic Scale, Animated GIFs",
+      "unitText": "cm^-3 (cm/s)^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "14 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "f Antistrahl Intensities versus Phi and Theta, Linear Scale",
+      "description": "f Antistrahl Intensities versus Phi and Theta Angles in Sweep Energy Order, Linear Scale, Animated GIFs",
+      "unitText": "cm^-3 (cm/s)^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "14 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "f Strahl Count versus Phi and Theta, Log Scale",
+      "description": "f Strahl Counts versus Phi and Theta Angles in Sweep Energy Order, Logarithmic Scale, Animated GIFs",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "14 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "f Strahl Count versus Phi and Theta, Linear Scale",
+      "description": "f Strahl Counts versus Phi and Theta Angles in Sweep Energy Order, Linear Scale, Animated GIFs",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "14 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "f Antistrahl Count versus Phi and Theta, Log Scale",
+      "description": "f Antistrahl Counts versus Phi and Theta Angles in Sweep Energy Order, Logarithmic Scale, Animated GIFs",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "14 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "f Antistrahl Count versus Phi and Theta, Linear Scale",
+      "description": "f Antistrahl Counts versus Phi and Theta Angles in Sweep Energy Order, Linear Scale, Animated GIFs",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "14 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Velocity Direction, Phi Angle, Strahl",
+      "description": "The Phi (GSE) associated with the Unit Vector pointing in Electron Velocity Direction for the Strahl Distribution",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "14",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Velocity Direction, Phi Angle, Antistrahl",
+      "description": "The Phi (GSE) associated with the Unit Vector pointing in Electron Velocity Direction for the Antistrahl Distribution",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "14",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Velocity Direction, Theta Angle",
+      "description": "The Theta (GSE) associated with unit vector pointing in electron velocity direction",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy",
+      "description": "Energy of the Sampled Electrons used to construct the f Strahl and f_antistrahl distributions",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31"
+    }
+  ]
+}

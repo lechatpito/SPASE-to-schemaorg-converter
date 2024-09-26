@@ -1,0 +1,175 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mur_sgk_mwspc_txt.jsonld",
+  "name": "Horizontal wind data in the mesosphere and lower thermosphere estimated from the meteor wind observation of the MU radar at Shigaraki (text format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mur_sgk_mwspc_txt.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Takuji.Nakamura",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Takuji.Nakamura"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Noriko.Hashiguchi",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Noriko.Hashiguchi"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/MU.Radar.Management.Group",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/MU.Radar.Management.Group"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/RISH.Metadata.Management.Group",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/RISH.Metadata.Management.Group"
+    }
+  ],
+  "sdDatePublished": "2016-07-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/radar-group/mu/meteor/",
+      "encodingFormat": "Text.ASCII",
+      "name": "MU Meteor wind Observation",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/RISH/misc/SGK/MUradar/mur_sgk_mwspc_txt",
+  "description": "The horizontal wind data in the mesosphere and lower thermosphere (70-110 km) estimated from the meteor wind observation of the MU radar at Shigaraki MU Observatory in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL). The wind data are calculated from the original observation data with a weighting function. They are stored in the text file named W(year)(month)(day).(resolution).txt or W(year)(month).(resolution).txt. The resolution abbreviations are h1t60min00, h1t60min30, h2t60min00 and h2t60min30. For example, the h1t60 means weighted average with Gaussian factors over +/-1 km in height and +/-60 minutes in time. The min00 shows that the center of the Gaussian window corresponds to 00 minute of every hour. The intervals of the wind data are every 1km and 60 minutes. The text file includes year, day of year, time (local time), height, zonal and meridional winds, standard deviations of zonal and meridional winds, number of meteors used for the weighted average of the horizontal wind and two internal values. The sensitivity of the MU radar was significantly enhanced because of the change of the meteor observation mode from 4 to 25 channels after April 2006, and the number of observed meteor trails increased.",
+  "abstract": "The horizontal wind data in the mesosphere and lower thermosphere (70-110 km) estimated from the meteor wind observation of the MU radar at Shigaraki MU Observatory in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL). The wind data are calculated from the original observation data with a weighting function. They are stored in the text file named W(year)(month)(day).(resolution).txt or W(year)(month).(resolution).txt. The resolution abbreviations are h1t60min00, h1t60min30, h2t60min00 and h2t60min30. For example, the h1t60 means weighted average with Gaussian factors over +/-1 km in height and +/-60 minutes in time. The min00 shows that the center of the Gaussian window corresponds to 00 minute of every hour. The intervals of the wind data are every 1km and 60 minutes. The text file includes year, day of year, time (local time), height, zonal and meridional winds, standard deviations of zonal and meridional winds, number of meteors used for the weighted average of the horizontal wind and two internal values. The sensitivity of the MU radar was significantly enhanced because of the change of the meteor observation mode from 4 to 25 channels after April 2006, and the number of observed meteor trails increased.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "height",
+      "description": "Height (above sea level)",
+      "unitText": "km",
+      "minValue": "70",
+      "maxValue": "110",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "year",
+      "description": "Year in the form YY where YY = the last two digits of year (00-99).",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "doy",
+      "description": "Doy in the form DDD where DDD = day of year (1-366).",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Time in the form hh mm where hh = hour of day (00-23) and mm = minute of hour. Local time (UT + 09:00:00) is used for time data.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "uwind",
+      "description": "Zonal wind (eastward wind is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vwind",
+      "description": "Meridional wind (northward wind is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sig_uwind",
+      "description": "Standard deviation of the zonal wind",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sig_vwind",
+      "description": "Standard deviation of the meridional wind",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "num",
+      "description": "Number of meteors used for the weighted average of the horizontal wind",
+      "unitText": "number",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "int1",
+      "description": "Internal check value",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "int2",
+      "description": "Internal check value",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

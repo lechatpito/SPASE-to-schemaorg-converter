@@ -1,0 +1,109 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARCAD_ORBITE.jsonld",
+  "name": "ARCAD3 orbit data and geomagnetic parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARCAD_ORBITE.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Dominique.Lagoutte ",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Dominique.Lagoutte "
+    }
+  ],
+  "sdDatePublished": "2022-03-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ARCAD_ORBITE",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ARCAD-3/Ephemeris/ARCAD_ORBITE",
+  "description": "This data set contains ARCAD-3 ephemeris (position) and geomagnetic characteristics (Invariant Latitude, Magnetic Local Time, Magnetospheric Regions where the satellite may be located)",
+  "abstract": "This data set contains ARCAD-3 ephemeris (position) and geomagnetic characteristics (Invariant Latitude, Magnetic Local Time, Magnetospheric Regions where the satellite may be located)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD-3 position  GEI (Geocentric Equatorial Inertial)",
+      "description": "ARCAD-3 position  GEI (Geocentric Equatorial Inertial)",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD-3 position  GSE (Geocentric Solar Ecliptic)",
+      "description": "ARCAD-3 position  GSE (Geocentric Solar Ecliptic)",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD-3  Invariant Latitude",
+      "description": "ARCAD-3  Invariant Latitude",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD-3  Magnetic Local Time",
+      "description": "ARCAD-3  Magnetic Local Time",
+      "unitText": "h",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD-3 magnetospheric regions",
+      "description": "ARCAD-3 magnetospheric regions. This is an indicator to know if the spacecraft is possibly located in one of the following magnetospheric regions: solar wind, bow shock, magnetosheath, magnetopause, magnetosphere, plasma sheet, Fairfield neutral sheet, south polar cap, south auroral oval, south cusp, north polar cap, north auroral oval, north cusp, Chappel plasmasphere, inner radiation belt, ionosphere",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

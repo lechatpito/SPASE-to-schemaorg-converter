@@ -1,0 +1,510 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/so-pas-momgr1.jsonld",
+  "name": "SolarOrbiter - SWA/PAS - L2 - on the ground moments",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/so-pas-momgr1.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Philippe.Louarn",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Philippe.Louarn"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/Andrei.Fedorov",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/Andrei.Fedorov"
+    }
+  ],
+  "sdDatePublished": "2024-05-23",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/PAS/so-pas-momgr1",
+  "description": "Solar Orbiter Proton Analyser Sensor L2 data - Moments computed from the Proton part of ion distribution function measured by PAS",
+  "abstract": "Solar Orbiter Proton Analyser Sensor L2 data - Moments computed from the Proton part of ion distribution function measured by PAS",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "H"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "I"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "info",
+      "description": "0: Ground; 1: Normal; 2: Snapshot; 3: Burst; 4: Engineering",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality factor",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "",
+      "unitText": "cm**-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density : err",
+      "description": "err = density * sqrt(cnts) / cnts",
+      "unitText": "cm**-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_srf",
+      "description": "Velocity in SRF frame",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "pas_momgr_v(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "pas_momgr_v(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "pas_momgr_v(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v_srf|",
+      "description": "Velocity magnitude in SRF frame",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v_srf| : err",
+      "description": "err = v * sqrt(t/e_mean)/sqrt(cnts)",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_rtn",
+      "description": "Velocity in RTN frame",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vr",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "pas_momgr1_v_rtn(0)"
+          },
+          {
+            "Name": "vt",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "pas_momgr1_v_rtn(1)"
+          },
+          {
+            "Name": "vn",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "pas_momgr1_v_rtn(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v_rtn|",
+      "description": "Velocity magnitude in RTN frame",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_solo_rtn",
+      "description": "Spacecraft velocity in RTN frame",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vr",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "pas_momgr1_v_solo_rtn(0)"
+          },
+          {
+            "Name": "vt",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "pas_momgr1_v_solo_rtn(1)"
+          },
+          {
+            "Name": "vn",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "pas_momgr1_v_solo_rtn(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v_solo|",
+      "description": "Magnitude of spacecraft velocity",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_av",
+      "description": "",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_srf",
+      "description": "Temperature components (Tx, Ty, Tz) in SRF frame",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "t_xx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "pas_momgr_t(0)"
+          },
+          {
+            "Name": "t_yy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "pas_momgr_t(1)"
+          },
+          {
+            "Name": "t_zz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "pas_momgr_t(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_rtn",
+      "description": "Temperature components (Tx, Ty, Tz) in RTN frame",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "t_xx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "pas_momgr_trtn(0)"
+          },
+          {
+            "Name": "t_yy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "pas_momgr_trtn(1)"
+          },
+          {
+            "Name": "t_zz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "pas_momgr_trtn(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure_srf",
+      "description": "Pressure tensor in SRF frame",
+      "unitText": "J*cm**-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": [
+          {
+            "Name": "press_xx",
+            "Index": "1",
+            "ParameterKey": "pas_momgr_press(0)"
+          },
+          {
+            "Name": "press_yy",
+            "Index": "2",
+            "ParameterKey": "pas_momgr_press(1)"
+          },
+          {
+            "Name": "press_zz",
+            "Index": "3",
+            "ParameterKey": "pas_momgr_press(2)"
+          },
+          {
+            "Name": "press_xy",
+            "Index": "4",
+            "ParameterKey": "pas_momgr_press(3)"
+          },
+          {
+            "Name": "press_xz",
+            "Index": "5",
+            "ParameterKey": "pas_momgr_press(4)"
+          },
+          {
+            "Name": "press_yz",
+            "Index": "6",
+            "ParameterKey": "pas_momgr_press(5)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure_rtn",
+      "description": "Pressure tensor in RTN frame",
+      "unitText": "J*cm**-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": [
+          {
+            "Name": "press_xx",
+            "Index": "1",
+            "ParameterKey": "pas_momgr_pressrtn(0)"
+          },
+          {
+            "Name": "press_yy",
+            "Index": "2",
+            "ParameterKey": "pas_momgr_pressrtn(1)"
+          },
+          {
+            "Name": "press_zz",
+            "Index": "3",
+            "ParameterKey": "pas_momgr_pressrtn(2)"
+          },
+          {
+            "Name": "press_xy",
+            "Index": "4",
+            "ParameterKey": "pas_momgr_pressrtn(3)"
+          },
+          {
+            "Name": "press_xz",
+            "Index": "5",
+            "ParameterKey": "pas_momgr_pressrtn(4)"
+          },
+          {
+            "Name": "press_yz",
+            "Index": "6",
+            "ParameterKey": "pas_momgr_pressrtn(5)"
+          }
+        ]
+      }
+    }
+  ]
+}

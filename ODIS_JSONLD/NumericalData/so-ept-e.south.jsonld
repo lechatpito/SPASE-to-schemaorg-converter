@@ -1,0 +1,151 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/so-ept-e.south.jsonld",
+  "name": "SolarOrbiter - EPD/EPT - L2 : electron flux - northward flow",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/so-ept-e.south.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/J.Rodrigues-Pacheco",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/J.Rodrigues-Pacheco"
+    }
+  ],
+  "sdDatePublished": "2024-05-20",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/EPD/so-ept-e.south",
+  "description": "Solar Orbiter, Level 2 Data, Energetic Particle Detector, Electron and Proton Telescope, Rates. \n              \n            EPT  measures electrons and ions in the lower part of the energetic particle spectrum. It \neffectuates measurements in 4 different fields of view :\n\n* Anti-Sunward Flow. Detector looks in the direction of the mean Parker spiral towards the Sun.\n* Sunward Flow. Detector looks opposite to the Sun direction.\n* Northward Flow. Detector looks towards the south ecliptic hemisphere.\n* Southward Flow. Detector looks towards the north ecliptic hemisphere.\n\nParameter ID uses Detector looking directon.\n\nAdditionally, EPT has 2 channels that separate electrons and ions:\n* Magnet channel. Uses a permanent magnet to deflect electrons. It measures protons with energies between 25 keV and 6.5 MeV and alpha particles up to 25 MeV.\n* Foil channel. Equipped with a foil that absorbs ions, it measures electrons in the energy range 25\u2013500 keV. Ions with energies above 400 keV can penetrate the foil, contaminating the electron measurements. \n          ",
+  "abstract": "Solar Orbiter, Level 2 Data, Energetic Particle Detector, Electron and Proton Telescope, Rates. \n              \n            EPT  measures electrons and ions in the lower part of the energetic particle spectrum. It \neffectuates measurements in 4 different fields of view :\n\n* Anti-Sunward Flow. Detector looks in the direction of the mean Parker spiral towards the Sun.\n* Sunward Flow. Detector looks opposite to the Sun direction.\n* Northward Flow. Detector looks towards the south ecliptic hemisphere.\n* Southward Flow. Detector looks towards the north ecliptic hemisphere.\n\nParameter ID uses Detector looking directon.\n\nAdditionally, EPT has 2 channels that separate electrons and ions:\n* Magnet channel. Uses a permanent magnet to deflect electrons. It measures protons with energies between 25 keV and 6.5 MeV and alpha particles up to 25 MeV.\n* Foil channel. Equipped with a foil that absorbs ions, it measures electrons in the energy range 25\u2013500 keV. Ions with energies above 400 keV can penetrate the foil, contaminating the electron measurements. \n          ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "el flux: nortward",
+      "description": "Particle flux in foil channel",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "34",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "el flux unc: northward",
+      "description": "Uncertainty in electron flux",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "34",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "el cntrate: northward",
+      "description": "Particle count rate in foil channel",
+      "unitText": "cnts/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "34",
+        "elements": []
+      }
+    }
+  ]
+}

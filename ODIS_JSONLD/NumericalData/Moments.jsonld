@@ -1,0 +1,478 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/Moments.jsonld",
+  "name": "Wind 3DP EESA-LOW Electron Moments",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/Moments.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.P.Lin",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.P.Lin"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Stuart.D.Bale",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Stuart.D.Bale"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.E.McGuire",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.E.McGuire"
+    }
+  ],
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/wind/3dp/3dp_elm2/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In CDF via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/wind/3dp/3dp_elm2/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Wind/3DP/EESA_LOW/Moments",
+  "description": "Electron Moments (ground-computed), EESA Low, Wind 3DP - R. Lin (UC Berkeley)",
+  "abstract": "Electron Moments (ground-computed), EESA Low, Wind 3DP - R. Lin (UC Berkeley)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "H"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "N"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "E"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Number of milliseconds since CDF_EPOCH: 0000-01-01T00:00:00.000.",
+      "unitText": "ms",
+      "minValue": "01-Jan-1956 00:00:00.000",
+      "maxValue": "01-Jan-2083 00:00:00.000",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Unix Time",
+      "description": "Time since 1970-01-01T00:00:00Z in seconds",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Potential",
+      "description": "Spacecraft potential estimated from electron ONLY measurements",
+      "unitText": "ev",
+      "minValue": "0.0",
+      "maxValue": "1000000.0",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Current Contribution",
+      "description": "Current contribution to the spacecraft from thermal electrons",
+      "unitText": "#/cm2-sec",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field vector in GSE coordinates",
+      "description": "magnetic field vector interpolated (linearly) to the time of the EESA Low distribution, in GSE cartesian components",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Bx",
+            "Index": "1",
+            "ValidMin": "-1000",
+            "ValidMax": "1000"
+          },
+          {
+            "Name": "By",
+            "Index": "2",
+            "ValidMin": "-1000",
+            "ValidMax": "1000"
+          },
+          {
+            "Name": "Bz",
+            "Index": "3",
+            "ValidMin": "-1000",
+            "ValidMax": "1000"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Density",
+      "description": "Electron number density",
+      "unitText": "#/cm3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Temperature",
+      "description": "Average electron temperature",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron probable speed",
+      "description": "lectron most probable speed",
+      "unitText": "km/sec",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Velocity",
+      "description": "electron Flow Velocity, GSE cartesian",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "electron_Vx",
+            "Index": "1",
+            "ValidMin": "-1000",
+            "ValidMax": "1000"
+          },
+          {
+            "Name": "electron_Vy",
+            "Index": "2",
+            "ValidMin": "-1000",
+            "ValidMax": "1000"
+          },
+          {
+            "Name": "electron_Vz",
+            "Index": "3",
+            "ValidMin": "-1000",
+            "ValidMax": "1000"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux",
+      "description": "electron total number flux - cartesian GSE",
+      "unitText": "#/(cm^2*ster*eV*s)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Pressure Tensor",
+      "description": "electron Pressure Tensor calculated in the GSE coordinate basis. The elements correspond to, in the following order: XX, YY, ZZ, XY, XZ, YZ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Momentum Flux Tensor",
+      "description": "electron Momentum Flux Tensor calculated in the GSE coordinate basis. The elements correspond to, in the following order: XX, YY, ZZ, XY, XZ, YZ",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "T3",
+      "description": "electron Temperature eigenvalues after diagonalization of tensor, calculated in the GSE coordinate basis. The elements correspond to: XX, YY, ZZ",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Symmetry direction, electron pressure tensor",
+      "description": "ZZ-component of the eigenvectors associated with the eigen values from the diagonalized .T3 (i.e., the eigenvector associated with the Z eigen value from .T3 or .T3[2])",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "electron symmetry direction, latitude",
+      "description": "Spherical coordinate latitude of SYMM",
+      "unitText": "Degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "electron symmetry direction, longitude",
+      "description": "Spherical coordinate longitude of SYMM",
+      "unitText": "Degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Angle of electron symmetry direction to B",
+      "description": "angle between the ZZ-component of the eigenvectors associated with the eigen values from the diagonalized .T3 and the magnetic field vector (i.e., .MAGF vector)",
+      "unitText": "Degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron temperature tensor.",
+      "description": "electron temperature tensor rotated into a field-aligned coordinate basis and then taking the diagonal elements only",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "electron energy range",
+      "description": "electron energy range used to compute the moments",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron mass",
+      "description": "electron mass of species. Units are eV/c^2, where c = speed of light in units of km/s. This results is a value of ~5.68566 x 10^(-6) for electrons and ~0.0104389 for protons.",
+      "unitText": "eV/c^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Validity flag",
+      "description": "electron Validity flag indicating whether data point is considered valid (0=invalid, 1=valid)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron bulk velocity; magnitude",
+      "description": "electron bulk flow speed",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron bulk flow velocity; latitude",
+      "description": "electron bulk flow velocity; latitude/theta",
+      "unitText": "Degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron bulk flow velocity; longitude",
+      "description": "electron bulk flow velocity; longitude/phi",
+      "unitText": "Degrees",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

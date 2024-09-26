@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/L1_LOS.jsonld",
+  "name": "TIMED TIDI LOS",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/L1_LOS.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Timothy.L.Killeen",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Timothy.L.Killeen"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftp://tidi.engin.umich.edu/tidi/los/",
+      "encodingFormat": "NetCDF",
+      "name": "TIDI POC website",
+      "description": "The fastest/easiest way to download a lot of TIDI product files is to use TIDI's anonymous FTP site. Please download our latest version for all the data products that you need."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/TIMED/TIDI/L1_LOS",
+  "description": "\tContains the TIDI Level 1B spectra corrected for instrumental effects and converted to Rayleighs/cm^-1, ancillary data and profiles of apparent LOS wind, temperature, and volume emission rates and their variances annotated with profile location and processing state.",
+  "abstract": "\tContains the TIDI Level 1B spectra corrected for instrumental effects and converted to Rayleighs/cm^-1, ancillary data and profiles of apparent LOS wind, temperature, and volume emission rates and their variances annotated with profile location and processing state.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "TIDI",
+    "mesosphere",
+    "lower thermosphere",
+    "MLTI"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "line-of-sight wind speed LOS",
+      "description": "line of sight wind speed (positive values are towards telescope)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Doppler temperature",
+      "description": "line of sight Doppler width temperature",
+      "unitText": "K",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rotational temperature",
+      "description": "line of sight Doppler width temperature",
+      "unitText": "K",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Brightness",
+      "description": "line of sight Doppler width temperature",
+      "unitText": "R/cm^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999"
+    }
+  ]
+}

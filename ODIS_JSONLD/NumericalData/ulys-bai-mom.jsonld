@@ -1,0 +1,218 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ulys-bai-mom.jsonld",
+  "name": "Ulysses - SWOOPS - sw ions",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ulys-bai-mom.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Elena.Budnik",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Elena.Budnik"
+    }
+  ],
+  "sdDatePublished": "2012-03-06",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/ULYSSES/SWOOPS/ulys-bai-mom",
+  "description": "The proton temperature has been estimated in two different ways, one of which will sometimes lead to an overestimate of the temperature and one of which will sometimes lead to an underestimate. T-large is the integral of the distribution in three-dimensional velocity space over all energy channels and angle bins that are statistically above noise. The criterion for noise determination is based upon the estimation of the total contribution from a shell that is spherically symmetric in velocity space. T-large has the drawback that at times when the solar wind is cold the angular responses of the instrument channels are as wide or wider than the beam, and the temperature is overestimated. T-small is estimated by summing over angle the observations at a fixed energy. The moments of the resulting one dimensional plasma spectrum are then summed and the resulting RR (radial) component of the temperature tensor is used as the estimate of proton temperature. Additionally, to avoid contamination from alpha particles, no channels further in velocity space from the proton peak than the minimum in flux between the proton and alpha particles peaks are used in the T-small estimate. T-large and T-small will generally bracket the true temperature. However, for very cold plasma, T-small may not be a true minimum.\n             ",
+  "abstract": "The proton temperature has been estimated in two different ways, one of which will sometimes lead to an overestimate of the temperature and one of which will sometimes lead to an underestimate. T-large is the integral of the distribution in three-dimensional velocity space over all energy channels and angle bins that are statistically above noise. The criterion for noise determination is based upon the estimation of the total contribution from a shell that is spherically symmetric in velocity space. T-large has the drawback that at times when the solar wind is cold the angular responses of the instrument channels are as wide or wider than the beam, and the temperature is overestimated. T-small is estimated by summing over angle the observations at a fixed energy. The moments of the resulting one dimensional plasma spectrum are then summed and the resulting RR (radial) component of the temperature tensor is used as the estimate of proton temperature. Additionally, to avoid contamination from alpha particles, no channels further in velocity space from the proton peak than the minimum in flux between the proton and alpha particles peaks are used in the T-small estimate. T-large and T-small will generally bracket the true temperature. However, for very cold plasma, T-small may not be a true minimum.\n             ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "H"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density h+",
+      "description": "Solar wind proton plasma density",
+      "unitText": "cm-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density he++",
+      "description": "Solar wind alpha particle plasma density",
+      "unitText": "cm-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_rtn",
+      "description": "Hourly averaged solar wind plasma flow speed",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vr",
+            "Index": "1",
+            "ParameterKey": "v_ulys_rtn(0)"
+          },
+          {
+            "Name": "vt",
+            "Index": "2",
+            "ParameterKey": "v_ulys_rtn(1)"
+          },
+          {
+            "Name": "vn",
+            "Index": "3",
+            "ParameterKey": "v_ulys_rtn(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature h+",
+      "description": "solar wind plasma temperature",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "t_large",
+            "Index": "1",
+            "ParameterKey": "tp_ulys(0)"
+          },
+          {
+            "Name": "t_small",
+            "Index": "2",
+            "ParameterKey": "tp_ulys(1)"
+          }
+        ]
+      }
+    }
+  ]
+}

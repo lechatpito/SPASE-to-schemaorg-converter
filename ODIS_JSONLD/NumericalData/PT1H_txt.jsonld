@@ -1,0 +1,120 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT1H_txt.jsonld",
+  "name": "Horizontal wind measured with MF radar at Syowa Station, Antarctica.",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT1H_txt.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Masaki.Tsutsumi",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Masaki.Tsutsumi"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Yoshimasa.Tanaka",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Yoshimasa.Tanaka"
+    }
+  ],
+  "sdDatePublished": "2011-04-01",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://scidbase.nipr.ac.jp/modules/metadata/index.php?content_id=108",
+      "encodingFormat": "Text.ASCII",
+      "name": "MF radar",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/NIPR/misc/SYO/MFradar/PT1H_txt",
+  "description": "Hourly-averaged horizontal wind at 50-100km altitude measured with MF radar at Syowa Station, Antarctica, based on a full-correlation analysis and meteor echo measurement.",
+  "abstract": "Hourly-averaged horizontal wind at 50-100km altitude measured with MF radar at Syowa Station, Antarctica, based on a full-correlation analysis and meteor echo measurement.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Universal Time. 0.5 (hour) means time for averaged data from 0 to 1 UT.",
+      "unitText": "hour",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Altitude",
+      "description": "Altitude",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zonal wind",
+      "description": "Zonal wind. Positive means eastward wind.",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard deviation of zonal wind",
+      "description": "Standard deviation of zonal wind",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Meridional wind",
+      "description": "Meridional wind. Positive means northward wind",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard deviation of meridional wind",
+      "description": "Standard deviation of meridional wind",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

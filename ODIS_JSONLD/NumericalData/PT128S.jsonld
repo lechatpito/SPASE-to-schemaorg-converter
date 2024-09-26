@@ -1,0 +1,265 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT128S.jsonld",
+  "name": "Ulysses Cosmic Ray and Solar Particle Investigation (COSPIN) High Energy Telescope (HET) Full Resolution Proton Counts and Accumulation Times for Eight-Sectored Coincidence Counting Rates, SECT2 H45S, 128 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT128S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/R.Bruce.McKibben",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/R.Bruce.McKibben"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Clifford.Lopate",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Clifford.Lopate"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.Connell",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.Connell"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ufa.esac.esa.int/ufa/#data",
+      "encodingFormat": "Text",
+      "name": "Ulysses Final Archive Access to COSPIN/HET Full Resolution Proton Counts and Accumulation Times for Eight-Sectored Coincidence Counting Rates, SECT2 H45S",
+      "description": "Parent Directory containing FTP downloadable Daily Files with the Format described below"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Ulysses/COSPIN/HET/Rates/Sect2/PT128S",
+  "description": "A Directory containing Daily FTP downloadable Files containing Readout-by-Readout Listings of the Counts accumulated in each Spin Sector of the Eight-Sectored H45S Counting Rate. Aside from its Division of Counts into Spin Sectors, H45S is a Coincidence Counting Rate with Coincidence Logic Requirements satisfying the Logical inclusive OR of the H4 and H5 Spin-Averaged Counting Rates. Therefore the H45S Counting Rate responds primarily to Protons in the approximate Energy Range 34-92 MeV. The Naming Convention for the Daily Files is uly_het_full_rat_sect2_YYYDDD.txt, where YYY indicates the three digit Year since 1900 (e.g. YYY=090 for 1990, and YYY=102 for 2002) and DDD indicates the three digit Day of Year (January 1 = 1). In each File, following a detailed Description of the Format, the Data consist of a Readout by Readout Listing of Counts accumulated in the eight 45\u00b0 Spin Sectors of the Sectored Counting Rate H45S during the Intervals between successive Readouts, organized into Columns as described below. The first four Columns give the Start Time of the Counting Rate Accumulation Period for Sector 7 of the Rate as Fractional Year (to 12 Decimal Places) and as Year since 1900, Day of Year, and Milliseconds of Day at the Start of the Accumulation, followed by one Column (labeled cov) giving the Duration of the total Accumulation Period for all eight Sectors in Milliseconds. Thus the Accumulation Period in each of the Sectors is the Value given in the \"cov\" Column divided by eight. The Accumulation in each of the successive Sectors 7,8,1,2,3,4,5, and 6 starts cov/8 Milliseconds after the Start of the Accumulation in the previous Sector. Columns 6-13 then give the Counts accumulated in each of the eight Sectors during the Accumulation Period. Each Line contains Data for one single Readout Accumulation of the eight Sectors of H45S. Since the Accumulation Period for each Readout is forced to include an Integral Number of Spacecraft Spins in order to produce equal Coverage in all Sectors, the Lengths of the Accumulation Periods vary in a Cyclic Manner as the Period of the Telemetry Cycle beats with the Spacecraft Spin Period. The H45S Counting Rate is fully read out every 128 s at the most common Science Telemetry Bit Rate (2048 bps). Thus, with a typical 5 rpm Spacecraft Spin Rate the Accumulation Intervals vary in a repeating Cycle of 132, 132, 120, 132, 132, 120, etc., seconds. At lower Bit Rates the Average Interval is equal to 128 times (2048/BR) seconds and the Cycle automatically adjusts to produce this Average Accumulation. The Spin Plane of the Ulysses Spacecraft, in which the Sectors are defined, is normal to the Spin Axis (Spacecraft +Z Axis), which is maintained within one to 2\u00b0 of Earth pointing at all Times. Viewed from Earth the Spacecraft spins Counter Clockwise. The Start of Sector 1 is defined by the Spacecraft Generated Sun Pulse, which is issued when the Sun crosses the +X/+Z Quadrant of the X/Z Plane. The HET Telescope Axis is parallel to the +X Axis and normal to the Z Axis. No Noise Removal or Despiking has been done, so Caution must be used in interpreting isolated large Increases or Decreases in the Counting Rates.",
+  "abstract": "A Directory containing Daily FTP downloadable Files containing Readout-by-Readout Listings of the Counts accumulated in each Spin Sector of the Eight-Sectored H45S Counting Rate. Aside from its Division of Counts into Spin Sectors, H45S is a Coincidence Counting Rate with Coincidence Logic Requirements satisfying the Logical inclusive OR of the H4 and H5 Spin-Averaged Counting Rates. Therefore the H45S Counting Rate responds primarily to Protons in the approximate Energy Range 34-92 MeV. The Naming Convention for the Daily Files is uly_het_full_rat_sect2_YYYDDD.txt, where YYY indicates the three digit Year since 1900 (e.g. YYY=090 for 1990, and YYY=102 for 2002) and DDD indicates the three digit Day of Year (January 1 = 1). In each File, following a detailed Description of the Format, the Data consist of a Readout by Readout Listing of Counts accumulated in the eight 45\u00b0 Spin Sectors of the Sectored Counting Rate H45S during the Intervals between successive Readouts, organized into Columns as described below. The first four Columns give the Start Time of the Counting Rate Accumulation Period for Sector 7 of the Rate as Fractional Year (to 12 Decimal Places) and as Year since 1900, Day of Year, and Milliseconds of Day at the Start of the Accumulation, followed by one Column (labeled cov) giving the Duration of the total Accumulation Period for all eight Sectors in Milliseconds. Thus the Accumulation Period in each of the Sectors is the Value given in the \"cov\" Column divided by eight. The Accumulation in each of the successive Sectors 7,8,1,2,3,4,5, and 6 starts cov/8 Milliseconds after the Start of the Accumulation in the previous Sector. Columns 6-13 then give the Counts accumulated in each of the eight Sectors during the Accumulation Period. Each Line contains Data for one single Readout Accumulation of the eight Sectors of H45S. Since the Accumulation Period for each Readout is forced to include an Integral Number of Spacecraft Spins in order to produce equal Coverage in all Sectors, the Lengths of the Accumulation Periods vary in a Cyclic Manner as the Period of the Telemetry Cycle beats with the Spacecraft Spin Period. The H45S Counting Rate is fully read out every 128 s at the most common Science Telemetry Bit Rate (2048 bps). Thus, with a typical 5 rpm Spacecraft Spin Rate the Accumulation Intervals vary in a repeating Cycle of 132, 132, 120, 132, 132, 120, etc., seconds. At lower Bit Rates the Average Interval is equal to 128 times (2048/BR) seconds and the Cycle automatically adjusts to produce this Average Accumulation. The Spin Plane of the Ulysses Spacecraft, in which the Sectors are defined, is normal to the Spin Axis (Spacecraft +Z Axis), which is maintained within one to 2\u00b0 of Earth pointing at all Times. Viewed from Earth the Spacecraft spins Counter Clockwise. The Start of Sector 1 is defined by the Spacecraft Generated Sun Pulse, which is issued when the Sun crosses the +X/+Z Quadrant of the X/Z Plane. The HET Telescope Axis is parallel to the +X Axis and normal to the Z Axis. No Noise Removal or Despiking has been done, so Caution must be used in interpreting isolated large Increases or Decreases in the Counting Rates.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "H"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "O"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Interval Start Time",
+      "description": "Nominal Start Time for the accumulation of counts in Sector 7, given in decimal year, integer year, Day of Year, and Milliseconds of Day.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Decimal Year",
+            "Index": "1",
+            "ParameterKey": "Column_1",
+            "ValidMin": "1990",
+            "ValidMax": "2009",
+            "FillValue": "0.00000000000"
+          },
+          {
+            "Name": "Year",
+            "Index": "2",
+            "ParameterKey": "Column_2",
+            "ValidMin": "1990",
+            "ValidMax": "2009",
+            "FillValue": "0"
+          },
+          {
+            "Name": "Day of Year",
+            "Index": "3",
+            "ParameterKey": "Column_3",
+            "ValidMin": "1",
+            "ValidMax": "366",
+            "FillValue": "0"
+          },
+          {
+            "Name": "Milliseconds of Day",
+            "Index": "4",
+            "ParameterKey": "Column_4",
+            "ValidMin": "0",
+            "ValidMax": "86400000",
+            "FillValue": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Accumulation period",
+      "description": "Length of the summed accumulation periods for all 8 sectors in milli-seconds. This represents an integral number of spacecraft spin periods, most commonly 10 or 11 for H45S at 2048 bps.",
+      "unitText": "millisecond",
+      "minValue": "100000",
+      "maxValue": "1100000",
+      "defaultValue": "0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Counts per sector for COSPIN/HET Eight-Sectored Counting Rate H45S",
+      "description": "Counts accumulated in each of the 8 sectors of counting rate H45S during the accumulation period starting at the time given in columns 1-4 and with a duration as given in column 5. Each sector contains counts incident from a specific 45\u00b0 sector of the spin plane. The start of sector 1 (0\u00b0) is coincident with the spacecraft-generated Sun-pulse, and the start of each subsequent sector is shifted by 45\u00b0 with respect to the preceding sector. For example, H45S1 covers the azimuthal range 0\u00b0 to 45\u00b0, H45S2 covers the azimuthal range 45\u00b0 to 90\u00b0, etc. In each sector, counts are registered only when the Axis of the Telescope view cone is within that sector. The H45S normally responds primarily to protons in the energy interval from about 34-92 MeV.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "H45S1",
+            "Index": "1",
+            "ParameterKey": "Column_6",
+            "ValidMin": "0",
+            "ValidMax": "1000000",
+            "FillValue": "-1"
+          },
+          {
+            "Name": "H45S2",
+            "Index": "2",
+            "ParameterKey": "Column_7",
+            "ValidMin": "0",
+            "ValidMax": "1000000",
+            "FillValue": "-1"
+          },
+          {
+            "Name": "H45S3",
+            "Index": "3",
+            "ParameterKey": "Column_8",
+            "ValidMin": "0",
+            "ValidMax": "1000000",
+            "FillValue": "-1"
+          },
+          {
+            "Name": "H45S4",
+            "Index": "4",
+            "ParameterKey": "Column_9",
+            "ValidMin": "0",
+            "ValidMax": "1000000",
+            "FillValue": "-1"
+          },
+          {
+            "Name": "H45S5",
+            "Index": "5",
+            "ParameterKey": "Column_10",
+            "ValidMin": "0",
+            "ValidMax": "1000000",
+            "FillValue": "-1"
+          },
+          {
+            "Name": "H45S6",
+            "Index": "6",
+            "ParameterKey": "Column_11",
+            "ValidMin": "0",
+            "ValidMax": "1000000",
+            "FillValue": "-1"
+          },
+          {
+            "Name": "H45S7",
+            "Index": "7",
+            "ParameterKey": "Column_12",
+            "ValidMin": "0",
+            "ValidMax": "1000000",
+            "FillValue": "-1"
+          },
+          {
+            "Name": "H45S8",
+            "Index": "8",
+            "ParameterKey": "Column_13",
+            "ValidMin": "0",
+            "ValidMax": "1000000",
+            "FillValue": "-1"
+          }
+        ]
+      }
+    }
+  ]
+}

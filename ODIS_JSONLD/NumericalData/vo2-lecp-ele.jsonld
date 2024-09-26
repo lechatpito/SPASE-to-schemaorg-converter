@@ -1,0 +1,229 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/vo2-lecp-ele.jsonld",
+  "name": "Voyager 2 - LECP - flyby jupiter - electron flux",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/vo2-lecp-ele.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Stamatios.M.Krimigis",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Stamatios.M.Krimigis"
+    }
+  ],
+  "sdDatePublished": "2012-09-13",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Voyager2/LECP/vo2-lecp-ele",
+  "description": "Voyager_2\n                LECP - Low_Energy_Charged_Particle - Electrons\n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "abstract": "Voyager_2\n                LECP - Low_Energy_Charged_Particle - Electrons\n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "J"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux diff",
+      "description": "",
+      "unitText": "cm-2.s-1.sr-1.MeV-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "5",
+        "elements": [
+          {
+            "Name": "0.015-0.035 MeV",
+            "Index": "1",
+            "ParameterKey": "vo2_lecp_fedo(0)"
+          },
+          {
+            "Name": "0.035-0.061 MeV",
+            "Index": "2",
+            "ParameterKey": "vo2_lecp_fedo(1)"
+          },
+          {
+            "Name": "0.061-0.112 MeV",
+            "Index": "3",
+            "ParameterKey": "vo2_lecp_fedo(2)"
+          },
+          {
+            "Name": "0.13-0.183 MeV",
+            "Index": "4",
+            "ParameterKey": "vo2_lecp_fedo(3)"
+          },
+          {
+            "Name": "0.2-0.5 MeV",
+            "Index": "5",
+            "ParameterKey": "vo2_lecp_fedo(4)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux integral",
+      "description": "",
+      "unitText": "cm-2.s-1.sr-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "> 0.015 MeV",
+            "Index": "1",
+            "ParameterKey": "vo2_lecp_feio(0)"
+          },
+          {
+            "Name": "> 0.035 MeV",
+            "Index": "2",
+            "ParameterKey": "vo2_lecp_feio(1)"
+          },
+          {
+            "Name": "> 0.061 MeV",
+            "Index": "3",
+            "ParameterKey": "vo2_lecp_feio(2)"
+          },
+          {
+            "Name": "> 0.112 MeV",
+            "Index": "4",
+            "ParameterKey": "vo2_lecp_feio(3)"
+          },
+          {
+            "Name": "> 0.183 MeV",
+            "Index": "5",
+            "ParameterKey": "vo2_lecp_feio(4)"
+          },
+          {
+            "Name": "> 0.252 MeV",
+            "Index": "6",
+            "ParameterKey": "vo2_lecp_feio(5)"
+          },
+          {
+            "Name": "> 0.48 MeV",
+            "Index": "7",
+            "ParameterKey": "vo2_lecp_feio(6)"
+          },
+          {
+            "Name": "> 0.853 MeV",
+            "Index": "8",
+            "ParameterKey": "vo2_lecp_feio(7)"
+          },
+          {
+            "Name": "> 2.1 MeV",
+            "Index": "9",
+            "ParameterKey": "vo2_lecp_feio(8)"
+          }
+        ]
+      }
+    }
+  ]
+}

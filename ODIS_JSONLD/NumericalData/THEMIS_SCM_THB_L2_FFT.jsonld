@@ -1,0 +1,1095 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/THEMIS_SCM_THB_L2_FFT.jsonld",
+  "name": "THEMIS-B SCM Level-2 Onboard Power Spectral Density (CDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/THEMIS_SCM_THB_L2_FFT.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Vassilis.Angelopoulos",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Vassilis.Angelopoulos"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Olivier.Le.Contel",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Olivier.Le.Contel"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/CDPP.general.contact",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/CDPP.general.contact"
+    }
+  ],
+  "sdDatePublished": "2022-01-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:THEMIS_SCM_THB_L2_FFT",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/THEMIS-B/SCM/THEMIS_SCM_THB_L2_FFT",
+  "description": "This dataset contains the calibrated  power spectral density (computed on board) of electric and magnetic  fields from the Electric Field Instrument (EFI) and the Search Coil Magnetometer (SCM) on board THEMIS-B.",
+  "abstract": "This dataset contains the calibrated  power spectral density (computed on board) of electric and magnetic  fields from the Electric Field Instrument (EFI) and the Search Coil Magnetometer (SCM) on board THEMIS-B.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst mode, 16 frequencies for SCM delta-B (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst mode, 16 frequencies for SCM delta-B (parallel to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for SCM delta-B (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for SCM delta-B (perp to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 1 and 2",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 3 and 4",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 5 and 6",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI E (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI E (parallel to B)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI E (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI E (perp to B)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 1",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 1",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 2",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 2",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 3",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 3",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 1",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 1",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 2",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 2",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 3",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 3",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 4",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 4",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 5",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 5",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 6",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 6",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectr um in Particle Burst, 32 frequencies for SCM delta-B (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectr um in Particle Burst, 32 frequencies for SCM delta-B (parallel to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for SCM delta-B (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for SCM delta-B (perp to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field AC Component, Sensors 5 and 6 (axial)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field AC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI E (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI E (parallel to B)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI E (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI E (perp to B)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 1",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 1",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 2",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 2",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 3",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 3",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 1",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 1",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 2",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 2",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 3",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 3",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power S pectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 4",
+      "description": "THEMIS-B FFT Power S pectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 4",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 5",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 5",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 6",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 6",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for SCM delta-B (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for SCM delta-B (parallel to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for SCM delta-B (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for SCM delta-B (perp to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane).",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane).",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI E (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI E (parallel to B)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI E (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI E (perp to B)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 1",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 1",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 2",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 2",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 3",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 3",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 1",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 1",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT P ower Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 2",
+      "description": "THEMIS-B FFT P ower Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 2",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 3",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 3",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 4",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 4",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 5",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 5",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 6",
+      "description": "THEMIS-B FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 6",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for SCM delta-B (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for SCM delta-B (parallel to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for SCM delta-B (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for SCM delta-B (perp to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burs t, 16 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burs t, 16 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for E Field AC Component, Sensors 5 and 6 (axial)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for E Field AC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI E (paral lel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI E (paral lel to B)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI E (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI E (perp to B)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 1",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 1",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 2",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 2",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 3",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 3",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 1",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 1",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 2",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 2",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 3",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 3",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 4",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 4",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 5",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 5",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 6",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 6",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for SCM delta-B (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for SCM delta-B (parallel to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for SCM delta-B (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for SCM delta-B (perp to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 5 and 6 (axial)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI E (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI E (parallel to B)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI E (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI E (perp to B)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 1",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 1",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 2",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 2",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 3",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 3",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 1",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 1",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 2",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 2",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 3",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 3",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 4",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 4",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 5",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 5",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 6",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 6",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for SCM delta-B (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for SCM delta-B (parallel to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for SCM delta-B (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for SCM delta-B (perp to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 5 and 6 (axial)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 5 and 6 (axial)",
+      "unitText": "(mV/m)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI E (parallel to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI E (parallel to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI E (perp to B)",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI E (perp to B)",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 1",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 1",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 2",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 2",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 3",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 3",
+      "unitText": "(nT)^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 1",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 1",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 2",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 2",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 3",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 3",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 4",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 4",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 5",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 5",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 6",
+      "description": "THEMIS-B FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 6",
+      "unitText": "V^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

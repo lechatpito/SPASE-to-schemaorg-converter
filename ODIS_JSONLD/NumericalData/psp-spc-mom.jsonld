@@ -1,0 +1,281 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/psp-spc-mom.jsonld",
+  "name": "PSP - SWEAP SPC - moments",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/psp-spc-mom.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Justin.C.Kasper",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Justin.C.Kasper"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Anthony.W.Case",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Anthony.W.Case"
+    }
+  ],
+  "sdDatePublished": "2024-04-11",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/PSP/SPC/psp-spc-mom",
+  "description": "\n             This data product contains derived measurements of ion properties in the solar wind, including \n             density, temperature, velocity vector. The speed, temperature, and density of the solar wind proton population is estimated by direct integration of the measured distribution\n         ",
+  "abstract": "\n             This data product contains derived measurements of ion properties in the solar wind, including \n             density, temperature, velocity vector. The speed, temperature, and density of the solar wind proton population is estimated by direct integration of the measured distribution\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "np_mom",
+      "description": "Proton density",
+      "unitText": "cm-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "np_mom_deltahigh",
+      "description": "Estimated upper bound on the proton density from moment calculation",
+      "unitText": "cm-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "np_mom_deltalow",
+      "description": "Estimated lower bound on the proton density from moment calculation",
+      "unitText": "cm-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wp_mom",
+      "description": "Proton thermal velocity. Equal to sqrt(2kT/m)",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wp_mom_deltahigh",
+      "description": "Estimated upper bound on the proton thermal speed from moment calculation",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wp_mom_deltalow",
+      "description": "Estimated lower bound on the proton thermal speed from moment calculation",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vp_mom_rtn",
+      "description": "Proton velocity vector, estimated from the radial thermal speed moment and flow angle",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vpr",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "psp_spc_vp_mom(0)"
+          },
+          {
+            "Name": "vpt",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "psp_spc_vp_mom(1)"
+          },
+          {
+            "Name": "vpn",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "psp_spc_vp_mom(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vp_mom_rtn_deltahigh",
+      "description": "Proton velocity vector component upper bounds from moment calculation",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "dvphr",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "psp_spc_dvph(0)"
+          },
+          {
+            "Name": "dvpht",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "psp_spc_dvph(1)"
+          },
+          {
+            "Name": "dvphn",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "psp_spc_dvph(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vp_mom_rtn_deltalow",
+      "description": "Proton velocity vector component lower bounds from moment calculation",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "dvplr",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "psp_spc_dvpl(0)"
+          },
+          {
+            "Name": "dvplt",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "psp_spc_dvpl(1)"
+          },
+          {
+            "Name": "dvpln",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "psp_spc_dvpl(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|vp_mom|",
+      "description": "\n               Velocity vector magnitude\n           ",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

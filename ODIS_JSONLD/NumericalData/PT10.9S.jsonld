@@ -1,0 +1,683 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT10.9S.jsonld",
+  "name": "Van Allen Probe B Radiation Belt Storm Probes Ion Composition Experiment (RBSPICE) Time of Flight \u00d7 Pulse Height, Low-Energy Resolution, High-Time Resolution Oxygen Intensities and Pressures sorted by Pitch Angles, Level 3 (L3), 10.9 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT10.9S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Louis.J.Lanzerotti",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Louis.J.Lanzerotti"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2022-08-18",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l3/rbspice/pap_tofxpholeht/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l3/rbspice/pap_tofxpholeht/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=RBSP-B-RBSPICE_LEV-3-PAP_TOFXPHOLEHT&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/RBSP/B/RBSPICE/L3/PAP/TOFXPHOLEHT/PT10.9S",
+  "description": "Van Allen Probe B, Radiation Belt Storm Probes Ion Composition Experiment, RBSPICE, Low Energy Resolution, High Time Resolution, Time of Flight \u00d7 Pulse Height Oxygen, TOFxPHOLEHT, Pitch Angles and Pressures, PAP, Level 3 Data Product. Oxygen Differential Flux Intensities and Pressures sorted by Pitch Angle. This Data Set contains Van Allen Probe B Radiation Belt Storm Probes Ion Composition Experiment, RBSPICE, Level 3 Data, Time of Flight \u00d7 Pulse Height (TOF\u00d7PH) Oxygen Flux Intensities and Pressures that are sorted by Pitch Angles. The Data include Unidirectional Differential Oxygen Fluxes (FPDU) that are measured at Low-Energy Resolution, High-Time Resolution by 6 Telescopes in 28 Channels from ~0.01 MeV to 2.0 MeV. The Data are listed by Telescope in Sector Order, with Spin Accumulation. plotted at the End of Accumulation. Also available are Percentage Error of Measurement, Quality Flag for the each Measurement Pitch Angle Bin and Time Step, calculated Perpendicular and Parallel Partial Pressure, Number Density calculated by integrating the Distribution Function and Pitch Angle, Total Flux Intensity observed during the Spin by intergrating over Energy and Pitch Angle, and Omnidirectional Total Flux Intensity per Spin. In addition, the Data Set contains Orbit Number, Spacecraft Position of the Spacecraft in GEO, SM, and GSM Coordinates, current Sector Number where each Spin is divided into 36 Sectors, Duration of the Accumulation, current Spin Number of the Spacecraft, Orbit Number, Dipole L Values in different Reference Frames. Level 3 Data include all Level 2 Data plus Spacecraft Positions, Pitch Angles of the six Telescopes based upon the measured Magnetic Field received from the Electric and Magnetic Field Instrument Suite and Integrated Science, EMFISIS, Instrument. This Processing is done in a Series of algorithmic Steps in which the EMFISIS Magnetic Field Data are loaded, the Energetic Particle, Composition and Thermal Plasma Suite, ECT, Magnetic Ephemeris Data are loaded, the Level 2 Flux Intensity Data File is copied, and the Pitch Angles are calculated and placed. Finally, the calculated Pitch Angles are written out along with the Level 2 Data Parameters to create the Level 3 RBSPICE Data Files.",
+  "abstract": "Van Allen Probe B, Radiation Belt Storm Probes Ion Composition Experiment, RBSPICE, Low Energy Resolution, High Time Resolution, Time of Flight \u00d7 Pulse Height Oxygen, TOFxPHOLEHT, Pitch Angles and Pressures, PAP, Level 3 Data Product. Oxygen Differential Flux Intensities and Pressures sorted by Pitch Angle. This Data Set contains Van Allen Probe B Radiation Belt Storm Probes Ion Composition Experiment, RBSPICE, Level 3 Data, Time of Flight \u00d7 Pulse Height (TOF\u00d7PH) Oxygen Flux Intensities and Pressures that are sorted by Pitch Angles. The Data include Unidirectional Differential Oxygen Fluxes (FPDU) that are measured at Low-Energy Resolution, High-Time Resolution by 6 Telescopes in 28 Channels from ~0.01 MeV to 2.0 MeV. The Data are listed by Telescope in Sector Order, with Spin Accumulation. plotted at the End of Accumulation. Also available are Percentage Error of Measurement, Quality Flag for the each Measurement Pitch Angle Bin and Time Step, calculated Perpendicular and Parallel Partial Pressure, Number Density calculated by integrating the Distribution Function and Pitch Angle, Total Flux Intensity observed during the Spin by intergrating over Energy and Pitch Angle, and Omnidirectional Total Flux Intensity per Spin. In addition, the Data Set contains Orbit Number, Spacecraft Position of the Spacecraft in GEO, SM, and GSM Coordinates, current Sector Number where each Spin is divided into 36 Sectors, Duration of the Accumulation, current Spin Number of the Spacecraft, Orbit Number, Dipole L Values in different Reference Frames. Level 3 Data include all Level 2 Data plus Spacecraft Positions, Pitch Angles of the six Telescopes based upon the measured Magnetic Field received from the Electric and Magnetic Field Instrument Suite and Integrated Science, EMFISIS, Instrument. This Processing is done in a Series of algorithmic Steps in which the EMFISIS Magnetic Field Data are loaded, the Energetic Particle, Composition and Thermal Plasma Suite, ECT, Magnetic Ephemeris Data are loaded, the Level 2 Flux Intensity Data File is copied, and the Pitch Angles are calculated and placed. Finally, the calculated Pitch Angles are written out along with the Level 2 Data Parameters to create the Level 3 RBSPICE Data Files.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time, Start of the Measurement Accumulation Interval",
+      "unitText": "ns",
+      "minValue": "1990-01-01T00:00:00.000000000",
+      "maxValue": "2030-01-01T00:00:01.999000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Measurement Start Time, UTC Format",
+      "description": "Measurement Start Time, UTC Time String Format, CCYY-DOYTHH:MM:SS.hhh",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Midpoint Epoch Time, DDOY Format",
+      "description": "Midpoint Epoch Time, MidET, Decimal Day of Year, DDOY, Format",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "367.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ephemeris Time, Start of the Spin Group Observation",
+      "description": "Ephemeris Time, Start Time of the Spin Group Observation Interval",
+      "unitText": "s",
+      "minValue": "3.15576e+08",
+      "maxValue": "7.88962e+08",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ephemeris Time, Midpoint of Spin Group Observation",
+      "description": "Ephemeris Time, Midpoint Time of the Spin Group Observation Interval. For Multi-Spin Measurements the midET is centered so that it properly represents the Time to be used to calculate the Look Direction of the Instrument.",
+      "unitText": "s",
+      "minValue": "3.15576e+08",
+      "maxValue": "7.88962e+08",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ephemeris Time, End of Spin Group Observation",
+      "description": "Ephemeris Time, End Time of the Spin Group Observation Interval",
+      "unitText": "s",
+      "minValue": "3.15576e+08",
+      "maxValue": "7.88962e+08",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time Duration, Spin Group Observation",
+      "description": "Time Duration, Spin Group Observation Interval",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Spin Number",
+      "description": "Spin Number as identified by the Spacecraft at the Beginning of the Measurement. The Spin Number Values are Cyclical.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "4294967295"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Differential Flux Intensity, Unidirectional, Pitch Angle binned",
+      "description": "Oxygen Differential Flux Intensity, Unidirectional, 49 keV to 161 keV, one record per spin binned by Pitch Angle in 17 Bins. This Format permits easy Energy-Pitch Angle Display. * Column 1 Labels from FODU_ENERGY: [ 0.0639000, 0.106000, 0.147000]. * Column 2 Labels from PA_MIDPOINT: [ 7.50000, 20.0000, 30.0000, 40.0000, 50.0000, 60.0000, 70.0000, 80.0000, 90.0000, 100.000, 110.000, 120.000, 130.000, 140.000, 150.000, 160.000, 172.500].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Differential Flux Intensity, Unidirectional, Spectrogram, Energy versus Pitch Angle",
+      "description": "Oxygen Differential Flux Intensity, Unidirectional, Spectrogram by Energy at Sample Pitch Angles. * Column 1 Labels from FODU_ENERGY: [\"FODU_Flux_0.064_MeV\",\"FODU_Flux_0.106_MeV\",\"FODU_Flux_0.147_MeV\"]. * Column 2 Labels from PA_MIDPOINT: [\"FODU_Flux_7.5_degPA\",\"FODU_Flux_20.0_degPA\",\"FODU_Flux_30.0_degPA\",\"FODU_Flux_40.0_degPA\",\"FODU_Flux_50.0_degPA\",\"FODU_Flux_60.0_degPA\",\"FODU_Flux_70.0_degPA\",\"FODU_Flux_80.0_degPA\",\"FODU_Flux_90.0_degPA\",\"FODU_Flux_100.0_degPA\",\"FODU_Flux_110.0_degPA\",\"FODU_Flux_120.0_degPA\",\"FODU_Flux_130.0_degPA\",\"FODU_Flux_140.0_degPA\",\"FODU_Flux_150.0_degPA\",\"FODU_Flux_160.0_degPA\",\"FODU_Flux_172.5_degPA\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Differential Flux Intensity, Unidirectional, Spectrogram, Pitch Angle versus Energy",
+      "description": "Oxygen Differential Flux Intensity, Unidirectional, Spectrogram by Pitch Angle at Sample Energies. * Column 1 Labels from FODU_ENERGY: [\"FODU_Flux_0.064_MeV\",\"FODU_Flux_0.106_MeV\",\"FODU_Flux_0.147_MeV\"]. * Column 2 Labels from PA_MIDPOINT: [\"FODU_Flux_7.5_degPA\",\"FODU_Flux_20.0_degPA\",\"FODU_Flux_30.0_degPA\",\"FODU_Flux_40.0_degPA\",\"FODU_Flux_50.0_degPA\",\"FODU_Flux_60.0_degPA\",\"FODU_Flux_70.0_degPA\",\"FODU_Flux_80.0_degPA\",\"FODU_Flux_90.0_degPA\",\"FODU_Flux_100.0_degPA\",\"FODU_Flux_110.0_degPA\",\"FODU_Flux_120.0_degPA\",\"FODU_Flux_130.0_degPA\",\"FODU_Flux_140.0_degPA\",\"FODU_Flux_150.0_degPA\",\"FODU_Flux_160.0_degPA\",\"FODU_Flux_172.5_degPA\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Differential Flux Intensity, Weighting Factors",
+      "description": "Oxygen Differential Flux Intensity, Weighting Factors used for Spin Integration of the Flux. The Weighting Factors are dependent on the Number of Observations made for each Energy Channel/Bin Combination per Spin. * Column 1 Labels from CHANNEL: [\" 0\",\" 1\",\" 2\"]. * Column 2 Labels from BIN: [\" 0\",\" 1\",\" 2\",\" 3\",\" 4\",\" 5\",\" 6\",\" 7\",\" 8\",\" 9\",\" 10\",\" 11\",\" 12\",\" 13\",\" 14\",\" 15\",\" 16\"].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-32768",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Percentage Error, Oxygen Differential Flux Intensity, UniDirectional, Pitch Angle binned",
+      "description": "Percentage Error, Oxygen Differential Flux Intensity, UniDirectional, Poisson Statistical Counting Percentage Error of the Measurement for each Energy Channel and Bin calculated by using 100*sqrt(Counts)^-1. * Column 1 Labels from FODU_ENERGY: [ 0.0639000, 0.106000, 0.147000]. * Column 2 Labels from PA_MIDPOINT: [ 7.50000, 20.0000, 30.0000, 40.0000, 50.0000, 60.0000, 70.0000, 80.0000, 90.0000, 100.000, 110.000, 120.000, 130.000, 140.000, 150.000, 160.000, 172.500].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Percentage Error, Oxygen Differential Flux Intensity, Unidirectional, Spectrogram, Energy versus Pitch Angle",
+      "description": "Percentage Error, Oxygen Differential Flux Intensity, Unidirectional, Spectrogram by Energy at Sample Pitch Angles. * Column 1 Labels from FODU_ENERGY: [\"FODU_Error_Flux_0.064_MeV\",\"FODU_Error_Flux_0.106_MeV\",\"FODU_Error_Flux_0.147_MeV\"]. * Column 2 Labels from PA_MIDPOINT: [\"FODU_Error_Flux_7.5_degPA\",\"FODU_Error_Flux_20.0_degPA\",\"FODU_Error_Flux_30.0_degPA\",\"FODU_Error_Flux_40.0_degPA\",\"FODU_Error_Flux_50.0_degPA\",\"FODU_Error_Flux_60.0_degPA\",\"FODU_Error_Flux_70.0_degPA\",\"FODU_Error_Flux_80.0_degPA\",\"FODU_Error_Flux_90.0_degPA\",\"FODU_Error_Flux_100.0_degPA\",\"FODU_Error_Flux_110.0_degPA\",\"FODU_Error_Flux_120.0_degPA\",\"FODU_Error_Flux_130.0_degPA\",\"FODU_Error_Flux_140.0_degPA\",\"FODU_Error_Flux_150.0_degPA\",\"FODU_Error_Flux_160.0_degPA\",\"FODU_Error_Flux_172.5_degPA\"].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Percentage Error, Oxygen Differential Flux Intensity, Unidirectional, Spectrogram, Pitch Angle versus Energy",
+      "description": "Percentage Error, Oxygen Differential Flux Intensity, Unidirectional, Spectrogram by Pitch Angle at Sample Energies. * Column 1 Labels from FODU_ENERGY: [\"FODU_Error_Flux_0.064_MeV\",\"FODU_Error_Flux_0.106_MeV\",\"FODU_Error_Flux_0.147_MeV\"]. * Column 2 Labels from PA_MIDPOINT: [\"FODU_Error_Flux_7.5_degPA\",\"FODU_Error_Flux_20.0_degPA\",\"FODU_Error_Flux_30.0_degPA\",\"FODU_Error_Flux_40.0_degPA\",\"FODU_Error_Flux_50.0_degPA\",\"FODU_Error_Flux_60.0_degPA\",\"FODU_Error_Flux_70.0_degPA\",\"FODU_Error_Flux_80.0_degPA\",\"FODU_Error_Flux_90.0_degPA\",\"FODU_Error_Flux_100.0_degPA\",\"FODU_Error_Flux_110.0_degPA\",\"FODU_Error_Flux_120.0_degPA\",\"FODU_Error_Flux_130.0_degPA\",\"FODU_Error_Flux_140.0_degPA\",\"FODU_Error_Flux_150.0_degPA\",\"FODU_Error_Flux_160.0_degPA\",\"FODU_Error_Flux_172.5_degPA\"].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Oxygen Differential Flux Intensity, Unidirectional, Pitch Angle and Time Step",
+      "description": "Data Quality Flag, Oxygen Differential Flux Intensity, Unidirectional, Data Quality Flags for each Pitch Angle Bin and Time Step. See PREBM Standards for Definitions. * Column 1 Labels from FODU_ENERGY: [ 0.0639000, 0.106000, 0.147000]. * Column 2 Labels from PA_MIDPOINT: [ 7.50000, 20.0000, 30.0000, 40.0000, 50.0000, 60.0000, 70.0000, 80.0000, 90.0000, 100.000, 110.000, 120.000, 130.000, 140.000, 150.000, 160.000, 172.500].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-32768",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Oxygen Differential Flux Intensity, Unidirectional, Spectrogram, Energy versus Pitch Angle",
+      "description": "Data Quality Flag, Oxygen Differential Flux Intensity, Unidirectional, Spectrogram by Energy at Sample Pitch Angles. * Column 1 Labels from FODU_ENERGY: [\"FODU_Qual_Flux_0.064_MeV\",\"FODU_Qual_Flux_0.106_MeV\",\"FODU_Qual_Flux_0.147_MeV\"]. * Column 2 Labels from PA_MIDPOINT: [\"FODU_Qual_Flux_7.5_degPA\",\"FODU_Qual_Flux_20.0_degPA\",\"FODU_Qual_Flux_30.0_degPA\",\"FODU_Qual_Flux_40.0_degPA\",\"FODU_Qual_Flux_50.0_degPA\",\"FODU_Qual_Flux_60.0_degPA\",\"FODU_Qual_Flux_70.0_degPA\",\"FODU_Qual_Flux_80.0_degPA\",\"FODU_Qual_Flux_90.0_degPA\",\"FODU_Qual_Flux_100.0_degPA\",\"FODU_Qual_Flux_110.0_degPA\",\"FODU_Qual_Flux_120.0_degPA\",\"FODU_Qual_Flux_130.0_degPA\",\"FODU_Qual_Flux_140.0_degPA\",\"FODU_Qual_Flux_150.0_degPA\",\"FODU_Qual_Flux_160.0_degPA\",\"FODU_Qual_Flux_172.5_degPA\"].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-32768",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Oxygen Differential Flux Intensity, Unidirectional, Spectrogram, Pitch Angle versus Energy",
+      "description": "Data Quality Flag, Oxygen Differential Flux Intensity, Unidirectional, Spectrogram by Pitch Angle at Sample Energies. * Column 1 Labels from FODU_ENERGY: [\"FODU_Qual_Flux_0.064_MeV\",\"FODU_Qual_Flux_0.106_MeV\",\"FODU_Qual_Flux_0.147_MeV\"]. * Column 2 Labels from PA_MIDPOINT: [\"FODU_Qual_Flux_7.5_degPA\",\"FODU_Qual_Flux_20.0_degPA\",\"FODU_Qual_Flux_30.0_degPA\",\"FODU_Qual_Flux_40.0_degPA\",\"FODU_Qual_Flux_50.0_degPA\",\"FODU_Qual_Flux_60.0_degPA\",\"FODU_Qual_Flux_70.0_degPA\",\"FODU_Qual_Flux_80.0_degPA\",\"FODU_Qual_Flux_90.0_degPA\",\"FODU_Qual_Flux_100.0_degPA\",\"FODU_Qual_Flux_110.0_degPA\",\"FODU_Qual_Flux_120.0_degPA\",\"FODU_Qual_Flux_130.0_degPA\",\"FODU_Qual_Flux_140.0_degPA\",\"FODU_Qual_Flux_150.0_degPA\",\"FODU_Qual_Flux_160.0_degPA\",\"FODU_Qual_Flux_172.5_degPA\"].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-32768",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Channel, Midpoint Energy",
+      "description": "Oxygen Channel, Midpoint Energy, Values equal to -1 indicate that an Energy Definition for this Channel is not applicable",
+      "unitText": "MeV",
+      "minValue": "0.04",
+      "maxValue": "0.3",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Partial Pressure, Perpendicular",
+      "description": "Oxygen Partial Pressure, Perpendicular, calculated for Energies from 49 keV to 161 keV. The Calculation excludes Noisy Energy Channels.",
+      "unitText": "nPa",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Partial Pressure, Parallel",
+      "description": "Oxygen Partial Pressure, Parallel, calculated for Energies from 49 keV to 161 keV. The Calculation excludes Noisy Energy Channels.",
+      "unitText": "nPa",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Number Density, integrated over Energy and Pitch Angle",
+      "description": "Oxygen Number Density, calculated by integrating the Distribution Function over Pitch Angles and over Energies from 49 keV to 161 keV. The Integration excludes Noisy Energy Channels.",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "6.0e+12",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Total Integral Flux Intensity, Spin Integrated over Pitch Angle and Energy",
+      "description": "Oxygen Total Integral Flux Intensity, Spin Integrated over Pitch Angles and over Energies 49keV to 161 keV. The Integration excludes Noisy Energy Channels.",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "6.0e+12",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Total Integral Flux Intensity, Omnidirectional",
+      "description": "Oxygen Total Integral Flux Intensity, Omnidirectional, Spin integrated over Energies from 49 keV to 161 keV",
+      "unitText": "(cm^2 s MeV)^-1",
+      "minValue": "0.0",
+      "maxValue": "6.0e+12",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "0.0639000"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "0.106000"
+            }
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "0.147000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Flux Intensity, Spin Minimum",
+      "description": "Oxygen Flux Intensity, Spin Minimum for each Energy Channel, 49 keV to 161 keV",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "0.0",
+      "maxValue": "6.0e+12",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "0.0639000"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "0.106000"
+            }
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "0.147000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Flux Intensity, Spin Maximum",
+      "description": "Oxygen Flux Intensity, Spin Maximum for each Energy Channel, 49 keV to 161 keV",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "0.0",
+      "maxValue": "6.0e+12",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "0.0639000"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "0.106000"
+            }
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "0.147000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Channel, Energy Range",
+      "description": "Oxygen Channel, Energy Range, upper and lower Limits: A Value of -1 indicates either that an Energy Definition for this Measurement Channel is not applicable or that the upper Energy Limit of the Measurement Channel is undefined, which means that the Channel becomes integral.",
+      "unitText": "MeV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle Bin Midpoint",
+      "description": "Pitch Angle Bin Midpoint, Center Points of the Bin Ranges",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle Bin Range Limits, Minimum Value and Maximum Value for each Bin",
+      "description": "Pitch Angle Bin Range Limits, Minimum Value and Maximum Value for each Bin",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2 17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position Vector, GEO, Cartesian Coordinates",
+      "description": "Spacecraft Position Vector, Geographic, GEO, Cartesian Coordinates",
+      "unitText": "Earth radii",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "XGEO",
+            "Index": "1"
+          },
+          {
+            "Name": "YGEO",
+            "Index": "2"
+          },
+          {
+            "Name": "ZGEO",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position Vector, SM, Cartesian Coordinates",
+      "description": "Spacecraft Position Vector, Solar Magnetospheric, SM, Cartesian Coordinates",
+      "unitText": "Earth radii",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "XSM",
+            "Index": "1"
+          },
+          {
+            "Name": "YSM",
+            "Index": "2"
+          },
+          {
+            "Name": "ZSM",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position Vector, GSM, Cartesian Coordinates",
+      "description": "Spacecraft Position Vector, Geocentric Solar Magnetospheric, GSM, Cartesian Coordinates",
+      "unitText": "Earth radii",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "XGSM",
+            "Index": "1"
+          },
+          {
+            "Name": "YGSM",
+            "Index": "2"
+          },
+          {
+            "Name": "ZGSM",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Spacecraft Position Vector Data",
+      "description": "Data Quality Flag, Spacecraft Position Vector Data, all Coordinate Systems, 0=Good, 1=Bad",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbit Number",
+      "description": "Orbit Number, at the Time of the Measurement",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "5000",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dipole L Value, SM Coordinates",
+      "description": "Dipole L Value, Solar Magnetospheric, SM, Coordinates",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "McIlwain L Value, Equatorial, computed by using ECT MagEIS Ephemeris Data",
+      "description": "McIlwain L Value, Equatorial, derived from the Energetic Particle, Composition, and Thermal Plasma, ECT, Magnetic Electron Ion Spectrometer, MagEIS, Ephemeris Data",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roederer L* Value, for the Average Pitch Angle, computed by using ECT MagEIS Ephemeris Data",
+      "description": "Roederer L* Value, for the Average Pitch Angle, derived from the Energetic Particle, Composition, and Thermal Plasma, ECT, Magnetic Electron Ion Spectrometer, MagEIS, Ephemeris Data",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Average Pitch Angle Integral Invariant, computed by using ECT MagEIS Ephemeris Data",
+      "description": "Average Pitch Angle Integral Invariant, derived from the Energetic Particle, Composition, and Thermal Plasma, ECT, Magnetic Electron Ion Spectrometer, MagEIS, Ephemeris Data",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, MLT, CD Coordinates, computed by using ECT MagEIS Ephemeris Data",
+      "description": "Spacecraft Position, Magnetic Local Time, MLT, Centered Dipole, CD, Coordinates, derived from the Energetic Particle, Composition, and Thermal Plasma, ECT, Magnetic Electron Ion Spectrometer, MagEIS, Ephemeris Data",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0e+31"
+    }
+  ]
+}

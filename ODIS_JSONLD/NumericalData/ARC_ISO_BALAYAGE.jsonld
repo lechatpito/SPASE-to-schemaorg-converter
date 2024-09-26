@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARC_ISO_BALAYAGE.jsonld",
+  "name": "ARCAD3 ISOPROBE probe sweeps",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARC_ISO_BALAYAGE.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Dominique.Lagoutte",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Dominique.Lagoutte"
+    }
+  ],
+  "sdDatePublished": "2022-03-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ARC_ISO_BALAYAGE",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ARCAD-3/Isoprobe/ARC_ISO_BALAYAGE",
+  "description": "This data set contains ARCAD-3 Isoprobe probe sweeps (sweep information, amplitude and phase).\nThe logarithmic amplitude and the phase values of the mutual impedance are given versus the frequency (log(|Z|) and PHI(Z)). Four basic sweeps are stored : B1 active sweep from 100 kHz to 9675 kHz with the DC configuration, B2 active sweep from 100 kHz to 9675 kHz with the DL configuration, B3 passive sweep from 100 kHz to 9675 kHz with the DL configuration and B4 active sweep from 100 kHz to 1587.5 kHz with the DL configuration. The frequency resolution depends on the telemetry type (TMF, TMS4, TMS30 and TMS120) and on the operating mode (BAFA, BAFI, BAFP and BAFC). A fifth sweep (status sweep) is recorded when the experiment is set in a high resolution mode (extremum tracking).",
+  "abstract": "This data set contains ARCAD-3 Isoprobe probe sweeps (sweep information, amplitude and phase).\nThe logarithmic amplitude and the phase values of the mutual impedance are given versus the frequency (log(|Z|) and PHI(Z)). Four basic sweeps are stored : B1 active sweep from 100 kHz to 9675 kHz with the DC configuration, B2 active sweep from 100 kHz to 9675 kHz with the DL configuration, B3 passive sweep from 100 kHz to 9675 kHz with the DL configuration and B4 active sweep from 100 kHz to 1587.5 kHz with the DL configuration. The frequency resolution depends on the telemetry type (TMF, TMS4, TMS30 and TMS120) and on the operating mode (BAFA, BAFI, BAFP and BAFC). A fifth sweep (status sweep) is recorded when the experiment is set in a high resolution mode (extremum tracking).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD-3 ISOPROBE Probe sweeps impedance magnitude (100 - 9675 kHz)",
+      "description": "ARCAD-3 ISOPROBE Probe sweeps impedance magnitude",
+      "unitText": "dB",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD-3 ISOPROBE Probe sweeps impedance phase (100 - 9675 kHz)",
+      "description": "ARCAD-3 ISOPROBE Probe sweeps impedance phase",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

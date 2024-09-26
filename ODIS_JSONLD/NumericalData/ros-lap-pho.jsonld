@@ -1,0 +1,131 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ros-lap-pho.jsonld",
+  "name": "Rosetta - LAP - photosaturation current (PHO)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ros-lap-pho.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/Anders.Eriksson",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/Anders.Eriksson"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/Erik.Johansson",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/Erik.Johansson"
+    }
+  ],
+  "sdDatePublished": "2019-09-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Rosetta/LAP/ros-lap-pho",
+  "description": "There are two estimates of the photoemission current from LAP1 sweeps of a sunlit probe. \nI_PH0_60M in PH0 files is a statistical estimate from several sweeps (over 60 minute \nwindows), while I_PH0_S in the ASW files is an estimate from a single sweep with larger \nuncertainties but higher time resolution (usually 160 s). As LAP1 has shown no significant \ncontamination effects, these estimates should be directly proportional to the EUV flux at the \nRosetta position in the 20-130 nm band [Johansson et al, 2017]. For LAP2, the same \ntechniques have revealed a lower photoemission at the start of the cometary phase of the \nemission, and a sharp drop in photoemission after significant thruster firings (e.g. dayside \nexcursion, 60% decrease) with sporadic recoveries and relapses. We therefore only use LAP1 \nbased values. \n\nWhile there is no other source of photoemission measurements than LAP, its value is \ncontrolled by solar EUV radiation which is known from e.g. TIMED and SDO at Earth and \nMAVEN at Mars. Photoemission values by both methods were presented by Johansson et al. \n[2017] and compared to Earth and Mars data. The two methods were found to give consistent \nresults, also in agreement with a third independent method immune to instrument offsets. \nHowever, around perihelion all methods returned about 50% less photoemission than \nexpected from the Earth and Mars EUV fluxes. This may be a real effect, for example because \nof attenuation of solar EUV radiation by large numbers of small dust grains at large distance \nfrom the nucleus. It is also possible that this somehow relates to probe surface contamination, \nthough no other such effects have been noted on LAP1.\n\nThis is a preliminary data set which will be replaced by another in a few months.\n            ",
+  "abstract": "There are two estimates of the photoemission current from LAP1 sweeps of a sunlit probe. \nI_PH0_60M in PH0 files is a statistical estimate from several sweeps (over 60 minute \nwindows), while I_PH0_S in the ASW files is an estimate from a single sweep with larger \nuncertainties but higher time resolution (usually 160 s). As LAP1 has shown no significant \ncontamination effects, these estimates should be directly proportional to the EUV flux at the \nRosetta position in the 20-130 nm band [Johansson et al, 2017]. For LAP2, the same \ntechniques have revealed a lower photoemission at the start of the cometary phase of the \nemission, and a sharp drop in photoemission after significant thruster firings (e.g. dayside \nexcursion, 60% decrease) with sporadic recoveries and relapses. We therefore only use LAP1 \nbased values. \n\nWhile there is no other source of photoemission measurements than LAP, its value is \ncontrolled by solar EUV radiation which is known from e.g. TIMED and SDO at Earth and \nMAVEN at Mars. Photoemission values by both methods were presented by Johansson et al. \n[2017] and compared to Earth and Mars data. The two methods were found to give consistent \nresults, also in agreement with a third independent method immune to instrument offsets. \nHowever, around perihelion all methods returned about 50% less photoemission than \nexpected from the Earth and Mars EUV fluxes. This may be a real effect, for example because \nof attenuation of solar EUV radiation by large numbers of small dust grains at large distance \nfrom the nucleus. It is also possible that this somehow relates to probe surface contamination, \nthough no other such effects have been noted on LAP1.\n\nThis is a preliminary data set which will be replaced by another in a few months.\n            ",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "i_ph0_60m",
+      "description": "Photosaturation current derived collectively from multiple sweeps",
+      "unitText": "A",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.e9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "i_ph0_60m : qual",
+      "description": "Quality value in the range 0 (worst) to 1 (best). \nCorresponds to goodness of fit or how well the model fits the data.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag",
+      "description": "Quality flag constructed as the sum of multiple terms, \ndepending on what quality related effects are present. Each digit is either in \nthe range 0 (best) to 7 (worst), or 9 (not used)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

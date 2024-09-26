@@ -1,0 +1,289 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/WAVEFORM.jsonld",
+  "name": "Van Allen Probe B high frequency receiver waveform data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/WAVEFORM.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Craig.A.Kletzing",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Craig.A.Kletzing"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2022-08-18",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l2/emfisis/hfr/waveform/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In CDF via ftp from CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l2/emfisis/hfr/waveform/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/RBSP/B/EMFISIS/HFR/L2/WAVEFORM",
+  "description": "High Frequency Receiver (HFR) data of Single Axis AC Electric Field Waveform (Selectable between the U, V and W Axis). Units: V/m. Sample Rate: 1 Msample/sec. Sample Size: 4096 samples. Cadence: variable.",
+  "abstract": "High Frequency Receiver (HFR) data of Single Axis AC Electric Field Waveform (Selectable between the U, V and W Axis). Units: V/m. Sample Rate: 1 Msample/sec. Sample Size: 4096 samples. Cadence: variable.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Default time",
+      "unitText": "ns",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Expanded times",
+      "unitText": "ns",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFRsamples",
+      "description": "V/m displayed as spectrogram of values vs time offsets",
+      "unitText": "V/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFRsamples",
+      "description": "V/m displayed as very high resolution time-series",
+      "unitText": "V/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFRsamples",
+      "description": "[NOT USEFUL] HFR Waveform",
+      "unitText": "V/m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HBGain",
+      "description": "HFR Gain Select (0 - Standard Gain, 1 - Attenuator On)",
+      "unitText": "(0=stnd,1=Atten)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HBSelect",
+      "description": "HFR receiver Antenna Select (0 - U axis,1 - V axis,2 - W axis {spin axis})",
+      "unitText": "(0=U,1=V,2=W/Spin)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Sun Pulse time tag. Epoch of the last sun pulse. (Lowest 6 bits of MET and subseconds.",
+      "unitText": "ns",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "timeOffsets",
+      "description": "Time step, in seconds, for each of the 4096 points referenced from the first point.",
+      "unitText": "ns",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR_Spec",
+      "description": "[NOT YET FUNCTIONAL] Spectrogram of HFR waveform",
+      "unitText": "V^2/m^2/Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fftSize",
+      "description": "size of FFT",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "APID",
+      "description": "APID",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Comp No 1",
+      "description": "Comp No 1",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NRV TimeOffsets",
+      "description": "NRV TimeOffsets",
+      "unitText": "ns",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    }
+  ]
+}

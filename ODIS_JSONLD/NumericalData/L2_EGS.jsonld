@@ -1,0 +1,322 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/L2_EGS.jsonld",
+  "name": "TIMED SEE Level2 EGS Solar Irradiance Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/L2_EGS.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Thomas.N.Woods",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Thomas.N.Woods"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://lasp.colorado.edu/home/see/data/",
+      "encodingFormat": "NetCDF",
+      "name": "SEE Data Products web page",
+      "description": "This web page allows the request of data files for this product.  To request data: for the EGS data type of interest, click the year of interest to go the the ftp directory of files and download the desired day-long file by clicking on it."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/TIMED/SEE/L2_EGS",
+  "description": "The EUV Grating Spectrograph (EGS) aboard SEE performs measurements of the Sun for about 3 minutes every orbit (97 minutes) which usually gives 14-15 measurements per day. The Level 2 data is time averaged over the entire day, after being 1-AU corrected and removing flares. The 1-AU correction is provided.",
+  "abstract": "The EUV Grating Spectrograph (EGS) aboard SEE performs measurements of the Sun for about 3 minutes every orbit (97 minutes) which usually gives 14-15 measurements per day. The Level 2 data is time averaged over the entire day, after being 1-AU corrected and removing flares. The 1-AU correction is provided.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "S"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "SEE",
+    "EGS",
+    "Sun"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "DATE",
+      "description": "Date of observation",
+      "unitText": "YYYYDOY",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Wavelength intervals",
+      "description": "Array of wavelength intervals, half-Angstrom centers",
+      "unitText": "nm",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EGS median solar irradiance",
+      "description": "Array of median solar irradiances for each wavelength interval.  This is the spectrum.",
+      "unitText": "W / m^2 / nm",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differences between the median and weighted averaged solar irradiances",
+      "description": "Array of differences between the median and weighted averaged solar irradiances for each wavelength interval",
+      "unitText": "W / m^2 / nm",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Accuracy of solar irradiance",
+      "description": "Accuracy of solar irradiance",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Measurement precision",
+      "description": "Measurement precision",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard deviation of the median",
+      "description": "Standard deviation of the median",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of points used in determining the daily average",
+      "description": "Array of the Number of points (1-Angstrom-gridded measurements) used in determining the daily average for each wavelength interval",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AU correction factor",
+      "description": "AU correction factor for date",
+      "unitText": "1 / (AU^2)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Order Sorting correction applied to flux_median",
+      "description": "Order Sorting correction applied to flux_median",
+      "unitText": "W/m^2/nm",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Order Sorting correction applied to weighted avg irradiance",
+      "description": "Order Sorting correction applied to weighted avg irradiance",
+      "unitText": "W/m^2/nm",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Degradation function linear extrapolation/interpolation flag",
+      "description": "Long value = 1 if degradation function is linearly extrapolated, 0 if linearly interpolated",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Averaged atmospheric correction factors",
+      "description": "Array of Averaged atmospheric correction factors for each wavelength interval",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minimum atmospheric correction factors",
+      "description": "Array of Minimum atmospheric correction factors",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Maximum atmospheric correction factors",
+      "description": "Array of Maximum atmospheric correction factors",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Average instrument degradation correction factors",
+      "description": "Array of Average instrument degradation correction factors",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minimum instrument degradation correction factors",
+      "description": "Array of Minimum instrument degradation correction factors",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Maximum instrument degradation correction factors",
+      "description": "Array of Maximum instrument degradation correction factors",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1690",
+        "elements": []
+      }
+    }
+  ]
+}

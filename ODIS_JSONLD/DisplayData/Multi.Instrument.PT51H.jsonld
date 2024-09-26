@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/DisplayData/Multi.Instrument.PT51H.jsonld",
+  "name": "Hawkeye Multi-Instrument Summary Plots",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/DisplayData/Multi.Instrument.PT51H.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.A.Van.Allen",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.A.Van.Allen"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Scott.Boardsen",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Scott.Boardsen"
+    }
+  ],
+  "sdDatePublished": "2012-09-18",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://nssdc.gsfc.nasa.gov/hawkeye/hawkeye_summary.html",
+      "encodingFormat": "GIF",
+      "name": "Hawkeye Summary Plots",
+      "description": "Access via web form and directory lists to GIF format plots for Hawkeye multi-instrument Summary Plots "
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://VWO/DisplayData/Hawkeye/VLF/Multi.Instrument.PT51H",
+  "description": "To help the user in searching through the Hawkeye data set, summary plots of the entire Hawkeye archive have been generated. Each summary plot consists of an entire orbit's worth of data from all of the instruments, along with the spacecraft position. Solar wind plasma pressure and IMF data have been added to the plots to help the user in data selection.\n\t\t\n\t\tHAWKEYE SUMMARY PLOT LAYOUT\n\nTitle\n\nThe orbit number is the orbit number at start of the plot time interval.\nDay 1 = January 1.\n\nFirst (top) panel\n\nSolar Wind pressure (red curve and red dots).\nSolar Wind IMF Bz component (in GSM) (blue dots).\nIMP-8 spacecraft Bz (in GSM) component (black curve).\n\nSecond Panel\n\nThe two numbers above the second panel are the positions of IMP-8 in degrees ( sign(y_gsm) * atan(sqrt(y_gsm^2+z_gsm^2)/x_gsm) ), at the start of and at the end of the plot time interval. Usually, if IMP-8 lies between -110 and +110 degrees it is in the solar wind.\nSolar Wind IMF magnetic field magnitude |B|  (blue dots).\nIMP-8 magnetic Field magnitude |B| (black curve).\nHawkeye magnetic Field magnitude |B| (red curve).\n\nThird Panel\n\nThe two numbers above the third panel are:\n(left corner) The angle between the sun vector and spacecraft spin plane. Because the Hawkeye particle instrument's (LEPEDEA) field view is +/- 15 degrees out the the spin plane, this angle has to be less than 15 degrees in order to detect the solar wind when the spacecraft is located in the solar wind.\n(right corner)The spin period of the spacecraft in seconds.\nThe electron energy-time spectrogram averaged over the solid angle sampled by LEPEDEA is plotted.\n\nFourth Panel\n\nThe ion energy-time spectrogram averaged over the solid angle sampled by LEPEDEA\n\nFifth Panel\n\nThe frequency-time spectrogram of the magnetic field as measured by the loop antenna\nThe electron cyclotron frequency (white curve) as determined by the on-board magnetometer \n\nSixth (bottom) Panel\n\nThe electric field frequency-time spectrogram as measured by the dipole antenna \nThe electron cyclotron frequency (white curve) as determined by the on-board magnetometer \n\nTime Axis Labels\n\nThe universal time (hr:mm).\nThe spacecraft position in Earth radii (RE) in units of RE.\nThe spacecraft position in magnetic latitude (MLAT) in units of degrees.\nThe spacecraft position in magnetic local time (MLT) in units of degrees.\nThe spacecraft position in X-GSM in units of RE.\n\t\t ",
+  "abstract": "To help the user in searching through the Hawkeye data set, summary plots of the entire Hawkeye archive have been generated. Each summary plot consists of an entire orbit's worth of data from all of the instruments, along with the spacecraft position. Solar wind plasma pressure and IMF data have been added to the plots to help the user in data selection.\n\t\t\n\t\tHAWKEYE SUMMARY PLOT LAYOUT\n\nTitle\n\nThe orbit number is the orbit number at start of the plot time interval.\nDay 1 = January 1.\n\nFirst (top) panel\n\nSolar Wind pressure (red curve and red dots).\nSolar Wind IMF Bz component (in GSM) (blue dots).\nIMP-8 spacecraft Bz (in GSM) component (black curve).\n\nSecond Panel\n\nThe two numbers above the second panel are the positions of IMP-8 in degrees ( sign(y_gsm) * atan(sqrt(y_gsm^2+z_gsm^2)/x_gsm) ), at the start of and at the end of the plot time interval. Usually, if IMP-8 lies between -110 and +110 degrees it is in the solar wind.\nSolar Wind IMF magnetic field magnitude |B|  (blue dots).\nIMP-8 magnetic Field magnitude |B| (black curve).\nHawkeye magnetic Field magnitude |B| (red curve).\n\nThird Panel\n\nThe two numbers above the third panel are:\n(left corner) The angle between the sun vector and spacecraft spin plane. Because the Hawkeye particle instrument's (LEPEDEA) field view is +/- 15 degrees out the the spin plane, this angle has to be less than 15 degrees in order to detect the solar wind when the spacecraft is located in the solar wind.\n(right corner)The spin period of the spacecraft in seconds.\nThe electron energy-time spectrogram averaged over the solid angle sampled by LEPEDEA is plotted.\n\nFourth Panel\n\nThe ion energy-time spectrogram averaged over the solid angle sampled by LEPEDEA\n\nFifth Panel\n\nThe frequency-time spectrogram of the magnetic field as measured by the loop antenna\nThe electron cyclotron frequency (white curve) as determined by the on-board magnetometer \n\nSixth (bottom) Panel\n\nThe electric field frequency-time spectrogram as measured by the dipole antenna \nThe electron cyclotron frequency (white curve) as determined by the on-board magnetometer \n\nTime Axis Labels\n\nThe universal time (hr:mm).\nThe spacecraft position in Earth radii (RE) in units of RE.\nThe spacecraft position in magnetic latitude (MLAT) in units of degrees.\nThe spacecraft position in magnetic local time (MLT) in units of degrees.\nThe spacecraft position in X-GSM in units of RE.\n\t\t ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "keywords": [
+    "Dynamic Spectrogram",
+    "Spectrogram",
+    "AKR",
+    "Auroral hiss",
+    "Auroral Kilometric Radiation",
+    "Banded emissions",
+    "Broadband Electrostatic Noise",
+    "BEN",
+    "Chorus",
+    "Continuum radiation",
+    "Electromagnetic Ion Cyclotron waves",
+    "EMIC",
+    "Electron Cyclotron Harmonics",
+    "Kilometric Continuum radiation",
+    "Myriametric radiation",
+    "Plasmaspheric Hiss",
+    "Solar radio burst",
+    "Terrestrial Kilometric Radiation",
+    "TKR",
+    "UHR",
+    "Upper hybrid resonance",
+    "Whistler mode",
+    "Whistlers"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

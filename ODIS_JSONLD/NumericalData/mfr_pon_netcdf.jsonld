@@ -1,0 +1,148 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mfr_pon_netcdf.jsonld",
+  "name": "Wind data in the mesosphere and lower thermosphere estimated from the observation data of the MF radar at Pontianak (NetCDF format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mfr_pon_netcdf.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Toshitaka.Tsuda",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Toshitaka.Tsuda"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Iain.Reid",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Iain.Reid"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Erlan.Suherlan",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Erlan.Suherlan"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Noriko.Hashiguchi",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Noriko.Hashiguchi"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/RISH.Metadata.Management.Group",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/RISH.Metadata.Management.Group"
+    }
+  ],
+  "sdDatePublished": "2016-10-08",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/iugonet/index-idr.html",
+      "encodingFormat": "NetCDF",
+      "name": "Meteor Wind and Medium Frequency Radar Data over Indonesia",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/RISH/misc/PON/MFradar/mfr_pon_netcdf",
+  "description": "The wind data in the mesosphere and lower thermosphere (60-100 km) estimated from the observation data of the MF radar at Pontianak, Indonesia (0.003S, 109.36E). The data are stored in the NetCDF (Network Common Data From) named (year)(month)(day)_fca.nc. The netCDF file includes year, month, day, time (universal time), height, zonal, meridional and vertical winds of the original data in the binary format (Full Correlation Analysis: FCA). The wind data corresponding to \"bad\" status code (other than 0) in the original data are replaced by missing value. The wind data for a period from September 2, 1999 to present are available now. In the future, the wind data for other periods will be released.",
+  "abstract": "The wind data in the mesosphere and lower thermosphere (60-100 km) estimated from the observation data of the MF radar at Pontianak, Indonesia (0.003S, 109.36E). The data are stored in the NetCDF (Network Common Data From) named (year)(month)(day)_fca.nc. The netCDF file includes year, month, day, time (universal time), height, zonal, meridional and vertical winds of the original data in the binary format (Full Correlation Analysis: FCA). The wind data corresponding to \"bad\" status code (other than 0) in the original data are replaced by missing value. The wind data for a period from September 2, 1999 to present are available now. In the future, the wind data for other periods will be released.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "lat",
+      "description": "Latitude of radar location",
+      "unitText": "degree_north",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon",
+      "description": "Longitude of radar location",
+      "unitText": "degree_east",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "range",
+      "description": "Altitude (above sea level)",
+      "unitText": "m",
+      "minValue": "60",
+      "maxValue": "100",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Hours since midnight of every day. Universal time is used for time data.",
+      "unitText": "second",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "uwind",
+      "description": "Zonal wind (eastward wind is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vwind",
+      "description": "Meridional wind (northward wind is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wwind",
+      "description": "Vertical wind (upflow is positive.)",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-9999.0"
+    }
+  ]
+}

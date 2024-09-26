@@ -1,0 +1,226 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0S.jsonld",
+  "name": "UCLA MHD and iPic3D model Agyrotropy results",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Raymond.J.Walker",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Raymond.J.Walker"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.M.Weygand",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.M.Weygand"
+    }
+  ],
+  "sdDatePublished": "2021-05-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://vmo.igpp.ucla.edu/data1/UCLA-SPSG/MHD-IPIC3D/2008-02-15/Agyrotropy_34000.dat",
+      "encodingFormat": "Text",
+      "name": "UCLA MHD-iPic3D Repository",
+      "description": "Results from the UCLA MHD and iPic3D model run for the event on 2008-02-15."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/UCLA/MHD-IPIC3D/2008-02-15/PT0S",
+  "description": "Agyrotropy and position vector results from UCLA MHD and iPic3D model run for the event on 2008-02-15.",
+  "abstract": "Agyrotropy and position vector results from UCLA MHD and iPic3D model run for the event on 2008-02-15.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "E"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "M"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "g"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "M"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "g"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Position values from UCLA MHD and iPic3D model",
+      "description": "Position vector from UCLA MHD and iPic3D model",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "X",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "x",
+            "Units": "Re"
+          },
+          {
+            "Name": "Y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "y",
+            "Units": "Re"
+          },
+          {
+            "Name": "Z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "z",
+            "Units": "Re"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Agyrotropy",
+      "description": "Agyrotropy (ratio of Eigen values) from UCLA MHD and iPic3D model.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

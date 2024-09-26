@@ -1,0 +1,612 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.264S.jsonld",
+  "name": "ELFIN B Energetic Particle Detectors for Ions (EPD-I) 0.264 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.264S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Vassilis.Angelopoulos",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Vassilis.Angelopoulos"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Cindy.Russell",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Cindy.Russell"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Jiashu.Wu",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Jiashu.Wu"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Colin.Wilkins",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Colin.Wilkins"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Ryan.Caron",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Ryan.Caron"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Ethan.Tsai",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Ethan.Tsai"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.King",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.King"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Austin.Norris",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Austin.Norris"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.M.Weygand",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.M.Weygand"
+    }
+  ],
+  "sdDatePublished": "2024-06-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/elfin/elfinb/l1/fast/ion/",
+      "encodingFormat": "CDF",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftps from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/elfin/elfinb/l1/fast/ion/",
+      "encodingFormat": "CDF",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via https from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ELB_L1_EPDIF&index=sp_phys",
+      "encodingFormat": "CDF",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ELFIN/B/EPD/L1/ion/PT0.264S",
+  "description": "The Electron Losses and Fields Investigation (ELFIN) mission is a space weather mission using three scientific instruments in a 3U+ CubeSat. Each spacecraft has two Energetic Particle Detectors, one for Electrons (EPD-E) and one for Ions (EPD-I), as well as a Fluxgate Magnetometer deployed at the end of a 75cm stacer boom. These science instruments were developed by UCLA staff at the Institute for Geophysics and Planetary Physics (IGPP) and the Earth, Planetary, and Space Sciences department (EPSS).",
+  "abstract": "The Electron Losses and Fields Investigation (ELFIN) mission is a space weather mission using three scientific instruments in a 3U+ CubeSat. Each spacecraft has two Energetic Particle Detectors, one for Electrons (EPD-E) and one for Ions (EPD-I), as well as a Fluxgate Magnetometer deployed at the end of a 75cm stacer boom. These science instruments were developed by UCLA staff at the Institute for Geophysics and Planetary Physics (IGPP) and the Earth, Planetary, and Space Sciences department (EPSS).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time since Jan 1, 2000",
+      "description": "elb_pif_time, UTC, in seconds since",
+      "unitText": "s",
+      "minValue": "2018-01-01T00:00:00.000000000",
+      "maxValue": "2022-12-31T23:59:58.999000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion Differential-Directional Counts",
+      "description": "[ADC UNITS ONLY] L1 EPD Ion differential-directional counts, Fast Mode - all 16 energies. All energy elements are the log-mean values of the channel. ",
+      "unitText": "raw counts",
+      "minValue": "-1000000",
+      "maxValue": "1.0e+06",
+      "defaultValue": "NaN",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "16",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "63.2455"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "97.9796"
+            }
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "138.564"
+            }
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "183.303"
+            }
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "238.118"
+            }
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "305.205"
+            }
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "385.162"
+            }
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "520.480"
+            }
+          },
+          {
+            "Name": "Element 9",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "752.994"
+            }
+          },
+          {
+            "Name": "Element 10",
+            "Index": "10",
+            "RenderingHints": {
+              "AxisLabel": "1081.67"
+            }
+          },
+          {
+            "Name": "Element 11",
+            "Index": "11",
+            "RenderingHints": {
+              "AxisLabel": "1529.71"
+            }
+          },
+          {
+            "Name": "Element 12",
+            "Index": "12",
+            "RenderingHints": {
+              "AxisLabel": "2121.32"
+            }
+          },
+          {
+            "Name": "Element 13",
+            "Index": "13",
+            "RenderingHints": {
+              "AxisLabel": "2893.96"
+            }
+          },
+          {
+            "Name": "Element 14",
+            "Index": "14",
+            "RenderingHints": {
+              "AxisLabel": "3728.61"
+            }
+          },
+          {
+            "Name": "Element 15",
+            "Index": "15",
+            "RenderingHints": {
+              "AxisLabel": "4906.12"
+            }
+          },
+          {
+            "Name": "Element 16",
+            "Index": "16",
+            "RenderingHints": {
+              "AxisLabel": "6500"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Central Energies for Each of the 16 EPD Ion Channels",
+      "description": "Central energies for each of 16 EPD ion channels. All values are the log-mean energies of each differential channel and not summed averages.",
+      "unitText": "keV",
+      "minValue": "1",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-128.0",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "16",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minimum Energy for Each of the 16 EPD Ion Channels",
+      "description": "Min energy bins associated with each of 16 EPD ion channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-128.0",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "16",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Maximum Energy for Each of the 16 EPD Ion Channels",
+      "description": "Max energy bins for each of 16 EPD ion channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-128.0",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "16",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sector Number",
+      "description": "Sector number",
+      "unitText": "num sector",
+      "minValue": "0",
+      "maxValue": "31",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number Spins in Sum",
+      "description": "The number spins in the sum.",
+      "unitText": "num spins in sum",
+      "minValue": "0",
+      "maxValue": "16",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Spin Sectors",
+      "description": "Number of spin sectors",
+      "unitText": "num sectors",
+      "minValue": "0",
+      "maxValue": "31",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Period",
+      "description": "spinperiod",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "480",
+      "defaultValue": "NaN"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion Counts",
+      "description": "---> just bottom eight energy channels",
+      "unitText": "raw counts",
+      "minValue": "-1.0e+06",
+      "maxValue": "1.0e+06",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "16",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "63.2455"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "97.9796"
+            }
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "138.564"
+            }
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "183.303"
+            }
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "238.118"
+            }
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "305.205"
+            }
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "385.162"
+            }
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "520.480"
+            }
+          },
+          {
+            "Name": "Element 9",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "752.994"
+            }
+          },
+          {
+            "Name": "Element 10",
+            "Index": "10",
+            "RenderingHints": {
+              "AxisLabel": "1081.67"
+            }
+          },
+          {
+            "Name": "Element 11",
+            "Index": "11",
+            "RenderingHints": {
+              "AxisLabel": "1529.71"
+            }
+          },
+          {
+            "Name": "Element 12",
+            "Index": "12",
+            "RenderingHints": {
+              "AxisLabel": "2121.32"
+            }
+          },
+          {
+            "Name": "Element 13",
+            "Index": "13",
+            "RenderingHints": {
+              "AxisLabel": "2893.96"
+            }
+          },
+          {
+            "Name": "Element 14",
+            "Index": "14",
+            "RenderingHints": {
+              "AxisLabel": "3728.61"
+            }
+          },
+          {
+            "Name": "Element 15",
+            "Index": "15",
+            "RenderingHints": {
+              "AxisLabel": "4906.12"
+            }
+          },
+          {
+            "Name": "Element 16",
+            "Index": "16",
+            "RenderingHints": {
+              "AxisLabel": "6500"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion Counts",
+      "description": "---> just top eight energy channels",
+      "unitText": "raw counts",
+      "minValue": "-1.0e+06",
+      "maxValue": "1.0e+06",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "16",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "63.2455"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "97.9796"
+            }
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "138.564"
+            }
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "183.303"
+            }
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "238.118"
+            }
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "305.205"
+            }
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "385.162"
+            }
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "520.480"
+            }
+          },
+          {
+            "Name": "Element 9",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "752.994"
+            }
+          },
+          {
+            "Name": "Element 10",
+            "Index": "10",
+            "RenderingHints": {
+              "AxisLabel": "1081.67"
+            }
+          },
+          {
+            "Name": "Element 11",
+            "Index": "11",
+            "RenderingHints": {
+              "AxisLabel": "1529.71"
+            }
+          },
+          {
+            "Name": "Element 12",
+            "Index": "12",
+            "RenderingHints": {
+              "AxisLabel": "2121.32"
+            }
+          },
+          {
+            "Name": "Element 13",
+            "Index": "13",
+            "RenderingHints": {
+              "AxisLabel": "2893.96"
+            }
+          },
+          {
+            "Name": "Element 14",
+            "Index": "14",
+            "RenderingHints": {
+              "AxisLabel": "3728.61"
+            }
+          },
+          {
+            "Name": "Element 15",
+            "Index": "15",
+            "RenderingHints": {
+              "AxisLabel": "4906.12"
+            }
+          },
+          {
+            "Name": "Element 16",
+            "Index": "16",
+            "RenderingHints": {
+              "AxisLabel": "6500"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

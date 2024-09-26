@@ -1,0 +1,1280 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/P11Y.jsonld",
+  "name": "IBEX High Energy Neutral Atom Imager (Hi) Data Release 16, not Compton-Getting corrected, Survival Probability corrected, Ram direction, West Longitude Ecliptic Maps, Level H3 (H3), eleven year average Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/P11Y.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/David.J.McComas",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/David.J.McComas"
+    }
+  ],
+  "sdDatePublished": "2024-02-13",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/ibex/cdf/h3/release16/ena_hi_r16_nocg_sp_ram_11yr/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftps from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/ibex/cdf/h3/release16/ena_hi_r16_nocg_sp_ram_11yr/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via https from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=IBEX_H3_ENA_HI_R16_NOCG_SP_RAM_11YR&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/IBEX/Hi/H3/Release16/NOCG/SP/Ram/P11Y",
+  "description": "* 1: The Interstellar Boundary Explorer (IBEX) has operated in space since 2008 updating our knowledge of the outer heliosphere and its interaction with the local interstellar medium. Start-time: 2008-12-25. There are currently 16 releases of IBEX-HI and/or IBEX-LO data covering 2009-2019.\n* 2: This data set is from the Release 16 (11-year-cadence) IBEX-Hi map data for the years 2009-2019 in the form of ram-directional ENA (hydrogen) fluxes with no Compton-Getting correction (nocg) of flux spectra for spacecraft motion and correction for ENA survival probability (sp) between 1 and 100 AU.\n* 3. The data consist of all-sky maps in Solar Ecliptic Longitude (east and west) and Latitude angles for ENA (hydrogen) fluxes from IBEX-Hi energy bands 2-6 in numerical data form. Energy channels 2-6 have FWHM ranges of 0.52-0.95, 0.84-1.55, 1.36-2.50, 1.99-3.75, 3.13-6.00 keV, respectively. The corresponding center-point energies are 0.71, 1.11, 1.74, 2.73, and 4.29 keV. Details of the data and enabled science from Release 10 are given in the following journal publication:\n* 4: McComas, D. J., et al. (2017), Seven Years of Imaging the Global Heliosphere with IBEX, Astrophys. J. Supp. Ser., 229(2), 41 (32 pp.),\n* 5: http://doi.org/10.3847/1538-4365/aa66d8\n* 6. The following codes are used to define dataset types:\n- cg = Compton-Getting corrections have been applied to the data to account for the speed of the spacecraft relative to the direction of arrival of the ENAs.\n- nocg = no Compton-Getting corrections\n- sp = survival probability corrections have been applied to the data to account for the loss of ENAs due to radiation pressure, photoionization and ionization via charge exchange with solar wind protons as they stream through the heliosphere. This correction scales the data out from IBEX at 1 AU to ~100 AU. In the original data this mode is denoted as Tabular.\n- noSP - no survival probability corrections have been applied to the data.\n- omni = data from all directions.\n- ram = data was collected when the spacecraft was ramming into the incoming ENAs.\n- antiram = data was collected when the spacecraft was moving away from the incoming ENAs.\n* 7. The following list associates Release 16 map numbers (1-22) with mission year (1-9), orbits (11-471b), and dates (12/25/2008-12/26/2019):\n- Map 1: Map2009A, year 1, orbits 11-34, dates 12/25/2008-06/25/2009\n- Map 2: Map2009B, year 1, orbits 35-58, dates 06/25/2009-12/25/2009\n- Map 3: Map2010A, year 2, orbits 59-82, dates 12/25/2009-06/26/2010\n- Map 4: Map2010B, year 2, orbits 83-106, dates 06/26/2010-12/26/2010\n- Map 5: Map2011A, year 3, orbits 107-130a, dates 12/26/2010-06/25/2011\n- Map 6: Map2011B, year 3, orbits 130b-150a, dates 06/25/2011-12/24/2011\n- Map 7: Map2012A, year 4, orbits 150b-170a, dates 12/24/2011-06/22/2012\n- Map 8: Map2012B, year 4, orbits 170b-190b, dates 06/22/2012-12/26/2012\n- Map 9: Map2013A, year 5, orbits 191a-210b, dates 12/26/2012-06/26/2013\n- Map 10: Map2013B, year 5, orbits 211a-230b, dates 06/26/2013-12/26/2013\n- Map 11: Map2014A, year 6, orbits 231a-250b, dates 12/26/2013-06/26/2014\n- Map 12: Map2014B, year 6, orbits 251a-270b, dates 06/26/2014-12/24/2014\n- Map 13: Map2015A, year 7, orbits 271a-290b, dates 12/24/2014-06/24/2015\n- Map 14: Map2015B, year 7, orbits 291a-310b, dates 06/24/2015-12/23/2015\n- Map 15: Map2016A, year 8, orbits 311a-330b, dates 12/24/2015-06/23/2016\n- Map 16: Map2016B, year 8, orbits 331a-351a, dates 06/24/2016-12/26/2016\n- Map 17: Map2017A, year 9, orbits 351b-371a, dates 12/26/2016-06/24/2017\n- Map 18: Map2017B, year 9, orbits 371b-391a, dates 06/25/2017-12/25/2017\n- Map 19: Map2018A, year 10, orbits 391b-411b, dates 12/25/2017-06/28/2018\n- Map 20: Map2018B, year 10, orbits 412a-431b, dates 06/29/2018-12/26/2018\n- Map 21: Map2019A, year 11, orbits 432a-451b, dates 12/27/2018-06/27/2019\n- Map 22: Map2019B, year 11, orbits 452a-471b, dates 06/28/2019-12/26/2019\n* 8: This particular data set, denoted in the original ascii files as hvset_tabular_ram_single, includes pixel map data from ram direction (ram-directional), no CG, SP, 11 year cadence.",
+  "abstract": "* 1: The Interstellar Boundary Explorer (IBEX) has operated in space since 2008 updating our knowledge of the outer heliosphere and its interaction with the local interstellar medium. Start-time: 2008-12-25. There are currently 16 releases of IBEX-HI and/or IBEX-LO data covering 2009-2019.\n* 2: This data set is from the Release 16 (11-year-cadence) IBEX-Hi map data for the years 2009-2019 in the form of ram-directional ENA (hydrogen) fluxes with no Compton-Getting correction (nocg) of flux spectra for spacecraft motion and correction for ENA survival probability (sp) between 1 and 100 AU.\n* 3. The data consist of all-sky maps in Solar Ecliptic Longitude (east and west) and Latitude angles for ENA (hydrogen) fluxes from IBEX-Hi energy bands 2-6 in numerical data form. Energy channels 2-6 have FWHM ranges of 0.52-0.95, 0.84-1.55, 1.36-2.50, 1.99-3.75, 3.13-6.00 keV, respectively. The corresponding center-point energies are 0.71, 1.11, 1.74, 2.73, and 4.29 keV. Details of the data and enabled science from Release 10 are given in the following journal publication:\n* 4: McComas, D. J., et al. (2017), Seven Years of Imaging the Global Heliosphere with IBEX, Astrophys. J. Supp. Ser., 229(2), 41 (32 pp.),\n* 5: http://doi.org/10.3847/1538-4365/aa66d8\n* 6. The following codes are used to define dataset types:\n- cg = Compton-Getting corrections have been applied to the data to account for the speed of the spacecraft relative to the direction of arrival of the ENAs.\n- nocg = no Compton-Getting corrections\n- sp = survival probability corrections have been applied to the data to account for the loss of ENAs due to radiation pressure, photoionization and ionization via charge exchange with solar wind protons as they stream through the heliosphere. This correction scales the data out from IBEX at 1 AU to ~100 AU. In the original data this mode is denoted as Tabular.\n- noSP - no survival probability corrections have been applied to the data.\n- omni = data from all directions.\n- ram = data was collected when the spacecraft was ramming into the incoming ENAs.\n- antiram = data was collected when the spacecraft was moving away from the incoming ENAs.\n* 7. The following list associates Release 16 map numbers (1-22) with mission year (1-9), orbits (11-471b), and dates (12/25/2008-12/26/2019):\n- Map 1: Map2009A, year 1, orbits 11-34, dates 12/25/2008-06/25/2009\n- Map 2: Map2009B, year 1, orbits 35-58, dates 06/25/2009-12/25/2009\n- Map 3: Map2010A, year 2, orbits 59-82, dates 12/25/2009-06/26/2010\n- Map 4: Map2010B, year 2, orbits 83-106, dates 06/26/2010-12/26/2010\n- Map 5: Map2011A, year 3, orbits 107-130a, dates 12/26/2010-06/25/2011\n- Map 6: Map2011B, year 3, orbits 130b-150a, dates 06/25/2011-12/24/2011\n- Map 7: Map2012A, year 4, orbits 150b-170a, dates 12/24/2011-06/22/2012\n- Map 8: Map2012B, year 4, orbits 170b-190b, dates 06/22/2012-12/26/2012\n- Map 9: Map2013A, year 5, orbits 191a-210b, dates 12/26/2012-06/26/2013\n- Map 10: Map2013B, year 5, orbits 211a-230b, dates 06/26/2013-12/26/2013\n- Map 11: Map2014A, year 6, orbits 231a-250b, dates 12/26/2013-06/26/2014\n- Map 12: Map2014B, year 6, orbits 251a-270b, dates 06/26/2014-12/24/2014\n- Map 13: Map2015A, year 7, orbits 271a-290b, dates 12/24/2014-06/24/2015\n- Map 14: Map2015B, year 7, orbits 291a-310b, dates 06/24/2015-12/23/2015\n- Map 15: Map2016A, year 8, orbits 311a-330b, dates 12/24/2015-06/23/2016\n- Map 16: Map2016B, year 8, orbits 331a-351a, dates 06/24/2016-12/26/2016\n- Map 17: Map2017A, year 9, orbits 351b-371a, dates 12/26/2016-06/24/2017\n- Map 18: Map2017B, year 9, orbits 371b-391a, dates 06/25/2017-12/25/2017\n- Map 19: Map2018A, year 10, orbits 391b-411b, dates 12/25/2017-06/28/2018\n- Map 20: Map2018B, year 10, orbits 412a-431b, dates 06/29/2018-12/26/2018\n- Map 21: Map2019A, year 11, orbits 432a-451b, dates 12/27/2018-06/27/2019\n- Map 22: Map2019B, year 11, orbits 452a-471b, dates 06/28/2019-12/26/2019\n* 8: This particular data set, denoted in the original ascii files as hvset_tabular_ram_single, includes pixel map data from ram direction (ram-directional), no CG, SP, 11 year cadence.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "H"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "R"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "m"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "1"
+    },
+    {
+      "@type": "Place",
+      "name": "A"
+    },
+    {
+      "@type": "Place",
+      "name": "U"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Start Time",
+      "description": "CDF Epoch Time for the start of the six-monthmeasurement period",
+      "unitText": "",
+      "minValue": "01-Jan-1990 00:00:00.000",
+      "maxValue": "31-Dec-2029 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Stop Time",
+      "description": "CDF Epoch Time for the end of the six-monthmeasurement period",
+      "unitText": "",
+      "minValue": "01-Jan-1990 00:00:00.000",
+      "maxValue": "31-Dec-2029 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Map Number",
+      "description": "Sequential map numbers from 1 to 22 for six-month IBEX data",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65534",
+      "defaultValue": "65535"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar Ecliptic Latitude Bin Number",
+      "description": "Solar Ecliptic Latitude Bin Number corresponding to six-degree latitudinal increments of the current IBEX-Hi viewing sector",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "30",
+      "defaultValue": "65534",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar West Ecliptic Longitude Bin Number",
+      "description": "Solar West Ecliptic Longitude Bin Number corresponding to six-degree longitudinal increments of the current IBEX-Hi viewing sector",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "60",
+      "defaultValue": "65535",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar Ecliptic Latitude",
+      "description": "Solar Ecliptic Latitude",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar West Ecliptic Longitude",
+      "description": "Solar West Ecliptic Longitude",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar East Ecliptic Longitude",
+      "description": "Solar East Ecliptic Longitude",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Starting Orbit Number",
+      "description": "Starting Orbit Number of the measurement period",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65534",
+      "defaultValue": "65535"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ending Orbit Number",
+      "description": "Ending Orbit Number of the measurement period",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65534",
+      "defaultValue": "65535"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hi Energy Channel 2, ~0.71 keV, mapped",
+      "description": "Hi Energy Channel 2, ~0.71 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 2, ~0.71 keV, X-Y image",
+      "description": "Flux Variance, Hi Energy Channel 2, ~0.71 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Flux, Hi Energy Channel 2, ~0.71 keV, mapped",
+      "description": "Differential Flux, Hi Energy Channel 2, ~0.71 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Flux, Hi Energy Channel 2, ~0.71 keV, X-Y image",
+      "description": "Differential Flux, Hi Energy Channel 2, ~0.71 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/N Ratio, Hi Energy Channel 2, ~0.71 keV, mapped",
+      "description": "Signal to Noise Ratio, Hi Energy Channel 2, ~0.71 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/N Ratio, Hi Energy Channel 2, ~0.71 keV, X-Y image",
+      "description": "Signal to Noise Ratio, Hi Energy Channel 2, ~0.71 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 2, ~0.71 keV, mapped",
+      "description": "Flux Variance, Hi Energy Channel 2, ~0.71 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 2, ~0.71 keV, X-Y image",
+      "description": "Flux Variance, Hi Energy Channel 2, ~0.71 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Counts, Hi Energy Channel 2, ~0.71 keV, mapped",
+      "description": "Total Counts, Hi Energy Channel 2, ~0.71 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Counts, Hi Energy Channel 2, ~0.71 keV, X-Y image",
+      "description": "Total Counts, Hi Energy Channel 2, ~0.71 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Exposure Time, Hi Energy Channel 2, ~0.71 keV, mapped",
+      "description": "Total Exposure Time, Hi Energy Channel 2, ~0.71 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time, Hi Energy Channel 2, ~0.71 keV, X-Y image",
+      "description": "Time, Hi Energy Channel 2, ~0.71 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Samples/Pixel, Hi Energy Channel 2, ~0.71 keV, mapped",
+      "description": "Samples per Pixel, Hi Energy Channel 2, ~0.71 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Samples/Pixel, Hi Energy Channel 2, ~0.71 keV, X-Y image",
+      "description": "Samples per Pixel, Hi Energy Channel 2, ~0.71 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hi Energy Channel 3, ~1.11 keV, mapped",
+      "description": "Hi Energy Channel 3, ~1.11 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 3, ~1.11 keV, X-Y image",
+      "description": "Flux Variance, Hi Energy Channel 3, ~1.11 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Flux, Hi Energy Channel 3, ~1.11 keV, mapped",
+      "description": "Differential Flux, Hi Energy Channel 3, ~1.11 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Flux, Hi Energy Channel 3, ~1.11 keV, X-Y image",
+      "description": "Differential Flux, Hi Energy Channel 3, ~1.11 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/N Ratio, Hi Energy Channel 3, ~1.11 keV, mapped",
+      "description": "Signal to Noise Ratio, Hi Energy Channel 3, ~1.11 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/N Ratio, Hi Energy Channel 3, ~1.11 keV, X-Y image",
+      "description": "Signal to Noise Ratio, Hi Energy Channel 3, ~1.11 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 3, ~1.11 keV, mapped",
+      "description": "Flux Variance, Hi Energy Channel 3, ~1.11 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 3, ~1.11 keV, X-Y image",
+      "description": "Flux Variance, Hi Energy Channel 3, ~1.11 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Counts, Hi Energy Channel 3, ~1.11 keV, mapped",
+      "description": "Total Counts, Hi Energy Channel 3, ~1.11 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Counts, Hi Energy Channel 3, ~1.11 keV, X-Y image",
+      "description": "Total Counts, Hi Energy Channel 3, ~1.11 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Exposure Time, Hi Energy Channel 3, ~1.11 keV, mapped",
+      "description": "Total Exposure Time, Hi Energy Channel 3, ~1.11 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time, Hi Energy Channel 3, ~1.11 keV, X-Y image",
+      "description": "Time, Hi Energy Channel 3, ~1.11 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Samples/Pixel, Hi Energy Channel 3, ~1.11 keV, mapped",
+      "description": "Samples per Pixel, Hi Energy Channel 3, ~1.11 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Samples/Pixel, Hi Energy Channel 3, ~1.11 keV, X-Y image",
+      "description": "Samples per Pixel, Hi Energy Channel 3, ~1.11 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hi Energy Channel 4, ~1.74 keV, mapped",
+      "description": "Hi Energy Channel 4, ~1.74 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 4, ~1.74 keV, X-Y image",
+      "description": "Flux Variance, Hi Energy Channel 4, ~1.74 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Flux, Hi Energy Channel 4, ~1.74 keV, mapped",
+      "description": "Differential Flux, Hi Energy Channel 4, ~1.74 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Flux, Hi Energy Channel 4, ~1.74 keV, X-Y image",
+      "description": "Differential Flux, Hi Energy Channel 4, ~1.74 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/N Ratio, Hi Energy Channel 4, ~1.74 keV, mapped",
+      "description": "Signal to Noise Ratio, Hi Energy Channel 4, ~1.74 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/N Ratio, Hi Energy Channel 4, ~1.74 keV, X-Y image",
+      "description": "Signal to Noise Ratio, Hi Energy Channel 4, ~1.74 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 4, ~1.74 keV, mapped",
+      "description": "Flux Variance, Hi Energy Channel 4, ~1.74 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 4, ~1.74 keV, X-Y image",
+      "description": "Flux Variance, Hi Energy Channel 4, ~1.74 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Counts, Hi Energy Channel 4, ~1.74 keV, mapped",
+      "description": "Total Counts, Hi Energy Channel 4, ~1.74 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Counts, Hi Energy Channel 4, ~1.74 keV, X-Y image",
+      "description": "Total Counts, Hi Energy Channel 4, ~1.74 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Exposure Time, Hi Energy Channel 4, ~1.74 keV, mapped",
+      "description": "Total Exposure Time, Hi Energy Channel 4, ~1.74 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time, Hi Energy Channel 4, ~1.74 keV, X-Y image",
+      "description": "Time, Hi Energy Channel 4, ~1.74 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Samples/Pixel, Hi Energy Channel 4, ~1.74 keV, mapped",
+      "description": "Samples per Pixel, Hi Energy Channel 4, ~1.74 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Samples/Pixel, Hi Energy Channel 4, ~1.74 keV, X-Y image",
+      "description": "Samples per Pixel, Hi Energy Channel 4, ~1.74 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hi Energy Channel 5, ~2.73 keV, mapped",
+      "description": "Hi Energy Channel 5, ~2.73 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 5, ~2.73 keV, X-Y image",
+      "description": "Flux Variance, Hi Energy Channel 5, ~2.73 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Flux, Hi Energy Channel 5, ~2.73 keV, mapped",
+      "description": "Differential Flux, Hi Energy Channel 5, ~2.73 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Flux, Hi Energy Channel 5, ~2.73 keV, X-Y image",
+      "description": "Differential Flux, Hi Energy Channel 5, ~2.73 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/N Ratio, Hi Energy Channel 5, ~2.73 keV, mapped",
+      "description": "Signal to Noise Ratio, Hi Energy Channel 5, ~2.73 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/N Ratio, Hi Energy Channel 5, ~2.73 keV, X-Y image",
+      "description": "Signal to Noise Ratio, Hi Energy Channel 5, ~2.73 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 5, ~2.73 keV, mapped",
+      "description": "Flux Variance, Hi Energy Channel 5, ~2.73 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 5, ~2.73 keV, X-Y image",
+      "description": "Flux Variance, Hi Energy Channel 5, ~2.73 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Exposure Time, Hi Energy Channel 5, ~2.73 keV, mapped",
+      "description": "Total Exposure Time, Hi Energy Channel 5, ~2.73 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time, Hi Energy Channel 5, ~2.73 keV, X-Y image",
+      "description": "Time, Hi Energy Channel 5, ~2.73 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Counts, Hi Energy Channel 5, ~2.73 keV, mapped",
+      "description": "Total Counts, Hi Energy Channel 5, ~2.73 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Counts, Hi Energy Channel 5, ~2.73 keV, X-Y image",
+      "description": "Total Counts, Hi Energy Channel 5, ~2.73 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Samples/Pixel, Hi Energy Channel 5, ~2.73 keV, mapped",
+      "description": "Samples per Pixel, Hi Energy Channel 5, ~2.73 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Samples/Pixel, Hi Energy Channel 5, ~2.73 keV, X-Y image",
+      "description": "Samples per Pixel, Hi Energy Channel 5, ~2.73 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hi Energy Channel 6, ~4.29 keV, mapped",
+      "description": "Hi Energy Channel 6, ~4.29 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 6, ~4.29 keV, X-Y image",
+      "description": "Flux Variance, Hi Energy Channel 6, ~4.29 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Flux, Hi Energy Channel 6, ~4.29 keV, mapped",
+      "description": "Differential Flux, Hi Energy Channel 6, ~4.29 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Flux, Hi Energy Channel 6, ~4.29 keV, X-Y image",
+      "description": "Differential Flux, Hi Energy Channel 6, ~4.29 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/N Ratio, Hi Energy Channel 6, ~4.29 keV, mapped",
+      "description": "Signal to Noise Ratio, Hi Energy Channel 6, ~4.29 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/N Ratio, Hi Energy Channel 6, ~4.29 keV, X-Y image",
+      "description": "Signal to Noise Ratio, Hi Energy Channel 6, ~4.29 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 6, ~4.29 keV, mapped",
+      "description": "Flux Variance, Hi Energy Channel 6, ~4.29 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flux Variance, Hi Energy Channel 6, ~4.29 keV, X-Y image",
+      "description": "Flux Variance, Hi Energy Channel 6, ~4.29 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "(cm^2 s sr keV)^-2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Counts, Hi Energy Channel 6, ~4.29 keV, mapped",
+      "description": "Total Counts, Hi Energy Channel 6, ~4.29 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Counts, Hi Energy Channel 6, ~4.29 keV, X-Y image",
+      "description": "Total Counts, Hi Energy Channel 6, ~4.29 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Exposure Time, Hi Energy Channel 6, ~4.29 keV, mapped",
+      "description": "Total Exposure Time, Hi Energy Channel 6, ~4.29 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time, Hi Energy Channel 6, ~4.29 keV, X-Y image",
+      "description": "Time, Hi Energy Channel 6, ~4.29 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Samples/Pixel, Hi Energy Channel 6, ~4.29 keV, mapped",
+      "description": "Samples per Pixel, Hi Energy Channel 6, ~4.29 keV, mapped image, Molleweide projection.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Samples/Pixel, Hi Energy Channel 6, ~4.29 keV, X-Y image",
+      "description": "Samples per Pixel, Hi Energy Channel 6, ~4.29 keV, X-Y image.\n\n* Column 1 Labels from WEST_LONGITUDE: [ 357, 351, 345, 339, 333, 327, 321, 315, 309, 303, 297, 291, 285, 279, 273, 267, 261, 255, 249, 243, 237, 231, 225, 219, 213, 207, 201, 195, 189, 183, 177, 171, 165, 159, 153, 147, 141, 135, 129, 123, 117, 111, 105, 99, 93, 87, 81, 75, 69, 63, 57, 51, 45, 39, 33, 27, 21, 15, 9, 3].\n* Column 2 Labels from LATITUDE: [ -87, -81, -75, -69, -63, -57, -51, -45, -39, -33, -27, -21, -15, -9, -3, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "60 30",
+        "elements": []
+      }
+    }
+  ]
+}

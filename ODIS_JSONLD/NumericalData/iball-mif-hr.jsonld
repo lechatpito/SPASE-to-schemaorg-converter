@@ -1,0 +1,184 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/iball-mif-hr.jsonld",
+  "name": "Interball Tail - MIF-M - high resolution",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/iball-mif-hr.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Stanislav.A.Romanov",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Stanislav.A.Romanov"
+    }
+  ],
+  "sdDatePublished": "2020-07-10",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/INTERBALL-Tail/MIF-FM/iball-mif-hr",
+  "description": "This data set contains the DC/AC Magnetic Field (0-64 Hz and 1 Hz - 40 kHz) in GSM from the MIF-M magnetometer on board Interball-Tail.",
+  "abstract": "This data set contains the DC/AC Magnetic Field (0-64 Hz and 1 Hz - 40 kHz) in GSM from the MIF-M magnetometer on board Interball-Tail.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "description": "Magnetic Field,cartesian GSE",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "it_b_gse(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "it_b_gse(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "it_b_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "description": "Magnetic Field, cartesian GSM ",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "it_b_gsm(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "it_b_gsm(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "it_b_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

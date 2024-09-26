@@ -1,0 +1,693 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT29S.jsonld",
+  "name": "ISIS-1 Topside Sounder Average Ionogram over Quito, Equador, QUI, Version 2, Latitude -1\u00b0, Longitude 281\u00b0, 29 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT29S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.H.Whitteker",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.H.Whitteker"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.F.Benson",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.F.Benson"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Dieter.K.Bilitza",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Dieter.K.Bilitza"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Leonard.N.Garcia",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Leonard.N.Garcia"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/isis/topside_sounder/ionogram_new_i1_cdf/isis1/qui_01s_281e/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/isis/topside_sounder/ionogram_new_i1_cdf/isis1/qui_01s_281e/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=I1_AV2_QUI&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ISIS1/SFS/AverageIonogram/Version2/Quito/PT29S",
+  "description": "This Ionogram was digitized from the original ISIS 1 Analog Telemetry Data on 7-Track Tape using the Facilities of the Data Evaluation Laboratory at NASA GSFC, Code 500. This Data Restoration Project is headed by Dr. R.F. Benson, NASA GSFC, Code 692. Ionograms were digitized at the Rate of 40,000 16-bit samples/s. This Sample Rate is higher than the Nyquist Frequency of 30 kHz. The Sample Frequency of 40 kHz provides a Measurement every 25 ms corresponding to an Apparent Range Interval of c*t/2, where c is the Speed of Light, or 3.747 km. Each Ionogram consists of a Fixed Frequency Portion and a Swept Frequency Portion. The Time Resolution is typically 29 s.\n\nThis data product has been produced as part of the ISIS 1 topside digital ionogram database enhancement project, and this data product is one in the set of the Average Ionogram, version 2, av2, data products. Version 2 ISIS-I topside digital ionograms have been produced from the midlatitude Ottawa, OTT, the low-latitude Quito, and the high-latitude University of Alaska, Fairbanks telemetry stations. Digital ionograms from the midlatitude Santiago telemetry station are in production as of 2020-04-22. A major goal of the enhancement project is to produce as many topside soundings of ionospheric Ne(h) as possible so as to expand the Ne(h) profile coverage in latitude, longitude, and epoch. Original, version 1, files designated as 'av' for average files where the apparent-range information was averaged to yield 15-km resolution are also available. Both versions, av and av2, have good ionogram data, but the lack of proper frame-sync detection in the av files often prevented the determination of frequency information. After correcting the frame-sync detection, it is possible to add the correct frequency information allowing the ionograms to be processed automatically, by software such as TOPIST, to yield topside Ne(h).",
+  "abstract": "This Ionogram was digitized from the original ISIS 1 Analog Telemetry Data on 7-Track Tape using the Facilities of the Data Evaluation Laboratory at NASA GSFC, Code 500. This Data Restoration Project is headed by Dr. R.F. Benson, NASA GSFC, Code 692. Ionograms were digitized at the Rate of 40,000 16-bit samples/s. This Sample Rate is higher than the Nyquist Frequency of 30 kHz. The Sample Frequency of 40 kHz provides a Measurement every 25 ms corresponding to an Apparent Range Interval of c*t/2, where c is the Speed of Light, or 3.747 km. Each Ionogram consists of a Fixed Frequency Portion and a Swept Frequency Portion. The Time Resolution is typically 29 s.\n\nThis data product has been produced as part of the ISIS 1 topside digital ionogram database enhancement project, and this data product is one in the set of the Average Ionogram, version 2, av2, data products. Version 2 ISIS-I topside digital ionograms have been produced from the midlatitude Ottawa, OTT, the low-latitude Quito, and the high-latitude University of Alaska, Fairbanks telemetry stations. Digital ionograms from the midlatitude Santiago telemetry station are in production as of 2020-04-22. A major goal of the enhancement project is to produce as many topside soundings of ionospheric Ne(h) as possible so as to expand the Ne(h) profile coverage in latitude, longitude, and epoch. Original, version 1, files designated as 'av' for average files where the apparent-range information was averaged to yield 15-km resolution are also available. Both versions, av and av2, have good ionogram data, but the lack of proper frame-sync detection in the av files often prevented the determination of frequency information. After correcting the frame-sync detection, it is possible to add the correct frequency information allowing the ionograms to be processed automatically, by software such as TOPIST, to yield topside Ne(h).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "keywords": [
+    "Ionogram",
+    "Topside Sounder",
+    "Swept Frequency Sounder",
+    "Topside Ionosphere",
+    "Ionospheric Reflections",
+    "Ground Reflections",
+    "Ionospheric Echoes",
+    "Ground Echoes",
+    "Ducted Echoes",
+    "Wave Scattering",
+    "Field-Aligned Irregularities, FAI",
+    "Plasma Resonance",
+    "Plasma Waves",
+    "Auroral Kilometric Radiation, AKR",
+    "Solar Type III Bursts",
+    "Upper Hybrid Noise Band"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Satellite ID",
+      "description": "Satellite ID: 1=Alouette 1, 2=Alouette 2, 3=ISIS 1, 4=ISIS 2",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "4",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Telemetry Station Code",
+      "description": "Two-Digit Telemetry Station Code",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "99",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Transmitter Power Code",
+      "description": "Transmitter Power Code: 1=Primary, 400 W, 2=Secondary, 400 W",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "2",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sounder-Receiver Code",
+      "description": "Sounder-Receiver Code: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pulse per Second Code",
+      "description": "Pulse per Second Code: 0=30 Pulses/s, 1=60 Pulses/s",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DMODE Code",
+      "description": "DMODE, Transmission On/Off for Alternate Frame Pairs: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GMODE Code",
+      "description": "GMODE, Transmission of Alternate Frames of Fixed Frequency Ionograms and Normal Combined Fixed Frequency and Swept Frequency Ionograms: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sounder Mixed Mode",
+      "description": "Sounder Mixed Mode, Transmission at a Fixed Frequency while the Sounder-Receiver sweeps over the Swept Frequency Range: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fixed Frequency Code",
+      "description": "Fixed Frequency Code: 0=Off, 1=0.25 MHz, 2=0.48 MHz, 3=1.00 MHz, 4=1.95 MHz, 5=4.00 MHz, 6=9.303 MHz",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "6",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Year of Ionogram Frame Sync",
+      "unitText": "",
+      "minValue": "62",
+      "maxValue": "84",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day of Year",
+      "description": "Day of Year of Ionogram Frame Sync",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "366",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour of Day",
+      "description": "Hour of Day of Ionogram Frame Sync, UT",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "24",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minute of Hour",
+      "description": "Minute of Hour of Ionogram Frame Sync, UT",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "60",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second of Minute",
+      "description": "Second of Minute of Ionogram Frame Sync, UT",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "60.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Local Mean Time",
+      "description": "Local Mean Time, LMT, at the Time of Ionogram Frame Sync, Format: HH,MM",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-2147483648",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "Units": "h",
+            "UnitsConversion": "60>s",
+            "ValidMin": "0",
+            "ValidMax": "24",
+            "RenderingHints": {
+              "AxisLabel": "LMT(hh)",
+              "ScaleMin": "0",
+              "ScaleMax": "24"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "Units": "min",
+            "UnitsConversion": "3600>s",
+            "ValidMin": "0",
+            "ValidMax": "60",
+            "RenderingHints": {
+              "AxisLabel": "LMT(mm)",
+              "ScaleMin": "0",
+              "ScaleMax": "60"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Coordinates",
+      "description": "Geographic, GEO, Coordinates, Latitude, Longitude, Height, at the Time of Ionogram Frame Sync",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "Units": "\u00b0",
+            "UnitsConversion": "0.0174532925>rad",
+            "ValidMin": "-90.0",
+            "ValidMax": "90.0",
+            "RenderingHints": {
+              "AxisLabel": "Latitude",
+              "ScaleMin": "-90.0",
+              "ScaleMax": "90.0"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "Units": "\u00b0",
+            "UnitsConversion": "0.0174532925>rad",
+            "ValidMin": "0.0",
+            "ValidMax": "360.0",
+            "RenderingHints": {
+              "AxisLabel": "Longitude",
+              "ScaleMin": "0.0",
+              "ScaleMax": "360.0"
+            }
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3",
+            "Units": "km",
+            "UnitsConversion": "1e3>m",
+            "ValidMin": "0.0",
+            "ValidMax": "10000.0",
+            "RenderingHints": {
+              "AxisLabel": "Height",
+              "ScaleMin": "0.0",
+              "ScaleMax": "10000.0"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Local Time",
+      "description": "Geomagnetic Local Time, GMLMT, Format: HH,MM, at the Time of Ionogram Frame Sync",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-2147483648",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "Units": "h",
+            "UnitsConversion": "60>s",
+            "ValidMin": "0",
+            "ValidMax": "24",
+            "RenderingHints": {
+              "AxisLabel": "GMLMT(hh)",
+              "ScaleMin": "0",
+              "ScaleMax": "24"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "Units": "min",
+            "UnitsConversion": "3600>s",
+            "ValidMin": "0",
+            "ValidMax": "60",
+            "RenderingHints": {
+              "AxisLabel": "GMLMT(mm)",
+              "ScaleMin": "0",
+              "ScaleMax": "60"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Latitude",
+      "description": "Geomagnetic Latitude, MAG, at the Time of Ionogram Frame Sync",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Longitude",
+      "description": "Geomagnetic Longitude, MAG, at the Time of Ionogram Frame Sync",
+      "unitText": "\u00b0",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Height",
+      "description": "Satellite Altitude",
+      "unitText": "km",
+      "minValue": "0.0",
+      "maxValue": "4000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Local Gyrofrequency",
+      "description": "Electron Local Gyrofrequency, at the Time of Ionogram Frame Sync",
+      "unitText": "MHz",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Invariant Latitude",
+      "description": "Invariant Latitude, at the Time of Ionogram Frame Sync",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Inclination",
+      "description": "Magnetic Inclination, Dip Angle of Magnetic Field Direction, at the Time of Ionogram Frame Sync",
+      "unitText": "\u00b0",
+      "minValue": "-90",
+      "maxValue": "90",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar Zenith Angle",
+      "description": "Solar Zenith Angle, SZA, at the Time of Ionogram Frame Sync",
+      "unitText": "\u00b0",
+      "minValue": "0",
+      "maxValue": "180",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L Shell",
+      "description": "L Shell, McIlwain Parameter, at the Time of Ionogram Frame Sync",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Sunlight",
+      "description": "Spacecraft Sunlight: 0=Out, 1=In, at the Time of Ionogram Frame Sync",
+      "unitText": "",
+      "minValue": "1",
+      "maxValue": "2",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CEP, Instrument Status",
+      "description": "Cylindrical Electrostatic Probe, CEP, Instrument Status: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VLF, Instrument Status",
+      "description": "Very Low Frequency, VLF, 0.05 to 30 kHz Receiver, Instrument Status: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SEA, Instrument Status",
+      "description": "Spherical Electrostatic Analyzer, SEA, Instrument Status: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMS1, Instrument Status",
+      "description": "Ion Mass Spectrometer 1, IMS1, Instrument Status: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMS2, Instrument Status",
+      "description": "Ion Mass Spectrometer 2, IMS1, Instrument Status: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SPS, Instrument Status",
+      "description": "Soft Particle Spectrometer, SPS, Instrument Status: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EPD, Instrument Status",
+      "description": "Energetic Particle Detector, EPD, Instrument Status: 0=Off, 1=On",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start of Swept Frequency Portion",
+      "description": "Scan Line Number of the Start of Swept Frequency Portion of the Ionogram, this seperates the Fixed Frequency and Swept Frequency Portions of the Ionogram",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "10000",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Times of Ionogram Frequency Markers",
+      "description": "Times of Ionogram Frequency Markers, Milliseconds after Frame Sync",
+      "unitText": "ms",
+      "minValue": "3000.0",
+      "maxValue": "30000.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "22",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Values of Ionogram Frequency Markers",
+      "description": "Ionogram Frequency Marker Valuess",
+      "unitText": "MHz",
+      "minValue": "0.0",
+      "maxValue": "25.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "22",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Delay Times per Ionogram Scan Line",
+      "description": "Number of Delay Times per Ionogram Scan Line. Each Sounder Pulse Transmission is followed by a Scan of the Sounder-Receiver Video Amplitude Output Values for each Delay Time monitored after the transmitted Pulse. These Scans are called Scan Lines. There are two Types of ISIS 1 Binary Ionogram Files, one designated as Full and the other designated as Average. The Full File has 1340 Delay Times, one every 0.025 ms. The Average Files are derived from the Full Files by averaging the Amplitude Values in four Delay Time Bins. Thus, the Average Binary Files contain 335 Time Delay Bins within each Scan Line. The CDF Files were made from these Average Binary Files.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "350",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Ionogram Scan Line Frequencies",
+      "description": "Number of Ionogram Scan Line Frequencie Steps. Ionogram Files can be of different Lengths. In some the Swept Frequency Portion covers the Range from 0.1 Mhz to 10 MHz, in others from 0.1 Mhz to 20 MHz. Also, the proper Start of each Ionogram File, marked by a Frame Sync Pulse, was not always detected during the Analog to Digital, A/D, Conversion. In such cases, a Frame Sync was inserted to limit the File Size. Thus the Number of Sounder-Receiver Video Amplitude versus Delay Time Scan Lines per Ionogram can vary.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4000",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Delay Time Values",
+      "description": "Delay Time Values used in each Scan Line",
+      "unitText": "ms",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "335",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Apparent Range Values",
+      "description": "Virtual Height Values corresponding to Delay Times used in each Scan Line",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "335",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time",
+      "unitText": "ms",
+      "minValue": "01-Jan-1969 00:00:00.000",
+      "maxValue": "01-Jan-2000 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sounder Amplitude",
+      "description": "Sounder Amplitude at 335 Virtual Heights for Fixed Frequency and Swept Frequency, Ionogram. The Sounder-Receiver Linear Video Amplitude, from 0 to 255 Telemetry Units, in each Apparent Range Bin of each Scan Line covering the Fixed Frequency and Swept Frequency Regions. This Range corresponds to a Linear Sounder-Receiver Video Amplitude Output Range from 0 V to 4.5 V. This Calibration is based on the Video Calibration Pulse, of 3.0 V or 170 Telemetry Units, at the End of the Line Scan following each Sounder Pulse. The Combined Calibration Pulses from all of the Line Scans produces a Colored Stripe at the Bottom of the Digital Ionograms. In order to derive an Input Power Level corresponding to the Receiver Video Output, it is necessary to know the Sounder-Receiver Automatic Gain Control, AGC, Voltage. This Voltage was obtained from the Pulse Code Modulation, PCM, Data and thus is only available if PCM Data were available. The AGC Voltage, which ranges from 0 V to 5.12 V, is obtained from a Linear Interpolation between the AGC Trace displayed between the 4005 km Apparent Range, at 26.7 ms Delay Time, as 5.12 V and the 4395 km, at 29.3 ms Delay Time, as 0 V. On the Full Ionograms these Numbers are 4001.250 km or 26.675 ms and 4398.750 km or 29.325 ms. On the Average Ionograms, which are available as either CDF or Binary Files from the SPDF or the NSSDC, the Range Resolution is 0.1 ms, corresponding to a Virtual Range Resolution of 15 km. There are 27 Rows an thus 26 Intervals covering the 0 V to 5.12 V Range; thus each Row in Virtual Range above, i.e. decreasing Delay Time, the Zero Level at 29.3 ms Delay Time corresponds to an Increase of 5.12/26 V of AGC with a Quantization Uncertainty of approximately Plus or Minus 0.1 V. Two Rows have Zero Video Output Amplitude Values on the Average Ionograms in order that a clear AGC Trace is visible on the Ionograms. The Row with the greatest Virtual Range corresponds to the actual AGC Value. On the Full Ionograms, which are only available as Binary Files from the NSSDC, the Range Resolution is 0.025 ms, corresponding to a Virtual Range Resolution of 3.75 km, and three Rows have Zero Video Output Amplitude Values; the middle Row corresponds to the actual AGC Value.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-128",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "335",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Interpolated Frequencies",
+      "description": "Interpolated Fixed and Swept Frequencies for each Scan Line, in the Swept Frequency Portion of the Ionogram they correspond to interpolated Values between the Frequency Markers",
+      "unitText": "MHz",
+      "minValue": "0.1",
+      "maxValue": "25.0",
+      "defaultValue": "-1.0e+31"
+    }
+  ]
+}

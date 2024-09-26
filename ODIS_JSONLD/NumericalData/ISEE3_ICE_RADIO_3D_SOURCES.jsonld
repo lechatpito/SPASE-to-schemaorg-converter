@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ISEE3_ICE_RADIO_3D_SOURCES.jsonld",
+  "name": "ISEE3/ICE Radio Astronomy : 3-D Radio Sources (30 - 1980 kHz)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ISEE3_ICE_RADIO_3D_SOURCES.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Robert.MacDowall",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Robert.MacDowall"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Sang.Hoang",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Sang.Hoang"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Nicolas.Dufourg",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Nicolas.Dufourg"
+    }
+  ],
+  "sdDatePublished": "2022-02-04",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ISEE3_ICE_RADIO_3D_SOURCES",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ISEE3/ICE/3D_Radio_Sources/ISEE3_ICE_RADIO_3D_SOURCES",
+  "description": "This data set contains the power spectral density from ISEE3 ICE instrument (S and Z receivers, 30 - 1980 kHz frequency range)",
+  "abstract": "This data set contains the power spectral density from ISEE3 ICE instrument (S and Z receivers, 30 - 1980 kHz frequency range)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE3/ICE  S receiver measurements",
+      "description": "ISEE3/ICE Radio Astronomy : 3-D Radio Sources (30 - 1980 kHz)  S receiver measurements",
+      "unitText": "uV^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE3/ICE  Z receiver measurements",
+      "description": "ISEE3/ICE Radio Astronomy : 3-D Radio Sources (30 - 1980 kHz)  Z receiver measurements",
+      "unitText": "uV^2 Hz^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE3/ICE Dephasing between S and Z signals",
+      "description": "ISEE3/ICE Dephasing between S and Z signals, in TM unit ( = 0.02 V)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

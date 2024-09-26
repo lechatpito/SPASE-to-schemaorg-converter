@@ -1,0 +1,357 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT192S.jsonld",
+  "name": "Polar TIMAS K2 Mass Spectral Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT192S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/W.K.Peterson",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/W.K.Peterson"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://lasp.colorado.edu/timas/data/k2/",
+      "encodingFormat": "CDF",
+      "name": "Polar TIMAS K2 data repository",
+      "description": "Repository of Polar TIMAS K2 data in CDF format at LASP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/POLAR/TIMAS/K2/PT192S",
+  "description": "Mass spectra count rates for survey  purposes only from the POLAR TIMAS instrument. The mass spectral data product consists of 64 mass steps covering the full detector range, for each of 6 large solid angles, for 8 selected energy steps. The data product is accumulated for 2, 4, 8, 16, or 32 spin (6 s) periods. Because of telemetry restrictions only selected data products were telemetered to the ground.\n\nThe 6 angular bins cover the full instrumental range and nearly 4pi steradians. Two of the look directions are centered on the spacecraft spin axis. For the first part of the mission, the spin axis was orbit normal and the pitch angles sampled in these look directions are near 90 degrees. The other 4 look directions are in the spin plane. Data are de-spun on board based on the spin rate and time of the \"sun pulse\". The digital data product provides the center pitch angle of each of the 6 look directions and an estimate of the variation of the pitch angle during the accumulation time.\n\n      \n      Reference: E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.",
+  "abstract": "Mass spectra count rates for survey  purposes only from the POLAR TIMAS instrument. The mass spectral data product consists of 64 mass steps covering the full detector range, for each of 6 large solid angles, for 8 selected energy steps. The data product is accumulated for 2, 4, 8, 16, or 32 spin (6 s) periods. Because of telemetry restrictions only selected data products were telemetered to the ground.\n\nThe 6 angular bins cover the full instrumental range and nearly 4pi steradians. Two of the look directions are centered on the spacecraft spin axis. For the first part of the mission, the spin axis was orbit normal and the pitch angles sampled in these look directions are near 90 degrees. The other 4 look directions are in the spin plane. Data are de-spun on board based on the spin rate and time of the \"sun pulse\". The digital data product provides the center pitch angle of each of the 6 look directions and an estimate of the variation of the pitch angle during the accumulation time.\n\n      \n      Reference: E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "NSSDC standard reference time value at the center of the accumulation interval.",
+      "unitText": "ms (UT)",
+      "minValue": "01-Jan-1995 00:00:00.000",
+      "maxValue": "01-Jan-2020 23:59:59.999",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start Epoch",
+      "description": "NSSDC standard-reference time value at the start of the accumulation interval.",
+      "unitText": "ms (UT)",
+      "minValue": "17-Mar-1996 00:00:00.000",
+      "maxValue": "17-Apr-2008 23:59:59.999",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Stop Epoch",
+      "description": "NSSDC standard-reference time value at the end of the accumulation interval.",
+      "unitText": "ms (UT)",
+      "minValue": "01-Jan-1995 00:00:00.000",
+      "maxValue": "01-Jan-2020 23:59:59.999",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Counts",
+      "description": "An array of counts per mass step for each data accumulation interval. The array has dimensions for\n\n    * 6 angular accumulation bins covering the full angular range of the instrument. The pitch angles sampled in each of these bins is given by the \"Pitch_Angles\" variable and associated quality parameters described below.\n    * 8 energy step bins. The measurement energies associated with each energy step are mode dependent. They are given by the \"Energy\" variable and associated quality parameters described below.\n    * 64 mass steps. The position of H+, He++, He+, O+, NO+, and other species in mass step space depends on the MS ELUT (Mass Spectra Energy Look Up Table) which is mode dependent. MS ELUT's are specified for each TIMAS mode. The TIMAS mode is identified by the \"ICP\" data variable described below.",
+      "unitText": "Counts per Spin",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6 8 64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ID of Mass Spectral Energy Look Up Table",
+      "description": "A two digit number identifing the MS ELUT that determines which 8 of the 28 possible TIMAS energy steps are mapped to the 8 energy bins in the \"Mass_Spectra\" variable. MS ELUT's are specified for each TIMAS mode. The TIMAS mode is given by the \"ICP\" data variable described below.",
+      "unitText": "",
+      "minValue": "9",
+      "maxValue": "64",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion Energy at center of energy band",
+      "description": "Energy ABOVE Space Craft Potential. An array of 8 energies (in eV) giving the center energies of the data in the \"Mass_Spectra\" variable in each of the 8 energy step bins for each accumulation interval.",
+      "unitText": "eV",
+      "minValue": "15.0",
+      "maxValue": "35000.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Composition of energy channel",
+      "description": "A quality parameter:\n      \n      * 0: All data from same instrumental energy step.\n      * 1: Data have been accumulated from multiple instrumental energy steps.\n      * 99 or 255: Invalid energies.",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "99.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Upper Energy",
+      "description": "An array of 8 energies (in eV) giving the upper energies of the data in the \"Mass_Spectra\" variable in each of the 8 energy step bins for each accumulation interval.",
+      "unitText": "eV/e",
+      "minValue": "15.0",
+      "maxValue": "35000.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Lower Energy",
+      "description": "An array of 8 energies (in eV) giving the lower energies of the data in the \"Mass_Spectra\" variable in each of the 8 energy step bins for each accumulation interval.",
+      "unitText": "eV",
+      "minValue": "15.0",
+      "maxValue": "35000.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Quality of Pitch angle data",
+      "description": "A quality indicator of the \"Pitch_Angles\" variables for each accumulation interval.\n      \n      * 0: Valid pitch angles.\n      * 4: Pitch angle data compromised (smeared) because of no \"spin lock.\"\n      * 10: Insufficient data to calculate pitch angle.\n      * 99: Invalid pitch angles.\n      * 100: No magnetometer data (required to calculate pitch angle).",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle",
+      "description": "An array of 6 pitch angles (in degrees) giving the pitch angle at the center of each of the 6 rather large angular accumulation bins in the \"Mass_Spectra\" variable.",
+      "unitText": "Degrees",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Look Directions in Fixed Platform Coordinates",
+      "description": "Look directions of the 6 angular sectors In Fixed Payload Coordinates.\n      \n          Normal operations have the angular accumulation bins for the \"Mass_Spectra\" variable fixed in \"Fixed Platform\" coordinates. The 6 look directions in FP coordinates defined by the MAG team are:\n          \n          * 1: in the + Z (spin axis) direction,\n          * 2: in the +X direction, (in the spin plane, in the direction closest to the sun direction),\n          * 3: +Y direction (completing a right hand coordiante system),\n          * 4: -X direction,\n          * 5: -Y direction, and\n          * 6: -Z (spin axis) direction.\n          \n          For the first part of the mission the spin axis was orbit normal and so the +/- Z axes sampled mostly near 90 degree pitch angles. Later in the mission the spin axis was pointed nearly normal to the ecliptic.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle DRIFT",
+      "description": "An array of 6 angles (in degrees) giving the change in magnitude of the pitch angle at the center of each angular accumulation bin over each accumulation interval.",
+      "unitText": "Degrees",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mass Step",
+      "description": "Numbers from 0 to 63 giving the mass step number for each of the 64 mass steps in the \"Mass_Spectra\" variable.",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "63.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ICP table number",
+      "description": "A two digit number indicating the TIMAS operating mode.",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "256.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy Range",
+      "description": "A variable indicating which of the three TIMAS energy range modes was active at the time of data acumulation.\n      \n      * 0: Data for the full (15eV to 33 keV) energy range was acquired.\n      * 1: Data for a reduced (15 eV to 25 keV) energy range was acquired.\n      * 2: Data were sampled only for the lowest energies. Data acquired in this mode has not been validated.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "3",
+      "defaultValue": "255"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FEC counts",
+      "description": "Total counts per spin in the  fast event counter",
+      "unitText": "Counts per spin",
+      "minValue": "0.0",
+      "maxValue": "1.0E8",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Background counts",
+      "description": "Total Background counts per spin",
+      "unitText": "Counts per spin",
+      "minValue": "0.0",
+      "maxValue": "1.0E8",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Accumulated spins in each energy band",
+      "description": "Number of 6 second spin periods in the accumulation interval for the \"Mass_Spectra\" variable.",
+      "unitText": "Number of spin periods",
+      "minValue": "0.0",
+      "maxValue": "32.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag",
+      "description": "A 2-digit quality number for the \"Mass_Spectra\" variable.\n      \n      * 0: OK;\n      * 1: Some data missing;\n      * 5: Some warning flags were set;\n      * 99: No valid data.\n      \n      0 and 1 indicated high quality data.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "99",
+      "defaultValue": "255"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Quality of Orbit Information",
+      "description": "A quality number for the orbital data.\n      \n      * 0: OK,\n      * 99: Orbit data not available.",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "99.0",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L value",
+      "description": "The MacIlwain L parameter associated with the \"Center_Epoch\" of the data accumulation interval.",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Local Time",
+      "description": "The magnetic local time associated with the \"Center_Epoch\" of the data accumulation interval.",
+      "unitText": "hours",
+      "minValue": "0.0",
+      "maxValue": "25.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Local Time",
+      "description": "The local time associated with the \"Center_Epoch\" of the data accumulation interval.",
+      "unitText": "hours",
+      "minValue": "0.0",
+      "maxValue": "25.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geocentric Distance",
+      "description": "The geocentric distance (in units of Earth radii) of the Polar satellite associated with the \"Center_Epoch\" of the data accumulation interval.",
+      "unitText": "Re",
+      "minValue": "1.0",
+      "maxValue": "12.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Latitude",
+      "description": "The magnetic latitude (in degrees) associated with the \"Center_Epoch\" of the data accumulation interval.",
+      "unitText": "degrees",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Invariant Latitude",
+      "description": "The invariant latitude (in degrees) associated with the \"Center_Epoch\" of the data accumulation interval.",
+      "unitText": "degrees",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31"
+    }
+  ]
+}

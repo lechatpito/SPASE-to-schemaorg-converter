@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/INT_TAIL_CORAL_COUNT.jsonld",
+  "name": "INT-TAIL CORAL COUNT : Raw Count Rates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/INT_TAIL_CORAL_COUNT.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Yuri.Yermolaev",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Yuri.Yermolaev"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Elena.Budnik.Elena.Budnik",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Elena.Budnik.Elena.Budnik"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Andrei.Fedorov",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Andrei.Fedorov"
+    }
+  ],
+  "sdDatePublished": "2022-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_TAIL_CORAL_COUNT",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Interball-Tail/CORAL/INT_TAIL_CORAL_COUNT",
+  "description": "This data set contains ions raw count rates from the Interball-Tail-CORALL instrument. The  CORALL instrument uses five sensors (microchannel plates - MCPs) corresponding to five instrument polar sectors (channels). The MCPs efficiencies are different and vary with time. This data set contains raw count rates (counts per second) obtained from five MCPs without taking into account their efficiency. In order to have more realistic picture we provide relative MCPs efficiencies depending on time. The sensitivity of channel 5 (antisunward direction) is taken to be 1. Channels intercalibration was made periodically during the whole mission in the space regions where ion distribution is known to be isotropic.",
+  "abstract": "This data set contains ions raw count rates from the Interball-Tail-CORALL instrument. The  CORALL instrument uses five sensors (microchannel plates - MCPs) corresponding to five instrument polar sectors (channels). The MCPs efficiencies are different and vary with time. This data set contains raw count rates (counts per second) obtained from five MCPs without taking into account their efficiency. In order to have more realistic picture we provide relative MCPs efficiencies depending on time. The sensitivity of channel 5 (antisunward direction) is taken to be 1. Channels intercalibration was made periodically during the whole mission in the space regions where ion distribution is known to be isotropic.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": []
+}

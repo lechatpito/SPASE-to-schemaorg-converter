@@ -1,0 +1,294 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/L2_XPS.jsonld",
+  "name": "TIMED SEE Level2 XPS Solar Irradiance Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/L2_XPS.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Thomas.N.Woods",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Thomas.N.Woods"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://lasp.colorado.edu/home/see/data/",
+      "encodingFormat": "NetCDF",
+      "name": "SEE Data Products web page",
+      "description": "This web page allows the request of data files for this product.  To request data: for the XPS data type of interest, click the year of interest to go the the ftp directory of files and download the desired day-long file by clicking on it."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/TIMED/SEE/L2_XPS",
+  "description": "The 12 X-Ray Photometers (XP) aboard SEE perform full-disk irradiance measurements of the Sun for about 3 minutes every orbit (97 minutes) which usually gives 14-15 measurements per day. 8 of the XPs produce XUV signals (more info on XP coatings) and one other XP provides a hydrogen Lyman-alpha measurement (121.5 nm). The XPS Level 2 data is time averaged over the entire day, after being 1-AU corrected and removing flares. The 1-AU correction is provided.",
+  "abstract": "The 12 X-Ray Photometers (XP) aboard SEE perform full-disk irradiance measurements of the Sun for about 3 minutes every orbit (97 minutes) which usually gives 14-15 measurements per day. 8 of the XPs produce XUV signals (more info on XP coatings) and one other XP provides a hydrogen Lyman-alpha measurement (121.5 nm). The XPS Level 2 data is time averaged over the entire day, after being 1-AU corrected and removing flares. The 1-AU correction is provided.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "S"
+    },
+    {
+      "@type": "Place",
+      "name": "u"
+    },
+    {
+      "@type": "Place",
+      "name": "n"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "SEE",
+    "XPS",
+    "Sun"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Date of observation",
+      "description": "Date of observation",
+      "unitText": "YYYY-DOY",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Channel index",
+      "description": "Channel index of the 12 XUV Photometers (1-12)",
+      "unitText": "NONE",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bandpass wavelength range",
+      "description": "Bandpass wavelength range",
+      "unitText": "nm",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9 2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "XPS median solar irradiance",
+      "description": "Solar irradiance - median for the day",
+      "unitText": "W / m^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Difference of median and weighted average solar irradiance",
+      "description": "Difference of median and weighted average solar irradiance over the day",
+      "unitText": "W / m^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Accuracy of solar irradiance",
+      "description": "Accuracy of solar irradiance averaged over the day",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Measurement precision",
+      "description": "Measurement precision averaged over the day",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard deviation of median for good measurements",
+      "description": "Standard deviation of median for good measurements",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AU correction factor",
+      "description": "AU correction factor for date",
+      "unitText": "1 / (AU^2)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Median of Total-Dark-Visible currents",
+      "description": "Median of Total-Dark-Visible currents from level 1 with FOV and 1-AU corrections applied",
+      "unitText": "nanoAmps",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of measurements used",
+      "description": "Number of measurements used in daily average",
+      "unitText": "NONE",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument degradation correction factor",
+      "description": "Instrument degradation correction factor",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Degradation function linear extrapolation/interpolation flag",
+      "description": "Long value = 1 if degradation function is linearly extrapolated, 0 if linearly interpolated",
+      "unitText": "None",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Atmospheric correction factors average",
+      "description": "Average of atmospheric correction factors",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Atmospheric correction factors minimum",
+      "description": "Minimum of atmospheric correction factors",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Atmospheric correction factors maximum",
+      "description": "Maximum of atmospheric correction factors",
+      "unitText": "Fractional",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    }
+  ]
+}

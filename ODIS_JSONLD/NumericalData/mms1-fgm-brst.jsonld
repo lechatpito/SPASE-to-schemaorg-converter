@@ -1,0 +1,184 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mms1-fgm-brst.jsonld",
+  "name": "MMS1 - FGM - burst",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mms1-fgm-brst.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.L.Burch",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.L.Burch"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Christopher.T.Russell",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Christopher.T.Russell"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/W.Magnus",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/W.Magnus"
+    }
+  ],
+  "sdDatePublished": "2024-03-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MMS/MMS1/FGM/mms1-fgm-brst",
+  "description": "For the purpose of creating a unified FGM Level 2 data product, burst mode data is taken from DFG and survey mode data is taken \n                from AFG.  Because AFG and DFG are cross-calibrated on an orbit-averaged basis, \n                small differences in offset may be observed between Level2 burst and survey mode\n                data.  Consequently, any differences are within the error of the measurement. Based on preliminary analysis of the data, \n                the absolute error within the Region of Interest (ROI) is estimated to be no more than 0.1 nT in the spin-plane, \n                0.15 nT along the spin-axis and 0.2 nT in total magnitude\n            ",
+  "abstract": "For the purpose of creating a unified FGM Level 2 data product, burst mode data is taken from DFG and survey mode data is taken \n                from AFG.  Because AFG and DFG are cross-calibrated on an orbit-averaged basis, \n                small differences in offset may be observed between Level2 burst and survey mode\n                data.  Consequently, any differences are within the error of the measurement. Based on preliminary analysis of the data, \n                the absolute error within the Region of Interest (ROI) is estimated to be no more than 0.1 nT in the spin-plane, \n                0.15 nT along the spin-axis and 0.2 nT in total magnitude\n            ",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms1_brst_bgse(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms1_brst_bgse(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms1_brst_bgse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms1_brst_bgsm(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms1_brst_bgsm(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms1_brst_bgsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

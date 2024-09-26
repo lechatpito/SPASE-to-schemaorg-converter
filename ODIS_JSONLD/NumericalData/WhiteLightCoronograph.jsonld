@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/WhiteLightCoronograph.jsonld",
+  "name": "Skylab White Light Coronograph in FITS Format",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/WhiteLightCoronograph.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.MacQueen",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.MacQueen"
+    }
+  ],
+  "sdDatePublished": "2021-03-29",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/skylab/whitelight_coronagraph/calibrated_fits_images/",
+      "encodingFormat": "FITS",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In FITS via FTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/skylab/whitelight_coronagraph/calibrated_fits_images/",
+      "encodingFormat": "FITS",
+      "name": "HTTPS from SPDF",
+      "description": "In FITS via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Skylab/WhiteLightCoronograph",
+  "description": "This data set contains Skylab SO-52 whitelight coronagraph FITS images, as originally posted at UCAR/HAO. Four types of data are provided: intensity of the corona in B/Bsun units, alpha-angle data, polarization data, and polarization brightness data. The data have been corrected for Earths elliptic orbit around the sun.",
+  "abstract": "This data set contains Skylab SO-52 whitelight coronagraph FITS images, as originally posted at UCAR/HAO. Four types of data are provided: intensity of the corona in B/Bsun units, alpha-angle data, polarization data, and polarization brightness data. The data have been corrected for Earths elliptic orbit around the sun.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

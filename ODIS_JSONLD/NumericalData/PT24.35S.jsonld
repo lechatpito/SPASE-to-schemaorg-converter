@@ -1,0 +1,556 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT24.35S.jsonld",
+  "name": "Van Allen Probe B Energetic Particle, Composition, and Thermal Plasma Suite (ECT) Helium Oxygen Proton Electron Electrostatic Analyzer (HOPE) Spin-Resolved Science Data. Electron >200 eV and Ion >30 eV Plasma Moments measured at Apogee in Alternate Spin Cadence, Level 3, Release #4 (L3), 24.35 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT24.35S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Herbert.O.Funsten",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Herbert.O.Funsten"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Ruth.Skoug",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Ruth.Skoug"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Brian.A.Larsen",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Brian.A.Larsen"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Reiner.Friedel",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Reiner.Friedel"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2022-08-18",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l3/ect/hope/moments/rel04/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l3/ect/hope/moments/rel04/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=RBSPB_REL04_ECT-HOPE-MOM-L3&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/RBSP/B/ECT/HOPE/L3/Moments/Release04/PT24.35S",
+  "description": "Van Allen Probe B, Energetic Particle, Composition, and Thermal Plasma Suite, ECT, Helium Oxygen Proton Electron, HOPE, Mass Spectrometer Spin Resolution Science Data. Plasma Moments from Electrons >200 eV and Ions >30 eV measured at Apogee in alternate Spin Cadence.",
+  "abstract": "Van Allen Probe B, Energetic Particle, Composition, and Thermal Plasma Suite, ECT, Helium Oxygen Proton Electron, HOPE, Mass Spectrometer Spin Resolution Science Data. Plasma Moments from Electrons >200 eV and Ions >30 eV measured at Apogee in alternate Spin Cadence.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, Ions",
+      "description": "Epoch Time, Time Base for Ion Measurements",
+      "unitText": "",
+      "minValue": "01-Jan-2010 00:00:00.000",
+      "maxValue": "31-Dec-2029 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, Electrons",
+      "description": "Epoch Time, Time Base for Electron Measurements",
+      "unitText": "",
+      "minValue": "01-Jan-2010 00:00:00.000",
+      "maxValue": "31-Dec-2029 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Temperature, Parallel",
+      "description": "Proton Temperature, Parallel, Apogee Mode, Energies \u226530 eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium Temperature, Parallel",
+      "description": "Helium Temperature, Parallel, Apogee Mode, Energies \u226530 eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Temperature, Parallel",
+      "description": "Oxygen Temperature, Parallel, Apogee Mode, Energies \u226530 eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Temperature, Parallel",
+      "description": "Electron Temperature, Parallel, Apogee Mode, Energies \u2265 200 eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Temperature, Perpendicular",
+      "description": "Proton Temperature, Perpendicular, Apogee Mode, Energies \u226530 eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium Temperature, Perpendicular",
+      "description": "Helium Temperature, Perpendicular, Apogee Mode, Energies \u226530 eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Temperature, Perpendicular",
+      "description": "Oxygen Temperature, Perpendicular, Apogee Mode, Energies \u226530 eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Temperature, Perpendicular",
+      "description": "Electron Temperature, Perpendicular, Apogee Mode, Energies \u2265 200 eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Temperature Ratio",
+      "description": "Proton Temperature Ratio, Tperp/Tpar, Apogee Mode, Energies \u226530 eV",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium Temperature Ratio",
+      "description": "Helium Temperature Ratio, Tperp/Tpar, Apogee Mode, Energies \u226530 eV",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Temperature Ratio",
+      "description": "Oxygen Temperature Ratio, Tperp/Tpar, Apogee Mode, Energies \u226530 eV",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Temperature Ratio",
+      "description": "Electron Temperature Ratio, Tperp/Tpar, Apogee Mode, Energies \u226530 eV",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion Density, Partial",
+      "description": "Ion Density, Partial, Apogee Mode, Energies \u226530 eV",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Density, Partial",
+      "description": "Proton Density, Partial, Apogee Mode, Energies \u226530 eV",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium Density, Partial",
+      "description": "Helium Density, Partial, Apogee Mode, Energies \u226530 eV",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Density, Partial",
+      "description": "Oxygen Density, Partial, Apogee Mode, Energies \u226530 eV",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Density, Partial",
+      "description": "Electron Density, Partial, Apogee Mode, Energies \u2265 200 eV",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium to Proton Density Ratio, Partial",
+      "description": "Helium to Proton, He/p, Density Ratio, Partial, Apogee Mode, Energies \u226530 eV",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium to Oxygen Density Ratio, Partial",
+      "description": "Helium to Oxygen, He/O, Density Ratio, Partial, Apogee Mode, Energies \u226530 eV",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen to Proton Density Ratio, Partial",
+      "description": "Oxygen to Proton, O/p, Density Ratio, Partial, Apogee Mode, Energies \u226530 eV",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Bin Number",
+      "description": "Number of sampled Proton Bins",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "127",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium Bin Number",
+      "description": "Number of sampled Helium Bins",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "127",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen Bin Number",
+      "description": "Number of sampled Oxygen Bins",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "127",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Bin Number",
+      "description": "Number of sampled Electron Bins",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "127",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Proton Temperature",
+      "description": "Data Quality Flag, Proton Temperature",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Helium Temperature",
+      "description": "Data Quality Flag, Helium Temperature",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Oxygen Temperature",
+      "description": "Data Quality Flag, Oxygen Temperature",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Electron Temperature",
+      "description": "Data Quality Flag, Electron Temperature",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Proton Tperp Consistency",
+      "description": "Data Quality Flag, Proton Perpendicular Temperature, Tperp, Consistency",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Helium Tperp Consistency",
+      "description": "Data Quality Flag, Helium Perpendicular Temperature, Tperp, Consistency",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Oxygen Tperp Consistency",
+      "description": "Data Quality Flag, Oxygen Perpendicular Temperature, Tperp, Consistency",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Electron Tperp Consistency",
+      "description": "Data Quality Flag, Electron Perpendicular Temperature, Tperp, Consistency",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Proton Density",
+      "description": "Data Quality Flag, Proton Density",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Helium Density",
+      "description": "Data Quality Flag, Helium Density",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Oxygen Density",
+      "description": "Data Quality Flag, Oxygen Density",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Electron Density",
+      "description": "Data Quality Flag, Electron Density",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-128"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position Vector, Geographic Cartesian Coordinates",
+      "description": "Spacecraft Position Vector, Geographic, GEO, Cartesian Coordinates",
+      "unitText": "km",
+      "minValue": "-100000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Xgeo",
+            "Index": "1"
+          },
+          {
+            "Name": "Ygeo",
+            "Index": "2"
+          },
+          {
+            "Name": "Zgeo",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roederer L* generalized L Shell Parameter",
+      "description": "Roederer L* generalized L Shell Parameter",
+      "unitText": "Re",
+      "minValue": "0.0",
+      "maxValue": "1.0e+31",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "McIlwain L Shell Parameter",
+      "description": "McIlwain L Shell Parameter",
+      "unitText": "Re",
+      "minValue": "0.0",
+      "maxValue": "1.0e+31",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Magnetic Field Magnitude, Equatorial",
+      "description": "Model Magnetic Field Magnitude at the Magnetic Equator",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "1.0e+31",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second Adiabatic Invariant, Bounce",
+      "description": "Second Adiabatic Invariant, Bounce",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "1.0e+31",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Magnetic Local Time",
+      "description": "Spacecraft Position, Magnetic Local Time, MLT, in Hours",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0e+31"
+    }
+  ]
+}

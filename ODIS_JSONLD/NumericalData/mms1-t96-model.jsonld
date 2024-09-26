@@ -1,0 +1,196 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mms1-t96-model.jsonld",
+  "name": "MMS1 - Analytical Models - T96 field model",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mms1-t96-model.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/Nikolai.Tsyganenko",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/Nikolai.Tsyganenko"
+    }
+  ],
+  "sdDatePublished": "2024-05-23",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MMS/MMS1/Models/mms1-t96-model",
+  "description": "A data-based Tsyganenko96 model computes the geomagnetospheric magnetic field with an explicitly defined realistic magnetopause, large-scale Region 1 and 2 Birkeland current systems, and the IMF penetration across the boundary. The model uses the following inputs :\n            * solar wind ram pressure\n            * IMF Y and Z-component\n            * Dst index \n            When a parameter 'T96 model field along a spacecraft orbit' is calculated, the input data above are fetched in the AMDA database and averaged on 20 min (fixed interval) before computation. The original ephemeris time resolution is finally used for the resolution of the computed magnetic field.\n            Source for input conditions: OMNI 5 min dataset and SYM index dataset.\n         ",
+  "abstract": "A data-based Tsyganenko96 model computes the geomagnetospheric magnetic field with an explicitly defined realistic magnetopause, large-scale Region 1 and 2 Birkeland current systems, and the IMF penetration across the boundary. The model uses the following inputs :\n            * solar wind ram pressure\n            * IMF Y and Z-component\n            * Dst index \n            When a parameter 'T96 model field along a spacecraft orbit' is calculated, the input data above are fetched in the AMDA database and averaged on 20 min (fixed interval) before computation. The original ephemeris time resolution is finally used for the resolution of the computed magnetic field.\n            Source for input conditions: OMNI 5 min dataset and SYM index dataset.\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "E"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "b_t96gse_mms1_xyz_gse(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "b_t96gse_mms1_xyz_gse(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "b_t96gse_mms1_xyz_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "b_t96gsm_mms1_xyz_gse(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "b_t96gsm_mms1_xyz_gse(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "b_t96gsm_mms1_xyz_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

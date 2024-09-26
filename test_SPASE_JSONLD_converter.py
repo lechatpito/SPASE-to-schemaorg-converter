@@ -2,7 +2,7 @@ import unittest
 import json
 import os
 import logging
-from SPASE_JSONLD_converter import convert_spase_to_jsonld
+from SPASE_JSONLD_converter import convert_display_data_to_jsonld
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
@@ -57,7 +57,7 @@ class TestSPASEJSONLDConverter(unittest.TestCase):
 
     def test_convert_spase_to_jsonld(self):
         # Call the conversion function and get the output file path
-        output_file = convert_spase_to_jsonld(self.input_file, self.output_directory)
+        output_file = convert_display_data_to_jsonld(self.input_file, self.output_directory)
 
         # Ensure the output file was returned
         self.assertIsNotNone(output_file, "Output file not returned")

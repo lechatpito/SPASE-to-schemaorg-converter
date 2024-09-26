@@ -1,0 +1,216 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/so-step-rates.jsonld",
+  "name": "SolarOrbiter - EPD/STEP - L2 : rates - flux",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/so-step-rates.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-AMDA/J.Rodrigues-Pacheco",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-AMDA/J.Rodrigues-Pacheco"
+    }
+  ],
+  "sdDatePublished": "2022-01-17",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/EPD/so-step-rates",
+  "description": "Solar Orbiter, Level 2 Data, Energetic Particle Detector, SupraThermal Electrons and Protons, Rates.\n              \n          STEP is designed to measure electrons and ions in the suprathermal energy range (280 keV). To \n          allow for the separation of electrons and ions, STEP has 2 different channels, each equipped with its \n          own solid state detectors for detecting particles: \n          * Magnet channel. Uses a permanent magnet to deflect electrons, measuring only ions (mostly protons). \n          * Integral channel. Measures all incoming particles.\n          \n          The electron flux is recovered by subtracting the magnet channel measurements from the integral \n          channel ones. Each channel is divided in 15 sectors, disposed in 3 rows of 5 pixels, providing \n          directional information of the incoming particles within the field of view. An additional pixel, not directly \n          exposed to the incoming flux, measures the cosmic ray background.",
+  "abstract": "Solar Orbiter, Level 2 Data, Energetic Particle Detector, SupraThermal Electrons and Protons, Rates.\n              \n          STEP is designed to measure electrons and ions in the suprathermal energy range (280 keV). To \n          allow for the separation of electrons and ions, STEP has 2 different channels, each equipped with its \n          own solid state detectors for detecting particles: \n          * Magnet channel. Uses a permanent magnet to deflect electrons, measuring only ions (mostly protons). \n          * Integral channel. Measures all incoming particles.\n          \n          The electron flux is recovered by subtracting the magnet channel measurements from the integral \n          channel ones. Each channel is divided in 15 sectors, disposed in 3 rows of 5 pixels, providing \n          directional information of the incoming particles within the field of view. An additional pixel, not directly \n          exposed to the incoming flux, measures the cosmic ray background.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux",
+      "description": "Magnet channel. Uses a permanet magnet to deflect electrons. Measuring only ions (mostly protons)",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux unc",
+      "description": "Uncertainty in sector averaged magnet channel flux",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion cntrate",
+      "description": "Sector averaged magnet channel count rate",
+      "unitText": "cnts/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "el flux",
+      "description": "The electron flux is recovered by subtracting the magnet channel measurements from the integral channel ones",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "total flux",
+      "description": "Integral channel. Measures all incoming particles",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "total flux unc",
+      "description": "Uncertainty in sector averaged integral channel flux",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "total cntrate",
+      "description": "Sector averaged integral channel count rate",
+      "unitText": "cnts/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag",
+      "description": "0: Bad, 1: Known problems, 2: Survey data, 3: Good, 4: Excellent",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

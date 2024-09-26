@@ -1,0 +1,213 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/plr-hyd-mom.jsonld",
+  "name": "Polar - HYDRA - plasma moments",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/plr-hyd-mom.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Jack.D.Scudder",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Jack.D.Scudder"
+    }
+  ],
+  "sdDatePublished": "2020-11-13",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/POLAR/Hydra/plr-hyd-mom",
+  "description": "\n                HYDRA is a 3-Dimensional Electron and Ion Hot Plasma Instrument for\n                the Polar Spacecraft of the GGS Mission ( J. Scudder et al., Space Sci. Rev.,\n                71,459-495, Feb. 1995. http://www-st.physics.uiowa.edu ).\n                \n                This data set contains \n                survey electron and proton moments for the energy flux (parallel), at \n                13.8-second resolution as determined ( 0-20 keV ). Higher quality data products may\n                be available from the P.I.\n            ",
+  "abstract": "\n                HYDRA is a 3-Dimensional Electron and Ion Hot Plasma Instrument for\n                the Polar Spacecraft of the GGS Mission ( J. Scudder et al., Space Sci. Rev.,\n                71,459-495, Feb. 1995. http://www-st.physics.uiowa.edu ).\n                \n                This data set contains \n                survey electron and proton moments for the energy flux (parallel), at \n                13.8-second resolution as determined ( 0-20 keV ). Higher quality data products may\n                be available from the P.I.\n            ",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- density",
+      "description": "",
+      "unitText": "cm**-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- v_gsm",
+      "description": "",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "plr_el_v_gsm(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "plr_el_v_gsm(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "plr_el_v_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- t_para",
+      "description": "Electron Moment Parallel Mean Energy in eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "30000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- t_perp",
+      "description": "Electron Moment Perpendicular Mean Energy in eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "30000.0",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion density",
+      "description": "Ion Moment Density",
+      "unitText": "cm**-3",
+      "minValue": "0.01",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion v_gsm",
+      "description": "Ion Bulk_Velocity in km/s",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "plr_i_v_gsm(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "plr_i_v_gsm(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "plr_i_v_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion t_para",
+      "description": "Ion Moment Parallel Mean Energy in eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "30000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion t_perp",
+      "description": "Ion Moment Perpendicular Mean Energy in eV",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "30000.0",
+      "defaultValue": ""
+    }
+  ]
+}

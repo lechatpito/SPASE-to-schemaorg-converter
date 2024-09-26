@@ -1,0 +1,259 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/STB_SWEA_SURVEY_MOM.jsonld",
+  "name": "STEREO-B IMPACT SWEA Level-2 Survey electron moments",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/STB_SWEA_SURVEY_MOM.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Janet.Luhmann",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Janet.Luhmann"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Jean-Andre.Sauvaud",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Jean-Andre.Sauvaud"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Vincent.Genot",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Vincent.Genot"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Vincent.Genot",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Vincent.Genot"
+    }
+  ],
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:STB_SWEA_SURVEY_MOM",
+      "encodingFormat": "CEF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/STEREO-B/IMPACT/SWEA/STB_SWEA_SURVEY_MOM",
+  "description": "This data set contains  the moments of the electron distribution function at the SURVEY cadence (30 s) computed from the distribution function.\nIt must be noted that, owing to measurement limitations in the low energy range, the moments are only partial moments calculated for energies above 50 eV. The dataset comprises the partial density, temperatures, and heat flux.",
+  "abstract": "This data set contains  the moments of the electron distribution function at the SURVEY cadence (30 s) computed from the distribution function.\nIt must be noted that, owing to measurement limitations in the low energy range, the moments are only partial moments calculated for energies above 50 eV. The dataset comprises the partial density, temperatures, and heat flux.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "H"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "R"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "m"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "1"
+    },
+    {
+      "@type": "Place",
+      "name": "A"
+    },
+    {
+      "@type": "Place",
+      "name": "U"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA electron density",
+      "description": "STEREO-B SWEA electron density",
+      "unitText": "1/cm^3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA  T_par_b_eV electron temperature along B",
+      "description": "STEREO-B SWEA  electron temperature along B using pressure tensor in (B,Z^B,B^(Z^B)) Tpar",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA  T_per1_b electron temperature along B",
+      "description": "STEREO-B SWEA  electron temperature along B using pressure tensor in (B,Z^B,B^(Z^B)) Tper1",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA  T_per2_b electron temperature along B",
+      "description": "STEREO-B SWEA  electron temperature along B using pressure tensor in (B,Z^B,B^(Z^B)) Tper2",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA electron heat flux Qr_rtn",
+      "description": "STEREO-B SWEA electron heat flux in RTN Qr",
+      "unitText": "erg/s/cm^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA electron heat flux Qt_rtn",
+      "description": "STEREO-B SWEA electron heat flux in RTN Yt",
+      "unitText": "erg/s/cm^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA electron heat flux Qn_rtn",
+      "description": "STEREO-B SWEA heat flux in RTN Zn",
+      "unitText": "erg/s/cm^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA Br_rtn",
+      "description": "STEREO-B SWEA  B in RTN used in moments computation Br",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA Bt_rtn",
+      "description": "STEREO-B SWEA  B in RTN used in moments computation Bt",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA Bn_rtn",
+      "description": "STEREO-B SWEA  B in RTN used in moments computation Bn",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA electron heat flux Qpar",
+      "description": "STEREO-B SWEA electron heat flux along B",
+      "unitText": "erg/s/cm^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA electron heat flux Qper",
+      "description": "STEREO-B SWEA electronheat flux perpendicular to B",
+      "unitText": "erg/s/cm^2",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

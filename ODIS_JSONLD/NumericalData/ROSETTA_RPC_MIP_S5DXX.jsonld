@@ -1,0 +1,153 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ROSETTA_RPC_MIP_S5DXX.jsonld",
+  "name": "ROSETTA RPC-MIP Plasma Electron Density (CDF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ROSETTA_RPC_MIP_S5DXX.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Pierre.Henri",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Pierre.Henri"
+    }
+  ],
+  "sdDatePublished": "2022-05-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ROSETTA_RPC_MIP_S5DXX",
+      "encodingFormat": "CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ROSETTA/RPC_MIP/ROSETTA_RPC_MIP_S5DXX",
+  "description": "This dataset contains the plasma electron density derived from electric field mutual impedance spectra obtained by on-ground analysis of RPC-MIP spectra acquired when RPC-MIP operated in active modes (SDL and LDL).",
+  "abstract": "This dataset contains the plasma electron density derived from electric field mutual impedance spectra obtained by on-ground analysis of RPC-MIP spectra acquired when RPC-MIP operated in active modes (SDL and LDL).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "C"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "m"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "delta_time",
+      "description": "Each RPCMIP measurement is acquired and averaged on-board during a certain duration. DELTA_TIME is half the acquisition duration",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Density",
+      "description": "Plasma electron density",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron density uncertainty",
+      "description": "Estimated uncertainty of the plasma electron density",
+      "unitText": "cm^-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SNR Quality",
+      "description": "Local quality of the plasma frequency signature in the spectrum between 0 (worst quality) and 1 (best quality) see RPCMIP User Guide for more details",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spectrum quality",
+      "description": "Quality describing the spectrum complexity between 0 (worst quality) and 1 (best quality) see RPCMIP User Guide for more details",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Density detection rate",
+      "description": "Density detection rate in a 320 sec (10 operation cycles) window centered on the considered density value between 0 (worst quality) and 1 (best quality) see RPCMIP User Guide for more details",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument mode",
+      "description": "Instrument mode at the time of acquisition (LDL, SDL)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Transmission Lavel",
+      "description": "Instrument transmission level (Full, 1/2, 1/4, 1/8)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument telemetry rate",
+      "description": "Instrument telemetry rate (Normal rate, Burst rate)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/DisplayData/Clg_Solar_Image.jsonld",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/DisplayData/Clg_Solar_Image.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://ASWS/Person/Kehe.Wang",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ASWS/Person/Kehe.Wang"
+    }
+  ],
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.sws.bom.gov.au/Solar/2/4",
+      "encodingFormat": "",
+      "name": "Real Time H-Alpha Image Display",
+      "description": "Real Time display of H-Alpha solar images recorded at Culgoora"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.sws.bom.gov.au/Solar/2/6",
+      "encodingFormat": "",
+      "name": "Real Time White Light Image Display",
+      "description": "Real Time display of White Light solar images recorded at Culgoora"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://downloads.sws.bom.gov.au/wdc/wdc_sol_archive/data/culgoora/",
+      "encodingFormat": "",
+      "name": "Access to Solar Images (not with most browsers)",
+      "description": "Access to the Culgoora H-Alpha and White Light solar image data files"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://ASWS/DisplayData/Solar_Image/Clg_Solar_Image",
+  "description": "",
+  "abstract": "",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "keywords": [
+    "Solar Image",
+    "H-Alpha Image",
+    "White Light Image"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

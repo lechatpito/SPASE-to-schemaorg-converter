@@ -1,0 +1,923 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT6H.jsonld",
+  "name": "Voyager 2 Cosmic Ray Subsystem (CRS) Cruise Mode Six hour averages",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT6H.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Nand.Lal",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Nand.Lal"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://voyager.gsfc.nasa.gov/download.html",
+      "encodingFormat": "Text",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Voyager2/CRS/Flux/EnergyFlux/HydrogenHelium/LevelH3/ASCII/PT6H",
+  "description": "\n                six hour averages of selected fluxes\n            ",
+  "abstract": "\n                six hour averages of selected fluxes\n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "\n                ISO 8601 formatted UT of start of daily interval\n            ",
+      "unitText": "",
+      "minValue": "1977-08-25T00:00:00",
+      "maxValue": "2016-11-01T00:00:00",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "3.0 - 4.6 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux - MEAN of LET-C and LET-D 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "4.6 - 6.2 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux - MEAN of LET-C and LET-D 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "6.2 - 7.7 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux - MEAN of LET-C and LET-D 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "7.7 - 12.8 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-I A-stopping 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "12.8 - 17.9 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-I A-stopping 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "17.9 - 30.0 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-I A-stopping 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "30 - 48 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-I A-stopping 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "48 - 56 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-I A-stopping 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "77 - 102 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-II low gain penetrating mode data\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "131 - 152 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-II low gain penetrating mode data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "152 - 185 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-II low gain penetrating mode data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "185 - 245 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-II low gain penetrating mode data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "245 - 276 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-II low gain penetrating mode data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "276 - 374 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-II low gain penetrating mode data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "374 - 459 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-II low gain penetrating mode data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "459 - 597 MeV/nucleon Helium Flux",
+      "description": "\n                Helium4 flux derived from HET-II low gain penetrating mode data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "3.0 - 4.6 MeV Proton Flux",
+      "description": "\n                Proton flux - MEAN of LET-C and LET-D 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "4.6 - 6.2 MeV Proton Flux",
+      "description": "\n                Proton flux - MEAN of LET-C and LET-D 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "6.2 - 7.7 MeV Proton Flux",
+      "description": "\n                Proton flux - MEAN of LET-C and LET-D 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "7.7 - 12.8 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I A-stopping 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "12.8 - 17.9 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I A-stopping 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "17.9 - 30.0 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I A-stopping 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "30 - 48 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I A-stopping 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "48 - 56 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I A-stopping 3 dimensional analysis\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "76 - 83 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I Penetrating high gain data\n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "130 - 154 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I Penetrating high gain data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "154 - 171 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I Penetrating high gain data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "171 - 194 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I Penetrating high gain data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "194 - 208 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I Penetrating high gain data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "208 - 246 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I Penetrating high gain data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "246 - 272 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I Penetrating high gain data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "272 - 344 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I Penetrating high gain data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "344 - 479 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I Penetrating high gain data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "479 - 599 MeV Proton Flux",
+      "description": "\n                Proton flux derived from HET-I Penetrating high gain data \n            ",
+      "unitText": "1/(m^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "value",
+            "Index": "0",
+            "ValidMin": "0"
+          },
+          {
+            "Name": "statistical uncertainty in value",
+            "Index": "1",
+            "ValidMin": "0"
+          }
+        ]
+      }
+    }
+  ]
+}

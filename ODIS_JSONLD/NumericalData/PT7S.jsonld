@@ -1,0 +1,552 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT7S.jsonld",
+  "name": "PSP Solar Wind Electrons Alphas and Protons (SWEAP) SPAN-A Proton Distribution Function, Partial Moments, Instrument Frame, Level 3 (L3), 7 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT7S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Justin.C.Kasper",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Justin.C.Kasper"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2021-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/psp/sweap/spi/l3/spi_sf00_mom_inst/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/psp/sweap/spi/l3/spi_sf00_mom_inst/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=PSP_SWP_SPI_SF00_L3_MOM_INST&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ParkerSolarProbe/SWEAP/SPAN-A/Level3/ProtonPartialMoments/InstrumentFrame/PT7S",
+  "description": "SPI Level 3 Data\n----------------\n\nFile Naming Format: psp_swp_spi_sf00_l3_mom_inst_YYYYMMDD_v01.cdf\n\nThis data product contains measurements of partial moments of the proton distribution function in the instrument frame of reference. Users should be aware that the full ion distribution is typicaly not in the field of view, FOV, of the SPAN Ion instrument.\n\nParker Solar Probe SWEAP Rules of the Road\n------------------------------------------\n\nAs part of the development of collaboration with the broader Heliophysics community, the mission has drafted a \"Rules of the Road\" to govern how PSP instrument data are to be used.\n\n* 1) Users should consult with the PI to discuss the appropriate use of instrument data or model results and to ensure that the users are accessing the most recently available versions of the data and of the analysis routines. Instrument team Science Operations Centers, SOCs, and/or Virtual Observatories, VOs, should facilitate this process serving as the contact point between PI and users in most cases.\n\n* 2) Users should heed the caveats of investigators to the interpretations and limitations of data or model results. Investigators supplying data or models may insist that such caveats be published. Data and model version numbers should also be specified.\n\n* 3) Browse products, Quicklook, and Planning data are not intended for science analysis or publication and should not be used for those purposes without consent of the PI.\n\n* 4) Users should acknowledge the sources of data used in all publications, presentations, and reports: \"We acknowledge the NASA Parker Solar Probe Mission and the SWEAP team led by J. Kasper for use of data.\".\n\n* 5) Users are encouraged to provide the PI a copy of each manuscript that uses the PI data prior to submission of that manuscript for consideration of publication. On publication, the citation should be transmitted to the PI and any other providers of data.",
+  "abstract": "SPI Level 3 Data\n----------------\n\nFile Naming Format: psp_swp_spi_sf00_l3_mom_inst_YYYYMMDD_v01.cdf\n\nThis data product contains measurements of partial moments of the proton distribution function in the instrument frame of reference. Users should be aware that the full ion distribution is typicaly not in the field of view, FOV, of the SPAN Ion instrument.\n\nParker Solar Probe SWEAP Rules of the Road\n------------------------------------------\n\nAs part of the development of collaboration with the broader Heliophysics community, the mission has drafted a \"Rules of the Road\" to govern how PSP instrument data are to be used.\n\n* 1) Users should consult with the PI to discuss the appropriate use of instrument data or model results and to ensure that the users are accessing the most recently available versions of the data and of the analysis routines. Instrument team Science Operations Centers, SOCs, and/or Virtual Observatories, VOs, should facilitate this process serving as the contact point between PI and users in most cases.\n\n* 2) Users should heed the caveats of investigators to the interpretations and limitations of data or model results. Investigators supplying data or models may insist that such caveats be published. Data and model version numbers should also be specified.\n\n* 3) Browse products, Quicklook, and Planning data are not intended for science analysis or publication and should not be used for those purposes without consent of the PI.\n\n* 4) Users should acknowledge the sources of data used in all publications, presentations, and reports: \"We acknowledge the NASA Parker Solar Probe Mission and the SWEAP team led by J. Kasper for use of data.\".\n\n* 5) Users are encouraged to provide the PI a copy of each manuscript that uses the PI data prior to submission of that manuscript for consideration of publication. On publication, the citation should be transmitted to the PI and any other providers of data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, Midpoint of Integration",
+      "description": "Epoch Time Tags, TT2000, Nanoseconds since J2000 at Midpoint of the Integration",
+      "unitText": "ns",
+      "minValue": "01-Jan-1990 00:00:00.000000000",
+      "maxValue": "31-Dec-2029 23:59:58.999000000",
+      "defaultValue": "01-Jan-2000 11:58:55.816065535"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time",
+      "unitText": "s",
+      "minValue": "1.2623e+09",
+      "maxValue": "1.89346e+09",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Parker Solar Probe, Mission Elapsed Time",
+      "description": "Parker Solar Probe, PSP, Mission Elapsed Time, MET, in string format",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Application ID",
+      "description": "Application Identifier, APID",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sequence Number",
+      "description": "Sequence Number",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Source",
+      "description": "Source",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Source Hash Value",
+      "description": "Source Hash Value",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Compression Ratio",
+      "description": "Compression Ratio",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Data Points",
+      "description": "Number of Data Points",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Size",
+      "description": "Data Size",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SMP Bits",
+      "description": "SMP Bits",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LTCS NNNN Bits",
+      "description": "LTCS NNNN Bits",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCH Bits",
+      "description": "ARCH Bits",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mode 1",
+      "description": "Mode Number 1",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCH SUM",
+      "description": "ARCH SUM",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCH SMP Data Quality Flag",
+      "description": "ARCH SMP Data Quality Flag",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Accumulation Period",
+      "description": "Total Accumulation Period",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Accumulations",
+      "description": "Number of Accumulations",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mode 2, ORI",
+      "description": "Mode Number 2, ORI",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mode 2",
+      "description": "Mode Number 2",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "F0",
+      "description": "F0",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Status Bits",
+      "description": "Status Bits",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Peak Bin",
+      "description": "Peak Bin",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Product Bits",
+      "description": "Product Bits",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Particle Counts",
+      "description": "Particle Counts",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gap",
+      "description": "Gap",
+      "unitText": "",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Quality Flag",
+      "description": "Quality Flag",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "256",
+      "defaultValue": "-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rotation Matrix, Spacecraft Instrument",
+      "description": "Rotation Matrix, Spacecraft Instrument",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial Moment Number Density",
+      "description": "Partial Moment Number Density",
+      "unitText": "cm^-3",
+      "minValue": "0.1",
+      "maxValue": "10000.0",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Particle Velocity Moment",
+      "description": "Particle Velocity Moment",
+      "unitText": "km/s",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Vx",
+            "Index": "1"
+          },
+          {
+            "Name": "Vy",
+            "Index": "2"
+          },
+          {
+            "Name": "Vz",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Temperature Tensor",
+      "description": "Temperature, T, Tensor",
+      "unitText": "eV",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": [
+          {
+            "Name": "Txx",
+            "Index": "1"
+          },
+          {
+            "Name": "Tyy",
+            "Index": "2"
+          },
+          {
+            "Name": "Tzz",
+            "Index": "3"
+          },
+          {
+            "Name": "Txy",
+            "Index": "4"
+          },
+          {
+            "Name": "Txz",
+            "Index": "5"
+          },
+          {
+            "Name": "Tyz",
+            "Index": "6"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Temperature, Partial Moment",
+      "description": "Temperature, Partial Moment, Average of Trace of Temperature Tensor",
+      "unitText": "eV",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Energy Flux versus Energy",
+      "description": "Differential Energy Flux versus Energy",
+      "unitText": "eV/(cm^2 s sr eV)",
+      "minValue": "0.001",
+      "maxValue": "1.0e+12",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Energy Flux versus Theta",
+      "description": "Differential Energy Flux versus Elevation Angle, Theta",
+      "unitText": "eV/(cm^2 s sr eV)",
+      "minValue": "0.001",
+      "maxValue": "1.0e+12",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Energy Flux versus Phi",
+      "description": "Differential Energy Flux versus Azimuth Angle, Phi",
+      "unitText": "eV/(cm^2 s sr eV)",
+      "minValue": "0.001",
+      "maxValue": "1.0e+12",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Particle Energy",
+      "description": "Particle Energy",
+      "unitText": "eV",
+      "minValue": "1.0",
+      "maxValue": "100000.0",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Elevation Angle, Spacecraft coordinates",
+      "description": "Elevation Angle, Spacecraft, SC, coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Azimuth Angle, Spacecraft coordinates",
+      "description": "Azimuth Angle, Spacecraft, SC, coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    }
+  ]
+}

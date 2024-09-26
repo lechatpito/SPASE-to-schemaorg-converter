@@ -1,0 +1,846 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT4.2S.jsonld",
+  "name": "Van Allen Probe B Energetic Particle, Composition, and Thermal Plasma Suite (ECT) Relativistic Electron Proton Telescope (REPT) Pitch Angle-Resolved Electron Fluxes, 2 to 59.45 MeV, Proton Fluxes, 21.25 to 120 MeV Flux Data, Level 3, Release #3 (L3), 4.2 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT4.2S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Daniel.N.Baker",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Daniel.N.Baker"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2022-08-18",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l3/ect/rept/sectors/rel03/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/rbsp/rbspb/l3/ect/rept/sectors/rel03/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=RBSPB_REL03_ECT-REPT-SCI-L3&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/RBSP/B/ECT/REPT/L3/Sectors/Release03/PT4.2S",
+  "description": "Van Allen Probe B, Energetic Particle, Composition, and Thermal Plasma Suite, ECT, Relativistic Electron Proton Telescope, REPT, Science Data. Pitch Angle resolved Electron Fluxes, 2 MeV to 59.45 MeV, and Proton Fluxes, 21.25 MeV to 120 MeV.",
+  "abstract": "Van Allen Probe B, Energetic Particle, Composition, and Thermal Plasma Suite, ECT, Relativistic Electron Proton Telescope, REPT, Science Data. Pitch Angle resolved Electron Fluxes, 2 MeV to 59.45 MeV, and Proton Fluxes, 21.25 MeV to 120 MeV.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, Sample Time, Midpoint",
+      "description": "Epoch Time, Coordinated Universal Time, UTC, Midpoint of the Sample Time",
+      "unitText": "",
+      "minValue": "01-Jan-1990 00:00:00.000",
+      "maxValue": "31-Dec-2059 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, Sample Time, Midpoint, Proton Data",
+      "description": "Epoch Time, Coordinated Universal Time, UTC, Midpoint of the Sample Time, Proton Data",
+      "unitText": "",
+      "minValue": "01-Jan-1990 00:00:00.000",
+      "maxValue": "31-Dec-2059 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Delta Pitch Angle, Alpha, Electron Differential Flux Intensity, Unidirectional",
+      "description": "Delta Pitch Angle, Alpha, Electron Differential Flux Intensity, Unidirectional",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle, Alpha, Electron Differential Flux Intensity, Unidirectional",
+      "description": "Pitch Angle, Alpha, Electron Differential Flux Intensity, Unidirectional",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle, Alpha, Electron Differential Flux Intensity, Unidirectional",
+      "description": "Pitch Angle, Alpha, Electron Differential Flux Intensity, Unidirectional, Pitch Angles from 0\u00b0 to 180\u00b0",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle, Alpha, Electron Differential Flux Intensity, Unidirectional",
+      "description": "Pitch Angle, Alpha, Electron Differential Flux Intensity, Unidirectional, Pitch Angles from 180\u00b0 to 360\u00b0",
+      "unitText": "\u00b0",
+      "minValue": "180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle, Alpha, Proton Differential Flux Intensity, Unidirectional",
+      "description": "Pitch Angle, Alpha, Proton Differential Flux Intensity, Unidirectional",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle, Alpha, Proton Differential Flux Intensity, Unidirectional",
+      "description": "Pitch Angle, Alpha, Proton Differential Flux Intensity, Unidirectional, Pitch Angles from 0\u00b0 to 180\u00b0",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle, Alpha, Proton Differential Flux Intensity, Unidirectional",
+      "description": "Pitch Angle, Alpha, Proton Differential Flux Intensity, Unidirectional, Pitch Angles from 180\u00b0 to 360\u00b0",
+      "unitText": "\u00b0",
+      "minValue": "180.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sector Angles for Electron Differential Flux Intensity, Unidirectional, Unbinned, Empty",
+      "description": "Sector Angles for Electron Differential Flux Intensity, Unidirectional, Unbinned, Empty",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Delta Pitch Angles, Alpha, for Electron Differential Flux Intensity, Unidirectional, Unbinned",
+      "description": "Delta Pitch Angles, Alpha, for Electron Differential Flux Intensity, Unidirectional, Unbinned",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angles, Alpha, for Electron Differential Flux Intensity, Unidirectional, Unbinned",
+      "description": "Pitch Angles, Alpha, for Electron Differential Flux Intensity, Unidirectional, Unbinned, Pitch Angles from 0\u00b0 to 180\u00b0",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angles, Alpha, for Electron Differential Flux Intensity, Unidirectional, Unbinned",
+      "description": "Pitch Angles, Alpha, for Electron Differential Flux Intensity, Unidirectional, Unbinned, Pitch Angles from 0\u00b0 to 360\u00b0",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sector Angles for Proton Differential Flux Intensity, Unidirectional, Unbinned, Empty",
+      "description": "Sector Angles for Proton Differential Flux Intensity, Unidirectional, Unbinned, Empty",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Delta Pitch Angles, Alpha, for Proton Differential Flux Intensity, Unidirectional, Unbinned",
+      "description": "Delta Pitch Angles, Alpha, for Proton Differential Flux Intensity, Unidirectional, Unbinned",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angles, Alpha, for Proton Differential Flux Intensity, Unidirectional, Unbinned",
+      "description": "Pitch Angles, Alpha, for Proton Differential Flux Intensity, Unidirectional, Unbinned, Pitch Angles from 0\u00b0 to 180\u00b0",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angles, Alpha, for Proton Differential Flux Intensity, Unidirectional, Unbinned",
+      "description": "Pitch Angles, Alpha, for Proton Differential Flux Intensity, Unidirectional, Unbinned, Pitch Angles from 0\u00b0 to 360\u00b0",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy Delta Minus, Electron Differential Flux Intensity, Unidirectional",
+      "description": "Energy Delta Minus, Electron Differential Flux Intensity, Unidirectional",
+      "unitText": "MeV",
+      "minValue": "0.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy Delta Plus, Electron Differential Flux Intensity, Unidirectional",
+      "description": "Energy Delta Plus, Electron Differential Flux Intensity, Unidirectional",
+      "unitText": "MeV",
+      "minValue": "0.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Plasmagrams",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Plasmagrams, Energies from 2 MeV to 59.45 MeV. * Column 1 Labels from FEDU_ALPHA: [ 5.29400, 15.8800, 26.4700, 37.0600, 47.6500, 58.2400, 68.8200, 79.4100, 90.0000, 100.600, 111.200, 121.800, 132.400, 142.900, 153.500, 164.100, 174.700]. * Column 2 Labels from FEDU_ENERGY: [ 2.00000, 2.25000, 2.85000, 3.60000, 4.50000, 5.60000, 7.15000, 8.80000, 11.6500, 15.3500, 22.5500, 59.4500].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles, Energies from 2 MeV to 59.45 MeV. * Column 1 Labels from FEDU_ALPHA: [\"FEDU_Flux_5degPA\",\"FEDU_Flux_16degPA\",\"FEDU_Flux_26degPA\",\"FEDU_Flux_37degPA\",\"FEDU_Flux_48degPA\",\"FEDU_Flux_58degPA\",\"FEDU_Flux_69degPA\",\"FEDU_Flux_79degPA\",\"FEDU_Flux_90degPA\",\"FEDU_Flux_106degPA\",\"FEDU_Flux_111degPA\",\"FEDU_Flux_122degPA\",\"FEDU_Flux_132degPA\",\"FEDU_Flux_143degPA\",\"FEDU_Flux_154degPA\",\"FEDU_Flux_164degPA\",\"FEDU_Flux_175degPA\"]. * Column 2 Labels from FEDU_ENERGY: [\"FEDU_Flux_2.00Mev\",\"FEDU_Flux_2.25MeV\",\"FEDU_Flux_2.85MeV\",\"FEDU_Flux_3.60MeV\",\"FEDU_Flux_4.50MeV\",\"FEDU_Flux_5.60MeV\",\"FEDU_Flux_7.15MeV\",\"FEDU_Flux_8.80MeV\",\"FEDU_Flux_11.65MeV\",\"FEDU_Flux_15.35MeV\",\"FEDU_Flux_22.55MeV\",\"FEDU_Flux_59.45MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies, Energies from 2 MeV to 59.45 MeV. * Column 1 Labels from FEDU_ALPHA: [\"FEDU_Flux_5degPA\",\"FEDU_Flux_16degPA\",\"FEDU_Flux_26degPA\",\"FEDU_Flux_37degPA\",\"FEDU_Flux_48degPA\",\"FEDU_Flux_58degPA\",\"FEDU_Flux_69degPA\",\"FEDU_Flux_79degPA\",\"FEDU_Flux_90degPA\",\"FEDU_Flux_106degPA\",\"FEDU_Flux_111degPA\",\"FEDU_Flux_122degPA\",\"FEDU_Flux_132degPA\",\"FEDU_Flux_143degPA\",\"FEDU_Flux_154degPA\",\"FEDU_Flux_164degPA\",\"FEDU_Flux_175degPA\"]. * Column 2 Labels from FEDU_ENERGY: [\"FEDU_Flux_2.00Mev\",\"FEDU_Flux_2.25MeV\",\"FEDU_Flux_2.85MeV\",\"FEDU_Flux_3.60MeV\",\"FEDU_Flux_4.50MeV\",\"FEDU_Flux_5.60MeV\",\"FEDU_Flux_7.15MeV\",\"FEDU_Flux_8.80MeV\",\"FEDU_Flux_11.65MeV\",\"FEDU_Flux_15.35MeV\",\"FEDU_Flux_22.55MeV\",\"FEDU_Flux_59.45MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy Channel Centroids, Electron Differential Flux Intensity, Unidirectional",
+      "description": "Energy Channel Centroids, Electron Differential Flux Intensity, Unidirectional",
+      "unitText": "MeV",
+      "minValue": "1.0",
+      "maxValue": "80.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Plasmagrams",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Plasmagrams, Energies from 21.25 MeV to 120 MeV. * Column 1 Labels from FPDU_ALPHA: [ 5.29400, 15.8800, 26.4700, 37.0600, 47.6500, 58.2400, 68.8200, 79.4100, 90.0000, 100.600, 111.200, 121.800, 132.400, 142.900, 153.500, 164.100, 174.700]. * Column 2 Labels from FPDU_ENERGY_FIXED: [ 21.2500, 27.6000, 35.9000, 46.7000, 60.7000, 78.9000, 102.600, 208.000].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles, Energies from 21.25 MeV to 120 MeV. * Column 1 Labels from FPDU_ALPHA: [\"FPDU_Flux_5degPA\",\"FPDU_Flux_16degPA\",\"FPDU_Flux_26degPA\",\"FPDU_Flux_37degPA\",\"FPDU_Flux_48degPA\",\"FPDU_Flux_58degPA\",\"FPDU_Flux_69degPA\",\"FPDU_Flux_79degPA\",\"FPDU_Flux_90degPA\",\"FPDU_Flux_106degPA\",\"FPDU_Flux_111degPA\",\"FPDU_Flux_122degPA\",\"FPDU_Flux_132degPA\",\"FPDU_Flux_143degPA\",\"FPDU_Flux_154degPA\",\"FPDU_Flux_164degPA\",\"FPDU_Flux_175degPA\"]. * Column 2 Labels from FPDU_ENERGY_FIXED: [\"FPDU_Flux_21.25MeV\",\"FPDU_Flux_27.60MeV\",\"FPDU_Flux_35.90MeV\",\"FPDU_Flux_46.70MeV\",\"FPDU_Flux_60.70MeV\",\"FPDU_Flux_78.90MeV\",\"FPDU_Flux_102.6MeV\",\"FPDU_Flux_208MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies, Energies from 21.25 MeV to 120 MeV. * Column 1 Labels from FPDU_ALPHA: [\"FPDU_Flux_5degPA\",\"FPDU_Flux_16degPA\",\"FPDU_Flux_26degPA\",\"FPDU_Flux_37degPA\",\"FPDU_Flux_48degPA\",\"FPDU_Flux_58degPA\",\"FPDU_Flux_69degPA\",\"FPDU_Flux_79degPA\",\"FPDU_Flux_90degPA\",\"FPDU_Flux_106degPA\",\"FPDU_Flux_111degPA\",\"FPDU_Flux_122degPA\",\"FPDU_Flux_132degPA\",\"FPDU_Flux_143degPA\",\"FPDU_Flux_154degPA\",\"FPDU_Flux_164degPA\",\"FPDU_Flux_175degPA\"]. * Column 2 Labels from FPDU_ENERGY_FIXED: [\"FPDU_Flux_21.25MeV\",\"FPDU_Flux_27.60MeV\",\"FPDU_Flux_35.90MeV\",\"FPDU_Flux_46.70MeV\",\"FPDU_Flux_60.70MeV\",\"FPDU_Flux_78.90MeV\",\"FPDU_Flux_102.6MeV\",\"FPDU_Flux_208MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy Channel Centroids, Proton Differential Flux Intensity, Unidirectional",
+      "description": "Energy Channel Centroids, Proton Differential Flux Intensity, Unidirectional",
+      "unitText": "MeV",
+      "minValue": "30.0",
+      "maxValue": "2500.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy Channel Centroids, Fixed, Proton Differential Flux Intensity, Unidirectional",
+      "description": "Energy Channel Centroids, Fixed, Proton Differential Flux Intensity, Unidirectional",
+      "unitText": "MeV",
+      "minValue": "30.0",
+      "maxValue": "2500.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Plasmagrams, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Plasmagrams, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0, Energies from 2 MeV to 59.45 MeV. * Column 1 Labels from FEDU_0TO180_ALPHA: [ 5.29400, 15.8800, 26.4700, 37.0600, 47.6500, 58.2400, 68.8200, 79.4100, 90.0000, 100.600, 111.200, 121.800, 132.400, 142.900, 153.500, 164.100, 174.700]. * Column 2 Labels from FEDU_ENERGY: [ 2.00000, 2.25000, 2.85000, 3.60000, 4.50000, 5.60000, 7.15000, 8.80000, 11.6500, 15.3500, 22.5500, 59.4500].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0, Energies from 2 MeV to 59.45 MeV. * Column 1 Labels from FEDU_0TO180_ALPHA: [\"FEDU_Flux_0to180_5degPA\",\"FEDU_Flux_0to180_16degPA\",\"FEDU_Flux_0to180_26degPA\",\"FEDU_Flux_0to180_37degPA\",\"FEDU_Flux_0to180_48degPA\",\"FEDU_Flux_0to180_58degPA\",\"FEDU_Flux_0to180_69degPA\",\"FEDU_Flux_0to180_79degPA\",\"FEDU_Flux_0to180_90degPA\",\"FEDU_Flux_0to180_106degPA\",\"FEDU_Flux_0to180_111degPA\",\"FEDU_Flux_0to180_122degPA\",\"FEDU_Flux_0to180_132degPA\",\"FEDU_Flux_0to180_143degPA\",\"FEDU_Flux_0to180_154degPA\",\"FEDU_Flux_0to180_164degPA\",\"FEDU_Flux_0to180_175degPA\"]. * Column 2 Labels from FEDU_ENERGY: [\"FEDU_Flux_0to180_2.00Mev\",\"FEDU_Flux_0to180_2.25MeV\",\"FEDU_Flux_0to180_2.85MeV\",\"FEDU_Flux_0to180_3.60MeV\",\"FEDU_Flux_0to180_4.50MeV\",\"FEDU_Flux_0to180_5.60MeV\",\"FEDU_Flux_0to180_7.15MeV\",\"FEDU_Flux_0to180_8.80MeV\",\"FEDU_Flux_0to180_11.65MeV\",\"FEDU_Flux_0to180_15.35MeV\",\"FEDU_Flux_0to180_22.55MeV\",\"FEDU_Flux_0to180_59.45MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0, Energies from 2 MeV to 59.45 MeV. * Column 1 Labels from FEDU_0TO180_ALPHA: [\"FEDU_Flux_0to180_5degPA\",\"FEDU_Flux_0to180_16degPA\",\"FEDU_Flux_0to180_26degPA\",\"FEDU_Flux_0to180_37degPA\",\"FEDU_Flux_0to180_48degPA\",\"FEDU_Flux_0to180_58degPA\",\"FEDU_Flux_0to180_69degPA\",\"FEDU_Flux_0to180_79degPA\",\"FEDU_Flux_0to180_90degPA\",\"FEDU_Flux_0to180_106degPA\",\"FEDU_Flux_0to180_111degPA\",\"FEDU_Flux_0to180_122degPA\",\"FEDU_Flux_0to180_132degPA\",\"FEDU_Flux_0to180_143degPA\",\"FEDU_Flux_0to180_154degPA\",\"FEDU_Flux_0to180_164degPA\",\"FEDU_Flux_0to180_175degPA\"]. * Column 2 Labels from FEDU_ENERGY: [\"FEDU_Flux_0to180_2.00Mev\",\"FEDU_Flux_0to180_2.25MeV\",\"FEDU_Flux_0to180_2.85MeV\",\"FEDU_Flux_0to180_3.60MeV\",\"FEDU_Flux_0to180_4.50MeV\",\"FEDU_Flux_0to180_5.60MeV\",\"FEDU_Flux_0to180_7.15MeV\",\"FEDU_Flux_0to180_8.80MeV\",\"FEDU_Flux_0to180_11.65MeV\",\"FEDU_Flux_0to180_15.35MeV\",\"FEDU_Flux_0to180_22.55MeV\",\"FEDU_Flux_0to180_59.45MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Plasmagrams, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Plasmagrams, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0, Energies from 2 MeV to 59.45 MeV. * Column 1 Labels from FEDU_180TO360_ALPHA: [ 185.300, 195.900, 206.500, 217.100, 227.600, 238.200, 248.800, 259.400, 270.000, 280.600, 291.200, 301.800, 312.400, 322.900, 333.500, 344.100, 354.700]. * Column 2 Labels from FEDU_ENERGY: [ 2.00000, 2.25000, 2.85000, 3.60000, 4.50000, 5.60000, 7.15000, 8.80000, 11.6500, 15.3500, 22.5500, 59.4500].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0, Energies from 2 MeV to 59.45 MeV. * Column 1 Labels from FEDU_180TO360_ALPHA: [\"FEDU_Flux_180to360_185degPA\",\"FEDU_Flux_180to360_196degPA\",\"FEDU_Flux_180to360_206degPA\",\"FEDU_Flux_180to360_217degPA\",\"FEDU_Flux_180to360_228degPA\",\"FEDU_Flux_180to360_238degPA\",\"FEDU_Flux_180to360_249degPA\",\"FEDU_Flux_180to360_259degPA\",\"FEDU_Flux_180to360_270degPA\",\"FEDU_Flux_180to360_281degPA\",\"FEDU_Flux_180to360_291degPA\",\"FEDU_Flux_180to360_302degPA\",\"FEDU_Flux_180to360_312degPA\",\"FEDU_Flux_180to360_323degPA\",\"FEDU_Flux_180to360_334degPA\",\"FEDU_Flux_180to360_344degPA\",\"FEDU_Flux_180to360_355degPA\"]. * Column 2 Labels from FEDU_ENERGY: [\"FEDU_Flux_2.00Mev\",\"FEDU_Flux_2.25MeV\",\"FEDU_Flux_2.85MeV\",\"FEDU_Flux_3.60MeV\",\"FEDU_Flux_4.50MeV\",\"FEDU_Flux_5.60MeV\",\"FEDU_Flux_7.15MeV\",\"FEDU_Flux_8.80MeV\",\"FEDU_Flux_11.65MeV\",\"FEDU_Flux_15.35MeV\",\"FEDU_Flux_22.55MeV\",\"FEDU_Flux_59.45MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0, Energies from 2 MeV to 59.45 MeV. * Column 1 Labels from FEDU_180TO360_ALPHA: [\"FEDU_Flux_180to360_185degPA\",\"FEDU_Flux_180to360_196degPA\",\"FEDU_Flux_180to360_206degPA\",\"FEDU_Flux_180to360_217degPA\",\"FEDU_Flux_180to360_228degPA\",\"FEDU_Flux_180to360_238degPA\",\"FEDU_Flux_180to360_249degPA\",\"FEDU_Flux_180to360_259degPA\",\"FEDU_Flux_180to360_270degPA\",\"FEDU_Flux_180to360_281degPA\",\"FEDU_Flux_180to360_291degPA\",\"FEDU_Flux_180to360_302degPA\",\"FEDU_Flux_180to360_312degPA\",\"FEDU_Flux_180to360_323degPA\",\"FEDU_Flux_180to360_334degPA\",\"FEDU_Flux_180to360_344degPA\",\"FEDU_Flux_180to360_355degPA\"]. * Column 2 Labels from FEDU_ENERGY: [\"FEDU_Flux_2.00Mev\",\"FEDU_Flux_2.25MeV\",\"FEDU_Flux_2.85MeV\",\"FEDU_Flux_3.60MeV\",\"FEDU_Flux_4.50MeV\",\"FEDU_Flux_5.60MeV\",\"FEDU_Flux_7.15MeV\",\"FEDU_Flux_8.80MeV\",\"FEDU_Flux_11.65MeV\",\"FEDU_Flux_15.35MeV\",\"FEDU_Flux_22.55MeV\",\"FEDU_Flux_59.45MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Plasmagrams, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Plasmagrams, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0, Energies from 21.25 MeV to 120 MeV. * Column 1 Labels from FPDU_0TO180_ALPHA: [ 5.29400, 15.8800, 26.4700, 37.0600, 47.6500, 58.2400, 68.8200, 79.4100, 90.0000, 100.600, 111.200, 121.800, 132.400, 142.900, 153.500, 164.100, 174.700]. * Column 2 Labels from FPDU_ENERGY_FIXED: [ 21.2500, 27.6000, 35.9000, 46.7000, 60.7000, 78.9000, 102.600, 208.000].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0, Energies from 21.25 MeV to 120 MeV. * Column 1 Labels from FPDU_0TO180_ALPHA: [\"FPDU_Flux_0to180_5degPA\",\"FPDU_Flux_0to180_16degPA\",\"FPDU_Flux_0to180_26degPA\",\"FPDU_Flux_0to180_37degPA\",\"FPDU_Flux_0to180_48degPA\",\"FPDU_Flux_0to180_58degPA\",\"FPDU_Flux_0to180_69degPA\",\"FPDU_Flux_0to180_79degPA\",\"FPDU_Flux_0to180_90degPA\",\"FPDU_Flux_0to180_106degPA\",\"FPDU_Flux_0to180_111degPA\",\"FPDU_Flux_0to180_122degPA\",\"FPDU_Flux_0to180_132degPA\",\"FPDU_Flux_0to180_143degPA\",\"FPDU_Flux_0to180_154degPA\",\"FPDU_Flux_0to180_164degPA\",\"FPDU_Flux_0to180_175degPA\"]. * Column 2 Labels from FPDU_ENERGY_FIXED: [\"FPDU_Flux_0to180_21.25MeV\",\"FPDU_Flux_0to180_27.60MeV\",\"FPDU_Flux_0to180_35.90MeV\",\"FPDU_Flux_0to180_46.70MeV\",\"FPDU_Flux_0to180_60.70MeV\",\"FPDU_Flux_0to180_78.90MeV\",\"FPDU_Flux_0to180_102.6MeV\",\"FPDU_Flux_0to180_208MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0, Energies from 21.25 MeV to 120 MeV. * Column 1 Labels from FPDU_0TO180_ALPHA: [\"FPDU_Flux_0to180_5degPA\",\"FPDU_Flux_0to180_16degPA\",\"FPDU_Flux_0to180_26degPA\",\"FPDU_Flux_0to180_37degPA\",\"FPDU_Flux_0to180_48degPA\",\"FPDU_Flux_0to180_58degPA\",\"FPDU_Flux_0to180_69degPA\",\"FPDU_Flux_0to180_79degPA\",\"FPDU_Flux_0to180_90degPA\",\"FPDU_Flux_0to180_106degPA\",\"FPDU_Flux_0to180_111degPA\",\"FPDU_Flux_0to180_122degPA\",\"FPDU_Flux_0to180_132degPA\",\"FPDU_Flux_0to180_143degPA\",\"FPDU_Flux_0to180_154degPA\",\"FPDU_Flux_0to180_164degPA\",\"FPDU_Flux_0to180_175degPA\"]. * Column 2 Labels from FPDU_ENERGY_FIXED: [\"FPDU_Flux_0to180_21.25MeV\",\"FPDU_Flux_0to180_27.60MeV\",\"FPDU_Flux_0to180_35.90MeV\",\"FPDU_Flux_0to180_46.70MeV\",\"FPDU_Flux_0to180_60.70MeV\",\"FPDU_Flux_0to180_78.90MeV\",\"FPDU_Flux_0to180_102.6MeV\",\"FPDU_Flux_0to180_208MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Plasmagrams, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Plasmagrams, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0, Energies from 21.25 MeV to 120 MeV. * Column 1 Labels from FPDU_180TO360_ALPHA: [ 185.300, 195.900, 206.500, 217.100, 227.600, 238.200, 248.800, 259.400, 270.000, 280.600, 291.200, 301.800, 312.400, 322.900, 333.500, 344.100, 354.700]. * Column 2 Labels from FPDU_ENERGY_FIXED: [ 21.2500, 27.6000, 35.9000, 46.7000, 60.7000, 78.9000, 102.600, 208.000].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Energy at Sample Pitch Angles, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0, Energies from 21.25 MeV to 120 MeV. * Column 1 Labels from FPDU_180TO360_ALPHA: [\"FPDU_Flux_180to360_185degPA\",\"FPDU_Flux_180to360_196degPA\",\"FPDU_Flux_180to360_206degPA\",\"FPDU_Flux_180to360_217degPA\",\"FPDU_Flux_180to360_228degPA\",\"FPDU_Flux_180to360_238degPA\",\"FPDU_Flux_180to360_249degPA\",\"FPDU_Flux_180to360_259degPA\",\"FPDU_Flux_180to360_270degPA\",\"FPDU_Flux_180to360_281degPA\",\"FPDU_Flux_180to360_291degPA\",\"FPDU_Flux_180to360_302degPA\",\"FPDU_Flux_180to360_312degPA\",\"FPDU_Flux_180to360_323degPA\",\"FPDU_Flux_180to360_334degPA\",\"FPDU_Flux_180to360_344degPA\",\"FPDU_Flux_180to360_355degPA\"]. * Column 2 Labels from FPDU_ENERGY_FIXED: [\"FPDU_Flux_180to360_21.25MeV\",\"FPDU_Flux_180to360_27.60MeV\",\"FPDU_Flux_180to360_35.90MeV\",\"FPDU_Flux_180to360_46.70MeV\",\"FPDU_Flux_180to360_60.70MeV\",\"FPDU_Flux_180to360_78.90MeV\",\"FPDU_Flux_180to360_102.6MeV\",\"FPDU_Flux_180to360_208MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Spectrograms by Pitch Angle at Sample Energies, Pitch Angles, Alpha, from 180\u00b0 to 360\u00b0, Energies from 21.25 MeV to 120 MeV. * Column 1 Labels from FPDU_180TO360_ALPHA: [\"FPDU_Flux_180to360_185degPA\",\"FPDU_Flux_180to360_196degPA\",\"FPDU_Flux_180to360_206degPA\",\"FPDU_Flux_180to360_217degPA\",\"FPDU_Flux_180to360_228degPA\",\"FPDU_Flux_180to360_238degPA\",\"FPDU_Flux_180to360_249degPA\",\"FPDU_Flux_180to360_259degPA\",\"FPDU_Flux_180to360_270degPA\",\"FPDU_Flux_180to360_281degPA\",\"FPDU_Flux_180to360_291degPA\",\"FPDU_Flux_180to360_302degPA\",\"FPDU_Flux_180to360_312degPA\",\"FPDU_Flux_180to360_323degPA\",\"FPDU_Flux_180to360_334degPA\",\"FPDU_Flux_180to360_344degPA\",\"FPDU_Flux_180to360_355degPA\"]. * Column 2 Labels from FPDU_ENERGY_FIXED: [\"FPDU_Flux_180to360_21.25MeV\",\"FPDU_Flux_180to360_27.60MeV\",\"FPDU_Flux_180to360_35.90MeV\",\"FPDU_Flux_180to360_46.70MeV\",\"FPDU_Flux_180to360_60.70MeV\",\"FPDU_Flux_180to360_78.90MeV\",\"FPDU_Flux_180to360_102.6MeV\",\"FPDU_Flux_180to360_208MeV\"].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "17 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Spectrograms, Unbinned, Raw Sector Data, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Spectrograms, Unbinned, Raw Sector Data, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0, Energies from 2 MeV to 59.45 MeV. Column 2 Labels from FEDU_ENERGY: [ 2.00000, 2.25000, 2.85000, 3.60000, 4.50000, 5.60000, 7.15000, 8.80000, 11.6500, 15.3500, 22.5500, 59.4500].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Differential Flux Intensity, Unidirectional, Spectrograms, Unbinned, Raw Sector Data, Pitch Angles, Alpha, from 0\u00b0 to 360\u00b0",
+      "description": "Electron Differential Flux Intensity, Unidirectional, Spectrograms, Unbinned, Raw Sector Data, Pitch Angles, Alpha, from 0\u00b0 to 360\u00b0, Energies from 2 MeV to 59.45 MeV. Column 2 Labels from FEDU_ENERGY: [ 2.00000, 2.25000, 2.85000, 3.60000, 4.50000, 5.60000, 7.15000, 8.80000, 11.6500, 15.3500, 22.5500, 59.4500].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36 12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Spectrograms, Unbinned, Raw Sector Data, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Spectrograms, Unbinned, Raw Sector Data, Pitch Angles, Alpha, from 0\u00b0 to 180\u00b0, Energies from 21.25 MeV to 120 MeV. Column 2 Labels from FPDU_ENERGY_FIXED: [ 21.2500, 27.6000, 35.9000, 46.7000, 60.7000, 78.9000, 102.600, 208.000].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Spectrograms, Unbinned, Raw Sector Data, Pitch Angles, Alpha, from 0\u00b0 to 360\u00b0",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Spectrograms, Unbinned, Raw Sector Data, Pitch Angles, Alpha, from 0\u00b0 to 360\u00b0, Energies from 21.25 MeV to 120 MeV. Column 2 Labels from FPDU_ENERGY_FIXED: [ 21.2500, 27.6000, 35.9000, 46.7000, 60.7000, 78.9000, 102.600, 208.000].",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Light Mask for Proton Differential Flux Intensity, Unidirectional, Unbinned, Raw Data, Pitch Angles, Alpha, from 0\u00b0 to 360\u00b0",
+      "description": "Light Mask for Proton Differential Flux Intensity, Unidirectional, Energies from 21.25 MeV to 120 MeV, Unbinned, Raw Sector Data, Pitch Angles, Alpha, from 0\u00b0 to 360\u00b0, not fot Plotting",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "3",
+      "defaultValue": "0.0",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "36",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Light Flag for Proton Differential Flux Intensity, Unidirectional, Unbinned, Raw Data, Pitch Angles, Alpha, from 0\u00b0 to 360\u00b0",
+      "description": "Light Flag for Proton Differential Flux Intensity, Unidirectional, Energies from 21.25 MeV to 120 MeV, Unbinned, Raw Sector Data, Pitch Angles, Alpha, from 0\u00b0 to 360\u00b0, not fot Plotting",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "0.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roederer L* generalized L Shell Parameter, 90\u00b0 Particle",
+      "description": "Roederer L* generalized L Shell Parameter for a 90\u00b0 Pitch Angle Particle",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "McIlwain L Shell Parameter",
+      "description": "McIlwain L Shell Parameter",
+      "unitText": "",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second Adiabatic Invariant, Bounce",
+      "description": "Second Adiabatic Invariant, Bounce",
+      "unitText": "Re",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Spacecraft Magnetic Field Magnitude, Geographic Cartesian Coordinates",
+      "description": "Model Spacecraft Magnetic Field Magnitude, Geographic, GEO, Cartesian Coordinates",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Magnetic Field Magnitude, Field Line Local Minimum",
+      "description": "Model Magnetic Field Magnitude, Field Line Local Minimum",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Magnetic Local Time",
+      "description": "Spacecraft Position, Magnetic Local Time, MLT, in Hours",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Magnetic Latitude",
+      "description": "Spacecraft Position, Magnetic Latitude, MLAT",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position Vector, Geographic Cartesian Coordinates",
+      "description": "Spacecraft Position Vector, Geographic, GEO, Cartesian Coordinates",
+      "unitText": "km",
+      "minValue": "-210000.0",
+      "maxValue": "210000.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Xgeo",
+            "Index": "1"
+          },
+          {
+            "Name": "Ygeo",
+            "Index": "2"
+          },
+          {
+            "Name": "Zgeo",
+            "Index": "3"
+          }
+        ]
+      }
+    }
+  ]
+}

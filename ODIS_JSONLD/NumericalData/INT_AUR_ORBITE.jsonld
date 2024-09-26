@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/INT_AUR_ORBITE.jsonld",
+  "name": "INT_AUR : Orbit Data and Geomagnetic Parameters",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/INT_AUR_ORBITE.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Irina.Belova",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Irina.Belova"
+    }
+  ],
+  "sdDatePublished": "2022-04-27",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_AUR_ORBITE",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/Interball-Auroral/Ephemeris-Auroral/INT_AUR_ORBITE",
+  "description": "This data set contains orbit data and geomagnetic parameters of Interball-Auroral.\nData records are arranged chronologically. Sampling interval is small enough for linear interpolation to represent the orbit to the precision with which it has been determined. For all magnetospheric missions, every record contain two kinds of data, besides time :\n1. Satellite Position\n    Two coordinate systems are used :\n    - GEI system (Geocentric Equatorial Inertial)\n    - GSE system (Geocentric Solar Ecliptic), commonly used for magnetospheric studies. This system is not inertial. It is heliosynchronous and rotates about one degree per day.\n    You can use equally one or the other system.\n2. Geomagnetic Characteristics\n    In addition to time-position data, the following geomagnetic parameters are available :\n    - Invariant Latitude\n    - MLT (Magnetic Local Time)\n    - Magnetospheric Regions where the satellite may be located (the determination of the regions uses a statistical model so that you can find one or more regions).",
+  "abstract": "This data set contains orbit data and geomagnetic parameters of Interball-Auroral.\nData records are arranged chronologically. Sampling interval is small enough for linear interpolation to represent the orbit to the precision with which it has been determined. For all magnetospheric missions, every record contain two kinds of data, besides time :\n1. Satellite Position\n    Two coordinate systems are used :\n    - GEI system (Geocentric Equatorial Inertial)\n    - GSE system (Geocentric Solar Ecliptic), commonly used for magnetospheric studies. This system is not inertial. It is heliosynchronous and rotates about one degree per day.\n    You can use equally one or the other system.\n2. Geomagnetic Characteristics\n    In addition to time-position data, the following geomagnetic parameters are available :\n    - Invariant Latitude\n    - MLT (Magnetic Local Time)\n    - Magnetospheric Regions where the satellite may be located (the determination of the regions uses a statistical model so that you can find one or more regions).",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "INT_AUR  Position of the spacecraft in GEI coordinate system",
+      "description": "INT_AUR  Position of the spacecraft in GEI (Geocentric Equatorial Inertial) coordinate system",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_AUR  Position of the spacecraft in GSE coordinate system",
+      "description": "Position of the spacecraft in GSE (Geocentric Solar Ecliptic) coordinate system",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_AUR Spacecraft Invariant Latitude",
+      "description": "Interball-Auroral Invariant latitude",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_AUR Spacecraft Magnetic Local Time",
+      "description": "Interball-Auroral  Magnetic Local Time",
+      "unitText": "h",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_AUR Magnetospheric regions",
+      "description": "Magnetospheric Regions where the satellite may be located (the determination of the regions uses a statistical model so that you can find one or more regions).\nSolar wind\nBow Shock\nMagnetosheath\nMagnetopause\nMagnetosphere\nPlasma Sheet\nFairfield neutral sheet\nSouth polar cap\nSouth auroral oval\nSouth cusp\nNorth polar cap\nNorth auroral oval\nNorth cusp\nChappel plasmasphere\nOuter radiation belt\nInner radiation belt\nIonosphere",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

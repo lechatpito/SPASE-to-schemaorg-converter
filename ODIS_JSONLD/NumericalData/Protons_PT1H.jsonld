@@ -1,0 +1,194 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/Protons_PT1H.jsonld",
+  "name": "IMP 8 Cosmic Ray Nuclear Composition (CRNC) hourly energetic proton fluxes",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/Protons_PT1H.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Clifford.Lopate",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Clifford.Lopate"
+    }
+  ],
+  "sdDatePublished": "2021-03-11",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/imp/imp8/particles_uchi/hourly/protons/",
+      "encodingFormat": "Text",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "ftp access to proton-specific subdirectory\nholding annual ASCII files"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/imp/imp8/particles_uchi/hourly/protons/",
+      "encodingFormat": "Text",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/imp_chi_crnc_1h.html",
+      "encodingFormat": "Text",
+      "name": "FTPBrowser",
+      "description": "Subset, plot and list fluxes of protons, alpha\nparticles and electron, and count rates of heavies, via FTPBrowser"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/flux_spectr_m.html",
+      "encodingFormat": "Text",
+      "name": "Multi-Source Spectral Plot",
+      "description": "Spectral plots and power law fits for arbitrary durations"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/IMP8/CRNC/Protons_PT1H",
+  "description": "This data set contains hourly, spin-averaged\nfluxes of protons from the IMP8.  Cosmic Ray Nuclear Composition\nexperiment of U. Chicago and UNH.  There are are fluxes of protons\nin 9 energy bins from 11.24-12.62 to 74.50-94.78 MeV.  These fluxes\nwere generated at GSFC/SPDF from count rates accessible from\nUNH.",
+  "abstract": "This data set contains hourly, spin-averaged\nfluxes of protons from the IMP8.  Cosmic Ray Nuclear Composition\nexperiment of U. Chicago and UNH.  There are are fluxes of protons\nin 9 energy bins from 11.24-12.62 to 74.50-94.78 MeV.  These fluxes\nwere generated at GSFC/SPDF from count rates accessible from\nUNH.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "H"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "l"
+    },
+    {
+      "@type": "Place",
+      "name": "i"
+    },
+    {
+      "@type": "Place",
+      "name": "o"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    },
+    {
+      "@type": "Place",
+      "name": "p"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "."
+    },
+    {
+      "@type": "Place",
+      "name": "N"
+    },
+    {
+      "@type": "Place",
+      "name": "e"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "E"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "t"
+    },
+    {
+      "@type": "Place",
+      "name": "h"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time at start of flux average, as year, day, hour",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fractional Coverage",
+      "description": "Fractional counting coverage (0-1) during this hour",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton fluxes",
+      "description": "Spin-integrated fluxes of protons, at 1-hour resolution,\nin nine energy bins: 11.24-12.62, 12.62-16.18, 16.18-20.00, 20.00-29.75,\n29.75-40.10, 40.10-50.90, 50.90-62.55, 62.55-74.50, 74.50-94.78 MeV",
+      "unitText": "1/sec-cm**2-ster-MeV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    }
+  ]
+}

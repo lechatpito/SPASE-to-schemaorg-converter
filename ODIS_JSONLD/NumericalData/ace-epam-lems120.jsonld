@@ -1,0 +1,214 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ace-epam-lems120.jsonld",
+  "name": "ACE - EPAM - LEMS120",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ace-epam-lems120.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Dennis.Haggerty",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Dennis.Haggerty"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.E.Gold",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.E.Gold"
+    }
+  ],
+  "sdDatePublished": "2024-03-25",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/ACE/EPAM/ace-epam-lems120",
+  "description": "ACE EPAM LEMS120 ion flux data. Taken from ACE EPAM Electron Proton Alpha Monitor (EPAM) Level 2 intensities at 5-min time resolution. Calibrated science quality data. The data are accessible via ftp in HDF and CDF from the ACE Science Center and CDAWeb, respectively, and in ASCII format from the value-added interfaces at those sites. The \"parameter keys\" given below are as used by CDAWeb.",
+  "abstract": "ACE EPAM LEMS120 ion flux data. Taken from ACE EPAM Electron Proton Alpha Monitor (EPAM) Level 2 intensities at 5-min time resolution. Calibrated science quality data. The data are accessible via ftp in HDF and CDF from the ACE Science Center and CDAWeb, respectively, and in ASCII format from the value-added interfaces at those sites. The \"parameter keys\" given below are as used by CDAWeb.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux",
+      "description": "LEMS120 0.047-0.065 MeV Ion Flux",
+      "unitText": "1/(cm^2 s sr MeV)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "0.047 - 0.066 MeV",
+            "Index": "1",
+            "ParameterKey": "ace_epam_lems120_p(0)"
+          },
+          {
+            "Name": "0.066 - 0.114 MeV",
+            "Index": "2",
+            "ParameterKey": "ace_epam_lems120_p(1)"
+          },
+          {
+            "Name": "0.114 - 0.190 MeV",
+            "Index": "3",
+            "ParameterKey": "ace_epam_lems120_p(2)"
+          },
+          {
+            "Name": "0.190 - 0.310 MeV",
+            "Index": "4",
+            "ParameterKey": "ace_epam_lems120_p(3)"
+          },
+          {
+            "Name": "0.310 - 0.580 MeV",
+            "Index": "5",
+            "ParameterKey": "ace_epam_lems120_p(4)"
+          },
+          {
+            "Name": "0.580 - 1.05 MeV",
+            "Index": "6",
+            "ParameterKey": "ace_epam_lems120_p(5)"
+          },
+          {
+            "Name": "1.05 - 1.89 MeV",
+            "Index": "7",
+            "ParameterKey": "ace_epam_lems120_p(6)"
+          },
+          {
+            "Name": "1.89 - 4.75 MeV",
+            "Index": "8",
+            "ParameterKey": "ace_epam_lems120_p(7)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "uncertainty",
+      "description": "Fractional uncertainty (statistical) in the P flux",
+      "unitText": "Ratio",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "0.047 - 0.066 MeV",
+            "Index": "1",
+            "ParameterKey": "ace_epam_lems120_uncp(0)"
+          },
+          {
+            "Name": "0.066 - 0.114 MeV",
+            "Index": "2",
+            "ParameterKey": "ace_epam_lems120_uncp(1)"
+          },
+          {
+            "Name": "0.114 - 0.190 MeV",
+            "Index": "3",
+            "ParameterKey": "ace_epam_lems120_uncp(2)"
+          },
+          {
+            "Name": "0.190 - 0.310 MeV",
+            "Index": "4",
+            "ParameterKey": "ace_epam_lems120_uncp(3)"
+          },
+          {
+            "Name": "0.310 - 0.580 MeV",
+            "Index": "5",
+            "ParameterKey": "ace_epam_lems120_uncp(4)"
+          },
+          {
+            "Name": "0.580 - 1.05 MeV",
+            "Index": "6",
+            "ParameterKey": "ace_epam_lems120_uncp(5)"
+          },
+          {
+            "Name": "1.05 - 1.89 MeV",
+            "Index": "7",
+            "ParameterKey": "ace_epam_lems120_uncp(6)"
+          },
+          {
+            "Name": "1.89 - 4.75 MeV",
+            "Index": "8",
+            "ParameterKey": "ace_epam_lems120_uncp(7)"
+          }
+        ]
+      }
+    }
+  ]
+}

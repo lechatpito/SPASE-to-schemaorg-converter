@@ -1,0 +1,197 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/radiosonde_sgk_csv.jsonld",
+  "name": "Observation data of the troposphere and lower stratosphere taken by the radiosonde soundings at Shigaraki MU Observatory (CSV format)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/radiosonde_sgk_csv.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/Hiroyuki.Hashiguchi",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/Hiroyuki.Hashiguchi"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/MU.Radar.Management.Group",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/MU.Radar.Management.Group"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://IUGONET/Person/RISH.Metadata.Management.Group",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/IUGONET/Person/RISH.Metadata.Management.Group"
+    }
+  ],
+  "sdDatePublished": "2016-07-21",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "www.rish.kyoto-u.ac.jp/radar-group/mu/sondedb/",
+      "encodingFormat": "Text.ASCII",
+      "name": "Radiosonde Observation Data at Shigaraki MU Observatory",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://IUGONET/NumericalData/RISH/misc/SGK/Radiosonde/radiosonde_sgk_csv",
+  "description": "Radiosonde sounding data at Shigaraki MU observatory in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL) since September 26, 1986. The data are converted from .snd (until 2003 and some of 2004 and 2005) or .tsv data (from June 2004), and stored in the CSV (Comma Separated Values) file named (year)(month)(day)(hour)(minute).csv. The file name represents each launch time of the balloon (in local time). The first line of each CSV file represent launching local date, launching local time, time zone (hour), latitude, longitude, sea level and sonde serial number. The second and below are time, height, pressure, temperature, relative humidity and zonal and meridional wind. The value of -999 means missing data. In the CSV file converted from .snd data, the wind data are missing value and valid data are only height, pressure, temperature and relative humidity because the original (.snd) data are obtained with old-type receiver and Vaisala RS-80 type radiosonde transmitters.",
+  "abstract": "Radiosonde sounding data at Shigaraki MU observatory in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL) since September 26, 1986. The data are converted from .snd (until 2003 and some of 2004 and 2005) or .tsv data (from June 2004), and stored in the CSV (Comma Separated Values) file named (year)(month)(day)(hour)(minute).csv. The file name represents each launch time of the balloon (in local time). The first line of each CSV file represent launching local date, launching local time, time zone (hour), latitude, longitude, sea level and sonde serial number. The second and below are time, height, pressure, temperature, relative humidity and zonal and meridional wind. The value of -999 means missing data. In the CSV file converted from .snd data, the wind data are missing value and valid data are only height, pressure, temperature and relative humidity because the original (.snd) data are obtained with old-type receiver and Vaisala RS-80 type radiosonde transmitters.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Stratosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Altitude Geopotential Height Tropopause Hydrostatic Pressure Atmospheric Temperature Profiles Water Vapor Humidity Winds Wind Profiles",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Launching Date",
+      "description": "Observation Date",
+      "unitText": "YYYY/MM/DD",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Launching Local Time",
+      "description": "Observation start time",
+      "unitText": "hh:mm:ss",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "hour",
+      "description": "Time zone (GMT+9)",
+      "unitText": "hour",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Latitude",
+      "description": "Latitude",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Longitude",
+      "description": "Longitude",
+      "unitText": "degree",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sea Level",
+      "description": "mean sea level at launching station",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sonde serial number",
+      "description": "Serial number of transmitter",
+      "unitText": "1",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Elapsed time from launch",
+      "unitText": "min",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Height",
+      "description": "Height above sea-level",
+      "unitText": "m",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pressure",
+      "description": "Pressure",
+      "unitText": "hPa",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Temperature",
+      "description": "Description",
+      "unitText": "degree C",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Relative humidity",
+      "description": "Relative humidity",
+      "unitText": "%",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zonal wind",
+      "description": "Zonal wind",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Meridional wind",
+      "description": "Meridional wind",
+      "unitText": "m/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

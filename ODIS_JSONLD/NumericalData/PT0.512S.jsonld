@@ -1,0 +1,468 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.512S.jsonld",
+  "name": "GOES 15 Triaxial Fluxgate Magnetometer data at 512 ms Time Resolution in Spacecraft Coordinates",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.512S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Howard.J.Singer",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Howard.J.Singer"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.M.Weygand",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.M.Weygand"
+    }
+  ],
+  "sdDatePublished": "2020-05-04",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://satdat.ngdc.noaa.gov/sem/goes/data/avg/",
+      "encodingFormat": "Text.ASCII",
+      "name": "Direct access to GOES 15 Triaxial Fluxgate Magnetometer (MAG) Magnetic Field Data",
+      "description": "Direct link to the GOES 15 Magnetic Field Monitor data in CSV format as well as the magnetometer data from other GOES spacecraft. The data are sorted by year, month, spacecraft, and file type. The file names indicates the data type, spacecraft number, year, month, and resolution. For example, g08_magneto_1m_19950201_1995_02_28.csv, indicates GOES 8 magnetometer data at 1 min time resolution from Feb 1, 1995 to Feb 28, 1995."
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NOAA/NumericalData/GOES/15/MAG/PT0.512S",
+  "description": "The triaxial fluxgate magnetometer, located at a few tens of meters away from the spacecraft, was designed to provide the orthogonal components of the magnetic field: Hp was parallel to the spin axis that was held nearly parallel to the rotation axis of the Earth, He was directed toward Earth center, and Hn pointed eastward. The magnetometer had a range of \u00b11000 nT (without saturation) and a resolution of 0.1 nT. Data files contain long descriptive header.",
+  "abstract": "The triaxial fluxgate magnetometer, located at a few tens of meters away from the spacecraft, was designed to provide the orthogonal components of the magnetic field: Hp was parallel to the spin axis that was held nearly parallel to the rotation axis of the Earth, He was directed toward Earth center, and Hn pointed eastward. The magnetometer had a range of \u00b11000 nT (without saturation) and a resolution of 0.1 nT. Data files contain long descriptive header.",
+  "keywords": [
+    "512 ms",
+    "geosynchronous",
+    "GOES",
+    "magnetic field",
+    "magnetometer",
+    "Magnetic Field Monitor"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Seconds of the Month",
+      "description": "Time format in data files is year-month-day hour:minute:seconds.",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BX Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BX Magnetometer-1",
+      "description": "Average of the X-component of the magnetic field in sensor coordinates measured by magnetometer-1.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BY Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BY Magnetometer-1",
+      "description": "Average of the Y-component of the magnetic field in sensor coordinates measured by magnetometer-1.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BZ Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BZ Magnetometer-1",
+      "description": "Average of the Z-component of the magnetic field in sensor coordinates measured by magnetometer-1.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BX Spacecraft Coordinates Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BX Spacecraft Coordinates Magnetometer-1",
+      "description": "Average of the X-component of the magnetic field in spacecraft coordinates measured by magnetometer-1.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BY Spacecraft Coordinates Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BY Spacecraft Coordinates Magnetometer-1",
+      "description": "Average of the Y-component of the magnetic field in spacecraft coordinates measured by magnetometer-1.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BZ Spacecraft Coordinates Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BZ Spacecraft Coordinates Magnetometer-1",
+      "description": "Average of the Z-component of the magnetic field in spacecraft coordinates measured by magnetometer-1.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Total Spacecraft Coordinates Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BT Spacecraft Coordinates Magnetometer-1",
+      "description": "Average total magnetic field measured by magnetometer-1.",
+      "unitText": "nT",
+      "minValue": "-50",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BX Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BX Magnetometer-2",
+      "description": "Average of the X-component of the magnetic field in sensor coordinates measured by magnetometer-2.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BY Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BY Magnetometer-2",
+      "description": "Average of the Y-component of the magnetic field in sensor coordinates measured by magnetometer-2.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BZ Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BZ Magnetometer-2",
+      "description": "Average of the Z-component of the magnetic field in sensor coordinates measured by magnetometer-2.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BX Spacecraft Coordinates Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BX Spacecraft Coordinates Magnetometer-2",
+      "description": "Average of the X-component of the magnetic field in spacecraft coordinates measured by magnetometer-2.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BY Spacecraft Coordinates Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BY Spacecraft Coordinates Magnetometer-2",
+      "description": "Average of the Y-component of the magnetic field in spacecraft coordinates measured by magnetometer-2.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BZ Spacecraft Coordinates Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BZ Spacecraft Coordinates Magnetometer-2",
+      "description": "Average of the Z-component of the magnetic field in spacecraft coordinates measured by magnetometer-2.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Total Spacecraft Coordinates Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BT Spacecraft Coordinates Magnetometer-2",
+      "description": "Average total magnetic field measured by magnetometer-2.",
+      "unitText": "nT",
+      "minValue": "-50",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HP Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HP Magnetometer-1",
+      "description": "Average magnetic field measured by magnetometer-1 in the direction perpendicular to orbit plane, positive northward (parallel to the rotation axis of the Earth for 0\u00b0 inclination orbit).",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HE Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HE Magnetometer-1",
+      "description": "Average magnetic field measured by magnetometer-1 in the earthward direction, perpendicular to HP.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HN Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HN Magnetometer-1",
+      "description": "Average magnetic field measured by magnetometer-1 in the eastward direction, perpendicular to HP and HE.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HT Magnetometer-1 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HT Magnetometer-1",
+      "description": "Average total magnetic field measured by magnetometer-1.",
+      "unitText": "nT",
+      "minValue": "-50",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HP Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HP Magnetometer-2",
+      "description": "Average magnetic field measured by magnetometer-2 in the direction perpendicular to orbit plane, positive northward (parallel to the rotation axis of the Earth for 0\u00b0 inclination orbit).",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HE Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HE Magnetometer-2",
+      "description": "Average magnetic field measured by magnetometer-2 in the earthward direction, perpendicular to HP.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HN Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HN Magnetometer-2",
+      "description": "Average magnetic field measured by magnetometer-2 in the eastward direction, perpendicular to HP and HE.",
+      "unitText": "nT",
+      "minValue": "-200",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HT Magnetometer-2 Quality Flag",
+      "description": "Quality flag non-zero value indicates data quality issue.",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "99999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HT Magnetometer-2",
+      "description": "Average total magnetic field measured by magnetometer-2.",
+      "unitText": "nT",
+      "minValue": "-50",
+      "maxValue": "+200",
+      "defaultValue": "-99999"
+    }
+  ]
+}

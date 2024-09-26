@@ -1,0 +1,302 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.625S.jsonld",
+  "name": "MMS 4 Hot Plasma Composition Analyzer (HPCA) Time of Flight, TOF, Counts, Level 2 (L2), Survey Mode, 0.625 s Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT0.625S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Stephen.A.Fuselier",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Stephen.A.Fuselier"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/David.T.Young",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/David.T.Young"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Roman.G.Gomez",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Roman.G.Gomez"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.L.Burch",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.L.Burch"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/MMS_SDC_POC",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/MMS_SDC_POC"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2024-02-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://lasp.colorado.edu/mms/sdc/public/data/mms4/hpca/srvy/l2/tof-counts/",
+      "encodingFormat": "",
+      "name": "FTPS from the MMS SDC (not with most browsers)",
+      "description": "In CDF via ftp from the MMS Science Data Center"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://lasp.colorado.edu/mms/sdc/public/data/mms4/hpca/srvy/l2/tof-counts/",
+      "encodingFormat": "",
+      "name": "HTTPS from the MMS SDC",
+      "description": "In CDF via http from the MMS Science Data Center"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/mms/mms4/hpca/srvy/l2/tof-counts/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In CDF via ftp from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/mms/mms4/hpca/srvy/l2/tof-counts/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via http from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=MMS4_HPCA_SRVY_L2_TOF-COUNTS&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/MMS/4/HotPlasmaCompositionAnalyzer/Survey/Level2/TimeOfFlight/Counts/PT0.625S",
+  "description": "Hot Plasma Composition Analyzer (HPCA) Time of Flight, TOF, Counts, Level 2, Survey 10 s Data. The MMS HPCA instruments measure the energy and composition of magnetospheric plasmas in the energy range from 1 eV to 40 keV. An electrostatic energy analyzer (ESA) that is optically coupled to a carbon-foil based Time-of-Flight (TOF) section comprises each HPCA. The basic HPCA data product is an array of counts for 5 ion species, at 63 energies, for each of 16 elevation anodes. Sixteen basic products, also called azimuths, are acquired every 10 s; half a spacecraft spin period nominally has 16 azimuths. The five ion species are protons (H+), alpha particles (He++), helium ions (He+), singly charged Oxygen (O+), and background counts.",
+  "abstract": "Hot Plasma Composition Analyzer (HPCA) Time of Flight, TOF, Counts, Level 2, Survey 10 s Data. The MMS HPCA instruments measure the energy and composition of magnetospheric plasmas in the energy range from 1 eV to 40 keV. An electrostatic energy analyzer (ESA) that is optically coupled to a carbon-foil based Time-of-Flight (TOF) section comprises each HPCA. The basic HPCA data product is an array of counts for 5 ion species, at 63 energies, for each of 16 elevation anodes. Sixteen basic products, also called azimuths, are acquired every 10 s; half a spacecraft spin period nominally has 16 azimuths. The five ion species are protons (H+), alpha particles (He++), helium ions (He+), singly charged Oxygen (O+), and background counts.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "UTC converted from TAI time",
+      "description": "Start Time for the Record",
+      "unitText": "ns",
+      "minValue": "1990-01-01T00:00:00.000000000",
+      "maxValue": "2100-01-01T00:00:00.000000000",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Delta Start Time",
+      "description": "Delta Start Time for the Record from the Central Time",
+      "unitText": "ms",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Delta Stop Time",
+      "description": "Delta Stop Time for the Record from the Central Time",
+      "unitText": "ms",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS4 HPCA Electron Volt Energy, TOF",
+      "description": "MMS4 HPCA Electron Voltage associated with the Time of Flight, TOF, counts",
+      "unitText": "eV/q",
+      "minValue": "0.0",
+      "maxValue": "37600.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS4 HPCA Electron Volt Energy, Delta Minus",
+      "description": "MMS4 HPCA Electron Voltage Delta Minus associated with the Time of Flight, TOF, counts",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "37600.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS4 HPCA Electron Volt Energy, Delta Plus",
+      "description": "MMS4 HPCA Electron Voltage Delta Plus associated with the Time of Flight, TOF, counts",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "37600.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bin Indices",
+      "description": "Bin Index Values",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "256",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "128",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS4 HPCA TOF Counts, all Angles, all Energies",
+      "description": "MMS4 HPCA Time of Flight, TOF, Counts for all Angles and across all Energies.\n\n* Column 1 Labels from MMS4_HPCA_TOF_ENERGY: [\"Energy 3.21425\",\"Energy 12.0167\",\"Energy 45.0507\",\"Energy 168.833\",\"Energy 632.809\",\"Energy 2371.97\",\"Energy 8890.78\",\"Energy 29319.6\"].\n* Column 2 Labels from MMS4_HPCA_TOF_BIN_INDEX: [\" 0\",\" 2\",\" 4\",\" 6\",\" 8\",\" 10\",\" 12\",\" 14\",\" 16\",\" 18\",\" 20\",\" 22\",\" 24\",\" 26\",\" 28\",\" 30\",\" 32\",\" 34\",\" 36\",\" 38\",\" 40\",\" 42\",\" 44\",\" 46\",\" 48\",\" 50\",\" 52\",\" 54\",\" 56\",\" 58\",\" 60\",\" 62\",\" 64\",\" 66\",\" 68\",\" 70\",\" 72\",\" 74\",\" 76\",\" 78\",\" 80\",\" 82\",\" 84\",\" 86\",\" 88\",\" 90\",\" 92\",\" 94\",\" 96\",\" 98\",\" 100\",\" 102\",\" 104\",\" 106\",\" 108\",\" 110\",\" 112\",\" 114\",\" 116\",\" 118\",\" 120\",\" 122\",\" 124\",\" 126\",\" 128\",\" 130\",\" 132\",\" 134\",\" 136\",\" 138\",\" 140\",\" 142\",\" 144\",\" 146\",\" 148\",\" 150\",\" 152\",\" 154\",\" 156\",\" 158\",\" 160\",\" 162\",\" 164\",\" 166\",\" 168\",\" 170\",\" 172\",\" 174\",\" 176\",\" 178\",\" 180\",\" 182\",\" 184\",\" 186\",\" 188\",\" 190\",\" 192\",\" 194\",\" 196\",\" 198\",\" 200\",\" 202\",\" 204\",\" 206\",\" 208\",\" 210\",\" 212\",\" 214\",\" 216\",\" 218\",\" 220\",\" 222\",\" 224\",\" 226\",\" 228\",\" 230\",\" 232\",\" 234\",\" 236\",\" 238\",\" 240\",\" 242\",\" 244\",\" 246\",\" 248\",\" 250\",\" 252\",\" 254\"].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "65535",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8 128",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS4 HPCA TOF Counts, all Angles, selected Energies",
+      "description": "MMS4 HPCA Time of Flight, TOF, Counts, all Angles, selected Energies, spectrogram display.\n\n* Column 1 Labels from MMS4_HPCA_TOF_ENERGY: [\"Energy 3.21425\",\"Energy 12.0167\",\"Energy 45.0507\",\"Energy 168.833\",\"Energy 632.809\",\"Energy 2371.97\",\"Energy 8890.78\",\"Energy 29319.6\"].\n* Column 2 Labels from MMS4_HPCA_TOF_BIN_INDEX: [\"Index#0\",\"Index#2\",\"Index#4\",\"Index#6\",\"Index#8\",\"Index#10\",\"Index#12\",\"Index#14\",\"Index#16\",\"Index#18\",\"Index#20\",\"Index#22\",\"Index#24\",\"Index#26\",\"Index#28\",\"Index#30\",\"Index#32\",\"Index#34\",\"Index#36\",\"Index#38\",\"Index#40\",\"Index#42\",\"Index#44\",\"Index#46\",\"Index#48\",\"Index#50\",\"Index#52\",\"Index#54\",\"Index#56\",\"Index#58\",\"Index#60\",\"Index#62\",\"Index#64\",\"Index#66\",\"Index#68\",\"Index#70\",\"Index#72\",\"Index#74\",\"Index#76\",\"Index#78\",\"Index#80\",\"Index#82\",\"Index#84\",\"Index#86\",\"Index#88\",\"Index#90\",\"Index#92\",\"Index#94\",\"Index#96\",\"Index#98\",\"Index#100\",\"Index#102\",\"Index#104\",\"Index#106\",\"Index#108\",\"Index#110\",\"Index#112\",\"Index#114\",\"Index#116\",\"Index#118\",\"Index#120\",\"Index#122\",\"Index#124\",\"Index#126\",\"Index#128\",\"Index#130\",\"Index#132\",\"Index#134\",\"Index#136\",\"Index#138\",\"Index#140\",\"Index#142\",\"Index#144\",\"Index#146\",\"Index#148\",\"Index#150\",\"Index#152\",\"Index#154\",\"Index#156\",\"Index#158\",\"Index#160\",\"Index#162\",\"Index#164\",\"Index#166\",\"Index#168\",\"Index#170\",\"Index#172\",\"Index#174\",\"Index#176\",\"Index#178\",\"Index#180\",\"Index#182\",\"Index#184\",\"Index#186\",\"Index#188\",\"Index#190\",\"Index#192\",\"Index#194\",\"Index#196\",\"Index#198\",\"Index#200\",\"Index#202\",\"Index#204\",\"Index#206\",\"Index#208\",\"Index#210\",\"Index#212\",\"Index#214\",\"Index#216\",\"Index#218\",\"Index#220\",\"Index#222\",\"Index#224\",\"Index#226\",\"Index#228\",\"Index#230\",\"Index#232\",\"Index#234\",\"Index#236\",\"Index#238\",\"Index#240\",\"Index#242\",\"Index#244\",\"Index#246\",\"Index#248\",\"Index#250\",\"Index#252\",\"Index#254\"].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "65535",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8 128",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS4 HPCA TOF Counts, selected Angles, all Energies",
+      "description": "MMS4 HPCA Time of Flight, TOF, Counts, selected Angles, all Energies, spectrogram display.\n\n* Column 1 Labels from MMS4_HPCA_TOF_ENERGY: [\"Energy 3.21425\",\"Energy 12.0167\",\"Energy 45.0507\",\"Energy 168.833\",\"Energy 632.809\",\"Energy 2371.97\",\"Energy 8890.78\",\"Energy 29319.6\"].\n* Column 2 Labels from MMS4_HPCA_TOF_BIN_INDEX: [\"Index#0\",\"Index#2\",\"Index#4\",\"Index#6\",\"Index#8\",\"Index#10\",\"Index#12\",\"Index#14\",\"Index#16\",\"Index#18\",\"Index#20\",\"Index#22\",\"Index#24\",\"Index#26\",\"Index#28\",\"Index#30\",\"Index#32\",\"Index#34\",\"Index#36\",\"Index#38\",\"Index#40\",\"Index#42\",\"Index#44\",\"Index#46\",\"Index#48\",\"Index#50\",\"Index#52\",\"Index#54\",\"Index#56\",\"Index#58\",\"Index#60\",\"Index#62\",\"Index#64\",\"Index#66\",\"Index#68\",\"Index#70\",\"Index#72\",\"Index#74\",\"Index#76\",\"Index#78\",\"Index#80\",\"Index#82\",\"Index#84\",\"Index#86\",\"Index#88\",\"Index#90\",\"Index#92\",\"Index#94\",\"Index#96\",\"Index#98\",\"Index#100\",\"Index#102\",\"Index#104\",\"Index#106\",\"Index#108\",\"Index#110\",\"Index#112\",\"Index#114\",\"Index#116\",\"Index#118\",\"Index#120\",\"Index#122\",\"Index#124\",\"Index#126\",\"Index#128\",\"Index#130\",\"Index#132\",\"Index#134\",\"Index#136\",\"Index#138\",\"Index#140\",\"Index#142\",\"Index#144\",\"Index#146\",\"Index#148\",\"Index#150\",\"Index#152\",\"Index#154\",\"Index#156\",\"Index#158\",\"Index#160\",\"Index#162\",\"Index#164\",\"Index#166\",\"Index#168\",\"Index#170\",\"Index#172\",\"Index#174\",\"Index#176\",\"Index#178\",\"Index#180\",\"Index#182\",\"Index#184\",\"Index#186\",\"Index#188\",\"Index#190\",\"Index#192\",\"Index#194\",\"Index#196\",\"Index#198\",\"Index#200\",\"Index#202\",\"Index#204\",\"Index#206\",\"Index#208\",\"Index#210\",\"Index#212\",\"Index#214\",\"Index#216\",\"Index#218\",\"Index#220\",\"Index#222\",\"Index#224\",\"Index#226\",\"Index#228\",\"Index#230\",\"Index#232\",\"Index#234\",\"Index#236\",\"Index#238\",\"Index#240\",\"Index#242\",\"Index#244\",\"Index#246\",\"Index#248\",\"Index#250\",\"Index#252\",\"Index#254\"].",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "65535",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8 128",
+        "elements": []
+      }
+    }
+  ]
+}

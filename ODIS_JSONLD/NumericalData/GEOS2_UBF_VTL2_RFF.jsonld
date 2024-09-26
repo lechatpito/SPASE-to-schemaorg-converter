@@ -1,0 +1,201 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/GEOS2_UBF_VTL2_RFF.jsonld",
+  "name": "GEOS-2 Ultra Low Frequency Magnetic Field Components Level-2 (RFF)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/GEOS2_UBF_VTL2_RFF.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/CDPP.general.contact",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/CDPP.general.contact"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Patrick.Canu",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Patrick.Canu"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Nicole.Cornilleau-Wehrlin",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Nicole.Cornilleau-Wehrlin"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Patrick.Robert",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Patrick.Robert"
+    }
+  ],
+  "sdDatePublished": "2022-07-26",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GEOS2_UBF_VTL2_RFF",
+      "encodingFormat": "Text.ASCII",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/GEOS-2/S-300/GEOS2_UBF_VTL2_RFF",
+  "description": "This  dataset contains magnetic field components  from GEOS-2 S-300 wave experiment (search coil magnetometer) given in SRV Coordinate System in nT. Time resolution is 43 ms. The data format is RFF (Roproc File Format ftp://ftp.lpp.polytechnique.fr/robert/keep/Biblio_et_CV/Working_documents/2015_Robert_The_Roproc_File_Format_V2p3.pdf)\n\n    Bx, By, Bz: Magnetic field\n    Dx, Dy: despin signals corresponding to the continuous magnetic field rotation",
+  "abstract": "This  dataset contains magnetic field components  from GEOS-2 S-300 wave experiment (search coil magnetometer) given in SRV Coordinate System in nT. Time resolution is 43 ms. The data format is RFF (Roproc File Format ftp://ftp.lpp.polytechnique.fr/robert/keep/Biblio_et_CV/Working_documents/2015_Robert_The_Roproc_File_Format_V2p3.pdf)\n\n    Bx, By, Bz: Magnetic field\n    Dx, Dy: despin signals corresponding to the continuous magnetic field rotation",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Sampling frequency",
+      "description": "Sampling frequency",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voltage range min",
+      "description": "Voltage range min",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Voltage range max",
+      "description": "Voltage range max",
+      "unitText": "V",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Telemetry range min",
+      "description": "Telemetry range min",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Telemetry range max",
+      "description": "Telemetry range max",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin period",
+      "description": "Spin period",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Filter frequency min",
+      "description": "Filter frequency min",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Filter frequency  max",
+      "description": "Filter frequency  max",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cut off frequency",
+      "description": "Cut off frequency",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Detrend frequency",
+      "description": "Detrend frequency",
+      "unitText": "Hz",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Calibration kernel size",
+      "description": "Calibration kernel size",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Calibration shift size",
+      "description": "Calibration shift size",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Phase Angle",
+      "description": "Spin Phase is given in the S/C system and S/C sens",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field components  in SRV coordinate system",
+      "description": "Magnetic field components  in SRV coordinate system. \nBx, By, Bz: Magnetic field,\nDx, Dy: despin signals corresponding to the continuous magnetic field rotation.\n\nVDH frame (Vertical Dusk Horizontal system)\nThe V-axis is the outwards local vertical, to the point of observation.The H-axis is parallel to the horizontal local plane, positive to the North.The V-H plane is a geographic meridian plane.  The D-axis is azimuthal, eastwards.\nSRV frame\nZ aligned with the spin axis\nX is in the geographic meridian plane (V,H) of the VDH frame",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

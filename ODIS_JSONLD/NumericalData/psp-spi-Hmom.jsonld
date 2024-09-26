@@ -1,0 +1,215 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/psp-spi-Hmom.jsonld",
+  "name": "PSP - SWEAP SPANi - protons - moments",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/psp-spi-Hmom.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Justin.C.Kasper",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Justin.C.Kasper"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Davin.Larson",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Davin.Larson"
+    }
+  ],
+  "sdDatePublished": "2022-02-14",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/PSP/SPI/psp-spi-Hmom",
+  "description": "\n             This data product contains Partial moments of the Proton distribution function in the RTN frame of reference. User should be aware that the full ion distribution is typically not in the field of view of the instrument. \n         ",
+  "abstract": "\n             This data product contains Partial moments of the Proton distribution function in the RTN frame of reference. User should be aware that the full ion distribution is typically not in the field of view of the instrument. \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "h+ density",
+      "description": "Proton density",
+      "unitText": "cm-3",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ temperature",
+      "description": "Partial Moment Temperature",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ t_inst",
+      "description": "Temperature Tensor in instrument frame",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": [
+          {
+            "Name": "Txx",
+            "Index": "1",
+            "ParameterKey": "psp_spi_Hwt_inst(0)"
+          },
+          {
+            "Name": "Tyy",
+            "Index": "2",
+            "ParameterKey": "psp_spi_Hwt_inst(1)"
+          },
+          {
+            "Name": "Tzz",
+            "Index": "3",
+            "ParameterKey": "psp_spi_Hwt_inst(2)"
+          },
+          {
+            "Name": "Txy",
+            "Index": "4",
+            "ParameterKey": "psp_spi_Hwt_inst(3)"
+          },
+          {
+            "Name": "Txz",
+            "Index": "5",
+            "ParameterKey": "psp_spi_Hwt_inst(4)"
+          },
+          {
+            "Name": "Tyz",
+            "Index": "6",
+            "ParameterKey": "psp_spi_Hwt_inst(5)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ v_inst",
+      "description": "Particle Velocity in instrument frame",
+      "unitText": "km/s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "psp_spi_Hv_inst(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "psp_spi_Hv_inst(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "psp_spi_Hv_inst(2)"
+          }
+        ]
+      }
+    }
+  ]
+}

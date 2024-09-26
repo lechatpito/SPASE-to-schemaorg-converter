@@ -1,0 +1,234 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ace-epam-lefs60.jsonld",
+  "name": "ACE - EPAM - LEFS60",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ace-epam-lefs60.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Dennis.Haggerty",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Dennis.Haggerty"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.E.Gold",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.E.Gold"
+    }
+  ],
+  "sdDatePublished": "2024-03-25",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/ACE/EPAM/ace-epam-lefs60",
+  "description": "LEFS60 flux data. Taken from ACE EPAM Electron Proton Alpha Monitor (EPAM) Level 2 intensities at 5-min time resolution. Calibrated science quality data. The data are accessible via ftp in HDF and CDF from the ACE Science Center and CDAWeb, respectively, and in ASCII format from the value-added interfaces at those sites. The \"parameter keys\" given below are as used by CDAWeb.",
+  "abstract": "LEFS60 flux data. Taken from ACE EPAM Electron Proton Alpha Monitor (EPAM) Level 2 intensities at 5-min time resolution. Calibrated science quality data. The data are accessible via ftp in HDF and CDF from the ACE Science Center and CDAWeb, respectively, and in ASCII format from the value-added interfaces at those sites. The \"parameter keys\" given below are as used by CDAWeb.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux",
+      "description": "LEFS60 MeV/nuc. ion Flux",
+      "unitText": "1/(cm^2 s sr MeV/nuc)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "0.546 - 0.761 MeV",
+            "Index": "1",
+            "ParameterKey": "ace_epam_lefs60_i(0)"
+          },
+          {
+            "Name": "0.761 - 1.22 MeV",
+            "Index": "2",
+            "ParameterKey": "ace_epam_lefs60_i(1)"
+          },
+          {
+            "Name": "1.22 - 4.97 MeV",
+            "Index": "3",
+            "ParameterKey": "ace_epam_lefs60_i(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion uncertainty",
+      "description": "Fractional uncertainty (statistical) in the ion flux",
+      "unitText": "Ratio",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "0.546 - 0.761 MeV",
+            "Index": "1",
+            "ParameterKey": "ace_epam_lefs60_unci(0)"
+          },
+          {
+            "Name": "0.761 - 1.22 MeV",
+            "Index": "2",
+            "ParameterKey": "ace_epam_lefs60_unci(1)"
+          },
+          {
+            "Name": "1.22 - 4.97 MeV",
+            "Index": "3",
+            "ParameterKey": "ace_epam_lefs60_unci(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- flux",
+      "description": "",
+      "unitText": "1/(cm^2 s sr MeV/nuc)",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "0.045 - 0.062 MeV",
+            "Index": "1",
+            "ParameterKey": "ace_epam_lefs60_e(0)"
+          },
+          {
+            "Name": "0.062 - 0.103 MeV",
+            "Index": "2",
+            "ParameterKey": "ace_epam_lefs60_e(1)"
+          },
+          {
+            "Name": "0.103 - 0.175 MeV",
+            "Index": "3",
+            "ParameterKey": "ace_epam_lefs60_e(2)"
+          },
+          {
+            "Name": "0.175 - 0.312 MeV",
+            "Index": "4",
+            "ParameterKey": "ace_epam_lefs60_e(3)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- flux uncertainty",
+      "description": "",
+      "unitText": "Ratio",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "0.045 - 0.062 MeV",
+            "Index": "1",
+            "ParameterKey": "ace_epam_lefs60_unce(0)"
+          },
+          {
+            "Name": "0.062 - 0.103 MeV",
+            "Index": "2",
+            "ParameterKey": "ace_epam_lefs60_unce(1)"
+          },
+          {
+            "Name": "0.103 - 0.175 MeV",
+            "Index": "3",
+            "ParameterKey": "ace_epam_lefs60_unce(2)"
+          },
+          {
+            "Name": "0.175 - 0.312 MeV",
+            "Index": "4",
+            "ParameterKey": "ace_epam_lefs60_unce(3)"
+          }
+        ]
+      }
+    }
+  ]
+}

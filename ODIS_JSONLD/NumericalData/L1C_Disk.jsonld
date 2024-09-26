@@ -1,0 +1,407 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/L1C_Disk.jsonld",
+  "name": "TIMED GUVI Imaging Level 1C Disk",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/L1C_Disk.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Andrew.B.Christensen",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Andrew.B.Christensen"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2023-07-30",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/timed/guvi/levels_v10/level1c/disk_cdf/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "SPDF repository of TIMED GUVI Level1C Disk in CDF format at CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/timed/guvi/levels_v10/level1c/disk_cdf/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "SPDF repository of TIMED GUVI Level1C Disk in CDF format at CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/TIMED/GUVI/Imaging/L1C_Disk",
+  "description": "This Level 1C data product measured over multiple scans on the disk contains data directly measure by the sensors such as photometer counts, uncertainties, light intensities and pointing information derived from the GUVI raw sensor data and the TIMED Satellite ephemeris data. The data are geolocated at a 150 km altitude, then gridded and binned to a 25 km X 25 km resolution GUVI-based coordinate system consisting of the along orbit position of the sensor and the angle of the scan from the nadir position. This gridding eliminates overlap from scan to scan due to the large instantaneous field-of-view of GUVI (about 12 degrees) and involves coaddition to place the values on a uniform instrument shared grid. The data is then determined whether its from day, night, aurora or twilight pixels.",
+  "abstract": "This Level 1C data product measured over multiple scans on the disk contains data directly measure by the sensors such as photometer counts, uncertainties, light intensities and pointing information derived from the GUVI raw sensor data and the TIMED Satellite ephemeris data. The data are geolocated at a 150 km altitude, then gridded and binned to a 25 km X 25 km resolution GUVI-based coordinate system consisting of the along orbit position of the sensor and the angle of the scan from the nadir position. This gridding eliminates overlap from scan to scan due to the large instantaneous field-of-view of GUVI (about 12 degrees) and involves coaddition to place the values on a uniform instrument shared grid. The data is then determined whether its from day, night, aurora or twilight pixels.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "GUVI",
+    "Imaging",
+    "Disk",
+    "lower thermosphere",
+    "ionosphere",
+    "MLTI"
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Starting Time",
+      "description": "Starting date/time of file's observation encoded in a 13-digit string and stored as a single netCDF global attribute.",
+      "unitText": "yyyydoyhhmmss",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Stopping Time",
+      "description": "Stopping date/time of file's observation encoded in a 13-digit string and stored as a single netCDF global attribute.",
+      "unitText": "yyyydoyhhmmss",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day of Year",
+      "description": "Date of observation in number of days since start of current year.",
+      "unitText": "days",
+      "minValue": "1",
+      "maxValue": "366",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time of observation in number of milliseconds since start of current day. Timestamp marks beginning of interval",
+      "unitText": "ms",
+      "minValue": "0",
+      "maxValue": "86399999",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Detector",
+      "description": "Detector # of detector being used",
+      "unitText": "unitless",
+      "minValue": "1",
+      "maxValue": "2",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Slit position",
+      "description": "Slit position being used where 0 = closed, 1 = wide, 2 = medium, 3 = narrow, and 4 = unknown.",
+      "unitText": "unitless",
+      "minValue": "0",
+      "maxValue": "4",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Latitude",
+      "description": "Geographic latitude of pixel center of 25-km x 25-km bin",
+      "unitText": "degrees",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Longitude",
+      "description": "Geographic longitude of pixel center of 25-km x 25-km bin",
+      "unitText": "degrees",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Latitude",
+      "description": "Geomagnetic latitude of pixel center of 25-km x 25-km bin",
+      "unitText": "degrees",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Longitude",
+      "description": "Geomagnetic longitude of pixel center of 25-km x 25-km bin",
+      "unitText": "degrees",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Imaging Mode Disk Radiance Data",
+      "description": "Radiance of each of 5 colors (1216, 1304, 1356 A, LBH1 and LBH2) has been geolocated at a 150 km altitude, gridded and binned to a 25 km X 25 km resolution.",
+      "unitText": "Rayleighs",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "5 2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pierce Point Altitude",
+      "description": "Pierce Point Altitude",
+      "unitText": "km",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar Zenith Angle",
+      "description": "Solar Zenith Angle",
+      "unitText": "degrees",
+      "minValue": "-90",
+      "maxValue": "90",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Region",
+      "description": "Data Region where Bit 0: Dayside 0\u00b0<SZA<90\u00b0; Bit 1: Nightside 110\u00b0<SZA<180\u00b0; Bit 2: Twilight 90\u00b0<SZA<110\u00b0; Bit 3: Polar Region 50\u00b0 < Geomaglat < 90\u00b0; Bit 4: Equatorial Region 0\u00b0< Geomaglat <50\u00b0; Bit 5,6: Unused; Bit 7: Unknown region. Valid values are [1 = daylight; 2 = night; 4 = twilight; 8 = Polar; 9 = Daylight Polar; 10 = Night Polar; 12 = Twilight polar; 16 = Equatorial; 17 = Daylight equatorial; 18 = night equatorial; 20 = twilight equatorial; 128 = Geolocation error]",
+      "unitText": "unitless",
+      "minValue": "1",
+      "maxValue": "128",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Indicator",
+      "description": "Data Quality Indicator stored as bit-encoded integers where Bits 0-6 are unused; Bit 7: 1 = No Data, 0 = Valid Pixel Data.",
+      "unitText": "unitless",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Systematic Error",
+      "description": "Systematic uncertainty where values of NaNs are given if there is no pixel data",
+      "unitText": "Rayleighs",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "NaN",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "5 2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Statistical Error",
+      "description": "Statistical uncertainty where values of NaNs are given if there is no pixel data",
+      "unitText": "Rayleighs",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "NaN",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "5 2",
+        "elements": []
+      }
+    }
+  ]
+}

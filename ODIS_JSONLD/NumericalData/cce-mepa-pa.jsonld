@@ -1,0 +1,305 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/cce-mepa-pa.jsonld",
+  "name": "AMPTE - CCE - MEPA - ion flux : 2 pitch angles",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/cce-mepa-pa.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Richard.W.McEntire",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Richard.W.McEntire"
+    }
+  ],
+  "sdDatePublished": "2020-02-20",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/CCE/MEPA/cce-mepa-pa",
+  "description": " \n             The source of the data is the ion head of the medium-energy particle analyzer (MEPA) \n             on the MPTE/CCE spacecraft, which detected ions with energy 25-7000 keV in 10 energy bins. \n             Since the detector did not distinguish different ions, one may assume that the particles are mostly protons.\n             Only data from the first 5 energy bins are included in present dataset. The MEPA instrument suffered gain shift throughout \n             its mission, which resulted in upward shift of the energy passbands. The gain factor has been periodically evaluated and energy passbands are \n             updated accordingly. The data was also divided into two pitch angle bins, one covering particles with velocities nearly perpendicular (pa 45-135\u00b0) \n             and the other covering particles with velocities nearly parallel (pa 0-45\u00b0 and 135-180\u00b0) to the measured magnetic field. \n         ",
+  "abstract": " \n             The source of the data is the ion head of the medium-energy particle analyzer (MEPA) \n             on the MPTE/CCE spacecraft, which detected ions with energy 25-7000 keV in 10 energy bins. \n             Since the detector did not distinguish different ions, one may assume that the particles are mostly protons.\n             Only data from the first 5 energy bins are included in present dataset. The MEPA instrument suffered gain shift throughout \n             its mission, which resulted in upward shift of the energy passbands. The gain factor has been periodically evaluated and energy passbands are \n             updated accordingly. The data was also divided into two pitch angle bins, one covering particles with velocities nearly perpendicular (pa 45-135\u00b0) \n             and the other covering particles with velocities nearly parallel (pa 0-45\u00b0 and 135-180\u00b0) to the measured magnetic field. \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux para",
+      "description": "\n               Number flux for particles with velocities nearly parallel to the measured magnetic field.\n           ",
+      "unitText": "1/cm^2/s/sr",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux perp",
+      "description": "\n               Number flux for particles with velocities nearly perpendicular to the measured magnetic field.\n           ",
+      "unitText": "1/cm^2/s/sr",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux E0",
+      "description": "\n             Number flux for both pitch angle bins at Energy E0. E0 is varying due to gain shift from range 25-76 to 34-100 keV\n         ",
+      "unitText": "1/cm^2/s/sr",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "perp",
+            "Index": "1",
+            "ParameterKey": "cce_mepa_pa_E0(0)"
+          },
+          {
+            "Name": "para",
+            "Index": "2",
+            "ParameterKey": "cce_mepa_pa_E0(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux E1",
+      "description": "\n               Number flux for both pitch angle bins at Energy E1. E1 is varying due to gain shift from range 34-100 to 50-150 keV\n           ",
+      "unitText": "1/cm^2/s/sr",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "perp",
+            "Index": "1",
+            "ParameterKey": "cce_mepa_pa_E1(0)"
+          },
+          {
+            "Name": "para",
+            "Index": "2",
+            "ParameterKey": "cce_mepa_pa_E1(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux E2",
+      "description": "\n               Number flux for both pitch angle bins at Energy E2. E2 is varying due to gain shift from range 50-150 to 83-250 keV\n           ",
+      "unitText": "1/cm^2/s/sr",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "perp",
+            "Index": "1",
+            "ParameterKey": "cce_mepa_pa_E2(0)"
+          },
+          {
+            "Name": "para",
+            "Index": "2",
+            "ParameterKey": "cce_mepa_pa_E2(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux E3",
+      "description": "\n               Number flux for both pitch angle bins at Energy E3. E3 is varying due to gain shift from range 83-250 to 151-460 keV\n           ",
+      "unitText": "1/cm^2/s/sr",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "perp",
+            "Index": "1",
+            "ParameterKey": "cce_mepa_pa_E3(0)"
+          },
+          {
+            "Name": "para",
+            "Index": "2",
+            "ParameterKey": "cce_mepa_pa_E3(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux E4",
+      "description": "\n               Number flux for both pitch angle bins at Energy E4. E4 is varying due to gain shift from range 151-460 to 285-860 keV\n           ",
+      "unitText": "1/cm^2/s/sr",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "perp",
+            "Index": "1",
+            "ParameterKey": "cce_mepa_pa_E4(0)"
+          },
+          {
+            "Name": "para",
+            "Index": "2",
+            "ParameterKey": "cce_mepa_pa_E4(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "energy bounds",
+      "description": "",
+      "unitText": "keV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": [
+          {
+            "Name": "E0 min",
+            "Index": "1",
+            "ParameterKey": "cce_mepa_pa_energy(0)"
+          },
+          {
+            "Name": "E1 min",
+            "Index": "2",
+            "ParameterKey": "cce_mepa_pa_energy(1)"
+          },
+          {
+            "Name": "E2 min",
+            "Index": "3",
+            "ParameterKey": "cce_mepa_pa_energy(2)"
+          },
+          {
+            "Name": "E3 min",
+            "Index": "4",
+            "ParameterKey": "cce_mepa_pa_energy(3)"
+          },
+          {
+            "Name": "E4 min",
+            "Index": "5",
+            "ParameterKey": "cce_mepa_pa_energy(4)"
+          },
+          {
+            "Name": "E4 max",
+            "Index": "6",
+            "ParameterKey": "cce_mepa_pa_energy(5)"
+          }
+        ]
+      }
+    }
+  ]
+}

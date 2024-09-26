@@ -1,0 +1,449 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/VariableCadence.jsonld",
+  "name": "Proton-Contaminated Alpha Differential Energy Flux measured by the PSP SPAN-Ion Instrument",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/VariableCadence.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Justin.C.Kasper",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Justin.C.Kasper"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.M.Candey",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.M.Candey"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Lee.Frost.Bargatze",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Lee.Frost.Bargatze"
+    }
+  ],
+  "sdDatePublished": "2023-08-31",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/psp/sweap/spi/l2/spi_sf01_8dx32ex8a",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Access to Data in CDF Format via ftps from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/psp/sweap/spi/l2/spi_sf01_8dx32ex8a",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "Access to Data in CDF Format via https from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=PSP_SWP_SPI_SF01_L2_8DX32EX8A&index=sp_phys",
+      "encodingFormat": "",
+      "name": "CDAWeb",
+      "description": "Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/ParkerSolarProbe/SWEAP/SPAN-I/Level2/AlphaDifferentialEnergyFlux/VariableCadence",
+  "description": "Parker Solar Probe SPAN-I Alpha particle differential energy flux (contaminated by Protons) dataset covers 8 defector settings, 32 energies, and 8 angles. The log spaced energy range covers 21.0 eV to 17.6 keV. The field of view covers the entire sky except for the region obscured by the heat shield. \n           Due to heat shield, the centroid of the solar wind alpha particle distribution is typically only observed around perihelion. The mode of the cadence is about 3.5 seconds, with smaller cadence of about 1.7 seconds around perihelion.",
+  "abstract": "Parker Solar Probe SPAN-I Alpha particle differential energy flux (contaminated by Protons) dataset covers 8 defector settings, 32 energies, and 8 angles. The log spaced energy range covers 21.0 eV to 17.6 keV. The field of view covers the entire sky except for the region obscured by the heat shield. \n           Due to heat shield, the centroid of the solar wind alpha particle distribution is typically only observed around perihelion. The mode of the cadence is about 3.5 seconds, with smaller cadence of about 1.7 seconds around perihelion.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time in TT2000 format",
+      "description": "Time at middle of sample",
+      "unitText": "ns",
+      "minValue": "1990-01-01T00:00:00.000000000",
+      "maxValue": "2029-12-31T23:59:58.999000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time in UTC format",
+      "description": "Time at middle of sample, unix time",
+      "unitText": "s",
+      "minValue": "1.2623e+09",
+      "maxValue": "4.10244e+09",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MET",
+      "description": "MET",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "APID",
+      "description": "APID",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SEQN",
+      "description": "SEQN",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SEQN_DELTA",
+      "description": "SEQN_DELTA",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SEQN_GROUP",
+      "description": "SEQN_GROUP",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PKT_SIZE",
+      "description": "PKT_SIZE",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SOURCE_APID",
+      "description": "SOURCE_APID",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SOURCE_HASH",
+      "description": "SOURCE_HASH",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COMPR_RATIO",
+      "description": "COMPR_RATIO",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NDAT",
+      "description": "NDAT",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATASIZE",
+      "description": "DATASIZE",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LTCSNNNN_BITS",
+      "description": "LTCSNNNN_BITS",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCH_BITS",
+      "description": "ARCH_BITS",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MODE2_ORI",
+      "description": "MODE2_ORI",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MODE2",
+      "description": "MODE2",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "F0",
+      "description": "F0",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STATUS_BITS",
+      "description": "STATUS_BITS",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PEAK_BIN",
+      "description": "PEAK_BIN",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PRODUCT_BITS",
+      "description": "PRODUCT_BITS",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NUM_TOTAL",
+      "description": "NUM_TOTAL",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NUM_ACCUM",
+      "description": "NUM_ACCUM",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TIME_TOTAL",
+      "description": "TIME_TOTAL",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TIME_ACCUM",
+      "description": "TIME_ACCUM",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CNTS",
+      "description": "CNTS",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATA",
+      "description": "DATA",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GAP",
+      "description": "GAP",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Quality Flag",
+      "description": "Quality Flag",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "65534",
+      "defaultValue": "65535"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Eflux",
+      "description": "Differential Energy Flux vs Energy/Angle Bin",
+      "unitText": "eV/cm2-s-ster-eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy",
+      "description": "Energy",
+      "unitText": "eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Theta",
+      "description": "Elevation Angle in instrument coordinates",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Phi",
+      "description": "Azimuth Angle in instrument coordinates",
+      "unitText": "\u00b0",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    }
+  ]
+}

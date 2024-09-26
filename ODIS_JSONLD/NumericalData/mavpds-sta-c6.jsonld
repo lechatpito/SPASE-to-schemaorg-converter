@@ -1,0 +1,168 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mavpds-sta-c6.jsonld",
+  "name": "MAVEN - STATIC - c6-32energy64mass",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/mavpds-sta-c6.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/James.P.McFadden",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/James.P.McFadden"
+    }
+  ],
+  "sdDatePublished": "2024-03-02",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Style",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ProductKey",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Name",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "URL",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "Description",
+      "encodingFormat": "",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-AMDA/MAVEN/STATIC/mavpds-sta-c6",
+  "description": "        The Suprathermal and Thermal Ion Composition (STATIC) instrument is part of the Particles and Fields (P and F) Package and measures thermal ions to moderate energy escaping ions.\n            Goals:\n            Measure the source ion populations near periapsis, the heated ionospheric ions at intermediate altitudes that achieve escape velocity, and the pickup acceleration of these ions in the magnetosheath and solar wind\n            Allow direct measurements of the Martian sheath plasma, separating shocked solar wind and planetary ions that populate the sheath and plasma sheet                 \n         ",
+  "abstract": "        The Suprathermal and Thermal Ion Composition (STATIC) instrument is part of the Particles and Fields (P and F) Package and measures thermal ions to moderate energy escaping ions.\n            Goals:\n            Measure the source ion populations near periapsis, the heated ionospheric ions at intermediate altitudes that achieve escape velocity, and the pickup acceleration of these ions in the magnetosheath and solar wind\n            Allow direct measurements of the Martian sheath plasma, separating shocked solar wind and planetary ions that populate the sheath and plasma sheet                 \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "M"
+    },
+    {
+      "@type": "Place",
+      "name": "a"
+    },
+    {
+      "@type": "Place",
+      "name": "r"
+    },
+    {
+      "@type": "Place",
+      "name": "s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion eflux : 2D",
+      "description": "32 energy x 64 mass ion distributions in units of differential energy flux\n            (LID = urn:nasa:pds:maven.static.c:data.c6_32e64m)",
+      "unitText": "eV/cm^2-sr-s-eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion eflux : sum over mass",
+      "description": "32 energy x 64 mass ion distributions in units of differential energy flux\n            (LID = urn:nasa:pds:maven.static.c:data.c6_32e64m)",
+      "unitText": "eV/cm^2-sr-s-eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion eflux : sum over energy",
+      "description": "32 energy x 64 mass ion distributions in units of differential energy flux\n            (LID = urn:nasa:pds:maven.static.c:data.c6_32e64m)",
+      "unitText": "eV/cm^2-sr-s-eV",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "table index",
+      "description": "",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    }
+  ]
+}

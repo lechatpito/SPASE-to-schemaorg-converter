@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT330S.jsonld",
+  "name": "Skylab UV Solar EUV Data in Original and FITS Format",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT330S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Robert.W.Noyes",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Robert.W.Noyes"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/skylab/uv_scanning_polychromator_spectroheliometer/fits_data/",
+      "encodingFormat": "",
+      "name": "FTP access to FITS data files at SPDF",
+      "description": "In FITS via FTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/skylab/uv_scanning_polychromator_spectroheliometer/fits_data/",
+      "encodingFormat": "",
+      "name": "HTTP access to FITS data files at SPDF",
+      "description": "In FITS via HTTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/skylab/uv_scanning_polychromator_spectroheliometer/raw_data/",
+      "encodingFormat": "",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In counts via FTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/skylab/uv_scanning_polychromator_spectroheliometer/raw_data/",
+      "encodingFormat": "",
+      "name": "HTTPS from SPDF",
+      "description": "In counts via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Skylab/Spectroheliometer/RasterFITS/PT330S",
+  "description": "This data set contains Skylab UV solar EUV data provided by the Principal Investigator. The data consist of both FITS data files and raw data files, contained in two subdirectories: /fits_data and /raw_data. The subdirectory /fits_data contains fits data files created in 2012 by copying from CDs (Compact Disks) which were in turn written by Mathieu Hirtzig at CfA in 2001 from SKYLAB-S055 data stored at the time on tape at CfA.  These data are stored in 22 subdirectories (/fits_data/CD01 through /fits_data/CD22), each of which is a copy of one of the 22 CD's. Each of the subdirectories contains an identical\r\nsub-subdirectory named /README_S055, which contains a number of files some of which may be helpful in examining the data. It is recommended that those unfamiliar with the S055 experiment look at the file README_S055.txt for background, as well as other files in the README_S055 sub-subdirectory, some of which provide useful auxilliary information.  The subdirectory /raw_data contains the raw data from which the fits data files were created.  This is probably of limited use, but is included for archival purposes.",
+  "abstract": "This data set contains Skylab UV solar EUV data provided by the Principal Investigator. The data consist of both FITS data files and raw data files, contained in two subdirectories: /fits_data and /raw_data. The subdirectory /fits_data contains fits data files created in 2012 by copying from CDs (Compact Disks) which were in turn written by Mathieu Hirtzig at CfA in 2001 from SKYLAB-S055 data stored at the time on tape at CfA.  These data are stored in 22 subdirectories (/fits_data/CD01 through /fits_data/CD22), each of which is a copy of one of the 22 CD's. Each of the subdirectories contains an identical\r\nsub-subdirectory named /README_S055, which contains a number of files some of which may be helpful in examining the data. It is recommended that those unfamiliar with the S055 experiment look at the file README_S055.txt for background, as well as other files in the README_S055 sub-subdirectory, some of which provide useful auxilliary information.  The subdirectory /raw_data contains the raw data from which the fits data files were created.  This is probably of limited use, but is included for archival purposes.",
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARC_SPECTRO_ION.jsonld",
+  "name": "ARCAD3 SPECTRO ION : Auroral Ion Mass/Energy Spectra",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/ARC_SPECTRO_ION.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://CNES/Person/CDPP-Archive/Henri.Reme",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/CNES/Person/CDPP-Archive/Henri.Reme"
+    }
+  ],
+  "sdDatePublished": "2022-03-22",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ARC_SPECTRO_ION",
+      "encodingFormat": "Binary",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://CNES/NumericalData/CDPP-Archive/ARCAD-3/Spectro/ARC_SPECTRO_ION",
+  "description": "This data set contains ARCAD-3 Spectro Auroral Ion Mass/Energy Spectra. \nThe ARCAD-3 Spectro suprathermal ion spectrometers, ION1 and ION2 measured the abundance of ionospheric (H+, He+, O+) and solar wind/magnetospheric ion species (H+, He++), from ~10 eV to ~14 keV/charge and from 1 to ~32 AMU, in two different viewing directions, ~60\u00b0 and ~120\u00b0 pitch angle. The basic design included a collimator followed by a retarding potential analyzer (RPA), the electrostatic energy analyzer (cylindrical). Subsequent mass analysis was carried out by an ExB Wien filter and detection by an array of CEMs. Performances were the following: internal energy resolution: deltaE/E ~ 5%, mass resolution: M/deltaM ~ 4, energy range divided in two sub-ranges: 10-120 eV/q (ionospheric RPA mode) and suprathermal, 50 eV to 14 keV/q. For each ion spectrometer different operating modes were selected by commands setting: (i) the number of scanned mass channels (64, 32, or 4), (ii) the number of energy steps (16, 8, or 4), (iii) their central energy, (iv) use of either the suprathermal section or the RPA section. ION1 and ION2 data are continuously transmitted with basic modes including complete mass-energy scans (64M x 16E or 32M x 4E) in ~12.8 s. to ~1 min.\nEach archived sequence of ION1 and ION2 data includes all needed information. All the results, organized in time sequences of successive energy-mass spectra, are given in corrected physical units (differential fluxes in (cm2.sec.sr.keV)^-1 units) and accompanied by corresponding energy and background tables, as well as by the full set of useful geophysical and orbital parameters (MLT, ILAT, ...). For RPA modes, only 4 energy steps (100 eV/q for ION1, 95 eV/q for ION2) were set up. Associated fluxes are integrated fluxes between the set up threshold and ~120 eV/q. High voltages applied to the electrostatic energy analyzer and the Wien mass filter were commanded by the onboard computer so that successive ion peaks may be easily recognized in successive mass per charge spectra at set channels whatever was the energy per charge selected. For example, for 32M and 64M scanning modes, (H+, He++, He+, O+) ions were detected at channels (4, 12, 18, 24) and (8, 24, 36, 48), respectively, independently of the selected energy steps.",
+  "abstract": "This data set contains ARCAD-3 Spectro Auroral Ion Mass/Energy Spectra. \nThe ARCAD-3 Spectro suprathermal ion spectrometers, ION1 and ION2 measured the abundance of ionospheric (H+, He+, O+) and solar wind/magnetospheric ion species (H+, He++), from ~10 eV to ~14 keV/charge and from 1 to ~32 AMU, in two different viewing directions, ~60\u00b0 and ~120\u00b0 pitch angle. The basic design included a collimator followed by a retarding potential analyzer (RPA), the electrostatic energy analyzer (cylindrical). Subsequent mass analysis was carried out by an ExB Wien filter and detection by an array of CEMs. Performances were the following: internal energy resolution: deltaE/E ~ 5%, mass resolution: M/deltaM ~ 4, energy range divided in two sub-ranges: 10-120 eV/q (ionospheric RPA mode) and suprathermal, 50 eV to 14 keV/q. For each ion spectrometer different operating modes were selected by commands setting: (i) the number of scanned mass channels (64, 32, or 4), (ii) the number of energy steps (16, 8, or 4), (iii) their central energy, (iv) use of either the suprathermal section or the RPA section. ION1 and ION2 data are continuously transmitted with basic modes including complete mass-energy scans (64M x 16E or 32M x 4E) in ~12.8 s. to ~1 min.\nEach archived sequence of ION1 and ION2 data includes all needed information. All the results, organized in time sequences of successive energy-mass spectra, are given in corrected physical units (differential fluxes in (cm2.sec.sr.keV)^-1 units) and accompanied by corresponding energy and background tables, as well as by the full set of useful geophysical and orbital parameters (MLT, ILAT, ...). For RPA modes, only 4 energy steps (100 eV/q for ION1, 95 eV/q for ION2) were set up. Associated fluxes are integrated fluxes between the set up threshold and ~120 eV/q. High voltages applied to the electrostatic energy analyzer and the Wien mass filter were commanded by the onboard computer so that successive ion peaks may be easily recognized in successive mass per charge spectra at set channels whatever was the energy per charge selected. For example, for 32M and 64M scanning modes, (H+, He++, He+, O+) ions were detected at channels (4, 12, 18, 24) and (8, 24, 36, 48), respectively, independently of the selected energy steps.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": []
+}

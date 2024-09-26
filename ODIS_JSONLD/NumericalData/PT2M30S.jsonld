@@ -1,0 +1,208 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT2M30S.jsonld",
+  "name": "Vega 2 Magnetic Field Data (2.5 min)",
+  "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/ODIS_JSONLD/NumericalData/PT2M30S.jsonld",
+  "publisher": [
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Valery.G.Petrov",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Valery.G.Petrov"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Valery.A.Styazhkin",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Valery.A.Styazhkin"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Natalia.E.Papitashvili",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Natalia.E.Papitashvili"
+    },
+    {
+      "@type": "Person",
+      "identifier": "spase://SMWG/Person/Jan.Merka",
+      "url": "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/SMWG/Person/Jan.Merka"
+    }
+  ],
+  "sdDatePublished": "2020-07-07",
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/zzz_old/vega_data_from_nssdc/mag/",
+      "encodingFormat": "Text.ASCII",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "FTP access to Vega mission data at NSSDC."
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/zzz_old/vega_data_from_nssdc/mag/",
+      "encodingFormat": "Text.ASCII",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  },
+  "identifier": "spase://NASA/NumericalData/Vega2/MISCHA/PT2M30S",
+  "description": "2.5-minute averaged magnetic field measurements from Vega 2. During the cruise phase from Earth to Venus (12/84-06/85) both Vega-1 and Vega-2 spacecraft had one-axis orientation, i.e. the spacecraft X axis was maintained sunward-pointing, while the spacecraft Y and Z axes rotated about the X axis. The spin phase of this rotation was not known, therefore the directions of By and Bz components are unknown. Magnetometer data for this period are presented in spacecraft coordinates as Br (directed radially from spacecraft to the Sun), Bysc, Bzsc. From the providers: \"It is proposed to use for analysis of the interplanetary magnetic field during this period the Br component and the total B=sqrt(Bxsc^2+Bysc^2+Bzsc^2). Bysc and Bzsc components are included in the data, but keep in mind that the orientation of these axes is unknown. It can be considered as fixed during periods up to a few hours, so the data can be used to look for IMF discontinues and IMF orientation variations.\" After Venus flybys (June, 11-15, 1985) up to Comet Halley (March, 6 and 9, 1986) and sometimes later Vega-1 and Vega-2 had three-axis stabilized orientations. After-Venus magnetic field data are presented in spacecraft-centered solar ecliptic (SE) coordinate system as Br, Bzse, Byse, B, where Br is directed from the spacecraft to the Sun, Bzse is directed along Bz axes of the Solar Ecliptic system (to ecliptic pole), Byse completes the right handed set and B=sqrt(Br^2+By^2+Bz^2).",
+  "abstract": "2.5-minute averaged magnetic field measurements from Vega 2. During the cruise phase from Earth to Venus (12/84-06/85) both Vega-1 and Vega-2 spacecraft had one-axis orientation, i.e. the spacecraft X axis was maintained sunward-pointing, while the spacecraft Y and Z axes rotated about the X axis. The spin phase of this rotation was not known, therefore the directions of By and Bz components are unknown. Magnetometer data for this period are presented in spacecraft coordinates as Br (directed radially from spacecraft to the Sun), Bysc, Bzsc. From the providers: \"It is proposed to use for analysis of the interplanetary magnetic field during this period the Br component and the total B=sqrt(Bxsc^2+Bysc^2+Bzsc^2). Bysc and Bzsc components are included in the data, but keep in mind that the orientation of these axes is unknown. It can be considered as fixed during periods up to a few hours, so the data can be used to look for IMF discontinues and IMF orientation variations.\" After Venus flybys (June, 11-15, 1985) up to Comet Halley (March, 6 and 9, 1986) and sometimes later Vega-1 and Vega-2 had three-axis stabilized orientations. After-Venus magnetic field data are presented in spacecraft-centered solar ecliptic (SE) coordinate system as Br, Bzse, Byse, B, where Br is directed from the spacecraft to the Sun, Bzse is directed along Bz axes of the Solar Ecliptic system (to ecliptic pole), Byse completes the right handed set and B=sqrt(Br^2+By^2+Bz^2).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Time of observation (year)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Month",
+      "description": "Time of observation (month of year)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day",
+      "description": "Time of observation (day of month)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour",
+      "description": "Time of observation (hour of day)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minute",
+      "description": "Time of observation (minute)",
+      "unitText": "",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second",
+      "description": "Time of observation (second)",
+      "unitText": "s",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Br",
+      "description": "Magnetic field radial (+ to Sun) component",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "9999.9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "By",
+      "description": "Magnetic field By component",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "9999.9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Magnetic field Bz component",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "9999.9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B",
+      "description": "Magnetic field magnitude in nT",
+      "unitText": "nT",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": "9999.9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "R",
+      "description": "Spacecraft radial distance from Sun in AU.",
+      "unitText": "AU",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Azimuth",
+      "description": "HGI spacecraft position azimuth, degrees.",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Elevation",
+      "description": "HGI Spacecraft position elevation, degrees.",
+      "unitText": "deg",
+      "minValue": "",
+      "maxValue": "",
+      "defaultValue": ""
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CSflag",
+      "description": "Coordinate system flag for magnetic field data. +-------------------------------------+   Flag   Coordinate system    --------------------------------------    0   Spacecraft coordinates     1   Solar Ecliptic coordinates   +-------------------------------------+",
+      "unitText": "",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": ""
+    }
+  ]
+}
