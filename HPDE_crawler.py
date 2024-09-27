@@ -104,21 +104,17 @@ def should_skip_file(file_path, skip_patterns):
             return True
     return False
 
-def process_json_file(json_file_path, output_dirs, sitemap_file, base_url, data_type, generated_files_counter):
+def process_json_file(json_file_path, output_dirs, sitemap_file, base_url, data_type, generated_files_counter, mapping_spec_path='mapping_spec.yaml'):
     """Processes a single JSON file and converts it to JSON-LD."""
     logging.info(f"Processing file: {json_file_path}")
     try:
+        output_file = output_dirs[data_type] / f"{json_file_path.stem}.jsonld"
         jsonld = convert_spase_to_jsonld(
-                input_file=json_file_path,
-                base_url=base_url,
-                output_file_path=output_dirs[data_type] / f"{Path(json_file_path).stem}.jsonld",
-                data_type=data_type
-            )
-        
-        # Write to output file
-        output_file = output_dirs[data_type] / f"{Path(json_file_path).stem}.jsonld"
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(jsonld, f, indent=2)
+            input_file=json_file_path,
+            base_url=base_url,
+            output_file_path=output_file,
+            data_type=data_type
+        )
         logging.info(f"JSON-LD file created at: {output_file}")
 
         # Increment the generated files counter

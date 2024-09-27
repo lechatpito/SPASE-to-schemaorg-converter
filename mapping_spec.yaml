@@ -1,0 +1,40 @@
+# Define reusable mappings using anchors
+common_mappings: &common_mappings
+  ResourceID:
+    targets:
+      - "@id"
+      - "url"
+    transform: "to_url"
+  ResourceHeader.ResourceName:
+    target: "name"
+    transform: null
+  ResourceHeader.ReleaseDate:
+    target: "sdDatePublished"
+    transform: "extract_date"
+  ResourceHeader.Description:
+    targets:
+      - "description"
+      - "abstract"
+    transform: null
+  ObservedRegion:
+    target: "spatialCoverage"
+    transform: "map_to_place"
+  Keyword:
+    target: "keywords"
+    transform: null
+  AccessInformation.AccessURL:
+    target: "distribution"
+    transform: "map_distribution"
+
+# Define DisplayData mappings by reusing common_mappings
+DisplayData:
+  mappings:
+    <<: *common_mappings
+
+# Define NumericalData mappings by reusing common_mappings and adding specific mappings
+NumericalData:
+  mappings:
+    <<: *common_mappings
+    Parameter:
+      target: "variableMeasured"
+      transform: "map_parameters"
