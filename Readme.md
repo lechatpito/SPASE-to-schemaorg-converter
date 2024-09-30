@@ -1,4 +1,4 @@
-# Helio-KNOW ODIS Conversion Tools
+# SPASE to ODIS/Schema.org Conversion Tools
 
 ## Table of Contents
 - [Introduction](#introduction)
