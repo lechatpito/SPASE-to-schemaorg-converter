@@ -1,5 +1,25 @@
 # Helio-KNOW ODIS Conversion Tools
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Why Convert SPASE to ODIS?](#why-convert-spase-to-odis)
+- [The Conversion Process](#the-conversion-process)
+- [SPASE to ODIS Mapping](#spase-to-odis-mapping)
+- [Helio-KNOW: Advancing Heliophysics through Open Science and Knowledge Commons](#helio-know-advancing-heliophysics-through-open-science-and-knowledge-commons)
+  - [Project Overview](#project-overview)
+  - [Key Objectives](#key-objectives)
+  - [The Importance of Open Science in Heliophysics](#the-importance-of-open-science-in-heliophysics)
+  - [Benefits for Helio-KNOW](#benefits-for-helio-know)
+  - [ODIS Project Integration](#odis-project-integration)
+- [How to Use This Repository](#how-to-use-this-repository)
+  - [Prerequisites](#prerequisites)
+  - [Configuration](#configuration)
+  - [Running the Code](#running-the-code)
+  - [Adding a New Mapping / Data Type](#adding-a-new-mapping--data-type)
+  - [Converting Mappings YAML to Markdown](#converting-mappings-yaml-to-markdown)
+
+## Introduction
+
 This project focuses on converting [SPASE (Space Physics Archive Search and Extract)](https://spase-group.org/) metadata to [ODIS (Ocean Data and Information System)](https://book.odis.org/) compatible JSON-LD format. This conversion is a crucial step in integrating heliophysics data into a broader, interoperable framework that adheres to schema.org vocabulary.
 
 ## Why Convert SPASE to ODIS?
@@ -17,7 +37,6 @@ This project focuses on converting [SPASE (Space Physics Archive Search and Extr
 Our conversion process involves two main scripts:
 
 1. `SPASE_JSONLD_converter.py`: This script handles the actual conversion of SPASE JSON to schema.org compatible JSON-LD.
-
 2. `HPDE_crawler.py`: This script crawls through the HPDE (Heliophysics Data Environment) directory structure, identifies SPASE JSON files, and applies the conversion process based on the specified data types.
 
 The conversion maps SPASE metadata fields to appropriate schema.org types and properties, ensuring that the rich information contained in SPASE records is accurately represented in the resulting JSON-LD.
@@ -70,31 +89,144 @@ This repository contains tools to convert SPASE (Space Physics Archive Search an
 - Python 3.7 or higher
 - Required Python packages: `json`, `datetime`, `os`, `xml.etree.ElementTree`, `urllib`
 
+### Configuration
+
+1. **Mapping Specification:**
+   - The mapping specification is defined in a YAML file (`mapping_spec.yaml`). This file contains the mappings between SPASE metadata fields and schema.org properties.
+   - Example of `mapping_spec.yaml`:
+     ```yaml
+     common_mappings: &common_mappings
+       ResourceID:
+         targets:
+           - "@id"
+           - "url"
+         transform: "to_url"
+       ResourceHeader.ResourceName:
+         target: "name"
+         transform: null
+       ResourceHeader.ReleaseDate:
+         target: "sdDatePublished"
+         transform: "extract_date"
+       ResourceHeader.Description:
+         targets:
+           - "description"
+           - "abstract"
+         transform: null
+       ObservedRegion:
+         target: "spatialCoverage"
+         transform: "map_to_place"
+       Keyword:
+         target: "keywords"
+         transform: null
+       AccessInformation.AccessURL:
+         target: "distribution"
+         transform: "map_distribution"
+
+     DisplayData:
+       mappings:
+         <<: *common_mappings
+
+     NumericalData:
+       mappings:
+         <<: *common_mappings
+         Parameter:
+           target: "variableMeasured"
+           transform: "map_parameters"
+     ```
+
+2. **Updating the Mapping Specification:**
+   - To add a new mapping or data type, update the `mapping_spec.yaml` file with the new mappings.
+   - Example of adding a new data type:
+     ```yaml
+     NewDataType:
+       mappings:
+         <<: *common_mappings
+         NewField:
+           target: "newProperty"
+           transform: "new_transform_function"
+     ```
+
 ### Running the Code
 
 1. Clone this repository:
-   ```
+   ```bash
    git clone https://github.com/your-repo/helio-know-odis.git
    cd helio-know-odis
    ```
 
 2. Ensure your SPASE JSON files are in the `../hpde.io` directory (or modify the `root_dir` in `HPDE_crawler.py` accordingly).
 
-
 3. Specify the desired data types to process in the `datatypes` variable in the `main` function of `HPDE_crawler.py`. For example:
-   ```python
-   datatypes = ['DisplayData', 'NumericalData']
+   ```python:HPDE_crawler.py
+   startLine: 86
+   endLine: 87
    ```
 
 4. Run the HPDE crawler:
-   ```
+   ```bash
    python HPDE_crawler.py
    ```
 
-
 This script will:
 - Crawl the HPDE file directory
-- Process JSON files in the DisplayData subdirectories
+- Process JSON files in the specified subdirectories
 - Convert SPASE metadata to JSON-LD format
 - Store the resulting JSON-LD files in the `./ODIS_JSONLD` directory
 - Update the `sitemap.xml` file with new entries
+
+### Adding a New Mapping / Data Type
+
+1. **Update `mapping_spec.yaml`:**
+   - Add the new data type and its mappings to the `mapping_spec.yaml` file.
+   - Example:
+     ```yaml
+     NewDataType:
+       mappings:
+         <<: *common_mappings
+         NewField:
+           target: "newProperty"
+           transform: "new_transform_function"
+     ```
+
+2. **Implement the Transformation Function:**
+   - If the new mapping requires a new transformation function, implement it in the `mapping_engine.py` file.
+   - Example:
+     ```python:mapping_engine.py
+     startLine: 1
+     endLine: 20
+     ```
+
+3. **Run the HPDE Crawler:**
+   - Ensure the new data type is included in the `datatypes` variable in `HPDE_crawler.py`.
+   - Run the crawler to process the new data type.
+
+### Converting Mappings YAML to Markdown
+
+1. **Python Script to Convert YAML to Markdown:**
+   - Use the provided script to convert `mapping_spec.yaml` to a Markdown file.
+   - Example:
+     ```python
+     import yaml
+
+     def yaml_to_markdown(yaml_file, md_file):
+         with open(yaml_file, 'r') as yf, open(md_file, 'w') as mf:
+             yaml_content = yaml.safe_load(yf)
+             mf.write("# YAML Mapping Documentation\n\n")
+             for section, mappings in yaml_content.items():
+                 mf.write(f"## {section} Mappings\n\n")
+                 mf.write("```yaml\n")
+                 yaml.dump({section: mappings}, mf, default_flow_style=False)
+                 mf.write("```\n\n")
+
+     if __name__ == "__main__":
+         yaml_to_markdown('mapping_spec.yaml', 'SPASE_to_ODIS_mapping.md')
+     ```
+
+2. **Update the Markdown File:**
+   - Run the script whenever the `mapping_spec.yaml` file is updated to keep the Markdown documentation in sync.
+   - Example:
+     ```bash
+     python yaml_to_markdown.py
+     ```
+
+By following these steps, you can ensure that your mappings are up-to-date and well-documented, making it easier to manage and extend the conversion process.
