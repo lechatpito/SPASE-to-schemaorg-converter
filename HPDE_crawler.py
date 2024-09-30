@@ -104,7 +104,7 @@ def should_skip_file(file_path, skip_patterns):
             return True
     return False
 
-def process_json_file(json_file_path, output_dirs, sitemap_file, base_url, data_type, generated_files_counter, mapping_spec_path='mapping_spec.yaml'):
+def process_json_file(json_file_path, output_dirs, sitemap_file, base_url, data_type, generated_files_counter, mapping_spec_path):
     """Processes a single JSON file and converts it to JSON-LD."""
     logging.info(f"Processing file: {json_file_path}")
     try:
@@ -113,7 +113,8 @@ def process_json_file(json_file_path, output_dirs, sitemap_file, base_url, data_
             input_file=json_file_path,
             base_url=base_url,
             output_file_path=output_file,
-            data_type=data_type
+            data_type=data_type,
+            mapping_spec_path=mapping_spec_path
         )
         logging.info(f"JSON-LD file created at: {output_file}")
 
@@ -127,7 +128,7 @@ def process_json_file(json_file_path, output_dirs, sitemap_file, base_url, data_
         logging.exception(f"Failed to process JSON file: {json_file_path}")
         # Here you can add the file to a list of skipped files or perform other error handling as needed.
 
-def crawl_hpde_directory(root_dir, output_dir, sitemap_file, base_url, data_types, skip_patterns=None):
+def crawl_hpde_directory(root_dir, output_dir, sitemap_file, base_url, data_types, skip_patterns=None, mapping_spec=None):
     """
     Crawls the HPDE directory recursively and processes JSON files based on their data types,
     excluding files that match skip patterns.
@@ -139,6 +140,7 @@ def crawl_hpde_directory(root_dir, output_dir, sitemap_file, base_url, data_type
         base_url (str): The base URL for constructing full URLs.
         data_types (list): List of data types to process.
         skip_patterns (list, optional): List of string patterns to exclude.
+        mapping_spec (list, optional): List of mapping spec files to use.
     """
     output_dirs = create_output_directories(output_dir, data_types)
     root_path = Path(root_dir)
@@ -163,7 +165,7 @@ def crawl_hpde_directory(root_dir, output_dir, sitemap_file, base_url, data_type
         data_type = determine_data_type(json_file, data_types)
         if data_type:
             logging.debug(f"Determined data type '{data_type}' for file: {json_file}")
-            process_json_file(json_file, output_dirs, sitemap_file, base_url, data_type, generated_files_counter)
+            process_json_file(json_file, output_dirs, sitemap_file, base_url, data_type, generated_files_counter, mapping_spec)
             processed_files_counter[data_type] += 1
         else:
             logging.warning(f"Could not determine data type for file: {json_file}. Skipping.")
@@ -186,9 +188,10 @@ def main():
     base_url = config.get('base_url', "https://raw.githubusercontent.com/lechatpito/NASA-ODIS-Examples/main/")
     datatypes = config.get('datatypes', ['DisplayData', 'NumericalData'])
     skip_patterns = config.get('skip_patterns', ['deprecated'])
+    mapping_spec = config.get('mapping_spec', 'mapping/mapping_spec.yaml')
 
     logging.info("Starting HPDE crawler")
-    crawl_hpde_directory(root_dir, output_dir, sitemap_file, base_url, datatypes, skip_patterns)
+    crawl_hpde_directory(root_dir, output_dir, sitemap_file, base_url, datatypes, skip_patterns, mapping_spec)
     logging.info("HPDE crawler finished")
 
 if __name__ == "__main__":

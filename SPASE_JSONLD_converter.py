@@ -9,7 +9,7 @@ class SPASEConverter:
     Base class for converting SPASE JSON to JSON-LD format.
     """
 
-    def __init__(self, input_file, base_url, output_file_path, data_type, mapping_spec_path='mapping_spec.yaml'):
+    def __init__(self, input_file, base_url, output_file_path, data_type, mapping_spec_path):
         self.input_file = Path(input_file)
         self.base_url = base_url
         self.output_file_path = Path(output_file_path)
@@ -78,7 +78,7 @@ class NumericalDataConverter(SPASEConverter):
     def __init__(self, input_file, base_url, output_file_path):
         super().__init__(input_file, base_url, output_file_path, data_type='NumericalData')
 
-def convert_spase_to_jsonld(input_file, base_url, output_file_path, data_type):
+def convert_spase_to_jsonld(input_file, base_url, output_file_path, data_type, mapping_spec_path):
     """
     Factory function to convert SPASE JSON to JSON-LD based on data type.
 
@@ -87,14 +87,14 @@ def convert_spase_to_jsonld(input_file, base_url, output_file_path, data_type):
         base_url (str): Base URL for constructing @id and URLs.
         output_file_path (str): Path to save the output JSON-LD file.
         data_type (str): Type of data (e.g., 'DisplayData', 'NumericalData').
-
+        mapping_spec_path (str): Path to the mapping spec file.
     Returns:
         dict: Converted JSON-LD data.
     """
     if data_type == 'DisplayData':
-        converter = DisplayDataConverter(input_file, base_url, output_file_path)
+        converter = DisplayDataConverter(input_file, base_url, output_file_path, mapping_spec_path)
     elif data_type == 'NumericalData':
-        converter = NumericalDataConverter(input_file, base_url, output_file_path)
+        converter = NumericalDataConverter(input_file, base_url, output_file_path, mapping_spec_path)
     else:
         raise ValueError(f"Unsupported data type: {data_type}")
 
