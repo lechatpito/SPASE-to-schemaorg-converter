@@ -66,8 +66,9 @@ class DisplayDataConverter(SPASEConverter):
     Converter for DisplayData SPASE JSON to JSON-LD.
     """
 
-    def __init__(self, input_file, base_url, output_file_path):
-        super().__init__(input_file, base_url, output_file_path, data_type='DisplayData')
+    def __init__(self, input_file, base_url, output_file_path, mapping_spec_path):
+        super().__init__(input_file, base_url, output_file_path, 'DisplayData', mapping_spec_path)
+
 
 
 class NumericalDataConverter(SPASEConverter):
@@ -75,8 +76,8 @@ class NumericalDataConverter(SPASEConverter):
     Converter for NumericalData SPASE JSON to JSON-LD.
     """
 
-    def __init__(self, input_file, base_url, output_file_path):
-        super().__init__(input_file, base_url, output_file_path, data_type='NumericalData')
+    def __init__(self, input_file, base_url, output_file_path, mapping_spec_path):
+        super().__init__(input_file, base_url, output_file_path,'NumericalData', mapping_spec_path)
 
 def convert_spase_to_jsonld(input_file, base_url, output_file_path, data_type, mapping_spec_path):
     """

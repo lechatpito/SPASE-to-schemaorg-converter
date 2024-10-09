@@ -24,7 +24,18 @@ def extract_date(datetime_str):
     return datetime_str.split('T')[0] if 'T' in datetime_str else datetime_str
 
 def map_to_place(regions):
-    return [{"@type": "Place", "name": region} for region in regions]
+    if regions:
+        if isinstance(regions, str):
+            return [{"@type": "Place", "name": regions}]
+        elif isinstance(regions, list):
+            return [{"@type": "Place", "name": region} for region in regions]
+        # elif isinstance(regions, dict):
+        #     return [{"@type": "Place", "name": regions.get('ObservedRegion', '')}]
+        else:
+            logging.warning(f"Unexpected type for regions: {type(regions)} -- {regions}")
+            return []
+    else:
+        return []
 
 def map_distribution(access_urls, data_section, base_url):
     distribution = []
@@ -38,10 +49,11 @@ def map_distribution(access_urls, data_section, base_url):
         distribution.append({
             "@type": "DataDownload",
             "contentUrl": content_url,
-            "encodingFormat": encoding_format,
             "name": name,
             "description": description
         })
+        if encoding_format:
+            distribution[0]["encodingFormat"] = encoding_format
     return distribution
 
 def map_parameters(parameters):
@@ -49,14 +61,36 @@ def map_parameters(parameters):
     for parameter in parameters:
         if isinstance(parameter, dict):
             variable = {
-                "@type": "PropertyValue",
-                "name": parameter.get('Name', ''),
-                "description": parameter.get('Description', ''),
-                "unitText": parameter.get('Units', ''),
-                "minValue": parameter.get('ValidMin', ''),
-                "maxValue": parameter.get('ValidMax', ''),
-                "defaultValue": parameter.get('FillValue', '')
+                    "@type": "PropertyValue"
             }
+            
+            name = parameter.get('Name')
+            if name:
+                variable["name"] = name
+
+            description = parameter.get('Description')
+            if description:
+                variable["description"] = description
+
+            unit_text = parameter.get('Units')
+            if unit_text:
+                variable["unitText"] = unit_text
+
+            min_value = parameter.get('ValidMin')
+            if min_value:
+                variable["minValue"] = min_value
+
+            max_value = parameter.get('ValidMax')
+            if max_value:
+                variable["maxValue"] = max_value
+
+            default_value = parameter.get('FillValue')
+            if default_value:
+                variable["defaultValue"] = default_value
+                
+            cadence = parameter.get('Cadence')
+            if cadence:
+                variable["cadence"] = cadence
             # Handle nested structures if present
             if 'Structure' in parameter:
                 structure = parameter['Structure']
@@ -119,6 +153,7 @@ class MappingEngine:
             # "@id": url
         }
         mappings = self.mapping_spec.get(data_type, {}).get('mappings', {})
+  
         data_section = spase_json.get('Spase', {}).get(data_type, {})
         for source_field, config in mappings.items():            
             # Handle nested source fields
