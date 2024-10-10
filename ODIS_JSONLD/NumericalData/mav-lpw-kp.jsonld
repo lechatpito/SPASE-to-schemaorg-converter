@@ -1,0 +1,126 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/LPW/mav-lpw-kp",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/LPW/mav-lpw-kp",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - LPW - key parameters",
+  "sdDatePublished": "2024-05-02",
+  "description": "Data follow a 4-second cadence when MAVEN is at an altitude of less than 500 km, otherwise the time cadence is 8 seconds.     \n          The in situ key parameters contain 235 parameters selected by the instrument leads and other MAVEN scientists. These data consist of values derived from L2 data provided by the in situ instruments.\n         \n          LPW key parameters include :\n  * e- density, temperature - Electron density / temperature derived from the LP sweep and when available from the plasma line\n  * e- density, temperature : error min/max - Electron density / temperature minimum / Maximum value\n  * s/c potential - Measured from the probe potentials\n  * s/c potential : error min/max - Minimum / Maximum value\n  *  E-field power : three bands - Integrated wave power from the onboard calculated FFT, frequencies important for wave heating\n  *  E-field power : three bands : quality - Range: 0-100, where 100 is the highest confidence level, use data with quality flag of 50 or above. \n ",
+  "abstract": "Data follow a 4-second cadence when MAVEN is at an altitude of less than 500 km, otherwise the time cadence is 8 seconds.     \n          The in situ key parameters contain 235 parameters selected by the instrument leads and other MAVEN scientists. These data consist of values derived from L2 data provided by the in situ instruments.\n         \n          LPW key parameters include :\n  * e- density, temperature - Electron density / temperature derived from the LP sweep and when available from the plasma line\n  * e- density, temperature : error min/max - Electron density / temperature minimum / Maximum value\n  * s/c potential - Measured from the probe potentials\n  * s/c potential : error min/max - Minimum / Maximum value\n  *  E-field power : three bands - Integrated wave power from the onboard calculated FFT, frequencies important for wave heating\n  *  E-field power : three bands : quality - Range: 0-100, where 100 is the highest confidence level, use data with quality flag of 50 or above. \n ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- density",
+      "description": "Electron density derived from the LP sweep and when available from the plasma line ",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- density error : max",
+      "description": "Electron density maximal value",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- density error : min",
+      "description": "Electron density minimal value",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- temperature",
+      "description": "Electron temperature derived from the LP sweep and when available from the plasma line ",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- temperature error : max",
+      "description": "Electron temperature maximal value",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- temperature error : min",
+      "description": "Electron temperature minimal value",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot",
+      "description": "Measured from the probe potentials",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot error : max",
+      "description": "S/c potential maximal value",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot error  : min",
+      "description": "S/c potential minimal value",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field power : 002-100Hz",
+      "description": "Integrated wave power from the onboard calculated FFT, frequencies important for wave heating",
+      "unitText": "(V/m)^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field power : 002-100Hz : quality",
+      "description": "Range: 0-100, where 100 is the highest confidence level, use data with quality flag of 50 or above"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field power : 100-800Hz",
+      "description": "Integrated wave power from the onboard calculated FFT, frequencies important for wave heating",
+      "unitText": "(V/m)^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field power : 100-800Hz : quality",
+      "description": "Range: 0-100, where 100 is the highest confidence level, use data with quality flag of 50 or above"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field power : 800-1000Hz",
+      "description": "Integrated wave power from the onboard calculated FFT, frequencies important for wave heating",
+      "unitText": "(V/m)^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E-field power : 800-1000Hz : quality",
+      "description": "Range: 0-100, where 100 is the highest confidence level, use data with quality flag of 50 or above"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

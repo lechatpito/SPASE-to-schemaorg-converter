@@ -1,0 +1,100 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Helios1/E1/helios1-e1-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Helios1/E1/helios1-e1-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Helios1 - E1 - corefit : protons",
+  "sdDatePublished": "2018-11-06",
+  "description": "Corefit data set  contains \nestimates of number density, velocity, and temperatures of the proton core population in the \nsolar wind created from systematic \ufb01tting of all the original Helios 3D distribution functions.\n",
+  "abstract": "Corefit data set  contains \nestimates of number density, velocity, and temperatures of the proton core population in the \nsolar wind created from systematic \ufb01tting of all the original Helios 3D distribution functions.\n",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "status",
+      "defaultValue": "-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion_instr",
+      "defaultValue": "-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_para",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_perp",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_thermal_para",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_thermal_perp",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_rtn",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vr",
+            "Index": "1",
+            "ParameterKey": "helios1_e1_vp(0)"
+          },
+          {
+            "Name": "vt",
+            "Index": "2",
+            "ParameterKey": "helios1_e1_vp(1)"
+          },
+          {
+            "Name": "vn",
+            "Index": "3",
+            "ParameterKey": "helios1_e1_vp(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

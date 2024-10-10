@@ -1,0 +1,98 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/UKS/ION/uks-ion-ftr",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/UKS/ION/uks-ion-ftr",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "AMPTE - UKS - ION - all ions",
+  "sdDatePublished": "2020-01-21",
+  "description": "           \n         ",
+  "abstract": "           \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion density",
+      "description": "\n             Total ion density\n         ",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion temperature",
+      "description": "\n              Ion temperature\n          ",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion v_gse",
+      "description": "\n              Ion velocity in GSE coordinates\n          ",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "uks_ion_iv(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "uks_ion_iv(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "uks_ion_iv(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion counts",
+      "description": "\n              Ion counts\n          "
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

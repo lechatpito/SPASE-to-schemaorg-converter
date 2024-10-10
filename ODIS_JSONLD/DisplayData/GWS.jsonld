@@ -1,0 +1,45 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/Wind/MFI_SWE/GWS",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/Wind/MFI_SWE/GWS",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind daily Survey Plots",
+  "sdDatePublished": "2020-07-07",
+  "description": "Daily gif_walk plots, selected mag field and plasma data",
+  "abstract": "Daily gif_walk plots, selected mag field and plasma data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://cdaweb.gsfc.nasa.gov/cgi-bin/gif_walk?plot_type=wind_daily_kp_plots",
+      "name": "Daily plots of Wind field and plasma data",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

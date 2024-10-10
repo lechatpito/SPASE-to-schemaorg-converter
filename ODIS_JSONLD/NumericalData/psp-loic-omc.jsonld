@@ -1,0 +1,73 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/epiLo/psp-loic-omc",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/epiLo/psp-loic-omc",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP - IS\u2299IS EPI-Lo - ion composition mode : omni - channel C",
+  "sdDatePublished": "2022-09-02",
+  "description": "         \n             Ion composition mode channel C. The available spectra are obtained by summing over all directions. \n             * Species : He4, He3, O, Fe\n             * Nb of energy Bins : 192\n             * Energy range : 73 keV - 18.5 MeV\n             * Nb of looking directions : 80\n         ",
+  "abstract": "         \n             Ion composition mode channel C. The available spectra are obtained by summing over all directions. \n             * Species : He4, He3, O, Fe\n             * Nb of energy Bins : 192\n             * Energy range : 73 keV - 18.5 MeV\n             * Nb of looking directions : 80\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "he4 flux",
+      "description": "\n               Helium 4 omnidirectional flux\n           ",
+      "unitText": "1/cm\u00b2/sr/s/(MeV/nuc)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he3 countrate",
+      "description": "\n             Helium 3 omnidirectional count rate\n         ",
+      "unitText": "cnts/sec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he4 countrate",
+      "description": "\n               Helium 4 homnidirectional count rate\n           ",
+      "unitText": "cnts/sec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o countrate",
+      "description": "\n               Oxygen omnidirectional count rate\n           ",
+      "unitText": "cnts/sec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fe countrate",
+      "description": "\n               Iron omnidirectional count rate\n           ",
+      "unitText": "cnts/sec"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

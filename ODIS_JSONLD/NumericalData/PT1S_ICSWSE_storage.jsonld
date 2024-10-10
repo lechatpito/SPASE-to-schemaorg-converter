@@ -1,0 +1,54 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ICSWSE/MAGDAS/YAP/fluxgate/PT1S_ICSWSE_storage",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ICSWSE/MAGDAS/YAP/fluxgate/PT1S_ICSWSE_storage",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAGDAS observation network 1sec resolution geomagnetic field data at Yap Island, FMS",
+  "sdDatePublished": "2013-07-30",
+  "description": "Geomagnetic field data observed at MAGDAS Yap Island station, FMS. The time resolution is 1 second. The data consist of 3 components (H, D, Z) and total geomagnetic field (F) value.",
+  "abstract": "Geomagnetic field data observed at MAGDAS Yap Island station, FMS. The time resolution is 1 second. The data consist of 3 components (H, D, Z) and total geomagnetic field (F) value.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "keywords": "ground observation magnetometer geomagnetic field",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://data.icswse.kyushu-u.ac.jp/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "The total field F is culculated by the above three components.",
+      "description": "3 components and total geomagnetic field value in unit of nano tesla. H is horizontal component (northward positive). D is declination component (northward positive). Z is vertical component (downward positive). The total field F is culculated by the above three components.",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

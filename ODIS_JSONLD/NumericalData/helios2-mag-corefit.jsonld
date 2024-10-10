@@ -1,0 +1,82 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Helios2/MAG/helios2-mag-corefit",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Helios2/MAG/helios2-mag-corefit",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Helios2 - MAG - corefit : 40s",
+  "sdDatePublished": "2018-11-08",
+  "description": " \n",
+  "abstract": " \n",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "mag_instr",
+      "description": "Instrument flag",
+      "defaultValue": "-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sigma b",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_se",
+      "description": "magnetic field in solar ecliptic spacecraft centered coordinates (SE)",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "r",
+            "Index": "1",
+            "ParameterKey": "helios2_b_rtn(0)"
+          },
+          {
+            "Name": "t",
+            "Index": "2",
+            "ParameterKey": "helios2_b_rtn(1)"
+          },
+          {
+            "Name": "n",
+            "Index": "3",
+            "ParameterKey": "helios2_b_rtn(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

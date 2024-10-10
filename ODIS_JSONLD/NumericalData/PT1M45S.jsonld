@@ -1,0 +1,560 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TWINS2/Ephemeris/PT1M45S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TWINS2/Ephemeris/PT1M45S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "TWINS 2 - Spacecraft Ephemeris",
+  "sdDatePublished": "2021-04-27",
+  "description": "Definitive orbit data",
+  "abstract": "Definitive orbit data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Epoch",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start Time MJD",
+      "description": "Start Time MJD - time key of data point",
+      "unitText": "days",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C ECI XYZ",
+      "description": "The spacecraft location in ECI coordinates (cartesian XYZ components).",
+      "unitText": "km",
+      "minValue": "-63800.0",
+      "maxValue": "63800.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FSCECI X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FSCECI Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FSCECI Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C GEO XYZ",
+      "description": "The spacecraft location in geographic coordinates (cartesian XYZ components).",
+      "unitText": "km",
+      "minValue": "-63800.0",
+      "maxValue": "63800.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FSCGEO X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FSCGEO Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FSCGEO Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C GSM XYZ",
+      "description": "The spacecraft location in GSM coordinates (cartesian XYZ components).",
+      "unitText": "km",
+      "minValue": "-63800.0",
+      "maxValue": "63800.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FSCGSM X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FSCGSM Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FSCGSM Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C ECD XYZ",
+      "description": "Spacecraft Eccentric Dipole Cartesian Coordinate XYZ",
+      "unitText": "km",
+      "minValue": "-63800.0",
+      "maxValue": "63800.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FSCECD X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FSCECD Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FSCECD Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C GEO Long",
+      "description": "Spacecraft longitude (east longitude) in geographic coordinates.",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C GEO Lat",
+      "description": "Spacecraft latitude in geographic coordinates.",
+      "unitText": "deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C Radial Dist",
+      "description": "Spacecraft radial distance (km) from the center of the Earth.",
+      "unitText": "km",
+      "minValue": "6380.0",
+      "maxValue": "63800.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C Radial Alt",
+      "description": "Spacecraft radial altitude (km) based on an oblate spheroid Earth model (WGS84).",
+      "unitText": "km",
+      "minValue": "0.0",
+      "maxValue": "57420.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sun ECI XYZ",
+      "description": "The location of the Sun in ECI coordinates (cartesian XYZ components).",
+      "unitText": "km",
+      "minValue": "-1.5E8",
+      "maxValue": "1.5E8",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FSUNECI X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FSUNECI Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FSUNECI Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B ECI XYZ",
+      "description": "The magnetic field vector in ECI coordinates (cartesian XYZ components).",
+      "unitText": "nT",
+      "minValue": "-32000.0",
+      "maxValue": "32000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FBECI X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FBECI Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FBECI Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Mirror",
+      "description": "The magnetic field magnitude at the spacecraft mirror point based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "32000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B Equatorial",
+      "description": "The magnetic field magnitude at the field-line minimum point based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "32000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B North 100km",
+      "description": "The magnetic field magnitude at the North 100 km point based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B South 100km",
+      "description": "The magnetic field magnitude at the South 100 km point based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mirror GSM XYZ",
+      "description": "The spacecraft mirror point location in GSM coordinates (cartesian XYZ components) based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "km",
+      "minValue": "-63800.0",
+      "maxValue": "63800.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FMIRRORGSM X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FMIRRORGSM Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FMIRRORGSM Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Equatorial GSM XYZ",
+      "description": "The Equatorial Point location in GSM coordinates (cartesian XYZ components) based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "km",
+      "minValue": "-200000.0",
+      "maxValue": "250000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FEQUATORIALGSM X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FEQUATORIALGSM Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FEQUATORIALGSM Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "North 100km GSM XYZ",
+      "description": "The location of the North 100 km point in GSM coordinates (cartesian XYZ components) based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "km",
+      "minValue": "-7000.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FNORTH100KMGSM X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FNORTH100KMGSM Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FNORTH100KMGSM Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "South 100km GSM XYZ",
+      "description": "The location of the South 100 km point in GSM coordinates (cartesian XYZ components) based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "km",
+      "minValue": "-7000.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FSOUTH100KMGSM X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FSOUTH100KMGSM Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FSOUTH100KMGSM Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L Shell",
+      "description": "The dimensionless McIlwain L-Shell Parameter based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "minValue": "0.0",
+      "maxValue": "50.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Inv Lat",
+      "description": "Spacecraft invariant magnetic latitude based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dipole Radius",
+      "description": "Dipole magnetic radial distance based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "km",
+      "minValue": "6380.0",
+      "maxValue": "127600.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dipole Lat",
+      "description": "Dipole magnetic latitude based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C ECD Lat",
+      "description": "Spacecraft latitude in the eccentric dipole frame based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "deg",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LT GEO",
+      "description": "Magnetic local time in the geographic coordinates frame.",
+      "unitText": "hr",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LT ECD",
+      "description": "Magnetic local time in the eccentric dipole (ECD) frame based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "hr",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LT Equatorial",
+      "description": "Equatorial mapped magnetic local time in the eccentric dipole (ECD) frame based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "hr",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar Zenith",
+      "description": "Solar zenith angle cosine.",
+      "unitText": "deg",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Loss Cone",
+      "description": "Particle loss cone angle based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dipole Tilt",
+      "description": "Magnetic dipole tilt angle based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "deg",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dipole Offset XYZ",
+      "description": "Magnetic dipole displacement (XYZ components) based on the International Geomagnetic Reference Field (IGRF) 2005.0 adjusted for the relevant date by means of the IGRF secular variation coefficients.",
+      "unitText": "km",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "FDIPOLEOFFSET X",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "FDIPOLEOFFSET Y",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "FDIPOLEOFFSET Z",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DataFile ID",
+      "description": "TWINS DataFile ID",
+      "minValue": "0.0",
+      "maxValue": "3.23786E-319",
+      "defaultValue": "-1.0E31"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

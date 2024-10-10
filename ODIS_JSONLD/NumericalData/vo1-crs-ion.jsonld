@@ -1,0 +1,71 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager1/CRS/vo1-crs-ion",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager1/CRS/vo1-crs-ion",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Voyager 1 - CRS - flyby jupiter - proton flux",
+  "sdDatePublished": "2012-09-13",
+  "description": "Voyager 1\n                CRS - Cosmic_Ray_Subsystem - \n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "abstract": "Voyager 1\n                CRS - Cosmic_Ray_Subsystem - \n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "keywords": [
+    "Cosmic Ray",
+    "Energetic Particle",
+    "Proton"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux integral",
+      "description": "Integrated Proton Flux",
+      "unitText": "cm-2.s-1.sr-1.MeV-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "> 0.43 MeV",
+            "Index": "1",
+            "ParameterKey": "vo1_crs_fpio(0)"
+          },
+          {
+            "Name": "> 1.8 MeV",
+            "Index": "2",
+            "ParameterKey": "vo1_crs_fpio(1)"
+          },
+          {
+            "Name": "> 3.0 MeV",
+            "Index": "3",
+            "ParameterKey": "vo1_crs_fpio(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

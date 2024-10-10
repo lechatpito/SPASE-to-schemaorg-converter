@@ -1,0 +1,135 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SWARM-C/TII/swarmc-tii-prov",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SWARM-C/TII/swarmc-tii-prov",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Swarm-C - EFI / TII - preliminary",
+  "sdDatePublished": "2019-06-14",
+  "description": "Preliminary EFI TII Dataset",
+  "abstract": "Preliminary EFI TII Dataset",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "v sc",
+      "description": "Satellite velocity vector in North, East, Centre (NEC) frame",
+      "unitText": "m/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v north",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "swc_pr_v_sc(0)"
+          },
+          {
+            "Name": "v east",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "swc_pr_v_sc(1)"
+          },
+          {
+            "Name": "v centre",
+            "Qualifier": "Component.K",
+            "Index": "2",
+            "ParameterKey": "swc_pr_v_sc(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v ion",
+      "description": "Ion velocity vector in North, East, Centre (NEC) frame",
+      "unitText": "m/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v north",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "swc_pr_v_ion(0)"
+          },
+          {
+            "Name": "v east",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "swc_pr_v_ion(1)"
+          },
+          {
+            "Name": "v centre",
+            "Qualifier": "Component.K",
+            "Index": "2",
+            "ParameterKey": "swc_pr_v_ion(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e field",
+      "description": "Electric field vector in NEC frame",
+      "unitText": "mV/m",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "e north",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "swc_pr_e(0)"
+          },
+          {
+            "Name": "e east",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "swc_pr_e(1)"
+          },
+          {
+            "Name": "e center",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "swc_pr_e(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t ion",
+      "description": "Ion temperature",
+      "unitText": "K"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

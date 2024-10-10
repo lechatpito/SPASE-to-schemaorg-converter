@@ -1,0 +1,107 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SWIA/mavpds-swia-momboard",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SWIA/mavpds-swia-momboard",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - SWIA - onboard ion moments",
+  "sdDatePublished": "2024-03-02",
+  "description": "    \n            Onboard Survey Moments - Ion density, temperature, and velocity moments \n                in physical units and coordinates calculated onboard from SWIA coarse or \n             fine data (depending on mode). These moments are computed under the assumption that all ions are protons, \n         and that the entire distribution is within the field of view and the energy range of the instrument.\n         ",
+  "abstract": "    \n            Onboard Survey Moments - Ion density, temperature, and velocity moments \n                in physical units and coordinates calculated onboard from SWIA coarse or \n             fine data (depending on mode). These moments are computed under the assumption that all ions are protons, \n         and that the entire distribution is within the field of view and the energy range of the instrument.\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_mso",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component",
+            "Index": "1",
+            "ParameterKey": "mav_swia_vmso(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component",
+            "Index": "2",
+            "ParameterKey": "mav_swia_vmso(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component",
+            "Index": "3",
+            "ParameterKey": "mav_swia_vmso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v|",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_mso",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "txx",
+            "Qualifier": "Component",
+            "Index": "1",
+            "ParameterKey": "mav_swia_tmso(0)"
+          },
+          {
+            "Name": "tyy",
+            "Qualifier": "Component",
+            "Index": "2",
+            "ParameterKey": "mav_swia_tmso(1)"
+          },
+          {
+            "Name": "tzz",
+            "Qualifier": "Component",
+            "Index": "3",
+            "ParameterKey": "mav_swia_tmso(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

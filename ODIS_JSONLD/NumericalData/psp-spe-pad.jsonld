@@ -1,0 +1,55 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/SPE/psp-spe-pad",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/SPE/psp-spe-pad",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP - SWEAP SPANe - PAD",
+  "sdDatePublished": "2024-03-18",
+  "description": "\n             This data set provides spectra of the energy flux versus Energy and pitchangle\n         ",
+  "abstract": "\n             This data set provides spectra of the energy flux versus Energy and pitchangle\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "eflux/ener",
+      "description": "\n               Differential Energy Flux vs Energy, omnidirectional average of the fluxes. \n           ",
+      "unitText": "eV/cm**2-s-ster-eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "eflux/ener/pa : 2D",
+      "description": "\n               Differential Energy Flux vs Energy and Pitch Angle\n           ",
+      "unitText": "eV/cm**2-s-ster-eV"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

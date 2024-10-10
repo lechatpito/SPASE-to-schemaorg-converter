@@ -1,0 +1,71 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/FGM/ulys-mag-jupjg",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/FGM/ulys-mag-jupjg",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Ulysses - VHM/FGM - flyby jupiter",
+  "sdDatePublished": "2012-03-06",
+  "description": "ULYSSES JUPITER FLYBY - MAGNETIC FIELD JOVIGRAPHIC SYS III LH COORDS - 60 AVGS",
+  "abstract": "ULYSSES JUPITER FLYBY - MAGNETIC FIELD JOVIGRAPHIC SYS III LH COORDS - 60 AVGS",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_jg",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "ulys_b_jupjg(0)"
+          },
+          {
+            "Name": "btheta",
+            "Index": "2",
+            "ParameterKey": "ulys_b_jupjg(1)"
+          },
+          {
+            "Name": "bphi",
+            "Index": "3",
+            "ParameterKey": "ulys_b_jupjg(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Scalar magnitude of the magnetic field in nT",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

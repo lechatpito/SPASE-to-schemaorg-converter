@@ -1,0 +1,70 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/Models/gll-mod-khurana",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/Models/gll-mod-khurana",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - Jovian Magnetic Field Models - Khurana Model",
+  "sdDatePublished": "2012-07-24",
+  "description": "The Khurana magnetic field model is an empirical model based on data from the Galileo spacecraft. The code was originally written in Fortran 77/90 but has since been converted into IDL. \n            Calculated with IDL code for Galileo mission.",
+  "abstract": "The Khurana magnetic field model is an empirical model based on data from the Galileo spacecraft. The code was originally written in Fortran 77/90 but has since been converted into IDL. \n            Calculated with IDL code for Galileo mission.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_sys3",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br_sys3",
+            "Index": "1",
+            "ParameterKey": "gll_khurana_bsys3(0)"
+          },
+          {
+            "Name": "bt_sys3",
+            "Index": "2",
+            "ParameterKey": "gll_khurana_bsys3(1)"
+          },
+          {
+            "Name": "bp_sys3",
+            "Index": "3",
+            "ParameterKey": "gll_khurana_bsys3(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_mag",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

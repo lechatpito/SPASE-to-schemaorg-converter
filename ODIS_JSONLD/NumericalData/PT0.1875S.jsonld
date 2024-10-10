@@ -1,0 +1,3979 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/AMPTE-CCE/MEPA/PT0.1875S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/AMPTE-CCE/MEPA/PT0.1875S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "AMPTE-CCE Medium Energy Particle Analyzer (MEPA), Energetic Particles, H0, 0.1875 s Data",
+  "sdDatePublished": "2023-07-30",
+  "description": "This dataset contains high time resolution MEPA rate channel data. MEPA is a particle telescope with an ION head and a TOF head. The TOF head can measure species and energy, while the ION head only measures the energy of the ions, which are mostly protons. In fact, the counts in the ION head are all assumed to be protons up to 1830 keV. The ION head has 10 energy channels, and so the first 8 channels, that are all below 1830 keV, are assumed to be all protons, and the 2 channels above this are assumed to be all alphas. The TOF head has 9 energy channels that are generic, ions of any species are counted, and some species specific channels for protons, helium, oxygen, and iron. The AMPTE data was divided into records, with each record holding data from 4 spins. In any record, all the TOF species channels are always present, but only one of either a, the 10 ION head channels or b, 9 TOF generic channels are present. The majority of records have the ION head channels. The AMPTE spacecraft had a spin period of about 6 seconds. The exact spin period varies slightly and is included in the data. MEPA data is sectored into 32 directions per spin. Nearly all channels are reported as sectored values, but to conserve telemetry, many channels are only read out every other spin, or every fourth spin. In this data, all values are summed so that they are reported every fourth spin. Note that in the original AMPTE datesets, there was a timing problem which required that 19.75 seconds, one Major Frame of telemetry, be added to time values extracted from the processing system. This correction has already been made in the particle data in this dataset.",
+  "abstract": "This dataset contains high time resolution MEPA rate channel data. MEPA is a particle telescope with an ION head and a TOF head. The TOF head can measure species and energy, while the ION head only measures the energy of the ions, which are mostly protons. In fact, the counts in the ION head are all assumed to be protons up to 1830 keV. The ION head has 10 energy channels, and so the first 8 channels, that are all below 1830 keV, are assumed to be all protons, and the 2 channels above this are assumed to be all alphas. The TOF head has 9 energy channels that are generic, ions of any species are counted, and some species specific channels for protons, helium, oxygen, and iron. The AMPTE data was divided into records, with each record holding data from 4 spins. In any record, all the TOF species channels are always present, but only one of either a, the 10 ION head channels or b, 9 TOF generic channels are present. The majority of records have the ION head channels. The AMPTE spacecraft had a spin period of about 6 seconds. The exact spin period varies slightly and is included in the data. MEPA data is sectored into 32 directions per spin. Nearly all channels are reported as sectored values, but to conserve telemetry, many channels are only read out every other spin, or every fourth spin. In this data, all values are summed so that they are reported every fourth spin. Note that in the original AMPTE datesets, there was a timing problem which required that 19.75 seconds, one Major Frame of telemetry, be added to time values extracted from the processing system. This correction has already been made in the particle data in this dataset.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch for Proton and Helium Counts",
+      "description": "Epoch for Proton and Helium Counts",
+      "unitText": "ns",
+      "minValue": "1989-01-10T19:01:24.225827515",
+      "maxValue": "1989-01-11T00:00:09.045221507",
+      "defaultValue": "2000-01-01T00:00:00.000000000",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Period, for Proton and Helium Counts",
+      "description": "Spin Period, for Proton and Helium Counts",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sector, for Proton and Helium Counts",
+      "description": "Sector, for Proton and Helium Counts",
+      "minValue": "0.0",
+      "maxValue": "31.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gain, for Proton and Helium Counts",
+      "description": "Gain, for Proton and Helium Counts",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Counts per Sector, Spectrogram",
+      "description": "Protons, Counts per Sector, Spectrogram, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, Ion Records only",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "ION_0_P_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "ION_1_P_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "41.2300"
+            }
+          },
+          {
+            "Name": "ION_2_P_COUNTS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          },
+          {
+            "Name": "ION_3_P_COUNTS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "111.950"
+            }
+          },
+          {
+            "Name": "ION_4_P_COUNTS",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "207.450"
+            }
+          },
+          {
+            "Name": "ION_5_P_COUNTS",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "392.300"
+            }
+          },
+          {
+            "Name": "ION_6_P_COUNTS",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "734.850"
+            }
+          },
+          {
+            "Name": "ION_7_P_COUNTS",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "1161.90"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Counts Rate per Sector, Spectrogram",
+      "description": "Protons, Counts Rate per Sector, Spectrogram",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "ION_0_P_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "ION_1_P_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "41.2300"
+            }
+          },
+          {
+            "Name": "ION_2_P_CPS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          },
+          {
+            "Name": "ION_3_P_CPS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "111.950"
+            }
+          },
+          {
+            "Name": "ION_4_P_CPS",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "207.450"
+            }
+          },
+          {
+            "Name": "ION_5_P_CPS",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "392.300"
+            }
+          },
+          {
+            "Name": "ION_6_P_CPS",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "734.850"
+            }
+          },
+          {
+            "Name": "ION_7_P_CPS",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "1161.90"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Differential Intensity per Sector, Spectrogram",
+      "description": "Protons, Differential Intensity per Sector, Spectrogram",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "ION_0_P_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "ION_1_P_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "41.2300"
+            }
+          },
+          {
+            "Name": "ION_2_P_INTEN",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          },
+          {
+            "Name": "ION_3_P_INTEN",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "111.950"
+            }
+          },
+          {
+            "Name": "ION_4_P_INTEN",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "207.450"
+            }
+          },
+          {
+            "Name": "ION_5_P_INTEN",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "392.300"
+            }
+          },
+          {
+            "Name": "ION_6_P_INTEN",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "734.850"
+            }
+          },
+          {
+            "Name": "ION_7_P_INTEN",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "1161.90"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Counts per Sector, Stack Plot",
+      "description": "Protons, Counts per Sector, Stack Plot, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, Ion Records only",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "ION_0_P_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "ION_1_P_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "41.2300"
+            }
+          },
+          {
+            "Name": "ION_2_P_COUNTS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          },
+          {
+            "Name": "ION_3_P_COUNTS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "111.950"
+            }
+          },
+          {
+            "Name": "ION_4_P_COUNTS",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "207.450"
+            }
+          },
+          {
+            "Name": "ION_5_P_COUNTS",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "392.300"
+            }
+          },
+          {
+            "Name": "ION_6_P_COUNTS",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "734.850"
+            }
+          },
+          {
+            "Name": "ION_7_P_COUNTS",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "1161.90"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Counts Rate per Sector, Stack Plot",
+      "description": "Protons, Counts Rate per Sector, Stack Plot",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "ION_0_P_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "ION_1_P_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "41.2300"
+            }
+          },
+          {
+            "Name": "ION_2_P_CPS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          },
+          {
+            "Name": "ION_3_P_CPS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "111.950"
+            }
+          },
+          {
+            "Name": "ION_4_P_CPS",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "207.450"
+            }
+          },
+          {
+            "Name": "ION_5_P_CPS",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "392.300"
+            }
+          },
+          {
+            "Name": "ION_6_P_CPS",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "734.850"
+            }
+          },
+          {
+            "Name": "ION_7_P_CPS",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "1161.90"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Differential Intensity per Sector, Stack Plot",
+      "description": "Protons, Differential Intensity per Sector, Stack Plot",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "ION_0_P_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "ION_1_P_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "41.2300"
+            }
+          },
+          {
+            "Name": "ION_2_P_INTEN",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          },
+          {
+            "Name": "ION_3_P_INTEN",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "111.950"
+            }
+          },
+          {
+            "Name": "ION_4_P_INTEN",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "207.450"
+            }
+          },
+          {
+            "Name": "ION_5_P_INTEN",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "392.300"
+            }
+          },
+          {
+            "Name": "ION_6_P_INTEN",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "734.850"
+            }
+          },
+          {
+            "Name": "ION_7_P_INTEN",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "1161.90"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Channel Names",
+      "description": "Protons, Channel Names",
+      "unitText": "keV",
+      "minValue": "25.0",
+      "maxValue": "1350.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5"
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6"
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7"
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Lower Range Limit of Energy Channels",
+      "description": "Protons, Lower Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "1350.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5"
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6"
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7"
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Upper Range Limit of Energy Channels",
+      "description": "Protons, Upper Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "1350.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5"
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6"
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7"
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Daily Values of the Channel Midpoint Energies",
+      "description": "Protons, Actual Daily Values of the Channel Midpoint Energies at the Middle of the Day",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "4"
+            }
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "5"
+            }
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "6"
+            }
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "7"
+            }
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "8"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Channel Numbers",
+      "description": "Protons, Channel Numbers",
+      "minValue": "1",
+      "maxValue": "8",
+      "defaultValue": "-32768",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5"
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6"
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7"
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Daily Values for the Channel Energy Ranges, Low to Mid",
+      "description": "Protons, Daily Values for the Actual Channel Energy Ranges, from the Low End to the Midpoint of each Channel at the Middle of the Day for the Channels in the corresponding Spectrum",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5"
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6"
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7"
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, Daily Values for the Channel Energy Ranges, Mid to High",
+      "description": "Protons, Daily Values for the Actual Channel Energy Ranges, from the Midpoint to the High End of each Channel at the Middle of the Day for the Channels in the corresponding Spectrum",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5"
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6"
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7"
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Counts per Sector, Spectrogram",
+      "description": "Helium, Counts per Sector, Spectrogram, with each Sector being a Sum from 4 Spins, the Time given is the Sector Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, Ion Records only",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "ION_8_HE_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "2050.98"
+            }
+          },
+          {
+            "Name": "ION_9_HE_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "3770.61"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Counts Rate per Sector, Spectrogram",
+      "description": "Helium, Counts Rate per Sector, Spectrogram",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "ION_8_HE_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "2050.98"
+            }
+          },
+          {
+            "Name": "ION_9_HE_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "3770.61"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Differential Intensity per Sector, Spectrogram",
+      "description": "Helium, Differential Intensity per Sector, Spectrogram",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "ION_8_HE_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "2050.98"
+            }
+          },
+          {
+            "Name": "ION_9_HE_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "3770.61"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Counts per Sector, Stack Plot",
+      "description": "Helium, Counts per Sector, Stack Plot, with each Sector being a Sum from 4 Spins, the Time given is the Sector Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, Ion Records only",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "ION_8_HE_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "2050.98"
+            }
+          },
+          {
+            "Name": "ION_9_HE_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "3770.61"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Counts Rate per Sector, Stack Plot",
+      "description": "Helium, Counts Rate per Sector, Stack Plot",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "ION_8_HE_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "2050.98"
+            }
+          },
+          {
+            "Name": "ION_9_HE_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "3770.61"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Differential Intensity per Sector, Stack Plot",
+      "description": "Helium, Differential Intensity per Sector, Stack Plot",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "ION_8_HE_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "2050.98"
+            }
+          },
+          {
+            "Name": "ION_9_HE_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "3770.61"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Channel Names",
+      "description": "Helium, Channel Names",
+      "unitText": "keV",
+      "minValue": "1790.0",
+      "maxValue": "6050.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Lower Range Limit of Energy Channels",
+      "description": "Helium, Lower Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "6050.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Upper Range Limit of Energy Channels",
+      "description": "Helium, Upper Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "6050.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Daily Values of the Channel Midpoint Energies",
+      "description": "Helium, Actual Daily Values of the Channel Midpoint Energies at the Middle of the Day",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Daily Values for the Channel Energy Ranges, Low to Mid",
+      "description": "Helium, Daily Values for the Actual Channel Energy Ranges, from the Low End to the Midpoint of each Channel at the Middle of the Day for the Channels in the corresponding Spectrum",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, Daily Values for the Channel Energy Ranges, Mid to High",
+      "description": "Helium, Daily Values for the Actual Channel Energy Ranges, from the Midpoint to the High End of each Channel at the Middle of the Day for the Channels in the corresponding Spectrum",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch 1, for the MCP, SSD, and TOF Data",
+      "description": "Epoch 1, for the Micro-Channel Plate, MCP, Solid State Detector, SSD, and Time of Flight, TOF, Data",
+      "unitText": "ns",
+      "minValue": "1989-01-10T16:58:57.090849757",
+      "maxValue": "1989-01-11T00:00:09.045221507",
+      "defaultValue": "2000-01-01T00:00:00.000000000",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Period 1, for the MCP, SSD, and TOF Data",
+      "description": "Spin Period 1, for the Micro-Channel Plate, MCP, Solid State Detector, SSD, and Time of Flight, TOF, Data",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sector 1, for the MCP, SSD, and TOF Data",
+      "description": "Sector 1, for the Micro-Channel Plate, MCP, Solid State Detector, SSD, and Time of Flight, TOF, Data",
+      "minValue": "0.0",
+      "maxValue": "31.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gain 1, for the MCP, SSD, and TOF Data",
+      "description": "Gain 1, for the Micro-Channel Plate, MCP, Solid State Detector, SSD, and Time of Flight, TOF, Data",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Micro-Channel Plate 1, Count Rate Sum",
+      "description": "Micro-Channel Plate, MCP, 1, Count Rate from Counts summed over 4 Spins",
+      "minValue": "0.0",
+      "maxValue": "8.32307e+06",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Micro-Channel Plate 2, Count Rate Sum",
+      "description": "Micro-Channel Plate, MCP, 2, Count Rate from Counts summed over 4 Spins",
+      "minValue": "0.0",
+      "maxValue": "8.32307e+06",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Micro-Channel Plate 3, Count Rate Sum",
+      "description": "Micro-Channel Plate, MCP, 3, Count Rate from Counts summed over 4 Spins",
+      "minValue": "0.0",
+      "maxValue": "8.32307e+06",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solid State Detector, Count Rate Sum",
+      "description": "Solid State Detector, SSD, Count Rate from Counts summed over 4 Spins",
+      "minValue": "0.0",
+      "maxValue": "8.32307e+06",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Counts per Sector, Spectrogram",
+      "description": "Protons, TOF, Counts per Sector, Spectrogram, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR_1 Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, either Ion or TOF Records",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "TOF_P_0_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "103.150"
+            }
+          },
+          {
+            "Name": "TOF_P_1_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "337.640"
+            }
+          },
+          {
+            "Name": "TOF_P_2_COUNTS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "948.680"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Counts Rate per Sector, Spectrogram",
+      "description": "Protons, TOF, Counts Rate per Sector, Spectrogram",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "TOF_P_0_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "103.150"
+            }
+          },
+          {
+            "Name": "TOF_P_1_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "337.640"
+            }
+          },
+          {
+            "Name": "TOF_P_2_CPS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "948.680"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Differential Intensity per Sector, Spectrogram",
+      "description": "Protons, TOF, Differential Intensity per Sector, Spectrogram",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "TOF_P_0_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "103.150"
+            }
+          },
+          {
+            "Name": "TOF_P_1_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "337.640"
+            }
+          },
+          {
+            "Name": "TOF_P_2_INTEN",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "948.680"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Counts per Sector, Stack Plot",
+      "description": "Protons, TOF, Counts per Sector, Stack Plot, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR_1 Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, either Ion or TOF Records",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "TOF_P_0_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "103.150"
+            }
+          },
+          {
+            "Name": "TOF_P_1_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "337.640"
+            }
+          },
+          {
+            "Name": "TOF_P_2_COUNTS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "948.680"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Counts Rate per Sector, Stack Plot",
+      "description": "Protons, TOF, Counts Rate per Sector, Stack Plot",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "TOF_P_0_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "103.150"
+            }
+          },
+          {
+            "Name": "TOF_P_1_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "337.640"
+            }
+          },
+          {
+            "Name": "TOF_P_2_CPS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "948.680"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Differential Intensity per Sector, Stack Plot",
+      "description": "Protons, TOF, Differential Intensity per Sector, Stack Plot",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "TOF_P_0_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "103.150"
+            }
+          },
+          {
+            "Name": "TOF_P_1_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "337.640"
+            }
+          },
+          {
+            "Name": "TOF_P_2_INTEN",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "948.680"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Channel Names",
+      "description": "Protons, TOF, Channel Names",
+      "unitText": "keV",
+      "minValue": "56.0",
+      "maxValue": "1500.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Lower Range Limit of Energy Channels",
+      "description": "Protons, TOF, Lower Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "1500.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Upper Range Limit of Energy Channels",
+      "description": "Protons, TOF, Upper Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "1500.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Daily Values of the Channel Midpoint Energies",
+      "description": "Protons, TOF, Daily Values of the Channel Midpoint Energies",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Daily Values for the Channel Energy Ranges, Low to Mid",
+      "description": "Protons, TOF, Daily Values for the Channel Energy Ranges, Low to Mid",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, TOF, Daily Values for the Channel Energy Ranges, Mid to High",
+      "description": "Protons, TOF, Daily Values for the Channel Energy Ranges, Mid to High",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Counts per Sector, Spectrogram",
+      "description": "Helium, TOF, Counts per Sector, Spectrogram, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR_1 Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, either Ion or TOF Records",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_HE_0_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "131.450"
+            }
+          },
+          {
+            "Name": "TOF_HE_1_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "403.980"
+            }
+          },
+          {
+            "Name": "TOF_HE_2_COUNTS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1136.66"
+            }
+          },
+          {
+            "Name": "TOF_HE_3_COUNTS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "2756.81"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Counts Rate per Sector, Spectrogram",
+      "description": "Helium, TOF, Counts Rate per Sector, Spectrogram",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_HE_0_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "131.450"
+            }
+          },
+          {
+            "Name": "TOF_HE_1_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "403.980"
+            }
+          },
+          {
+            "Name": "TOF_HE_2_CPS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1136.66"
+            }
+          },
+          {
+            "Name": "TOF_HE_3_CPS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "2756.81"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Differential Intensity per Sector, Spectrogram",
+      "description": "Helium, TOF, Differential Intensity per Sector, Spectrogram",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_HE_0_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "131.450"
+            }
+          },
+          {
+            "Name": "TOF_HE_1_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "403.980"
+            }
+          },
+          {
+            "Name": "TOF_HE_2_INTEN",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1136.66"
+            }
+          },
+          {
+            "Name": "TOF_HE_3_INTEN",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "2756.81"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Counts per Sector, Stack Plot",
+      "description": "Helium, TOF, Counts per Sector, Stack Plot, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR_1 Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, either Ion or TOF Records",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_HE_0_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "131.450"
+            }
+          },
+          {
+            "Name": "TOF_HE_1_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "403.980"
+            }
+          },
+          {
+            "Name": "TOF_HE_2_COUNTS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1136.66"
+            }
+          },
+          {
+            "Name": "TOF_HE_3_COUNTS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "2756.81"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Counts Rate per Sector, Stack Plot",
+      "description": "Helium, TOF, Counts Rate per Sector, Stack Plot",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_HE_0_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "131.450"
+            }
+          },
+          {
+            "Name": "TOF_HE_1_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "403.980"
+            }
+          },
+          {
+            "Name": "TOF_HE_2_CPS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1136.66"
+            }
+          },
+          {
+            "Name": "TOF_HE_3_CPS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "2756.81"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Differential Intensity per Sector, Stack Plot",
+      "description": "Helium, TOF, Differential Intensity per Sector, Stack Plot",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_HE_0_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "131.450"
+            }
+          },
+          {
+            "Name": "TOF_HE_1_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "403.980"
+            }
+          },
+          {
+            "Name": "TOF_HE_2_INTEN",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1136.66"
+            }
+          },
+          {
+            "Name": "TOF_HE_3_INTEN",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "2756.81"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Channel Names",
+      "description": "Helium, TOF, Channel Names",
+      "unitText": "keV",
+      "minValue": "72.0",
+      "maxValue": "4000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Lower Range Limit of Energy Channels",
+      "description": "Helium, TOF, Lower Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "4000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Upper Range Limit of Energy Channels",
+      "description": "Helium, TOF, Upper Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "4000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Daily Values of the Channel Midpoint Energies",
+      "description": "Helium, TOF, Daily Values of the Channel Midpoint Energies",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Daily Values for the Channel Energy Ranges, Low to Mid",
+      "description": "Helium, TOF, Daily Values for the Channel Energy Ranges, Low to Mid",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Helium, TOF, Daily Values for the Channel Energy Ranges, Mid to High",
+      "description": "Helium, TOF, Daily Values for the Channel Energy Ranges, Mid to High",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Counts per Sector, Spectrogram",
+      "description": "Oxygen, TOF, Counts per Sector, Spectrogram, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR_1 Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, either Ion or TOF Records",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_OX_0_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "223.620"
+            }
+          },
+          {
+            "Name": "TOF_OX_1_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "576.330"
+            }
+          },
+          {
+            "Name": "TOF_OX_2_COUNTS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1453.00"
+            }
+          },
+          {
+            "Name": "TOF_OX_3_COUNTS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "3405.88"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Counts Rate per Sector, Spectrogram",
+      "description": "Oxygen, TOF, Counts Rate per Sector, Spectrogram",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_OX_0_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "223.620"
+            }
+          },
+          {
+            "Name": "TOF_OX_1_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "576.330"
+            }
+          },
+          {
+            "Name": "TOF_OX_2_CPS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1453.00"
+            }
+          },
+          {
+            "Name": "TOF_OX_3_CPS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "3405.88"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Differential Intensity per Sector, Spectrogram",
+      "description": "Oxygen, TOF, Differential Intensity per Sector, Spectrogram",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_OX_0_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "223.620"
+            }
+          },
+          {
+            "Name": "TOF_OX_1_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "576.330"
+            }
+          },
+          {
+            "Name": "TOF_OX_2_INTEN",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1453.00"
+            }
+          },
+          {
+            "Name": "TOF_OX_3_INTEN",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "3405.88"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Counts per Sector, Stack Plot",
+      "description": "Oxygen, TOF, Counts per Sector, Stack Plot, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR_1 Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, either Ion or TOF Records",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_OX_0_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "223.620"
+            }
+          },
+          {
+            "Name": "TOF_OX_1_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "576.330"
+            }
+          },
+          {
+            "Name": "TOF_OX_2_COUNTS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1453.00"
+            }
+          },
+          {
+            "Name": "TOF_OX_3_COUNTS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "3405.88"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Counts Rate per Sector, Stack Plot",
+      "description": "Oxygen, TOF, Counts Rate per Sector, Stack Plot",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_OX_0_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "223.620"
+            }
+          },
+          {
+            "Name": "TOF_OX_1_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "576.330"
+            }
+          },
+          {
+            "Name": "TOF_OX_2_CPS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1453.00"
+            }
+          },
+          {
+            "Name": "TOF_OX_3_CPS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "3405.88"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Differential Intensity per Sector, Stack Plot",
+      "description": "Oxygen, TOF, Differential Intensity per Sector, Stack Plot",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "TOF_OX_0_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "223.620"
+            }
+          },
+          {
+            "Name": "TOF_OX_1_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "576.330"
+            }
+          },
+          {
+            "Name": "TOF_OX_2_INTEN",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "1453.00"
+            }
+          },
+          {
+            "Name": "TOF_OX_3_INTEN",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "3405.88"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Channel Names",
+      "description": "Oxygen, TOF, Channel Names",
+      "unitText": "keV",
+      "minValue": "137.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Lower Range Limit of Energy Channels",
+      "description": "Oxygen, TOF, Lower Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Upper Range Limit of Energy Channels",
+      "description": "Oxygen, TOF, Upper Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Daily Values of the Channel Midpoint Energies",
+      "description": "Oxygen, TOF, Daily Values of the Channel Midpoint Energies",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Daily Values for the Channel Energy Ranges, Low to Mid",
+      "description": "Oxygen, TOF, Daily Values for the Channel Energy Ranges, Low to Mid",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Oxygen, TOF, Daily Values for the Channel Energy Ranges, Mid to High",
+      "description": "Oxygen, TOF, Daily Values for the Channel Energy Ranges, Mid to High",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Counts per Sector, Spectrogram",
+      "description": "Iron, TOF, Counts per Sector, Spectrogram, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR_1 Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, either Ion or TOF Records",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "TOF_FE_0_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1098.18"
+            }
+          },
+          {
+            "Name": "TOF_FE_1_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "1637.07"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Counts Rate per Sector, Spectrogram",
+      "description": "Iron, TOF, Counts Rate per Sector, Spectrogram",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "TOF_FE_0_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1098.18"
+            }
+          },
+          {
+            "Name": "TOF_FE_1_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "1637.07"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Differential Intensity per Sector, Spectrogram",
+      "description": "Iron, TOF, Differential Intensity per Sector, Spectrogram",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "TOF_FE_0_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1098.18"
+            }
+          },
+          {
+            "Name": "TOF_FE_1_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "1637.07"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Counts per Sector, Stack Plot",
+      "description": "Iron, TOF, Counts per Sector, Stack Plot, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR_1 Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, either Ion or TOF Records",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "TOF_FE_0_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1098.18"
+            }
+          },
+          {
+            "Name": "TOF_FE_1_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "1637.07"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Counts Rate per Sector, Stack Plot",
+      "description": "Iron, TOF, Counts Rate per Sector, Stack Plot",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "TOF_FE_0_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1098.18"
+            }
+          },
+          {
+            "Name": "TOF_FE_1_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "1637.07"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Differential Intensity per Sector, Stack Plot",
+      "description": "Iron, TOF, Differential Intensity per Sector, Stack Plot",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "TOF_FE_0_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1098.18"
+            }
+          },
+          {
+            "Name": "TOF_FE_1_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "1637.07"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Channel Names",
+      "description": "Iron, TOF, Channel Names",
+      "unitText": "keV",
+      "minValue": "900.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Lower Range Limit of Energy Channels",
+      "description": "Iron, TOF, Lower Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Upper Range Limit of Energy Channels",
+      "description": "Iron, TOF, Upper Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Daily Values of the Channel Midpoint Energies",
+      "description": "Iron, TOF, Daily Values of the Channel Midpoint Energies",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Daily Values for the Channel Energy Ranges, Low to Mid",
+      "description": "Iron, TOF, Daily Values for the Channel Energy Ranges, Low to Mid",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Iron, TOF, Daily Values for the Channel Energy Ranges, Mid to High",
+      "description": "Iron, TOF, Daily Values for the Channel Energy Ranges, Mid to High",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch 2, for all Ion Counts, TOF",
+      "description": "Epoch 2, for all Ion Counts, Time of Flight, TOF",
+      "unitText": "ns",
+      "minValue": "1989-01-10T16:58:57.090849757",
+      "maxValue": "1989-01-10T23:58:59.545296132",
+      "defaultValue": "2000-01-01T00:00:00.000000000",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Period 2, for all Ion Counts, TOF",
+      "description": "Spin Period 2, for all Ion Counts, Time of Flight, TOF",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sector 2, for all Ion Counts, TOF",
+      "description": "Sector 2, for all Ion Counts, Time of Flight, TOF",
+      "minValue": "0.0",
+      "maxValue": "31.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gain 2, for all Ion Counts, TOF",
+      "description": "Gain 2, for all Ion Counts, Time of Flight, TOF",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "All Ions, TOF, Counts per Sector, Spectrogram",
+      "description": "All Ions, TOF, Counts per Sector, Spectrogram, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR_2 Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, TOF Records only",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "TOF_1_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "56.5700"
+            }
+          },
+          {
+            "Name": "TOF_2_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "80.8000"
+            }
+          },
+          {
+            "Name": "TOF_3_COUNTS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "133.220"
+            }
+          },
+          {
+            "Name": "TOF_4_COUNTS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "230.370"
+            }
+          },
+          {
+            "Name": "TOF_5_COUNTS",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "413.280"
+            }
+          },
+          {
+            "Name": "TOF_6_COUNTS",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "748.330"
+            }
+          },
+          {
+            "Name": "TOF_7_COUNTS",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "1352.77"
+            }
+          },
+          {
+            "Name": "TOF_8_COUNTS",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "2095.71"
+            }
+          },
+          {
+            "Name": "TOF_9_COUNTS",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "3794.73"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "All Ions, TOF, Counts Rate per Sector, Spectrogram",
+      "description": "All Ions, TOF, Counts Rate per Sector, Spectrogram",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "TOF_1_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "56.5700"
+            }
+          },
+          {
+            "Name": "TOF_2_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "80.8000"
+            }
+          },
+          {
+            "Name": "TOF_3_CPS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "133.220"
+            }
+          },
+          {
+            "Name": "TOF_4_CPS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "230.370"
+            }
+          },
+          {
+            "Name": "TOF_5_CPS",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "413.280"
+            }
+          },
+          {
+            "Name": "TOF_6_CPS",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "748.330"
+            }
+          },
+          {
+            "Name": "TOF_7_CPS",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "1352.77"
+            }
+          },
+          {
+            "Name": "TOF_8_CPS",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "2095.71"
+            }
+          },
+          {
+            "Name": "TOF_9_CPS",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "3794.73"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "All Ions, TOF, Differential Intensity per Sector, Spectrogram",
+      "description": "All Ions, TOF, Differential Intensity per Sector, Spectrogram",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "TOF_1_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "56.5700"
+            }
+          },
+          {
+            "Name": "TOF_2_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "80.8000"
+            }
+          },
+          {
+            "Name": "TOF_3_INTEN",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "133.220"
+            }
+          },
+          {
+            "Name": "TOF_4_INTEN",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "230.370"
+            }
+          },
+          {
+            "Name": "TOF_5_INTEN",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "413.280"
+            }
+          },
+          {
+            "Name": "TOF_6_INTEN",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "748.330"
+            }
+          },
+          {
+            "Name": "TOF_7_INTEN",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "1352.77"
+            }
+          },
+          {
+            "Name": "TOF_8_INTEN",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "2095.71"
+            }
+          },
+          {
+            "Name": "TOF_9_INTEN",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "3794.73"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "All Ions, TOF, Counts per Sector, Stack Plot",
+      "description": "All Ions, TOF, Counts per Sector, Stack Plot, with each Sector being a Sum from 4 Spins, the Time given is the SECTOR_2 Midpoint in Spin 2 out of Spins 0, 1, 2, and 3, TOF Records only",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "TOF_1_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "56.5700"
+            }
+          },
+          {
+            "Name": "TOF_2_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "80.8000"
+            }
+          },
+          {
+            "Name": "TOF_3_COUNTS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "133.220"
+            }
+          },
+          {
+            "Name": "TOF_4_COUNTS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "230.370"
+            }
+          },
+          {
+            "Name": "TOF_5_COUNTS",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "413.280"
+            }
+          },
+          {
+            "Name": "TOF_6_COUNTS",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "748.330"
+            }
+          },
+          {
+            "Name": "TOF_7_COUNTS",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "1352.77"
+            }
+          },
+          {
+            "Name": "TOF_8_COUNTS",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "2095.71"
+            }
+          },
+          {
+            "Name": "TOF_9_COUNTS",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "3794.73"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "All Ions, TOF, Counts Rate per Sector, Stack Plot",
+      "description": "All Ions, TOF, Counts Rate per Sector, Stack Plot",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "TOF_1_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "56.5700"
+            }
+          },
+          {
+            "Name": "TOF_2_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "80.8000"
+            }
+          },
+          {
+            "Name": "TOF_3_CPS",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "133.220"
+            }
+          },
+          {
+            "Name": "TOF_4_CPS",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "230.370"
+            }
+          },
+          {
+            "Name": "TOF_5_CPS",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "413.280"
+            }
+          },
+          {
+            "Name": "TOF_6_CPS",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "748.330"
+            }
+          },
+          {
+            "Name": "TOF_7_CPS",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "1352.77"
+            }
+          },
+          {
+            "Name": "TOF_8_CPS",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "2095.71"
+            }
+          },
+          {
+            "Name": "TOF_9_CPS",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "3794.73"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "All Ions, TOF, Differential Intensity per Sector, Stack Plot",
+      "description": "All Ions, TOF, Differential Intensity per Sector, Stack Plot",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "TOF_1_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "56.5700"
+            }
+          },
+          {
+            "Name": "TOF_2_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "80.8000"
+            }
+          },
+          {
+            "Name": "TOF_3_INTEN",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "133.220"
+            }
+          },
+          {
+            "Name": "TOF_4_INTEN",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "230.370"
+            }
+          },
+          {
+            "Name": "TOF_5_INTEN",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "413.280"
+            }
+          },
+          {
+            "Name": "TOF_6_INTEN",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "748.330"
+            }
+          },
+          {
+            "Name": "TOF_7_INTEN",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "1352.77"
+            }
+          },
+          {
+            "Name": "TOF_8_INTEN",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "2095.71"
+            }
+          },
+          {
+            "Name": "TOF_9_INTEN",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "3794.73"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "All Ions, TOF, Channel Names",
+      "description": "All Ions, TOF, Channel Names",
+      "unitText": "keV",
+      "minValue": "50.0",
+      "maxValue": "6000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5"
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6"
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7"
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8"
+          },
+          {
+            "Name": "Element 9",
+            "Index": "9"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "All Ions, TOF, Lower Range Limit of Energy Channels",
+      "description": "All Ions, TOF, Lower Range Limit of Energy Channel Ranges",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "6000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5"
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6"
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7"
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8"
+          },
+          {
+            "Name": "Element 9",
+            "Index": "9"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "All Ions, TOF, Upper Range Limit of Energy Channels",
+      "description": "All Ions, TOF, Upper Range Limit of Energy Channel Ranges",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "6000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3"
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4"
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5"
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6"
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7"
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8"
+          },
+          {
+            "Name": "Element 9",
+            "Index": "9"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch 3, for High-Resolution Proton Counts",
+      "description": "Epoch 3, for High-Resolution Proton Counts",
+      "unitText": "ns",
+      "minValue": "1989-01-10T19:01:12.605099976",
+      "maxValue": "1989-01-11T00:00:14.855585277",
+      "defaultValue": "2000-01-01T00:00:00.000000000",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Period 3, for High-Resolution Proton Counts",
+      "description": "Spin Period 3, for High-Resolution Proton Counts",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sector 3, for High-Resolution Proton Counts",
+      "description": "Sector 3, for High-Resolution Proton Counts",
+      "minValue": "0.0",
+      "maxValue": "31.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gain 3, for High-Resolution Proton Counts",
+      "description": "Gain 3, for High-Resolution Proton Counts",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Counts for every Sector in every Spin, Spectrogram",
+      "description": "Protons, High-Resolution Counts for every Sector in every Spin, Spectrogram, the Time given is the Midpoint of SECTOR_3, Ion Records only",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "HIRES_ION_0_P_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "HIRES_ION_2_P_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Counts Rate for every Sector in every Spin, Spectrogram",
+      "description": "Protons, High-Resolution Counts Rate for every Sector in every Spin, Spectrogram",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "HIRES_ION_0_P_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "HIRES_ION_2_P_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Differential Intensity for every Sector in every Spin, Spectrogram",
+      "description": "Protons, High-Resolution Differential Intensity for every Sector in every Spin, Spectrogram",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "HIRES_ION_0_P_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "HIRES_ION_2_P_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Counts for every Sector in every Spin, Stack Plot",
+      "description": "Protons, High-Resolution Counts for every Sector in every Spin, Stack Plot, the Time given is the Midpoint of SECTOR_3, Ion Records only",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "HIRES_ION_0_P_COUNTS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "HIRES_ION_2_P_COUNTS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Counts Rate for every Sector in every Spin, Stack Plot",
+      "description": "Protons, High-Resolution Counts Rate for every Sector in every Spin, Stack Plot",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "HIRES_ION_0_P_CPS",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "HIRES_ION_2_P_CPS",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Differential Intensity for every Sector in every Spin, Stack Plot",
+      "description": "Protons, High-Resolution Differential Intensity for every Sector in every Spin, Stack Plot",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+20",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "HIRES_ION_0_P_INTEN",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "29.1500"
+            }
+          },
+          {
+            "Name": "HIRES_ION_2_P_INTEN",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "64.4200"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Channel Names",
+      "description": "Protons, High-Resolution Channel Names",
+      "unitText": "keV",
+      "minValue": "25.0",
+      "maxValue": "83.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Lower Range Limit of Energy Channels",
+      "description": "Protons, High-Resolution Lower Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "83.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Upper Range Limit of Energy Channels",
+      "description": "Protons, High-Resolution Upper Range Limit of Energy Channels",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "83.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Daily Values of the Channel Midpoint Energies",
+      "description": "Protons, High-Resolution Daily Values of the Channel Midpoint Energies",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Daily Values for the Channel Energy Ranges, Low to Mid",
+      "description": "Protons, High-Resolution Daily Values for the Channel Energy Ranges, Low to Mid",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Protons, High-Resolution Daily Values for the Channel Energy Ranges, Mid to High",
+      "description": "Protons, High-Resolution Daily Values for the Channel Energy Ranges, Mid to High",
+      "unitText": "keV",
+      "minValue": "0.0",
+      "maxValue": "7000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch 4, for Spin Axis Direction and Magnetic Field Vector",
+      "description": "Epoch 4, for Spin Axis Direction and Magnetic Field Vector",
+      "unitText": "ns",
+      "minValue": "1989-01-10T16:58:57.000062823",
+      "maxValue": "1989-01-11T00:00:03.325644671",
+      "defaultValue": "2000-01-01T00:00:00.000000000",
+      "cadence": "PT0.1875S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Spin Axis Direction, Unit Vector, GSE",
+      "description": "Spacecraft Spin Axis Direction, Unit Vector, Geocentric Solar Ecliptic, GSE, Coordinates",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Spin Axis Xgse",
+            "Index": "1"
+          },
+          {
+            "Name": "Spin Axis Ygse",
+            "Index": "2"
+          },
+          {
+            "Name": "Spin Axis Zgse",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, at Sector Midpoints, GSE",
+      "description": "Magnetic Field Vector, at Sector Midpoints, Geocentric Solar Ecliptic, GSE, Coordinates",
+      "unitText": "nT",
+      "minValue": "-30000.0",
+      "maxValue": "30000.0",
+      "defaultValue": "-1.0e+38",
+      "cadence": "PT0.1875S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "BXgse",
+            "Index": "1"
+          },
+          {
+            "Name": "BYgse",
+            "Index": "2"
+          },
+          {
+            "Name": "BZgse",
+            "Index": "3"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

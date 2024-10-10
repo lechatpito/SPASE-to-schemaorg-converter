@@ -1,0 +1,146 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Wind/Ephemeris/wnd-orb-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Wind/Ephemeris/wnd-orb-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind - Ephemeris - orbit earth",
+  "sdDatePublished": "2024-04-14",
+  "description": "Definitive (measured) Wind spacecraft positions in various coordinate systems",
+  "abstract": "Definitive (measured) Wind spacecraft positions in various coordinate systems",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gse",
+      "description": "Position in GSE coordinates",
+      "unitText": "Re",
+      "minValue": "-1.8e+06",
+      "maxValue": "1.8e+06",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "wnd_xyz_gse(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "wnd_xyz_gse(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "wnd_xyz_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gsm",
+      "description": "Position in GSM coordinates",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "wnd_xyz_gsm(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "wnd_xyz_gsm(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "wnd_xyz_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hee",
+      "description": "Position in HEE coordinates",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "wnd_xyz_hee(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "wnd_xyz_hee(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "wnd_xyz_hee(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance wind-earth",
+      "unitText": "Re"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance wind-sun",
+      "unitText": "AU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon hee",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat hee",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

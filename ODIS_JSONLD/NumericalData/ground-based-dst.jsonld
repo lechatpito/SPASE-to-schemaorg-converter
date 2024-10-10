@@ -1,0 +1,44 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Indices/Ground_Based/ground-based-dst",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Indices/Ground_Based/ground-based-dst",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Indices - Ground Based - Dst",
+  "sdDatePublished": "2024-05-23",
+  "description": " Dst index is taken from the WDC (World Data Center) at Kyoto.\n            Processing Level :\n            * FINAL : 1970 - 2014\n            * PROVISIONAL : 2015 - 2016\n            * QUICKLOOK : from 2017\n         ",
+  "abstract": " Dst index is taken from the WDC (World Data Center) at Kyoto.\n            Processing Level :\n            * FINAL : 1970 - 2014\n            * PROVISIONAL : 2015 - 2016\n            * QUICKLOOK : from 2017\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "dst",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

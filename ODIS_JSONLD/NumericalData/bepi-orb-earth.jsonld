@@ -1,0 +1,96 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/BepiColombo/Ephemeris/bepi-orb-earth",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/BepiColombo/Ephemeris/bepi-orb-earth",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "BepiColombo - Ephemeris - Earth flyby",
+  "sdDatePublished": "2021-07-20",
+  "description": "Calculated by IRAP using BepiColombo SPICE kernels",
+  "abstract": "Calculated by IRAP using BepiColombo SPICE kernels",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gse",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "bepi_xyz_gse(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "bepi_xyz_gse(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "bepi_xyz_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gsm",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "bepi_xyz_gsm(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "bepi_xyz_gsm(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "bepi_xyz_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance bepi-earth",
+      "unitText": "Re"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

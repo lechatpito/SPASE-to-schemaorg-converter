@@ -1,0 +1,74 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/TohokuU/radio_obs/tnn/lf/avon_vlfb_tnn_numerical",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/TohokuU/radio_obs/tnn/lf/avon_vlfb_tnn_numerical",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "AVON/VLF-B Tweek data (Tainan station)",
+  "sdDatePublished": "2014-05-19",
+  "description": "VLF-magnetic components (North-South and East-West) originated from lightning discharges received at Tainan station, Taiwan. Tweek atmospherics are VLF/ELF electromagnetic waves that are originated from lightning discharges and propagate in the Earth-ionosphere waveguide over long distances (several thousand kilometers).",
+  "abstract": "VLF-magnetic components (North-South and East-West) originated from lightning discharges received at Tainan station, Taiwan. Tweek atmospherics are VLF/ELF electromagnetic waves that are originated from lightning discharges and propagate in the Earth-ionosphere waveguide over long distances (several thousand kilometers).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    }
+  ],
+  "keywords": "AVON/VLF-B",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://iugonet02.gp.tohoku.ac.jp/avon/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "tt2000",
+      "description": "Time label in CDF_TT2000 (the number of nano seconds since J2000 (2000-01-01T12:00:00)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time_50us",
+      "description": "Year, month, day, hour, minute, second, milisecond, and microsecond of each time frame"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vlf_wave_ch1",
+      "description": "VLF waveform (north-south)",
+      "unitText": "V",
+      "minValue": "-5.00",
+      "maxValue": "5.00"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vlf_wave_ch2",
+      "description": "VLF waveform (east-west)",
+      "unitText": "V",
+      "minValue": "-5.00",
+      "maxValue": "5.00"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

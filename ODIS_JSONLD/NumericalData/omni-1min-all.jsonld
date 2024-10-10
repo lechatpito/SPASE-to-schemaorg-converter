@@ -1,0 +1,128 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/OMNI/omni-1min-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/OMNI/omni-1min-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "OMNI - Sun / Solar Wind / Ground-Based Indices - 1 min",
+  "sdDatePublished": "2024-04-15",
+  "description": "1 min averaged, multi-source, near-Earth solar wind magnetic \n              field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst \n              geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number). \n              The ram pressure is calculated using P=rho*Np*Vp\u00b2, where rho=1.672622*(1+4*(1/(1-He++_ratio)-1)). \n              We use rho=2 here, which corresponds to a ratio of He++ between 4% and 5%.\n            ",
+  "abstract": "1 min averaged, multi-source, near-Earth solar wind magnetic \n              field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst \n              geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number). \n              The ram pressure is calculated using P=rho*Np*Vp\u00b2, where rho=1.672622*(1+4*(1/(1-He++_ratio)-1)). \n              We use rho=2 here, which corresponds to a ratio of He++ between 4% and 5%.\n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT",
+      "defaultValue": "9999.9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "omni1_imf(0)",
+            "FillValue": "9999.9"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "omni1_imf(1)",
+            "FillValue": "9999.9"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "omni1_imf(2)",
+            "FillValue": "9999.9"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw density",
+      "unitText": "cm-3",
+      "defaultValue": "999.99"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw temperature",
+      "unitText": "K",
+      "defaultValue": "9999999."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw v_bulk",
+      "unitText": "km/s",
+      "defaultValue": "99999.9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw v_gse",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "omni1_sw_vgse(0)",
+            "FillValue": "99999.9"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "omni1_sw_vgse(1)",
+            "FillValue": "99999.9"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "omni1_sw_vgse(2)",
+            "FillValue": "99999.9"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw ram pressure",
+      "description": "P=2*10e-6*Np*Vp^2",
+      "unitText": "nPa",
+      "defaultValue": "99999.9"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

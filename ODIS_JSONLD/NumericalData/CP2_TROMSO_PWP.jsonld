@@ -1,0 +1,109 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/EISCAT/CP2/Tromso/UHF-Radar/CP2_TROMSO_PWP",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/EISCAT/CP2/Tromso/UHF-Radar/CP2_TROMSO_PWP",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "EISCAT CP2 Tromso UHF Radar (Raw Ne)",
+  "sdDatePublished": "2022-06-06",
+  "description": "This data set contains EISCAT common program CP2 raw electron density from the Tromso UHF radar.",
+  "abstract": "This data set contains EISCAT common program CP2 raw electron density from the Tromso UHF radar.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CP2_TROMSO_PWP",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP2  Tromso UHF Radar Antenna Azimuth",
+      "description": "EISCAT CP2  Tromso UHF Radar Single Value Parameters - Values: Antenna Azimuth (0, North)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP2  Tromso UHF Radar Antenna Elevation",
+      "description": "EISCAT CP2  Tromso UHF Radar Single Value Parameters - Values: Antenna Elevation (90, Vertical)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP2  Tromso UHF Radar Half Scattering Angle",
+      "description": "EISCAT CP2  Tromso UHF Radar Single Value Parameters - Values: Half Scattering Angle (0, 90\u00b0)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP2  Tromso UHF Radar Transmit Peak Power",
+      "description": "EISCAT CP2  Tromso UHF Radar Single Value Parameters - Values: Transmit Peak Power",
+      "unitText": "kW"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP2  Tromso UHF Radar Number of Sample Summed",
+      "description": "EISCAT CP2 ACF Tromso  Radar Single Value Parameters - Values: Number of Sample Summed"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP2  Tromso UHF Radar Number of Sample Summed - Increment",
+      "description": "EISCAT CP2  Tromso UHF Radar Single Value Parameters - Values: Number of Sample Summed - Increment"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP2  Tromso UHF Radar System Temperature",
+      "description": "EISCAT CP2  Tromso UHF Radar Single Value Parameters - Values: System Temperature",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP2  Tromso UHF Radar Decimal Logarithm of the Raw Electron Densities",
+      "description": "EISCAT CP2  Tromso UHF Radar Primary Parameter Decimal Logarithm of the Raw Electron Densities",
+      "unitText": "m^-3"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

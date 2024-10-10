@@ -1,0 +1,61 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/WDC_Kyoto/WDC/AE/index/PT1M_provisional",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/WDC_Kyoto/WDC/AE/index/PT1M_provisional",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Geomagnetic Auroral Electrojet Index Provisional AE",
+  "sdDatePublished": "2011-02-17",
+  "description": "The geomagnetic auroral electrojet index at 1-min time resolution, derived at World Data Center for Geomagnetism, Kyoto, Kyoto University.",
+  "abstract": "The geomagnetic auroral electrojet index at 1-min time resolution, derived at World Data Center for Geomagnetism, Kyoto, Kyoto University.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "keywords": "AE INDEX",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://wdc.kugi.kyoto-u.ac.jp/wdc/Sec3.html",
+      "name": "Geomagnetic Data Service",
+      "description": "Geomagnetic Data Service at World Data Center for Geomagnetism, Kyoto."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Time is expressed with year, month, day, hour, and min, each stored in integer format. Details of the data record format is described at http://wdc.kugi.kyoto-u.ac.jp/aeasy/format/aeformat.html"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Auroral Electrojet index Provisional AE",
+      "description": "The AE index is expressed in integer format. Details of the data record format is described at http://wdc.kugi.kyoto-u.ac.jp/aeasy/format/aeformat.html",
+      "unitText": "nT",
+      "defaultValue": "99999",
+      "cadence": "PT1M"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

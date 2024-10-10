@@ -1,0 +1,98 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/THEMIS/D/Ephemeris/thd-orb-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/THEMIS/D/Ephemeris/thd-orb-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "THEMIS-D - Ephemeris - orbit",
+  "sdDatePublished": "2024-05-22",
+  "description": "\n                THEMIS D ephemeris\n            ",
+  "abstract": "\n                THEMIS D ephemeris\n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gse",
+      "description": "position in GSE coordinates",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "thd_xyz(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "thd_xyz(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "thd_xyz(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gsm",
+      "description": "position in GSM coordinates",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "thd_xyz_gsm(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "thd_xyz_gsm(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "thd_xyz_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance thd-earth",
+      "unitText": "Re"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

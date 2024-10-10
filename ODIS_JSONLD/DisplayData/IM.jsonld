@@ -1,0 +1,55 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/GBO/DisplayData/BBSO/IM",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/GBO/DisplayData/BBSO/IM",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "BBSO solar images",
+  "sdDatePublished": "2018-08-01",
+  "description": "Big Bear Solar Observatory (BBSO) solar images of the following types or sources:  broadband, Calcium II K line, Dopplergram, H alpha, Vectomagnetogram components I, Q, U and V, white light, He I line (10830 A), He I D3 line (5876 A o), He I  D3 line (5876 A), Ca I line (6103 A), IR camera",
+  "abstract": "Big Bear Solar Observatory (BBSO) solar images of the following types or sources:  broadband, Calcium II K line, Dopplergram, H alpha, Vectomagnetogram components I, Q, U and V, white light, He I line (10830 A), He I D3 line (5876 A o), He I  D3 line (5876 A), Ca I line (6103 A), IR camera",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Photosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ftp.bbso.njit.edu/pub/archive/",
+      "name": "Big Bear Solar Observatory",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sdac.virtualsolar.org/cgi/search",
+      "name": "Virtual Solar Observatory",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

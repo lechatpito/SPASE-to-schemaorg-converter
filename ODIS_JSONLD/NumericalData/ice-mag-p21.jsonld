@@ -1,0 +1,71 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ICE/ice-mag-p21",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ICE/ice-mag-p21",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ICE - MAG - flyby Giacobini-Zinner",
+  "sdDatePublished": "2014-07-20",
+  "description": "The coordinate resolution for the magnetic field components is the\nI,S coordinate system, defined by the JPL group before launch.  I is\nthe unit vector in the direction of the ICE spin axis (positive in\nthe northward direction), and S is the unit vector from the space-\ncraft to the Sun.  The Z-axis ia equal to I, the Y-axis to the nor-\nmalized cross-product I x S, and the x-axis to Y x Z.  The I,S co-\nordinate system us approximately the same as the Solar Ecliptic (SE)\nsystem since the spacecraft Z-axis is maintained within half a degree\nof perpendicular to the Ecliptic plane.  (SE is defined the same way\nas GSE, but with the spacecraft [point of observation] substituted\nfor Earth). ",
+  "abstract": "The coordinate resolution for the magnetic field components is the\nI,S coordinate system, defined by the JPL group before launch.  I is\nthe unit vector in the direction of the ICE spin axis (positive in\nthe northward direction), and S is the unit vector from the space-\ncraft to the Sun.  The Z-axis ia equal to I, the Y-axis to the nor-\nmalized cross-product I x S, and the x-axis to Y x Z.  The I,S co-\nordinate system us approximately the same as the Solar Ecliptic (SE)\nsystem since the spacecraft Z-axis is maintained within half a degree\nof perpendicular to the Ecliptic plane.  (SE is defined the same way\nas GSE, but with the spacecraft [point of observation] substituted\nfor Earth). ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_cse",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "ice_b_cse(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "1",
+            "ParameterKey": "ice_b_cse(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "1",
+            "ParameterKey": "ice_b_cse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic Field Magnitude",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

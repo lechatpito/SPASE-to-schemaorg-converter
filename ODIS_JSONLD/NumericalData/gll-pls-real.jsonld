@@ -1,0 +1,63 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/PLS/gll-pls-real",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/PLS/gll-pls-real",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - PLS - spectra - orbit jupiter",
+  "sdDatePublished": "2012-03-06",
+  "description": "Galileo PLasma Spectrometer data acquired by the Galileo Orbiter during the magnetospheric survey portion of the mission",
+  "abstract": "Galileo PLasma Spectrometer data acquired by the Galileo Orbiter during the magnetospheric survey portion of the mission",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ions p2",
+      "description": "energy-time spectrogram of ion counts for the P2 detector",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ions p4",
+      "description": "energy-time spectrogram of ion counts for the P4 detector",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ions p6",
+      "description": "energy-time spectrogram of ion counts for the P6 detector",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "electrons e4",
+      "description": "energy-time spectrogram of ion counts for the E4 detector",
+      "unitText": "cnts"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

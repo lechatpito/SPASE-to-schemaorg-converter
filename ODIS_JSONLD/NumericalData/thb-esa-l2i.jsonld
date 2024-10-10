@@ -1,0 +1,109 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/THEMIS/B/ESA/thb-esa-l2i",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/THEMIS/B/ESA/thb-esa-l2i",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "THEMIS-B - ESA - ion full mode",
+  "sdDatePublished": "2024-05-23",
+  "description": "\"Full Mode\" is a low-time-resolution data product useful for large-scale surveys of THEMIS data. It generally maintains the \"full\" 32 energies sampled, and have an 88 solid-angle map. Full distribution data are 1-spin snapshots of the plasma with a measurement cadence of either 32 spins (in \"Fast-Survey Spacecraft Mode\") or 128 spins (\"Slow-Survey Spacecraft Mode\").>",
+  "abstract": "\"Full Mode\" is a low-time-resolution data product useful for large-scale surveys of THEMIS data. It generally maintains the \"full\" 32 energies sampled, and have an 88 solid-angle map. Full distribution data are 1-spin snapshots of the plasma with a measurement cadence of either 32 spins (in \"Fast-Survey Spacecraft Mode\") or 128 spins (\"Slow-Survey Spacecraft Mode\").>",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion density",
+      "description": "Ion Density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion v_gse",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "thb_v_i(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "thb_v_i(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "thb_v_i(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion |v|",
+      "description": "Module of Velocity",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion temperature",
+      "description": "Temperature",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "t_para",
+            "Index": "1",
+            "ParameterKey": "thb_t_i(2)"
+          },
+          {
+            "Name": "t_perp1",
+            "Index": "2",
+            "ParameterKey": "thb_t_i(0)"
+          },
+          {
+            "Name": "t_perp2",
+            "Index": "3",
+            "ParameterKey": "thb_t_i(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion eflux",
+      "unitText": "eV/cm^2-s-sr-eV"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

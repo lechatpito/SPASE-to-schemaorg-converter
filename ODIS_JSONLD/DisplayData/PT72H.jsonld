@@ -1,0 +1,45 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ESA/DisplayData/PROBA2/LYRA/Level_4B/PT72H",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ESA/DisplayData/PROBA2/LYRA/Level_4B/PT72H",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Proba 2 LYRA 3-Day PNG Files of Calibrated Time Series",
+  "sdDatePublished": "2022-02-20",
+  "description": "This dataset contains 3-day calibrated quicklook PNG files of calibrated time series from the Large Yield RAdiometer (LYRA) onboard Proba 2. Data are averaged to one minute. Time series of solar irradiance are displayed in two of the ultraviolet channels: the 17-80 nm aluminium filter range and the 6-20 nm zirconium filter range.",
+  "abstract": "This dataset contains 3-day calibrated quicklook PNG files of calibrated time series from the Large Yield RAdiometer (LYRA) onboard Proba 2. Data are averaged to one minute. Time series of solar irradiance are displayed in two of the ultraviolet channels: the 17-80 nm aluminium filter range and the 6-20 nm zirconium filter range.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://proba2.sidc.be/lyra/data/3DayQuicklook/",
+      "name": "HTTP access to PNG files at PROBA2 Science Center",
+      "description": "In PNG via HTTP from PROBA2 Science Center"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

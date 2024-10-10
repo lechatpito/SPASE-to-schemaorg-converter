@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SWEA/mavpds-swea-svyspec",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SWEA/mavpds-swea-svyspec",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - SWEA - onboard omni electron spectra",
+  "sdDatePublished": "2024-03-21",
+  "description": "Omni-directional energy spectra in units of counts and differential \n       energy flux (eV/cm2 sec ster eV) from SWEA survey data                     \n         ",
+  "abstract": "Omni-directional energy spectra in units of counts and differential \n       energy flux (eV/cm2 sec ster eV) from SWEA survey data                     \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "elec counts",
+      "unitText": "cnts",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elec diff eflux",
+      "unitText": "eV/cm^2 sr eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

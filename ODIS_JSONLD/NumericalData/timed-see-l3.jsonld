@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/TIMED/SEE/timed-see-l3",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/TIMED/SEE/timed-see-l3",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Solar Irradiance - TIMED - SEE - EUV / X ray - daily averages",
+  "sdDatePublished": "2024-05-23",
+  "description": "\n          SEE Level 3 OVERVIEW:  \n          The Solar EUV Experiment (SEE) is comprised of two science components: \n* the EUV Grating Spectrograph (EGS) component covers the wavelength range from approximately 26 to 190 nm\n* the X-Ray Photometer System (XPS) component covers the wavelength range from approximately 0.5 to 34 nm \n\nLevel 3 data has flares removed, is useful for long-term climatological study.\n         ",
+  "abstract": "\n          SEE Level 3 OVERVIEW:  \n          The Solar EUV Experiment (SEE) is comprised of two science components: \n* the EUV Grating Spectrograph (EGS) component covers the wavelength range from approximately 26 to 190 nm\n* the X-Ray Photometer System (XPS) component covers the wavelength range from approximately 0.5 to 34 nm \n\nLevel 3 data has flares removed, is useful for long-term climatological study.\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux : spectra",
+      "description": "Merged median solar irradiance for XPS and EGS flux at 1nm bins",
+      "unitText": "W/m**2/nm",
+      "defaultValue": "-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux : lines",
+      "description": "Integrated median spectral line irradiance",
+      "unitText": "W/m**2/nm",
+      "defaultValue": "-1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

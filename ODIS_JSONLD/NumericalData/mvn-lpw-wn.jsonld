@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/LPW/mvn-lpw-wn",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/LPW/mvn-lpw-wn",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - LPW - electron density from Langmuir line",
+  "sdDatePublished": "2024-04-02",
+  "description": "Electron density derived from the Langmuir line in the passive and \n     active spectra\n     (LID = urn:nasa:pds:maven.lpw.derived:data.w.n)                       \n         ",
+  "abstract": "Electron density derived from the Langmuir line in the passive and \n     active spectra\n     (LID = urn:nasa:pds:maven.lpw.derived:data.w.n)                       \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "This bundle contains data which have been derived from other data products or determined by fits to other data. \n       These are science quality data produced by the LPW instrument. The data include density",
+      "unitText": "cm-3",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density quality",
+      "description": "Quality of Electron Density.The uncertainty of the\n values with a scale of 0-100. 100 is the best quality.  Use data with flag value\n above 50"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

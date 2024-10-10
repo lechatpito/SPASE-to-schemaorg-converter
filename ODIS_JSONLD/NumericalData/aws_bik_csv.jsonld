@@ -1,0 +1,124 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/BIK/AWS/aws_bik_csv",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/BIK/AWS/aws_bik_csv",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Surface meteorological data at Biak (CSV format)",
+  "sdDatePublished": "2016-09-01",
+  "description": "The surface meteorological data taken by the automatical weather station (AWS) at Biak, Indonesia (1.18S, 136.10E, 15m MSL), which has been operated since March 2, 2008. The data are stored in the CSV (Comma Separated Values) file named (year)(month)(day).csv. The first two lines of each file represent header information, and the third and below are observational date and local time (year/month/day hour:minute:second) which corresponds to the center time of averaging period (first column) and data including pressure, precipitation, relative humidity, solar radiation, temperature, wind direction and speed (the other columns). The left colums of each parameter represent the status code.",
+  "abstract": "The surface meteorological data taken by the automatical weather station (AWS) at Biak, Indonesia (1.18S, 136.10E, 15m MSL), which has been operated since March 2, 2008. The data are stored in the CSV (Comma Separated Values) file named (year)(month)(day).csv. The first two lines of each file represent header information, and the third and below are observational date and local time (year/month/day hour:minute:second) which corresponds to the center time of averaging period (first column) and data including pressure, precipitation, relative humidity, solar radiation, temperature, wind direction and speed (the other columns). The left colums of each parameter represent the status code.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Phenomena",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/radar-group/surface/biak/aws/",
+      "name": "Surface Meteorological Data at Biak, Indonesia",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "date",
+      "description": "Date in the form YYYY-MM-DD where YYYY= Gregorian Year AD, MM = month of year (01-12), and DD = day of month (01-31)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Time in the form hh:mm:ss where hh = hour of day (00-23), mm = minute of hour and ss = second of minute. Universal time is used for time data. Local time (UT+09:00:00) is used for time data."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PA",
+      "description": "Pressure",
+      "unitText": "hPa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PR",
+      "description": "Precipitation",
+      "unitText": "mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RH",
+      "description": "Relative humidity",
+      "unitText": "%",
+      "minValue": "0",
+      "maxValue": "100"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SR",
+      "description": "Solar radiation",
+      "unitText": "kW/m^2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TA",
+      "description": "Temperature",
+      "unitText": "degree C",
+      "minValue": "20",
+      "maxValue": "40"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DirAvg",
+      "description": "1-minute average of wind direction",
+      "unitText": "degree",
+      "minValue": "0",
+      "maxValue": "360"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SpdAvg",
+      "description": "1-minute average of wind speed",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "status",
+      "description": "Status code. Data with the status code 'VALID' are available.",
+      "unitText": "1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

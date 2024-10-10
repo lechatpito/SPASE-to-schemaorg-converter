@@ -1,0 +1,88 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/IMP8/CRNC/Electrons_PT1H",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/IMP8/CRNC/Electrons_PT1H",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "IMP 8 Cosmic Ray Nuclear Composition (CRNC) hourly energetic electron fluxes",
+  "sdDatePublished": "2021-03-11",
+  "description": "This data set contains hourly, spin-averaged\nfluxes of electrons from the IMP8 Cosmic Ray Nuclear Composition\nexperiment of U. Chicago and UNH.  There are fluxes of electrons\nin three energy bins: 0.7-2.0, 2-12, 12-50 MeV.  These fluxes\nwere generated at GSFC/SPDF from count rates accessible from\nUNH.",
+  "abstract": "This data set contains hourly, spin-averaged\nfluxes of electrons from the IMP8 Cosmic Ray Nuclear Composition\nexperiment of U. Chicago and UNH.  There are fluxes of electrons\nin three energy bins: 0.7-2.0, 2-12, 12-50 MeV.  These fluxes\nwere generated at GSFC/SPDF from count rates accessible from\nUNH.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/imp/imp8/particles_uchi/hourly/electrons/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "ftp access to electron-specific subdirectory\nholding annual ASCII files"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/imp/imp8/particles_uchi/hourly/electrons/",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/imp_chi_crnc_1h.html",
+      "name": "FTPBrowser",
+      "description": "Subset, plot and list fluxes of protons, alpha\nparticles and electron, and count rates of heavies, via FTPBrowser"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time at start of flux average, as year, day, hour",
+      "cadence": "PT1H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fractional Coverage",
+      "description": "Fractional counting coverage (0-1) during this hour",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron fluxes",
+      "description": "Spin-integrated fluxes of electrons, at 1-hour resolution,\nin three energy bins: 0.7-2.0, 2-12, 12-50 MeV",
+      "unitText": "1/sec-cm**2-ster-MeV",
+      "cadence": "PT1H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

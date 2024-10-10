@@ -1,0 +1,65 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/VEX/ELS/vex-els-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/VEX/ELS/vex-els-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "VEX - ELS - electron energy spectra : 16 anodes",
+  "sdDatePublished": "2017-06-29",
+  "description": "Level2 data. This dataset is generated directly from the VEX telemetry with IRAP software ",
+  "abstract": "Level2 data. This dataset is generated directly from the VEX telemetry with IRAP software ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    }
+  ],
+  "keywords": [
+    "plasma",
+    "electron"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "counts : per anode ##anode##",
+      "description": "Averaged energy-time spectrogram of electron counts",
+      "unitText": "cnts",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "128",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "counts : sum over anodes",
+      "description": "energy spectrogram of electron counts",
+      "unitText": "cnts",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "128",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SOHO/COSTEP/soho-ephin-1min",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SOHO/COSTEP/soho-ephin-1min",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SOHO - COSTEP - EPHIN - 1 min",
+  "sdDatePublished": "2024-02-27",
+  "description": "1 minute Level3 intensity data of protons at four energies between 4.3 and 53 Mev,\nand of alpha particles at four energies between 4.3 and 53 MeV/n.",
+  "abstract": "1 minute Level3 intensity data of protons at four energies between 4.3 and 53 Mev,\nand of alpha particles at four energies between 4.3 and 53 MeV/n.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "proton flux",
+      "unitText": "1/(cm**2 s sr MeV)",
+      "defaultValue": "-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "4.3 - 7.8 MeV",
+            "Index": "1",
+            "ParameterKey": "soho_ephin_1minp(0)"
+          },
+          {
+            "Name": "7.8 - 25 MeV",
+            "Index": "2",
+            "ParameterKey": "soho_ephin_1minp(1)"
+          },
+          {
+            "Name": "25 - 40.9 MeV",
+            "Index": "3",
+            "ParameterKey": "soho_ephin_1minp(2)"
+          },
+          {
+            "Name": "40.9 - 53 MeV",
+            "Index": "4",
+            "ParameterKey": "soho_ephin_1minp(3)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "He flux",
+      "unitText": "1/(cm**2 s sr MeV/n)",
+      "defaultValue": "-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "4.3 - 7.8 MeV/n",
+            "Index": "1",
+            "ParameterKey": "soho_ephin_1minhe(0)"
+          },
+          {
+            "Name": "7.8 - 25 MeV/n",
+            "Index": "2",
+            "ParameterKey": "soho_ephin_1minhe(1)"
+          },
+          {
+            "Name": "25 - 40.9 MeV/n",
+            "Index": "3",
+            "ParameterKey": "soho_ephin_1minhe(2)"
+          },
+          {
+            "Name": "40.9 - 53 MeV/n",
+            "Index": "4",
+            "ParameterKey": "soho_ephin_1minhe(3)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

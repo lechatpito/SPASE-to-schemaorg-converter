@@ -1,0 +1,688 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/MMS/4/FIELDS/EDI/Burst/Level2/ElectronFluxAmbient/ProjectionMethod1/PT0.0009765625S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/MMS/4/FIELDS/EDI/Burst/Level2/ElectronFluxAmbient/ProjectionMethod1/PT0.0009765625S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS 4 Electron Drift Instrument (EDI) Ambient Electron Flux, Projection Method 1 (PM1), Level 2 (L2), Burst Mode, 0.9765625 ms Data",
+  "sdDatePublished": "2023-03-04",
+  "description": "Electron Drift Instrument (EDI) Ambient Burst Survey, Level 2, 0.0009765625 s Data (1024 samples/s). EDI has two scientific data acquisition modes, called electric field mode and ambient mode. In electric field mode, two coded electron beams are emitted such that they return to the detectors after one or more gyrations in the ambient magnetic and electric field. The firing directions and times-of-flight allow the derivation of the drift velocity and electric field. In ambient mode, the electron beams are not used. The detectors with their large geometric factors and their ability to adjust the field of view quickly allow continuous sampling of ambient electrons at a selected pitch angle and fixed but selectable energy. To find the beam directions that will hit the detector, EDI sweeps each beam in the plane perpendicular to B at a fixed angular rate of 0.22 \u00b0/ms until a signal has been acquired by the detector. Once signal has been acquired, the beams are swept back and forth to stay on target. Beam detection is not determined from the changes in the count-rates directly, but from the square of the beam counts divided by the background counts from ambient electrons, i.e., from the square of the instantaneous signal-to-noise ratio (SNR). This quantity is computed from data provided by the correlator in the Gun-Detector Electronics that also generates the coding pattern imposed on the outgoing beams. If the squared SNR ratio exceeds a threshold, this is taken as evidence that the beam is returning to the detector. The thresholds for SNR are chosen dependent on background fluxes. They represent a compromise between getting false hits (induced by strong variations in background electron fluxes) and missing true beam hits. The basic software loop that controls EDI operations is executed every 2 ms. As the times when the beams hit their detectors are neither synchronized with the telemetry nor equidistant, EDI data have no fixed time-resolution. Data are reported in telemetry slots. In Survey, using the standard packing mode 0, there are eight telemetry slots per second and Gyn Detector Unit (GDU). The last beam detected during the previous slot will be reported in the current slot. If no beam has been detected, the data quality will be set to zero. In Burst telemetry there are 128 slots per second and GDU. The data in each slot consists of information regarding the beam firing directions (stored in the form of analytic gun deflection voltages), times-of-flight (if successfully measured), quality indicators, time stamps of the beam hits, and some auxiliary correlator-related information. Whenever EDI is not in electron drift mode, it uses its ambient electron mode. The mode has the capability to sample at either 90 degrees pitch angle or at 0/180 degrees (field aligned), or to alternate between 90 degrees and field aligned with selectable dwell times. While all options have been demonstrated during the commissioning phase, only the field aligned mode has been used in the routine operations phase. The choices for energy are 250 eV, 500 eV, and 1 keV. The two detectors, which are facing opposite hemispheres, are looking strictly into opposite directions, so while one detector is looking along B the other is looking antiparallel to B (corresponding to pitch angles of 180 and 0 degrees, respectively). The two detectors switch roles every half spin of the spacecraft as the tip of the magnetic field vector spins outside the field of view of one detector and into the field of view of the other detector. Up until January 4, 2016 the anodes were chosen such that the magnetic field vector projected into the plane of the micro-channel plate entry surface was best aligned with the center of the four anodes ( that is, with the gap between the inner two of the four anodes). Data taken in this configuration are using the term \"amb\" in the data product names. In the burst data where four channels (corresponding to the four adjacent sensor anode pads) are sampled per GDU, the average (or sum) of the center two channels (channels 2 and 3) represents best the pitch angle of 0 degrees (or 180 degrees). The EDI instrument paper can be found at: http://link.springer.com/article/10.1007%2Fs11214-015-0182-7. The EDI instrument data products guide can be found at https://lasp.colorado.edu/mms/sdc/public/datasets/fields/.",
+  "abstract": "Electron Drift Instrument (EDI) Ambient Burst Survey, Level 2, 0.0009765625 s Data (1024 samples/s). EDI has two scientific data acquisition modes, called electric field mode and ambient mode. In electric field mode, two coded electron beams are emitted such that they return to the detectors after one or more gyrations in the ambient magnetic and electric field. The firing directions and times-of-flight allow the derivation of the drift velocity and electric field. In ambient mode, the electron beams are not used. The detectors with their large geometric factors and their ability to adjust the field of view quickly allow continuous sampling of ambient electrons at a selected pitch angle and fixed but selectable energy. To find the beam directions that will hit the detector, EDI sweeps each beam in the plane perpendicular to B at a fixed angular rate of 0.22 \u00b0/ms until a signal has been acquired by the detector. Once signal has been acquired, the beams are swept back and forth to stay on target. Beam detection is not determined from the changes in the count-rates directly, but from the square of the beam counts divided by the background counts from ambient electrons, i.e., from the square of the instantaneous signal-to-noise ratio (SNR). This quantity is computed from data provided by the correlator in the Gun-Detector Electronics that also generates the coding pattern imposed on the outgoing beams. If the squared SNR ratio exceeds a threshold, this is taken as evidence that the beam is returning to the detector. The thresholds for SNR are chosen dependent on background fluxes. They represent a compromise between getting false hits (induced by strong variations in background electron fluxes) and missing true beam hits. The basic software loop that controls EDI operations is executed every 2 ms. As the times when the beams hit their detectors are neither synchronized with the telemetry nor equidistant, EDI data have no fixed time-resolution. Data are reported in telemetry slots. In Survey, using the standard packing mode 0, there are eight telemetry slots per second and Gyn Detector Unit (GDU). The last beam detected during the previous slot will be reported in the current slot. If no beam has been detected, the data quality will be set to zero. In Burst telemetry there are 128 slots per second and GDU. The data in each slot consists of information regarding the beam firing directions (stored in the form of analytic gun deflection voltages), times-of-flight (if successfully measured), quality indicators, time stamps of the beam hits, and some auxiliary correlator-related information. Whenever EDI is not in electron drift mode, it uses its ambient electron mode. The mode has the capability to sample at either 90 degrees pitch angle or at 0/180 degrees (field aligned), or to alternate between 90 degrees and field aligned with selectable dwell times. While all options have been demonstrated during the commissioning phase, only the field aligned mode has been used in the routine operations phase. The choices for energy are 250 eV, 500 eV, and 1 keV. The two detectors, which are facing opposite hemispheres, are looking strictly into opposite directions, so while one detector is looking along B the other is looking antiparallel to B (corresponding to pitch angles of 180 and 0 degrees, respectively). The two detectors switch roles every half spin of the spacecraft as the tip of the magnetic field vector spins outside the field of view of one detector and into the field of view of the other detector. Up until January 4, 2016 the anodes were chosen such that the magnetic field vector projected into the plane of the micro-channel plate entry surface was best aligned with the center of the four anodes ( that is, with the gap between the inner two of the four anodes). Data taken in this configuration are using the term \"amb\" in the data product names. In the burst data where four channels (corresponding to the four adjacent sensor anode pads) are sampled per GDU, the average (or sum) of the center two channels (channels 2 and 3) represents best the pitch angle of 0 degrees (or 180 degrees). The EDI instrument paper can be found at: http://link.springer.com/article/10.1007%2Fs11214-015-0182-7. The EDI instrument data products guide can be found at https://lasp.colorado.edu/mms/sdc/public/datasets/fields/.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, 0 degree Electrons",
+      "description": "Epoch Time Tags for EDU 0 degree Pitch Angle Electron Count Data, Terrestrial Time 2000 (TT2000)",
+      "unitText": "ns",
+      "minValue": "2015-03-01T00:00:00.000000000",
+      "maxValue": "2065-12-31T00:00:01.000000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, 180 degree Electrons",
+      "description": "Epoch Time Tags for EDU 180 degree Pitch Angle Electron Count Data, Terrestrial Time 2000 (TT2000)",
+      "unitText": "ns",
+      "minValue": "2015-03-01T00:00:00.000000000",
+      "maxValue": "2065-12-31T00:00:01.000000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time Tag",
+      "description": "Epoch Time Tags for EDU Support Data, Terrestrial Time 2000 (TT2000)",
+      "unitText": "ns",
+      "minValue": "2015-03-01T00:00:00.000000000",
+      "maxValue": "2065-12-31T00:00:01.000000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Optics State",
+      "description": "Optics State Parameter Setting",
+      "minValue": "0",
+      "maxValue": "254",
+      "defaultValue": "255",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GDU1 Beam Energy",
+      "description": "Gun Detector Unit 2 Beam Energy",
+      "unitText": "eV",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": "65535",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GDU2 Beam Energy",
+      "description": "Gun Detector Unit 1 Beam Energy",
+      "unitText": "eV",
+      "minValue": "0",
+      "maxValue": "1000",
+      "defaultValue": "65535",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GDU Identifier, 0 degree, Pitch Angle",
+      "description": "Sorts 0 degree Flux Counts by Gun Detector Unit",
+      "minValue": "1",
+      "maxValue": "2",
+      "defaultValue": "255",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GDU Identifier, 180 degree, Pitch Angle",
+      "description": "Sorts 180 degree Flux Counts by Gun Detector Unit",
+      "minValue": "1",
+      "maxValue": "2",
+      "defaultValue": "255",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux, Trajectory 1, 0 degree Pitch Angle",
+      "description": "Flux for Electrons with Trajectories given by traj1_0",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux, Trajectory 2, 0 degree Pitch Angle",
+      "description": "Flux for Electrons with Trajectories given by traj2_0",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux, Trajectory 3, 0 degree Pitch Angle",
+      "description": "Flux for Electrons with Trajectories given by traj3_0",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux, Trajectory 4, 0 degree Pitch Angle",
+      "description": "Flux for Electrons with Trajectories given by traj4_0",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux, Trajectory 1, 180 degree Pitch Angle",
+      "description": "Flux for Electrons with Trajectories given by traj1_180",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux, Trajectory 2, 180 degree Pitch Angle",
+      "description": "Flux for Electrons with Trajectories given by traj2_180",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux, Trajectory 3, 180 degree Pitch Angle",
+      "description": "Flux for Electrons with Trajectories given by traj3_180",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux, Trajectory 4, 180 degree Pitch Angle",
+      "description": "Flux for Electrons with Trajectories given by traj4_180",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux Error, Trajectory 1, 0 degree Pitch Angle",
+      "description": "Error for flux1 0 degree Pitch Angle Electron Flux",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux Error, Trajectory 2, 0 degree Pitch Angle",
+      "description": "Error for flux2 0 degree Pitch Angle Electron Flux",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux Error, Trajectory 3, 0 degree Pitch Angle",
+      "description": "Error for flux3 0 degree Pitch Angle Electron Flux",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux Error, Trajectory 4, 0 degree Pitch Angle",
+      "description": "Error for flux4 0 degree Pitch Angle Electron Flux",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux Error, Trajectory 1, 180 degree Pitch Angle",
+      "description": "Error for flux1 180 degree Pitch Angle Electron Flux",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux Error, Trajectory 2, 180 degree Pitch Angle",
+      "description": "Error for flux2 180 degree Pitch Angle Electron Flux",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux Error, Trajectory 3, 180 degree Pitch Angle",
+      "description": "Error for flux3 180 degree Pitch Angle Electron Flux",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux Error, Trajectory 4, 180 degree Pitch Angle",
+      "description": "Error for flux4 180 degree Pitch Angle Electron Flux",
+      "unitText": "cm^-2 s^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 1, 0 degree Pitch Angle (GSE)",
+      "description": "Trajectory of flux1 0 degree Pitch Angle Electrons in Geocentric Solar Ecliptic (GSE) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 2, 0 degree Pitch Angle (GSE)",
+      "description": "Trajectory of flux2 0 degree Pitch Angle Electrons in Geocentric Solar Ecliptic (GSE) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 3, 0 degree Pitch Angle (GSE)",
+      "description": "Trajectory of flux3 0 degree Pitch Angle Electrons in Geocentric Solar Ecliptic (GSE) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 4, 0 degree Pitch Angle (GSE)",
+      "description": "Trajectory of flux4 0 degree Pitch Angle Electrons in Geocentric Solar Ecliptic (GSE) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 1, 180 degree Pitch Angle (GSE)",
+      "description": "Trajectory of flux1 180 degree Pitch Angle Electrons in Geocentric Solar Ecliptic (GSE) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 2, 180 degree Pitch Angle (GSE)",
+      "description": "Trajectory of flux2 180 degree Pitch Angle Electrons in Geocentric Solar Ecliptic (GSE) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 3, 180 degree Pitch Angle (GSE)",
+      "description": "Trajectory of flux3 180 degree Pitch Angle Electrons in Geocentric Solar Ecliptic (GSE) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 4, 180 degree Pitch Angle (GSE)",
+      "description": "Trajectory of flux4 180 degree Pitch Angle Electrons in Geocentric Solar Ecliptic (GSE) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 1, 0 degree Pitch Angle (GSM)",
+      "description": "Trajectory of flux1 0 degree Pitch Angle Electrons in Geocentric Solar Magnetospheric (GSM) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 2, 0 degree Pitch Angle (GSM)",
+      "description": "Trajectory of flux2 0 degree Pitch Angle Electrons in Geocentric Solar Magnetospheric (GSM) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 3, 0 degree Pitch Angle (GSM)",
+      "description": "Trajectory of flux3 0 degree Pitch Angle Electrons in Geocentric Solar Magnetospheric (GSM) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 4, 0 degree Pitch Angle (GSM)",
+      "description": "Trajectory of flux4 0 degree Pitch Angle Electrons in Geocentric Solar Magnetospheric (GSM) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 1, 180 degree Pitch Angle (GSM)",
+      "description": "Trajectory of flux1 180 degree Pitch Angle Electrons in Geocentric Solar Magnetospheric (GSM) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-20.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 2, 180 degree Pitch Angle (GSM)",
+      "description": "Trajectory of flux2 180 degree Pitch Angle Electrons in Geocentric Solar Magnetospheric (GSM) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 3, 180 degree Pitch Angle (GSM)",
+      "description": "Trajectory of flux3 180 degree Pitch Angle Electrons in Geocentric Solar Magnetospheric (GSM) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Trajectory 4, 180 degree Pitch Angle (GSM)",
+      "description": "Trajectory of flux4 180 degree Pitch Angle Electrons in Geocentric Solar Magnetospheric (GSM) Cartesian Coordinates",
+      "unitText": "degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0009765625S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Phi",
+            "Index": "1"
+          },
+          {
+            "Name": "Theta",
+            "Index": "2"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

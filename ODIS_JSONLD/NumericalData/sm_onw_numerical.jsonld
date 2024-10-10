@@ -1,0 +1,54 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/TohokuU/mag_obs/onw/sm/sm_onw_numerical",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/TohokuU/mag_obs/onw/sm/sm_onw_numerical",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Geomagnetic field data measured at ONAGAWA observatory, Tohoku University",
+  "sdDatePublished": "2011-04-01",
+  "description": "Geomagnetic field data measured using Onagawa search coil magnetormeter.",
+  "abstract": "Geomagnetic field data measured using Onagawa search coil magnetormeter.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "keywords": "search coil",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://pparc.gp.tohoku.ac.jp/observatory/onagawa/index.html",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "HDZ",
+      "description": "Horizontal (H), declination (D) and Vertical (Z) componets of geomagnetic field strength.",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

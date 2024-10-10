@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/RSN/ros-rsn-den",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/RSN/ros-rsn-den",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Rosetta - ROSINA - density/pressure",
+  "sdDatePublished": "2017-09-21",
+  "description": "density / pressure from COPS sensor : preliminary",
+  "abstract": "density / pressure from COPS sensor : preliminary",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "nude gauge : density",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "nude gauge : pressure",
+      "unitText": "nPa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ram gauge : pressure",
+      "unitText": "nPa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "outgassing rate proxy",
+      "unitText": "molecules/m"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

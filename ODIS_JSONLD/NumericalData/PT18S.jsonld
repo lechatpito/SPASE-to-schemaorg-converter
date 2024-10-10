@@ -1,0 +1,144 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Wind/WAVES/PlasmaDensity/H0/PT18S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Wind/WAVES/PlasmaDensity/H0/PT18S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind Plasma and Radio Waves (WAVES) Electron Plasma Densities, Level H0 (H0), 17.664 s Data",
+  "sdDatePublished": "2021-05-31",
+  "description": "Wind Waves high time resolution plasma densities estimated by using the electron density inferred from the thermal noise peak as recognized by a neural network.",
+  "abstract": "Wind Waves high time resolution plasma densities estimated by using the electron density inferred from the thermal noise peak as recognized by a neural network.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC",
+      "description": "Epoch Time Tags, Coordinated Universal Time, UTC",
+      "unitText": "ms",
+      "minValue": "13-Mar-1986 00:00:00.000",
+      "maxValue": "13-Mar-2020 23:59:59.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "cadence": "PT17.664S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time, PB5 format",
+      "description": "Time in PB5 format: Year, Day, and Milliseconds of Day",
+      "defaultValue": "-2147483648",
+      "cadence": "PT17.664S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1",
+            "Units": "a",
+            "ValidMin": "1986",
+            "ValidMax": "2020",
+            "RenderingHints": {
+              "AxisLabel": "year",
+              "ScaleMin": "1986",
+              "ScaleMax": "2020"
+            }
+          },
+          {
+            "Name": "Day of Year (Jan 1 = Day 1)",
+            "Index": "2",
+            "Units": "d",
+            "ValidMin": "72",
+            "ValidMax": "72",
+            "RenderingHints": {
+              "AxisLabel": "day",
+              "ScaleMin": "72",
+              "ScaleMax": "72"
+            }
+          },
+          {
+            "Name": "Elapsed millisecond of day",
+            "Index": "3",
+            "Units": "ms",
+            "ValidMin": "68400000",
+            "ValidMax": "86400000",
+            "RenderingHints": {
+              "AxisLabel": "msec",
+              "ScaleMin": "68400000",
+              "ScaleMax": "86400000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Number Density",
+      "description": "Electron Number Density, determined from the in situ electron plasma frequency, Fpe, line position as recognized by a neural network",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "264.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT17.664S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field Power, Thermal Noise Peak",
+      "description": "Electric Field Power, in dB at the peak frequency as selected by the neural network algorithm",
+      "unitText": "dB",
+      "minValue": "-200.0",
+      "maxValue": "-50.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT17.664S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Electron Density",
+      "description": "Data Quality Flag, Electron Density: <50=Bad, >50=Fair, >150=OK, >200=Good",
+      "minValue": "0",
+      "maxValue": "255",
+      "defaultValue": "-2147483648",
+      "cadence": "PT17.664S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Post Gap Flag",
+      "description": "Post Gap Flag: 0=No gap, 1=No valid data",
+      "minValue": "0",
+      "maxValue": "9",
+      "defaultValue": "-2147483648",
+      "cadence": "PT17.664S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

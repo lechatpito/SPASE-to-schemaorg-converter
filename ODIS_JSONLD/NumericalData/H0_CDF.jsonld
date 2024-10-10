@@ -1,0 +1,619 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/POLAR/TIDE/H0_CDF",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/POLAR/TIDE/H0_CDF",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Polar TIDE 6-s H, He, O Data",
+  "sdDatePublished": "2023-08-01",
+  "description": "The TIDE H0 CDF files contain H+, O+, and He+ data below 411 eV. Data are available for 1996-03-27 through 1996-09-30. Data is accumulated over the 6-second Polar spacecraft spin. For each ion, the files contain moments density, velocity (Vx, Vy, Vz), temperature (T_perp and T_para) and spectogram for differential energy flux versus energy (flux averaged over spin and polar angle), differential energy flux versus spin angle (flux averaged over energy and polar angle), and differential energy flux versus polar angle (flux averaged over energy and spin angle). Support data includes EFI spacecraft potential (adjusted by +2 volts), magnetic field location, spacecraft ram direction, plotting information, and several parameters that describe the instrument status and details about the data processing.",
+  "abstract": "The TIDE H0 CDF files contain H+, O+, and He+ data below 411 eV. Data are available for 1996-03-27 through 1996-09-30. Data is accumulated over the 6-second Polar spacecraft spin. For each ion, the files contain moments density, velocity (Vx, Vy, Vz), temperature (T_perp and T_para) and spectogram for differential energy flux versus energy (flux averaged over spin and polar angle), differential energy flux versus spin angle (flux averaged over energy and polar angle), and differential energy flux versus polar angle (flux averaged over energy and spin angle). Support data includes EFI spacecraft potential (adjusted by +2 volts), magnetic field location, spacecraft ram direction, plotting information, and several parameters that describe the instrument status and details about the data processing.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time of observation",
+      "unitText": "ms",
+      "minValue": "1996-03-27T00:00:00",
+      "maxValue": "1996-12-07T23:59:59",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time of observation",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1",
+            "Units": "year",
+            "ValidMin": "1995",
+            "ValidMax": "2020",
+            "FillValue": "-2147483648"
+          },
+          {
+            "Name": "Day of Year (Jan 1 = Day 1)",
+            "Index": "2",
+            "Units": "day",
+            "ValidMin": "1",
+            "ValidMax": "1",
+            "FillValue": "-2147483648"
+          },
+          {
+            "Name": "Elapsed millisecond of day",
+            "Index": "3",
+            "Units": "msec",
+            "ValidMin": "0",
+            "ValidMax": "86400000",
+            "FillValue": "-2147483648"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "H+ Ion Density",
+      "description": "H+ Ion density, only available before 01-Oct-1996.",
+      "unitText": "no/cc",
+      "minValue": "0.0",
+      "maxValue": "1000000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "H+ Ion Velocity",
+      "description": "H+ Ion Plasma Velocity, Vx, Vy, Vz. For energy, spin angle, and polar angle calculation limits see moments_lim.",
+      "unitText": "km/s",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "H+ Vx B-fld",
+            "Index": "1"
+          },
+          {
+            "Name": "H+ Vy B-fld",
+            "Index": "2"
+          },
+          {
+            "Name": "H+ Vz B-fld",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "H+ Ion Temperature",
+      "description": "H+ Ion Temperature, Parallel and Perendicular to the Magnetic Field, available before 01-Oct-1996. Direction of magnetic field obtained from onboard values. See moments_lim for energy, spin angle, and polar angle calculation limits.",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "H+ T-para",
+            "Index": "1"
+          },
+          {
+            "Name": "H+ T-perp",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "H+ Flux",
+      "description": "H+ Energy Spectrogram. Only available before 01-Oct-1996. Flux values summed or averaged over spin and polar angles. See spect_lim for sum/avg limits, see sum_avg to determine which one was used.",
+      "unitText": "eV/[cm^2*s*sr*eV]",
+      "minValue": "0.0",
+      "maxValue": "1.0E21",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "31",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "H+ Flux",
+      "description": "H+ Spin Angle Spectrogram. Only available before 01-Oct-1996. Flux values summed or averaged over energy and polar angle. See spect_lim for for sum/avg limits, see sum_avg to determine which one was used.",
+      "unitText": "eV/[cm^2*s*sr*eV]",
+      "minValue": "0.0",
+      "maxValue": "1.0E21",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "H+ Flux",
+      "description": "H+ Polar Angle Spectrogram. Only available before 01-Oct-1996. Flux values summed or averaged over energy and spin angle. See spect_lim for for sum/avg limits, see sum_avg to determine which one was used.",
+      "unitText": "eV/[cm^2*s*sr*eV]",
+      "minValue": "0.0",
+      "maxValue": "1.0E21",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "7",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "O+ Ion Density",
+      "description": "O+ Ion Density. Only available before 01-Oct-1996.",
+      "unitText": "no/cc",
+      "minValue": "0.0",
+      "maxValue": "1000000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "O+ Ion Velocity",
+      "description": "O+ Ion Plasma Velocity, Field Aligned, available before 01-Oct-1996 only. For energy, spin angle, and polar angle calculation limits see moments_lim.",
+      "unitText": "km/s",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "O+ Vx B-fld",
+            "Index": "1"
+          },
+          {
+            "Name": "O+ Vy B-fld",
+            "Index": "2"
+          },
+          {
+            "Name": "O+ Vz B-fld",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "O+ Ion Temperature",
+      "description": "O+ Ion Temperature, Parallel and Perendicular to the Magnetic Field, available before 01-Oct-1996. Direction of magnetic field obtained from onboard values. See moments_lim for energy, spin angle, and polar angle calculation limits.",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "O+ T-para",
+            "Index": "1"
+          },
+          {
+            "Name": "O+ T-perp",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "O+ Flux",
+      "description": "O+ Energy Spectrogram. Only available before 01-Oct-1996. Flux values summed or averaged over spin and polar angles. See spect_lim for sum/avg limits, see sum_avg to determine which one was used.",
+      "unitText": "eV/[cm^2*s*sr*eV]",
+      "minValue": "0.0",
+      "maxValue": "1.0E21",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "31",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "O+ Flux",
+      "description": "H+ Spin Angle Spectrogram. Only available before 01-Oct-1996. Flux values summed or averaged over energy and polar angle. See spect_lim for for sum/avg limits, see sum_avg to determine which one was used.",
+      "unitText": "eV/[cm^2*s*sr*eV]",
+      "minValue": "0.0",
+      "maxValue": "1.0E21",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "O+ Flux",
+      "description": "O+ Polar Angle Spectrogram. Only available before 01-Oct-1996. Flux values summed or averaged over energy and spin angle. See spect_lim for sum/avg limits, see sum_avg to determine which one was used.",
+      "unitText": "eV/[cm^2*s*sr*eV]",
+      "minValue": "0.0",
+      "maxValue": "1.0E21",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "7",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "He+ Ion Density",
+      "description": "He+ Ion Density. Only available before 01-Oct-1996.",
+      "unitText": "no/cc",
+      "minValue": "0.0",
+      "maxValue": "1000000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "He+ Ion Velocity",
+      "description": "He+ Ion Plasma Velocity, Field Aligned, available before 01-Oct-1996 only. For energy, spin angle, and polar angle calculation limits see moments_lim.",
+      "unitText": "km/s",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "He+ Vx B-fld",
+            "Index": "1"
+          },
+          {
+            "Name": "He+ Vy B-fld",
+            "Index": "2"
+          },
+          {
+            "Name": "He+ Vz B-fld",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "He+ Ion Temperature",
+      "description": "He+ Ion Temperature, Parallel and Perendicular to the Magnetic Field, available before 01-Oct-1996. Direction of magnetic field obtained from onboard values. See moments_lim for energy, spin angle, and polar angle calculation limits.",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "He+ T-para",
+            "Index": "1"
+          },
+          {
+            "Name": "He+ T-perp",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "He+ Flux",
+      "description": "He+ Energy Spectrogram. Flux values summed or averaged over spin and polar angles. See spect_lim for sum/avg limits, see sum_avg to determine which one was used.",
+      "unitText": "eV/[cm^2*s*sr*eV]",
+      "minValue": "0.0",
+      "maxValue": "1.0E21",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "31",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "He+ Flux",
+      "description": "He+ Spin Angle Spectrogram. Only available before 01-Oct-1996. Flux values summed or averaged over energy and polar angle. See spect_lim for for sum/avg limits, see sum_avg to determine which one was used.",
+      "unitText": "eV/[cm^2*s*sr*eV]",
+      "minValue": "0.0",
+      "maxValue": "1.0E21",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "He+ Flux",
+      "description": "He+ Polar Angle Spectrogram. Only available before 01-Oct-1996. Flux values summed or averaged over energy and polar angle. See spect_lim for sum/avg limits, see sum_avg to determine which one was used",
+      "unitText": "eV/[cm^2*s*sr*eV]",
+      "minValue": "0.0",
+      "maxValue": "1.0E21",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "7",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TIDE Instrument Status",
+      "description": "TIDE Instrument Status (0-off,1-on,2-standby,3-mirrors stepped). Details: 0 - TIDE not operational or data missing, 1 - TIDE fully operational, 2 - TIDE MCP high voltages lowered for passage through radiation belt, 3 - TIDE mirrors stepped down due to high counts, calibration applied to correct counts.",
+      "minValue": "0",
+      "maxValue": "3",
+      "defaultValue": "255"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PSI Instrument Status",
+      "description": "PSI Instrument Status (0-off,1-on,2-standby). Details: 0 - PSI not operation or data missing, 1 - PSI fully operational, 2 - PSI on but keeper not ignited.",
+      "minValue": "0",
+      "maxValue": "2",
+      "defaultValue": "255"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Potential",
+      "description": "Spacecraft Potential: the spacecraft potential is usually taken from the EFI K0 CDF, otherwise it is a constant. The ISTP TIDE CDFs have a +2.0 volt adjustment.",
+      "unitText": "Volts",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Ram Spin Angle",
+      "description": "Spacecraft Ram Spin Angle: The spacecraft spin angle corresponding to the position of the projection of the spacecraft velocity vector onto the spin plane (the spacecraft x-y plane).",
+      "unitText": "Deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Ram Polar Angle",
+      "description": "Spacecraft Ram Polar Angle: The angle measured from the spacecraft z axis to the spacecraft velocity vector.",
+      "unitText": "Deg",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-Field Azimuth",
+      "description": "The azimuth of the projection of the magnetic field in the spacecraft coordinates, measured in the spacecraft x-y plane and from the spacecraft x axis.",
+      "unitText": "Deg",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B-Field Elevation",
+      "description": "The elevation angle of the Magnetic Field measured from the spacecraft x-y coordinate plane.",
+      "unitText": "Deg",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Obs.Energy",
+      "description": "Particle Observed Energy at the center of each flux bin: the values are fixed and used for energy flux spectrogram plotting. The values are: 0.36, 0.46, 0.55, 0.73, 0.91, 1.18, 1.46, 1.91, 2.36, 3.00, 3.73, 4.73, 5.91, 7.46, 9.37, 11.73, 14.83, 18.66, 23.48, 29.58, 37.30, 47.00, 59.10, 74.30, 93.60, 117.80, 148.35, 186.80, 235.20, 296.00, 373.00",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "31",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Lower Energy",
+      "description": "Lower Observed Particle Energy bin boundary: the values are fixed and used for energy flux spectrogram plotting. The values are: 0.31, 0.41, 0.50, 0.64, 0.82, 1.04, 1.32, 1.68, 2.14, 2.68, 3.36, 4.23, 5.32, 6.68, 8.42, 10.55, 13.28, 16.74, 21.07, 26.53, 33.44, 42.15, 53.05, 66.70, 83.95, 105.70, 133.08, 167.58, 211.00, 265.60, 334.50",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "31",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Upper Energy",
+      "description": "Upper Observed Particle Energy bin boundary: the values are fixed and used for energy flux spectrogram plotting. The values are: 0.41, 0.50, 0.64, 0.82, 1.04, 1.32, 1.68, 2.14, 2.68, 3.36, 4.23, 5.32, 6.68, 8.42, 10.55, 13.28, 16.74, 21.07, 26.53, 33.44, 42.15, 53.05, 66.70, 83.95, 105.70, 133.08, 167.58, 211.00, 265.60, 334.50, 411.50",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "31",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Angle",
+      "description": "Spin Angle at the center of each flux bin: the values are fixed and used for spin angle flux spectrogram plotting. The values are: 5.625, 16.875, 28.125, 41.375, 50.625, 61.875, 73.125, 84.375, 95.625, 106.875, 118.125, 129.375, 140.625, 151.875, 163.125, 174.375, 185.625, 196.875, 208.125, 219.375, 230.625, 241.875, 253.125, 264.375, 275.625, 286.875, 298.125, 309.375, 320.625, 331.875, 343.125, 354.375",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Lower Spin Angle",
+      "description": "Lower Spin Angle bin boundary: the values are fixed and used for spin angle flux spectrogram plotting. The values are: 0.00, 11.25, 22.50, 37.75, 45.00, 56.25, 67.50, 78.75, 90.00, 101.25, 112.50, 123.75, 135.00, 146.25, 157.50, 168.75, 180.00, 191.25, 202.50, 213.75, 225.00, 237.25, 248.50, 259.75, 270.00, 281.25, 292.50, 303.75, 315.00, 326.25, 337.50, 348.75",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Upper Spin Angle",
+      "description": "Upper Spin Angle bin boundary: the values are fixed and used for spin angle flux spectrogram plotting. The values are: 11.25, 22.50, 37.75, 45.00, 56.25, 67.50, 78.75, 90.00, 101.25, 112.50, 123.75, 135.00, 146.25, 157.50, 168.75, 180.00, 191.25, 202.50, 213.75, 225.00, 237.25, 248.50, 259.75, 270.00, 281.25, 292.50, 303.75, 315.00, 326.25, 337.50, 348.75, 360.00",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Polar Angle",
+      "description": "Polar Angle at the center of each flux bin: the values are fixed and used for polar angle flux spectrogram plotting. The values are: 11.25, 37.75, 56.25, 78.75, 101.25, 123.75, 146.25",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "7",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Lower Polar Angle",
+      "description": "Lower Polar Angle bin boundary: the values are fixed and used for polar angle flux spectrogram plotting. The values are: 0.0, 22.5, 45.0, 67.5, 90.0, 112.5, 135.0",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "7",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Upper Polar Angle",
+      "description": "Upper Polar Angle bin boundary: the values are fixed and used for polar angle flux spectrogram plotting. The values are: 22.5, 45.0, 67.5, 90.0, 112.5, 135.0, 157.5",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "7",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spins Averaged",
+      "description": "Spins Averaged: the number of spacecraft spins over which the data is averaged for each time period. For ISTP TIDE CDFs, no spin averaging is used, spin_avg=1.",
+      "minValue": "1",
+      "maxValue": "300",
+      "defaultValue": "65535"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minimum count subtracted",
+      "description": "Minimum count subtracted. If sub_min = 1, the minimum count in each spin of data was subtracted as a means of reducing the noise level. If sub_min = 0, no minimum count subtraction was done.",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "255"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "spectrogram count option",
+      "description": "Spectrogram count option: Three options for plotting counts in spectrograms. The counts plotted in the spectrograms can be the sum (1), the average (2), or the maximum (3) of the data whose ranges are specified in spect_lim. For the ISTP TIDE H1 and H0 CDFs, the counts are averaged.",
+      "minValue": "1",
+      "maxValue": "3",
+      "defaultValue": "255"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "source of b-field data",
+      "description": "Source of b-field data: The b-field data (mag_az and mag_el) can either be from TIDE telemetry (0) or from MFE high time resolution data (1). For ISTP TIDE CDFs, bfld_source=0.",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "255"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "moments calculation limits",
+      "description": "Moments calculation limits: The range of the energy, spin, and polar angles used to calculate moments. There is a minimum and maximum value for energy (eV) and each angle (degrees). For the ISTP TIDE CDFs, the full ranges are used.",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "spectrogram summing limits",
+      "description": "Spectrogram summing/averaging limits: The range of the energy, spin, and polar angles used to create the spectrogram averages. There is a minimum and maximum value for energy (eV) and each angle (degrees). For the ISTP TIDE CDFs, the full ranges are used.",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EFI spacecraft potential offset",
+      "description": "EFI spacecraft potential offset: Correction value added to each EFI spacecraft potential value. +2.0 was used in the ISPT TIDE H1 and H0 CDFs.",
+      "unitText": "Volts",
+      "minValue": "0",
+      "maxValue": "30",
+      "defaultValue": "0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mask correction factor",
+      "description": "Mask correction factor: A background mask, generated by averaging data with signal excluded, is subtracted from each six second set of data. Each Mask count is multiplied by the Correction factor in order to avoid over- or under-correction for the mask. In the the TIDE H1 and H0 CDF files, a correction of 0.8 is used.",
+      "minValue": "0",
+      "maxValue": "10",
+      "defaultValue": "1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Wind/3DP/SST_Open/WIND_3DP_SO",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Wind/3DP/SST_Open/WIND_3DP_SO",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "WIND 3DP SST-SO Protons (50 keV - 5 MeV) Alpha particles (6.7 MeV)",
+  "sdDatePublished": "2022-09-01",
+  "description": "This data set contains three-dimensionnal distribution functions of protons  (50 keV - 5 MeV) and  alpha particles (6.7 MeV), provided by WIND 3-DP Solid State Telescope Open, not corrected for calibration factors and are given in raw counts.\nThus they correspond to a Level 1 data processing on ground, and they can be transformed into physical units by multiplying them by a calibration factor and using the appropriate geometric factor.",
+  "abstract": "This data set contains three-dimensionnal distribution functions of protons  (50 keV - 5 MeV) and  alpha particles (6.7 MeV), provided by WIND 3-DP Solid State Telescope Open, not corrected for calibration factors and are given in raw counts.\nThus they correspond to a Level 1 data processing on ground, and they can be transformed into physical units by multiplying them by a calibration factor and using the appropriate geometric factor.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:WIND_3DP_SO",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "WIND 3DP SST Open   Proton Energy-Angle Distributions",
+      "description": "WIND 3DP SST Foil Open   Proton Energy-Angle Distributions"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "WIND 3DP SST Open   Alpha Energy-Angle Distributions",
+      "description": "WIND 3DP SST Foil Open   Alpha  Energy-Angle Distributions"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

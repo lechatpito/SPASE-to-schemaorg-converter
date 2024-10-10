@@ -1,0 +1,73 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DEMETER/IMSC/DMT_N1_1136",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DEMETER/IMSC/DMT_N1_1136",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "DMT_N1_1136 : IMSC - Waveform of the VLF Magnetic Field (1 component)",
+  "sdDatePublished": "2021-11-02",
+  "description": "This data set contains DEMETER IMSC (magnetic field experiment) - Waveform of the VLF Magnetic Field (3 components, frequency range 15Hz - 1kHz)",
+  "abstract": "This data set contains DEMETER IMSC (magnetic field experiment) - Waveform of the VLF Magnetic Field (3 components, frequency range 15Hz - 1kHz)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DMT_N1_1136",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "VLF Magnetic Field B1",
+      "description": "VLF magnetic field component B1 in sensor coordinate system",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VLF Magnetic Field B2",
+      "description": "VLF magnetic field component B2 in sensor coordinate system",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VLF Magnetic Field B3",
+      "description": "VLF magnetic field component B3 in sensor coordinate system",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

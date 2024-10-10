@@ -1,0 +1,92 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Cluster-2/WHISPER/CLU_C2_WHI_HOUSE_KEEPING",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Cluster-2/WHISPER/CLU_C2_WHI_HOUSE_KEEPING",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "CLU2 WHISPER Information about pulse emission under sounding mode",
+  "sdDatePublished": "2022-02-22",
+  "description": "The WHISPER housekeeping datasets contain information about pulse emission used for the WHISPER sounding on Cluster-2. \n\n    Sounding Pulse time tag \n    Frequency value (kHz) of the emitted sinusoidal wave train \n    Peak-to-peak amplitude of the emitted pulse (V) \n    Duration of the emission (ms) \n    Confidence flag which shows the instantaneous status of the WHISPER sounder : \n        0 : Sounder OFF \n        1 : Sounder ON",
+  "abstract": "The WHISPER housekeeping datasets contain information about pulse emission used for the WHISPER sounding on Cluster-2. \n\n    Sounding Pulse time tag \n    Frequency value (kHz) of the emitted sinusoidal wave train \n    Peak-to-peak amplitude of the emitted pulse (V) \n    Duration of the emission (ms) \n    Confidence flag which shows the instantaneous status of the WHISPER sounder : \n        0 : Sounder OFF \n        1 : Sounder ON",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CLU_C2_WHI_HOUSE_KEEPING",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 2 WHISPER Sounding mode pulse emission information",
+      "description": "Cluster 2 WHISPER information about pulse emission used for the WHISPER sounding"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

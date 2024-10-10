@@ -1,0 +1,45 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RHESSI/HESSI/EVENTLIST",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RHESSI/HESSI/EVENTLIST",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "RHESSI Flare List",
+  "sdDatePublished": "2020-07-07",
+  "description": "RHESSI X-ray-based flare list, current to ~2 days",
+  "abstract": "RHESSI X-ray-based flare list, current to ~2 days",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun.Chromosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://hesperia.gsfc.nasa.gov/hessidata/dbase/hessi_flare_list.txt",
+      "name": "RHESSI site at GSFC/LASP",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

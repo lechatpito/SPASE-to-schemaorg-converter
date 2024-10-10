@@ -1,0 +1,182 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/Ephemeris/so-orb-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/Ephemeris/so-orb-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SolarOrbiter - Ephemeris - orbit sun",
+  "sdDatePublished": "2024-05-22",
+  "description": "Calculated at IRAP using SPICE kernels",
+  "abstract": "Calculated at IRAP using SPICE kernels",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hee",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "so_xyz_hee(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "so_xyz_hee(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "so_xyz_hee(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_heeq",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "so_xyz_heeq(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "so_xyz_heeq(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "so_xyz_heeq(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hci",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "so_xyz_hci(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "so_xyz_hci(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "so_xyz_hci(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_iau_sun",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "so_xyz_iausun(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "so_xyz_iausun(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "so_xyz_iausun(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance solo-sun",
+      "unitText": "AU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon iau_sun",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat iau_sun",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon hci",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat hci",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon hee",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat hee",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "so_orbit_num"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

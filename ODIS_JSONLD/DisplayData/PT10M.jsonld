@@ -1,0 +1,55 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/YNAO/H-ALPHA/PT10M",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/YNAO/H-ALPHA/PT10M",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "YNAO H-alpha Solar Images",
+  "sdDatePublished": "2020-07-07",
+  "description": "H-alpha solar imagery from Yunnan Astronomical Observatory (YNAO) of Chinese Academy of Sciences",
+  "abstract": "H-alpha solar imagery from Yunnan Astronomical Observatory (YNAO) of Chinese Academy of Sciences",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Photosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www1.ynao.ac.cn/en/index.html",
+      "name": "YNAO site",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.virtualsolar.org/",
+      "name": "Virtual Solar Observatory",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

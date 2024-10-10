@@ -1,0 +1,102 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/ephemeris/mes-orb-orb",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/ephemeris/mes-orb-orb",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MESSENGER - Ephemeris - orbit mercury",
+  "sdDatePublished": "2016-04-04",
+  "description": "MESSENGER orbital data during orbital phase at Mercury. Orbital data are calculated based on SPICE kernels",
+  "abstract": "MESSENGER orbital data during orbital phase at Mercury. Orbital data are calculated based on SPICE kernels",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mercury"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_mso",
+      "description": "MESSENGER trajectory in MSO coordinates",
+      "unitText": "Rme",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mes_xyz_orbmso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mes_xyz_orbmso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mes_xyz_orbmso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_msm",
+      "description": "MESSENGER trajectory in MSM coordinates",
+      "unitText": "Rme",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mes_xyz_orbmsm(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mes_xyz_orbmsm(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mes_xyz_orbmsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance mess-mercury",
+      "unitText": "Rm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mess_orbit_num"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

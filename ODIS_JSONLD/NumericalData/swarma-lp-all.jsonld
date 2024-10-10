@@ -1,0 +1,57 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SWARM-A/LP/swarma-lp-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SWARM-A/LP/swarma-lp-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Swarm-A - EFI / LP - lp extended dataset",
+  "sdDatePublished": "2024-05-20",
+  "description": "The extended Swarm EFI LP data from the probes in the so-called \u201charmonic \nsubmode\u201d which contributes with more than 99% to the normal LP science data. They include\n \n* estimates of the electron density, using the ion current\n* estimates of the electron temperature and spacecraft potential  from both probes\n* flags of informative character or indicating quality issues of data\n* estimates of the electron temperature using a combination of the results from both probes, applying a modified, potentially improved blending algorithm compared to the present L1b algorithm \n\nThe data are intended for users with some experience and understanding of Langmuir probe data.\n ",
+  "abstract": "The extended Swarm EFI LP data from the probes in the so-called \u201charmonic \nsubmode\u201d which contributes with more than 99% to the normal LP science data. They include\n \n* estimates of the electron density, using the ion current\n* estimates of the electron temperature and spacecraft potential  from both probes\n* flags of informative character or indicating quality issues of data\n* estimates of the electron temperature using a combination of the results from both probes, applying a modified, potentially improved blending algorithm compared to the present L1b algorithm \n\nThe data are intended for users with some experience and understanding of Langmuir probe data.\n ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density e-",
+      "description": "Plasma density from ion current",
+      "unitText": "cm**-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature e-",
+      "description": "Electron temperature, blended value",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot",
+      "description": "Spacecraft potential, blended value",
+      "unitText": "V"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

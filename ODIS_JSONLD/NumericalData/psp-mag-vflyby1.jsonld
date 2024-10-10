@@ -1,0 +1,75 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/MAG/psp-mag-vflyby1",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/MAG/psp-mag-vflyby1",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP - FIELDS MAG - Venus flybys - Venus flyby #1",
+  "sdDatePublished": "2021-07-20",
+  "description": "Venus flyby #1 Magnetometer data.\n         ",
+  "abstract": "Venus flyby #1 Magnetometer data.\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_vso",
+      "description": "Magnetic field vector in VSO Cartesian coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "psp_vflyby1_b_vso(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "psp_vflyby1_b_vso(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "psp_vflyby1_b_vso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude ",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

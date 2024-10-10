@@ -1,0 +1,98 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/THEMIS/D/FGM/thd-fgm-s",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/THEMIS/D/FGM/thd-fgm-s",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "THEMIS-D - FGM - 3 sec (spin)",
+  "sdDatePublished": "2024-05-23",
+  "description": "Fluxgate Magnetometer (FGM) data - Level 2 - FGS (spin-resolution) magnetic field",
+  "abstract": "Fluxgate Magnetometer (FGM) data - Level 2 - FGS (spin-resolution) magnetic field",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "description": "Magnetic Field",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "thd_bs(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "thd_bs(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "thd_bs(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "description": "Magnetic Field",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "thd_bs_gsm(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "thd_bs_gsm(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "thd_bs_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

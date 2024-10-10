@@ -1,0 +1,63 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-rpws-qtn",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-rpws-qtn",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - RPWS - qtn",
+  "sdDatePublished": "2014-11-17",
+  "description": "The Cassini Radio and Plasma Wave Science (RPWS) Quasi Thermal Noise (QTN) data set contains thermal plasma parameters derived by QTN spectroscopy analysis applied on data acquired with the High Frequency Receiver (HFR) during the perikrones of the entire mission.          \n            Cassini RPWS QTN data are taken from the LESIA-Observatoire Paris Meudon.\n \n            The following parameters are available: \n            * total electron number density (in cm-3)\n            * core electron temperature (in eV)\n            * measurement uncertainty for total electron number density\n            * measurement uncertainty core electron temperature\n            * quality flag that were acquired by QTN analysis on RPWS/HFR Spectra",
+  "abstract": "The Cassini Radio and Plasma Wave Science (RPWS) Quasi Thermal Noise (QTN) data set contains thermal plasma parameters derived by QTN spectroscopy analysis applied on data acquired with the High Frequency Receiver (HFR) during the perikrones of the entire mission.          \n            Cassini RPWS QTN data are taken from the LESIA-Observatoire Paris Meudon.\n \n            The following parameters are available: \n            * total electron number density (in cm-3)\n            * core electron temperature (in eV)\n            * measurement uncertainty for total electron number density\n            * measurement uncertainty core electron temperature\n            * quality flag that were acquired by QTN analysis on RPWS/HFR Spectra",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density e-",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature e-",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density e- : error",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature e- : error",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

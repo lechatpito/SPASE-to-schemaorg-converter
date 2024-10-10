@@ -1,0 +1,103 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DEMETER/IAP/DMT_N1_1140",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DEMETER/IAP/DMT_N1_1140",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "DMT_N1_1140 : IAP - Characteristics of Low Energy Ions in Survey Mode",
+  "sdDatePublished": "2021-11-02",
+  "description": "This data set contains DEMETER IAP (thermal plasma analyzer) Characteristics of Low Energy Ions in Survey Mode",
+  "abstract": "This data set contains DEMETER IAP (thermal plasma analyzer) Characteristics of Low Energy Ions in Survey Mode",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DMT_N1_1140",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "H(+) Density in Burst Mode",
+      "description": "H(+) Density in Survey mode",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "He(+) density in Burst Mode",
+      "description": "He(+) density in Survey Mode",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "O(+) density in Burst Mode",
+      "description": "O(+) density in Survey Mode",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ions temperature in Burst Mode",
+      "description": "Ions temperature in Survey Mode",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ions velocity along the satellite Oz axis in Burst Mode",
+      "description": "Ions velocity along the satellite Oz axis in Survey Mode",
+      "unitText": "m s^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Theta angle in Burst Mode",
+      "description": "Angle between the ion velocity and -Oz axis of satellite in Survey Mode",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Phi angle  in Burst Mode",
+      "description": "Angle between projection of the ion velocity on the plane xOy and Ox axis of satellite",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Satellite potential in Burst Mode",
+      "description": "Satellite potential in Survey Mode",
+      "unitText": "V"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

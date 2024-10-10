@@ -1,0 +1,142 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/Ephemeris/ulys-orb-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/Ephemeris/ulys-orb-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Ulysses - Ephemeris - orbit sun",
+  "sdDatePublished": "2019-03-29",
+  "description": "Ulysses spacecraft positions data product ",
+  "abstract": "Ulysses spacecraft positions data product ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hae",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_ulys_hae(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_ulys_hae(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_ulys_hae(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_iau_sun",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_ulys_iausun(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_ulys_iausun(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_ulys_iausun(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hee",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_ulys_hee(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_ulys_hee(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_ulys_hee(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance ulys-sun",
+      "unitText": "AU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon iau_sun",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat iau_sun",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon hee",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat hee",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

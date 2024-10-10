@@ -1,0 +1,191 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/Ephemeris/ace-orb-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/Ephemeris/ace-orb-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ACE - Ephemeris - orbit L1",
+  "sdDatePublished": "2024-05-19",
+  "description": "ACE orbits the L1 libration point which is a point of Earth-Sun gravitational equilibrium about 1.5 million km from \n                Earth and 148.5 million km from the Sun",
+  "abstract": "ACE orbits the L1 libration point which is a point of Earth-Sun gravitational equilibrium about 1.5 million km from \n                Earth and 148.5 million km from the Sun",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gse",
+      "description": "Spacecraft position in GSE",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "ace_xyz_gse(0)",
+            "ValidMin": "-1594535.0",
+            "ValidMax": "1594535.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "ace_xyz_gse(1)",
+            "ValidMin": "-1594535.0",
+            "ValidMax": "1594535.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "ace_xyz_gse(2)",
+            "ValidMin": "-1594535.0",
+            "ValidMax": "1594535.0",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gsm",
+      "description": "Spacecraft position in GSM",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "ace_xyz_gsm(0)",
+            "ValidMin": "-1594535.0",
+            "ValidMax": "1594535.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "ace_xyz_gsm(1)",
+            "ValidMin": "-1594535.0",
+            "ValidMax": "1594535.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "ace_xyz_gsm(2)",
+            "ValidMin": "-1594535.0",
+            "ValidMax": "1594535.0",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hci",
+      "description": "Spacecraft position in HCI",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "ace_xyz_hci(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "ace_xyz_hci(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "ace_xyz_hci(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hee",
+      "description": "Spacecraft position in HEE",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "ace_xyz_hee(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "ace_xyz_hee(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "ace_xyz_hee(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance ace-earth",
+      "unitText": "Re"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance ace-sun",
+      "unitText": "AU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon hee",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat hee",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

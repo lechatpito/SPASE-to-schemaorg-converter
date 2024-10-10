@@ -1,0 +1,165 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/AUXILLIARY/ros-aux-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/AUXILLIARY/ros-aux-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Rosetta - AUX - Orbit/Attitude",
+  "sdDatePublished": "2017-07-18",
+  "description": "Orbit/Attitude",
+  "abstract": "Orbit/Attitude",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "C-G orbit ECLIPJ2000",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "ros_cg_xyz(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "ros_cg_xyz(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "ros_cg_xyz(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "C-G velocity ECLIPJ2000",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "ros_cg_v(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "ros_cg_v(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "ros_cg_v(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rosetta orbit ECLIPJ2000",
+      "unitText": "km",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "ros_sc_xyz(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "ros_sc_xyz(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "ros_sc_xyz(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rosetta velocity ECLIPJ2000",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "ros_sc_v(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "ros_sc_v(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "ros_sc_v(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sun aspect angle",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Comet aspect angle",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

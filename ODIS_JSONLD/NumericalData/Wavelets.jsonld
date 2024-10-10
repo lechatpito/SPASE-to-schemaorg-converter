@@ -1,0 +1,55 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/STEREO-A/SECCHI/Wavelets",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/STEREO-A/SECCHI/Wavelets",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO SECCHI EUVI Wsvelet-processed images",
+  "sdDatePublished": "2022-02-24",
+  "description": "The EUVI images (all four wavelengths) are processed via a wavelet-based multi-scale algorithm to remove the zeroth order component (primarily stray light). The algorithm is tuned to enhance the off-limb emission in the images. The resulting images are stored as both FITS (using the original header) and PNGs and can be ingested by the SECCHI Solarsoft IDL routines for analysis",
+  "abstract": "The EUVI images (all four wavelengths) are processed via a wavelet-based multi-scale algorithm to remove the zeroth order component (primarily stray light). The algorithm is tuned to enhance the off-limb emission in the images. The resulting images are stored as both FITS (using the original header) and PNGs and can be ingested by the SECCHI Solarsoft IDL routines for analysis",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.TransitionRegion"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://stereo-ssc.nascom.nasa.gov/data/ins_data/secchi/wavelets/",
+      "name": "STEREO Science Center",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://solar.jhuapl.edu/Data-Products/EUVI-Wavelets.php",
+      "name": "APL SECCHI Archive",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

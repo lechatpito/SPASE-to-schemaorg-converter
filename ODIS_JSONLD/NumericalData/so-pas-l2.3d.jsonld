@@ -1,0 +1,74 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/PAS/so-pas-l2.3d",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/PAS/so-pas-l2.3d",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SolarOrbiter - SWA/PAS - L2 - 3D : distribution function",
+  "sdDatePublished": "2024-05-23",
+  "description": "Solar Orbiter Proton Analyser Sensor L2 data - 3D : distribution function",
+  "abstract": "Solar Orbiter Proton Analyser Sensor L2 data - 3D : distribution function",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "quality factor"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "energy : first"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "energy : number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elevation : first"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elevation : number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fdis : sum on elev; azim/energy : 2D",
+      "unitText": "s3 m^-6"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fdis : sum on azim; elev/energy : 2D",
+      "unitText": "s3 m^-6"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fdis : sum on energy; azim/elev : 2D",
+      "unitText": "s3 m^-6"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

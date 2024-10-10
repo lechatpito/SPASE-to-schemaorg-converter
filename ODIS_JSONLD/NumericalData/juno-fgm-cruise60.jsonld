@@ -1,0 +1,72 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/FGM/juno-fgm-cruise60",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/FGM/juno-fgm-cruise60",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Juno - FGM - cruise - 1 min",
+  "sdDatePublished": "2023-03-09",
+  "description": "Juno Magntometer (FGM) calibrated data from the Juno cruise phases.",
+  "abstract": "Juno Magntometer (FGM) calibrated data from the Juno cruise phases.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_rtn",
+      "description": "Magnetic field vector components in RTN (se) coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "juno_fgm_cruise60_rtn(0)"
+          },
+          {
+            "Name": "bt",
+            "Index": "2",
+            "ParameterKey": "juno_fgm_cruise60_rtn(1)"
+          },
+          {
+            "Name": "bn",
+            "Index": "3",
+            "ParameterKey": "juno_fgm_cruise60_rtn(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Scalar magnitude of the magnetic field in nT",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager2/LECP/vo2-lecp-ura15m",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager2/LECP/vo2-lecp-ura15m",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Voyager 2 - LECP - flyby uranus - counts",
+  "sdDatePublished": "2013-05-15",
+  "description": "Voyager_2\n                LECP - Low_Energy_Charged_Particle - Electrons\n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "abstract": "Voyager_2\n                LECP - Low_Energy_Charged_Particle - Electrons\n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Uranus"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion countrate",
+      "unitText": "counts/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "PL02",
+            "Index": "1",
+            "ParameterKey": "vo2_lecp15m_ion(0)"
+          },
+          {
+            "Name": "PL07",
+            "Index": "2",
+            "ParameterKey": "vo2_lecp15m_ion(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "electron countrate",
+      "unitText": "counts/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "EB01",
+            "Index": "1",
+            "ParameterKey": "vo2_lecp15m_elec(0)"
+          },
+          {
+            "Name": "EB05",
+            "Index": "2",
+            "ParameterKey": "vo2_lecp15m_elec(1)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

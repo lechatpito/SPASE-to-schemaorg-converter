@@ -1,0 +1,61 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ARCAD-3/TRAC/ARC_TRA_ORB",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ARCAD-3/TRAC/ARC_TRA_ORB",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ARCAD3 TRAC Magnetic Field",
+  "sdDatePublished": "2022-03-22",
+  "description": "The aim of the TRAC data set from the AUREOL-3 magnetometer is to measure the perturbations of the local geomagnetic fiels that result from the flow of Birkeland currents parallel to the field lines.\nThe data period covers the interval from November 1981 to March 1986.\nMost data were produced during the 1981-1982 time period (the 1983-1986 time period covered only several orbits).\nThe sampling rates of the TRAC outputs for various telemetry regimes are the following :\n    100 pts/s TMS4 ZAP1 10 ms \n    12.5 pts/s TMS30 ZAP2 80 ms \n    3 pts/s TMS120 ZAP3 330 ms\n    0.4 pts/s TMS960 ZAP4 2.5 s",
+  "abstract": "The aim of the TRAC data set from the AUREOL-3 magnetometer is to measure the perturbations of the local geomagnetic fiels that result from the flow of Birkeland currents parallel to the field lines.\nThe data period covers the interval from November 1981 to March 1986.\nMost data were produced during the 1981-1982 time period (the 1983-1986 time period covered only several orbits).\nThe sampling rates of the TRAC outputs for various telemetry regimes are the following :\n    100 pts/s TMS4 ZAP1 10 ms \n    12.5 pts/s TMS30 ZAP2 80 ms \n    3 pts/s TMS120 ZAP3 330 ms\n    0.4 pts/s TMS960 ZAP4 2.5 s",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ARC_TRA_ORB",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ARCAD-3 TRAC Magnetic  field",
+      "description": "ARCAD-3 TRAC Magnetic  field",
+      "unitText": "mG"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

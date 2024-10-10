@@ -1,0 +1,68 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SWARM-B/GNSS/swarmb-gps-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SWARM-B/GNSS/swarmb-gps-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Swarm-B - GNSS - tec",
+  "sdDatePublished": "2022-09-30",
+  "description": "The signals transmitted by the Global Navigation Satellite System (GNSS) satellites are delayed \nby ionospheric/plasmaspheric electrons before reaching the Swarm GNSS antenna. From the \nGNSS signal delay we can estimate slant total electron content (STEC), which is de\ufb01ned as \n\u2018integrated\u2019 electron density along the line of sight from Swarm to GNSS satellites.",
+  "abstract": "The signals transmitted by the Global Navigation Satellite System (GNSS) satellites are delayed \nby ionospheric/plasmaspheric electrons before reaching the Swarm GNSS antenna. From the \nGNSS signal delay we can estimate slant total electron content (STEC), which is de\ufb01ned as \n\u2018integrated\u2019 electron density along the line of sight from Swarm to GNSS satellites.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "stec",
+      "description": "Absolute slant TEC  from largest elevation GNSS satellite",
+      "unitText": "TECU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vtec",
+      "description": "Absolute vertical TEC  from largest elevation GNSS satellite",
+      "unitText": "TECU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "relative stec",
+      "description": "Relative slant TEC",
+      "unitText": "TECU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "gps elevation angle",
+      "description": "gps elevation angle",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "gps number",
+      "description": "gps number"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

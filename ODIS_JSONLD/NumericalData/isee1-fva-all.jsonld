@@ -1,0 +1,91 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ISEE/ISEE1/FVA/isee1-fva-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ISEE/ISEE1/FVA/isee1-fva-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ISEE 1 - FVA - energetic particles fluxes",
+  "sdDatePublished": "2012-03-06",
+  "description": "Reconstructed in IRAP from CDAWeb CDROM and IAS software.",
+  "abstract": "Reconstructed in IRAP from CDAWeb CDROM and IAS software.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux e-",
+      "unitText": "arbitrary",
+      "defaultValue": "-1.e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "2 keV",
+            "Index": "1",
+            "ParameterKey": "isee1_fvae(0)"
+          },
+          {
+            "Name": "6 keV",
+            "Index": "2",
+            "ParameterKey": "isee1_fvae(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux p+",
+      "unitText": "arbitrary",
+      "defaultValue": "-1.e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "2 keV",
+            "Index": "1",
+            "ParameterKey": "isee1_fvap(0)"
+          },
+          {
+            "Name": "6 keV",
+            "Index": "2",
+            "ParameterKey": "isee1_fvap(1)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NIPR/Iceland/TJO/RIO/PT05S_cna_bin",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NIPR/Iceland/TJO/RIO/PT05S_cna_bin",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "CNA measured at 0.5sec intervals with the broad-beam riometer at Tjornes, Iceland.",
+  "sdDatePublished": "2011-04-01",
+  "description": "Cosmic Noise Absorption (CNA) measured at 0.5sec intervals with the broad-beam riometer at Husafell, Iceland. The data is stored together with the magnetic field from the fluxgate magnetometer and the magnetic field from the induction magnetometer.",
+  "abstract": "Cosmic Noise Absorption (CNA) measured at 0.5sec intervals with the broad-beam riometer at Husafell, Iceland. The data is stored together with the magnetic field from the fluxgate magnetometer and the magnetic field from the induction magnetometer.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earch Interaction Ionosphere/Magnetosphere Dynamics Aurorae",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://scidbase.nipr.ac.jp/modules/metadata/index.php?content_id=115",
+      "name": "Conjugate Observation at Iceland",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://polaris.nipr.ac.jp/~aurora/uapm/ConjugateObsTop.html",
+      "name": "Conjugate Observation between Syowa Station and Iceland",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Universal Time",
+      "unitText": "second"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cosmic Noise Absorption",
+      "description": "Cosmic Noise Absorption measured with the broad-beam riometer",
+      "unitText": "decibel",
+      "cadence": "PT0.5S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/UKS/ELX/uks-elx-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/UKS/ELX/uks-elx-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "AMPTE - UKS - ELX - electrons",
+  "sdDatePublished": "2020-01-27",
+  "description": "    \n             Validity flag: \n             * unvalidated  = 1\n             * validated = 0\n             * requires reprocessing = 2\n             * bad data, cannot reprocess = 3\n             * may contain noise or outliers = 4\n             * systematic instrumental effects = 5\n             * PI quality flags) = 6\n             * fill value = 7\n         ",
+  "abstract": "    \n             Validity flag: \n             * unvalidated  = 1\n             * validated = 0\n             * requires reprocessing = 2\n             * bad data, cannot reprocess = 3\n             * may contain noise or outliers = 4\n             * systematic instrumental effects = 5\n             * PI quality flags) = 6\n             * fill value = 7\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- density",
+      "description": "\n             Electron density\n         ",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- number flux",
+      "description": "\n               Electron number flux\n           ",
+      "unitText": "s-1.m-2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- heat flux",
+      "description": "\n               Electron heat flux\n           ",
+      "unitText": "W/m2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- press_para",
+      "description": "\n               Parallel pressure\n           ",
+      "unitText": "Pa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- press_perp",
+      "description": "\n               Perpendicular pressure\n           ",
+      "unitText": "Pa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- dist func",
+      "description": "\n               Velocity space density\n           ",
+      "unitText": "s^3/km^6"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "table nb",
+      "description": "\n               Number of corresponding energy table in the calculation of velocity space density\n           "
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flag",
+      "description": "\n              Validity flag: \n              * unvalidated  = 1\n              * validated = 0\n              * requires reprocessing = 2\n              * bad data, cannot reprocess = 3\n              * may contain noise or outliers = 4\n              * systematic instrumental effects = 5\n              * PI quality flags) = 6\n              * fill value = 7\n          "
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

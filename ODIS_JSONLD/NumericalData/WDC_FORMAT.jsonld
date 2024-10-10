@@ -1,0 +1,119 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/GBO/NumericalData/Zaymishche/Magnetometer/PT1H/WDC_FORMAT",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/GBO/NumericalData/Zaymishche/Magnetometer/PT1H/WDC_FORMAT",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Zaymishche Magnetometer 1-hr Data in WDC Format",
+  "sdDatePublished": "2019-05-05",
+  "description": "Zaymishche Magnetometer data, 1-hr time resoluion, in WDC format. Magnetic Field Vector Element List: DHZ. Note that the list of magnetic field elements that appear in the data set may change over the course of time. For instance, many stations have shifted from DHZ to the XYZ representation of the magnetic field. The time history listed below summarizes changes in element content. A description of the WDC Data Exchange Format for 1-hr magnetic field data is included at the end of this data product description.",
+  "abstract": "Zaymishche Magnetometer data, 1-hr time resoluion, in WDC format. Magnetic Field Vector Element List: DHZ. Note that the list of magnetic field elements that appear in the data set may change over the course of time. For instance, many stations have shifted from DHZ to the XYZ representation of the magnetic field. The time history listed below summarizes changes in element content. A description of the WDC Data Exchange Format for 1-hr magnetic field data is included at the end of this data product description.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "keywords": [
+    "ground station",
+    "magnetometer",
+    "magnetic field",
+    "magnetogram",
+    "Zaymishche",
+    "WDC Station Code: KZN",
+    "1-hour",
+    "WDC Format"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftp://ftp.nmh.ac.uk/wdc/obsdata/hourval/single_year/",
+      "name": "The WDC Geomagnetic Data Master Catalog Repository",
+      "description": "The Geomagnetic Data Master Catalog hosted by the British Geological Survey, World Data Center for Geomagnetism, Edinburgh."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Time is expressed using a five column format with the following order: year, month, day, hour, and minute, each stored in interger format. The time columns are the first five columns (1,2,3,4,5) in the flat file.",
+      "cadence": "PT1H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "5",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1"
+          },
+          {
+            "Name": "Month",
+            "Index": "2"
+          },
+          {
+            "Name": "Day",
+            "Index": "3"
+          },
+          {
+            "Name": "Hour",
+            "Index": "4"
+          },
+          {
+            "Name": "Minute",
+            "Index": "5"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Declination",
+      "description": "Zaymishche Magnetic Field Vector Declination Angle",
+      "unitText": "Degree",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "9999",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Horzontal Magnetic Field Magnitude",
+      "description": "Zaymishche Horzontal Magnetic Field Magnitude",
+      "unitText": "nT",
+      "minValue": "0",
+      "maxValue": "70000",
+      "defaultValue": "9999",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vertical Magnetic Field Component",
+      "description": "Zaymishche Vertical Magnetic Field Component, positive upward in the Southern hemisphere, positive downward in the Northern hemisphere",
+      "unitText": "nT",
+      "minValue": "-70000",
+      "maxValue": "70000",
+      "defaultValue": "9999",
+      "cadence": "PT1H"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

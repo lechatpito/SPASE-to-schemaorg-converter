@@ -1,0 +1,68 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ISEE3/ICE/3D_Radio_Sources/ISEE3_ICE_RADIO_3D_SOURCES",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ISEE3/ICE/3D_Radio_Sources/ISEE3_ICE_RADIO_3D_SOURCES",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ISEE3/ICE Radio Astronomy : 3-D Radio Sources (30 - 1980 kHz)",
+  "sdDatePublished": "2022-02-04",
+  "description": "This data set contains the power spectral density from ISEE3 ICE instrument (S and Z receivers, 30 - 1980 kHz frequency range)",
+  "abstract": "This data set contains the power spectral density from ISEE3 ICE instrument (S and Z receivers, 30 - 1980 kHz frequency range)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ISEE3_ICE_RADIO_3D_SOURCES",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE3/ICE  S receiver measurements",
+      "description": "ISEE3/ICE Radio Astronomy : 3-D Radio Sources (30 - 1980 kHz)  S receiver measurements",
+      "unitText": "uV^2 Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE3/ICE  Z receiver measurements",
+      "description": "ISEE3/ICE Radio Astronomy : 3-D Radio Sources (30 - 1980 kHz)  Z receiver measurements",
+      "unitText": "uV^2 Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE3/ICE Dephasing between S and Z signals",
+      "description": "ISEE3/ICE Dephasing between S and Z signals, in TM unit ( = 0.02 V)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

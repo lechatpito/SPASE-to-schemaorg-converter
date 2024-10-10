@@ -1,0 +1,126 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/CCE/MEPA/cce-mepa-hr",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/CCE/MEPA/cce-mepa-hr",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "AMPTE - CCE - MEPA - ion flux : 32 sectors - ION head high res.",
+  "sdDatePublished": "2020-01-30",
+  "description": "           \n         ",
+  "abstract": "           \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "h+ counts",
+      "description": "\n             Proton counts for every sector in every spin; the time given is the midpoint of each sector.\n         ",
+      "unitText": "cnts",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "29.15 keV",
+            "Index": "1",
+            "ParameterKey": "cce_mepa_hr_hct(0)"
+          },
+          {
+            "Name": "64.42 keV",
+            "Index": "2",
+            "ParameterKey": "cce_mepa_hr_hct(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ cps",
+      "description": "\n               Proton counts per second per sector for every sector in every spin; the time given is the midpoint of each sector.\n           ",
+      "unitText": "cnts/sec",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "29.15 keV",
+            "Index": "1",
+            "ParameterKey": "cce_mepa_hr_hcps(0)"
+          },
+          {
+            "Name": "64.42 keV",
+            "Index": "2",
+            "ParameterKey": "cce_mepa_hr_hcps(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ intensity",
+      "description": "\n               Proton differential intensity per sector for every sector in every spin; the time given is the midpoint of each sector.\n           ",
+      "unitText": "1/(s ster cm\u00b2 keV)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "29.15 keV",
+            "Index": "1",
+            "ParameterKey": "cce_mepa_hr_hin(0)"
+          },
+          {
+            "Name": "64.42 keV",
+            "Index": "2",
+            "ParameterKey": "cce_mepa_hr_hin(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sector",
+      "description": "\n               angular sector number (/32)\n           "
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "spin period"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

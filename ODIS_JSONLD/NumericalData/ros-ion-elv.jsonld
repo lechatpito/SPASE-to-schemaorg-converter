@@ -1,0 +1,50 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/IES/ros-ion-elv",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/IES/ros-ion-elv",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Rosetta - IES - ions - elevation spectra : countrate",
+  "sdDatePublished": "2017-03-17",
+  "description": "Ion elevation spectra : countrate summed over energies and azimuths",
+  "abstract": "Ion elevation spectra : countrate summed over energies and azimuths",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion counts",
+      "unitText": "s**-1",
+      "defaultValue": "-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "16",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

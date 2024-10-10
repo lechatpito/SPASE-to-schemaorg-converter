@@ -1,0 +1,157 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/MMS-4/Fields/SCM/MMS_SCM_4_ATT",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/MMS-4/Fields/SCM/MMS_SCM_4_ATT",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS-4 Definitive Attitude (ASCII)",
+  "sdDatePublished": "2022-07-07",
+  "description": "This dataset contains definitive attitude data.",
+  "abstract": "This dataset contains definitive attitude data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:MMS_SCM_4_ATT",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 q1 quaternion",
+      "description": "MMS-4 spacecraft   quaternion  components q1, q2, q3, q4, qc"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4  X,Y,Z rotation rate components",
+      "description": "MMS-4  X,Y,Z rotation rate components (deg/s) (instantaneous spin axis in body frame)",
+      "unitText": "\u00b0/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 w-Phase",
+      "description": "MMS-4 w-phase (Sun-to-body-X dihedral angle about rotation rate vector) (deg)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 Z-RA",
+      "description": "MMS-4  right ascension (deg) of body Z-axis",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 Z-Dec",
+      "description": "MMS-4  declination (deg) of body Z-axis",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 Z-Phase",
+      "description": "MMS-4 Z-phase (Sun-to-body-X dihedral angle about body Z-axis) (deg)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 L-RA",
+      "description": "MMS-4  right ascension (deg)  of angular momentum (L)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 L-Dec",
+      "description": "MMS-4 MMS-4  declination (deg) of angular momentum (L)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 L-Phase",
+      "description": "MMS-4 L-phase (Sun-to-body-X dihedral angle about angular momentum vector L) (deg)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 P-RA",
+      "description": "MMS-4 right ascension (deg)  of major principal axis (P)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 P-Dec",
+      "description": "MMS-4 declination (deg) of major principal axis (P)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 P-Phase",
+      "description": "MMS-4 P-phase (Sun-to-body-X dihedral angle about major principal axis P) (deg)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 Nut",
+      "description": "MMS-4 nutation angle (deg)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-4 quality flag",
+      "description": "MMS-4  quality flag: \n                      EKF=good extended Kalman filter solution with star tracker data\n                      CNV=filter not yet converged\n                      SUN=no tracker data, spin phase obtained from Sun sensor data\n                      INT=no tracker or Sun sensor data, phase interpolated from neighboring tracker data\n                      BAD=no tracker or Sun sensor data for a time span too large for interpolation"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

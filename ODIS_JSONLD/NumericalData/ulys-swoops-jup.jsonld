@@ -1,0 +1,75 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/SWOOPS/ulys-swoops-jup",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/SWOOPS/ulys-swoops-jup",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Ulysses - SWOOPS - flyby jupiter",
+  "sdDatePublished": "2012-03-06",
+  "description": "This data set contains data submitted to the Planetary Data System (PDS) by  \nthe Ulysses SWOOPS investigators, for the Ulysses Jupiter Encounter,         \n1992-01-25 to 1992-02-17 (days 25-48 inclusive).                             \n                                                                             \nEvery effort has been made to assure that the data are of the best quality   \navailable. However, the PDS and the Planetary Plasma Interactions (PPI) Node \nin particular, assume no liability for this disk or its contents. All users  \nare encouraged to verify the 'correctness' of the data prior to submitting   \nany publications or other work based on these data",
+  "abstract": "This data set contains data submitted to the Planetary Data System (PDS) by  \nthe Ulysses SWOOPS investigators, for the Ulysses Jupiter Encounter,         \n1992-01-25 to 1992-02-17 (days 25-48 inclusive).                             \n                                                                             \nEvery effort has been made to assure that the data are of the best quality   \navailable. However, the PDS and the Planetary Plasma Interactions (PPI) Node \nin particular, assume no liability for this disk or its contents. All users  \nare encouraged to verify the 'correctness' of the data prior to submitting   \nany publications or other work based on these data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density e-",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature e-",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_xyz",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "ulys_swoopsjup_vxyz(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "ulys_swoopsjup_vxyz(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "ulys_swoopsjup_vxyz(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

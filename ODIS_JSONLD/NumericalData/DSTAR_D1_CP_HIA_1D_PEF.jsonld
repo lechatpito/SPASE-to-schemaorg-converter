@@ -1,0 +1,112 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/HIA/DSTAR_D1_CP_HIA_1D_PEF",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/HIA/DSTAR_D1_CP_HIA_1D_PEF",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Double-Star 1 HIA Ion Omni-directional Fluxes",
+  "sdDatePublished": "2021-11-02",
+  "description": "This dataset contains DOUBLE STAR HIA Ion omni-directional fluxes, for spacecraft TC1. Data are in Particle Energy Flux units.",
+  "abstract": "This dataset contains DOUBLE STAR HIA Ion omni-directional fluxes, for spacecraft TC1. Data are in Particle Energy Flux units.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_D1_CP_HIA_1D_PEF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HIA operating mode",
+      "description": "Double Star 1 HIA operating mode"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HIA  telemetry Product Number",
+      "description": "Double Star 1 HIA  telemetry Product Number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HIA   MCP High-Voltage",
+      "description": "Double Star 1 HIA  MCP High-Voltage",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HIA  discriminator level",
+      "description": "Discriminator level"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HIA 1D fluxes",
+      "description": "1D Particle Energy Flux",
+      "unitText": "Kev cm^-2 s^-1 sr^-1 Kev^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HIA  energy table",
+      "description": "Energy table",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HIA delta plus energy table",
+      "description": "Delta plus energy table",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HIA delta minus energy table",
+      "description": "Delta minus energy table",
+      "unitText": "eV"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/THEMIS-D/DefinitiveEphemeris/THEMIS_AUX_THD_L1_EPHEM",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/THEMIS-D/DefinitiveEphemeris/THEMIS_AUX_THD_L1_EPHEM",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "THEMIS-D Definitive Ephemeris and Spin Attitude Corrections (CDF)",
+  "sdDatePublished": "2022-01-21",
+  "description": "This dataset contains THEMIS-D  position, velocity, attitude and sun pulse data.\nThe data are definitive  with added science attitude determination using perigee data post-processing.",
+  "abstract": "This dataset contains THEMIS-D  position, velocity, attitude and sun pulse data.\nThe data are definitive  with added science attitude determination using perigee data post-processing.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:THEMIS_AUX_THD_L1_EPHEM",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D position vector in GEI coordinates",
+      "description": "THEMIS-D position vector (km) in GEI coordinates",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D velocity vector  in GEI coordinates",
+      "description": "THEMIS-D velocity vector (km/s) in GEI coordinates",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Maneuver Flag",
+      "description": "THEMIS-D maneuver status code (XYYZZZ). Values indicate if/what maneuver is being performed.  Spacecraft data will be unreliable during maneuvers.\n      * Unpowered flight (Coast):\n          - X=0, Y=00, Z=000            \n      * Sequence Code X:\n          - 0= No Segmentation\n          - 1= Segmented Maneuver\n      * Type Code YY:\n          - 0= No Maneuver\n          - 1= Axial-thrust Maneuver\n          - 2= Side-thrust Maneuver\n          - 3= Beta-thrust Maneuver\n          - 4= Attitude Precession\n          - 5= Spin-Rate Change\n      * Sequence Number ZZZ:\n          - 001-999= Maneuver Sequence Number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D RoI",
+      "description": "Region of interest. Different bits of this parameter give a general indication of the region that the spacecraft is in.  The first 18 bits are significant.  An active bit indicates the spacecraft is in a given region.  Multiple bits may be set simultaneously. The value of the bit is in parentheses in the following table.\n\n          +---------------------------------------------------+\n          | Bit 1(1)      | Earth Shadow                      |\n          | Bit 2(2)      | Lunar Shadow                      |\n          | Bit 3(4)      | Atmospheric absorbtion zone       |\n          | Bit 4(8)      | South Atlantic Anomaly            |\n          | Bit 5(16)     | Northern Auroral Zone             |\n          | Bit 6(32)     | Southern Auroral Zone             |\n          | Bit 7(64)     | Perigee Passage                   |\n          | Bit 8(128)    | Inner & Outer Radiation Belts |\n          | Bit 9(256)    | Deep Plasma Sphere                |\n          | Bit 10(512)   | Foreshock Solar Wind              |\n          | Bit 11(1024)  | Solar Wind Beam                   |\n          | Bit 12(2048)  | High Magnetic Field               |\n          | Bit 13(4096)  | Average Plasma Sheet              |\n          | Bit 14(8192)  | Bowshock Crossing                 |\n          | Bit 15(16384) | Magnetopause Crossing             |\n          | Bit 16(32768) | Ground Based Observatories        |\n          | Bit 17(65536) | 2-Day Conjunctions                |\n          | Bit 18(131072)| 4-Day Conjunctions                |\n          +---------------------------------------------------+"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D spin axis right ascension",
+      "description": "THEMIS-D spin axis right ascension in GEI coordinates.",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D spin axis declination in GEI coordinates",
+      "description": "THEMIS-D spin axis declination in GEI coordinates",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D spin axis azimuth, Euler alpha, in Probe Geometric (SPG) coordinates",
+      "description": "THEMIS-D spin axis azimuth, Euler alpha, in Probe Geometric (SPG) coordinates",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D spin axis colatitude, Euler beta, in Probe Geometric (SPG) coordinates",
+      "description": "THEMIS-D spin axis colatitude, Euler beta, in Probe Geometric (SPG) coordinates",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D spin period, regularized and boxcar averaged",
+      "description": "THEMIS-D spin period, regularized and boxcar averaged",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D angle rotated since the sun sensor registered the sun pulse, regularized and boxcar averaged.",
+      "description": "THEMIS-D angle rotated since the sun sensor registered the sun pulse, regularized and boxcar averaged.",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Initial Spin Period for segment",
+      "description": "THEMIS-D Initial Spin Period for segment",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Drift term for spin rate",
+      "description": "Drift term for spin rate",
+      "unitText": "deg/s^2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Spin Correction",
+      "description": "THEMIS-D Spin phase correction from definitive position and field model calculated at 1 minute intervals",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D  Spin axis right ascension",
+      "description": "Spin axis right ascension correction from definitive position and field model",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Spin axis declination",
+      "description": "Spin axis declination correction from definitive position and field model",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Maximum absolute phase error",
+      "description": "Maximum absolute phase error between model and non-outlier sun crossing time"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Number of spins contained in this segment",
+      "description": "THEMIS-D Number of spins contained in this segment"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Pulse Gap",
+      "description": "Duration, in seconds, of longest gap between sun pulses in this segment. Long gaps (60 sec or more) will generally indicate shadow periods.",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Position (GSE)",
+      "description": "Spacecraft position vector (km) in GSE coordinates",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Position (GSM)",
+      "description": "Spacecraft position vector (km) in GSM coordinates",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Velocity (GSE)",
+      "description": "Spacecraft velocity (km/s) in GSE coordinates",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Velocity (GSM)",
+      "description": "Spacecraft velocity (km/s) in GSM coordinates",
+      "unitText": "km/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

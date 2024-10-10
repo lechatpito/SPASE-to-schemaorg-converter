@@ -1,0 +1,55 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/GPS/KTB/S4",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/GPS/KTB/S4",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Scintillation index (S4) obtained by single-frequency GPS receivers at Kototabang, Indonesia (text format)",
+  "sdDatePublished": "2014-09-22",
+  "description": "Scintillation index (S4) calculated from intensities of the GPS L1 signals observed by single-frequency GPS receivers at a sampling rate of 20 Hz at Kototabang, Indonesia.",
+  "abstract": "Scintillation index (S4) calculated from intensities of the GPS L1 signals observed by single-frequency GPS receivers at a sampling rate of 20 Hz at Kototabang, Indonesia.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE, Ionosphere, scintillation, GPS, plasma bubble",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://stdb2.isee.nagoya-u.ac.jp/QL-S4/index.html",
+      "name": "Website of Scintillation Index (S4) and Drift Velocity",
+      "description": "Scintillation index (S4) calculated from intensities of the GPS L1 signals observed by single-frequency GPS receivers at a sampling rate of 20 Hz at Kototabang, Indonesia."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "scintillation index (S4)",
+      "description": "Amplitude scintillation index (S4) of GPS L1 signal",
+      "minValue": "0.0",
+      "maxValue": "1.0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

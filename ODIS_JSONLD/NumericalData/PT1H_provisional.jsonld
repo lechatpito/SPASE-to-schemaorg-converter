@@ -1,0 +1,61 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/WDC_Kyoto/WDC/Dst/index/PT1H_provisional",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/WDC_Kyoto/WDC/Dst/index/PT1H_provisional",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Geomagnetic Equatorial Dst Index Provisional",
+  "sdDatePublished": "2011-02-17",
+  "description": "The geomagnetic equatorial Dst index at 1-hr time resolution, derived at World Data Center for Geomagnetism, Kyoto, Kyoto University. The provisional Dst index is calculated from geomagnetic field data which were visually screened for artificial noises.",
+  "abstract": "The geomagnetic equatorial Dst index at 1-hr time resolution, derived at World Data Center for Geomagnetism, Kyoto, Kyoto University. The provisional Dst index is calculated from geomagnetic field data which were visually screened for artificial noises.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "keywords": "Geomagnetic Indices",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://wdc.kugi.kyoto-u.ac.jp/wdc/Sec3.html",
+      "name": "Geomagnetic Data Service",
+      "description": "Geomagnetic Data Service at World Data Center for Geomagnetism, Kyoto."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Time is expressed with year, month, day, and hour, each stored in integer format. Details of the data record format is described at http://wdc.kugi.kyoto-u.ac.jp/dstae/format/dstformat.html"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Equatorial Dst index Provisional",
+      "description": "The Dst index is calculated by the sum of base value (unit 100nT) and 24 hourly value (unit 1nT). Details of the data record format is described at http://wdc.kugi.kyoto-u.ac.jp/dstae/format/dstformat.html",
+      "unitText": "nT",
+      "defaultValue": "9999",
+      "cadence": "PT1H"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/WAVES/juno-wav-crue",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/WAVES/juno-wav-crue",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Juno - WAVES - cruise - Electric Field",
+  "sdDatePublished": "2023-03-16",
+  "description": "Waves instrument Survey science data records for the cruise phase of Juno mission. Data provided on this \n        volume are at the highest available time and frequency resolution and have been calibrated into physical units using the best calibration tables \n        available at the time of publication.\n      ",
+  "abstract": "Waves instrument Survey science data records for the cruise phase of Juno mission. Data provided on this \n        volume are at the highest available time and frequency resolution and have been calibrated into physical units using the best calibration tables \n        available at the time of publication.\n      ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e_lfrlo",
+      "unitText": "(V**2/m**2)/Hz",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "43",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e_lfrhi",
+      "unitText": "(V**2/m**2)/Hz",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "18",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e_hfrlo",
+      "unitText": "(V**2/m**2)/Hz",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "27",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e_hfrhi",
+      "unitText": "(V**2/m**2)/Hz",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "38",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

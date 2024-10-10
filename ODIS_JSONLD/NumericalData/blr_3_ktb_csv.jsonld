@@ -1,0 +1,161 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/KTB/BLradar_3/blr_3_ktb_csv",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/KTB/BLradar_3/blr_3_ktb_csv",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Observation data of the equatorial lower troposphere taken by the boundary layer radar (BLR)-3 at Kototabang (CSV format)",
+  "sdDatePublished": "2016-07-21",
+  "description": "The 10-minute average observation data in the equatorial lower troposphere (1.2-5.5 km) taken by the boundary layer radar (BLR)-3 at Kototabang, Indonesia (0.20S, 100.32E, 865m MSL). The observation data are stored in the CSV (Comma Separated Values) file named (year)(month)(day).(variable).csv. The variable abbreviations are uwnd, vwnd, wwnd, pwr1, pwr2, pwr3, pwr4, pwr5, wdt1, wdt2, wdt3, wdt4 and wdt5, which mean zonal, meridional and vertical wind velocities, echo power and spectral width for beam 1-5, respectively. The azimuth and zenith angles of beam 1, 2, 3, 4 and 5 are (0, 0), (0, 10), (90, 10), (180, 10) and (270, 10), respectively, in unit of degree. The numbers of the first line of each file represent altitude, and the second and below are observational local date and time (year/month/day hour:minute) which corresponds to the center time of averaging period and data at each altitude. The value of 999 means missing data. Since the BLR-3 operation stopped due to the breakdown of signal analyzer, the observation database has not been updated now.",
+  "abstract": "The 10-minute average observation data in the equatorial lower troposphere (1.2-5.5 km) taken by the boundary layer radar (BLR)-3 at Kototabang, Indonesia (0.20S, 100.32E, 865m MSL). The observation data are stored in the CSV (Comma Separated Values) file named (year)(month)(day).(variable).csv. The variable abbreviations are uwnd, vwnd, wwnd, pwr1, pwr2, pwr3, pwr4, pwr5, wdt1, wdt2, wdt3, wdt4 and wdt5, which mean zonal, meridional and vertical wind velocities, echo power and spectral width for beam 1-5, respectively. The azimuth and zenith angles of beam 1, 2, 3, 4 and 5 are (0, 0), (0, 10), (90, 10), (180, 10) and (270, 10), respectively, in unit of degree. The numbers of the first line of each file represent altitude, and the second and below are observational local date and time (year/month/day hour:minute) which corresponds to the center time of averaging period and data at each altitude. The value of 999 means missing data. Since the BLR-3 operation stopped due to the breakdown of signal analyzer, the observation database has not been updated now.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Boundary Layer Winds",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/radar-group/blr/kototabang/data/index.html",
+      "name": "Boundary Layer Radar (BLR) Observation Data",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "date",
+      "description": "Date in the form YYYY/MM/DD where YYYY= Gregorian Year AD, MM = month of year (01-12), and DD = day of month (01-31)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Time in the form hh:mm where hh = hour of day (00-23) and mm = minute of hour. Local time (UT+07:00:00) is used for time data."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "altitude",
+      "description": "Altitude (above sea level)",
+      "unitText": "km",
+      "minValue": "1.2",
+      "maxValue": "5.5"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "uwnd",
+      "description": "Zonal wind (eastward wind is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vwnd",
+      "description": "Meridional wind (northward wind is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wind",
+      "description": "Vertical wind (upflow is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr1",
+      "description": "Echo intensity (arbitrary unit) for beam 1 (azimuth angle:0, zenith angle:0)",
+      "unitText": "dB",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr2",
+      "description": "Echo intensity (arbitrary unit) for beam 2 (azimuth angle:0, zenith angle:10)",
+      "unitText": "dB",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr3",
+      "description": "Echo intensity (arbitrary unit) for beam 3 (azimuth angle:90, zenith angle:10)",
+      "unitText": "dB",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr4",
+      "description": "Echo intensity (arbitrary unit) for beam 4 (azimuth angle:180, zenith angle:10)",
+      "unitText": "dB",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr5",
+      "description": "Echo intensity (arbitrary unit) for beam 5 (azimuth angle:270, zenith angle:10)",
+      "unitText": "dB",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wdt1",
+      "description": "Spectral width (half power full width) for beam 1 (azimuth angle:0, zenith angle:0)",
+      "unitText": "m/s",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wdt2",
+      "description": "Spectral width (half power full width) for beam 2 (azimuth angle:0, zenith angle:10)",
+      "unitText": "m/s",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wdt3",
+      "description": "Spectral width (half power full width) for beam 3 (azimuth angle:90, zenith angle:10)",
+      "unitText": "m/s",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wdt4",
+      "description": "Spectral width (half power full width) for beam 4 (azimuth angle:180, zenith angle:10)",
+      "unitText": "m/s",
+      "defaultValue": "999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wdt5",
+      "description": "Spectral width (half power full width) for beam 5 (azimuth angle:270, zenith angle:10)",
+      "unitText": "m/s",
+      "defaultValue": "999.0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

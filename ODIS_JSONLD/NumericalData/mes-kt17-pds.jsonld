@@ -1,0 +1,151 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/Models/mes-kt17-pds",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/Models/mes-kt17-pds",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MESSENGER - Analytical Models - KT17@PDS",
+  "sdDatePublished": "2023-06-21",
+  "description": "MESSENGER Magnetometer KT17 Model Residual data and associated products obtained from NASA/PDS plasma node.\n      \n      The research for and preparation of this bundle was funded by NASA?s Planetary Data Archiving, Restoration, and Tools (PDART) program under grant NNX16AJ01G issued to Dr. Haje Korth (Principal Investigator) at the Johns Hopkins Applied Physics Laboratory.\n      ",
+  "abstract": "MESSENGER Magnetometer KT17 Model Residual data and associated products obtained from NASA/PDS plasma node.\n      \n      The research for and preparation of this bundle was funded by NASA?s Planetary Data Archiving, Restoration, and Tools (PDART) program under grant NNX16AJ01G issued to Dr. Haje Korth (Principal Investigator) at the Johns Hopkins Applied Physics Laboratory.\n      ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mercury"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_mso internal",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "b_kt17_internal(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "b_kt17_internal(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "b_kt17_internal(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b| internal",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_mso external",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "b_kt17_external(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "b_kt17_external(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "b_kt17_external(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b| external",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_mso all",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "b_kt17_all(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "b_kt17_all(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "b_kt17_all(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b| all",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance mercury-sun",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "disturbance index",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

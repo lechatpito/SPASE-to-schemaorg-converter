@@ -1,0 +1,231 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-fit",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-fit",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - CAPS - fitted parameters",
+  "sdDatePublished": "2020-08-07",
+  "description": "This data collection contains fits (both good and bad) that were found during R. J. Wilson et al's grant from NASA's Cassini Data Analysis Program (NNX12AG90G).\n    The Cassini CAPS plasma data used in the forward model plasma \nparameter calculations given here came from volume \nCO-E/J/S/SW-CAPS-2-UNCALIBRATED-V1.0 in the Planetary Data System (PDS).\n\nFor the full details see:\n\n   Wilson, R. J., F. Bagenal, and A. M. Persoon (2017), Survey of thermal\n   plasma ions in Saturn\u2019s magnetosphere utilizing a forward model, \n   J. Geophys. Res. Space Physics, 122, 7256\u20137278,\n   doi:10.1002/2017JA024117.",
+  "abstract": "This data collection contains fits (both good and bad) that were found during R. J. Wilson et al's grant from NASA's Cassini Data Analysis Program (NNX12AG90G).\n    The Cassini CAPS plasma data used in the forward model plasma \nparameter calculations given here came from volume \nCO-E/J/S/SW-CAPS-2-UNCALIBRATED-V1.0 in the Planetary Data System (PDS).\n\nFor the full details see:\n\n   Wilson, R. J., F. Bagenal, and A. M. Persoon (2017), Survey of thermal\n   plasma ions in Saturn\u2019s magnetosphere utilizing a forward model, \n   J. Geophys. Res. Space Physics, 122, 7256\u20137278,\n   doi:10.1002/2017JA024117.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density h+",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density h+ uncertainty",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature h+",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "t perp",
+            "Index": "1",
+            "ParameterKey": "cass_capsfit_ht(0)"
+          },
+          {
+            "Name": "t para",
+            "Index": "2",
+            "ParameterKey": "cass_capsfit_ht(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature h+ uncertainty",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "sigma perp",
+            "Index": "1",
+            "ParameterKey": "cass_capsfit_unht(0)"
+          },
+          {
+            "Name": "sigma para",
+            "Index": "2",
+            "ParameterKey": "cass_capsfit_unht(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density w+",
+      "description": "Water Group : O+, OH+, H2O+, H3O+",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density w+ uncertainty",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature w+",
+      "description": "Water Group : O+, OH+, H2O+, H3O+",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "t perp",
+            "Index": "1",
+            "ParameterKey": "cass_capsfit_wt(0)"
+          },
+          {
+            "Name": "t para",
+            "Index": "2",
+            "ParameterKey": "cass_capsfit_wt(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature w+ uncertainty",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "sigma perp",
+            "Index": "1",
+            "ParameterKey": "cass_capsfit_unwt(0)"
+          },
+          {
+            "Name": "sigma para",
+            "Index": "2",
+            "ParameterKey": "cass_capsfit_unwt(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "velocity",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v_r",
+            "Index": "1",
+            "ParameterKey": "cass_capsfit_v(0)"
+          },
+          {
+            "Name": "v_phi",
+            "Index": "2",
+            "ParameterKey": "cass_capsfit_v(1)"
+          },
+          {
+            "Name": "v_theta",
+            "Index": "3",
+            "ParameterKey": "cass_capsfit_v(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "velocity uncertainty",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "sigma vr",
+            "Index": "1",
+            "ParameterKey": "cass_capsfit_unv(0)"
+          },
+          {
+            "Name": "sigma vp",
+            "Index": "2",
+            "ParameterKey": "cass_capsfit_unv(1)"
+          },
+          {
+            "Name": "sigma vt",
+            "Index": "3",
+            "ParameterKey": "cass_capsfit_unv(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pos_sss",
+      "description": "The co-ordinate system used in this study and for the fitted velocity vectors is Saturn de-Spun-Sun (SSS) where +z is the Saturn spin axis, +y is defined as the cross product ofthe +z with the Saturn-to-Sun vector, and +x is defined as the cross product of +y with +z.",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "sc_r",
+            "Index": "1",
+            "ParameterKey": "cass_capsfit_pos(0)",
+            "Units": "km"
+          },
+          {
+            "Name": "sc_lon",
+            "Index": "2",
+            "ParameterKey": "cass_capsfit_pos(1)",
+            "Units": "deg"
+          },
+          {
+            "Name": "sc_lat",
+            "Index": "1",
+            "ParameterKey": "cass_capsfit_pos(2)",
+            "Units": "deg"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag",
+      "description": "1=good fit, 0=bad fit"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

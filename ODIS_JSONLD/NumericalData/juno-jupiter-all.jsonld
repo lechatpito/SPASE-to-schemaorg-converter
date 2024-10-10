@@ -1,0 +1,151 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/Ephemeris/juno-jupiter-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/Ephemeris/juno-jupiter-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Juno - Ephemeris - orbit jupiter - 5 min@NAIF",
+  "sdDatePublished": "2024-03-21",
+  "description": "Calculated in IRAP by using Juno SPICE kernels",
+  "abstract": "Calculated in IRAP by using Juno SPICE kernels",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_iau_jupiter",
+      "unitText": "Rj",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "juno_jup_xyz(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "juno_jup_xyz(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "juno_jup_xyz(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance juno-jup",
+      "unitText": "Rj"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_iau_jupiter",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_iau_jupiter",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mlat",
+      "description": "mlat=10.31\u00b0xcos(196.61\u00b0-lon_iau_west)+lat_iau",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_jsm",
+      "unitText": "Rj",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "juno_jup_jsm(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "juno_jup_jsm(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "juno_jup_jsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_jso",
+      "unitText": "Rj",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "juno_jup_jso(0)"
+          },
+          {
+            "Name": "y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "juno_jup_jso(1)"
+          },
+          {
+            "Name": "z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "juno_jup_jso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "juno_orbit_num"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

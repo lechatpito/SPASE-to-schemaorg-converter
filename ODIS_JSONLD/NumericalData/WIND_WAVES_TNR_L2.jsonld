@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Wind/WAVES/WIND_WAVES_TNR_L2",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Wind/WAVES/WIND_WAVES_TNR_L2",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind Waves TNR L2 Data",
+  "sdDatePublished": "2022-09-01",
+  "description": "This data set contains Wind WAVES  Thermal Noise Receiver calibrated data. Spectra are given in \u00b5V^2 / Hz.  The spectra dynamic range is 120 dB [10^-6 , 10^+6 ] and an undefined value is represented by 10-10 \u00b5V^2 / Hz.\nThe AGC factors are given in dB with respect to a reference voltage V0 specified in laboratory.  These voltages are given for each frequency band as follows: \nBand : V0 (dB)\nA : -40.34\nB : -43.45\nC : -46.60\nD : -49.61\nE : -51.62",
+  "abstract": "This data set contains Wind WAVES  Thermal Noise Receiver calibrated data. Spectra are given in \u00b5V^2 / Hz.  The spectra dynamic range is 120 dB [10^-6 , 10^+6 ] and an undefined value is represented by 10-10 \u00b5V^2 / Hz.\nThe AGC factors are given in dB with respect to a reference voltage V0 specified in laboratory.  These voltages are given for each frequency band as follows: \nBand : V0 (dB)\nA : -40.34\nB : -43.45\nC : -46.60\nD : -49.61\nE : -51.62",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:WIND_WAVES_TNR_L2",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "WIND WAVES TNR L2 Electric Field Spectra",
+      "description": "WAVES TNR L2 Electric Field Spectra",
+      "unitText": "uV^2/Hz"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

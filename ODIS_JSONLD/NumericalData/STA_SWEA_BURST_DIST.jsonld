@@ -1,0 +1,74 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/STEREO-A/IMPACT/SWEA/STA_SWEA_BURST_DIST",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/STEREO-A/IMPACT/SWEA/STA_SWEA_BURST_DIST",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO-A IMPACT SWEA Level-1 Burst raw electron distribution functions in counts",
+  "sdDatePublished": "2022-07-26",
+  "description": "This dataset provides the electron distribution functions at the BURST cadence (2 s).\nThe data is provided in units of counts. The reference frame is related to the instrument frame.",
+  "abstract": "This dataset provides the electron distribution functions at the BURST cadence (2 s).\nThe data is provided in units of counts. The reference frame is related to the instrument frame.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:STA_SWEA_BURST_DIST",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA Mode ID",
+      "description": "STEREO-A SWEA Mode ID"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA Distribution Angle Bins",
+      "description": "STEREO-A SWEA 3D Distribution Angle Bins",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA 3D Distribution",
+      "description": "STEREO-A SWEA 3D Distribution in cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA V0 Value",
+      "description": "STEREO-A SWEA V0 Value"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA Energy",
+      "description": "STEREO-A SWEA Energy Bins",
+      "unitText": "eV"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

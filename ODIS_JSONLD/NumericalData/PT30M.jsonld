@@ -1,0 +1,555 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Wind/SMS/STICS/EnergyResolvedPitchAngleDistribution/Level2/SolarWind/PT30M",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Wind/SMS/STICS/EnergyResolvedPitchAngleDistribution/Level2/SolarWind/PT30M",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind SMS Suite SupraThermal Ion Composition Spectrometer (SMS/STICS) Energy-Resolved Pitch-Angle Distributions (ERPAs), Level 2 (L2), 30-minute Data in Solar Wind",
+  "sdDatePublished": "2024-03-14",
+  "description": "The data include Wind STICS 30-minute Energy-Resolved Pitch-Angle Distributions (ERPAs) for selected ion species using triple coincidence (H+, He+, He2+, C5+, O+, O6+, and Fe10+) and double coincidence (H+, He+, He2+, O+, O6+) measurements in the solar wind. ERPAs organize the data by the angle relative to the magnetic field vector direction, in 7.5 degree bins. The energy separation is preserved at the native resolution of the E/q bins. For details, see https://spdf.gsfc.nasa.gov/pub/data/wind/documents/wind_stics_lv2_release_notes_revD.pdf .\nThe Suprathermal Ion Composition Spectrometer (STICS) is a time of flight (TOF) plasma mass spectrometer, capable of identifying mass and mass per charge for incident ions up to 200 keV/e. It uses an electrostatic analyzer to admit ions of a particular energy per charge (E/Q) into the TOF chamber. The E/Q voltage is stepped through 32 values, sitting at each value for approximately 24 sec., to measure ions over the full E/Q range of 6 - 200 keV/e. Ions then pass through a carbon foil and TOF chamber, before finally impacting on a solid-state detector (SSD) for energy measurement. STICS combines these three measurements of E/Q, TOF and residual energy, producing PHA words. This triple-coincidence technique greatly improves the signal to noise ratio in the data. Measurements of E/Q and TOF without residual energy also produce PHA words. These double-coincidence measurements are characterized by better statistics since ions whose energy does not allow them to be registered by the SSD can still be counted in double-coincidence measurements. However, ion identification in double-coincidence measurements are limited to a select number of ions that are well separated in E/Q - TOF space.  The STICS instrument provides full 3D velocity distribution functions, through a combination of multiple telescopes and spacecraft spin. The instrument includes 3 separate TOF telescopes that view 3 separate latitude sectors, as shown in Figure 1 (https://spdf.gsfc.nasa.gov/pub/data/wind/documents/wind_stics_lv2_release_notes_revD.pdf). In addition, the WIND spacecraft spins, allowing the 3 telescopes to trace out a nearly 4\u03c0 steradian viewing area. The longitudinal sectors are shown in Figure 2. The solar direction is in sectors 8-10 while the earthward direction is in sectors 0-2.",
+  "abstract": "The data include Wind STICS 30-minute Energy-Resolved Pitch-Angle Distributions (ERPAs) for selected ion species using triple coincidence (H+, He+, He2+, C5+, O+, O6+, and Fe10+) and double coincidence (H+, He+, He2+, O+, O6+) measurements in the solar wind. ERPAs organize the data by the angle relative to the magnetic field vector direction, in 7.5 degree bins. The energy separation is preserved at the native resolution of the E/q bins. For details, see https://spdf.gsfc.nasa.gov/pub/data/wind/documents/wind_stics_lv2_release_notes_revD.pdf .\nThe Suprathermal Ion Composition Spectrometer (STICS) is a time of flight (TOF) plasma mass spectrometer, capable of identifying mass and mass per charge for incident ions up to 200 keV/e. It uses an electrostatic analyzer to admit ions of a particular energy per charge (E/Q) into the TOF chamber. The E/Q voltage is stepped through 32 values, sitting at each value for approximately 24 sec., to measure ions over the full E/Q range of 6 - 200 keV/e. Ions then pass through a carbon foil and TOF chamber, before finally impacting on a solid-state detector (SSD) for energy measurement. STICS combines these three measurements of E/Q, TOF and residual energy, producing PHA words. This triple-coincidence technique greatly improves the signal to noise ratio in the data. Measurements of E/Q and TOF without residual energy also produce PHA words. These double-coincidence measurements are characterized by better statistics since ions whose energy does not allow them to be registered by the SSD can still be counted in double-coincidence measurements. However, ion identification in double-coincidence measurements are limited to a select number of ions that are well separated in E/Q - TOF space.  The STICS instrument provides full 3D velocity distribution functions, through a combination of multiple telescopes and spacecraft spin. The instrument includes 3 separate TOF telescopes that view 3 separate latitude sectors, as shown in Figure 1 (https://spdf.gsfc.nasa.gov/pub/data/wind/documents/wind_stics_lv2_release_notes_revD.pdf). In addition, the WIND spacecraft spins, allowing the 3 telescopes to trace out a nearly 4\u03c0 steradian viewing area. The longitudinal sectors are shown in Figure 2. The solar direction is in sectors 8-10 while the earthward direction is in sectors 0-2.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time start of avg interval",
+      "unitText": "ms",
+      "minValue": "01-Jan-1994 00:00:00.000",
+      "maxValue": "01-Jan-2020 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc H+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence H+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc H+ - summed over energy",
+      "description": "Pitch-angle distributions triple coincidence H+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc He+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence He+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc He+ - summed over energy",
+      "description": "Pitch-angle distributions triple coincidence He+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc He2+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence He2+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc He2+ - summed over energy",
+      "description": "Pitch-angle distributions triple coincidence He2+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc O+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence O+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc O+ - summed over energy",
+      "description": "Pitch-angle distributions triple coincidence O+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc O6+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence O6+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc O6+ - summed over energy",
+      "description": "Pitch-angle distributions triple coincidence O6+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc C5+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence C5+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc C5+ - summed over energy",
+      "description": "Pitch-angle distributions triple coincidence C5+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc Fe10+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence Fe10+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc Fe10+ - summed over energy",
+      "description": "Pitch-angle distributions triple coincidence Fe10+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc C+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence C+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc N+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence N+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc O2+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence O2+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc O7+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence O7+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc O8+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence O8+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc C4+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence C4+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc C6+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence C6+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc Fe8+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence Fe8+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc Fe9+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence Fe9+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa tc Fe16+",
+      "description": "Energy-resolved pitch-angle distributions triple coincidence Fe16+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc H+",
+      "description": "Energy-resolved pitch-angle distributions double coincidence H+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc H+ - summed over energy",
+      "description": "Pitch-angle distributions double coincidence H+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc He+",
+      "description": "Energy-resolved pitch-angle distributions double coincidence He+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc He+ - summed over energy",
+      "description": "Pitch-angle distributions double coincidence He+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc He2+",
+      "description": "Energy-resolved pitch-angle distributions double coincidence He2+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc He2+ - summed over energy",
+      "description": "Pitch-angle distributions double coincidence He2+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc O+",
+      "description": "Energy-resolved pitch-angle distributions double coincidence O+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc O+ - summed over energy",
+      "description": "Pitch-angle distributions double coincidence O+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc O6+",
+      "description": "Energy-resolved pitch-angle distributions double coincidence O6+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc O6+ - summed over energy",
+      "description": "Pitch-angle distributions double coincidence O6+ - summed over energy.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "erpa dc C+",
+      "description": "Energy-resolved pitch-angle distributions double coincidence C+.\n\n* Column 1 Labels from SECTOR_ANGLE: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500]",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy per charge",
+      "description": "Energy per charge",
+      "unitText": "keV/e",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sector index",
+      "description": "Sector index",
+      "unitText": "sector index",
+      "minValue": "1",
+      "maxValue": "12",
+      "defaultValue": "-9",
+      "cadence": "PT30M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sector angle",
+      "description": "Sector angle",
+      "unitText": "\u00b0",
+      "minValue": "0",
+      "maxValue": "360",
+      "defaultValue": "-9",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

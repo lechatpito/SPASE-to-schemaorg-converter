@@ -1,0 +1,65 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/VEX/MAG/vex-mag-hz",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/VEX/MAG/vex-mag-hz",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "VEX - MAG - 1 sec",
+  "sdDatePublished": "2015-09-07",
+  "description": "calibrated_data, 1 Hz data-resolution",
+  "abstract": "calibrated_data, 1 Hz data-resolution",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_vso",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "vex_mag_1s(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "vex_mag_1s(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "vex_mag_1s(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "\u239cb\u239c",
+      "description": "Scalar magnitude of the magnetic field in nT",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

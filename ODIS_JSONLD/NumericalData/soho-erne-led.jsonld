@@ -1,0 +1,163 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SOHO/ERNE/soho-erne-led",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SOHO/ERNE/soho-erne-led",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SOHO - ERNE - LED",
+  "sdDatePublished": "2024-01-25",
+  "description": "Low Energy Detector is a two-layer semiconductor (silicon) detector, with\nan anticoincidence (AC) shield at the bottom. The upper layer consist of 7 \nsegments (D11-D17). The common lower layer is called D2.",
+  "abstract": "Low Energy Detector is a two-layer semiconductor (silicon) detector, with\nan anticoincidence (AC) shield at the bottom. The upper layer consist of 7 \nsegments (D11-D17). The common lower layer is called D2.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "proton flux",
+      "unitText": "1/(cm**2 sr s MeV)",
+      "defaultValue": "-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "10",
+        "elements": [
+          {
+            "Name": "1.3 - 1.6 MeV",
+            "Index": "1",
+            "ParameterKey": "soho_erne_ledp(0)"
+          },
+          {
+            "Name": "1.6 - 2.0 MeV",
+            "Index": "2",
+            "ParameterKey": "soho_erne_ledp(1)"
+          },
+          {
+            "Name": "2.0 - 2.5 MeV",
+            "Index": "3",
+            "ParameterKey": "soho_erne_ledp(2)"
+          },
+          {
+            "Name": "2.5 - 3.2 MeV",
+            "Index": "4",
+            "ParameterKey": "soho_erne_ledp(3)"
+          },
+          {
+            "Name": "3.2 - 4.0 MeV",
+            "Index": "5",
+            "ParameterKey": "soho_erne_ledp(4)"
+          },
+          {
+            "Name": "4.0 - 5.0 MeV",
+            "Index": "6",
+            "ParameterKey": "soho_erne_ledp(5)"
+          },
+          {
+            "Name": "5.0 - 6.4 MeV",
+            "Index": "7",
+            "ParameterKey": "soho_erne_ledp(6)"
+          },
+          {
+            "Name": "6.4 - 8.0 MeV",
+            "Index": "8",
+            "ParameterKey": "soho_erne_ledp(7)"
+          },
+          {
+            "Name": "8.0 - 10  MeV",
+            "Index": "9",
+            "ParameterKey": "soho_erne_ledp(8)"
+          },
+          {
+            "Name": "10  - 13  MeV",
+            "Index": "10",
+            "ParameterKey": "soho_erne_ledp(9)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "4He flux",
+      "unitText": "1/(cm**2 sr s MeV/n)",
+      "defaultValue": "-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "10",
+        "elements": [
+          {
+            "Name": "1.3 - 1.6 MeV/n",
+            "Index": "1",
+            "ParameterKey": "soho_erne_leda(0)"
+          },
+          {
+            "Name": "1.6 - 2.0 MeV/n",
+            "Index": "2",
+            "ParameterKey": "soho_erne_leda(1)"
+          },
+          {
+            "Name": "2.0 - 2.5 MeV/n",
+            "Index": "3",
+            "ParameterKey": "soho_erne_leda(2)"
+          },
+          {
+            "Name": "2.5 - 3.2 MeV/n",
+            "Index": "4",
+            "ParameterKey": "soho_erne_leda(3)"
+          },
+          {
+            "Name": "3.2 - 4.0 MeV/n",
+            "Index": "5",
+            "ParameterKey": "soho_erne_leda(4)"
+          },
+          {
+            "Name": "4.0 - 5.0 MeV/n",
+            "Index": "6",
+            "ParameterKey": "soho_erne_leda(5)"
+          },
+          {
+            "Name": "5.0 - 6.4 MeV/n",
+            "Index": "7",
+            "ParameterKey": "soho_erne_leda(6)"
+          },
+          {
+            "Name": "6.4 - 8.0 MeV/n",
+            "Index": "8",
+            "ParameterKey": "soho_erne_leda(7)"
+          },
+          {
+            "Name": "8.0 - 10  MeV/n",
+            "Index": "9",
+            "ParameterKey": "soho_erne_leda(8)"
+          },
+          {
+            "Name": "10  - 13  MeV/n",
+            "Index": "10",
+            "ParameterKey": "soho_erne_leda(9)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

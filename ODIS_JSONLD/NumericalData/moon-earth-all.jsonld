@@ -1,0 +1,203 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/moon-earth-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/moon-earth-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Astronomical Objects Ephemerides - Planets and Moons - Earth Moon",
+  "sdDatePublished": "2019-08-23",
+  "description": "The Moon is Earth's only natural satellite. It orbits at an average distance of 384,400 km (238,900 mi), about 30 times the diameter of Earth.",
+  "abstract": "The Moon is Earth's only natural satellite. It orbits at an average distance of 384,400 km (238,900 mi), about 30 times the diameter of Earth.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Moon"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hci",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_moon_hci(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_moon_hci(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_moon_hci(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hee",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_moon_hee(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_moon_hee(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_moon_hee(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_heeq",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_moon_heeq(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_moon_heeq(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_moon_heeq(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance moon-sun",
+      "unitText": "AU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude IAU_sun",
+      "unitText": "rad"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude IAU_sun",
+      "unitText": "rad"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gse",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_moon_gse(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_moon_gse(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_moon_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gsm",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_moon_gsm(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_moon_gsm(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_moon_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance moon-earth",
+      "unitText": "Re"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude HEE",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude HEE",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

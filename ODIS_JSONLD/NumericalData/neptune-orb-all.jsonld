@@ -1,0 +1,131 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/neptune-orb-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/neptune-orb-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Astronomical Objects Ephemerides - Planets and Moons - Neptune",
+  "sdDatePublished": "2018-06-28",
+  "description": "Heliocentric Inertial (HCI) Frame : \n                * The solar rotation axis is the primary vector: the Z axis points in the solar north direction;  \n             * The solar ascending node on the ecliptic of J2000 forms the X axis. \n             * The Y axis is Z cross X, completing the right-handed reference frame.\n            Heliocentric Earth Ecliptic (HEE) Frame :\n              * The position of the earth relative to the sun is the primary vector: the X axis points from the sun to the earth.\n              * The northern surface normal to the mean ecliptic of date is the secondary vector: the Z axis is the component of this vector orthogonal to the X axis.\n              * The Y axis is Z cross X, completing the right-handed reference frame.              \n              Solar longitude (Ls) :\n  * The solar longitude Ls is the Planet-Sun angle, measured from the Northern Hemisphere spring equinox where Ls=0.\nLs=90 thus corresponds to northern summer solstice, just as Ls=180 marks the northern autumn equinox and Ls=270 the northern winter solstice.",
+  "abstract": "Heliocentric Inertial (HCI) Frame : \n                * The solar rotation axis is the primary vector: the Z axis points in the solar north direction;  \n             * The solar ascending node on the ecliptic of J2000 forms the X axis. \n             * The Y axis is Z cross X, completing the right-handed reference frame.\n            Heliocentric Earth Ecliptic (HEE) Frame :\n              * The position of the earth relative to the sun is the primary vector: the X axis points from the sun to the earth.\n              * The northern surface normal to the mean ecliptic of date is the secondary vector: the Z axis is the component of this vector orthogonal to the X axis.\n              * The Y axis is Z cross X, completing the right-handed reference frame.              \n              Solar longitude (Ls) :\n  * The solar longitude Ls is the Planet-Sun angle, measured from the Northern Hemisphere spring equinox where Ls=0.\nLs=90 thus corresponds to northern summer solstice, just as Ls=180 marks the northern autumn equinox and Ls=270 the northern winter solstice.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Neptune"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hee",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_neptune_hee(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_neptune_hee(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_neptune_hee(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hci",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "xyz_neptune_hci(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "xyz_neptune_hci(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "xyz_neptune_hci(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance neptune-sun",
+      "unitText": "AU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude HCI",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude HCI",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude IAU_sun",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude IAU_sun",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "solar longitude (Ls)",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude HEE",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude HEE",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

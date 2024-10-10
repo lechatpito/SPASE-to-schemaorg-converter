@@ -1,0 +1,154 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RBSP/B/EMFISIS/HFR/L2/WAVEFORM",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RBSP/B/EMFISIS/HFR/L2/WAVEFORM",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Van Allen Probe B high frequency receiver waveform data",
+  "sdDatePublished": "2022-08-18",
+  "description": "High Frequency Receiver (HFR) data of Single Axis AC Electric Field Waveform (Selectable between the U, V and W Axis). Units: V/m. Sample Rate: 1 Msample/sec. Sample Size: 4096 samples. Cadence: variable.",
+  "abstract": "High Frequency Receiver (HFR) data of Single Axis AC Electric Field Waveform (Selectable between the U, V and W Axis). Units: V/m. Sample Rate: 1 Msample/sec. Sample Size: 4096 samples. Cadence: variable.",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Default time",
+      "unitText": "ns"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Expanded times",
+      "unitText": "ns"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFRsamples",
+      "description": "V/m displayed as spectrogram of values vs time offsets",
+      "unitText": "V/m",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFRsamples",
+      "description": "V/m displayed as very high resolution time-series",
+      "unitText": "V/m",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFRsamples",
+      "description": "[NOT USEFUL] HFR Waveform",
+      "unitText": "V/m",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HBGain",
+      "description": "HFR Gain Select (0 - Standard Gain, 1 - Attenuator On)",
+      "unitText": "(0=stnd,1=Atten)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HBSelect",
+      "description": "HFR receiver Antenna Select (0 - U axis,1 - V axis,2 - W axis {spin axis})",
+      "unitText": "(0=U,1=V,2=W/Spin)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Sun Pulse time tag. Epoch of the last sun pulse. (Lowest 6 bits of MET and subseconds.",
+      "unitText": "ns"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "timeOffsets",
+      "description": "Time step, in seconds, for each of the 4096 points referenced from the first point.",
+      "unitText": "ns",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR_Spec",
+      "description": "[NOT YET FUNCTIONAL] Spectrogram of HFR waveform",
+      "unitText": "V^2/m^2/Hz",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fftSize",
+      "description": "size of FFT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "APID",
+      "description": "APID"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Comp No 1",
+      "description": "Comp No 1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NRV TimeOffsets",
+      "description": "NRV TimeOffsets",
+      "unitText": "ns",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4096",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

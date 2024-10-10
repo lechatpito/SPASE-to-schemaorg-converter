@@ -1,0 +1,72 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/EPD/so-step-rtn",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/EPD/so-step-rtn",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SolarOrbiter - EPD/STEP - L2 : rates - flux direction RTN",
+  "sdDatePublished": "2022-01-17",
+  "description": "Solar Orbiter, Level 2 Data, Energetic Particle Detector, SupraThermal Electrons and Protons, Rates.",
+  "abstract": "Solar Orbiter, Level 2 Data, Energetic Particle Detector, SupraThermal Electrons and Protons, Rates.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux direction",
+      "description": "Particle flow direction (unit vector) in RTN coordinates",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "r",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "solo_step_dir_rtn(0)"
+          },
+          {
+            "Name": "t",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "solo_step_dir_rtn(1)"
+          },
+          {
+            "Name": "n",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "solo_step_dir_rtn(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

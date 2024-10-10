@@ -1,0 +1,111 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/CASSINI/RPWS-HFR/CAS_RPWS_HFR_QTN_N3_CDF",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/CASSINI/RPWS-HFR/CAS_RPWS_HFR_QTN_N3_CDF",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "CASSINI RPWS L3 Electron Density and Temperature from Quasi-Thermal Noise Analysis on RPWS/HFR Spectra",
+  "sdDatePublished": "2022-06-02",
+  "description": "This dataset contains electron density and temperature from quasi-thermal noise analysis on RPWS/HFR spectra.",
+  "abstract": "This dataset contains electron density and temperature from quasi-thermal noise analysis on RPWS/HFR spectra.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CAS_RPWS_HFR_QTN_N3_CDF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Core Electron Density",
+      "description": "CASSINI RPWS core electron density",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Core Electron Temperature",
+      "description": "CASSINI RPWS core electron temperature",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncertainty of electron density",
+      "description": "CASSINI RPWS uncertainty of electron density",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radial Distance to Saturn",
+      "description": "radial distance to saturn",
+      "unitText": "Rs"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Latitude of CASSINI",
+      "description": "Latitude of Cassini",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Local time  of CASSINI",
+      "description": "Local time of Cassini",
+      "unitText": "h"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L-Shell of Cassini",
+      "description": "L-Shell of Cassini",
+      "unitText": "Rs"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnitude of Magnetic field",
+      "description": "Magnitude of Magnetic field",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

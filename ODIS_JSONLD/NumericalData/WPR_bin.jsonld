@@ -1,0 +1,65 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NICT/SALMON/KOG/LQ4/WPR_bin",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NICT/SALMON/KOG/LQ4/WPR_bin",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Observation data taken by 1.3GHz transportable wind profiler radar (called LQ4) at Koganei, Japan (binary format)",
+  "sdDatePublished": "2013-03-06",
+  "description": "The 10-minute average observation data in the lower troposphere (0.1-8 km) taken by the1.3GHz transportable wind profiler radar (called LQ4) at Koganei, Tokyo (35.71N, 139.49E, 80m MSL). The profiles of peak power, Doppler frequency, and spectral width for each beam are stored in the binary file named koglq4-YYYYMMDDhhmm.dat.",
+  "abstract": "The 10-minute average observation data in the lower troposphere (0.1-8 km) taken by the1.3GHz transportable wind profiler radar (called LQ4) at Koganei, Tokyo (35.71N, 139.49E, 80m MSL). The profiles of peak power, Doppler frequency, and spectral width for each beam are stored in the binary file named koglq4-YYYYMMDDhhmm.dat.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://salmon.nict.go.jp/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "PO",
+      "description": "Echo intensity (arbitrary unit) for each beam"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fd",
+      "description": "Doppler freqency",
+      "unitText": "Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sigma",
+      "description": "Spectral width (half power full width) for each beam",
+      "unitText": "Hz"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

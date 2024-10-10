@@ -1,0 +1,66 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager1/LECP/vo1-lecp-full",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager1/LECP/vo1-lecp-full",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Voyager 1 - LECP - cruise",
+  "sdDatePublished": "2023-01-12",
+  "description": "Voyager_1\n                LECP - Low_Energy_Charged_Particle - Electrons\n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "abstract": "Voyager_1\n                LECP - Low_Energy_Charged_Particle - Electrons\n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "proton flux",
+      "description": "Proton flux",
+      "unitText": "cnts/cm^2*s*st*MeV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "0.58 - 1.78 MeV",
+            "Index": "1",
+            "ParameterKey": "vo1_lecp_flux(0)"
+          },
+          {
+            "Name": "3.40 - 17.6 MeV",
+            "Index": "2",
+            "ParameterKey": "vo1_lecp_flux(1)"
+          },
+          {
+            "Name": "22 - 31 MeV",
+            "Index": "3",
+            "ParameterKey": "vo1_lecp_flux(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

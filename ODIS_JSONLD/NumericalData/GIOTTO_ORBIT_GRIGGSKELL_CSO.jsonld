@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/GIOTTO/Ephemeris/GIOTTO_ORBIT_GRIGGSKELL_CSO",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/GIOTTO/Ephemeris/GIOTTO_ORBIT_GRIGGSKELL_CSO",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "GIOTTO orbit data (GRIGGSKELL CSO frame, 1 min resolution)",
+  "sdDatePublished": "2022-03-22",
+  "description": "This data set contains GIOTTO orbit data (Comet Solar Oriented coordinate system centered on comet GRIGG-SKJELLERUP , 1 min resolution)",
+  "abstract": "This data set contains GIOTTO orbit data (Comet Solar Oriented coordinate system centered on comet GRIGG-SKJELLERUP , 1 min resolution)",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GIOTTO_ORBIT_GRIGGSKELL_CSO",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "GIOTTO position",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GIOTTO velocity",
+      "unitText": "km/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

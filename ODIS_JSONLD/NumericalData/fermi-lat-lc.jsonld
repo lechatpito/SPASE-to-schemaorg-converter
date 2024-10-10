@@ -1,0 +1,62 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/FERMI/LAT/fermi-lat-lc",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/FERMI/LAT/fermi-lat-lc",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Solar Irradiance - FERMI - LAT - lightcurve",
+  "sdDatePublished": "2024-05-20",
+  "description": "LAT data between 100 MeV and 10 GeV filtered for solar counts in 1-minute time bins, no energy binning, using light-bucket method",
+  "abstract": "LAT data between 100 MeV and 10 GeV filtered for solar counts in 1-minute time bins, no energy binning, using light-bucket method",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "counts",
+      "description": "photons > 100MeV counts recorded by the LAT orientied sunward",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux",
+      "description": "counts/exposure",
+      "unitText": "1/(cm\u00b2 MeV sr)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "counts error",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "exposure",
+      "description": "estimated exposure of detector",
+      "unitText": "cm\u00b2.MeV.sr"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

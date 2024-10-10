@@ -1,0 +1,87 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/MMS-1/Fields/SCM/MMS_SCM_1_EPHEM",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/MMS-1/Fields/SCM/MMS_SCM_1_EPHEM",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS-1 Definitive Ephemeris (ASCII)",
+  "sdDatePublished": "2022-07-07",
+  "description": "This dataset contains definitive orbit ephemeris used to create L2 data from L1b data (probe position, speed and mass)\nGTP files are produced when problems occurred on original files. These are the correct files to be used in order to generate level 2 files.\nFor more information, please have a look at the SCM Data Products Guide",
+  "abstract": "This dataset contains definitive orbit ephemeris used to create L2 data from L1b data (probe position, speed and mass)\nGTP files are produced when problems occurred on original files. These are the correct files to be used in order to generate level 2 files.\nFor more information, please have a look at the SCM Data Products Guide",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:MMS_SCM_1_EPHEM",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 EME J2000 position",
+      "description": "MMS-1 Spacecraft position   in Earth's Mean Equator and Equinox of January 1, 2000, noon TT (Terrestrial Time) J2000",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-1 EME J2000 velocity",
+      "description": "MMS-1 Spacecraft velocity   in Earth's Mean Equator and Equinox of January 1, 2000, noon TT (Terrestrial Time) J2000",
+      "unitText": "km/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

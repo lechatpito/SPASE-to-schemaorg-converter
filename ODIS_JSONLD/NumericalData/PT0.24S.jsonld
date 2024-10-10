@@ -1,0 +1,68 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/IBEX/BM/Counts/PT0.24S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/IBEX/BM/Counts/PT0.24S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "IBEX Background Monitor Counts",
+  "sdDatePublished": "2021-03-11",
+  "description": "Each record captures the counts of >~14 keV\nprotons arriving at the IBEX Background Monitor. Also included are \na time tag (seconds since 00:00 UT of January 6, 1980), an arrival\ndirection (R.A. and Dec. in J2000 celestial coordinates), and the \nIBEX location.  Data files are given for each 8-day orbit.  The \ndata files are in ASCII.",
+  "abstract": "Each record captures the counts of >~14 keV\nprotons arriving at the IBEX Background Monitor. Also included are \na time tag (seconds since 00:00 UT of January 6, 1980), an arrival\ndirection (R.A. and Dec. in J2000 celestial coordinates), and the \nIBEX location.  Data files are given for each 8-day orbit.  The \ndata files are in ASCII.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/ibex/background_monitor/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/ibex/background_monitor/",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Proton counts",
+      "description": "Proton counts over 0.24s interval"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton arrival direction",
+      "description": "Proton arrival direction",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

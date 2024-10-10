@@ -1,0 +1,132 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/Ephemeris/maven-orb-cruise",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/Ephemeris/maven-orb-cruise",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - Ephemeris - cruise",
+  "sdDatePublished": "2015-11-27",
+  "description": "Orbital data are calculated based on SPICE kernels",
+  "abstract": "Orbital data are calculated based on SPICE kernels",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_iau_sun",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mav_xyz_iausun(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mav_xyz_iausun(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mav_xyz_iausun(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hee",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mav_xyz_hee(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mav_xyz_hee(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mav_xyz_hee(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_heeq",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mav_xyz_heeq(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mav_xyz_heeq(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mav_xyz_heeq(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance maven-sun",
+      "unitText": "AU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_iau_sun",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_iau_sun",
+      "unitText": "degrees"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

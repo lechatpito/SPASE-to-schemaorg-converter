@@ -1,0 +1,236 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/ORBIT/psp-orb-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/ORBIT/psp-orb-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP - Ephemeris - orbit",
+  "sdDatePublished": "2024-05-22",
+  "description": "Reconstructed and predicted ephemeris for Parker Solar Probe",
+  "abstract": "Reconstructed and predicted ephemeris for Parker Solar Probe",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hee",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "psp_xyz_hee(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "psp_xyz_hee(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "psp_xyz_hee(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_heeq",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "psp_xyz_heeq(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "psp_xyz_heeq(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "psp_xyz_heeq(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_hci",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "psp_xyz_hci(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "psp_xyz_hci(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "psp_xyz_hci(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_iau_sun",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "psp_xyz_iausun(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "psp_xyz_iausun(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "psp_xyz_iausun(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance psp-sun",
+      "unitText": "AU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon iau_sun",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat iau_sun",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon hci",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat hci",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon hee",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat hee",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_rtn",
+      "description": "Spacecraft velocity in RTN coordinate",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vr",
+            "Index": "1",
+            "ParameterKey": "psp_vel_rtn(0)"
+          },
+          {
+            "Name": "vt",
+            "Index": "2",
+            "ParameterKey": "psp_vel_rtn(1)"
+          },
+          {
+            "Name": "vn",
+            "Index": "3",
+            "ParameterKey": "psp_vel_rtn(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_hci",
+      "description": "Spacecraft velocity in HCI coordinate",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "psp_vel_hci(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "psp_vel_hci(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "psp_vel_hci(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "psp_orbit_num"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

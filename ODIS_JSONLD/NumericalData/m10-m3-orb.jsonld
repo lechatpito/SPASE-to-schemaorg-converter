@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Mariner10/Ephemeris/m10-m3-orb",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Mariner10/Ephemeris/m10-m3-orb",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Mariner 10 - Ephemeris - flyby mercury 3",
+  "sdDatePublished": "2021-02-12",
+  "description": "Mariner 10 orbit data.\n\t\t * SEQ : unreference/ambiguous definition (center = Sun) - feedback welcome.\n ",
+  "abstract": "Mariner 10 orbit data.\n\t\t * SEQ : unreference/ambiguous definition (center = Sun) - feedback welcome.\n ",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_seq",
+      "unitText": "AU",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "m10_m3_xyz(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "m10_m3_xyz(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "m10_m3_xyz(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

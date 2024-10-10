@@ -1,0 +1,137 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/EPAM/ace-epam-lems30",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/EPAM/ace-epam-lems30",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ACE - EPAM - LEMS30",
+  "sdDatePublished": "2024-03-25",
+  "description": "ACE EPAM LEMS30 ion flux data. Taken from ACE EPAM Electron Proton Alpha Monitor (EPAM) Level 2 intensities at 5-min time resolution. Calibrated science quality data. The data are accessible via ftp in HDF and CDF from the ACE Science Center and CDAWeb, respectively, and in ASCII format from the value-added interfaces at those sites. The \"parameter keys\" given below are as used by CDAWeb.",
+  "abstract": "ACE EPAM LEMS30 ion flux data. Taken from ACE EPAM Electron Proton Alpha Monitor (EPAM) Level 2 intensities at 5-min time resolution. Calibrated science quality data. The data are accessible via ftp in HDF and CDF from the ACE Science Center and CDAWeb, respectively, and in ASCII format from the value-added interfaces at those sites. The \"parameter keys\" given below are as used by CDAWeb.",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux",
+      "description": "LEMS30 0.047-0.065 MeV Ion Flux",
+      "unitText": "1/(cm^2 s sr MeV)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "0.047 - 0.065 MeV",
+            "Index": "1",
+            "ParameterKey": "ace_epam_lems30_p(0)"
+          },
+          {
+            "Name": "0.065 - 0.112 MeV",
+            "Index": "2",
+            "ParameterKey": "ace_epam_lems30_p(1)"
+          },
+          {
+            "Name": "0.112 - 0.187 MeV",
+            "Index": "3",
+            "ParameterKey": "ace_epam_lems30_p(2)"
+          },
+          {
+            "Name": "0.187 - 0.310 MeV",
+            "Index": "4",
+            "ParameterKey": "ace_epam_lems30_p(3)"
+          },
+          {
+            "Name": "0.310 - 0.580 MeV",
+            "Index": "5",
+            "ParameterKey": "ace_epam_lems30_p(4)"
+          },
+          {
+            "Name": "0.580 - 1.06 MeV",
+            "Index": "6",
+            "ParameterKey": "ace_epam_lems30_p(5)"
+          },
+          {
+            "Name": "1.06 - 1.91 MeV",
+            "Index": "7",
+            "ParameterKey": "ace_epam_lems30_p(6)"
+          },
+          {
+            "Name": "1.91 - 4.75 MeV",
+            "Index": "8",
+            "ParameterKey": "ace_epam_lems30_p(7)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "uncertainty",
+      "description": "Fractional uncertainty (statistical) in the P flux",
+      "unitText": "Ratio",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "0.047 - 0.065 MeV",
+            "Index": "1",
+            "ParameterKey": "ace_epam_lems30_uncp(0)"
+          },
+          {
+            "Name": "0.065 - 0.112 MeV",
+            "Index": "2",
+            "ParameterKey": "ace_epam_lems30_uncp(1)"
+          },
+          {
+            "Name": "0.112 - 0.187 MeV",
+            "Index": "3",
+            "ParameterKey": "ace_epam_lems30_uncp(2)"
+          },
+          {
+            "Name": "0.187 - 0.310 MeV",
+            "Index": "4",
+            "ParameterKey": "ace_epam_lems30_uncp(3)"
+          },
+          {
+            "Name": "0.310 - 0.580 MeV",
+            "Index": "5",
+            "ParameterKey": "ace_epam_lems30_uncp(4)"
+          },
+          {
+            "Name": "0.580 - 1.06 MeV",
+            "Index": "6",
+            "ParameterKey": "ace_epam_lems30_uncp(5)"
+          },
+          {
+            "Name": "1.06 - 1.91 MeV",
+            "Index": "7",
+            "ParameterKey": "ace_epam_lems30_uncp(6)"
+          },
+          {
+            "Name": "1.91 - 4.75 MeV",
+            "Index": "8",
+            "ParameterKey": "ace_epam_lems30_uncp(7)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

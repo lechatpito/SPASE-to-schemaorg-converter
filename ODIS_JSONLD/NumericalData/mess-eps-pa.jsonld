@@ -1,0 +1,50 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/EPS/mess-eps-pa",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/EPS/mess-eps-pa",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MESSENGER - EPS - pitch angles",
+  "sdDatePublished": "2019-06-07",
+  "description": "\n                The dataset contains the pitch angle for each of the six look directions reported at the same cadence as the EPS \n                LoRes Spectral rate measurements (see EPPS CDR SIS document). \n                Please note that the D03 detector on EPS has a very high background and is \n                not useable for any science data product.",
+  "abstract": "\n                The dataset contains the pitch angle for each of the six look directions reported at the same cadence as the EPS \n                LoRes Spectral rate measurements (see EPPS CDR SIS document). \n                Please note that the D03 detector on EPS has a very high background and is \n                not useable for any science data product.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mercury"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "pa values",
+      "description": "Pitch angles values for six looking directions",
+      "unitText": "deg",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

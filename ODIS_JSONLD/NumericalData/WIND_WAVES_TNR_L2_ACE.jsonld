@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Wind/WAVES/WIND_WAVES_TNR_L2_ACE",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Wind/WAVES/WIND_WAVES_TNR_L2_ACE",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind Waves TNR L2 Temporal Series Data",
+  "sdDatePublished": "2022-09-01",
+  "description": "Wind Waves Thermal Noise Receiver Temporal Series \nThese are calibrated data presented as a temporal series. Each record consists on a unique spectrum (given in \u00b5V^2 / Hz) made with 96 frequencies.\nIn modes 0, 1 and 4 the number of channels per band is increased to 32 by interpolation. The interpolated frequencies are located by the odd indexes.\nIn mode 4, spectra issued from the TNR B are ignored. In mode 2 and 3, data are not altered.\nIf the cycle is in state fixed tune (event_state = 1) , then only 32 values are defined. With respect to the band sweeped, the following values are defined:\nBand: Index of defined values\nA : 0 to 31\n B : 16 to 47\n C : 32 to 63\n D : 48 to 79\n E : 64 to 95\nIf the cycle is in state ABCDE (event_state=2), then band B and D are ignored, while in state ACE (event_state=3) all data are available.",
+  "abstract": "Wind Waves Thermal Noise Receiver Temporal Series \nThese are calibrated data presented as a temporal series. Each record consists on a unique spectrum (given in \u00b5V^2 / Hz) made with 96 frequencies.\nIn modes 0, 1 and 4 the number of channels per band is increased to 32 by interpolation. The interpolated frequencies are located by the odd indexes.\nIn mode 4, spectra issued from the TNR B are ignored. In mode 2 and 3, data are not altered.\nIf the cycle is in state fixed tune (event_state = 1) , then only 32 values are defined. With respect to the band sweeped, the following values are defined:\nBand: Index of defined values\nA : 0 to 31\n B : 16 to 47\n C : 32 to 63\n D : 48 to 79\n E : 64 to 95\nIf the cycle is in state ABCDE (event_state=2), then band B and D are ignored, while in state ACE (event_state=3) all data are available.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:WIND_WAVES_TNR_L2_ACE",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "WIND Waves TNR L2 Temporal Series",
+      "description": "WIND Waves TNR L2 Temporal Series",
+      "unitText": "uV^2/Hz"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

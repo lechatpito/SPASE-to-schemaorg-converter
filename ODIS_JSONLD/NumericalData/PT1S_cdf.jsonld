@@ -1,0 +1,95 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NIPR/UAPM/SYO/fluxgate/PT1S_cdf",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NIPR/UAPM/SYO/fluxgate/PT1S_cdf",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Magnetic field data with 1sec resolution from the fluxgate magnetometer at Syowa Station, Antarctica.",
+  "sdDatePublished": "2011-04-01",
+  "description": "Magnetic field data with 1sec resolution from the fluxgate magnetometer at Syowa Station, Antarctica. The data is originally measured at 0.05sec intervals.",
+  "abstract": "Magnetic field data with 1sec resolution from the fluxgate magnetometer at Syowa Station, Antarctica. The data is originally measured at 0.05sec intervals.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earch Interaction Ionosphere/Magnetosphere Dynamics Magnetic Fields/Magnetic Currents",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://scidbase.nipr.ac.jp/modules/metadata/index.php?content_id=102",
+      "name": "Upper Atmosphere Physics Monitoring Observation at Syowa Station",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://polaris.nipr.ac.jp/~aurora/uapm/ConjugateObsTop.html",
+      "name": "Conjugate Observation between Syowa Station and Iceland",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://iugonet0.nipr.ac.jp/data/",
+      "name": "IUGONET Database in NIPR",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Time label in CDF_EPOCH (the number of milliseconds since 01-Jan-0000)",
+      "unitText": "second"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vector magnetic field",
+      "description": "Three components of the magnetic field measured with the fluxgate magnetometer. H: northward component, D: eastward component, Z: vertically downward component.",
+      "unitText": "nT",
+      "cadence": "PT1S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "H",
+            "Index": "1"
+          },
+          {
+            "Name": "D",
+            "Index": "2"
+          },
+          {
+            "Name": "Z",
+            "Index": "3"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

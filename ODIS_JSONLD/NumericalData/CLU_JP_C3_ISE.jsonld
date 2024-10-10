@@ -1,0 +1,125 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Cluster-3/JSOC/Catalogues/CLU_JP_C3_ISE",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Cluster-3/JSOC/Catalogues/CLU_JP_C3_ISE",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cluster 3 JSOC Catalogues Identified Scientific Events",
+  "sdDatePublished": "2022-02-22",
+  "description": "Cluster 3 JSOC Catalogues Identified Scientific Events",
+  "abstract": "Cluster 3 JSOC Catalogues Identified Scientific Events",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CLU_JP_C3_ISE",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 JSOC Event Code for Predicted Spacecraft Event",
+      "description": "Cluster 3 Event Code for Predicted Spacecraft Event, PSE"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 JSOC Spacecraft Orbit Number",
+      "description": "Cluster 3 Spacecraft Orbit Number, Integer Part"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 JSOC Event Code Sub Type",
+      "description": "Cluster 3 Event Code Sub Type"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 JSOC Spacecraft Orbit Phase",
+      "description": "Cluster 3 Spacecraft Orbit Phase, Fractional Part"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 JSOC Spacecraft Position, Predicted Latitude",
+      "description": "Cluster 3 Spacecraft Position, Predicted Latitude, Elevation Angle from Ecliptic Plane",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 JSOC Spacecraft Position, Predicted Magnetic Local Time",
+      "description": "Cluster 3 Spacecraft Position, Predicted Magnetic Local Time, MLT",
+      "unitText": "h"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 3 JSOC Predicted Spacecraft Position Vector, Geocentric Solar Ecliptic Cartesian Coordinates, at the Predicted Spacecraft Event Time",
+      "description": "Cluster 3 Predicted Spacecraft Position Vector, Geocentric Solar Ecliptic, GSE, Cartesian Coordinates, at the Predicted Spacecraft Event, PSE, Time",
+      "unitText": "km"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

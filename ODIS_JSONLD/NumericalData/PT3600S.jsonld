@@ -1,0 +1,45 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NOAA/NumericalData/NGDC/Cosmic.Ray/PT3600S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NOAA/NumericalData/NGDC/Cosmic.Ray/PT3600S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cosmic ray count rates at NGDC",
+  "sdDatePublished": "2018-06-28",
+  "description": "Cosmic ray count rates from many ground-based stations.  Some station-year files at hourly resolution, others at daily resolution.  Included are data from Climax, Deep River, Huancayo, Thule and others",
+  "abstract": "Cosmic ray count rates from many ground-based stations.  Some station-year files at hourly resolution, others at daily resolution.  Included are data from Climax, Deep River, Huancayo, Thule and others",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftp://ftp.ngdc.noaa.gov/STP/SOLAR_DATA/COSMIC_RAYS/",
+      "name": "ftp site at NOAA/NGDC",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

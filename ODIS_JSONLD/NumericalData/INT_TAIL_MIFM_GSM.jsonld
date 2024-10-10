@@ -1,0 +1,63 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Tail/MIF-M/INT_TAIL_MIFM_GSM",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Tail/MIF-M/INT_TAIL_MIFM_GSM",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "INT-TAIL MIFM : DC/AC Magn. Field (0-64 Hz and 1 Hz - 40 kHz) - GSM Frame",
+  "sdDatePublished": "2022-04-27",
+  "description": "This data set contains the DC/AC Magnetic Field (0-64 Hz and 1 Hz - 40 kHz) in GSM from the MIF-M magnetometer on board Interball-Tail.",
+  "abstract": "This data set contains the DC/AC Magnetic Field (0-64 Hz and 1 Hz - 40 kHz) in GSM from the MIF-M magnetometer on board Interball-Tail.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_TAIL_MIFM_GSM",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "INT-TAIL MIFM   Magnetic field in the GSM coordinate system",
+      "description": "INT-TAIL MIFM   Magnetic field in the GSM coordinate system",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT-TAIL MIFM  Total magnetic field",
+      "description": "INT-TAIL MIFM  Total magnetic field",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

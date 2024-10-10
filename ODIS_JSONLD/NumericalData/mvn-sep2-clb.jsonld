@@ -1,0 +1,83 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SEP/mvn-sep2-clb",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SEP/mvn-sep2-clb",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - SEP - telescope 2 - diff fluxes",
+  "sdDatePublished": "2024-04-02",
+  "description": "MAVEN SEP 1 Calibrated Ion (without mass discrimination) and Electron Spectra in Forward/Rear look directions (#/cm^2/sec/ster/keV) : Parker / anti-Parker spiral and perpendicular directions                       \n      \n      Attenuator state: 0=error, 1=open, 2=closed, 3=mixed\n         ",
+  "abstract": "MAVEN SEP 1 Calibrated Ion (without mass discrimination) and Electron Spectra in Forward/Rear look directions (#/cm^2/sec/ster/keV) : Parker / anti-Parker spiral and perpendicular directions                       \n      \n      Attenuator state: 0=error, 1=open, 2=closed, 3=mixed\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "electrons : forward",
+      "unitText": "1/cm^2/sec/ster/keV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "15",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "electrons : rear",
+      "unitText": "1/cm^2/sec/ster/keV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "15",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ions : forward",
+      "unitText": "1/cm^2/sec/ster/keV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "28",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ions : rear",
+      "unitText": "1/cm^2/sec/ster/keV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "28",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "attenuator state"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MEX/ELS/mex-els-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MEX/ELS/mex-els-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MEX - ELS - electron energy spectra : 16 anodes",
+  "sdDatePublished": "2021-10-12",
+  "description": "Level2 data. This dataset is generated directly from the MEX telemetry with IRAP software",
+  "abstract": "Level2 data. This dataset is generated directly from the MEX telemetry with IRAP software",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "counts : per anode ##anode##",
+      "description": "energy spectrogram of electron counts",
+      "unitText": "cnts",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "128",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "counts : sum over anodes",
+      "description": "energy spectrogram of electron counts",
+      "unitText": "cnts",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "128",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

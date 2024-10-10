@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TIMED/GUVI/L3_Thermospheric_O-N2",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TIMED/GUVI/L3_Thermospheric_O-N2",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "TIMED GUVI L3 Thermospheric O/N2",
+  "sdDatePublished": "2020-07-07",
+  "description": "Daily maps of the thermospheric column number density ratio of O and N2 referenced at N2 column number density level of 10e17 cm-2.",
+  "abstract": "Daily maps of the thermospheric column number density ratio of O and N2 referenced at N2 column number density level of 10e17 cm-2.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "GUVI",
+    "lower thermosphere",
+    "MLTI"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://guvitimed.jhuapl.edu/data_fetch_l3_on2_idlsave",
+      "name": "GUVI POC L3 Thermospheric O/N2 (IDLsave) Data Request",
+      "description": "This web page allows the request of data files for this product.  To request data: select the year and day then press display."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Thermospheric O/N2 Data",
+      "description": "The thermospheric column number density ratio of O and N2.",
+      "unitText": "unitless"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

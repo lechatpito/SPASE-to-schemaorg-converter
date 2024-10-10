@@ -1,0 +1,49 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/GOLD/L1D/LIM_Stack/PT180S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/GOLD/L1D/LIM_Stack/PT180S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Gold Level 1D Stack Plots",
+  "sdDatePublished": "2020-09-14",
+  "description": "Level 1D files contain a thumbnail image (PNG) for a stack of 8 slices for different latitudes of \n   brightness as a function of wavelength and tangent altitude. A new L1D file is generated for each new L1C file. \n   These correspond to either the Northern or Southern hemisphere. Stack of 8 slices for different latitudes of \n   intensity as a function of wavelength and altitude:\n   -Use the 8 latitudes that correspond to the scan hemisphere (since there are 16 latitudes per hemisphere, \n   2 latitude bins are co-added to get to 8 latitudes). \n   -Latitudes are +/- [0.625, 1.875, 3.125, 4.375, 5.625, 6.875, 8.125, 9.375]",
+  "abstract": "Level 1D files contain a thumbnail image (PNG) for a stack of 8 slices for different latitudes of \n   brightness as a function of wavelength and tangent altitude. A new L1D file is generated for each new L1C file. \n   These correspond to either the Northern or Southern hemisphere. Stack of 8 slices for different latitudes of \n   intensity as a function of wavelength and altitude:\n   -Use the 8 latitudes that correspond to the scan hemisphere (since there are 16 latitudes per hemisphere, \n   2 latitude bins are co-added to get to 8 latitudes). \n   -Latitudes are +/- [0.625, 1.875, 3.125, 4.375, 5.625, 6.875, 8.125, 9.375]",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": [
+    "GOLD",
+    "SES-14"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/gold/level1d/",
+      "name": "HTTPS from SPDF",
+      "description": "Directory with GOLD plots."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

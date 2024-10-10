@@ -1,0 +1,49 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/DisplayData/CDPP-Archive/GEOS-1/Ephemeris/GEOS1_POS_3D_PS",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/DisplayData/CDPP-Archive/GEOS-1/Ephemeris/GEOS1_POS_3D_PS",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "GEOS-1 3D Positions in GSE system (PostScripts)",
+  "sdDatePublished": "2022-07-26",
+  "description": "This data set contains 3D plots of  GEOS-1  positions in GSE system.\n\n This is a projection of the GEOS-1 orbit on the 3 planes of Geocentric Solar Equatorial system (GSE), i.e. X-Y, X-Z, and Y-Z planes. A 3-D perspective view is also added.\n\nMeasured positions, given from auxiliary data, are plotted in blue, while corresponding estimated Kepler ellipse is plotted in green. The estimated Kepler parameters are computed from a fit with the experimental positions and a model. So, the values of apogee, perigee, semi-major and semi-minor axis could differ a little bit from one view to another one.\n\nTime ticks are used to locate the spacecraft at a given time.",
+  "abstract": "This data set contains 3D plots of  GEOS-1  positions in GSE system.\n\n This is a projection of the GEOS-1 orbit on the 3 planes of Geocentric Solar Equatorial system (GSE), i.e. X-Y, X-Z, and Y-Z planes. A 3-D perspective view is also added.\n\nMeasured positions, given from auxiliary data, are plotted in blue, while corresponding estimated Kepler ellipse is plotted in green. The estimated Kepler parameters are computed from a fit with the experimental positions and a model. So, the values of apogee, perigee, semi-major and semi-minor axis could differ a little bit from one view to another one.\n\nTime ticks are used to locate the spacecraft at a given time.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GEOS1_POS_3D_PS",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

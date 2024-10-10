@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ISIS2/IMS/Plasma_Data",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ISIS2/IMS/Plasma_Data",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ISIS 2/IMS/Plasma Data",
+  "sdDatePublished": "2020-07-07",
+  "description": "This set of plasma data came from the ISIS 2 (International Satellites for Ionospheric Studies) ion-mass spectrometer experiment.  Ion densities of various ion species are available for the lower range (1-8 atomic mass units, H+, D+, He+, N++, O++) and the upper range (8-64 atomic mass units, O++, N+, O+, 18+, N2+, NO+, O2+).  Also included in the data set are spacecraft position data, geomagnetic field intensity, F107 flux (daily solar radio flux), Kp indices, and Dst indices.",
+  "abstract": "This set of plasma data came from the ISIS 2 (International Satellites for Ionospheric Studies) ion-mass spectrometer experiment.  Ion densities of various ion species are available for the lower range (1-8 atomic mass units, H+, D+, He+, N++, O++) and the upper range (8-64 atomic mass units, O++, N+, O+, 18+, N2+, NO+, O2+).  Also included in the data set are spacecraft position data, geomagnetic field intensity, F107 flux (daily solar radio flux), Kp indices, and Dst indices.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/isis/ion-mass_spectrometer_ascii_binary/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/isis/ion-mass_spectrometer_ascii_binary/",
+      "name": "HTTPS from SPDF",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

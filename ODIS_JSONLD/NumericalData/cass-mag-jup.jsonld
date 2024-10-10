@@ -1,0 +1,148 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/MAG/cass-mag-jup",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/MAG/cass-mag-jup",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - MAG - flyby jupiter",
+  "sdDatePublished": "2019-08-23",
+  "description": "High-resolution magnetic field data from the Cassini magnetometer during the Jupiter flyby obtained from NASA/PDS plasma node\n             * J3 - J3 (IAU_JUPITER) is a Jovicentric cartesian coordinate system consistent with the IAU 1997 definition of the System 3 prime meridian. It consists of X (in Jovian equatorial plane, along S3 1997 prime meridian), Y (completes right handed set), and Z (parallel to the Jovian spin axis).       \n             * JMXYZ - JMAG XYZ is a  Jovicentric cartesian coordinate system which consists of X (in the plane containing Z and the S3 1997 Prime Meridian), Y (completes right handed set), and Z (the Jupiter dipole).   \n              * RTN - RTN coordinates consist of R (radial component, Sun to the spacecraft), T (tangential component, parallel to the Solar Equatorial plane and perpendicular to R), and N (normal component, completes right handed set).  \n            ",
+  "abstract": "High-resolution magnetic field data from the Cassini magnetometer during the Jupiter flyby obtained from NASA/PDS plasma node\n             * J3 - J3 (IAU_JUPITER) is a Jovicentric cartesian coordinate system consistent with the IAU 1997 definition of the System 3 prime meridian. It consists of X (in Jovian equatorial plane, along S3 1997 prime meridian), Y (completes right handed set), and Z (parallel to the Jovian spin axis).       \n             * JMXYZ - JMAG XYZ is a  Jovicentric cartesian coordinate system which consists of X (in the plane containing Z and the S3 1997 Prime Meridian), Y (completes right handed set), and Z (the Jupiter dipole).   \n              * RTN - RTN coordinates consist of R (radial component, Sun to the spacecraft), T (tangential component, parallel to the Solar Equatorial plane and perpendicular to R), and N (normal component, completes right handed set).  \n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_j3",
+      "description": "Magnetic field vector components in Jup_IAU coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "cass_bj3_jup(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "cass_bj3_jup(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "cass_bj3_jup(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_jm",
+      "description": "Magnetic field vector components in JMAG coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "cass_bjm_jup(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "cass_bjm_jup(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "cass_bjm_jup(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_rtn",
+      "description": "Magnetic field vector components in RTN coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "cass_b_jup(0)"
+          },
+          {
+            "Name": "bt",
+            "Index": "2",
+            "ParameterKey": "cass_b_jup(1)"
+          },
+          {
+            "Name": "bn",
+            "Index": "3",
+            "ParameterKey": "cass_b_jup(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field vector magnitude",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi",
+      "description": "Magnetic field phi angle",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta",
+      "description": "Magnetic field theta angle",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

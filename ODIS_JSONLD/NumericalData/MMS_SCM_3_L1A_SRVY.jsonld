@@ -1,0 +1,80 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/MMS-3/Fields/SCM/MMS_SCM_3_L1A_SRVY",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/MMS-3/Fields/SCM/MMS_SCM_3_L1A_SRVY",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS-3 SCM Search Coil Magnetometer Level-1a Survey Waveform (CDF)",
+  "sdDatePublished": "2022-07-07",
+  "description": "This data set contains MMS-3 SCM  uncalibrated AC magnetic field waveforms (in telemetry unit) in survey mode and in the sensor frame.\nThese raw uncalibrated (telemetry units) AC magnetic field waveform data in the (spinning at 20 s) sensor frame are sampled at (survey scsrvy=32 samples/s, brst scb=8192 samples/s, schb=16384 samples/s).",
+  "abstract": "This data set contains MMS-3 SCM  uncalibrated AC magnetic field waveforms (in telemetry unit) in survey mode and in the sensor frame.\nThese raw uncalibrated (telemetry units) AC magnetic field waveform data in the (spinning at 20 s) sensor frame are sampled at (survey scsrvy=32 samples/s, brst scb=8192 samples/s, schb=16384 samples/s).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:MMS_SCM_3_L1A_SRVY",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-3 SCM  Level-1a Survey Waveform",
+      "description": "MMS-3 SCM Search Coil Magnetometer Level-1a Survey Waveform (raw data in telemetry units)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

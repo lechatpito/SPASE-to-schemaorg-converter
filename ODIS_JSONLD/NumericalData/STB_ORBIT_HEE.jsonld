@@ -1,0 +1,63 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/STEREO-B/Ephemeris/STB_ORBIT_HEE",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/STEREO-B/Ephemeris/STB_ORBIT_HEE",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO-B Orbit data (HEE frame, 1 min resolution)",
+  "sdDatePublished": "2022-07-26",
+  "description": "This data set contains the HEE position and velocity of STEREO-B at 1 min resolution.",
+  "abstract": "This data set contains the HEE position and velocity of STEREO-B at 1 min resolution.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:STB_ORBIT_HEE",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B HEE position",
+      "description": "STEREO-B HEE position",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B HEE velocity",
+      "description": "STEREO-B HEE velocity",
+      "unitText": "km/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

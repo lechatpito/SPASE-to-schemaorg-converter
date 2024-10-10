@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/PHOBOS-1/PWS/PHOBOS_PWS_1_LANGMUIR",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/PHOBOS-1/PWS/PHOBOS_PWS_1_LANGMUIR",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PHOBOS-1 PWS Current and potential of the Langmuir probe: 0.1Hz - 50Hz (CDF)",
+  "sdDatePublished": "2022-05-03",
+  "description": "This dataset contains Langmuir probe currents and bias voltages (frequency range   0.1Hz - 50Hz) from PWS instrument of the APV-F experiment onboard of PHOBOS-1",
+  "abstract": "This dataset contains Langmuir probe currents and bias voltages (frequency range   0.1Hz - 50Hz) from PWS instrument of the APV-F experiment onboard of PHOBOS-1",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:PHOBOS_PWS_1_LANGMUIR",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Langmuir  Probe sweep duration",
+      "description": "Langmuir  Probe sweep duration",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Langmuir  Probe current",
+      "description": "Langmuir  Probe current",
+      "unitText": "nA"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Langmuir  Probe voltage",
+      "description": "Langmuir  Probe voltage",
+      "unitText": "V"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Tail/CORAL/INT_TAIL_CORAL_MOMENT",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Tail/CORAL/INT_TAIL_CORAL_MOMENT",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "INT-TAIL CORAL MOMENT : Moments of Ion Distribution Function",
+  "sdDatePublished": "2022-04-27",
+  "description": "This data set contains the moments of the ion distribution function from the Interball-Tail-CORALL instrument.\n\nNearly 3D ion distribution function (without mass separation) is obtained once per spacecraft spin period (about 118 s). Distribution function moments are calculated under assumption that all particles are protons.",
+  "abstract": "This data set contains the moments of the ion distribution function from the Interball-Tail-CORALL instrument.\n\nNearly 3D ion distribution function (without mass separation) is obtained once per spacecraft spin period (about 118 s). Distribution function moments are calculated under assumption that all particles are protons.",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_TAIL_CORAL_MOMENT",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "CORAL Ion Density",
+      "description": "CORAL Ion Density",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CORAL Ion Temperature",
+      "description": "CORAL Ion Temperature",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CORAL Ion velocity in GSM frame",
+      "description": "CORAL Ion velocity in GSM frame",
+      "unitText": "km s^-1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NIPR/Iceland/TJO/induction/PT05S_bin",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NIPR/Iceland/TJO/induction/PT05S_bin",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Magnetic field measured at 0.5sec intervals with the induction magnetometer at Tjornes, Iceland.",
+  "sdDatePublished": "2011-04-01",
+  "description": "Magnetic field measured at 0.5sec intervals with the induction magnetometer at Tjornes, Iceland. The data is stored together with the magnetic field from the fluxgate magnetometer and CNA from the broad-beam riometer.",
+  "abstract": "Magnetic field measured at 0.5sec intervals with the induction magnetometer at Tjornes, Iceland. The data is stored together with the magnetic field from the fluxgate magnetometer and CNA from the broad-beam riometer.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earch Interaction Ionosphere/Magnetosphere Dynamics Magnetic Fields/Magnetic Currents",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://scidbase.nipr.ac.jp/modules/metadata/index.php?content_id=115",
+      "name": "Conjugate Observation at Iceland",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://polaris.nipr.ac.jp/~aurora/uapm/ConjugateObsTop.html",
+      "name": "Conjugate Observation between Syowa Station and Iceland",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Universal Time",
+      "unitText": "second"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vector magnetic field",
+      "description": "Two horizontal components measured with the induction magnetometer. dH/dt: northward component, dD/dt: eastward component.",
+      "unitText": "nT/sec",
+      "cadence": "PT0.5S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "dH/dt",
+            "Index": "1"
+          },
+          {
+            "Name": "dD/dt",
+            "Index": "2"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

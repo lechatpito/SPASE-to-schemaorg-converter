@@ -1,0 +1,65 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/STATIC/mavpds-sta-c0",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/STATIC/mavpds-sta-c0",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - STATIC - c0-64energy2mass",
+  "sdDatePublished": "2024-03-02",
+  "description": "64 energy x 2 mass ion distributions in units of differential energy flux.\n             (LID = urn:nasa:pds:maven.static.c:data.c0_64e2m)\n         ",
+  "abstract": "64 energy x 2 mass ion distributions in units of differential energy flux.\n             (LID = urn:nasa:pds:maven.static.c:data.c0_64e2m)\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion eflux : 2D ",
+      "description": "64 energy x 2 mass ion distributions in units of differential energy flux \n      (LID = urn:nasa:pds:maven.static.c:data.c0_64e2m)",
+      "unitText": "eV/cm^2-sr-s-eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "128",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion eflux : sum over mass",
+      "description": "64 energy x 2 mass ion distributions in units of differential energy flux\n            (LID = urn:nasa:pds:maven.static.c:data.c6_32e64m)",
+      "unitText": "eV/cm^2-sr-s-eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "table index"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

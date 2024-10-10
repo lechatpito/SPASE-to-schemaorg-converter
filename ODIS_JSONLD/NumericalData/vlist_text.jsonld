@@ -1,0 +1,108 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/IPS/vlist_text",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/IPS/vlist_text",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Raw data of IPS measurements",
+  "sdDatePublished": "2011-04-01",
+  "description": "Raw data of Interplanetary Scintillation (IPS) meaurements",
+  "abstract": "Raw data of Interplanetary Scintillation (IPS) meaurements",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Solar Velocity Fields",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://stesun5.isee.nagoya-u.ac.jp/ips_data.html",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Source",
+      "description": "Source star name"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Observation date",
+      "description": "Date: Year-1900, Month, Day"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Observation time",
+      "description": "Observation time in Universal time (Hour)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radial distance",
+      "description": "Radial distance, of P-point, from the sun (AU)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliocentric latitude",
+      "description": "Heliocentric latitude of P-point (deg.)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliocentric longitude",
+      "description": "Heliocentric longitude of P-point (deg.)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic latitude",
+      "description": "Heliographic latitude of P-point (deg.)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Heliographic longitude",
+      "description": "Heliographic latitude of P-point (deg.)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Carrington rotation number",
+      "description": "Carrington rotation number of P-point"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar wind velocity",
+      "description": "Solar wind velocity (km/s). The value of -999 means that no velocity estimate is available."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error in velocity",
+      "description": "The error in velocity estimation (km/s). The vale of -999 means either that only two station could be used to calculate the speed, or that no velocity estimate is available."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Scintillation level",
+      "description": "Scintillation level (in arbitrary unit) observed at either Fuji or Kiso station."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

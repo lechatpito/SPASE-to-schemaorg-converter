@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/DisplayData/CDPP-Archive/Cluster/Summary_plots/CLU_SP_CL_SPP",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/DisplayData/CDPP-Archive/Cluster/Summary_plots/CLU_SP_CL_SPP",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "CLUSTER Summary Plots (Postscripts)",
+  "sdDatePublished": "2022-03-08",
+  "description": "The Summary Parameter Plots are plots of a subset of the Summary Parameters, one minute resolution, 6 hours per page, 4 pages for all the parameters plotted. There are thus 16 pages per day. These plots are in the form of PostScript files, produced by the German Data Centre.",
+  "abstract": "The Summary Parameter Plots are plots of a subset of the Summary Parameters, one minute resolution, 6 hours per page, 4 pages for all the parameters plotted. There are thus 16 pages per day. These plots are in the form of PostScript files, produced by the German Data Centre.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CLU_SP_CL_SPP",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/psp-fld-qfl",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/psp-fld-qfl",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP - FIELDS MAG - quality flag",
+  "sdDatePublished": "2024-03-18",
+  "description": " \n             The quality flags is a bitwise variable, meaning that multiple flags can be set for a single time, by adding flag values. Current flagged values are: \n             * 1: FIELDS antenna bias sweep, \n             * 2: PSP thruster firing, \n             * 4: SCM Calibration, \n             * 8: PSP rotations for MAG calibration (MAG rolls), \n             * 16: FIELDS MAG calibration sequence, \n             * 32: SWEAP SPC in electron mode, \n             * 64: PSP Solar limb sensor (SLS) test. \n             * 128: PSP spacecraft is off umbra pointing (heat shield not pointed sunward). \n             * 0: A value of zero corresponds to no set flags\n             The data is available both in the form of an integer and as a vector of 8 components corresponding to the flagging of each scenarii.\n         ",
+  "abstract": " \n             The quality flags is a bitwise variable, meaning that multiple flags can be set for a single time, by adding flag values. Current flagged values are: \n             * 1: FIELDS antenna bias sweep, \n             * 2: PSP thruster firing, \n             * 4: SCM Calibration, \n             * 8: PSP rotations for MAG calibration (MAG rolls), \n             * 16: FIELDS MAG calibration sequence, \n             * 32: SWEAP SPC in electron mode, \n             * 64: PSP Solar limb sensor (SLS) test. \n             * 128: PSP spacecraft is off umbra pointing (heat shield not pointed sunward). \n             * 0: A value of zero corresponds to no set flags\n             The data is available both in the form of an integer and as a vector of 8 components corresponding to the flagging of each scenarii.\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "q value",
+      "description": "\n             Bitwise variable quality\n         ",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "q vector",
+      "description": "\n              Quality flags described as a vector. Each component corresponds to a flag value\n          ",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "antenna sweep",
+            "Index": "1",
+            "ParameterKey": "psp_fld_qflbin(0)"
+          },
+          {
+            "Name": "thruster firing",
+            "Index": "2",
+            "ParameterKey": "psp_fld_qflbin(1)"
+          },
+          {
+            "Name": "SCM calibr.",
+            "Index": "3",
+            "ParameterKey": "psp_fld_qflbin(2)"
+          },
+          {
+            "Name": "PSP rotations",
+            "Index": "4",
+            "ParameterKey": "psp_fld_qflbin(3)"
+          },
+          {
+            "Name": "MAG calibr. seq.",
+            "Index": "5",
+            "ParameterKey": "psp_fld_qflbin(4)"
+          },
+          {
+            "Name": "SWP cup e- mode",
+            "Index": "6",
+            "ParameterKey": "psp_fld_qflbin(5)"
+          },
+          {
+            "Name": "SLS test",
+            "Index": "7",
+            "ParameterKey": "psp_fld_qflbin(6)"
+          },
+          {
+            "Name": "off umbra",
+            "Index": "8",
+            "ParameterKey": "psp_fld_qflbin(7)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

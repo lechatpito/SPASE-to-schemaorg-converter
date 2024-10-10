@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/POLAR/UVI/GIFs",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/POLAR/UVI/GIFs",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Polar Ultraviolet Imager High-Resolution Images",
+  "sdDatePublished": "2020-07-07",
+  "description": "This data set contains detected and produced images of the ultraviolet light of the aurora, day and night from the Polar UltraViolet Imager (UVI) experiment.",
+  "abstract": "This data set contains detected and produced images of the ultraviolet light of the aurora, day and night from the Polar UltraViolet Imager (UVI) experiment.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/polar/uvi/aa_pre_generated_plots/gifs/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/polar/uvi/aa_pre_generated_plots/gifs/",
+      "name": "HTTPS from SPDF",
+      "description": "Collection of gifs in SPDF"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MEX/ephemeris/mex-orb-mars",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MEX/ephemeris/mex-orb-mars",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MEX - Ephemeris - orbit mars",
+  "sdDatePublished": "2024-05-22",
+  "description": "Orbital data are calculated based on SPICE kernels at IRAP",
+  "abstract": "Orbital data are calculated based on SPICE kernels at IRAP",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_mso",
+      "description": "Mars Express trajectory in MSO coordinates",
+      "unitText": "Rma",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mex_xyz_mso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mex_xyz_mso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mex_xyz_mso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance mex-mars",
+      "description": "Mars Express trajectory in PC coordinates",
+      "unitText": "Rma"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_iau_mars",
+      "description": "Mars Express trajectory in PC coordinates",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_iau_mars",
+      "description": "Mars Express trajectory in PC coordinates",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mex_orbit_num"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

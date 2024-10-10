@@ -1,0 +1,49 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/EPIC/gtl-epic-ed",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/EPIC/gtl-epic-ed",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Geotail - EPIC - ED : integral electron flux : E > 38 keV",
+  "sdDatePublished": "2016-09-15",
+  "description": "* Sectors (degrees) : 0. - tailward, 45., 90. - dawnward, 135., 180. - sunward, 225., 270. - duskward, 315.; ",
+  "abstract": "* Sectors (degrees) : 0. - tailward, 45., 90. - dawnward, 135., 180. - sunward, 225., 270. - duskward, 315.; ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- flux",
+      "unitText": "1/(cm**2-s-sr-kev)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- flux : omni",
+      "unitText": "1/(cm**2-s-sr-kev)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

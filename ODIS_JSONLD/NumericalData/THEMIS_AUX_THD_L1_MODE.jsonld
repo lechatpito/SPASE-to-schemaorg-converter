@@ -1,0 +1,84 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/THEMIS-D/SpacecraftMode/THEMIS_AUX_THD_L1_MODE",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/THEMIS-D/SpacecraftMode/THEMIS_AUX_THD_L1_MODE",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "THEMIS-D Spacecraft Mode (CDF)",
+  "sdDatePublished": "2022-01-21",
+  "description": "This data set contains THEMIS-D instrument modes. It shows definitively when the spacecraft is in slow survey, fast survey, particle burst, and wave burst modes. The data set is sparsely populated with cadence varying depending upon the frequency of mode transitions.",
+  "abstract": "This data set contains THEMIS-D instrument modes. It shows definitively when the spacecraft is in slow survey, fast survey, particle burst, and wave burst modes. The data set is sparsely populated with cadence varying depending upon the frequency of mode transitions.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:THEMIS_AUX_THD_L1_MODE",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D fast survey mode",
+      "description": "Indicates the time intervals where the  spacecraft is in fast survey mode."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D particle burst mode",
+      "description": "Indicates the time intervals where the  spacecraft is in particle burst mode."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D wave burst mode",
+      "description": "Indicates the time intervals where the  spacecraft is in wave burst mode."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Slow Survey mode",
+      "description": "Indicates the time intervals where the  spacecraft is in slow survey mode."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "THEMIS-D Ultra Fast Survey mode",
+      "description": "Indicates the time intervals where the  spacecraft is in Ultra Fast Survey mode."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

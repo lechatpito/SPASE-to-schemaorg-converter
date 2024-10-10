@@ -1,0 +1,97 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/EISCAT/42M/eiscat-42m-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/EISCAT/42M/eiscat-42m-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "EISCAT - ESR 42M - field-aligned",
+  "sdDatePublished": "2018-04-13",
+  "description": "Data taken by the 42m dish of the EISCAT Svalbard Radar",
+  "abstract": "Data taken by the 42m dish of the EISCAT Svalbard Radar",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "electron density",
+      "unitText": "m-3",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "50",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion velocity",
+      "unitText": "m/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "50",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "electron temperature",
+      "unitText": "K",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "50",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion temperature",
+      "unitText": "K",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "50",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "azimuth",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elevation",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mode"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

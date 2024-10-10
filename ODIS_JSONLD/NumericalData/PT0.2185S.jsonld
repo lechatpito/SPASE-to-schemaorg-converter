@@ -1,0 +1,2584 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ParkerSolarProbe/SWEAP/SPC/Level3/SolarWindMomentsFits/PT0.2185S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ParkerSolarProbe/SWEAP/SPC/Level3/SolarWindMomentsFits/PT0.2185S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP Solar Wind Electrons Alphas and Protons (SWEAP) SPC Ion Number Density, Velocity, and Thermal Speed Momemts and Fits, Level 3 (L3), 0.2185 s Data",
+  "sdDatePublished": "2021-04-27",
+  "description": "SPC Level 3 Ion Data\n--------------------\n\nFile Naming Format: psp_swp_spc_l3i_YYYYMMDD_v01.cdf\n\nThis data product contains derived measurements of ion properties in the solar wind, including those for density, temperature, and velocity. These are determined both by a direct computation of the velocity moments of the reduced distribution function and by attempting to fit the primary peak in the ion I(V) curve with a Maxwellian model. These measurements correspond one to one with spectra in the psp_swp_spc_l2i file for the same date. It may be convenient for some applications to cross-reference the two. For example, the corresponding l3i file contains ephemeris and data quality flag information that may be useful for an investigator who is concerned only with l2i type measurements.\n\nConditions that impact measurement quality are documented in the DQF variable, which contains a 32 element flag array for each measurement time. Each element of the array is reserved to signify a specific condition. These conditions are described in the DQF_FLAGNAMES variable. In this version, for example, DQF_FLAGNAMES.DAT[23] is set to \"spacecraft maneuver\". If measurement \"i\" was made during a spacecraft maneuver, it is thus flagged with DQF.DAT[23,i] = 1.\n\nIn Version 01, measurements are not provided, i.e. variables are set to fill, during spacecraft maneuvers, under conditions of low signal-to-noise, and during certain observed transients. Such conditions are rare during encounters, but increasingly frequent in interplanetary cruise. These conditions are documented in the DQF variable. Remarks are also provided in the \"SPC Reduced Data Quality Periods\" table. In Version 01, the solar wind alpha particle component is not measured. Thus, variables are set equal to fill values.\n\nSPC Encounter 1 Remarks\n-----------------------\n\nData quality is very good for the duration of the encounter. The solar wind flow was within the optimal field of view for the SPC instrument for nearly the entire encounter. See the data flags for specific exceptions. As with all encounters, signal-to-noise is higher during ingress than egress, which is reflected in the typically smaller uncertainties and less frequent \"primary peak low signal\" flag events.\n\nSPC Cruise Phase Remarks\n------------------------\n\nMeasurements recorded during cruise phase are not all transmitted to Earth. The typical return is one spectrum out of every 32.\n\nSPC Encounter 2 Remarks\n-----------------------\n\nDue to an erroneous setting in the operating mode for this encounter, ion full scan spectra and certain spectra immediately following ion full scans are of reduced quality. In the affected full scan spectra, the energy steps over an initial portion of the measurement spectra have zero width, i.e. the Level 2 ion variables MV_LO.DAT = MV_HI.DAT, and the corresponding measurements are purely noise. In some cases, this results in a poor determination of the proton \"primary peak\" energy, which renders additional subsequent full scans that follow subject to the same incompleteness. In other cases, the energy range for the subsequent \"ion peak tracking mode\" scan is not ideal. The affected Level 3 ion measurements have been flagged with DQF.DAT[22]=1, which stands for \"energy ranging/peak tracking error\" and/or set to fill. The operating mode has been revised such that future encounters will not be so affected.\n\nParker Solar Probe SWEAP Rules of the Road\n------------------------------------------\n\nAs part of the development of collaboration with the broader Heliophysics community, the mission has drafted a \"Rules of the Road\" to govern how PSP instrument data are to be used.\n\n* 1) Users should consult with the PI to discuss the appropriate use of instrument data or model results and to ensure that the users are accessing the most recently available versions of the data and of the analysis routines. Instrument team Science Operations Centers, SOCs, and/or Virtual Observatories, VOs, should facilitate this process serving as the contact point between PI and users in most cases.\n\n* 2) Users should heed the caveats of investigators to the interpretations and limitations of data or model results. Investigators supplying data or models may insist that such caveats be published. Data and model version numbers should also be specified.\n\n* 3) Browse products, Quicklook, and Planning data are not intended for science analysis or publication and should not be used for those purposes without consent of the PI.\n\n* 4) Users should acknowledge the sources of data used in all publications, presentations, and reports: \"We acknowledge the NASA Parker Solar Probe Mission and the SWEAP team led by J. Kasper for use of data.\".\n\n* 5) Users are encouraged to provide the PI a copy of each manuscript that uses the PI data prior to submission of that manuscript for consideration of publication. On publication, the citation should be transmitted to the PI and any other providers of data.",
+  "abstract": "SPC Level 3 Ion Data\n--------------------\n\nFile Naming Format: psp_swp_spc_l3i_YYYYMMDD_v01.cdf\n\nThis data product contains derived measurements of ion properties in the solar wind, including those for density, temperature, and velocity. These are determined both by a direct computation of the velocity moments of the reduced distribution function and by attempting to fit the primary peak in the ion I(V) curve with a Maxwellian model. These measurements correspond one to one with spectra in the psp_swp_spc_l2i file for the same date. It may be convenient for some applications to cross-reference the two. For example, the corresponding l3i file contains ephemeris and data quality flag information that may be useful for an investigator who is concerned only with l2i type measurements.\n\nConditions that impact measurement quality are documented in the DQF variable, which contains a 32 element flag array for each measurement time. Each element of the array is reserved to signify a specific condition. These conditions are described in the DQF_FLAGNAMES variable. In this version, for example, DQF_FLAGNAMES.DAT[23] is set to \"spacecraft maneuver\". If measurement \"i\" was made during a spacecraft maneuver, it is thus flagged with DQF.DAT[23,i] = 1.\n\nIn Version 01, measurements are not provided, i.e. variables are set to fill, during spacecraft maneuvers, under conditions of low signal-to-noise, and during certain observed transients. Such conditions are rare during encounters, but increasingly frequent in interplanetary cruise. These conditions are documented in the DQF variable. Remarks are also provided in the \"SPC Reduced Data Quality Periods\" table. In Version 01, the solar wind alpha particle component is not measured. Thus, variables are set equal to fill values.\n\nSPC Encounter 1 Remarks\n-----------------------\n\nData quality is very good for the duration of the encounter. The solar wind flow was within the optimal field of view for the SPC instrument for nearly the entire encounter. See the data flags for specific exceptions. As with all encounters, signal-to-noise is higher during ingress than egress, which is reflected in the typically smaller uncertainties and less frequent \"primary peak low signal\" flag events.\n\nSPC Cruise Phase Remarks\n------------------------\n\nMeasurements recorded during cruise phase are not all transmitted to Earth. The typical return is one spectrum out of every 32.\n\nSPC Encounter 2 Remarks\n-----------------------\n\nDue to an erroneous setting in the operating mode for this encounter, ion full scan spectra and certain spectra immediately following ion full scans are of reduced quality. In the affected full scan spectra, the energy steps over an initial portion of the measurement spectra have zero width, i.e. the Level 2 ion variables MV_LO.DAT = MV_HI.DAT, and the corresponding measurements are purely noise. In some cases, this results in a poor determination of the proton \"primary peak\" energy, which renders additional subsequent full scans that follow subject to the same incompleteness. In other cases, the energy range for the subsequent \"ion peak tracking mode\" scan is not ideal. The affected Level 3 ion measurements have been flagged with DQF.DAT[22]=1, which stands for \"energy ranging/peak tracking error\" and/or set to fill. The operating mode has been revised such that future encounters will not be so affected.\n\nParker Solar Probe SWEAP Rules of the Road\n------------------------------------------\n\nAs part of the development of collaboration with the broader Heliophysics community, the mission has drafted a \"Rules of the Road\" to govern how PSP instrument data are to be used.\n\n* 1) Users should consult with the PI to discuss the appropriate use of instrument data or model results and to ensure that the users are accessing the most recently available versions of the data and of the analysis routines. Instrument team Science Operations Centers, SOCs, and/or Virtual Observatories, VOs, should facilitate this process serving as the contact point between PI and users in most cases.\n\n* 2) Users should heed the caveats of investigators to the interpretations and limitations of data or model results. Investigators supplying data or models may insist that such caveats be published. Data and model version numbers should also be specified.\n\n* 3) Browse products, Quicklook, and Planning data are not intended for science analysis or publication and should not be used for those purposes without consent of the PI.\n\n* 4) Users should acknowledge the sources of data used in all publications, presentations, and reports: \"We acknowledge the NASA Parker Solar Probe Mission and the SWEAP team led by J. Kasper for use of data.\".\n\n* 5) Users are encouraged to provide the PI a copy of each manuscript that uses the PI data prior to submission of that manuscript for consideration of publication. On publication, the citation should be transmitted to the PI and any other providers of data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, Midpoint of Integration",
+      "description": "Epoch Time Tags, TT2000, Nanoseconds since J2000 at Midpoint of the Integration",
+      "unitText": "ns",
+      "minValue": "1990-01-01T00:00:00.000000000",
+      "maxValue": "2029-12-31T23:59:58.999000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar Probe Cup Data Quality Flag",
+      "description": "Solar Probe Cup, SPC, Data Quality Flag: an array of SPC data quality indicators",
+      "minValue": "-2",
+      "maxValue": "127",
+      "defaultValue": "-128",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "Element 2",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "Element 3",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          },
+          {
+            "Name": "Element 4",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "4"
+            }
+          },
+          {
+            "Name": "Element 5",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "5"
+            }
+          },
+          {
+            "Name": "Element 6",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "6"
+            }
+          },
+          {
+            "Name": "Element 7",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "7"
+            }
+          },
+          {
+            "Name": "Element 8",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "8"
+            }
+          },
+          {
+            "Name": "Element 9",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "9"
+            }
+          },
+          {
+            "Name": "Element 10",
+            "Index": "10",
+            "RenderingHints": {
+              "AxisLabel": "10"
+            }
+          },
+          {
+            "Name": "Element 11",
+            "Index": "11",
+            "RenderingHints": {
+              "AxisLabel": "11"
+            }
+          },
+          {
+            "Name": "Element 12",
+            "Index": "12",
+            "RenderingHints": {
+              "AxisLabel": "12"
+            }
+          },
+          {
+            "Name": "Element 13",
+            "Index": "13",
+            "RenderingHints": {
+              "AxisLabel": "13"
+            }
+          },
+          {
+            "Name": "Element 14",
+            "Index": "14",
+            "RenderingHints": {
+              "AxisLabel": "14"
+            }
+          },
+          {
+            "Name": "Element 15",
+            "Index": "15",
+            "RenderingHints": {
+              "AxisLabel": "15"
+            }
+          },
+          {
+            "Name": "Element 16",
+            "Index": "16",
+            "RenderingHints": {
+              "AxisLabel": "16"
+            }
+          },
+          {
+            "Name": "Element 17",
+            "Index": "17",
+            "RenderingHints": {
+              "AxisLabel": "17"
+            }
+          },
+          {
+            "Name": "Element 18",
+            "Index": "18",
+            "RenderingHints": {
+              "AxisLabel": "18"
+            }
+          },
+          {
+            "Name": "Element 19",
+            "Index": "19",
+            "RenderingHints": {
+              "AxisLabel": "19"
+            }
+          },
+          {
+            "Name": "Element 20",
+            "Index": "20",
+            "RenderingHints": {
+              "AxisLabel": "20"
+            }
+          },
+          {
+            "Name": "Element 21",
+            "Index": "21",
+            "RenderingHints": {
+              "AxisLabel": "21"
+            }
+          },
+          {
+            "Name": "Element 22",
+            "Index": "22",
+            "RenderingHints": {
+              "AxisLabel": "22"
+            }
+          },
+          {
+            "Name": "Element 23",
+            "Index": "23",
+            "RenderingHints": {
+              "AxisLabel": "23"
+            }
+          },
+          {
+            "Name": "Element 24",
+            "Index": "24",
+            "RenderingHints": {
+              "AxisLabel": "24"
+            }
+          },
+          {
+            "Name": "Element 25",
+            "Index": "25",
+            "RenderingHints": {
+              "AxisLabel": "25"
+            }
+          },
+          {
+            "Name": "Element 26",
+            "Index": "26",
+            "RenderingHints": {
+              "AxisLabel": "26"
+            }
+          },
+          {
+            "Name": "Element 27",
+            "Index": "27",
+            "RenderingHints": {
+              "AxisLabel": "27"
+            }
+          },
+          {
+            "Name": "Element 28",
+            "Index": "28",
+            "RenderingHints": {
+              "AxisLabel": "28"
+            }
+          },
+          {
+            "Name": "Element 29",
+            "Index": "29",
+            "RenderingHints": {
+              "AxisLabel": "29"
+            }
+          },
+          {
+            "Name": "Element 30",
+            "Index": "30",
+            "RenderingHints": {
+              "AxisLabel": "30"
+            }
+          },
+          {
+            "Name": "Element 31",
+            "Index": "31",
+            "RenderingHints": {
+              "AxisLabel": "31"
+            }
+          },
+          {
+            "Name": "Element 32",
+            "Index": "32",
+            "RenderingHints": {
+              "AxisLabel": "32"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar Probe Cup General Quality Flag",
+      "description": "Solar Probe Cup, SCP, General Quality Flag: This flag documents all exceptional conditions that can affect normal data analysis of SPC observations. All flag values equal to zero signify good data with no exceptional conditions present.",
+      "minValue": "-2",
+      "maxValue": "127",
+      "defaultValue": "-128",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, in the Spacecraft frame, good Qs",
+      "description": "Proton, p, Velocity, V estimate, from the first moment of the reduced distribution function, in the Spacecraft, Spacecraft frame, only good data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_xSC",
+            "Index": "1",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_ySC",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_zSC",
+            "Index": "3",
+            "ValidMin": "-2000.0",
+            "ValidMax": "0.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, upper uncertainty, in the Spacecraft frame, good Qs",
+      "description": "Proton, p, Velocity, V estimate, upper uncertainty, from the first moment of the reduced distribution function, in the Spacecraft, Spacecraft frame, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_xSC_deltahigh",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_ySC_deltahigh",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_zSC_deltahigh",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, lower uncertainty, in the Spacecraft frame, good Qs",
+      "description": "Proton, p, Velocity, V estimate, lower uncertainty, from the first moment of the reduced distribution function, in the Spacecraft, Spacecraft frame, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_xSC_deltalow",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_ySC_deltalow",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_zSC_deltalow",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, in the Radial-Tangential-Normal frame, good Qs",
+      "description": "Proton, p, Velocity, V estimate, from the first moment of the reduced distribution function, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, only good data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_R",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "2000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_T",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_N",
+            "Index": "3",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, upper uncertainty, in the Radial-Tangential-Normal frame, good Qs",
+      "description": "Proton, p, Velocity, V estimate, upper uncertainty, from the first moment of the reduced distribution function, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_R_deltahigh",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_T_deltahigh",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_N_deltahigh",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, lower uncertainty, in the Radial-Tangential-Normal frame, good Qs",
+      "description": "Proton, p, Velocity, V estimate, lower uncertainty, from the first moment of the reduced distribution function, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_R_deltalow",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_T_deltalow",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_N_deltalow",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Number Density moment estimate, good Qs",
+      "description": "Proton, p, Number Density, n estimate, from the zeroth moment of the reduced distribution function, only good data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.01",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Number Density moment estimate, upper uncertainty, good Qs",
+      "description": "Proton, p, Number Density, n estimate, upper uncertainty, from the zeroth moment of the reduced distribution function, only good data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Number Density moment estimate, lower uncertainty, good Qs",
+      "description": "Proton, p, Number Density, n estimate, lower uncertainty, from the zeroth moment of the reduced distribution function, only good data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton most probable Radial Thermal Speed moment estimate, good Qs",
+      "description": "Proton, p, most probable Radial Thermal Speed, Vth estimate, from the second moment of the reduced distribution function, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton most probable Radial Thermal Speed moment estimate, upper uncertainty, good Qs",
+      "description": "Proton, p, most probable Radial Thermal Speed, Vth estimate, upper uncertainty, from the second moment of the reduced distribution function, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton most probable Radial Thermal Speed moment estimate, lower uncertainty, good Qs",
+      "description": "Proton, p, most probable Radial Thermal Speed, Vth estimate, lower uncertainty, from the second moment of the reduced distribution function, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Velocity estimate, in the Spacecraft frame, good Qs",
+      "description": "Primary Proton Population, p, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Spacecraft, Spacecraft frame, only good data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp1_fit_xSC",
+            "Index": "1",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp1_fit_ySC",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp1_fit_zSC",
+            "Index": "3",
+            "ValidMin": "-2000.0",
+            "ValidMax": "0.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Velocity estimate, uncertainty, all Qs",
+      "description": "Primary Proton Population, p, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp1_fit_xSC_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp1_fit_ySC_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp1_fit_zSC_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Velocity estimate, in the Radial-Tangential-Normal frame, good Qs",
+      "description": "Primary Proton Population, p, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, only good data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp1_fit_R",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "2000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp1_fit_T",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp1_fit_N",
+            "Index": "3",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Velocity estimate, uncertainty, all Qs",
+      "description": "Primary Proton Population, p, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp1_fit_R_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp1_fit_T_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp1_fit_N_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Number Density estimate, good Qs",
+      "description": "Primary Proton Population, p, Number Density, n estimate, from 1-dimensional Maxwellian fitting, only good data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.01",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Number Density estimate, all Qs",
+      "description": "Primary Proton Population, p, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population most probable Radial Thermal Speed estimate, good Qs",
+      "description": "Primary Proton Population, p, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Primary Proton Population, p, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity estimate, in the Spacecraft frame, good Qs",
+      "description": "Proton, p, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Spacecraft, Spacecraft frame, only good data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_fit_xSC",
+            "Index": "1",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_fit_ySC",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_fit_zSC",
+            "Index": "3",
+            "ValidMin": "-2000.0",
+            "ValidMax": "0.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity estimate, uncertainty, all Qs",
+      "description": "Proton, p, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_fit_xSC_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_fit_ySC_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_fit_zSC_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity estimate, in the Radial-Tangential-Normal frame, good Qs",
+      "description": "Proton, p, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, only good data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_fit_R",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "2000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_fit_T",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_fit_N",
+            "Index": "3",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity estimate, uncertainty, all Qs",
+      "description": "Proton, p, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_fit_R_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_fit_T_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_fit_N_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Number Density estimate, good Qs",
+      "description": "Proton, p, Number Density, n estimate, from 1-dimensional Maxwellian fitting, only good data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.01",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Number Density estimate, all Qs",
+      "description": "Proton, p, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton most probable Radial Thermal Speed estimate, good Qs",
+      "description": "Proton, p, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Proton, p, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Velocity estimate, in the Spacecraft frame, good Qs",
+      "description": "Alpha Particle, He++, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Spacecraft, Spacecraft frame, only good data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "va_fit_xSC",
+            "Index": "1",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "va_fit_ySC",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "va_fit_zSC",
+            "Index": "3",
+            "ValidMin": "-2000.0",
+            "ValidMax": "0.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Velocity estimate, uncertainty, all Qs",
+      "description": "Alpha Particle, He++, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "va_fit_xSC_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "va_fit_ySC_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "va_fit_zSC_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Velocity estimate, in the Radial-Tangential-Normal frame, good Qs",
+      "description": "Alpha Particle, He++, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, only good data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "va_fit_R",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "2000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "va_fit_T",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "va_fit_N",
+            "Index": "3",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Velocity estimate, uncertainty, all Qs",
+      "description": "Alpha Particle, He++, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "va_fit_R_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "va_fit_T_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "va_fit_N_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Number Density estimate, good Qs",
+      "description": "Alpha Particle, He++, Number Density, n estimate, from 1-dimensional Maxwellian fitting, only good data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.01",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Number Density estimate, all Qs",
+      "description": "Alpha Particle, He++, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle most probable Radial Thermal Speed estimate, good Qs",
+      "description": "Alpha Particle, He++, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Alpha Particle, He++, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Velocity estimate, in the Spacecraft frame, good Qs",
+      "description": "Population 3, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Spacecraft, Spacecraft frame, only good data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v3_fit_xSC",
+            "Index": "1",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "v3_fit_ySC",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "v3_fit_zSC",
+            "Index": "3",
+            "ValidMin": "-2000.0",
+            "ValidMax": "0.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Velocity estimate, uncertainty, all Qs",
+      "description": "Population 3, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v3_fit_xSC_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "v3_fit_ySC_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "v3_fit_zSC_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Velocity estimate, in the Radial-Tangential-Normal frame, good Qs",
+      "description": "Population 3, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, only good data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v3_fit_R",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "2000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "v3_fit_T",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "v3_fit_N",
+            "Index": "3",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Velocity estimate, uncertainty, all Qs",
+      "description": "Population 3, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v3_fit_R_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "v3_fit_T_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "v3_fit_N_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Number Density estimate, good Qs",
+      "description": "Population 3, Number Density, n estimate, from 1-dimensional Maxwellian fitting, only good data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.01",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Number Density estimate, all Qs",
+      "description": "Population 3, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 most probable Radial Thermal Speed estimate, good Qs",
+      "description": "Population 3, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, only good data qualities",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Population 3, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Identifier, good Qs",
+      "description": "Population 3 Identifier, the third population fit, that is, in addition to primary Proton and Alpha peaks, only good data qualities",
+      "unitText": "u/e",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Heliocentric Inertial coordinates, cartesian",
+      "description": "Spacecraft Position, Heliocentric Inertial, HCI, coordinates, cartesian",
+      "unitText": "km",
+      "minValue": "-3.0e+08",
+      "maxValue": "3.0e+08",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x_HCI",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "y_HCI",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "z_HCI",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Velocity, Heliocentric Inertial coordinates, cartesian",
+      "description": "Spacecraft Velocity, Heliocentric Inertial, HCI, coordinates, cartesian",
+      "unitText": "km/s",
+      "minValue": "-300.0",
+      "maxValue": "300.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Vx_HCI",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "Vy_HCI",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "Vz_HCI",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Latitude, Carrington coordinates, spherical",
+      "description": "Spacecraft Position, Latitude, Carrington coordinates, spherical",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Longitude, Carrington coordinates, spherical",
+      "description": "Spacecraft Position, Longitude, Carrington coordinates, spherical",
+      "unitText": "\u00b0",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, in the Spacecraft frame, all Qs",
+      "description": "Proton, p, Velocity, V estimate, from the first moment of the reduced distribution function, in the Spacecraft, Spacecraft frame, all data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_xSC",
+            "Index": "1",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_ySC",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_zSC",
+            "Index": "3",
+            "ValidMin": "-2000.0",
+            "ValidMax": "0.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, upper uncertainty, in the Spacecraft frame, all Qs",
+      "description": "Proton, p, Velocity, V estimate, upper uncertainty, from the first moment of the reduced distribution function, in the Spacecraft, Spacecraft frame, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_xSC_deltahigh",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_ySC_deltahigh",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_zSC_deltahigh",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, lower uncertainty, in the Spacecraft frame, all Qs",
+      "description": "Proton, p, Velocity, V estimate, lower uncertainty, from the first moment of the reduced distribution function, in the Spacecraft, Spacecraft frame, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_xSC_deltalow",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_ySC_deltalow",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_zSC_deltalow",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, in the Radial-Tangential-Normal frame, all Qs",
+      "description": "Proton, p, Velocity, V estimate, from the first moment of the reduced distribution function, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, all data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_R",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "2000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_T",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_N",
+            "Index": "3",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, upper uncertainty, in the Radial-Tangential-Normal frame, all Qs",
+      "description": "Proton, p, Velocity, V estimate, upper uncertainty, from the first moment of the reduced distribution function, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_R_deltahigh",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_T_deltahigh",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_N_deltahigh",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity moment estimate, lower uncertainty, in the Radial-Tangential-Normal frame, all Qs",
+      "description": "Proton, p, Velocity, V estimate, lower uncertainty, from the first moment of the reduced distribution function, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_moment_R_deltalow",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_moment_T_deltalow",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_moment_N_deltalow",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Number Density moment estimate, all Qs",
+      "description": "Proton, p, Number Density, n estimate, from the zeroth moment of the reduced distribution function, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.01",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Number Density moment estimate, upper uncertainty, all Qs",
+      "description": "Proton, p, Number Density, n estimate, upper uncertainty, from the zeroth moment of the reduced distribution function, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Number Density moment estimate, lower uncertainty, all Qs",
+      "description": "Proton, p, Number Density, n estimate, lower uncertainty, from the zeroth moment of the reduced distribution function, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton most probable Radial Thermal Speed moment estimate, all Qs",
+      "description": "Proton, p, most probable Radial Thermal Speed, Vth estimate, from the second moment of the reduced distribution function, all data qualities",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton most probable Radial Thermal Speed moment estimate, upper uncertainty, all Qs",
+      "description": "Proton, p, most probable Radial Thermal Speed, Vth estimate, upper uncertainty, from the second moment of the reduced distribution function, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton most probable Radial Thermal Speed moment estimate, lower uncertainty, all Qs",
+      "description": "Proton, p, most probable Radial Thermal Speed, Vth estimate, lower uncertainty, from the second moment of the reduced distribution function, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Velocity estimate, in the Spacecraft frame, all Qs",
+      "description": "Primary Proton Population, p, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Spacecraft, Spacecraft frame, all data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp1_fit_xSC",
+            "Index": "1",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp1_fit_ySC",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp1_fit_zSC",
+            "Index": "3",
+            "ValidMin": "-2000.0",
+            "ValidMax": "0.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Velocity estimate, uncertainty, all Qs",
+      "description": "Primary Proton Population, p, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp1_fit_xSC_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp1_fit_ySC_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp1_fit_zSC_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Velocity estimate, in the Radial-Tangential-Normal frame, all Qs",
+      "description": "Primary Proton Population, p, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, all data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp1_fit_R",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "2000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp1_fit_T",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp1_fit_N",
+            "Index": "3",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Velocity estimate, uncertainty, all Qs",
+      "description": "Primary Proton Population, p, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp1_fit_R_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp1_fit_T_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp1_fit_N_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Number Density estimate, all Qs",
+      "description": "Primary Proton Population, p, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.01",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population Number Density estimate, all Qs",
+      "description": "Primary Proton Population, p, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Primary Proton Population, p, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Primary Proton Population most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Primary Proton Population, p, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity estimate, in the Spacecraft frame, all Qs",
+      "description": "Proton, p, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Spacecraft, Spacecraft frame, all data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_fit_xSC",
+            "Index": "1",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_fit_ySC",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_fit_zSC",
+            "Index": "3",
+            "ValidMin": "-2000.0",
+            "ValidMax": "0.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity estimate, uncertainty, all Qs",
+      "description": "Proton, p, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_fit_xSC_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_fit_ySC_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_fit_zSC_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity estimate, in the Radial-Tangential-Normal frame, all Qs",
+      "description": "Proton, p, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, all data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_fit_R",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "2000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_fit_T",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_fit_N",
+            "Index": "3",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Velocity estimate, uncertainty, all Qs",
+      "description": "Proton, p, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vp_fit_R_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "vp_fit_T_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "vp_fit_N_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Number Density estimate, all Qs",
+      "description": "Proton, p, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.01",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Number Density estimate, all Qs",
+      "description": "Proton, p, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Proton, p, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Proton, p, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Velocity estimate, in the Spacecraft frame, all Qs",
+      "description": "Alpha Particle, He++, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Spacecraft, Spacecraft frame, all data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "va_fit_xSC",
+            "Index": "1",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "va_fit_ySC",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "va_fit_zSC",
+            "Index": "3",
+            "ValidMin": "-2000.0",
+            "ValidMax": "0.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Velocity estimate, uncertainty, all Qs",
+      "description": "Alpha Particle, He++, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "va_fit_xSC_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "va_fit_ySC_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "va_fit_zSC_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Velocity estimate, in the Radial-Tangential-Normal frame, all Qs",
+      "description": "Alpha Particle, He++, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, all data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "va_fit_R",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "2000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "va_fit_T",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "va_fit_N",
+            "Index": "3",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Velocity estimate, uncertainty, all Qs",
+      "description": "Alpha Particle, He++, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "va_fit_R_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "va_fit_T_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "va_fit_N_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Number Density estimate, all Qs",
+      "description": "Alpha Particle, He++, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.01",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle Number Density estimate, all Qs",
+      "description": "Alpha Particle, He++, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Alpha Particle, He++, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha Particle most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Alpha Particle, He++, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Velocity estimate, in the Spacecraft frame, all Qs",
+      "description": "Population 3, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Spacecraft, Spacecraft frame, all data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v3_fit_xSC",
+            "Index": "1",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "v3_fit_ySC",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "v3_fit_zSC",
+            "Index": "3",
+            "ValidMin": "-2000.0",
+            "ValidMax": "0.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Velocity estimate, uncertainty, all Qs",
+      "description": "Population 3, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v3_fit_xSC_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "v3_fit_ySC_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "v3_fit_zSC_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Velocity estimate, in the Radial-Tangential-Normal frame, all Qs",
+      "description": "Population 3, Velocity, V estimate, from 1-dimensional Maxwellian fitting, in the Radial-Tangential-Normal, Radial-Tangential-Normal frame, all data qualities",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v3_fit_R",
+            "Index": "1",
+            "ValidMin": "0.0",
+            "ValidMax": "2000.0",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "v3_fit_T",
+            "Index": "2",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "v3_fit_N",
+            "Index": "3",
+            "ValidMin": "-1000.0",
+            "ValidMax": "1000.0",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Velocity estimate, uncertainty, all Qs",
+      "description": "Population 3, Velocity, V estimate, one sigma error uncertainty, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v3_fit_R_uncertainty",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "v3_fit_T_uncertainty",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "v3_fit_N_uncertainty",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Number Density estimate, all Qs",
+      "description": "Population 3, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.01",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Number Density estimate, all Qs",
+      "description": "Population 3, Number Density, n estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "cm^-3",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Population 3, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 most probable Radial Thermal Speed estimate, all Qs",
+      "description": "Population 3, most probable Radial Thermal Speed, Vth estimate, from 1-dimensional Maxwellian fitting, all data qualities",
+      "unitText": "km/s",
+      "minValue": "0.001",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population 3 Identifier, all Qs",
+      "description": "Population 3 Identifier, the third population fit, that is, in addition to primary Proton and Alpha peaks, all data qualities",
+      "unitText": "u/e",
+      "minValue": "1.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.2185S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Flag Names",
+      "description": "Data Quality Flag: The names of the data quality array fields.",
+      "minValue": "UNKNOWN_VALID_MIN",
+      "maxValue": "UNKNOWN_VALID_MAX",
+      "cadence": "PT0.2185S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

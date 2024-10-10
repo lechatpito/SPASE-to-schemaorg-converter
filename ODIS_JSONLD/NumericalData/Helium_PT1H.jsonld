@@ -1,0 +1,94 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/IMP8/CRNC/Helium_PT1H",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/IMP8/CRNC/Helium_PT1H",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "IMP 8 Cosmic Ray Nuclear Composition (CRNC) hourly energetic alpha particle fluxes",
+  "sdDatePublished": "2021-03-11",
+  "description": "This data set contains hourly, spin-averaged\nfluxes of alpha particles from the IMP8 Cosmic Ray Nuclear Composition\nexperiment of U. Chicago and UNH.  There are fluxes of alpha particles\nin 9 energy bins from 10.90-12.89 to 84.32-94.81 MeV/n.  These fluxes\nwere generated at GSFC/SPDF from count rates accessible from\nUNH.",
+  "abstract": "This data set contains hourly, spin-averaged\nfluxes of alpha particles from the IMP8 Cosmic Ray Nuclear Composition\nexperiment of U. Chicago and UNH.  There are fluxes of alpha particles\nin 9 energy bins from 10.90-12.89 to 84.32-94.81 MeV/n.  These fluxes\nwere generated at GSFC/SPDF from count rates accessible from\nUNH.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/imp/imp8/particles_uchi/hourly/alphas/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "ftp access to alpha particle-specific subdirectory\nholding annual ASCII files"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/imp/imp8/particles_uchi/hourly/alphas/",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/imp_chi_crnc_1h.html",
+      "name": "FTPBrowser",
+      "description": "Subset, plot and list fluxes of protons, alpha\nparticles and electron, and count rates of heavies, via FTPBrowser"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://omniweb.gsfc.nasa.gov/ftpbrowser/flux_spectr_m.html",
+      "name": "Multi-Source Spectral Plot",
+      "description": "Spectral plots and power law fits for arbitrary durations"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time at start of flux average, as year, day, hour",
+      "cadence": "PT1H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fractional Coverage",
+      "description": "Fractional counting coverage (0-1) during this hour",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha particle fluxes",
+      "description": "Spin-integrated fluxes of alpha particles, at 1-hour resolution,\nin nine energy bins: 10.90-12.89, 12.89-16.35, 16.35-19.95, 19.95-25.36,\n30.61-42.03, 42.03-55.40, 55.40-69.64, 69.64-84.32, 84.32-94.81 MeV/n",
+      "unitText": "1/sec-cm**2-ster-MeV/n",
+      "cadence": "PT1H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-rpws-encelad",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-rpws-encelad",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - RPWS - electron proxy @ enceladus",
+  "sdDatePublished": "2018-01-24",
+  "description": " The Cassini RPWS Langmuir Probe Sweep @ Enceladus data set contains thermal        \n      plasma parameters derived from Langmuir Probe voltage sweeps           \n      acquired in the vicinity of  Enceladus during the entire Cassini          \n      mission. Data are the results of the Orbital Motion Limited analysis for each           \n      calibrated sweep of the Langmuir probe receiver (LPR) of the RPWS",
+  "abstract": " The Cassini RPWS Langmuir Probe Sweep @ Enceladus data set contains thermal        \n      plasma parameters derived from Langmuir Probe voltage sweeps           \n      acquired in the vicinity of  Enceladus during the entire Cassini          \n      mission. Data are the results of the Orbital Motion Limited analysis for each           \n      calibrated sweep of the Langmuir probe receiver (LPR) of the RPWS",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "distance cassini-enceladus",
+      "unitText": "Titan radius"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density e-",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature e-",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c potential",
+      "unitText": "V"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-elssec",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-elssec",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - CAPS - electron spectra",
+  "sdDatePublished": "2018-01-31",
+  "description": "Cassini Plasma Spectrometer (CAPS) Electron Spectrometer (ELS) data",
+  "abstract": "Cassini Plasma Spectrometer (CAPS) Electron Spectrometer (ELS) data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Dione"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Enceladus"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Mimas"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Tethys"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Rhea"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Titan"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Iapetus"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "telemetry mode"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elec countrate @@ANODE@@",
+      "description": "energy spectrogram of electron count rates",
+      "unitText": "cnts.s^-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "63",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elec countrate : sum over anodes",
+      "description": "energy spectrogram of electron count rates",
+      "unitText": "cnts.s^-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "63",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MGS/Proxy/mgs-proxy-subsol",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MGS/Proxy/mgs-proxy-subsol",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MGS - Proxy - subsolar b strength",
+  "sdDatePublished": "2012-03-06",
+  "description": "Subsolar field strength is calculated on an orbit-by-obit basis \n            using MGS mapping data (taken in a circular ~400 km orbit). For each orbit, \n            we take all measured field strengths when the spacecraft was at solar zenith \n            angles less than 110o. We then omit observations taken above longitudes and \n            latitudes associated with moderate or strong crustal magnetic fields. If enough \n            observations remain, then we fit the remaining data to a cos(SZA) function, and \n            extrapolate to the field magnitude at SZA=0 deg.\n         ",
+  "abstract": "Subsolar field strength is calculated on an orbit-by-obit basis \n            using MGS mapping data (taken in a circular ~400 km orbit). For each orbit, \n            we take all measured field strengths when the spacecraft was at solar zenith \n            angles less than 110o. We then omit observations taken above longitudes and \n            latitudes associated with moderate or strong crustal magnetic fields. If enough \n            observations remain, then we fit the remaining data to a cos(SZA) function, and \n            extrapolate to the field magnitude at SZA=0 deg.\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

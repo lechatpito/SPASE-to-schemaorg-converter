@@ -1,0 +1,44 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MGS/Proxy/mgs-proxy-drap",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MGS/Proxy/mgs-proxy-drap",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MGS - Proxy - imf draping direction",
+  "sdDatePublished": "2012-03-06",
+  "description": "Draping direction is calculated on an orbit-by-obit basis using MGS data from time periods when the spacecraft was above 50-60 N planetary latitude on the Martian dayside. We use this small latitude range in an attempt to minimize the contaminating effects of crustal magnetic fields, which are weakest in this latitude band. Draping direction is reported as the median azimuth angle from each orbit, with 0o pointing locally Eastward from the spacecraft, and 90o pointing locally Northward.\n\nWe have tried several other methods of determining draping direction - all have strengths and weaknesses. In the future we may include the results of some of these other methods on this page",
+  "abstract": "Draping direction is calculated on an orbit-by-obit basis using MGS data from time periods when the spacecraft was above 50-60 N planetary latitude on the Martian dayside. We use this small latitude range in an attempt to minimize the contaminating effects of crustal magnetic fields, which are weakest in this latitude band. Draping direction is reported as the median azimuth angle from each orbit, with 0o pointing locally Eastward from the spacecraft, and 90o pointing locally Northward.\n\nWe have tried several other methods of determining draping direction - all have strengths and weaknesses. In the future we may include the results of some of these other methods on this page",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "draping_azimuth_ang",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

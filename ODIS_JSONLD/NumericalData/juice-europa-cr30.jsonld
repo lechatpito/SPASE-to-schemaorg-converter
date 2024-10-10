@@ -1,0 +1,80 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juice/Ephemeris/juice-europa-cr30",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juice/Ephemeris/juice-europa-cr30",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "JUICE - Ephemeris - CReMA 3.0 - flybys europa",
+  "sdDatePublished": "2020-07-02",
+  "description": "                        \n         CReMA stands for Consolidated Reports on Mission Analysis which describe different mission profiles. They are detailed at https://www.cosmos.esa.int/web/spice/spice-for-juice . Each CReMA corresponds to a specific metakernel.",
+  "abstract": "                        \n         CReMA stands for Consolidated Reports on Mission Analysis which describe different mission profiles. They are detailed at https://www.cosmos.esa.int/web/spice/spice-for-juice . Each CReMA corresponds to a specific metakernel.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter.Europa"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_ephio",
+      "unitText": "km",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "juice_eucr30_xyz(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "juice_eucr30_xyz(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "juice_eucr30_xyz(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance juice-europa",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_ephio",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_ephio",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/EISCAT/TRO/VHF/2min_ascii",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/EISCAT/TRO/VHF/2min_ascii",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "EISCAT VHF 2min ascii data",
+  "sdDatePublished": "2011-04-01",
+  "description": "Basic parameters with 2 min resolution observed by EISCAT VHF radar at Tromso",
+  "abstract": "Basic parameters with 2 min resolution observed by EISCAT VHF radar at Tromso",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.isee.nagoya-u.ac.jp/~eiscat/data/VHF_anadata/BasicParameters/VHF_BasicParameter.html",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "date",
+      "description": "Date of observation in MMDD"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "st._UT",
+      "description": "Start time of observation of a beam in HHMMSS"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "end_UT",
+      "description": "End time of observation of a beam in HHMMSS"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "alt",
+      "description": "Altitude of a gate in km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat",
+      "description": "Geographical latitude of a gate in deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon",
+      "description": "Geographical longitude of a gate in deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ne",
+      "description": "Electron number density in m^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vi",
+      "description": "Ion velocity in m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ti",
+      "description": "Ion temperature in K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Te",
+      "description": "Electron temperature in K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Neerr",
+      "description": "Error of electron number density in m^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vierr",
+      "description": "Error of ion velocity in m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tierr",
+      "description": "Error of ion temperature in K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Teerr",
+      "description": "Error of electron temperature in K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Az",
+      "description": "Azimuth angle of a beam in deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "El",
+      "description": "Elevation angle of a beam in deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "O+/Ne",
+      "description": "Ratio of O+ number density to Ne number density in 1e-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "colf",
+      "description": "Collision frequency in log10(1e-3)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "range",
+      "description": "Beam range in km"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

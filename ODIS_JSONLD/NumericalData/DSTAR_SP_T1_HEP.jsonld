@@ -1,0 +1,78 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/HEPD/DSTAR_SP_T1_HEP",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/HEPD/DSTAR_SP_T1_HEP",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Double Star 1 HEPD Summary Parameters",
+  "sdDatePublished": "2021-11-02",
+  "description": "The High Energy Proton Detector instruments (HEPD) are located on board of both the equatorial (Double Star 1) and polar (Double Star 2) satellites. They detect protons with energies between 3 MeV and 400 MeV.\n\nThis data set contains the Double Star 1 HEPD summary  parameters at 1 min resolution  (proton fluxes in three energy bands and instrument status)",
+  "abstract": "The High Energy Proton Detector instruments (HEPD) are located on board of both the equatorial (Double Star 1) and polar (Double Star 2) satellites. They detect protons with energies between 3 MeV and 400 MeV.\n\nThis data set contains the Double Star 1 HEPD summary  parameters at 1 min resolution  (proton fluxes in three energy bands and instrument status)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_SP_T1_HEP",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HEPD Proton flux (30 - 410 MeV) Summary  Parameter",
+      "description": "Double Star 1 HEPD  Proton flux (30 - 410 MeV energy range) Summary Parameter",
+      "unitText": "cm^-2 s^-1 sr^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 HEPD Instrument Status Summary Parameter",
+      "description": "Double Star 1 HEPD Instrument Status Summary Parameter"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

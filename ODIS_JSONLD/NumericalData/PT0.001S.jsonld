@@ -1,0 +1,116 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RENU2/COWBOY/VLF/PT0.001S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RENU2/COWBOY/VLF/PT0.001S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "RENU2 COrnell Wire BOom Yo-yo (COWBOY) Electric Field Very Low Frequency Waves, High Time Resolution (H0), 1 ms Data",
+  "sdDatePublished": "2023-07-30",
+  "description": "Rocket Experiment for Neutral Upwelling 2, RENU2, COrnell Wire BOom Yo-yo, COWBOY, Very Low Frequency, VLF, Electric Field Measurements",
+  "abstract": "Rocket Experiment for Neutral Upwelling 2, RENU2, COrnell Wire BOom Yo-yo, COWBOY, Very Low Frequency, VLF, Electric Field Measurements",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.Topside"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time, Terrestrial Time 2000, Interval Centered Time",
+      "unitText": "ns",
+      "minValue": "2015-01-01T00:00:00.000000000",
+      "maxValue": "2016-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.001S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VLF12 Power Spectrum",
+      "description": "VLF12 Power Spectrum",
+      "unitText": "(V/m)^2/Hz",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.001S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "512",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VLF34 Power Spectrum",
+      "description": "VLF34 Power Spectrum",
+      "unitText": "(V/m)^2/Hz",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.001S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "512",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency Midpoints",
+      "description": "Frequency Midpoints",
+      "unitText": "Hz",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.001S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "512",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

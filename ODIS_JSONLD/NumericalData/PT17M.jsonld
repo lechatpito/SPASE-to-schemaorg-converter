@@ -1,0 +1,1092 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Ulysses/HISCALE/LEMS30/MFSA/SpacecraftFrame/Sectored/Proton/Fluxes/PT17M",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Ulysses/HISCALE/LEMS30/MFSA/SpacecraftFrame/Sectored/Proton/Fluxes/PT17M",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Ulysses Heliosphere Instrument for Spectral, Composition, and Anisotropy at Low Energies (HISCALE) LEMS30 MFSA, Spacecraft Frame, Sectored Proton Fluxes, 17 min Averages",
+  "sdDatePublished": "2021-03-29",
+  "description": "17-min-averaged sectored proton fluxes from the MF Spectrum Analyzer of the Ulysses/HISCALE LEMS30 instrument. All energies thresholds take into account the incident particle type, shielding, and inactive dead-layer of the solid state detector. All fluxes are background corrected and are in the spacecraft rest frame.",
+  "abstract": "17-min-averaged sectored proton fluxes from the MF Spectrum Analyzer of the Ulysses/HISCALE LEMS30 instrument. All energies thresholds take into account the incident particle type, shielding, and inactive dead-layer of the solid state detector. All fluxes are background corrected and are in the spacecraft rest frame.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://data.ftecs.com/VHO/VEPO/ulysses_hiscale/mfsa/17min/",
+      "name": "Ulysses HISCALE 17-min-Averaged",
+      "description": "Parent directory containing the 17-min-averaged fluxes for the Ulysses/HISCALE instrument for the entire mission."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time for the record",
+      "description": "Time for the record given in year, day of year, hour, min, and decimal seconds. The given time represents the beginning of the averaging interval.",
+      "cadence": "PT17M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "5",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1",
+            "FillValue": "-9999"
+          },
+          {
+            "Name": "Day of year",
+            "Index": "2",
+            "ValidMin": "1",
+            "ValidMax": "366",
+            "FillValue": "-999"
+          },
+          {
+            "Name": "Hour of day",
+            "Index": "3",
+            "ValidMin": "0",
+            "ValidMax": "23",
+            "FillValue": "-99"
+          },
+          {
+            "Name": "Minute of hour",
+            "Index": "4",
+            "ValidMin": "0",
+            "ValidMax": "59",
+            "FillValue": "-99"
+          },
+          {
+            "Name": "Seconds of minute",
+            "Index": "5",
+            "ValidMin": "0.00",
+            "ValidMax": "59.99",
+            "FillValue": "-99.99"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch1 17-min-Averaged Sector 1 Protons",
+      "description": "17-min and sector 1 LEMS30 proton fluxes between 63 and 71 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch2 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 71 and 82 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch3 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 82 and 94 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch4 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 94 and 108 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch5 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 108 and 126 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch6 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 126 and 146 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch7 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 146 and 170 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch8 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 170 and 200 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch9 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 200 and 234 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch10 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 234 and 276 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch11 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 276 and 328 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch12 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 328 and 389 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch13 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 389 and 464 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch14 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 464 and 555 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch15 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 555 and 666 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch16 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 666 and 800 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch17 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 800 and 963 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch18 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 963 and 1162 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch19 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 1162 and 1402 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch20 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 1402 and 1695 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch21 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 1695 and 2051 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch22 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 2051 and 2483 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch23 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 2483 and 3010 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch24 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 3010 and 3650 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch25 17-min-Averaged Sector 1 Protons",
+      "description": "17-min sector 1 LEMS30 proton fluxes between 3650 and 4429 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch1 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 63 and 71 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch2 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 71 and 82 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch3 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 82 and 94 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch4 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 94 and 108 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch5 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 108 and 126 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch6 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 126 and 146 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch7 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 146 and 170 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch8 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 170 and 200 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch9 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 200 and 234 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch10 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 234 and 276 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch11 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 276 and 328 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch12 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 328 and 389 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch13 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 389 and 464 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch14 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 464 and 555 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch15 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 555 and 666 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch16 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 666 and 800 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch17 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 800 and 963 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch18 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 963 and 1162 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch19 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 1162 and 1402 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch20 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 1402 and 1695 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch21 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 1695 and 2051 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch22 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 2051 and 2483 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch23 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 2483 and 3010 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch24 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 3010 and 3650 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch25 17-min-Averaged Sector 2 Protons",
+      "description": "17-min sector 2 LEMS30 proton fluxes between 3650 and 4429 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch1 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 63 and 71 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch2 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 71 and 82 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch3 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 82 and 94 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch4 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 94 and 108 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch5 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 108 and 126 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch6 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 126 and 146 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch7 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 146 and 170 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch8 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 170 and 200 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch9 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 200 and 234 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch10 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 234 and 276 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch11 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 276 and 328 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch12 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 328 and 389 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch13 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 389 and 464 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch14 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 464 and 555 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch15 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 555 and 666 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch16 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 666 and 800 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch17 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 800 and 963 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch18 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 963 and 1162 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch19 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 1162 and 1402 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch20 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 1402 and 1695 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch21 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 1695 and 2051 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch22 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 2051 and 2483 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch23 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 2483 and 3010 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch24 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 3010 and 3650 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch25 17-min-Averaged Sector 3 Protons",
+      "description": "17-min sector 3 LEMS30 proton fluxes between 3650 and 4429 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch1 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 63 and 71 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch2 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 71 and 82 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch3 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 82 and 94 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch4 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 94 and 108 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch5 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 108 and 126 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch6 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 126 and 146 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch7 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 146 and 170 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch8 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 170 and 200 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch9 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 200 and 234 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch10 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 234 and 276 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch11 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 276 and 328 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch12 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 328 and 389 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch13 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 389 and 464 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch14 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 464 and 555 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch15 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 555 and 666 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch16 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 666 and 800 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch17 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 800 and 963 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch18 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 963 and 1162 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch19 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 1162 and 1402 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch20 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 1402 and 1695 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch21 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 1695 and 2051 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch22 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 2051 and 2483 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch23 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 2483 and 3010 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch24 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 3010 and 3650 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LEMS30 MFSA Ch25 17-min-Averaged Sector 4 Protons",
+      "description": "17-min sector 4 LEMS30 proton fluxes between 3650 and 4429 keV",
+      "unitText": "(cm^2 s sr keV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.00E+06",
+      "defaultValue": "-9.99E-09",
+      "cadence": "PT17M"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

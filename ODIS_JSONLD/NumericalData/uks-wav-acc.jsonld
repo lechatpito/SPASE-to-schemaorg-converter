@@ -1,0 +1,62 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/UKS/WAV/uks-wav-acc",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/UKS/WAV/uks-wav-acc",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "AMPTE - UKS - PWS - e field power - power spectral density",
+  "sdDatePublished": "2020-01-28",
+  "description": "  \n             Validity flag: \n             * unvalidated  = 1\n             * validated = 0\n             * requires reprocessing = 2\n             * bad data, cannot reprocess = 3\n             * may contain noise or outliers = 4\n             * systematic instrumental effects = 5\n             * PI quality flags = 6\n             * fill value = 7\n         ",
+  "abstract": "  \n             Validity flag: \n             * unvalidated  = 1\n             * validated = 0\n             * requires reprocessing = 2\n             * bad data, cannot reprocess = 3\n             * may contain noise or outliers = 4\n             * systematic instrumental effects = 5\n             * PI quality flags = 6\n             * fill value = 7\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e field spectral density",
+      "description": "\n             Electric field power spectral density 10.07 Hz to 523.84 Hz\n         ",
+      "unitText": "V\u00b2/m\u00b2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flag",
+      "description": "\n              Validity flag: \n              * unvalidated  = 1\n              * validated = 0\n              * requires reprocessing = 2\n              * bad data, cannot reprocess = 3\n              * may contain noise or outliers = 4\n              * systematic instrumental effects = 5\n              * PI quality flags) = 6\n              * fill value = 7\n          "
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

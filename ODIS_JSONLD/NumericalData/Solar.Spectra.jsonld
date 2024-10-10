@@ -1,0 +1,61 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/JAXA/NumericalData/Yohkoh/WBS/Solar.Spectra",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/JAXA/NumericalData/Yohkoh/WBS/Solar.Spectra",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Yohkoh WBS Solar Spectra",
+  "sdDatePublished": "2019-08-15",
+  "description": "Yohkoh WBS (Wide Band Spectrometer, consisting of 2-30 keV Soft X ray Spectrometer, SXS, 20-600 keV Hard X ray Spectrometer, HXS, and 0.2-100 MeV Gamma Ray Spectrometer GRS) Solar Spectra.  SXS and GRX yield 128 point spectra every 2 or 4 sec. HXS determines 32-channel pulse height data to accompany 0.125-s rate data in 2 wide energy bands.",
+  "abstract": "Yohkoh WBS (Wide Band Spectrometer, consisting of 2-30 keV Soft X ray Spectrometer, SXS, 20-600 keV Hard X ray Spectrometer, HXS, and 0.2-100 MeV Gamma Ray Spectrometer GRS) Solar Spectra.  SXS and GRX yield 128 point spectra every 2 or 4 sec. HXS determines 32-channel pulse height data to accompany 0.125-s rate data in 2 wide energy bands.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ylstone.physics.montana.edu/ylegacy/weekdirs/",
+      "name": "via http from Montana",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://umbra.nascom.nasa.gov/pub/yohkoh/online_archive/",
+      "name": "via https from GSFC/SDAC",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sdac.virtualsolar.org/cgi/search",
+      "name": "from Montana via VSO",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MEX/IMA/mex-ima-extra",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MEX/IMA/mex-ima-extra",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MEX - IMA - ima spectra",
+  "sdDatePublished": "2021-10-18",
+  "description": "Mars Express (MEX) ASPERA-3 Ion Mass Analyzer (IMA) data (spectrograms)\n                Data from Andrei Fedorov (IRAP)",
+  "abstract": "Mars Express (MEX) ASPERA-3 Ion Mass Analyzer (IMA) data (spectrograms)\n                Data from Andrei Fedorov (IRAP)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "protons : cnts per anode ##anode##",
+      "description": "energy-time spectrogram of proton counts",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "protons : cnts sum",
+      "description": "energy-time spectrogram of proton counts",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "protons : fluxes per anode ##anode##",
+      "description": "energy-time spectrogram of proton diff fluxes",
+      "unitText": "cnts/(cm^2 s sr eV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy : cnts per anode ##anode##",
+      "description": "energy-time spectrogram of heavy ion counts",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy : cnts sum",
+      "description": "energy-time spectrogram of heavy ion counts",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy : fluxes per anode ##anode##",
+      "description": "energy-time spectrogram of heavy ion diff fluxes",
+      "unitText": "cnts/(cm^2 s sr eV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "energy table",
+      "description": "energy table number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elevations number",
+      "description": "Number of the elevation angles"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

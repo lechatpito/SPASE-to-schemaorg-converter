@@ -1,0 +1,74 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/mars-phobos-orb1s",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/mars-phobos-orb1s",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Astronomical Objects Ephemerides - Planets and Moons - Mars Moons - Phobos - 1 sec",
+  "sdDatePublished": "2022-03-18",
+  "description": "Phobos is the innermost and larger of the two natural satellites of Mars.",
+  "abstract": "Phobos is the innermost and larger of the two natural satellites of Mars.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    },
+    {
+      "@type": "Place",
+      "name": "Mars.Phobos"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "phobos_xyz_mso",
+      "unitText": "Rm",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "phobos_x",
+            "Index": "1",
+            "ParameterKey": "xyz_phobos1s(0)"
+          },
+          {
+            "Name": "phobos_y",
+            "Index": "2",
+            "ParameterKey": "xyz_phobos1s(1)"
+          },
+          {
+            "Name": "phobos_z",
+            "Index": "3",
+            "ParameterKey": "xyz_phobos1s(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance phobos-mars",
+      "unitText": "Rm"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

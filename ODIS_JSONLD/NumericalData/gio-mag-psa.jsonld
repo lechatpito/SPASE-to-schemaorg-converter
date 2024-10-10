@@ -1,0 +1,89 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Giotto/MAG/gio-mag-psa",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Giotto/MAG/gio-mag-psa",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Giotto - MAG - magnetic field",
+  "sdDatePublished": "2014-06-12",
+  "description": "Giotto Magnetometer Experiment data",
+  "abstract": "Giotto Magnetometer Experiment data",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_cse",
+      "unitText": "nT",
+      "defaultValue": "-999.9",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "gio_b_cse(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "gio_b_cse(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "gio_b_cse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT",
+      "defaultValue": "-999.9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_mean",
+      "unitText": "nT",
+      "defaultValue": "-999.9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_phi",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_theta",
+      "unitText": "deg",
+      "defaultValue": "-999.9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_rms",
+      "unitText": "nT",
+      "defaultValue": "-999.9"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

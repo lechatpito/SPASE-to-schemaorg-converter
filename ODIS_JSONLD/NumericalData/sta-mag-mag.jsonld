@@ -1,0 +1,87 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/STEREO-A/MAG/sta-mag-mag",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/STEREO-A/MAG/sta-mag-mag",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO A - MAG - 1 sec",
+  "sdDatePublished": "2019-07-21",
+  "description": "Data from http://aten.igpp.ucla.edu. The 1s data are created from the 125ms data by overlapped averages. The averaged total field is also averaged from the high resolution total field and not from the averaged components.",
+  "abstract": "Data from http://aten.igpp.ucla.edu. The 1s data are created from the 125ms data by overlapped averages. The averaged total field is also averaged from the high resolution total field and not from the averaged components.",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_rtn",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "sta_b(0)"
+          },
+          {
+            "Name": "bt",
+            "Index": "2",
+            "ParameterKey": "sta_b(1)"
+          },
+          {
+            "Name": "bn",
+            "Index": "3",
+            "ParameterKey": "sta_b(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Scalar magnitude of the magnetic field in nT",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi",
+      "description": "Magnetic field phi angle",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta",
+      "description": "Magnetic field theta angle",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

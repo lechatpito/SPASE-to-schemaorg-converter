@@ -1,0 +1,181 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NOAA/NumericalData/DSCOVR/Ephemeris/Attitude/Definitive/PT5S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NOAA/NumericalData/DSCOVR/Ephemeris/Attitude/Definitive/PT5S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "DSCOVR 3-Axis Stabilized Attitude (Ephemeris) Definitive Data",
+  "sdDatePublished": "2024-06-20",
+  "description": "DSCOVR 3-Axis Stabilized Definitive Attitude Data File, 5 s Time Resolution. Convention: Intrinsic Rotations applied in Yaw, Pitch, Roll Order. Extended Kalman Filter applied to Ground-Based Solution during Normal Operations. Onboard Computer, OBC, Solution used during Calibration Maneuvers.",
+  "abstract": "DSCOVR 3-Axis Stabilized Definitive Attitude Data File, 5 s Time Resolution. Convention: Intrinsic Rotations applied in Yaw, Pitch, Roll Order. Extended Kalman Filter applied to Ground-Based Solution during Normal Operations. Onboard Computer, OBC, Solution used during Calibration Maneuvers.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, since 0 A.D.",
+      "description": "Epoch Time, Milliseconds since 0 A.D.",
+      "unitText": "ms",
+      "minValue": "11-Feb-2015 00:00:00.000",
+      "maxValue": "11-Feb-2065 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "cadence": "PT5S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time PB5",
+      "description": "Time in PB5 Format: Year, Day, Milliseconds, Observation Time",
+      "defaultValue": "-2147483647",
+      "cadence": "PT5S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1",
+            "Units": "year",
+            "ValidMin": "2015",
+            "ValidMax": "2065"
+          },
+          {
+            "Name": "Day of Year",
+            "Index": "2",
+            "Units": "d",
+            "ValidMin": "0",
+            "ValidMax": "366"
+          },
+          {
+            "Name": "Elapsed milliseconds of day",
+            "Index": "3",
+            "Units": "ms",
+            "ValidMin": "0",
+            "ValidMax": "86400000"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Yaw Angle, J2000",
+      "description": "Spacecraft Yaw Angle, J2000 Coordinates",
+      "unitText": "rad",
+      "minValue": "-3.14159",
+      "maxValue": "3.14159",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT5S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle, J2000",
+      "description": "Spacecraft Pitch Angle, J2000 Coordinates",
+      "unitText": "rad",
+      "minValue": "-3.14159",
+      "maxValue": "3.14159",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT5S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roll Angle, J2000",
+      "description": "Spacecraft Roll Angle, J2000 Coordinates",
+      "unitText": "rad",
+      "minValue": "-3.14159",
+      "maxValue": "3.14159",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT5S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Yaw Angle, J2000 GEI",
+      "description": "Spacecraft Yaw Angle, Geocentric Inertial, J2000 GEI Coordinates",
+      "unitText": "rad",
+      "minValue": "-3.14159",
+      "maxValue": "3.14159",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT5S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle, J2000 GEI",
+      "description": "Spacecraft Pitch Angle, Geocentric Inertial, J2000 GEI Coordinates",
+      "unitText": "rad",
+      "minValue": "-3.14159",
+      "maxValue": "3.14159",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT5S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roll Angle, J2000 GEI",
+      "description": "Spacecraft Roll Angle, Geocentric Inertial, J2000 GEI Coordinates",
+      "unitText": "rad",
+      "minValue": "-3.14159",
+      "maxValue": "3.14159",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT5S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Yaw Angle, GSE",
+      "description": "Spacecraft Yaw Angle, Geocentric Solar Ecliptic, GSE Coordinates",
+      "unitText": "rad",
+      "minValue": "-3.14159",
+      "maxValue": "3.14159",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT5S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle, GSE",
+      "description": "Spacecraft Pitch Angle, Geocentric Solar Ecliptic, GSE Coordinates",
+      "unitText": "rad",
+      "minValue": "-3.14159",
+      "maxValue": "3.14159",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT5S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roll Angle, GSE",
+      "description": "Spacecraft Roll Angle, Geocentric Solar Ecliptic, GSE Coordinates",
+      "unitText": "rad",
+      "minValue": "-3.14159",
+      "maxValue": "3.14159",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT5S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

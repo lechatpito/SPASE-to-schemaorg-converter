@@ -58,6 +58,8 @@ def map_distribution(access_urls, data_section, base_url):
 
 def map_parameters(parameters):
     variable_measured = []
+    if not isinstance(parameters, list):
+        parameters = [parameters]
     for parameter in parameters:
         if isinstance(parameter, dict):
             variable = {
@@ -157,16 +159,22 @@ class MappingEngine:
         data_section = spase_json.get('Spase', {}).get(data_type, {})
         for source_field, config in mappings.items():            
             # Handle nested source fields
-            source_value = self.get_nested_value(spase_json, source_field)
+            source_value = self.get_nested_value(data_section, source_field)    
+
+             # Skip if source_value is empty
+            if not source_value:
+                logging.info(f"Skipping mapping for {source_field} as no data is present.")
+                continue
+
             if 'transform' in config and config['transform']:
                 transform_func = TRANSFORM_FUNCTIONS.get(config['transform'])
                 if transform_func:
-                    if config['transform'] == "to_url":
+                    if config['transform'] == "to_url":                        
                         transformed_value = transform_func(source_value, base_url)
                     elif config['transform'] == "map_distribution":
                         transformed_value = transform_func(source_value, data_section, base_url)
                     else:
-                        transformed_value = transform_func(source_value)
+                        transformed_value = transform_func(source_value)                  
                 else:
                     logging.warning(f"No transformation function found for {config['transform']}")
                     transformed_value = source_value

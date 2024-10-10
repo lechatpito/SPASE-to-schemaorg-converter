@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/IBEX/Lo/Maps-PNG",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/IBEX/Lo/Maps-PNG",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "IBEX-Lo maps in PNG display format every 6 months",
+  "sdDatePublished": "2020-07-07",
+  "description": "Hydrogen ENA fluxes in each of three IBEX-Lo energy \nbands in each of 21,600 [720(longitude) by 30(latitude)] bins, \naccumulated over 6 months.  Bins are defined in J2000 ecliptic \ncoordinates.  Maps are available for energy bands 5 (209 eV), \n6 (439 eV), and 7 (872 eV).  PNG-formatted image files are 24 KB \nin size.  Digital versions of these images in txt format are \nidentified by VEPO as a separate data product.",
+  "abstract": "Hydrogen ENA fluxes in each of three IBEX-Lo energy \nbands in each of 21,600 [720(longitude) by 30(latitude)] bins, \naccumulated over 6 months.  Bins are defined in J2000 ecliptic \ncoordinates.  Maps are available for energy bands 5 (209 eV), \n6 (439 eV), and 7 (872 eV).  PNG-formatted image files are 24 KB \nin size.  Digital versions of these images in txt format are \nidentified by VEPO as a separate data product.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Heliosheath"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/maps/images/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Directory with energy-range-specific subdirectories"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/maps/images/",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

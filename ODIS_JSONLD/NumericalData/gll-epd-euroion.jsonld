@@ -1,0 +1,252 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/EPD/gll-epd-euroion",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/EPD/gll-epd-euroion",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - EPD - record mode : ion channels - flybys europa",
+  "sdDatePublished": "2019-03-29",
+  "description": "\n                Energetic ion count rates and fluxes measured by the EPD instrument onboard Galileo in the Record acquisition mode. \n                In this mode, the count rates are accumulated during around 1.25 second. The full opening angle of the EPD telescopes \n                are relatively narrow, between 15\u00b0 and 18\u00b0, and the acquisition period is very short compared to the rotational spin \n                period of Galileo. Counts and fluxes obtained with the Record acquisition mode can therefore be considered as directional \n                flux measurements. The local and equatorial pitch angles that are given are for the particles observed by the center of \n                the telescope viewing cones. The motor that rotates the EPD telescopes around an axis perpendicular to the spin axis of \n                Galileo can have eight different step positions, from 0 to 7. \n                \nData are extracted from the text file named 'galileo_epd_calibrated_low_res_v18.txt' produced and provided by JHU/APL and publicly available \nat http://sd-www.jhuapl.edu/Galileo_EPD/latest_calibrated_data/. \nIt is highly recommended to read the \"readme_v19.docx\" document also available at the previous link before using this dataset. \nIt is also recommended to contact Peter Kollmann (JHU/APL), as some measurement channels are highly contaminated or saturated. \nAll unreliable measurements are set to NaN. Energies, species and charge states observed by each measurement channel are discussed in \ndetail in Kollmann et al. [2018, JGR]. \n\n   * 1996-12-19T06:33:28 1996-12-9T07:24:15\n   * 1997-11-06T20:09:34 1997-11-06T22:51:19\n   * 1997-12-16T11:42:56 1997-12-16T12:28:25\n   * 1998-03-29T13:05:38 1998-03-29T14:00:13\n   * 1998-05-31T20:42:30 1998-05-31T21:43:10\n   * 1998-09-26T03:30:04 1998-09-26T04:29:58\n   * 1999-02-01T01:49:38 1999-02-01T02:39:08\n   * 1999-11-25T16:00:12 1999-11-25T17:00:00\n   * 2000-01-03T17:29:34 2000-01-03T18:30:14 \n            ",
+  "abstract": "\n                Energetic ion count rates and fluxes measured by the EPD instrument onboard Galileo in the Record acquisition mode. \n                In this mode, the count rates are accumulated during around 1.25 second. The full opening angle of the EPD telescopes \n                are relatively narrow, between 15\u00b0 and 18\u00b0, and the acquisition period is very short compared to the rotational spin \n                period of Galileo. Counts and fluxes obtained with the Record acquisition mode can therefore be considered as directional \n                flux measurements. The local and equatorial pitch angles that are given are for the particles observed by the center of \n                the telescope viewing cones. The motor that rotates the EPD telescopes around an axis perpendicular to the spin axis of \n                Galileo can have eight different step positions, from 0 to 7. \n                \nData are extracted from the text file named 'galileo_epd_calibrated_low_res_v18.txt' produced and provided by JHU/APL and publicly available \nat http://sd-www.jhuapl.edu/Galileo_EPD/latest_calibrated_data/. \nIt is highly recommended to read the \"readme_v19.docx\" document also available at the previous link before using this dataset. \nIt is also recommended to contact Peter Kollmann (JHU/APL), as some measurement channels are highly contaminated or saturated. \nAll unreliable measurements are set to NaN. Energies, species and charge states observed by each measurement channel are discussed in \ndetail in Kollmann et al. [2018, JGR]. \n\n   * 1996-12-19T06:33:28 1996-12-9T07:24:15\n   * 1997-11-06T20:09:34 1997-11-06T22:51:19\n   * 1997-12-16T11:42:56 1997-12-16T12:28:25\n   * 1998-03-29T13:05:38 1998-03-29T14:00:13\n   * 1998-05-31T20:42:30 1998-05-31T21:43:10\n   * 1998-09-26T03:30:04 1998-09-26T04:29:58\n   * 1999-02-01T01:49:38 1999-02-01T02:39:08\n   * 1999-11-25T16:00:12 1999-11-25T17:00:00\n   * 2000-01-03T17:29:34 2000-01-03T18:30:14 \n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "L-shell"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "local pitch angle",
+      "unitText": "degree"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "motor position"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "all : A[0-8] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "all : A[0-8] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h : B[0,2] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h : B[0,2] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h : TP[1-3] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h : TP[1-3] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he : TA[1-2] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he : TA[1-2] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o : TO[1-4] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o : TO[1-4] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s : TS[1-3] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s : TS[1-3] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he: CA[1,3,4] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he : CA[1,3,4] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o: CM[1,3,4] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o : CM[1,3,4] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ions: CN[0-1] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ions : CN[0-1] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s: CH[3-5]: cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s : CH[3-5] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

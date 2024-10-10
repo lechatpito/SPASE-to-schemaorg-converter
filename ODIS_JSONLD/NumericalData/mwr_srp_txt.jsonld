@@ -1,0 +1,115 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SRP/MWradar/mwr_srp_txt",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SRP/MWradar/mwr_srp_txt",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Horizontal wind data in the equatorial mesosphere and lower thermosphere estimated from the meteor wind radar observations at Serpong (text format)",
+  "sdDatePublished": "2016-07-21",
+  "description": "The horizontal wind data in the equatorial mesosphere and lower thermosphere (70-112 km) estimated from the meteor wind radar observations at Serpong, one of the south-west suburbs of Jakarta, Indonesia (6.36S, 106.65E, 50m MSL). The wind data are calculated from the original observation data with a weighting function. They are stored in the text file named jkt(year)(month).(resolution).txt or jkt(year)(month)(day).(resolution).txt. The resolution abbreviations are h2t60min00 and h4t240min00. The resolution abbreviations are h2t60min00 and h4t240min00. For example, the h2t60 means weighted average with Gaussian factors over +/-2 km in height and +/-60 minutes in time. The min00 shows that the center of the Gaussian window corresponds to 00 minute of every hour. The intervals of the wind data are every 2 km and 60 minutes. The text file includes year, day of year, time (local time), height, zonal and meridional winds, standard deviations of zonal and meridional winds, number of meteor trails used to determine the horizontal wind.",
+  "abstract": "The horizontal wind data in the equatorial mesosphere and lower thermosphere (70-112 km) estimated from the meteor wind radar observations at Serpong, one of the south-west suburbs of Jakarta, Indonesia (6.36S, 106.65E, 50m MSL). The wind data are calculated from the original observation data with a weighting function. They are stored in the text file named jkt(year)(month).(resolution).txt or jkt(year)(month)(day).(resolution).txt. The resolution abbreviations are h2t60min00 and h4t240min00. The resolution abbreviations are h2t60min00 and h4t240min00. For example, the h2t60 means weighted average with Gaussian factors over +/-2 km in height and +/-60 minutes in time. The min00 shows that the center of the Gaussian window corresponds to 00 minute of every hour. The intervals of the wind data are every 2 km and 60 minutes. The text file includes year, day of year, time (local time), height, zonal and meridional winds, standard deviations of zonal and meridional winds, number of meteor trails used to determine the horizontal wind.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/iugonet/index-idr.html",
+      "name": "Meteor Wind and Medium Frequency Radar Data over Indonesia",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "year",
+      "description": "Year in the form YY where YY = the last two digits of year (00-99)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "doy",
+      "description": "Doy in the form DDD where DDD = day of year (1-366)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Time in the form hh mm where hh = hour of day (00-23) and mm = minute of hour. Local time (UT + 07:00:00) is used for time data.",
+      "unitText": "hour"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Height",
+      "description": "Height",
+      "unitText": "km",
+      "minValue": "70",
+      "maxValue": "112"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "uwind",
+      "description": "Zonal wind (eastward wind is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vwind",
+      "description": "Meridional wind (northward wind is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sig_uwind",
+      "description": "Standard deviation of zonal wind",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sig_vwind",
+      "description": "Standard deviation of meridional wind",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "num",
+      "description": "Number of meteor trails used to determine the horizontal wind",
+      "unitText": "1",
+      "defaultValue": "-9999.0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

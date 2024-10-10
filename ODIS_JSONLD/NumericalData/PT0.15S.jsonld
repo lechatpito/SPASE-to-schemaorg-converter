@@ -1,0 +1,315 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/MMS/4/FastPlasmaInvestigation/DIS/Burst/Level2/PartialMoments/PT0.15S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/MMS/4/FastPlasmaInvestigation/DIS/Burst/Level2/PartialMoments/PT0.15S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS 4 Fast Plasma Investigation, Dual Ion Spectrometer (FPI, DIS) Partial Distribution Moments, Level 2 (L2), Burst Mode, 0.15 s Data",
+  "sdDatePublished": "2023-03-28",
+  "description": "FPI usually operates in Fast Survey (FS) Mode in the MMS Region Of Interest (ROI) for the current Mission Phase. Data are taken at Burst (30/150 ms for DES/DIS) Resolution in this Mode. Data are also made available at Survey (4.5 s, etc.) Resolution. Per Mission Design, not all Burst Resolution Data are downlinked, but all Survey Data are downlinked. Planning around Calibration Activities, avoidance of Earth Radiation Belts, etc., when possible, FPI usually operates in Slow Survey (SS) Mode (60 s Resolution) outside of ROI, and then only the 60 s Resolution Survey Data are available. This Product contains Partial Moments that come from performing the Standard Moment Integrals over a limited Portion of Velocity Space. The resulting Quantities are named similarly to their corresponding Standard Moments, but are decorated with 'part' to differentiate. For example, density_part is the Density Moment integrated from a particular Energy Step to Infinity. These Partial Moments are formed from the indicated Data Type (DES/DIS Burst, FS or SS). For convenience, some additional Parameters are included to augment those most commonly found in a Moments Product of this sort, plus Time Stamps and other Annotation characterizing the State of the Instrument System at the indicated Time.",
+  "abstract": "FPI usually operates in Fast Survey (FS) Mode in the MMS Region Of Interest (ROI) for the current Mission Phase. Data are taken at Burst (30/150 ms for DES/DIS) Resolution in this Mode. Data are also made available at Survey (4.5 s, etc.) Resolution. Per Mission Design, not all Burst Resolution Data are downlinked, but all Survey Data are downlinked. Planning around Calibration Activities, avoidance of Earth Radiation Belts, etc., when possible, FPI usually operates in Slow Survey (SS) Mode (60 s Resolution) outside of ROI, and then only the 60 s Resolution Survey Data are available. This Product contains Partial Moments that come from performing the Standard Moment Integrals over a limited Portion of Velocity Space. The resulting Quantities are named similarly to their corresponding Standard Moments, but are decorated with 'part' to differentiate. For example, density_part is the Density Moment integrated from a particular Energy Step to Infinity. These Partial Moments are formed from the indicated Data Type (DES/DIS Burst, FS or SS). For convenience, some additional Parameters are included to augment those most commonly found in a Moments Product of this sort, plus Time Stamps and other Annotation characterizing the State of the Instrument System at the indicated Time.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time Tags",
+      "description": "Epoch Time Tags, Terrestrial Time in Nanoseconds since J2000, Reference Position given by the rotating Earth Geoid",
+      "unitText": "ns",
+      "minValue": "1990-01-01T00:00:00.000000000",
+      "maxValue": "2100-01-01T00:00:01.000000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.15S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch plus Var",
+      "description": "Epoch plus Var",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "4.5",
+      "cadence": "PT0.15S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch minus Var",
+      "description": "Epoch minus Var",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "4.5",
+      "cadence": "PT0.15S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Error Flags",
+      "description": "Vector of Data Quality Flag Indicators at the Burst Start Time",
+      "minValue": "0",
+      "maxValue": "4294967294",
+      "defaultValue": "4294967295",
+      "cadence": "PT0.15S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial Ion Number Density",
+      "description": "Partial Ion Number Density during this Burst",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DBCS Partial Ion Bulk Velocity, Despun Body Coordinates",
+      "description": "Partial Ion Bulk Velocity Vector in the Despun Body Coordinate System, DBCS, during this Burst.\n\n* Column 2 Labels from : [\"Vx_DBCS\",\"Vy_DBCS\",\"Vz_DBCS\"].",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial Ion Bulk Velocity, Geocentric Solar Ecliptic Coordinates",
+      "description": "Partial Ion Bulk Velocity Vector in Geocentric Solar Ecliptic, GSE, Coordinates during this Burst.\n\n* Column 2 Labels from : [\"Vx_GSE\",\"Vy_GSE\",\"Vz_GSE\"].",
+      "unitText": "km/s",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial Ion Pressure Tensor, Despun Body Coordinates",
+      "description": "Partial Ion Pressure Tensor in the Despun Body Coordinate System, DBCS, during this Burst.\n\n* Column 2 Labels from : [\"x\",\"y\",\"z\"].\n* Column 3 Labels from : [\"x\",\"y\",\"z\"].",
+      "unitText": "nPa",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 3 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial Ion Pressure Tensor, Geocentric Solar Ecliptic Coordinates",
+      "description": "Partial Ion Pressure Tensor in Geocentric Solar Ecliptic, GSE, Coordinates during this Burst.\n\n* Column 2 Labels from : [\"x\",\"y\",\"z\"].\n* Column 3 Labels from : [\"x\",\"y\",\"z\"].",
+      "unitText": "nPa",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 3 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial Ion Temperature Tensor, Despun Body Coordinates",
+      "description": "Partial Ion Temperature Tensor in the Despun Body Coordinate System, DBCS, during this Burst.\n\n* Column 2 Labels from : [\"x\",\"y\",\"z\"].\n* Column 3 Labels from : [\"x\",\"y\",\"z\"].",
+      "unitText": "eV",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 3 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial Ion Temperature Tensor, Geocentric Solar Ecliptic Coordinates",
+      "description": "Partial Ion Temperature Tensor in Geocentric Solar Ecliptic, GSE, Coordinates during this Burst.\n\n* Column 2 Labels from : [\"x\",\"y\",\"z\"].\n* Column 3 Labels from : [\"x\",\"y\",\"z\"].",
+      "unitText": "eV",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 3 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial Ion Parallel Temperature",
+      "description": "Partial Ion Parallel Temperature during this Burst",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial Ion Perpendicular Temperature",
+      "description": "Partial Ion Perpendicular Temperature during this Burst",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0e+30",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Recommended Energy Index",
+      "description": "Recommended Energy Index during this Burst, the Energy Index is an Integer ranging from 0 to 31",
+      "minValue": "0",
+      "maxValue": "31",
+      "defaultValue": "65535",
+      "cadence": "PT0.15S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Sky Map Parity 0/1 Energies",
+      "description": "Burst Sky Map Parity 0/1 Energy Table Values",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "30000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Sky Map Delta Energies",
+      "description": "Burst Sky Map Delta Energy Table Values",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean Spacecraft Potential",
+      "description": "Mean Spacecraft Potential",
+      "unitText": "V",
+      "minValue": "0.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Direction Unit Vector, Bhat, Despun Body Coordinates",
+      "description": "Magnetic Field Direction Unit Vector, Bhat, in the Despun Body Coordinate System, DCBS",
+      "minValue": "-110000.0",
+      "maxValue": "110000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1"
+          },
+          {
+            "Name": "y",
+            "Index": "2"
+          },
+          {
+            "Name": "z",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Despun Body Coordinate System to Geocentric Solar Ecliptic Transformation Matrix",
+      "description": "Despun Body Coordinate System, DBCS, to Geocentric Solar Ecliptic, GSE, Coordinate System Transformation Matrix",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.15S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 3",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

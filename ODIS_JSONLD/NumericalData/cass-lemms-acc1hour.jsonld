@@ -1,0 +1,238 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/MIMI-LEMMS/cass-lemms-acc1hour",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/MIMI-LEMMS/cass-lemms-acc1hour",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - MIMI-LEMMS - flux from accumulator rate - 1 hour",
+  "sdDatePublished": "2021-10-08",
+  "description": "There are four types of channels included in these averages. The channels\n    A0 through A8 are measured by the low energy end of LEMMS (the Low Energy\n    Telescope, or LET), and for protons these channels have an energy range of\n    27 to 4000 keV. The P1 through P9 channels capture protons as measured by\n    the LEMMS High Energy Telescope (HET) and have an energy range of 1 to 60\n    MeV. Channels C0 through C7 measure electrons, and have an energy of 20 to\n    900 keV. The E0 through E4 channels are also electrons covering the 150 to\n    3000 keV range.",
+  "abstract": "There are four types of channels included in these averages. The channels\n    A0 through A8 are measured by the low energy end of LEMMS (the Low Energy\n    Telescope, or LET), and for protons these channels have an energy range of\n    27 to 4000 keV. The P1 through P9 channels capture protons as measured by\n    the LEMMS High Energy Telescope (HET) and have an energy range of 1 to 60\n    MeV. Channels C0 through C7 measure electrons, and have an energy of 20 to\n    900 keV. The E0 through E4 channels are also electrons covering the 150 to\n    3000 keV range.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "LET ions A",
+      "unitText": "cm-2.sr-1.s-1.keV-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "A0 : 27-35 keV",
+            "Index": "1",
+            "ParameterKey": "cass_lemms_acc1houra(0)"
+          },
+          {
+            "Name": "A1 : 35-56 keV",
+            "Index": "2",
+            "ParameterKey": "cass_lemms_acc1houra(1)"
+          },
+          {
+            "Name": "A2 : 56-106 keV",
+            "Index": "3",
+            "ParameterKey": "cass_lemms_acc1houra(2)"
+          },
+          {
+            "Name": "A3 : 106-255 keV",
+            "Index": "4",
+            "ParameterKey": "cass_lemms_acc1houra(3)"
+          },
+          {
+            "Name": "A4 : 255-506 keV",
+            "Index": "5",
+            "ParameterKey": "cass_lemms_acc1houra(4)"
+          },
+          {
+            "Name": "A5 : 506-805 keV",
+            "Index": "6",
+            "ParameterKey": "cass_lemms_acc1houra(5)"
+          },
+          {
+            "Name": "A6 : 805-1600 keV",
+            "Index": "7",
+            "ParameterKey": "cass_lemms_acc1houra(6)"
+          },
+          {
+            "Name": "A7 : 1615-4000 keV",
+            "Index": "8",
+            "ParameterKey": "cass_lemms_acc1houra(7)"
+          },
+          {
+            "Name": "A8 (He) : 1270-3930 keV",
+            "Index": "9",
+            "ParameterKey": "cass_lemms_acc1houra(8)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LET electrons C",
+      "unitText": "cm-2.sr-1.s-1.keV-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "C0 : 18-40 keV",
+            "Index": "1",
+            "ParameterKey": "cass_lemms_acc1hourc(0)"
+          },
+          {
+            "Name": "C1 : 27-48 keV",
+            "Index": "2",
+            "ParameterKey": "cass_lemms_acc1hourc(1)"
+          },
+          {
+            "Name": "C2 : 41-60 keV",
+            "Index": "3",
+            "ParameterKey": "cass_lemms_acc1hourc(2)"
+          },
+          {
+            "Name": "C3 : 56-100 keV",
+            "Index": "4",
+            "ParameterKey": "cass_lemms_acc1hourc(3)"
+          },
+          {
+            "Name": "C4 : 92-183 keV",
+            "Index": "5",
+            "ParameterKey": "cass_lemms_acc1hourc(4)"
+          },
+          {
+            "Name": "C5 : 175-300 keV",
+            "Index": "6",
+            "ParameterKey": "cass_lemms_acc1hourc(5)"
+          },
+          {
+            "Name": "C6 : 265-550 keV",
+            "Index": "7",
+            "ParameterKey": "cass_lemms_acc1hourc(6)"
+          },
+          {
+            "Name": "C7 : 510-832 keV",
+            "Index": "8",
+            "ParameterKey": "cass_lemms_acc1hourc(7)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HET electrons E",
+      "unitText": "cm-2.sr-1.s-1.keV-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "5",
+        "elements": [
+          {
+            "Name": "E0 : 110-365 keV",
+            "Index": "1",
+            "ParameterKey": "cass_lemms_acc1houre(0)"
+          },
+          {
+            "Name": "E1 : 220-485 keV",
+            "Index": "2",
+            "ParameterKey": "cass_lemms_acc1houre(1)"
+          },
+          {
+            "Name": "E2 : 340-1350 keV",
+            "Index": "3",
+            "ParameterKey": "cass_lemms_acc1houre(2)"
+          },
+          {
+            "Name": "E3 : 600-4950 keV",
+            "Index": "4",
+            "ParameterKey": "cass_lemms_acc1houre(3)"
+          },
+          {
+            "Name": "E4 : 790-4750 keV",
+            "Index": "5",
+            "ParameterKey": "cass_lemms_acc1houre(4)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HET ions P",
+      "unitText": "cm-2.sr-1.s-1.keV-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "P1 : 1424-2278 keV",
+            "Index": "1",
+            "ParameterKey": "cass_lemms_acc1hourp(0)"
+          },
+          {
+            "Name": "P2 : 2280-4490 keV",
+            "Index": "2",
+            "ParameterKey": "cass_lemms_acc1hourp(1)"
+          },
+          {
+            "Name": "P3 : 4490-5744 keV",
+            "Index": "3",
+            "ParameterKey": "cass_lemms_acc1hourp(2)"
+          },
+          {
+            "Name": "P4 : 13200-25400 keV",
+            "Index": "4",
+            "ParameterKey": "cass_lemms_acc1hourp(3)"
+          },
+          {
+            "Name": "P5 : 8311-11449 keV",
+            "Index": "5",
+            "ParameterKey": "cass_lemms_acc1hourp(4)"
+          },
+          {
+            "Name": "P6 : 11474-13433 keV",
+            "Index": "6",
+            "ParameterKey": "cass_lemms_acc1hourp(5)"
+          },
+          {
+            "Name": "P7 : 12101-58902 keV",
+            "Index": "7",
+            "ParameterKey": "cass_lemms_acc1hourp(6)"
+          },
+          {
+            "Name": "P8 : 25158-59000 keV",
+            "Index": "8",
+            "ParameterKey": "cass_lemms_acc1hourp(7)"
+          },
+          {
+            "Name": "P9 : 58650-158700 keV",
+            "Index": "9",
+            "ParameterKey": "cass_lemms_acc1hourp(8)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

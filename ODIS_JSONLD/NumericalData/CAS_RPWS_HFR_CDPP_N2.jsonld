@@ -1,0 +1,87 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/CASSINI/RPWS-HFR/CAS_RPWS_HFR_CDPP_N2",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/CASSINI/RPWS-HFR/CAS_RPWS_HFR_CDPP_N2",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "CASSINI RPWS L2 Data",
+  "sdDatePublished": "2022-06-02",
+  "description": "This dataset includes CASSINI RPWS HFR calibrated data , with binary formated metadata description. This dataset is composed of hourly binary files.",
+  "abstract": "This dataset includes CASSINI RPWS HFR calibrated data , with binary formated metadata description. This dataset is composed of hourly binary files.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CAS_RPWS_HFR_CDPP_N2",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS Power spectral density on channel 1",
+      "description": "CASSINI RPWS Power spectral density on channel 1",
+      "unitText": "V^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS Power spectral density on channel 2",
+      "description": "CASSINI RPWS Power spectral density on channel 2",
+      "unitText": "V^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS real part of the normalized cross correlation between channels 1 and 2",
+      "description": "CASSINI RPWS real part of the normalized cross correlation between channels 1 and 2",
+      "unitText": "V^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS imaginary part of the normalized cross correlation between channels 1 and 2",
+      "description": "CASSINI RPWS imaginary part of the normalized cross correlation between channels 1 and 2",
+      "unitText": "V^2/Hz"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

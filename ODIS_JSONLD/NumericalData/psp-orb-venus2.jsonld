@@ -1,0 +1,80 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/ORBIT/psp-orb-venus2",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/ORBIT/psp-orb-venus2",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP - Ephemeris - Venus flyby #2",
+  "sdDatePublished": "2021-07-20",
+  "description": "Calculated in IRAP by using PSP SPICE kernels",
+  "abstract": "Calculated in IRAP by using PSP SPICE kernels",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_vso",
+      "unitText": "Rv",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "psp_xyz_vso2(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "psp_xyz_vso2(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "psp_xyz_vso2(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance psp-venus",
+      "unitText": "Rv"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon iau_venus",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat iau_venus",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

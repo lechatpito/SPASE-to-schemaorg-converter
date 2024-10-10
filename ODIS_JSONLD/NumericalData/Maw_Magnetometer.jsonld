@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ASWS/NumericalData/Magnetometer/Maw_Magnetometer",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ASWS/NumericalData/Magnetometer/Maw_Magnetometer",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Australian Space Weather Services Mawson Magnetometer",
+  "sdDatePublished": "2021-03-29",
+  "description": "\r\n\t  The magnetometer data provides a measure of variations of the Earth's magnetic field in 2 or 3 orthogonal directions, typically in the geomagnetic north-south and east-west directions as well as vertically. Space Weather Services archives digital magnetometer data recorded from a number of field installations, some of which are collaborative installations with other organizations. Magnetometer data is used to derive a number of indices relevant to specific industry groups as well drive space weather warnings and alerts. Magnetometer data and its derived products are also used in Space Weather Services reports and products as well for space weather forecasting and geomagnetic storm monitoring. A geomagnetic storm is a temporary disturbance of the Earth's magnetosphere caused by its interaction with transient features of the solar wind. Geomagnetic storms may be hazardous to critical infrastructure such as power networks and long pipelines as well as interfere with mineral exploration surveys and directional drilling. Geomagnetic storms also modulate hazardous environments for satellites and lead to ionospheric disturbances that cause degraded HF radio communications, radar scintillation, and compromise GNSS precision navigation systems. Geomagnetic data is used to derive products that are used in Space Weather Services' reports and alerts primarily in the form of geomagnetic indices. The Induction Magnetometer in Mawson is owned by the University of Newcastle and operated by AAD since 18/08/2000. Since 14/02/2006, GA installed a Magnetometer at Mawson. Both of the Magnetometers are still monitoring today. The GA data is only available on SWS WDC Intranet.\r\n      ",
+  "abstract": "\r\n\t  The magnetometer data provides a measure of variations of the Earth's magnetic field in 2 or 3 orthogonal directions, typically in the geomagnetic north-south and east-west directions as well as vertically. Space Weather Services archives digital magnetometer data recorded from a number of field installations, some of which are collaborative installations with other organizations. Magnetometer data is used to derive a number of indices relevant to specific industry groups as well drive space weather warnings and alerts. Magnetometer data and its derived products are also used in Space Weather Services reports and products as well for space weather forecasting and geomagnetic storm monitoring. A geomagnetic storm is a temporary disturbance of the Earth's magnetosphere caused by its interaction with transient features of the solar wind. Geomagnetic storms may be hazardous to critical infrastructure such as power networks and long pipelines as well as interfere with mineral exploration surveys and directional drilling. Geomagnetic storms also modulate hazardous environments for satellites and lead to ionospheric disturbances that cause degraded HF radio communications, radar scintillation, and compromise GNSS precision navigation systems. Geomagnetic data is used to derive products that are used in Space Weather Services' reports and alerts primarily in the form of geomagnetic indices. The Induction Magnetometer in Mawson is owned by the University of Newcastle and operated by AAD since 18/08/2000. Since 14/02/2006, GA installed a Magnetometer at Mawson. Both of the Magnetometers are still monitoring today. The GA data is only available on SWS WDC Intranet.\r\n      ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "keywords": [
+    "Magnetometer",
+    "Geomagnetic Storm",
+    "Magnetosphere",
+    "Earth's Magnetic Field"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "X",
+      "description": "Represents the magnetic field strength in roughly the direction of the north magnetic pole. A positive x-value means that part of the magnetic field is pointing north. A negative x-value means that part of the magnetic field is pointing south.",
+      "unitText": "nT",
+      "cadence": "PT1S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Y",
+      "description": "Represents the magnetic field strength 90 degrees from the x-direction in the \u201cmagnetic east\u201d direction. A positive y-value means that part of the magnetic field is pointing towards magnetic east. A negative y-value means that part of the magnetic field is pointing towards magnetic west.",
+      "unitText": "nT",
+      "cadence": "PT1S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

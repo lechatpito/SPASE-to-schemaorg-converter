@@ -1,0 +1,45 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/GBO/NumericalData/BASS2000/SolarData",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/GBO/NumericalData/BASS2000/SolarData",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Solar Data at Meudon and Tarbes via BASS 2000",
+  "sdDatePublished": "2020-05-04",
+  "description": "Multiple solar data products held at Meudon and Tarbes sites in France, via the BASS (Base de donnees Solaire Sol) 2000 web site.  Included are Nancay radioheliograph data, Meudon spectroheliograph data, THEMIS data and Pic du Mida coronagraph data",
+  "abstract": "Multiple solar data products held at Meudon and Tarbes sites in France, via the BASS (Base de donnees Solaire Sol) 2000 web site.  Included are Nancay radioheliograph data, Meudon spectroheliograph data, THEMIS data and Pic du Mida coronagraph data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://bass2000.obspm.fr/home.php",
+      "name": "French BASS 2000 web site",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

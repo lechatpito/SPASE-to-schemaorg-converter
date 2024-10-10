@@ -1,0 +1,126 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/FGM/juno-fgm-orbfull",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/FGM/juno-fgm-orbfull",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Juno - FGM - orbit jupiter - full",
+  "sdDatePublished": "2024-02-13",
+  "description": "Juno Magntometer (FGM) calibrated data from the Juno Jupiter oribtal phases. High resolution.",
+  "abstract": "Juno Magntometer (FGM) calibrated data from the Juno Jupiter oribtal phases. High resolution.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_jso",
+      "description": "Magnetic field vector components in JSO (ss) coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "juno_fgm_orbfull_jso(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "juno_fgm_orbfull_jso(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "juno_fgm_orbfull_jso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_iau_jupiter",
+      "description": "Magnetic field vector components in IAU Jupiter (pc) coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "juno_fgm_orbfull_iau(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "juno_fgm_orbfull_iau(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "juno_fgm_orbfull_iau(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_pl",
+      "description": "Magnetic field vector components in pl coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "juno_fgm_orbfull_pl(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "juno_fgm_orbfull_pl(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "juno_fgm_orbfull_pl(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Scalar magnitude of the magnetic field in nT",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

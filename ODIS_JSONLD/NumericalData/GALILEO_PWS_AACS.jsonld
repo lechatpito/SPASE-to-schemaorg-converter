@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Galileo/PWS/AACS/GALILEO_PWS_AACS",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Galileo/PWS/AACS/GALILEO_PWS_AACS",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "GALILEO PWS AACS",
+  "sdDatePublished": "2022-03-22",
+  "description": "This data set contains values of Rotor Attitudes (RA Right Ascension, DEC Declination, Twist) from the Galileo PWS AACS (Attitude and Articulation Control System). The period covered by a data file is 3 or 4 h maximum per day (February 10th, 1990 to December 14th, 1992).",
+  "abstract": "This data set contains values of Rotor Attitudes (RA Right Ascension, DEC Declination, Twist) from the Galileo PWS AACS (Attitude and Articulation Control System). The period covered by a data file is 3 or 4 h maximum per day (February 10th, 1990 to December 14th, 1992).",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GALILEO_PWS_AACS",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "GALILEO PWS Rotor Attitude Right Ascension",
+      "description": "GALILEO PWS Rotor Attitude Right Ascension in EME50 (Earth Mean Equatorial equinox of 1950)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GALILEO PWS Rotor Attitude Declination",
+      "description": "GALILEO PWS  Rotor Attitude Declination in EME50 (Earth Mean Equatorial equinox of 1950)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GALILEO PWS Rotor Attitude Twist",
+      "description": "GALILEO PWS  Rotor Attitude Twist in EME50 (Earth Mean Equatorial equinox of 1950)",
+      "unitText": "\u00b0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

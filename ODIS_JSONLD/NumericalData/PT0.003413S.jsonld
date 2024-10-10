@@ -1,0 +1,185 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ParkerSolarProbe/FIELDS/MAG/Level2/SC/FullResolution/PT0.003413S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ParkerSolarProbe/FIELDS/MAG/Level2/SC/FullResolution/PT0.003413S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP FIELDS Fluxgate Magnetometer (MAG) Magnetic Field Vectors, Spacecraft, SC, Coordinates, Full Resolution, Level 2 (L2), 3.413 ms Data",
+  "sdDatePublished": "2022-05-25",
+  "description": "Parker Solar Probe FIELDS Instrument Suite Fluxgate Magnetometer, MAG, Data: The time resolution of the MAG time series data varies with instrument mode ranging from 2.289 samples/s to 292.9 samples/s. These two data sampling rates corresponding to 2 samples or 256 samples per 0.874 s where 0.874 s is equal to 2^25 divided 38.4 MHz. See reference [2] for a complete explanation of the MAG instrument sampling methodology. The Magnetometer has four ranges: \u00b11024 nT, \u00b14096 nT, \u00b116,384 nT, and \u00b165,536 nT. The Magnetometer Range is selected by an algorithm based on the strength of the ambient magnetic field. The magnetic field measurement precision is \u00b115 bits, based on the 16-bit Analog to Digital Converter, ADC.\n\nReferences:\n\n* 1. Fox, N.J., Velli, M.C., Bale, S.D. et al. Space Sci Rev (2016) 204: 7. https://doi.org/10.1007/s11214-015-0211-6\n* 2. Bale, S.D., Goetz, K., Harvey, P.R. et al. Space Sci Rev (2016) 204: 49. https://doi.org/10.1007/s11214-016-0244-5",
+  "abstract": "Parker Solar Probe FIELDS Instrument Suite Fluxgate Magnetometer, MAG, Data: The time resolution of the MAG time series data varies with instrument mode ranging from 2.289 samples/s to 292.9 samples/s. These two data sampling rates corresponding to 2 samples or 256 samples per 0.874 s where 0.874 s is equal to 2^25 divided 38.4 MHz. See reference [2] for a complete explanation of the MAG instrument sampling methodology. The Magnetometer has four ranges: \u00b11024 nT, \u00b14096 nT, \u00b116,384 nT, and \u00b165,536 nT. The Magnetometer Range is selected by an algorithm based on the strength of the ambient magnetic field. The magnetic field measurement precision is \u00b115 bits, based on the 16-bit Analog to Digital Converter, ADC.\n\nReferences:\n\n* 1. Fox, N.J., Velli, M.C., Bale, S.D. et al. Space Sci Rev (2016) 204: 7. https://doi.org/10.1007/s11214-015-0211-6\n* 2. Bale, S.D., Goetz, K., Harvey, P.R. et al. Space Sci Rev (2016) 204: 49. https://doi.org/10.1007/s11214-016-0244-5",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, Full Cadence",
+      "description": "Epoch Time Tags in Terrestrial Time 2000, TT2000, for Full Cadence Magnetic Field Vector Waveform Data",
+      "unitText": "ns",
+      "minValue": "2010-01-01T00:00:00.000000000",
+      "maxValue": "2049-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.003413S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Vector, SC, Cartesian, Full Cadence",
+      "description": "Magnetic Field Vector, B, Spacecraft, SC, Cartesian Coordinates, Full Cadence Waveform Data",
+      "unitText": "nT",
+      "minValue": "-65536.0",
+      "maxValue": "65536.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.003413S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "B_X",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "B_Y",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "B_Z",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Parker Solar Probe, Mission Elapsed Time",
+      "description": "Parker Solar Probe, PSP, Mission Elapsed Time, MET",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "1.2623e+09",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.003413S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetometer Instrument, Range",
+      "description": "Magnetometer Instrument, Measurement Range",
+      "minValue": "0",
+      "maxValue": "3",
+      "defaultValue": "-2147483648",
+      "cadence": "PT0.003413S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetometer Instrument, Sensor Mode",
+      "description": "Magnetometer Instrument, Sensor Inboard/Outboard Mode",
+      "minValue": "0",
+      "maxValue": "3",
+      "defaultValue": "-2147483648",
+      "cadence": "PT0.003413S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetometer Instrument, Rate in Samples per Cycle",
+      "description": "Magnetometer Instrument, Measurement Rate, measured in Samples per Cycle",
+      "minValue": "0",
+      "maxValue": "256",
+      "defaultValue": "-2147483648",
+      "cadence": "PT0.003413S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetometer Instrument, Packet Index",
+      "description": "Magnetometer Instrument, Packet Index",
+      "minValue": "0",
+      "maxValue": "256",
+      "defaultValue": "-2147483648",
+      "cadence": "PT0.003413S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, Sensor Offsets",
+      "description": "Epoch Time Tags in Terrestrial Time 2000, TT2000, for Magnetic Field Instrument, Sensor Zero Offsets, 1 min Time Resolution",
+      "unitText": "ns",
+      "minValue": "2010-01-01T00:00:00.000000000",
+      "maxValue": "2049-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.003413S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetometer Instrument, Sensor Zero Offset Tensor, Counts",
+      "description": "Magnetometer Instrument, Sensor Zero Offset Tensor measured in Counts with one Offset for each of three Axes and four Measurement Ranges, 1 min Time Resolution",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.003413S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 4",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, FIELDS Instrument Suite, Data Quality Flags",
+      "description": "Epoch Time Tags in Terrestrial Time 2000, TT2000, for FIELDS Instrument Suite, Data Quality Flags",
+      "unitText": "ns",
+      "minValue": "2010-01-01T00:00:00.000000000",
+      "maxValue": "2050-01-01T00:00:00.000000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.003413S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIELDS Data Quality Flags",
+      "description": "FIELDS Instrument Suite Data Quality Flags",
+      "minValue": "0",
+      "maxValue": "1023",
+      "defaultValue": "4294967295",
+      "cadence": "PT0.003413S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

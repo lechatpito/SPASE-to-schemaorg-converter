@@ -1,0 +1,121 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RBSP/B/EFW/L2/UVW/Hires",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RBSP/B/EFW/L2/UVW/Hires",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Van Allen Probe B High Resolution DC Electric Field in UVW Coordinates",
+  "sdDatePublished": "2022-08-18",
+  "description": "This data set contains high-resolution DC Electric Field data in UVW coordinates as measured by the Electric Field and Waves Suite (EFW) onboard Van Allen Probe B. As a reference for spin axis vector in GSE, there was no spinning-frame offset removal.",
+  "abstract": "This data set contains high-resolution DC Electric Field data in UVW coordinates as measured by the Electric Field and Waves Suite (EFW) onboard Van Allen Probe B. As a reference for spin axis vector in GSE, there was no spinning-frame offset removal.",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time, UTC",
+      "description": "Time, UTC",
+      "unitText": "UTC"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hires E-field",
+      "description": "High Resolution DC Electric Field in UVW Coordinates.",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hires E-field",
+      "description": "High Resolution DC Electric Field in UVW Coordinates (No spinning-frame offset removal).",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E_vector_compno",
+      "description": "Electric field vector component number",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Configuration (HSK) timetags, UTC",
+      "description": "Configuration (HSK) timetags, UTC",
+      "unitText": "msec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EFW BEB Configuration",
+      "description": "EFW Boom Electronics Board (BEB) configuration code (on-board sensor biases"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EFW DFB Configuration",
+      "description": "EFW Digital Fields Board (DFB) Configuration code (on-board spectral and waveform processing configuration)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time, UTC",
+      "description": "Timetags for elements of efw_qual.",
+      "unitText": "UTC"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EFW Data Quality Flags",
+      "description": "EFW quality array (global estimate of EFW data quality, plus 13 underlying observatory and instrument-level data quality factors)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EFW Quality Flags Components",
+      "description": "Component numbers for EFW data quality flags, efw_qual..",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L_vector",
+      "description": "Spin Axis Vector in GSE",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

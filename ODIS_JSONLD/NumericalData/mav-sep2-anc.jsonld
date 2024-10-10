@@ -1,0 +1,194 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SEP/mav-sep2-anc",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SEP/mav-sep2-anc",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - SEP - telescope 2 - ancillary",
+  "sdDatePublished": "2024-03-02",
+  "description": "                           \n         ",
+  "abstract": "                           \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "forward : FOV center in MSO",
+      "description": "Geometric center of telecope 2 forward field of view in MSO coordinates",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mav_sep2_fmso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mav_sep2_fmso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mav_sep2_fmso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "rear : FOV center in MSO",
+      "description": "Geometric center of telecope 2 rear field of view in MSO coordinates",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mav_sep2_rmso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mav_sep2_rmso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mav_sep2_rmso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "forward : FOV center in IAU",
+      "description": "Geometric center of telecope 2 forward field of view in IAU Mars coordinates",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mav_sep2_fare(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mav_sep2_fare(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mav_sep2_fare(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "rear : FOV center in IAU",
+      "description": "Geometric center of telecope 2 rear field of view in IAU MARS coordinates",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mav_sep2_rare(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mav_sep2_rare(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mav_sep2_rare(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "forward : sun angle",
+      "description": "Angle between the geometric center of telescope 2 forward field of view and the direction of the sun",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "rear : sun angle",
+      "description": "Angle between the geometric center of telescope 2 rear field of view and the direction of the sun",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "forward : pitch angle",
+      "description": "Angle between the geometric center of telescope 2 forward field of view and the magnetic field direction averaged over the 32 second interval",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "rear : pitch angle",
+      "description": "Angle between the geometric center of telescope 2 rear field of view and the magnetic field direction averaged over the 32 second interval",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "forward : nadir angle",
+      "description": "Angle between the geometric center of telescope 2 forward field of view and the nadir direction, i.e. towards the center of Mars",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "rear : nadir angle",
+      "description": "Angle between the geometric center of telescope 2 rear field of view and the nadir direction, i.e. towards the center of Mars",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "forward : fraction mars",
+      "description": "Fraction of telescope 2 forward field of view taken up by Mars"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "rear : fraction mars",
+      "description": "Fraction of telescope 2 rear field of view taken up by Mars"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mars :fraction sky",
+      "description": "Fraction of the sky filled by the disk of Mars"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

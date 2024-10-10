@@ -1,0 +1,52 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-scpot",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-scpot",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - CAPS - s/c potential",
+  "sdDatePublished": "2014-08-28",
+  "description": " This data set consists of all of the spacecraft potential data generated \n     from the Cassini Plasma Spectrometer (CAPS) electron spectrometer        \n     uncalibrated data",
+  "abstract": " This data set consists of all of the spacecraft potential data generated \n     from the Cassini Plasma Spectrometer (CAPS) electron spectrometer        \n     uncalibrated data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "anode used"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c potential",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "accuracy flag"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

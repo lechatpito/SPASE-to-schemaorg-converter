@@ -1,0 +1,48 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/FIPS/mes-fips-scan",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/FIPS/mes-fips-scan",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MESSENGER - FIPS - scan",
+  "sdDatePublished": "2016-04-11",
+  "description": "Fast Imaging Plasma Spectrometer (FIPS) data (spectrogram). \n                FIPS Scan CDR contains FIPS differential intensity spectra at each Deflection System High Voltage (DSHV) step in a scan.",
+  "abstract": "Fast Imaging Plasma Spectrometer (FIPS) data (spectrogram). \n                FIPS Scan CDR contains FIPS differential intensity spectra at each Deflection System High Voltage (DSHV) step in a scan.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mercury"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "proton_flux",
+      "unitText": "(keV/e)^-1 s^-1 cm^-2 sr^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "scan_mode"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

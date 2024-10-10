@@ -1,0 +1,54 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/DisplayData/RISH/misc/SGK/MUradar/mur_sgk_faispc_gif",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/DisplayData/RISH/misc/SGK/MUradar/mur_sgk_faispc_gif",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Field-aligned irregularity (FAI) observation data of the ionosphere taken by the MU radar (GIF format)",
+  "sdDatePublished": "2016-12-05",
+  "description": "The time-height plots of signal-to-noise (SNR) of field-aligned irregularities (FAI) echoes in the E and F regions of the ionosphere between 75 km and 650 km. The data are taken by the MU radar at Shigaraki in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL), which has been operated in the special observation mode of FAI. The file name is (year)(month)(day)_06.(observation parameter).snr.gif for the daytime (06-18 h) observation or (year)(month)(day)_18.(observation parameter).snr.gif for the nighttime (18-06 h) observation. The detailed information of observation parameters are described in the MU-FAI homepage. Local time (UT+09:00) is used for time data. The hight range of the SNR plot is common for each beam direction, but depends on each obervarion parameter. The beam direction (azimuth and zenith angles) is indicated on the upper side of each panel.",
+  "abstract": "The time-height plots of signal-to-noise (SNR) of field-aligned irregularities (FAI) echoes in the E and F regions of the ionosphere between 75 km and 650 km. The data are taken by the MU radar at Shigaraki in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL), which has been operated in the special observation mode of FAI. The file name is (year)(month)(day)_06.(observation parameter).snr.gif for the daytime (06-18 h) observation or (year)(month)(day)_18.(observation parameter).snr.gif for the nighttime (18-06 h) observation. The detailed information of observation parameters are described in the MU-FAI homepage. Local time (UT+09:00) is used for time data. The hight range of the SNR plot is common for each beam direction, but depends on each obervarion parameter. The beam direction (azimuth and zenith angles) is indicated on the upper side of each panel.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Ion Chemistry/Ionization",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/mu/fai/",
+      "name": "MU FAI Observation",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

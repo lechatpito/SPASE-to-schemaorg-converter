@@ -1,0 +1,50 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/IES/ros-elc-energy",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/IES/ros-elc-energy",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Rosetta - IES - electrons - energy spectra : eflux",
+  "sdDatePublished": "2019-03-13",
+  "description": "Electron energy spectra : differential energy fluxes summed over azimuths and elevations",
+  "abstract": "Electron energy spectra : differential energy fluxes summed over azimuths and elevations",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- flux",
+      "unitText": "eV/(m**2*s*sr*eV)",
+      "defaultValue": "-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "124",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

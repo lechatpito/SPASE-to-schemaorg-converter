@@ -1,0 +1,120 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/PSP/FIELDS/SCaM/PARKERSP_FIELDS_SCAM",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/PSP/FIELDS/SCaM/PARKERSP_FIELDS_SCAM",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PARKER SOLAR PROBE FIELDS Level 3 Merged Search Coil and Fluxgate Magnetometer (SCaM) Data (CDF)",
+  "sdDatePublished": "2022-07-04",
+  "description": "This data set contains the PARKER SOLAR PROBE FIELDS Level 3 Merged Search Coil and Fluxgate Magnetometer (SCaM) data.\nSCaM waveforms consist of three components of the magnetic field with full frequency resolution from DC to the Nyquist frequency (in general, 146.48 Hz). For encounter 1, the SCaM product is available in RTN and in spacecraft (SC) coordinates. For encounters 2 and beyond, when the Bu antenna of the search-coil stopped working properly, it was not possible anymore to deliver a merged dataset in either RTN or spacecraft coordinates. However, a merged magnetic field dataset is still available for the Bv and Bw components only, i.e. in the coordinate system of the search-coil.\nTime (epoch) is in TT2000 format and corresponds to nanoseconds since 1 Jan 2000 12:00:00 with leap seconds included. The magnetic field is in nT.\nCalculation of the PSP-Sun distance for the selection criterion (see Filter tab) is realized each day at 00:00.\nFor further information, contact: Trevor Bowen (Univ. Berkeley) tbowen@berkeley.edu\nReferences:\nBale, S. et al. (2016), The FIELDS Instrument Suite for Solar Probe Plus. Measuring the Coronal Plasma and Magnetic Field, Plasma Waves and Turbulence, and Radio Signatures of Solar Transients, Space Science Reviews, Volume 204, Issue 1-4, pp.49-82, doi:10.1007/s11214-016-0244-5\nBowen, T. et al. (2020), A Merged Search-Coil and Fluxgate Magnetometer Data Product for Parker Solar Probe FIELDS, Journal of Geophysical Research: Space Physics, 125(5):e2020JA027813\nOther datasets from FIELDS can be found at https://fields.ssl.berkeley.edu/ . For other instruments of Parker Solar Probe, see https://cdaweb.gsfc.nasa.gov/index.html/",
+  "abstract": "This data set contains the PARKER SOLAR PROBE FIELDS Level 3 Merged Search Coil and Fluxgate Magnetometer (SCaM) data.\nSCaM waveforms consist of three components of the magnetic field with full frequency resolution from DC to the Nyquist frequency (in general, 146.48 Hz). For encounter 1, the SCaM product is available in RTN and in spacecraft (SC) coordinates. For encounters 2 and beyond, when the Bu antenna of the search-coil stopped working properly, it was not possible anymore to deliver a merged dataset in either RTN or spacecraft coordinates. However, a merged magnetic field dataset is still available for the Bv and Bw components only, i.e. in the coordinate system of the search-coil.\nTime (epoch) is in TT2000 format and corresponds to nanoseconds since 1 Jan 2000 12:00:00 with leap seconds included. The magnetic field is in nT.\nCalculation of the PSP-Sun distance for the selection criterion (see Filter tab) is realized each day at 00:00.\nFor further information, contact: Trevor Bowen (Univ. Berkeley) tbowen@berkeley.edu\nReferences:\nBale, S. et al. (2016), The FIELDS Instrument Suite for Solar Probe Plus. Measuring the Coronal Plasma and Magnetic Field, Plasma Waves and Turbulence, and Radio Signatures of Solar Transients, Space Science Reviews, Volume 204, Issue 1-4, pp.49-82, doi:10.1007/s11214-016-0244-5\nBowen, T. et al. (2020), A Merged Search-Coil and Fluxgate Magnetometer Data Product for Parker Solar Probe FIELDS, Journal of Geophysical Research: Space Physics, 125(5):e2020JA027813\nOther datasets from FIELDS can be found at https://fields.ssl.berkeley.edu/ . For other instruments of Parker Solar Probe, see https://cdaweb.gsfc.nasa.gov/index.html/",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:PARKERSP_FIELDS_SCAM",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field from Merged MAG and SCM",
+      "description": "L3 Magnetic Field from Merged MAG and SCM",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency Array for MAG/SCM Noise Floor",
+      "description": "Frequency Array for MAG/SCM Noise Floor",
+      "unitText": "Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Trace noise floor for MAG (Range 0)",
+      "description": "Trace noise floor for MAG (Range 0)",
+      "unitText": "nT^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Trace noise floor for SCM (High Gain)",
+      "description": "Trace noise floor for SCM (High Gain)",
+      "unitText": "nT^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sample rate assigned to high gain DFB/SCM measurements",
+      "description": "Sample rate assigned to high gain DFB/SCM measurements (Samples/s)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sample Rate assigned to MAGo",
+      "description": "Sample Rate assigned to MAGo (Samples/s)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Reaction Wheel Frequencies",
+      "description": "Reaction Wheel Frequencies from S/C Houskeeping",
+      "unitText": "Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sample Range assigned to MAGo",
+      "description": "Sample Range assigned to MAGo [0,1,2,3]"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PSP FIELDS MAG Offset Zeros",
+      "description": "PSP FIELDS MAG Offset Zeros",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PSP FIELDS SCM Gain Match to MAG Coefficients",
+      "description": "PSP FIELDS SCM Gain Match to MAG Coefficients (nT_mag/nT_SCM)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIELDS quality flag",
+      "description": "FIELDS Instrument Suite Data Quality Flags.\nThese flags are bitwise variables, meaning that multiple flags can be set simultaneously for a single time by adding flag values. Current flagged values are:\n 1: FIELDS Antenna Bias Sweep\n 2: PSP Thruster Firing\n 4: SCM Calibration\n 8: PSP Rotations for MAG Calibration, MAG Rolls\n 16: FIELDS MAG Calibration Sequence\n 32: SWEAP SPC in Electron Mode\n 64: PSP Solar Limb Sensor, SLS, Test\n 128: PSP Spacecraft is off Umbra Pointing, Heat Shield not pointed Sunward\n 256: High Frequency Noise affecting RFS and TDS Receivers\n 512: Antennas driven towards the FIELDS Power Supply Rails\nA value of zero corresponds to no set flags. Not all flags are relevant to all FIELDS data products, refer to notes in the CDF metadata and on the FIELDS Satellite Operations Center, SOC, website for information on how the various flags impact FIELDS data. For more information on the quality flags describing high frequency noise and antennas driven to the rails, see release notes for PSP/FIELDS releases 8 and 9. Additional flagged items may be added in the future."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

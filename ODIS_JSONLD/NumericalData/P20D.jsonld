@@ -1,0 +1,221 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Ulysses/COSPIN/LET/PHA/HeavyIon/Fluxes/P20D",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Ulysses/COSPIN/LET/PHA/HeavyIon/Fluxes/P20D",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Ulysses Cosmic Ray and Solar Particle Investigation (COSPIN) Low Energy Telescope (LET) Oxygen, Nitrogen, and Neon PHA based Fluxes in ASCII Format, 20 day Average Data",
+  "sdDatePublished": "2020-07-07",
+  "description": "This Data Set contains 20 day Average PHA based Fluxes of Oxygen (4-8, 8-12, 12-16, 16-20 MeV/n), Nitrogen (4-7, 8-20 MeV/n), and Neon (4-8, 9-30 MeV/n), and the Poisson Uncertainties in those Fluxes",
+  "abstract": "This Data Set contains 20 day Average PHA based Fluxes of Oxygen (4-8, 8-12, 12-16, 16-20 MeV/n), Nitrogen (4-7, 8-20 MeV/n), and Neon (4-8, 9-30 MeV/n), and the Poisson Uncertainties in those Fluxes",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ufa.esac.esa.int/ufa/#data",
+      "name": "Ulysses Final Archive Access to COSPIN/LET 20 day Average Oxygen, Nitrogen, and Neon PHA based Fluxes",
+      "description": "ASCII Data File containing all Ulysses COSPIN/LET 20 day Average Oxygen, Nitrogen, and Neon PHA based Fluxes"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time for the record",
+      "description": "Time for the record given in Year, Day of Year and Hour. The given time represents the middle of the averaging interval.",
+      "cadence": "P20D",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1",
+            "ValidMin": "1990",
+            "ValidMax": "2008"
+          },
+          {
+            "Name": "Day of Year",
+            "Index": "2",
+            "ValidMin": "1",
+            "ValidMax": "366"
+          },
+          {
+            "Name": "Hour of Day",
+            "Index": "3",
+            "ValidMin": "0",
+            "ValidMax": "23"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/LET 20 day Average 4-8 MeV/n Oxygen PHA Derived Fluxes (O1)",
+      "description": "LET 20 day Average PHA based Oxygen fluxes between 4 and 8 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error in COSPIN/LET 20 day Average 4-8 MeV/n PHA Derived Oxygen Fluxes (EO1)",
+      "description": "error in LET 20 day Average PHA based Oxygen fluxes between 4 and 8 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/LET 20 day Average 8-12 MeV/n Oxygen PHA Derived Fluxes (O2)",
+      "description": "LET 20 day Average PHA based Oxygen fluxes between 8 and 12 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error in COSPIN/LET 20 day Average 8-12 MeV/n PHA Derived Oxygen Fluxes (EO2)",
+      "description": "error in LET 20 day Average PHA based Oxygen fluxes between 8 and 12 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/LET 20 day Average 12-16 MeV/n Oxygen PHA Derived Fluxes (O3)",
+      "description": "LET 20 day Average PHA based Oxygen fluxes between 12 and 16 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error in COSPIN/LET 20 day Average 12-16 MeV/n PHA Derived Oxygen Fluxes (EO3)",
+      "description": "error in LET 20 day Average PHA based Oxygen fluxes between 12 and 16 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/LET 20 day Average 16-20 MeV/n Oxygen PHA Derived Fluxes (O4)",
+      "description": "LET 20 day Average PHA based Oxygen fluxes between 16 and 20 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error in COSPIN/LET 20 day Average 16-20 MeV/n PHA Derived Oxygen Fluxes (EO4)",
+      "description": "error in LET 20 day Average PHA based Oxygen fluxes between 16 and 20 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/LET 20 day Average 4-7 MeV/n Nitrogen PHA Derived Fluxes (N1)",
+      "description": "LET 20 day Average PHA based Nitrogen fluxes between 4 and 7 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error in COSPIN/LET 20 day Average 4-7 MeV/n PHA Derived Nitrogen Fluxes (EN1)",
+      "description": "error in LET 20 day Average PHA based Nitrogen fluxes between 4 and 7 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/LET 20 day Average 8-20 MeV/n Nitrogen PHA Derived Fluxes (N2)",
+      "description": "LET 20 day Average PHA based Nitrogen fluxes between 8 and 20 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error in COSPIN/LET 20 day Average 8-20 MeV/n PHA Derived Nitrogen Fluxes (EN2)",
+      "description": "error in LET 20 day Average PHA based Nitrogen fluxes between 8 and 20 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/LET 20 day Average 4-8 MeV/n Neon PHA Derived Fluxes (Ne1)",
+      "description": "LET 20 day Average PHA based Neon fluxes between 4 and 8 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error in COSPIN/LET 20 day Average 4-8 MeV/n PHA Derived Neon Fluxes (ENe1)",
+      "description": "error in LET 20 day Average PHA based Neon fluxes between 4 and 8 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COSPIN/LET 20 day Average 9-30 MeV/n Neon PHA Derived Fluxes (Ne2)",
+      "description": "LET 20 day Average PHA based Neon fluxes between 9 and 30 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Error in COSPIN/LET 20 day Average 9-30 MeV/n PHA Derived Neon Fluxes (ENe2)",
+      "description": "error in LET 20 day Average PHA based Neon fluxes between 9 and 30 MeV/n",
+      "unitText": "(cm^2 s sr MeV/n)^-1",
+      "minValue": "0.0",
+      "maxValue": "1000000",
+      "cadence": "P20D"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

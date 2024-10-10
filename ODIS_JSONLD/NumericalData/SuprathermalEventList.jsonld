@@ -1,0 +1,45 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/STEREO-B/PLASTIC/SuprathermalEventList",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/STEREO-B/PLASTIC/SuprathermalEventList",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO-B PLASTIC Suprathermal Event List",
+  "sdDatePublished": "2020-07-07",
+  "description": "This data product contains a list of automatically identified suprathermal proton events measured on the Wide Angle Partition without a Solid State Detector (WAP non-SSD) portion of the STEREO/PLASTIC instrument. This list in conjunction with the IMPACT magnetic field information and PLASTIC solar wind data can aid a user in identifying energetic proton events related to Stream Interaction Regions (SIRs), shocks, upstream events, magnetospheric events, etc.",
+  "abstract": "This data product contains a list of automatically identified suprathermal proton events measured on the Wide Angle Partition without a Solid State Detector (WAP non-SSD) portion of the STEREO/PLASTIC instrument. This list in conjunction with the IMPACT magnetic field information and PLASTIC solar wind data can aid a user in identifying energetic proton events related to Stream Interaction Regions (SIRs), shocks, upstream events, magnetospheric events, etc.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://stereo-ssc.nascom.nasa.gov/data/ins_data/plastic/level3/Suprathermals/",
+      "name": "STEREO Science Center - ASCII",
+      "description": "In ASCII via ftp from SSC"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

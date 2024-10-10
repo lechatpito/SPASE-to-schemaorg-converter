@@ -1,0 +1,148 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MMS/MMS4/EDP/mms4-edp-dce",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MMS/MMS4/EDP/mms4-edp-dce",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS4 - EDP - fast - dc e-field",
+  "sdDatePublished": "2024-05-23",
+  "description": "Electric Double Probe, Quick-Look Three-Dimensional Electric Field, Level 2, Fast Survey Data",
+  "abstract": "Electric Double Probe, Quick-Look Three-Dimensional Electric Field, Level 2, Fast Survey Data",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e_gse",
+      "unitText": "mV/m",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "ex",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms4_dce_gse(0)"
+          },
+          {
+            "Name": "ey",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms4_dce_gse(1)"
+          },
+          {
+            "Name": "ez",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms4_dce_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e_gsm",
+      "unitText": "mV/m",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "ex",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms4_dce_gsm(0)"
+          },
+          {
+            "Name": "ey",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms4_dce_gsm(1)"
+          },
+          {
+            "Name": "ez",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms4_dce_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e : error",
+      "unitText": "mV/m",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "ex",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms4_dce_err(0)"
+          },
+          {
+            "Name": "ey",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms4_dce_err(1)"
+          },
+          {
+            "Name": "ez",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms4_dce_err(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e_para",
+      "unitText": "mV/m",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "e_para",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms4_dce_para(0)"
+          },
+          {
+            "Name": "e_perp",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms4_dce_para(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dce : qual",
+      "description": "Quality indicator (3 good), (2 ok data, use with some caution), (1 bad data, use with caution), (0 Really bad data or no data at all)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

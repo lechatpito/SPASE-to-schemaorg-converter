@@ -1,0 +1,174 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/MAG/gll-mag-msreal",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/MAG/gll-mag-msreal",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - MAG - orbit jupiter",
+  "sdDatePublished": "2012-03-06",
+  "description": "Data acquired by the Galileo Orbiter magnetometer during the magnetospheric survey portion of the mission.     \n            * System III : R is along the Jupiter to spacecraft line, positive away from Jupiter. Phi is parallel to the Jovigraphic equator (Omega x R). Theta completes the right-handed set (positive southward).\n            * IRC - Inertial Rotor coordinates : Z is along the spacecraft spin axis (positive opposite the high-gain antenna). X is roughly parallel to the south ecliptic normal. Y completes the right handed set (pointing roughly dawnward).\n            ",
+  "abstract": "Data acquired by the Galileo Orbiter magnetometer during the magnetospheric survey portion of the mission.     \n            * System III : R is along the Jupiter to spacecraft line, positive away from Jupiter. Phi is parallel to the Jovigraphic equator (Omega x R). Theta completes the right-handed set (positive southward).\n            * IRC - Inertial Rotor coordinates : Z is along the spacecraft spin axis (positive opposite the high-gain antenna). X is roughly parallel to the south ecliptic normal. Y completes the right handed set (pointing roughly dawnward).\n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Io"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Callisto"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Ganymede"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Europa"
+    }
+  ],
+  "keywords": [
+    "Jupiter",
+    "Magnetosphere",
+    "GALILEO"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_irc",
+      "description": "Magnetic field vector components in IRC coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "gmmr_irc(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "gmmr_irc(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "gmmr_irc(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_jse",
+      "description": "Magnetic field vector components in JSE coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "gmmr_jse(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "gmmr_jse(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "gmmr_jse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_jsm",
+      "description": "Magnetic field vector components in JSM coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "gmmr_jsm(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "gmmr_jsm(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "gmmr_jsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_sys3",
+      "description": "Magnetic field vector components in SYS3 spherical coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "gmmr_sys3(0)"
+          },
+          {
+            "Name": "btheta",
+            "Index": "2",
+            "ParameterKey": "gmmr_sys3(1)"
+          },
+          {
+            "Name": "bphi",
+            "Index": "3",
+            "ParameterKey": "gmmr_sys3(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

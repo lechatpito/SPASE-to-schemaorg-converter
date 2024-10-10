@@ -1,0 +1,99 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Cluster-1/STAFF/CLU_C1_STA_AGC",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Cluster-1/STAFF/CLU_C1_STA_AGC",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "CLU1 STAFF-SA Automatic Gain Control",
+  "sdDatePublished": "2022-02-22",
+  "description": "This data set contains the average power spectral density in the passband of the analogue receivers derived from the Automatic Gain Control signal.\n\nThis is measured in three large passbands with 1 s time resolution, for the axial component of the magnetic field, and the sums of the spin plane components of the magnetic and of the electric field.",
+  "abstract": "This data set contains the average power spectral density in the passband of the analogue receivers derived from the Automatic Gain Control signal.\n\nThis is measured in three large passbands with 1 s time resolution, for the axial component of the magnetic field, and the sums of the spin plane components of the magnetic and of the electric field.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CLU_C1_STA_AGC",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 1 STAFF Magnetic average  power  spectral  density AGC",
+      "description": "Cluster 1 STAFF magnetic average  power  spectral  density  in  the analogue  receivers pass-band derived from the AGC signal  parallel  (Bz) and  a  perpendicular  (Bxy)  component  to  the  spin  axis",
+      "unitText": "nT^2 Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 1 STAFF Electric average  power  spectral  density AGC",
+      "description": "Cluster 1 STAFF electric average  power  spectral  density  in  the analogue  receivers pass-band derived from the AGC signal    perpendicular  (Exy)  component  to  the  spin  axis",
+      "unitText": "mV^2 m^-2 Hz^-1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/PON/MFradar/mfr_pon_txt",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/PON/MFradar/mfr_pon_txt",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind data in the mesosphere and lower thermosphere estimated from the observation data of the MF radar at Pontianak (text format)",
+  "sdDatePublished": "2016-10-08",
+  "description": "The wind data in the mesosphere and lower thermosphere (60-100 km) estimated from the observation data of the MF radar at Pontianak, Indonesia (0.003S, 109.36E). The data are stored in the text file named (year)(month)(day) _fca.txt. The text file includes year, month, day, time (universal time), height, zonal, meridional and vertical winds of the original data in the binary format (Full Correlation Analysis: FCA). The wind data corresponding to \"bad\" status code (other than 0) in the original data are replaced by missing value. The wind data for a period from September 2, 1999 to present are available now. In the future, the wind data for other periods will be released.",
+  "abstract": "The wind data in the mesosphere and lower thermosphere (60-100 km) estimated from the observation data of the MF radar at Pontianak, Indonesia (0.003S, 109.36E). The data are stored in the text file named (year)(month)(day) _fca.txt. The text file includes year, month, day, time (universal time), height, zonal, meridional and vertical winds of the original data in the binary format (Full Correlation Analysis: FCA). The wind data corresponding to \"bad\" status code (other than 0) in the original data are replaced by missing value. The wind data for a period from September 2, 1999 to present are available now. In the future, the wind data for other periods will be released.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/iugonet/index-idr.html",
+      "name": "Meteor Wind and Medium Frequency Radar Data over Indonesia",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "height",
+      "description": "Height (above sea level)",
+      "unitText": "km",
+      "minValue": "60",
+      "maxValue": "100"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "year",
+      "description": "Year in the form YYYY where YYYY= Gregorian Year AD."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "month",
+      "description": "Month in the form MM where MM = month of year (01-12)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "day",
+      "description": "Day in the form DD where DD = day of moneht (01-31)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Time in the form hh mm ss where hh = hour of day (00-23), mm = minute of hour and ss = second of monite. Universal time is used for time data."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "uwind",
+      "description": "Zonal wind (eastward is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vwind",
+      "description": "Meridional wind (northward is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wwind",
+      "description": "Vertical wind (upflow is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

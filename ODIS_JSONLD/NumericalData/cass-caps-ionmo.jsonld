@@ -1,0 +1,108 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-ionmo",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-ionmo",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - CAPS - ion moments",
+  "sdDatePublished": "2014-09-01",
+  "description": "Ion moments data generated from     \n     the CAPS ion mass spectrometer (IMS)          \n     singles or time-of-flight uncalibrated data",
+  "abstract": "Ion moments data generated from     \n     the CAPS ion mass spectrometer (IMS)          \n     singles or time-of-flight uncalibrated data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "method flag"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density h+",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature h+",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density he2+",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature he2+",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density h2o group",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature h2o group",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_krtp",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v_r",
+            "Index": "1",
+            "ParameterKey": "cass_caps_v_ion(0)"
+          },
+          {
+            "Name": "v_phi",
+            "Index": "2",
+            "ParameterKey": "cass_caps_v_ion(1)"
+          },
+          {
+            "Name": "v_theta",
+            "Index": "3",
+            "ParameterKey": "cass_caps_v_ion(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_bulk",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

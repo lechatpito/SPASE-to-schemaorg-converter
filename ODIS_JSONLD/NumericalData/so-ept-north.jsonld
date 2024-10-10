@@ -1,0 +1,114 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/EPD/so-ept-north",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/EPD/so-ept-north",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SolarOrbiter - EPD/EPT - L2 : ion flux - southward flow",
+  "sdDatePublished": "2024-05-20",
+  "description": "Solar Orbiter, Level 2 Data, Energetic Particle Detector, Electron and Proton Telescope, Rates. \n              \n            EPT  measures electrons and ions in the lower part of the energetic particle spectrum. It \neffectuates measurements in 4 different fields of view :\n\n* Anti-Sunward Flow. Detector looks in the direction of the mean Parker spiral towards the Sun.\n* Sunward Flow. Detector looks opposite to the Sun direction.\n* Northward Flow. Detector looks towards the south ecliptic hemisphere.\n* Southward Flow. Detector looks towards the north ecliptic hemisphere.\n\nParameter ID uses Detector looking directon.\n\nAdditionally, EPT has 2 channels that separate electrons and ions:\n* Magnet channel. Uses a permanent magnet to deflect electrons. It measures protons with energies between 25 keV and 6.5 MeV and alpha particles up to 25 MeV.\n* Foil channel. Equipped with a foil that absorbs ions, it measures electrons in the energy range 25\u2013500 keV. Ions with energies above 400 keV can penetrate the foil, contaminating the electron measurements. \n          ",
+  "abstract": "Solar Orbiter, Level 2 Data, Energetic Particle Detector, Electron and Proton Telescope, Rates. \n              \n            EPT  measures electrons and ions in the lower part of the energetic particle spectrum. It \neffectuates measurements in 4 different fields of view :\n\n* Anti-Sunward Flow. Detector looks in the direction of the mean Parker spiral towards the Sun.\n* Sunward Flow. Detector looks opposite to the Sun direction.\n* Northward Flow. Detector looks towards the south ecliptic hemisphere.\n* Southward Flow. Detector looks towards the north ecliptic hemisphere.\n\nParameter ID uses Detector looking directon.\n\nAdditionally, EPT has 2 channels that separate electrons and ions:\n* Magnet channel. Uses a permanent magnet to deflect electrons. It measures protons with energies between 25 keV and 6.5 MeV and alpha particles up to 25 MeV.\n* Foil channel. Equipped with a foil that absorbs ions, it measures electrons in the energy range 25\u2013500 keV. Ions with energies above 400 keV can penetrate the foil, contaminating the electron measurements. \n          ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux: southward",
+      "description": "Particle flux in magnet channel",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux unc: southward",
+      "description": "Uncertainty in ion flux",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion cntrate: southward",
+      "description": "Particle count rate in magnet channel",
+      "unitText": "cnts/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "alpha flux: southward",
+      "description": "High energy particle flux in magnet channel",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "alpha flux unc: southward",
+      "description": "Uncertainty in alpha flux",
+      "unitText": "1/(s cm^2 sr MeV)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "alpha cntrate: southward",
+      "description": "High energy particle count rate in magnet channel",
+      "unitText": "cnts/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag: southward",
+      "description": "0: Bad, 1: Known problems, 2: Survey data, 3: Good, 4: Excellent"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

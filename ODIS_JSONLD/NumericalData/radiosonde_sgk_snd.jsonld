@@ -1,0 +1,107 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SGK/Radiosonde/radiosonde_sgk_snd",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SGK/Radiosonde/radiosonde_sgk_snd",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Observation data of the troposphere and lower stratosphere taken by the radiosonde soundings at Shigaraki MU Observatory (text format)",
+  "sdDatePublished": "2016-07-21",
+  "description": "Radiosonde sounding data at Shigaraki MU observatory in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL) from September 26, 1986 to November 16, 2005. The data are averaged values for 30 m height in original data, and stored in the text file named (year)(month)(day)(hour).snd. The file name represents launching local time of the balloon. The first line of each file is serial number of sonde transmitter and launching local date (year, month, day) and time (hour, minute, second). In the second line and below, height, pressure, temperature, relative humidity, vertical velocity estimated from ascending speed and height data corresponding to the vertical velocity are listed. The value of -999 means missing data.",
+  "abstract": "Radiosonde sounding data at Shigaraki MU observatory in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL) from September 26, 1986 to November 16, 2005. The data are averaged values for 30 m height in original data, and stored in the text file named (year)(month)(day)(hour).snd. The file name represents launching local time of the balloon. The first line of each file is serial number of sonde transmitter and launching local date (year, month, day) and time (hour, minute, second). In the second line and below, height, pressure, temperature, relative humidity, vertical velocity estimated from ascending speed and height data corresponding to the vertical velocity are listed. The value of -999 means missing data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Stratosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Altitude Geopotential Height Hydrostatic Pressure Atmospheric Temperature Profiles Water Vapor Humidity Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "www.rish.kyoto-u.ac.jp/radar-group/mu/sondedb/",
+      "name": "Radiosonde Observation Data at Shigaraki MU Observatory",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Observation year",
+      "unitText": "YY"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Month",
+      "description": "Observation month",
+      "unitText": "MM"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "day",
+      "description": "Observation day",
+      "unitText": "DD"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sonde serial number",
+      "description": "Serial number of transmitter",
+      "unitText": "none"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pressure",
+      "description": "Pressure",
+      "unitText": "hPa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Temperature",
+      "description": "Description",
+      "unitText": "degree C"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Relative humidity",
+      "description": "Relative humidity",
+      "unitText": "%"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vertical velocity estimated from ascending speed",
+      "description": "Vertical velocity estimated from ascending speed",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Height",
+      "description": "Height corresponding to the vertical velocity",
+      "unitText": "km"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

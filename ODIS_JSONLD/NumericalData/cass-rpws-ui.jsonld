@@ -1,0 +1,49 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-rpws-ui",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-rpws-ui",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - RPWS - u-i",
+  "sdDatePublished": "2014-11-18",
+  "description": "Cassini RPWS UI\n                \n                Cassini RPWS UI data are taken from Planetary Data System (NASA).\n                Cassini RPWS UI data contains all available calibrated measured current versus set bias potential data for the Cassini RPWS Langmuir Probe (LP) instrument.\n                Parameter plotting arguments:\n                POTENTIAL : Langmuir probe bias potential in volts\n                CURRENT : Langmuir probe measured current in amps ",
+  "abstract": "Cassini RPWS UI\n                \n                Cassini RPWS UI data are taken from Planetary Data System (NASA).\n                Cassini RPWS UI data contains all available calibrated measured current versus set bias potential data for the Cassini RPWS Langmuir Probe (LP) instrument.\n                Parameter plotting arguments:\n                POTENTIAL : Langmuir probe bias potential in volts\n                CURRENT : Langmuir probe measured current in amps ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "potential",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "current",
+      "unitText": "A"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

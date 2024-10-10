@@ -1,0 +1,94 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-snghr",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-snghr",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - CAPS - ion spectra",
+  "sdDatePublished": "2018-02-02",
+  "description": "Cassini Plasma Spectrometer (CAPS) Ion Mass Spectrometer (IMS) data obtained from NASA/PDS plasma node",
+  "abstract": "Cassini Plasma Spectrometer (CAPS) Ion Mass Spectrometer (IMS) data obtained from NASA/PDS plasma node",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Dione"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Enceladus"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Mimas"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Tethys"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Rhea"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Titan"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Iapetus"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "telemetry mode",
+      "description": "Telemetry mode"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion countrate @@ANODE@@",
+      "description": "energy spectrogram of ion count rates",
+      "unitText": "cnts.s^-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "63",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion countrate : sum over anodes",
+      "description": "energy spectrogram of ion count rates",
+      "unitText": "cnts.s^-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "63",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

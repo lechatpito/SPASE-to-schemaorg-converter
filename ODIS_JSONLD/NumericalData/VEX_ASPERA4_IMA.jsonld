@@ -1,0 +1,257 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/VEX/ASPERA4/VEX_ASPERA4_IMA",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/VEX/ASPERA4/VEX_ASPERA4_IMA",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "VENUS EXPRESS: ASPERA-4 IMA Ion Mass Analyzer Science Data (CDF)",
+  "sdDatePublished": "2022-06-06",
+  "description": "This data set contains Particles (counts/accumulation) counted in the current azimuth, mass, energy and polar angle sector. Within the azimuth mass energy polar-angle matrix, particle counts are displayed as acquired with the first index varying fastest and depends on the operational mode.",
+  "abstract": "This data set contains Particles (counts/accumulation) counted in the current azimuth, mass, energy and polar angle sector. Within the azimuth mass energy polar-angle matrix, particle counts are displayed as acquired with the first index varying fastest and depends on the operational mode.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus.Magnetosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:VEX_ASPERA4_IMA",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Synchronization words for new Experiment",
+      "description": "The 3 bytes 0xE3 0x31 0xCA mark the start of anew Experiment Data Format. A search for this is required as the EDF s floats in the TM data stream."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Experiment unit",
+      "description": "This parameter defines the experiment unit.The field takes one of the following values:      0 (undefined) 1 (ICA) 2 (IMA MEX) 3 (IMA VEX)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Reduction Mode Index",
+      "description": "This is the data reduction mode index used for the data in this EDF. The field takes one of the following values: 0, 2, 4, 5, or any values included in the range 8 to 35."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Experiment Data Format Counter",
+      "description": "This is an running counter incremented by 1 for each released EDF. It swaps over to 0 after 255."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of sets in minimun mode",
+      "description": "This parameter gives the number of sets in this EDF for the minimum modes."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Checksum 1 failure",
+      "description": "This flag will set if the checksum 1 fails during RAM booting. Sets from both PROM and EEPROM booting"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Checksum 0 failure",
+      "description": "This flag will set if the checksum 0 fails during RAM booting. Sets from both PROM and EEPROM booting"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tm Fifo Emptied",
+      "description": "This bit will set if the TM FIFO is emptied before the start of this EDF. Always forced to and from special EDF s."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HV ramping in progress",
+      "description": "This flag will set if HV ramping has been performed during the data taking for this EDF."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Test Pattern",
+      "description": "For testing purposes a number of imager test patterns can be commanded. This parameter gives the actual test pattern number used. Ensure it is 0 for real scientific data."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Post acceleration level",
+      "description": "This flag gives the post acceleration level used for this format. The field takes one of the following values: 0 = Low 1 = High"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Post acceleration mode",
+      "description": "This flag indicates the post acceleration mode.   If set (1) it is alternating else it is fixed."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Post-acceleration high level reference value",
+      "description": "This parameter gives the post-acceleration high level reference value. It is retrieved from the accompanied PAHLR.asc file in the time range where applicable, if not it is set by default to 6.0. The post-acceleration index can be any value between 0 to 7. But calibration information exists only for post-acceleration index = 0, 3, 6. The calibrated values are: 0 :    39 Volts 3 :  1902 Volts 6 :  3615 Volts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Automatic Data Reduction Switch",
+      "description": "This flag indicates whether automatic data reduction change is enabled or not.  0 = Disabled 1 = Enabled"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data compression flag",
+      "description": "This flag indicates whether data compression is enabled or not.  0 = Disabled   1 = Enabled"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of link packets",
+      "description": "This gives the approximate number of 1355 link packets in the TM FIFO. To convert to words, unpack the F8 code and multiply by 3."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Program Code in RAM",
+      "description": "This parameter gives the program code currently loaded and running in RAM. It is coded as: 0    = PROM 1-16 = EEPROM section 0-15"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sample Processing Overrun flag",
+      "description": "This flag is set if a process overruns, i.e. the current data processing is not finished when a new is requested."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sweep Processing Overrun flag",
+      "description": "This flag is set if a process overruns, i.e. the current data processing is not finished when a new is requested."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Post Processing Overrun flag",
+      "description": "This flag is set if a process overruns, i.e. the current data processing is not finished when a new is requested."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy start index",
+      "description": "This parameter gives the energy start index when in the 32 level energy mode."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Reset Error flag",
+      "description": "This flag will set if the experiment has rebooted due to watchdog or machine error reset."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Format start time",
+      "description": "This parameter is the starting time of the EDF. Note that more significant bits must be taken from the ESA packet time. Some attention should be paid close in time when this 3 bytes counter swaps around. That happens at about once per 6 days."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Format length",
+      "description": "This parameter gives the total length of the format (EDF) in words."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Shadow masking switch  flag",
+      "description": "This flag indicates if imager data is masked (set to zero) or not for angles that are regarded as obscured by other S/C items. 0 = Disabled 1 = Enabled."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HV Masking Switch  flag",
+      "description": "This bit indicates if imager data is masked (set to zero) or not for angles/energies that can not be reached due to insufficient or too inaccurate HV. 0 = Disabled 1 = Enabled."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Decompression error flag",
+      "description": "Error during data decompression process\nIf this parameter is not equal to 0,   the data decompression process is invalid."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mission phase",
+      "description": "The CRUISE sub-phase corresponds to data collected before the VOI (VENUS Orbit Injection), including the Near Earth Verification (NEV) and Interplanetary Cruise (IC) sub-phases. After the VOI, the nominal mission is divided into different VENUS mission sub-phases defined by the VENUS EXPRESS mission planning."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbit number",
+      "description": "Orbit number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbital Eccentricity",
+      "description": "Orbital Eccentricity"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbital Inclination",
+      "description": "Orbital Inclination"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbital Semimajor Axis",
+      "description": "Orbital Semimajor Axis"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Periapsis Altitude",
+      "description": "Periapsis Altitude"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Periapsis Argument Angle",
+      "description": "Periapsis Argument Angle",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Periapsis Time in milliseconds",
+      "description": "Periapsis Time in milliseconds.\nThe time of periapsis passage is the time when the satellite reaches periapsis.\nTime base: J2000\nTime scale: Terrestrial Time",
+      "unitText": "ms"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Orientation",
+      "description": "The SPACECRAFT_ORIENTATION element defines the Venus Express direction of flight with respect to its spacecraft reference frame. The direction of flight is given as a 3-tuple (x,y,z). The paragraph below describes how to derive the (x,y,z) values. When the spacecraft is in nadir pointing mode, the +Z axis points towards the centre of Venus and the +X axis is perpendicular to the ground track. Unlike Mars Express, the speed vector of the spacecraft can be tilted from the +Y axis direction at an angle a. The 3-tuple (x, y, z) defines the coordinates of the normalised spacecraft speed vector. As a consequence, we have:    x = sin a    y = cos a"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VEX ASPERA4/IMA Azimuth",
+      "description": "VEX ASPERA4/IMA azimuth  table",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VEX ASPERA4/IMA Mass",
+      "description": "VEX ASPERA4/IMA Mass table"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VEX ASPERA4/IMA Ion Energy",
+      "description": "VEX ASPERA4/IMA Ion Energy table",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VEX ASPERA4/IMA Elevation",
+      "description": "VEX ASPERA4/IMA elevation  table",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VEX ASPERA4/IMA Particles counts",
+      "description": "VEX ASPERA4/IMA Particles (counts/accumulation) counted in the current azimuth, mass, energy and polar angle sector."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

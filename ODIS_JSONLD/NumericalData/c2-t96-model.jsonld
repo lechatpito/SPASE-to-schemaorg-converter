@@ -1,0 +1,103 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster2/Models/c2-t96-model",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster2/Models/c2-t96-model",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cluster 2 - Analytical Models - T96 field model",
+  "sdDatePublished": "2023-12-10",
+  "description": "A data-based Tsyganenko96 model computes the geomagnetospheric magnetic field with an explicitly defined realistic magnetopause, large-scale Region 1 and 2 Birkeland current systems, and the IMF penetration across the boundary. The model uses the following inputs :\n            * solar wind ram pressure\n            * IMF Y and Z-component\n            * Dst index \n            When a parameter 'T96 model field along a spacecraft orbit' is calculated, the input data above are fetched in the AMDA database and averaged on 20 min (fixed interval) before computation. The original ephemeris time resolution is finally used for the resolution of the computed magnetic field.\n            Source for input conditions: OMNI 5 min dataset and SYM index dataset.\n         ",
+  "abstract": "A data-based Tsyganenko96 model computes the geomagnetospheric magnetic field with an explicitly defined realistic magnetopause, large-scale Region 1 and 2 Birkeland current systems, and the IMF penetration across the boundary. The model uses the following inputs :\n            * solar wind ram pressure\n            * IMF Y and Z-component\n            * Dst index \n            When a parameter 'T96 model field along a spacecraft orbit' is calculated, the input data above are fetched in the AMDA database and averaged on 20 min (fixed interval) before computation. The original ephemeris time resolution is finally used for the resolution of the computed magnetic field.\n            Source for input conditions: OMNI 5 min dataset and SYM index dataset.\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "b_t96gse_c2_xyz_gse(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "b_t96gse_c2_xyz_gse(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "b_t96gse_c2_xyz_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "b_t96gsm_c2_xyz_gse(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "b_t96gsm_c2_xyz_gse(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "b_t96gsm_c2_xyz_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Average Magnetic Field magnitude",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

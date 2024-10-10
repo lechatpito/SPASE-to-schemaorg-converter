@@ -1,0 +1,203 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/JADE/juno-jadel5-heavmom",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/JADE/juno-jadel5-heavmom",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Juno - JADE - L5 : ions - heavies moments",
+  "sdDatePublished": "2023-07-12",
+  "description": "This data set consists of moments data calculated by the JADE (Jovian Auroral \n        Plasma Distributions Experiment) on-board the Juno spacecraft.\n          \n        Users of these data are encouraged to acknowledge both the PDS and the        \n        principal investigators of the instruments whose data are used in analysis    \n        in all publications.",
+  "abstract": "This data set consists of moments data calculated by the JADE (Jovian Auroral \n        Plasma Distributions Experiment) on-board the Juno spacecraft.\n          \n        Users of these data are encouraged to acknowledge both the PDS and the        \n        principal investigators of the instruments whose data are used in analysis    \n        in all publications.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "local time",
+      "description": "Juno's (jovian) Local Time at time UTC",
+      "unitText": "hours"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Number Density",
+      "unitText": "cm**-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density uncertainty",
+      "description": "Number Density Uncertainty",
+      "unitText": "cm**-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_jss_xyz",
+      "description": "Velocity Vector in the Cartesian JUNO_JSS (Jupiter-deSpun-Sun) frame",
+      "unitText": "km/s",
+      "defaultValue": "-9.999E+09",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v_x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "jade_heavmom_vxyz(0)"
+          },
+          {
+            "Name": "v_y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "jade_heavmom_vxyz(1)"
+          },
+          {
+            "Name": "v_z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "jade_heavmom_vxyz(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_jss_xyz uncertainty",
+      "description": "Velocity Vector uncertainty in the Cartesian JUNO_JSS (Jupiter-deSpun-Sun) frame",
+      "unitText": "km/s",
+      "defaultValue": "-9.999E+09",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v_x",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "jade_heavmom_vxyzsigma(0)"
+          },
+          {
+            "Name": "v_y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "jade_heavmom_vxyzsigma(1)"
+          },
+          {
+            "Name": "v_z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "jade_heavmom_vxyzsigma(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_jss_rtp",
+      "description": "Velocity Vector in the spherical JUNO_JSS (Jupiter-deSpun-Sun) frame",
+      "unitText": "km/s",
+      "defaultValue": "-9.999E+09",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v_r",
+            "Index": "1",
+            "ParameterKey": "jade_heavmom_vrtp(0)"
+          },
+          {
+            "Name": "v_theta",
+            "Index": "2",
+            "ParameterKey": "jade_heavmom_vrtp(1)"
+          },
+          {
+            "Name": "v_phi",
+            "Index": "3",
+            "ParameterKey": "jade_heavmom_vrtp(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_jss_rtp uncertainty",
+      "description": "Velocity Vector uncertainty in the spherical JUNO_JSS (Jupiter-deSpun-Sun) frame",
+      "unitText": "km/s",
+      "defaultValue": "-9.999E+09",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "v_r",
+            "Index": "1",
+            "ParameterKey": "jade_heavmom_vrtpsigma(0)"
+          },
+          {
+            "Name": "v_theta",
+            "Index": "2",
+            "ParameterKey": "jade_heavmom_vrtpsigma(1)"
+          },
+          {
+            "Name": "v_phi",
+            "Index": "3",
+            "ParameterKey": "jade_heavmom_vrtpsigma(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure",
+      "description": "Isotropic pressure",
+      "unitText": "Pa",
+      "defaultValue": "-9.999E+09"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure uncertainty",
+      "description": "Isotropic pressure uncertainty",
+      "unitText": "Pa",
+      "defaultValue": "-9.999E+09"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "description": "Isotropic temperature",
+      "unitText": "eV",
+      "defaultValue": "-9.999E+09"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature uncertainty",
+      "description": "Isotropic temperature uncertainty",
+      "unitText": "eV",
+      "defaultValue": "-9.999E+09"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

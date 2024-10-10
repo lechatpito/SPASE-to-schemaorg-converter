@@ -1,0 +1,67 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/STEREO-B/SWEA/stb-swea-pad",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/STEREO-B/SWEA/stb-swea-pad",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO B - SWEA - pitch-angle/energy distribution E:45-2000eV",
+  "sdDatePublished": "2015-08-08",
+  "description": "Pitch-Angle (PA) Survey distributions from ~ 45 to 2188 eV in Phase Space Density (PSD; sec^3/km^6)",
+  "abstract": "Pitch-Angle (PA) Survey distributions from ~ 45 to 2188 eV in Phase Space Density (PSD; sec^3/km^6)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "el psd : 2D",
+      "unitText": "s3/km6",
+      "defaultValue": "-1.e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "el psd : sum over energy",
+      "description": "Electron pitch angle distribution (sum over all energy bins)",
+      "unitText": "s^3/km^6"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "el psd : omni",
+      "description": "Electron pitch angle distribution (sum over all energy bins)",
+      "unitText": "s^3/km^6"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality_mag",
+      "unitText": "0:B_inside"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality_pla",
+      "unitText": "0:corrected_by_PLA"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/GEOS-1/S-331/GEOS1_MAG_VTL2_RFF",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/GEOS-1/S-331/GEOS1_MAG_VTL2_RFF",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "GEOS-1 Direct Current Magnetic Field Component Level-2 (RFF)",
+  "sdDatePublished": "2022-07-26",
+  "description": "This data set contains the calibrated DC magnetic field from the GEOS-1 S-331 fluxgate magnetometer  given in VDH Coordinate System. Time resolution is 88.064s. \nThe data format is RFF (Roproc File Format ftp://ftp.lpp.polytechnique.fr/robert/keep/Biblio_et_CV/Working_documents/2015_Robert_The_Roproc_File_Format_V2p3.pdf)",
+  "abstract": "This data set contains the calibrated DC magnetic field from the GEOS-1 S-331 fluxgate magnetometer  given in VDH Coordinate System. Time resolution is 88.064s. \nThe data format is RFF (Roproc File Format ftp://ftp.lpp.polytechnique.fr/robert/keep/Biblio_et_CV/Working_documents/2015_Robert_The_Roproc_File_Format_V2p3.pdf)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GEOS1_MAG_VTL2_RFF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Sample rate",
+      "description": "Sample rate",
+      "unitText": "Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Warning code",
+      "description": "This  warning indicates if there is any problem on the data :\n0 no problem \n1 the quality of all or some of the frames in the format is suspect \n2 the telemetry format is missing and dumny data has been substituted"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Low speed format",
+      "description": "Low speed format\nThe corresponding duration is 1.37601 s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Frequency",
+      "description": "This dataset contains spin frequency given in Hz",
+      "unitText": "Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Euler Angles",
+      "description": "The Euler angles allow transition from rotating antennas frame into reference VDH frame.\n First component: precession \nSecond: nutation \nThird: own rotation/gyration",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Direction of Rotation",
+      "description": "The direction of rotation of the probe.\ne : electron \np : proton"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Phase Angle",
+      "description": "The spin phase is given in the S/C system andS/C sens",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field components",
+      "description": "Magnetic field components given in VDH Coordinate System.\n\nVDH frame (Vertical Dusk Horizontal system)\nThe V-axis is the outwards local vertical, to the point of observation.The H-axis is parallel to the horizontal local plane, positive to the North.The V-H plane is a geographic meridian plane.  The D-axis is azimuthal, eastwards.",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

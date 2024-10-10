@@ -1,0 +1,420 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RBSP/B/RBSPICE/L3/TOFXEION",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RBSP/B/RBSPICE/L3/TOFXEION",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Van Allen Probe B RBSPICE TOF x Energy Ion Rates converted Level-3 data",
+  "sdDatePublished": "2022-08-18",
+  "description": "This Level-3 data set contains Van Allen Probe B RBSPICE (Radiation Belt Storm Probes Ion Composition Experiment) TOF x (Time of Flight) energy ion fluxes that are measured at high-energy and low-time resolution by 6 telescopes in 64 channels from ~0.02-1.0 MeV and are available in physical units (counts/(s*sr*cm^2*MeV) by telescope in sector order. Also available are percentage error of measurement, quality flag, current sector number where each spin is dividied into 36 sectors, duration of the accumulation, current spin number of the spacecraft, orbit number, dipole L value using the SM reference frame, and position of the spacecraft in SM coordinates. Level 3 data include the pitch angles of the six telescopes, based upon the measured magnetic field received from the EMFISIS (Electric and Magnetic Field Instrument Suite and Integrated Science) instrument. This processing is done in a series of algorithmic steps in which the EMFISIS magnetic field data is loaded, the ECT Magnetic Ephemeris data is loaded, the Level 2 intensity data file is copied, and the pitch angles are calculated and placed into the copied Level 2 file, creating a Level 3 file.",
+  "abstract": "This Level-3 data set contains Van Allen Probe B RBSPICE (Radiation Belt Storm Probes Ion Composition Experiment) TOF x (Time of Flight) energy ion fluxes that are measured at high-energy and low-time resolution by 6 telescopes in 64 channels from ~0.02-1.0 MeV and are available in physical units (counts/(s*sr*cm^2*MeV) by telescope in sector order. Also available are percentage error of measurement, quality flag, current sector number where each spin is dividied into 36 sectors, duration of the accumulation, current spin number of the spacecraft, orbit number, dipole L value using the SM reference frame, and position of the spacecraft in SM coordinates. Level 3 data include the pitch angles of the six telescopes, based upon the measured magnetic field received from the EMFISIS (Electric and Magnetic Field Instrument Suite and Integrated Science) instrument. This processing is done in a series of algorithmic steps in which the EMFISIS magnetic field data is loaded, the ECT Magnetic Ephemeris data is loaded, the Level 2 intensity data file is copied, and the pitch angles are calculated and placed into the copied Level 2 file, creating a Level 3 file.",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Ephemeris Time of the start of the accumulation for this measurement.",
+      "unitText": "ns"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "UTC",
+      "description": "UTC"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SCLOCK_Full",
+      "description": "SCLOCK_Full"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ET",
+      "description": "The ephemeris time at the start of the measurement.",
+      "unitText": "seconds"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MidET",
+      "description": "The ephemeris time at the mid-point of the measurement. For multi-spin measurements the midET is centered so that it properly represents the time to be used to calculate the look direction of the instrument.",
+      "unitText": "seconds"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "StopET",
+      "description": "The ephemeris time at the end of the accumulation of the measurement",
+      "unitText": "seconds"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Telescope No.",
+      "description": "Identifies the telescope used to collect the measurement",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Channel",
+      "description": "Identifies the channel used to collect the measurement",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy",
+      "description": "Midpoint energy of the measurement channel. A value of -1 indicates that an energy definition for this channel is not applicable",
+      "unitText": "MeV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIDU",
+      "description": "FIDU: Ion flux spectrograms in energy, by telescope in sector order (multi-spin accums plotted at end of accum)",
+      "unitText": "1/(MeV-cm^2-s-sr)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6 64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIDU",
+      "description": "Telescope-energy images",
+      "unitText": "1/(MeV-cm^2-s-sr)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6 64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIDU_Error",
+      "description": "The percentage error of the measurement.",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6 64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIDU_Crosscalib_RMSE",
+      "description": "RMS Error of the natural log of the flux for each channel.",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6 64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIDU_Quality",
+      "description": "Quality flag for the measurement for each telescope/channel/timestep. .see PREBM standards for definition",
+      "unitText": "(10=OK)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6 64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sector",
+      "description": "The current sector number where each spin is divided into 36 sectors."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Duration",
+      "description": "Duration of the accumulation.",
+      "unitText": "Seconds"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin",
+      "description": "The current spin number of the spacecraft"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIDU_Energy",
+      "description": "Midpoint energy of the measurement channel. A value of -1 indicates that an energy definition for this channel is not applicable",
+      "unitText": "MeV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6 64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIDU_EnergyRange",
+      "description": "Minimum and Maximum energy of the measurement channel. A value of -1 indicates that either an energy definition for this channel is not applicable or that the upper end of the channel is undefined - i.e. the channel becomes integral.",
+      "unitText": "MeV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6 2 64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Position_SM",
+      "description": "Position of the spacecraft in SM coordinates",
+      "unitText": "EarthRadii",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Position_GEO",
+      "description": "Position of the SC in the GEO Reference Frame.",
+      "unitText": "EarthRadii",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Position_GSM",
+      "description": "Position of the SC in the GSM Reference Frame.",
+      "unitText": "EarthRadii",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Position_Quality",
+      "description": "The position quality flag, 0=good, 1=bad.",
+      "unitText": "(0=good)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "OrbitNumber",
+      "description": "Orbit Number at the time of the measurement"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L",
+      "description": "Dipole L value calculated using the SM Reference Frame",
+      "unitText": "EarthRadii"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L_Eq",
+      "description": "McElqain L value calculated at the Equator (derived from ECT MagEphem data).",
+      "unitText": "EarthRadii"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L_Star",
+      "description": "Roeder's L* value (derived from ECT MagEphem data) for the average pitch angle.",
+      "unitText": "EarthRadii"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "I",
+      "description": "Integral invariant for the average pitch angle derived from ECT MagEphem data.",
+      "unitText": "EarthRadii"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "K",
+      "description": "The Second Invariant ( I*sqrt(Bm) ) for the average pitch angle derived from ECT MagEphem data.",
+      "unitText": "EarthRadii_G"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MLT",
+      "description": "Magnetic Local Time of S/C in Centerted Dipole Coordinates derived from ECT MagEphem data.",
+      "unitText": "Degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIDU_AlphaValue",
+      "description": "The pitch angle based upon the look direction of each telescope, alpha=cos-1(B*(-look))",
+      "unitText": "Degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIDU_AlphaRangeValue",
+      "description": "The range of the pitch angle (min, max) for each of the pitch angles, Alpha.",
+      "unitText": "Degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6 2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AlphaValue",
+      "description": "The pitch angle based upon the look direction of each telescope, alpha=cos-1(B*(-look)).",
+      "unitText": "Degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Alpha_Quality",
+      "description": "A flag describing the Quality of the Pitch Angle as calculated, 0=good, 1=bad.",
+      "unitText": "(0=good)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LStarValue",
+      "description": "Roeder's L* value (derived from ECT MagEphem data) for each of the telescopes based upon the telescope pitch angle.",
+      "unitText": "EarthRadii",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "I_InvValue",
+      "description": "The Integral invariant for the pitch angle of each telescope derived from ECT MagEphem data.",
+      "unitText": "EarthRadii",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "K_InvValue",
+      "description": "Second Invariant ( I*sqrt(Bm) ) for the pitch angle of each telescope derived from ECT MagEphem data.",
+      "unitText": "EarthRadii_G",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MinMax",
+      "description": "Range variable for the minimum/maximum values of the PitchAngle Range"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Position_SM",
+      "description": "[Labels on plots] Position of the spacecraft in SM coordinates",
+      "unitText": "EarthRadii",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Position_GEO",
+      "description": "[Labels on plots] Position of the SC in the GEO Reference Frame.",
+      "unitText": "EarthRadii",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Position_GSM",
+      "description": "[Labels on plots] Position of the SC in the GSM Reference Frame.",
+      "unitText": "EarthRadii",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "OrbitNumber",
+      "description": "[Labels on plots] Orbit Number at the time of the measurement"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L",
+      "description": "[Labels on plots] Dipole L value calculated using the SM Reference Frame",
+      "unitText": "EarthRadii"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L_Eq",
+      "description": "[Labels on plots] McElqain L value calculated at the Equator (derived from ECT MagEphem data).",
+      "unitText": "EarthRadii"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L_Star",
+      "description": "[Labels on plots] Roeder's L* value(derived from ECT MagEphem data) for the average pitch angle.",
+      "unitText": "EarthRadii"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "I",
+      "description": "[Labels on plots] Integral invariant for the average pitch angle derived from ECT MagEphem data.",
+      "unitText": "EarthRadii"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "K",
+      "description": "[Labels on plots] The Second Invariant ( I*sqrt(Bm) ) for the average pitch angle derived from ECT MagEphem data.",
+      "unitText": "EarthRadii_G"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MLT",
+      "description": "[Labels on plots] Magnetic Local Time of S/C in Centerted Dipole Coordinates derived from ECT MagEphem data.",
+      "unitText": "Degrees"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NICT/SALMON/KOG/LQ4/WPR_txt",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NICT/SALMON/KOG/LQ4/WPR_txt",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Observation data taken by 1.3GHz transportable wind profiler radar (called LQ4) at Koganei, Japan (TXT format)",
+  "sdDatePublished": "2013-03-06",
+  "description": "The 10-minute average observation data in the lower troposphere (0.1-8 km) taken by the1.3GHz transportable wind profiler radar (called LQ4) at Koganei, Tokyo (35.71N, 139.49E, 80m MSL). The profiles of wind velocity, SNR, and CN2 are stored in the TXT file named koglq4-YYYYMMDDhhmm.txt.",
+  "abstract": "The 10-minute average observation data in the lower troposphere (0.1-8 km) taken by the1.3GHz transportable wind profiler radar (called LQ4) at Koganei, Tokyo (35.71N, 139.49E, 80m MSL). The profiles of wind velocity, SNR, and CN2 are stored in the TXT file named koglq4-YYYYMMDDhhmm.txt.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://salmon.nict.go.jp/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "MSL",
+      "description": "Mean Sea Level",
+      "unitText": "m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AGL",
+      "description": "Above Ground Level",
+      "unitText": "m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "U",
+      "description": "Zonal wind velocity. Positive means eastward wind.",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "V",
+      "description": "Meridional wind velocity. Positive means northward wind",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "W",
+      "description": "Vertical wind velocity. Positive means upward wind",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FLAG",
+      "description": "Flag for data quality (not used)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SNR",
+      "description": "signal to noise ratio",
+      "unitText": "dB"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CN2",
+      "description": "structure constant for the refractive index",
+      "unitText": "m^(-2/3)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tu",
+      "description": "Temperature measured by RASS (not used, blank)",
+      "unitText": "degree Celsius"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tc",
+      "description": "Temperature measured by RASS. Effect of vertical wind is corrected. (not used, blank)",
+      "unitText": "degree Celsius"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HW",
+      "description": "Horizontal wind velocity.",
+      "unitText": "m/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Vega2/MISCHA/FLYBY/PT0.1S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Vega2/MISCHA/FLYBY/PT0.1S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Vega 2 Magnetic Field Data (0.1 s), Halley Comet",
+  "sdDatePublished": "2020-07-07",
+  "description": "This product contains high-resolution (0.1 s) magnetic field data for intervals of the closest approach of the Vega 2 spacecraft to Halley comet. Magnetic field and position data are in the cometocentric solar ecliptic (CSE) coordinate system. CSE coordinate system for the spacecraft position: * Origin is at comet position, x-axis from comet to the Sun, z-axis to ecliptic northpole. * The (x,y)-plane is parallel to the ecliptic plane. CSE coordinate system for the magnetic field data: * Axes are parallel to the CSE system for the position. * This coordinate system is valid only for very short time, about 4 hours around the closest approach of the spacecraft to the comet, since for a larger angular distance of the spacecraft from the comet, the direction to the Sun from both objects will be different.",
+  "abstract": "This product contains high-resolution (0.1 s) magnetic field data for intervals of the closest approach of the Vega 2 spacecraft to Halley comet. Magnetic field and position data are in the cometocentric solar ecliptic (CSE) coordinate system. CSE coordinate system for the spacecraft position: * Origin is at comet position, x-axis from comet to the Sun, z-axis to ecliptic northpole. * The (x,y)-plane is parallel to the ecliptic plane. CSE coordinate system for the magnetic field data: * Axes are parallel to the CSE system for the position. * This coordinate system is valid only for very short time, about 4 hours around the closest approach of the spacecraft to the comet, since for a larger angular distance of the spacecraft from the comet, the direction to the Sun from both objects will be different.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/zzz_old/vega_data_from_nssdc/mag/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "FTP access to Vega mission data at NSSDC."
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/zzz_old/vega_data_from_nssdc/mag/",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Time of observation (year)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Month",
+      "description": "Time of observation (month of year)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day",
+      "description": "Time of observation (day of month)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour",
+      "description": "Time of observation (hour of day)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minute",
+      "description": "Time of observation (minute)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second",
+      "description": "Time of observation (second)",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bx",
+      "description": "Magnetic field X in CSE coordinate system",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "By",
+      "description": "Magnetic field By component in CSE coordinate system",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bz",
+      "description": "Magnetic field Bz component in CSE coordinate system",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "B",
+      "description": "Magnetic field magnitude, nT",
+      "unitText": "nT",
+      "defaultValue": "9999.9"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "X",
+      "description": "X component of spacecraft position in CSE coordinates (Cometocentric ecliptic coordinate system)",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Yse",
+      "description": "Y component of spacecraft position in CSE coordinates (Cometocentric ecliptic coordinate system)",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zse",
+      "description": "Z component of spacecraft position in CSE coordinates (Cometocentric ecliptic coordinate system)",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dist",
+      "description": "Distance between spacecraft and Halley comet, km",
+      "unitText": "km"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

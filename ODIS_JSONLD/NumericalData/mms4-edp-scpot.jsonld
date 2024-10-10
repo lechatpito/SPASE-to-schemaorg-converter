@@ -1,0 +1,43 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MMS/MMS4/EDP/mms4-edp-scpot",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MMS/MMS4/EDP/mms4-edp-scpot",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS4 - EDP - fast - scpot",
+  "sdDatePublished": "2024-05-23",
+  "description": "Electric Double Probe, Dual Probe Spacecraft Potential, Level 2, Fast Survey Data. Spacecraft potential is etstimatrd by averaging measurements of the probe-to-spacecraft potential from several probes.",
+  "abstract": "Electric Double Probe, Dual Probe Spacecraft Potential, Level 2, Fast Survey Data. Spacecraft potential is etstimatrd by averaging measurements of the probe-to-spacecraft potential from several probes.",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "sc pot",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sc pot : qual",
+      "description": "Quality indicator (3 good), (2 ok data, use with some caution), (1 bad data, use with caution), (0 Really bad data or no data at all)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

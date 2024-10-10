@@ -1,0 +1,72 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/TohokuU/radio_obs/yon/hfspec/hfspec_sun_cdf",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/TohokuU/radio_obs/yon/hfspec/hfspec_sun_cdf",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Jupiter's/solar wide band spectral data in HF-band (cdf format), Yoneyama Observatory",
+  "sdDatePublished": "2017-06-05",
+  "description": "Wideband dynamic spectrogram of jovian/solar radio emission in a frequency range from 15 to 40 MHz measured with the Yoneyama HF Log Periodic Antenna, distributed as cdf files.",
+  "abstract": "Wideband dynamic spectrogram of jovian/solar radio emission in a frequency range from 15 to 40 MHz measured with the Yoneyama HF Log Periodic Antenna, distributed as cdf files.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "keywords": "HF decameter Sun Jupiter",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ariel.gp.tohoku.ac.jp/~jupiter/it_hf/cdf2/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Radio intensity",
+      "description": "Description",
+      "unitText": "dB"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Spectral range",
+      "unitText": "MHz",
+      "minValue": "15",
+      "maxValue": "40"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Observed Time",
+      "unitText": "Julian day"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

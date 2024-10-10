@@ -1,0 +1,127 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/STEREO-A/SWEA/sta-swea-mom",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/STEREO-A/SWEA/sta-swea-mom",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO A - SWEA - electron moments E:45-2000eV",
+  "sdDatePublished": "2024-04-21",
+  "description": "On ground moments from 3D Survey distributions from ~ 45 to 2188 eV",
+  "abstract": "On ground moments from 3D Survey distributions from ~ 45 to 2188 eV",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_b",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "t_para",
+            "Index": "1",
+            "ParameterKey": "te_part_sta(0)"
+          },
+          {
+            "Name": "t_perp1",
+            "Index": "2",
+            "ParameterKey": "te_part_sta(1)"
+          },
+          {
+            "Name": "t_perp2",
+            "Index": "3",
+            "ParameterKey": "te_part_sta(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Q_rtn",
+      "unitText": "erg/sec/cm2",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "q_r",
+            "Index": "1",
+            "ParameterKey": "qe_part_sta(0)"
+          },
+          {
+            "Name": "q_t",
+            "Index": "2",
+            "ParameterKey": "qe_part_sta(1)"
+          },
+          {
+            "Name": "q_n",
+            "Index": "3",
+            "ParameterKey": "qe_part_sta(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Q_b",
+      "unitText": "erg/sec/cm2",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "q_para",
+            "Index": "1",
+            "ParameterKey": "qe_b_sta(0)"
+          },
+          {
+            "Name": "q_perp",
+            "Index": "2",
+            "ParameterKey": "qe_b_sta(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality_MAG",
+      "unitText": "0:B_inside"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality_PLA",
+      "unitText": "0:corrected_by_PLA"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

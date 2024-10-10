@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/POLAR/EFI/SC/GSM/Attitude/PT600S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/POLAR/EFI/SC/GSM/Attitude/PT600S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Polar Electric Fields Instrument (EFI), Spacecraft Attitude in GSM coordinates",
+  "sdDatePublished": "2020-07-07",
+  "description": "The the Polar spacecraft positive spin axis direction vector (normalized to magnitude 1), in GSM coordinates.",
+  "abstract": "The the Polar spacecraft positive spin axis direction vector (normalized to magnitude 1), in GSM coordinates.",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://polarefi.ssl.berkeley.edu/PolarEFI",
+      "name": "",
+      "description": "This URL is the root location of the POLAR EFI archive. It consists of Yearly subdirectories: 1996, 1997, ..., 2008 each of which consists of Monthly subdirectories: 01, 02, ..., 12 The archive files for a given date are located in the corresponding YY/MM subdirectory."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Data point time-tags which are double precision floating point numbers which represent the number of seconds, UTC, from midnight of the day represented by the file.",
+      "unitText": "seconds",
+      "minValue": "0.0",
+      "maxValue": "86460.0",
+      "cadence": "PT600S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SCAttitudeGSMVector",
+      "description": "Data point vector values which are a triplet of single precision floating point numbers which represent the normalized X,Y,Z components of the GSM spacecraft attitude (i.e. the direction of the spacecraft positive spin axis).",
+      "unitText": "Numeric",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "cadence": "PT600S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

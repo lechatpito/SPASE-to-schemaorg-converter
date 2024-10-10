@@ -1,0 +1,80 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ROSETTA/RPC_MIP/ROSETTA_RPC_MIP_S3WSF",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ROSETTA/RPC_MIP/ROSETTA_RPC_MIP_S3WSF",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ROSETTA RPC-MIP Calibrated Electric Field Power Spectrum in Active SDL Full Mode (CDF)",
+  "sdDatePublished": "2022-05-30",
+  "description": "This dataset contains E-field power spectra acquired in active SDL mode. The frequency table and time resolution depend on the operational mode. Spectra are given over 92 frequency bins.",
+  "abstract": "This dataset contains E-field power spectra acquired in active SDL mode. The frequency table and time resolution depend on the operational mode. Spectra are given over 92 frequency bins.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ROSETTA_RPC_MIP_S3WSF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Mode",
+      "description": "Possible values are SURVEY or SWEEP"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Sub_Mode",
+      "description": "Possible value is FULL"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spectrum Type",
+      "description": "Possible value is POWER"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Resonance frequency",
+      "description": "Resonance frequency",
+      "unitText": "kHz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Frequency table: chosen among 8 tables with non-constant resolution Maximum range is [28-3584] kHz",
+      "unitText": "kHz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field Power",
+      "description": "Electric Field Power Spectrum (Active SDL mode)",
+      "unitText": "dB"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Phobos2/ASPERA/pho-asp-el",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Phobos2/ASPERA/pho-asp-el",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Phobos-2 - ASPERA - elec spectra",
+  "sdDatePublished": "2019-12-06",
+  "description": "Electron spectra",
+  "abstract": "Electron spectra",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- : perp flow",
+      "description": "energy-time spectrogram of electron counts : perpendicular flow",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- : sunward flow",
+      "description": "energy-time spectrogram of electron counts : sunward flow"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- : tailward flow",
+      "description": "energy-time spectrogram of electron counts : tailward flow",
+      "unitText": "cnts"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

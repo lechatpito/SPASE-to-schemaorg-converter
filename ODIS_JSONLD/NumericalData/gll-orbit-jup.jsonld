@@ -1,0 +1,108 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/ephemeris/gll-orbit-jup",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/ephemeris/gll-orbit-jup",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - Ephemeris : Galileo - orbit jupiter",
+  "sdDatePublished": "2018-09-04",
+  "description": "Galileo Ephemeris are calculated in IRAP by using Galileo SPICE kernels",
+  "abstract": "Galileo Ephemeris are calculated in IRAP by using Galileo SPICE kernels",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_jso",
+      "description": "Galileo spacecraft trajectory in JSO coordinates",
+      "unitText": "Rj",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "gll_xyz_jso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "gll_xyz_jso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "gll_xyz_jso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_jsm",
+      "description": "Galileo spacecraft trajectory in JSO coordinates",
+      "unitText": "Rj",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "gll_xyz_jsm(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "gll_xyz_jsm(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "gll_xyz_jsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance galileo-jupiter",
+      "unitText": "Rj"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_iau_jupiter",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_iau_jupiter",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

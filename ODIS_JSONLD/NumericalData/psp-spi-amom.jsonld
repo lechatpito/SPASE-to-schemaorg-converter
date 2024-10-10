@@ -1,0 +1,132 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/SPI/psp-spi-amom",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/SPI/psp-spi-amom",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP - SWEAP SPANi - alphas - moments",
+  "sdDatePublished": "2021-11-22",
+  "description": "\n             This data product contains Partial moments of the Alpha distribution function in the RTN frame of reference. User should be aware that the full ion distribution is typically not in the field of view of the instrument. \n         ",
+  "abstract": "\n             This data product contains Partial moments of the Alpha distribution function in the RTN frame of reference. User should be aware that the full ion distribution is typically not in the field of view of the instrument. \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "he++ density",
+      "description": "Alpha density",
+      "unitText": "cm-3",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he++ temperature",
+      "description": "Partial Moment Temperature",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he++ t_inst",
+      "description": "Temperature Tensor in instrument frame",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": [
+          {
+            "Name": "Txx",
+            "Index": "1",
+            "ParameterKey": "psp_spi_awt_inst(0)"
+          },
+          {
+            "Name": "Tyy",
+            "Index": "2",
+            "ParameterKey": "psp_spi_awt_inst(1)"
+          },
+          {
+            "Name": "Tzz",
+            "Index": "3",
+            "ParameterKey": "psp_spi_awt_inst(2)"
+          },
+          {
+            "Name": "Txy",
+            "Index": "4",
+            "ParameterKey": "psp_spi_awt_inst(3)"
+          },
+          {
+            "Name": "Txz",
+            "Index": "5",
+            "ParameterKey": "psp_spi_awt_inst(4)"
+          },
+          {
+            "Name": "Tyz",
+            "Index": "6",
+            "ParameterKey": "psp_spi_awt_inst(5)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he++ v_inst",
+      "description": "Particle Velocity in instrument frame",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "psp_spi_av_inst(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "psp_spi_av_inst(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "psp_spi_av_inst(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

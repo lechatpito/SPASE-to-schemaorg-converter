@@ -1,0 +1,128 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Ulysses/URAP/RAR/ULS_URAP_RAR_BQT",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Ulysses/URAP/RAR/ULS_URAP_RAR_BQT",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ULS-URAP RAR_BQT : Plasma Parameters (quasi-thermal noise method)",
+  "sdDatePublished": "2022-05-09",
+  "description": "This data set contains  daily files of ULYSSES/URAP radio data. These files contain plasma parameters (mainly the electron density and temperature) computed by the plasma quasi-thermal noise method from 128 s radio spectra measured on the 1.25-48.50 kHz receiver connected to the thin wire 2x35m electric dipole.",
+  "abstract": "This data set contains  daily files of ULYSSES/URAP radio data. These files contain plasma parameters (mainly the electron density and temperature) computed by the plasma quasi-thermal noise method from 128 s radio spectra measured on the 1.25-48.50 kHz receiver connected to the thin wire 2x35m electric dipole.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ULS_URAP_RAR_BQT",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR  Standard deviation on parameters fit  (%)",
+      "description": "Ulysses URAP RAR Standard deviation on parameters fit  (%)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Plasma Frequency",
+      "description": "Ulysses URAP RAR Plasma Frequency",
+      "unitText": "kHz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR  Numerical uncertainty on FP",
+      "description": "Ulysses URAP RAR  Numerical uncertainty on FP"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Cold electrons Temperature",
+      "description": "Ulysses URAP RAR Cold electrons Temperature",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Numerical uncertainty on TC",
+      "description": "Ulysses URAP RAR Numerical uncertainty on TC"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Ratio of Hot electrons / Cold electrons Densities",
+      "description": "Ulysses URAP RAR Ratio of Hot electrons / Cold electrons Densities"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Numerical uncertainty on RNHNC",
+      "description": "Ulysses URAP RAR Numerical uncertainty on RNHNC"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Ratio of Hot electrons / Cold electrons Temperatures",
+      "description": "Ulysses URAP RAR Ratio of Hot electrons / Cold electrons Temperatures"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Numerical uncertainty on RTHTC",
+      "description": "Ulysses URAP RAR Numerical uncertainty on RTHTC"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Solar Wind Velocity",
+      "description": "Ulysses URAP RAR Solar Wind Velocity",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Numerical uncertainty on VSW",
+      "description": "Ulysses URAP RAR Numerical uncertainty on VSW"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Protons Temperature",
+      "description": "Ulysses URAP RAR Protons Temperature",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ulysses URAP RAR Numerical uncertainty on TP",
+      "description": "Ulysses URAP RAR Numerical uncertainty on TP"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

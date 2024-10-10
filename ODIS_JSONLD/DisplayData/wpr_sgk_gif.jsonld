@@ -1,0 +1,50 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/DisplayData/RISH/misc/SGK/WPradar/wpr_sgk_gif",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/DisplayData/RISH/misc/SGK/WPradar/wpr_sgk_gif",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Observation data of the lower troposphere taken by the transportable wind profiler (called LQ7) at Shigaraki (GIF format)",
+  "sdDatePublished": "2016-07-21",
+  "description": "The time-height plots of three components of wind velocity (zonal, meridional and vertical winds), echo power and spectral width of five radar beams in the lower troposphere between 0.5 and 8.0 km taken by the transportable wind profiler (called LQ7) at Shigaraki in Shiga Prefecture, Japan (34.85N, 136.10E, 385m MSL). File names are composed of date and variable abbreviations: (year)(month).(variable).gif (1-month plot) or (year)(month)(day).(variable).gif (1-day plot). The variable abbreviations are wnd, pwr and wdt, which mean wind velocity, echo power and spectral width, respectively. Local time (UT+09:00) is used for time data. The right panels of each time-height plot are 1-day or 1-month average profiles of each parameter as a function of height.",
+  "abstract": "The time-height plots of three components of wind velocity (zonal, meridional and vertical winds), echo power and spectral width of five radar beams in the lower troposphere between 0.5 and 8.0 km taken by the transportable wind profiler (called LQ7) at Shigaraki in Shiga Prefecture, Japan (34.85N, 136.10E, 385m MSL). File names are composed of date and variable abbreviations: (year)(month).(variable).gif (1-month plot) or (year)(month)(day).(variable).gif (1-day plot). The variable abbreviations are wnd, pwr and wdt, which mean wind velocity, echo power and spectral width, respectively. Local time (UT+09:00) is used for time data. The right panels of each time-height plot are 1-day or 1-month average profiles of each parameter as a function of height.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/radar-group/blr/shigaraki/data/index.html",
+      "name": "Boundary Layer Radar (BLR) / Lower Troposphere Radar (LTR) / LQ7 Observation Data",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

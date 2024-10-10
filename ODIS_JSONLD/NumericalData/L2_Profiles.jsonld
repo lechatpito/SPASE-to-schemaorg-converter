@@ -1,0 +1,93 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TIMED/TIDI/L2_Profiles",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TIMED/TIDI/L2_Profiles",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "TIMED TIDI Profiles",
+  "sdDatePublished": "2020-07-07",
+  "description": "Contains the TIDI Level 2 inverted profiles of wind, temperature and volume emission rates annotated with profile location and processing status. Profiles are produced at the maximum temporal resolution of the instrument.",
+  "abstract": "Contains the TIDI Level 2 inverted profiles of wind, temperature and volume emission rates annotated with profile location and processing status. Profiles are produced at the maximum temporal resolution of the instrument.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "TIDI",
+    "mesosphere",
+    "lower thermosphere",
+    "MLTI"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftp://tidi.engin.umich.edu/tidi/profile/",
+      "name": "TIDI POC website",
+      "description": "The fastest/easiest way to download a lot of TIDI product files is to use TIDI's anonymous FTP site. Please download our latest version for all the data products that you need."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Inverted wind along LOS",
+      "description": "Inverted wind along the line of sight at each level in profile - a positive value indicates that the wind is blowing toward  the observer.",
+      "unitText": "m/s",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Doppler temperature",
+      "description": "Inverted line-of-sight Doppler temperature",
+      "unitText": "K",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rotational temperature",
+      "description": "Inverted line-of-sight rotational temperature in profile",
+      "unitText": "K",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion temperature",
+      "description": "Inverted line-of-sight ion temperature in profile",
+      "unitText": "K",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Brightness",
+      "description": "Inverted line-of-sight backgrounds at 867, 762, 557.7, 630, 892, 780, 732, 844, and 589nm",
+      "unitText": "R/cm-1",
+      "defaultValue": "-999"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

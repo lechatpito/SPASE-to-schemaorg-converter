@@ -1,0 +1,63 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ASWS/NumericalData/Ionogram/Woo_Ionogram",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ASWS/NumericalData/Ionogram/Woo_Ionogram",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Australian Space Weather Services Woomera Ionogram",
+  "sdDatePublished": "2021-03-29",
+  "description": "Ionograms are an image of frequency versus time delay (virtual height) of HF echoes from the ionosphere recorded by an ionosonde. An ionosonde is a swept frequency HF pulsed radar used to monitor the ionosphere. SWS WDC has archived ionogram data from 26 stations, 12 of them are still active at present. A vertical analog ionosonde had been installed at Woomera and sounded since 01/1962 to 07/1968. The vertical sounding ionosondes normally sweep in frequency from about 1.0 to 21.5 MHz. Frequency step resolution is 5 kHz, with up to 4095 steps available. The step interval is variable, becoming more coarse at higher frequencies as ionograms are generally displayed on a logarithmic scale. Every five minutes, a Ionogram data file was recorded. The raw ionogram is recorded in a film, which will be posted to Sydney SWS head office. SWS manually scaled and archived all ionogram films. There is no digital raw or clean ionogram data for Woomera. The Woomera scaled hourly ionospheric data is not available. The Woomera median data of foF2 and M(3000)F2 are available since 01/1962 to 07/1968.\n\nWoomera station was closed in November 1985.",
+  "abstract": "Ionograms are an image of frequency versus time delay (virtual height) of HF echoes from the ionosphere recorded by an ionosonde. An ionosonde is a swept frequency HF pulsed radar used to monitor the ionosphere. SWS WDC has archived ionogram data from 26 stations, 12 of them are still active at present. A vertical analog ionosonde had been installed at Woomera and sounded since 01/1962 to 07/1968. The vertical sounding ionosondes normally sweep in frequency from about 1.0 to 21.5 MHz. Frequency step resolution is 5 kHz, with up to 4095 steps available. The step interval is variable, becoming more coarse at higher frequencies as ionograms are generally displayed on a logarithmic scale. Every five minutes, a Ionogram data file was recorded. The raw ionogram is recorded in a film, which will be posted to Sydney SWS head office. SWS manually scaled and archived all ionogram films. There is no digital raw or clean ionogram data for Woomera. The Woomera scaled hourly ionospheric data is not available. The Woomera median data of foF2 and M(3000)F2 are available since 01/1962 to 07/1968.\n\nWoomera station was closed in November 1985.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": [
+    "Ionogram",
+    "Ionospheric data",
+    "Ionosphere",
+    "Median ionospheric data",
+    "Hourly ionospheric data",
+    "Scaled parameters"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Frequencies used to sonde ionopshere",
+      "unitText": "MHz",
+      "cadence": "PT60M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Virtual Height",
+      "description": "The apparent height of an ionospheric layer deduced from the time delay of a reflected radio pulse upon the assumption that it travelled at the speed of light over its entire path. However, the radio wave actually slows down as it is refracted so that the virtual height is greater than the true height of the refracting layer.",
+      "unitText": "km",
+      "minValue": "50",
+      "maxValue": "1000",
+      "cadence": "PT60M"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

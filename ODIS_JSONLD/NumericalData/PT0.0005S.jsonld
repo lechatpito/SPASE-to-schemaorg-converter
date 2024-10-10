@@ -1,0 +1,103 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RENU2/ERPA/SUB/PT0.0005S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RENU2/ERPA/SUB/PT0.0005S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "RENU2 Electron Retarding Potential Analyzer (ERPA) Thermal Electron Temperature (Sub), (H0), 0.5 ms Data",
+  "sdDatePublished": "2023-07-30",
+  "description": "RENU2 Electron Retarding Potential Analyzer (ERPA) Thermal Electron Temperature (Sub)",
+  "abstract": "RENU2 Electron Retarding Potential Analyzer (ERPA) Thermal Electron Temperature (Sub)",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time, Interval centered",
+      "unitText": "ns",
+      "minValue": "2015-01-01T00:00:00.000000000",
+      "maxValue": "2017-01-01T00:00:00.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.0005S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, Electrons",
+      "description": "Epoch Time, Electrons, Interval centered",
+      "unitText": "ns",
+      "minValue": "2015-01-01T00:00:00.000000000",
+      "maxValue": "2017-01-01T00:00:00.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.0005S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, Skin Current",
+      "description": "Epoch Time, Skin Current, Interval centered",
+      "unitText": "ns",
+      "minValue": "2015-01-01T00:00:00.000000000",
+      "maxValue": "2017-01-01T00:00:00.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.0005S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Temperature",
+      "description": "Electron Temperature",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0005S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Peak Voltage Location",
+      "description": "Peak Voltage Location, approximately equal to the Payload Potential",
+      "unitText": "V",
+      "minValue": "0.0",
+      "maxValue": "3.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0005S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Skin Current",
+      "description": "Skin Current, Density",
+      "unitText": "\u00b5A",
+      "minValue": "0.0",
+      "maxValue": "3.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0005S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "High Energy Electrons",
+      "description": "High Energy Electrons, above 3 eV",
+      "unitText": "nA",
+      "minValue": "0.0",
+      "maxValue": "3.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.0005S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

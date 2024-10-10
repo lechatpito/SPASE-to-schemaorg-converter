@@ -1,0 +1,79 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Viking/Ephemeris/VIKING_ORBITE",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Viking/Ephemeris/VIKING_ORBITE",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "VIKING : Orbit Data and Geomagnetic Parameters",
+  "sdDatePublished": "2022-01-13",
+  "description": "This data set contains  GSE and GEI positions and geomagnetic parameters of  Viking.",
+  "abstract": "This data set contains  GSE and GEI positions and geomagnetic parameters of  Viking.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:VIKING_ORBITE",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "VIKING V4 position in GEI",
+      "description": "Position of the spacecraft in GEI (Geocentric Equatorial Inertial) coordinate system",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VIKING V4 position in GSE",
+      "description": "Position of the spacecraft in GSE (Geocentric Solar Ecliptic) coordinate system",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VIKING V4 Invariant Latitude",
+      "description": "Spacecraft  Invariant Latitude",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VIKING V4 Magnetic Local Time",
+      "description": "Spacecraft Magnetic Local Time",
+      "unitText": "h"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-rpws-skr",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-rpws-skr",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - RPWS - skr",
+  "sdDatePublished": "2018-06-08",
+  "description": "Cassini Saturn kilometric Radiation (SKR) data produced from LESIA/Observatoire de Paris.",
+  "abstract": "Cassini Saturn kilometric Radiation (SKR) data produced from LESIA/Observatoire de Paris.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "total emitted power",
+      "description": "SKR total emitted power",
+      "unitText": "W/sr",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "RH:100-400kHz",
+            "Index": "1",
+            "ParameterKey": "skr_e(0)"
+          },
+          {
+            "Name": "LH:100-400kHz",
+            "Index": "2",
+            "ParameterKey": "skr_e(1)"
+          },
+          {
+            "Name": "RH:10-1000kHz",
+            "Index": "3",
+            "ParameterKey": "skr_e(2)"
+          },
+          {
+            "Name": "LH:10-1000kHz",
+            "Index": "4",
+            "ParameterKey": "skr_e(3)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux RH",
+      "description": "SKR flux densities in Right-Hand Circular polarization ",
+      "unitText": "W/m^2/Hz",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux LH",
+      "description": "SKR flux densities in Left-Hand Circular polarization ",
+      "unitText": "W/m^2/Hz",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "polarisation",
+      "description": "SKR Circular polarization degree",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

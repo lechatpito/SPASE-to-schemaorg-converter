@@ -1,0 +1,63 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ASWS/NumericalData/Ionogram/Pom_Ionogram",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ASWS/NumericalData/Ionogram/Pom_Ionogram",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Australian Space Weather Services Port Moresby Ionogram",
+  "sdDatePublished": "2021-03-29",
+  "description": " An Ionogram is an image of frequency versus time delay (virtual height) of HF echoes from the ionosphere recorded by an ionosonde. An ionosonde is a swept frequency HF pulsed radar used to monitor the ionosphere. SWS WDC has archived ionogram data from 26 stations, 12 of them still active at present. An IPS 4D ionosonde had been sounding between 01/01/1994 and 12/07/2007 at Port Moresby. The 4D vertical sounding ionosondes normally sweep in frequency from about 1.0 to 21.5 MHz. Frequency step resolution for the 4D is 5 kHz, with up to 4095 steps available. The step interval is variable, becoming more coarse at higher frequencies as ionograms are generally displayed on a logarithmic scale. Every five minutes, a Ionogram data file is recorded. The raw ionogram file is recorded in a DVD monthly, which will be posted to Sydney SWS head office every month for scaling and further analysis. SWS WDC archives all raw ionogram files and cleaned ionogram files. The Port Moresby digital clean ionogram data is available since 01/01/1994 to 12/07/2007. The Port Moresby scaled hourly ionospheric data include parameters of foF2, foF1, FoE, foEs, fbEs, fmin, fxl, f'scaling F/s, M(3000)F2, h'F2, h'F, h'E, h'Es, h'Scaling R/S and Type Es. They are available since 02/06/1961 to 12/07/2007. The Port Moresby median data of foF2 and M(3000)F2 are available since 06/1961 to 07/2007.",
+  "abstract": " An Ionogram is an image of frequency versus time delay (virtual height) of HF echoes from the ionosphere recorded by an ionosonde. An ionosonde is a swept frequency HF pulsed radar used to monitor the ionosphere. SWS WDC has archived ionogram data from 26 stations, 12 of them still active at present. An IPS 4D ionosonde had been sounding between 01/01/1994 and 12/07/2007 at Port Moresby. The 4D vertical sounding ionosondes normally sweep in frequency from about 1.0 to 21.5 MHz. Frequency step resolution for the 4D is 5 kHz, with up to 4095 steps available. The step interval is variable, becoming more coarse at higher frequencies as ionograms are generally displayed on a logarithmic scale. Every five minutes, a Ionogram data file is recorded. The raw ionogram file is recorded in a DVD monthly, which will be posted to Sydney SWS head office every month for scaling and further analysis. SWS WDC archives all raw ionogram files and cleaned ionogram files. The Port Moresby digital clean ionogram data is available since 01/01/1994 to 12/07/2007. The Port Moresby scaled hourly ionospheric data include parameters of foF2, foF1, FoE, foEs, fbEs, fmin, fxl, f'scaling F/s, M(3000)F2, h'F2, h'F, h'E, h'Es, h'Scaling R/S and Type Es. They are available since 02/06/1961 to 12/07/2007. The Port Moresby median data of foF2 and M(3000)F2 are available since 06/1961 to 07/2007.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": [
+    "Ionogram",
+    "Ionospheric data",
+    "Ionosphere",
+    "Median ionospheric data",
+    "Hourly ionospheric data",
+    "Scaled parameters"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Frequencies used to sonde ionopshere",
+      "unitText": "MHz",
+      "cadence": "PT5M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Virtual Height",
+      "description": "The apparent height of an ionospheric layer deduced from the time delay of a reflected radio pulse upon the assumption that it travelled at the speed of light over its entire path. However, the radio wave actually slows down as it is refracted so that the virtual height is greater than the true height of the refracting layer.",
+      "unitText": "km",
+      "minValue": "50",
+      "maxValue": "1000",
+      "cadence": "PT5M"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ISEE1/Ephemeris/ISEE1_ORBIT_GSE",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ISEE1/Ephemeris/ISEE1_ORBIT_GSE",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ISEE1 orbit data (GSE frame, 1 min resolution)",
+  "sdDatePublished": "2022-02-17",
+  "description": "ISEE 1 and 2 Orbit data description\n\nEach ASCII file represents one day.\nThe coordinate system used is GSE (Geocentric Solar Ecliptic).\nData record are arranged chronologically.\nOne record each minute containing :\nTime-tag, X.GSE (km), Y.GSE (km), Z.GSE (km), Vx.GSE (km/s), Vy.GSE (km/s), Vz.GSE (km/s)\n\nData in the records are separated by commas and blanks.\nCaution: For the first line, the velocity is NaN (Not a Number) initialized.",
+  "abstract": "ISEE 1 and 2 Orbit data description\n\nEach ASCII file represents one day.\nThe coordinate system used is GSE (Geocentric Solar Ecliptic).\nData record are arranged chronologically.\nOne record each minute containing :\nTime-tag, X.GSE (km), Y.GSE (km), Z.GSE (km), Vx.GSE (km/s), Vy.GSE (km/s), Vz.GSE (km/s)\n\nData in the records are separated by commas and blanks.\nCaution: For the first line, the velocity is NaN (Not a Number) initialized.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ISEE1_ORBIT_GSE",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE1 Spacecraft position (GSE)",
+      "description": "ISEE1 spacecraft position in GES frame at  1 min resolution",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE1 Spacecraft velovcity (GSE)",
+      "description": "ISEE1 spacecraft velocity  in GSE frame at  1 min resolution",
+      "unitText": "km/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

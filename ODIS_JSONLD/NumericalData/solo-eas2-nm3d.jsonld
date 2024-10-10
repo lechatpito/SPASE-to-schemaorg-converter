@@ -1,0 +1,60 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/EAS/solo-eas2-nm3d",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/EAS/solo-eas2-nm3d",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SolarOrbiter - SWA/EAS - EAS2-NM3D",
+  "sdDatePublished": "2024-01-06",
+  "description": "Level 2 - SWA-EAS2 Nominal Mode 3D psd data",
+  "abstract": "Level 2 - SWA-EAS2 Nominal Mode 3D psd data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "PSD: sum on elev : 2D",
+      "description": "Phase Space Density",
+      "unitText": "eV m^-2 s^-1 sr^-1 eV^-1",
+      "defaultValue": "-1e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PSD: sum on azimuth : 2D",
+      "description": "Phase Space Density",
+      "unitText": "eV m^-2 s^-1 sr^-1 eV^-1",
+      "defaultValue": "-1e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PSD: sum on energy : 2D",
+      "description": "Phase Space Density",
+      "unitText": "eV m^-2 s^-1 sr^-1 eV^-1",
+      "defaultValue": "-1e+31"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

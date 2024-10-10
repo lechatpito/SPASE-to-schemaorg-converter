@@ -1,0 +1,85 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Tail/Ephemeris-Tail/INT_TAIL_ATTITUDE",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Tail/Ephemeris-Tail/INT_TAIL_ATTITUDE",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "INT_TAIL : Attitude Data",
+  "sdDatePublished": "2022-04-27",
+  "description": "This data set contains the attitude quaternions of Interball-Tail allowing the conversion of any vector from the satellite body-build frame to GEI-1950 frame.",
+  "abstract": "This data set contains the attitude quaternions of Interball-Tail allowing the conversion of any vector from the satellite body-build frame to GEI-1950 frame.",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_TAIL_ATTITUDE",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL Q0 Attitude quaternion SC to GEI transformation",
+      "description": "INT_TAIL   Q0 = cos(ALPHA/2)  The attitude quaternion describes a transformation of a vector from spacecraft body coordinates into the GEI-1950 (Geocentric Equatorial Inertial) coordinate system. It represents a rotation of an ALPHA angle around an axis whose the unit vector coordinates are U, V, W."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL Q1 Attitude quaternion SC to GEI transformation",
+      "description": "INT_TAIL   Q1=U*sin(ALPHA/2)  The attitude quaternion describes a transformation of a vector from spacecraft body coordinates into the GEI-1950 (Geocentric Equatorial Inertial) coordinate system. It represents a rotation of an ALPHA angle around an axis whose the unit vector coordinates are U, V, W."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL Q2 Attitude quaternion SC to GEI transformation",
+      "description": "INT_TAIL   Q2 = V*sin(ALPHA/2) The attitude quaternion describes a transformation of a vector from spacecraft body coordinates into the GEI-1950 (Geocentric Equatorial Inertial) coordinate system. It represents a rotation of an ALPHA angle around an axis whose the unit vector coordinates are U, V, W."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL Q3 Attitude quaternion SC to GEI transformation",
+      "description": "INT_TAIL   Q3 = W*sin(ALPHA/2)The attitude quaternion describes a transformation of a vector from spacecraft body coordinates into the GEI-1950 (Geocentric Equatorial Inertial) coordinate system. It represents a rotation of an ALPHA angle around an axis whose the unit vector coordinates are U, V, W."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL  Right ascension  of the spin axis in GEI coordinate system",
+      "description": "INT_TAIL  Right ascension  of the spin axis in GEI (Geocentric Equatorial Inertial) coordinate system",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL  Declination   of the spin axis in GEI coordinate system",
+      "description": "INT_TAIL Declination   of the spin axis in GEI (Geocentric Equatorial Inertial) coordinate system",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL  Right ascension  of the spin axis in GSE coordinate system",
+      "description": "INT_TAIL  Right ascension  of the spin axis in GSE (Geocentric Equatorial Inertial) coordinate system",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INT_TAIL  Declination   of the spin axis in GSE coordinate system",
+      "description": "INT_TAIL Declination   of the spin axis in GSE (Geocentric Equatorial Inertial) coordinate system",
+      "unitText": "\u00b0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

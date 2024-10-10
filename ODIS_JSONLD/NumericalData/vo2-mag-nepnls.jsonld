@@ -1,0 +1,70 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager2/MAG/vo2-mag-nepnls",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager2/MAG/vo2-mag-nepnls",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Voyager 2 - MAG - flyby neptune - nls",
+  "sdDatePublished": "2012-03-06",
+  "description": "Voyager_2\n                MAG - Magnetometer\n                Neptune_NLS@PDS",
+  "abstract": "Voyager_2\n                MAG - Magnetometer\n                Neptune_NLS@PDS",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Neptune"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_nls",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "vo2_b_nepnls(0)"
+          },
+          {
+            "Name": "btheta",
+            "Index": "2",
+            "ParameterKey": "vo2_b_nepnls(1)"
+          },
+          {
+            "Name": "bphi",
+            "Index": "3",
+            "ParameterKey": "vo2_b_nepnls(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

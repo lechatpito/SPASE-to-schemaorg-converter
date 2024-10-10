@@ -1,0 +1,184 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SGK/Radiosonde/radiosonde_sgk_tsv",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SGK/Radiosonde/radiosonde_sgk_tsv",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Observation data of the troposphere and lower stratosphere taken by the radiosonde soundings at Shigaraki MU Observatory (tsv format)",
+  "sdDatePublished": "2016-07-21",
+  "description": "Editted sounding data at Shigaraki MU observatory in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL) since June 27, 2004. The data are also called \"EDT data\"which converted from the raw data in operating sounding system (DigiCORA), and stored in the TSV (Tab Separated Values) format. The file name of the data are (year)(month)(day)(hour)(minute).tsv which represents launch time of the balloon (in universal time). The line 1-38 represent the file header (map name, sounding set, RS-number, data record lengch, number of data records, max filemap size, data header size, free space in map, status flag (not used), and table for each parameter name, unit, datatype, divisor and offset). The line 39 and below are observation data. The value of -32768 means missing data.",
+  "abstract": "Editted sounding data at Shigaraki MU observatory in the Shiga prefecture, Japan (34.86N, 136.11E, 385m MSL) since June 27, 2004. The data are also called \"EDT data\"which converted from the raw data in operating sounding system (DigiCORA), and stored in the TSV (Tab Separated Values) format. The file name of the data are (year)(month)(day)(hour)(minute).tsv which represents launch time of the balloon (in universal time). The line 1-38 represent the file header (map name, sounding set, RS-number, data record lengch, number of data records, max filemap size, data header size, free space in map, status flag (not used), and table for each parameter name, unit, datatype, divisor and offset). The line 39 and below are observation data. The value of -32768 means missing data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Stratosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Altitude Geopotential Height Hydrostatic Pressure Atmospheric Temperature Profiles Dew Point Temperature Water Vapor Humidity Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "www.rish.kyoto-u.ac.jp/radar-group/mu/sondedb/",
+      "name": "Radiosonde Observation Data at Shigaraki MU Observatory",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Time from sounding start",
+      "unitText": "sec",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pscl",
+      "description": "Scaled logarithmic pressure (4096*ln P)",
+      "unitText": "ln",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "T",
+      "description": "Temperature",
+      "unitText": "K",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RH",
+      "description": "Humidity",
+      "unitText": "%"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v",
+      "description": "Wind speed, north component",
+      "unitText": "m/s",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "u",
+      "description": "Wind speed, east component",
+      "unitText": "m/s",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Height",
+      "description": "Height",
+      "unitText": "m",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "P",
+      "description": "Pressure",
+      "unitText": "hPa",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TD",
+      "description": "Dew point",
+      "unitText": "K",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MR",
+      "description": "The ratio of the mass of water vapor to the mass of dry air",
+      "unitText": "g/kg",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DD",
+      "description": "Wind direction",
+      "unitText": "dgr",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FF",
+      "description": "Wind speed",
+      "unitText": "m/s",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AZ",
+      "description": "Radiosonde azimuth",
+      "unitText": "dgr",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Range",
+      "description": "Radiosonde distance",
+      "unitText": "m",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Lon",
+      "description": "Radiosonde longitude coordinate",
+      "unitText": "dgr",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Lat",
+      "description": "Radiosonde latitude coodinate",
+      "unitText": "dgr",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SpuKey",
+      "description": "System defined significant point",
+      "unitText": "bitfield",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "UsrKey",
+      "description": "User defined significant point",
+      "unitText": "bitfield",
+      "defaultValue": "-32768"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RadarH",
+      "description": "Height from radar or from GPS when using RS92 GPS radiosonde",
+      "unitText": "m",
+      "defaultValue": "-32768"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

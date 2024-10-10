@@ -1,0 +1,158 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/Ephemeris/cass-orb-saturn",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/Ephemeris/cass-orb-saturn",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - Ephemeris: Cassini - orbit saturn - 5 min",
+  "sdDatePublished": "2019-03-18",
+  "description": "Cassini Ephemeris are calculated in IRAP by using Cassini SPICE kernels",
+  "abstract": "Cassini Ephemeris are calculated in IRAP by using Cassini SPICE kernels",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_kso",
+      "unitText": "Rs",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "cass_xyz_kso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "cass_xyz_kso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "cass_xyz_kso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_ksm",
+      "unitText": "Rs",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "cass_xyz_ksm(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "cass_xyz_ksm(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "cass_xyz_ksm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_szs",
+      "unitText": "Rs",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "cass_xyz_szs(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "cass_xyz_szs(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "cass_xyz_szs(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_krtp",
+      "unitText": "Rs",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "cass_xyz_krtp(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "cass_xyz_krtp(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "cass_xyz_krtp(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance cassini-saturn",
+      "unitText": "Rs"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_iau_saturn",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_iau_saturn",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

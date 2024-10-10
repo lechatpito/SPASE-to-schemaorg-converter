@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/Ephemeris/cass-sls4-north",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/Ephemeris/cass-sls4-north",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - Ephemeris: Cassini - orbit saturn : special - wl sls4 north",
+  "sdDatePublished": "2012-03-06",
+  "description": "Saturn Northern Longitude System 4 (SLS4) determined from Radio and Plasma Wave Science (RPWS) observations of northern auroral radio emissions by William S. Kurth and co-workers from University of Iowa\n                \n               (http://www-pw.physics.uiowa.edu/~dag/publications/2011_sls4_previi_draft.pdf).\n                \n               Calculated by Joseph Groen tool (University of Iowa).  Two longitudes are available\n            sub-spacecraft and sub-solar",
+  "abstract": "Saturn Northern Longitude System 4 (SLS4) determined from Radio and Plasma Wave Science (RPWS) observations of northern auroral radio emissions by William S. Kurth and co-workers from University of Iowa\n                \n               (http://www-pw.physics.uiowa.edu/~dag/publications/2011_sls4_previi_draft.pdf).\n                \n               Calculated by Joseph Groen tool (University of Iowa).  Two longitudes are available\n            sub-spacecraft and sub-solar",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "lon_sls4_north_sc",
+      "description": "Northern SLS4 sub-spacecraft Longitude",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_sls4_north_sun",
+      "description": "Northern SLS4 sub-solar Longitude",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

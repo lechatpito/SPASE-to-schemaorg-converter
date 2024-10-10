@@ -1,0 +1,72 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/Ephemeris/cass-ephem-eqt",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/Ephemeris/cass-ephem-eqt",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - Ephemeris: Cassini - flyby jupiter",
+  "sdDatePublished": "2011-09-09",
+  "description": "Ephemeris of the Cassini spacecraft around Jupiter (during the Jupiter flyby in 2000-2001) are calculated by Joseph Groene tool (University of Iowa).",
+  "abstract": "Ephemeris of the Cassini spacecraft around Jupiter (during the Jupiter flyby in 2000-2001) are calculated by Joseph Groene tool (University of Iowa).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_eqt",
+      "description": "\n                Cassini cartesian coordinates in the Jovian equatorial system (in Jovian radii)\n            ",
+      "unitText": "Rj",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "cass_xyz_eqt(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "cass_xyz_eqt(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "cass_xyz_eqt(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance cass-jup",
+      "description": "Cassini distance to Jupiter (in Jovian radii)",
+      "unitText": "Rj"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

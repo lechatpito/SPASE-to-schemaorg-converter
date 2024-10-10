@@ -1,0 +1,55 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ICSWSE/MAGDAS-FMCW/SAS/fmcw/PT10M_ICSWSE_binary",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ICSWSE/MAGDAS-FMCW/SAS/fmcw/PT10M_ICSWSE_binary",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAGDAS FM-CW observation network 10min resolution data at Sasaguri, Japan",
+  "sdDatePublished": "2013-01-03",
+  "description": "Vertical drift velocity (and virtual height) of ionospheric plasmas observed at MAGDAS Sasaguri station, Japan. The time resolution is 10 minutes.",
+  "abstract": "Vertical drift velocity (and virtual height) of ionospheric plasmas observed at MAGDAS Sasaguri station, Japan. The time resolution is 10 minutes.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    }
+  ],
+  "keywords": "Ionosphere plasma velosity virtual height radar",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://data.icswse.kyushu-u.ac.jp/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Drift velocity",
+      "description": "Vertical drift velocity of ionospheric E-layer plasmas.",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/STATIC/mav-static-kp",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/STATIC/mav-static-kp",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - STATIC - ions : key parameters",
+  "sdDatePublished": "2024-05-02",
+  "description": "Data follow a 4-second cadence when MAVEN is at an altitude of less than 500 km, otherwise the time cadence is 8 seconds.     \n          The in situ key parameters contain 235 parameters selected by the instrument leads and other MAVEN scientists. These data consist of values derived from L2 data provided by the in situ instruments. \n          \n          STATIC key parameters include :\n    * H+, O+, O2+ below : density - number density below TBD altitude determined from APID c6 (32 energy x 64 mass) while in Ram or Conic modes\n    * H+, O+, O2+ below : temperature - RAM temperature below TBD altitude determined from APID c6 (32 energy x 64 mass) while in Ram or Conic modes\n    * O2+ below : v_mso - O2+ flow velocity in MSO below TBD altitude determined from APID c8 while in Ram or Conic mode\n    * H+, He++, O+, O2+ above : flux - omni-directional flux above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode\n    * H+, He++, O+, O2+ above : flux energy - omni-directional characteristic energy above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode\n    * H+ above : direction mso - H+ MSO direction of flux above TBD altitude determined from TBD APID while in Pickup and Scan mode\n    * H+ above : die angular width - H+ flux angular width above TBD altitude determined from TBD APID while in Pickup and Scan mode\n    * pickup above : direction mso - Dominant pickup ion MSO direction of flux above TBD altitude determined from APID D0 and CE while in Pickup, Eclipse and Protect mode\n    * pickup above : dir angular width - Dominant pickup ion flux angular width above TBD altitude determined from APID D0 and CE while in Pickup, Eclipse and Protect mode ",
+  "abstract": "Data follow a 4-second cadence when MAVEN is at an altitude of less than 500 km, otherwise the time cadence is 8 seconds.     \n          The in situ key parameters contain 235 parameters selected by the instrument leads and other MAVEN scientists. These data consist of values derived from L2 data provided by the in situ instruments. \n          \n          STATIC key parameters include :\n    * H+, O+, O2+ below : density - number density below TBD altitude determined from APID c6 (32 energy x 64 mass) while in Ram or Conic modes\n    * H+, O+, O2+ below : temperature - RAM temperature below TBD altitude determined from APID c6 (32 energy x 64 mass) while in Ram or Conic modes\n    * O2+ below : v_mso - O2+ flow velocity in MSO below TBD altitude determined from APID c8 while in Ram or Conic mode\n    * H+, He++, O+, O2+ above : flux - omni-directional flux above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode\n    * H+, He++, O+, O2+ above : flux energy - omni-directional characteristic energy above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode\n    * H+ above : direction mso - H+ MSO direction of flux above TBD altitude determined from TBD APID while in Pickup and Scan mode\n    * H+ above : die angular width - H+ flux angular width above TBD altitude determined from TBD APID while in Pickup and Scan mode\n    * pickup above : direction mso - Dominant pickup ion MSO direction of flux above TBD altitude determined from APID D0 and CE while in Pickup, Eclipse and Protect mode\n    * pickup above : dir angular width - Dominant pickup ion flux angular width above TBD altitude determined from APID D0 and CE while in Pickup, Eclipse and Protect mode ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "h+ below : density",
+      "description": "H+ number density below TBD altitude determined from APID c6 (32 energy x 64 mass) while in Ram or Conic modes",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ below : temperature",
+      "description": "H+ temperature below TBD altitude determined from APID c6 (32 energy x 64 mass) while in Ram or Conic modes",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ below : _temp/dens quality",
+      "description": "Number of counts in the measurement ",
+      "unitText": "Counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o+ below : density",
+      "description": "O+ number density below TBD altitude determined from APID c6 (32 energy x 64 mass) while in Ram or Conic modes",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o+ below : temperature",
+      "description": "O+ temperatue below TBD altitude determined from APID c6 (32 energy x 64 mass) while in Ram or Conic modes",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o+ below : _temp/dens quality",
+      "description": "Number of counts in the measurement ",
+      "unitText": "Counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o2+ below : density",
+      "description": "O2+ number density below TBD altitude determined from APID c6 (32 energy x 64 mass) while in Ram or Conic modes",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o2+ below : temperature",
+      "description": "O2+ temperatue below TBD altitude determined from APID c6 (32 energy x 64 mass) while in Ram or Conic modes",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o2+ below : _temp/dens quality",
+      "description": "Number of counts in the measurement",
+      "unitText": "Counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o2+ below : v mso",
+      "description": " O2+ MSO  velocity below TBD altitude while in Ram or Conic mode",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "mav_stakp_o2_vmso(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "mav_stakp_o2_vmso(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "mav_stakp_o2_vmso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o2+ below : v mso quality",
+      "description": "Number of counts in the measurement",
+      "unitText": "Counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ above : flux",
+      "description": "H+ omni-directional flux above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode",
+      "unitText": "1/(cm^2 s)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ above : flux energy",
+      "description": " H+ omni-directional characteristic energy above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ above : flux quality",
+      "description": "Number of counts in the measurement",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he++ above : flux",
+      "description": "He++ omni-directional flux above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode",
+      "unitText": "1/(cm^2 s)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he++ above : flux energy",
+      "description": " He++ omni-directional characteristic energy above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he++ above : flux quality",
+      "description": "Number of counts in the measurement",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o+ above : flux",
+      "description": "O+ omni-directional flux above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode",
+      "unitText": "1/(cm^2 s)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o+ above : flux energy",
+      "description": "O+ omni-directional characteristic energy above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o+ above : flux quality",
+      "description": "Number of counts in the measurement",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o2+ above : flux",
+      "description": "O2+ omni-directional flux above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode",
+      "unitText": "1/(cm^2 s)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o2+ above : flux energy",
+      "description": "O2+ omni-directional characteristic energy above TBD altitude determined from APID c6 while in Pickup, Eclipse and Protect mode",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o2+ above : flux quality",
+      "description": "Number of counts in the measurement",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ above : direction mso",
+      "description": "H+ MSO direction of flux above TBD altitude determined from TBD APID while in Pickup and Scan mode",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mav_stakp_h_mso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mav_stakp_h_mso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mav_stakp_h_mso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ above : dir angular width",
+      "description": "H+ flux angular width above TBD altitude determined from TBD APID while in Pickup and Scan mode",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ above : direction quality",
+      "description": "Number of counts in the measurement",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pickup above : direction mso",
+      "description": "Dominant pickup ion MSO direction of flux above TBD altitude determined from  APID D0 and CE while in Pickup, Eclipse and Protect mode",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mav_stakp_p_mso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mav_stakp_p_mso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mav_stakp_p_mso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pickup above : dir angular width",
+      "description": "Dominant pickup ion flux angular width above TBD altitude determined from APID D0 and CE while in Pickup, Eclipse and Protect mode",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pickup above : direction quality",
+      "description": "Number of counts in the measurement",
+      "unitText": "counts"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

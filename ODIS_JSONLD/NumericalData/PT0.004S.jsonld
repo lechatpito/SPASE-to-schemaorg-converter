@@ -1,0 +1,107 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RENU2/PMT/PT0.004S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RENU2/PMT/PT0.004S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "RENU2 PhotoMultiplier Tube (PMT) Auroral Red and Green Line Luminosity in Raylieghs, Background subtracted, High Time Resolution (H0), 4 ms Data",
+  "sdDatePublished": "2024-02-22",
+  "description": "RENU2 PMT Counts converted to Rayleighs and Background subtracted",
+  "abstract": "RENU2 PMT Counts converted to Rayleighs and Background subtracted",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.DRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.Topside"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, Red Line",
+      "description": "Epoch Time, Red Line, Terrestrial Time 2000, Interval Centered Time",
+      "unitText": "ns",
+      "minValue": "2015-01-01T00:00:00.000000000",
+      "maxValue": "2016-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.004S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, Green Line",
+      "description": "Epoch Time, Green Line, Terrestrial Time 2000, Interval Centered Time",
+      "unitText": "ns",
+      "minValue": "2015-01-01T00:00:00.000000000",
+      "maxValue": "2016-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.004S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Auroral Red Line",
+      "description": "Auroral Red Line, 557.7 nm, Luminosity",
+      "unitText": "R",
+      "minValue": "-600000.0",
+      "maxValue": "600000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.004S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Auroral Green Line",
+      "description": "Auroral Green Line, 630.0 nm, Luminosity",
+      "unitText": "R",
+      "minValue": "-600000.0",
+      "maxValue": "600000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.004S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/JEDI/juno-jedi-e270",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/JEDI/juno-jedi-e270",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Juno - JEDI - electrons - instrument-270",
+  "sdDatePublished": "2024-02-15",
+  "description": "JUNO JEDI calibrated observations, consisting of energetic particle data collected by the JEDI instruments during the Jupiter Science Orbits phase of the Juno mission.",
+  "abstract": "JUNO JEDI calibrated observations, consisting of energetic particle data collected by the JEDI instruments during the Jupiter Science Orbits phase of the Juno mission.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "counts",
+      "unitText": "counts",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "24",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "counts - PAD",
+      "description": "Pitch Angle Distribution",
+      "unitText": "counts",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "diff flux",
+      "unitText": "counts per sec cm^2 ster keV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "24",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "diff flux - PAD",
+      "description": "Pitch Angle Distribution",
+      "unitText": "counts per sec cm^2 ster keV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "counts/sec",
+      "unitText": "counts per sec",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "24",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "counts/sec - PAD",
+      "description": "Pitch Angle Distribution",
+      "unitText": "counts per sec",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mode"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pitch angle",
+      "unitText": "deg",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": [
+          {
+            "Name": "Look Dir. 0",
+            "Index": "1",
+            "ParameterKey": "jedi_e270_pa(0)"
+          },
+          {
+            "Name": "Look Dir. 1",
+            "Index": "2",
+            "ParameterKey": "jedi_e270_pa(1)"
+          },
+          {
+            "Name": "Look Dir. 2",
+            "Index": "3",
+            "ParameterKey": "jedi_e270_pa(2)"
+          },
+          {
+            "Name": "Look Dir. 3",
+            "Index": "4",
+            "ParameterKey": "jedi_e270_pa(3)"
+          },
+          {
+            "Name": "Look Dir. 4",
+            "Index": "5",
+            "ParameterKey": "jedi_e270_pa(4)"
+          },
+          {
+            "Name": "Look Dir. 5",
+            "Index": "6",
+            "ParameterKey": "jedi_e270_pa(5)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "counts SSD",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": [
+          {
+            "Name": "Look Dir. 0",
+            "Index": "1",
+            "ParameterKey": "jedi_e270_ssd(0)"
+          },
+          {
+            "Name": "Look Dir. 1",
+            "Index": "2",
+            "ParameterKey": "jedi_e270_ssd(1)"
+          },
+          {
+            "Name": "Look Dir. 2",
+            "Index": "3",
+            "ParameterKey": "jedi_e270_ssd(2)"
+          },
+          {
+            "Name": "Look Dir. 3",
+            "Index": "4",
+            "ParameterKey": "jedi_e270_ssd(3)"
+          },
+          {
+            "Name": "Look Dir. 4",
+            "Index": "5",
+            "ParameterKey": "jedi_e270_ssd(4)"
+          },
+          {
+            "Name": "Look Dir. 5",
+            "Index": "6",
+            "ParameterKey": "jedi_e270_ssd(5)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

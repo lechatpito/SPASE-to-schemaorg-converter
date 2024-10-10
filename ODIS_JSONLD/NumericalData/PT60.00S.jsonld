@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NOAA/NumericalData/GOES/12/SXI/PT60.00S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NOAA/NumericalData/GOES/12/SXI/PT60.00S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "GOES SXI Solar X-Ray Images",
+  "sdDatePublished": "2018-06-28",
+  "description": "GOES SXI Solar X-Ray Images in FITS format",
+  "abstract": "GOES SXI Solar X-Ray Images in FITS format",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sxi.ngdc.noaa.gov/",
+      "name": "SXI site at NOAA/NGDC",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.virtualsolar.org/",
+      "name": "from NOAA/NGDC via Virtual Solar Observatory",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

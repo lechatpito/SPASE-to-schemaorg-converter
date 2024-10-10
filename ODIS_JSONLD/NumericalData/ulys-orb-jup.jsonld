@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/Ephemeris/ulys-orb-jup",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/Ephemeris/ulys-orb-jup",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Ulysses - Ephemeris - flyby jupiter",
+  "sdDatePublished": "2012-03-06",
+  "description": "Ulysses spacecraft positions data product ",
+  "abstract": "Ulysses spacecraft positions data product ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "distance ulys-jup",
+      "unitText": "Rj"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mlat",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "local time",
+      "unitText": "HHMM"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

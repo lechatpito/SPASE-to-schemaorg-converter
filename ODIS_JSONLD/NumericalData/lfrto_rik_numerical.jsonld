@@ -1,0 +1,68 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/TohokuU/radio_obs/rik/lf/lfrto_rik_numerical",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/TohokuU/radio_obs/rik/lf/lfrto_rik_numerical",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Standard radio wave phase-amplitude variation data (Rikubetsu station)",
+  "sdDatePublished": "2012-12-12",
+  "description": "Amplitude and phase time series of low frequency standard radio transmitter signals at 40.0 (JJY), 60.0(JJY), and 67.5kHz(BPC) received at the Rikubetsu observatory (Hokkaido, Japan) of Nagoya University. Variations in the phase and amplitude reflect changes of the ionization state in the lower ionosphere which is caused by energetic electron precipitation from inner magnetosphere (radiation belt), solar x-rays, lightning dischanges, and so on.",
+  "abstract": "Amplitude and phase time series of low frequency standard radio transmitter signals at 40.0 (JJY), 60.0(JJY), and 67.5kHz(BPC) received at the Rikubetsu observatory (Hokkaido, Japan) of Nagoya University. Variations in the phase and amplitude reflect changes of the ionization state in the lower ionosphere which is caused by energetic electron precipitation from inner magnetosphere (radiation belt), solar x-rays, lightning dischanges, and so on.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": "LFRTO, LF-STD",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://iprt.gp.tohoku.ac.jp/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Radio amplitude",
+      "description": "Amplitude time series of standard radio signals at at 40.0 (JJY), 60.0(JJY), and 67.5kHz (BPC)",
+      "unitText": "dB"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radio phase",
+      "description": "Phase time series of standard radio signals at at 40.0 (JJY), 60.0(JJY), and 67.5kHz (BPC)",
+      "unitText": "degree",
+      "minValue": "0",
+      "maxValue": "360"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Observed Time",
+      "unitText": "Julian day"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

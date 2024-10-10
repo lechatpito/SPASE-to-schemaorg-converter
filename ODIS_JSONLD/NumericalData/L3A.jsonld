@@ -1,0 +1,50 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TIMED/SEE/L3A",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TIMED/SEE/L3A",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "TIMED SEE Level 3A Solar Irradiance Data",
+  "sdDatePublished": "2023-07-30",
+  "description": "SEE Level 3A data files contain each measurements averaged solar irradiance spectrum in 1 nm intervals extracted from the EGS Level 2A and XPS Level 2A data products. Shortward of 27 nm, a solar model is scaled to match the XPS broadband data. SEE Level 3A data files also contain 38 emission lines extracted from EGS Level 2A spectra, and the XPS Level 2A diode irradiances. For normal operations, SEE observes the Sun for about 3 minutes every orbit (97 minutes), which usually gives 14-15 measurements per day. The SEE Level 3A data are time averaged over each measurement, after applying corrections for atmospheric absorption, degradation, flare removal, and to 1-AU.",
+  "abstract": "SEE Level 3A data files contain each measurements averaged solar irradiance spectrum in 1 nm intervals extracted from the EGS Level 2A and XPS Level 2A data products. Shortward of 27 nm, a solar model is scaled to match the XPS broadband data. SEE Level 3A data files also contain 38 emission lines extracted from EGS Level 2A spectra, and the XPS Level 2A diode irradiances. For normal operations, SEE observes the Sun for about 3 minutes every orbit (97 minutes), which usually gives 14-15 measurements per day. The SEE Level 3A data are time averaged over each measurement, after applying corrections for atmospheric absorption, degradation, flare removal, and to 1-AU.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "SEE",
+    "Sun"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "solar irradiance spectrum",
+      "description": "Merged Solar irradiance for XPS and EGS flux at 1nm bins with gaps filled using Woods-Rottman 2002 VUV model. Below 26 nm, flux is result of solution of linear equations involving XPS diodes and scaled to the VUV model. EGS data is used above 26 nm except 114.5-120.5 and 122.5-128.5 nm where the VUV model is scaled to the EGS Lyman-alpha line.",
+      "unitText": "W / m^2 / nm"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

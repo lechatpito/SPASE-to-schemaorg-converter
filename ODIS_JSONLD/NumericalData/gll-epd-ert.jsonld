@@ -1,0 +1,119 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/EPD/gll-epd-ert",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/EPD/gll-epd-ert",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - EPD - realtime mode - electron channels",
+  "sdDatePublished": "2019-03-13",
+  "description": "\n                 Energetic electron count rates and fluxes measured by the EPD instrument onboard \n               Galileo in the Real Time acquisition mode. \n               In this mode, the count rates are accumulated during 10 to 12 minutes. \n               This accumulation period is long enough so that the EPD telescopes have \n               pointed towards all the direction of the sky. \n               The count rates and fluxes measured with the Real Time acquisition \n               mode are therefore omnidirectionnal observations. \n               \n              \n              Data are extracted from the text file named 'galileo_epd_calibrated_low_res_v18.txt' \n               produced and provided by JHU/APL and publicly available at \n               http://sd-www.jhuapl.edu/Galileo_EPD/latest_calibrated_data/. \n               It is highly recommended to read the 'readme_v19.docx' document also available at \n               the previous link before using this dataset. \n               \n              \n              It is also recommended to contact Peter Kollmann (JHU/APL), as some \n               measurement channels are highly contaminated or saturated. \n               All unreliable measurements are set to NaN. \n               \n              \n              Energies observed by each measurement channel are discussed in detail in Kollmann et al. [2018, JGR].         \n            ",
+  "abstract": "\n                 Energetic electron count rates and fluxes measured by the EPD instrument onboard \n               Galileo in the Real Time acquisition mode. \n               In this mode, the count rates are accumulated during 10 to 12 minutes. \n               This accumulation period is long enough so that the EPD telescopes have \n               pointed towards all the direction of the sky. \n               The count rates and fluxes measured with the Real Time acquisition \n               mode are therefore omnidirectionnal observations. \n               \n              \n              Data are extracted from the text file named 'galileo_epd_calibrated_low_res_v18.txt' \n               produced and provided by JHU/APL and publicly available at \n               http://sd-www.jhuapl.edu/Galileo_EPD/latest_calibrated_data/. \n               It is highly recommended to read the 'readme_v19.docx' document also available at \n               the previous link before using this dataset. \n               \n              \n              It is also recommended to contact Peter Kollmann (JHU/APL), as some \n               measurement channels are highly contaminated or saturated. \n               All unreliable measurements are set to NaN. \n               \n              \n              Energies observed by each measurement channel are discussed in detail in Kollmann et al. [2018, JGR].         \n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "L-shell"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- : E[0-3] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- : E[0-3] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- : F[0-3] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- : F[0-3] : flux",
+      "unitText": "cm**-2.s**-1.sr**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- : B1 : cnts",
+      "unitText": "s**-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- : DC[0-3] : cnts",
+      "unitText": "s**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": [
+          {
+            "Name": "DC0 : > 14 MeV",
+            "Index": "1",
+            "ParameterKey": "gll_epd_dccounts(0)"
+          },
+          {
+            "Name": "DC1 : > 30 MeV",
+            "Index": "2",
+            "ParameterKey": "gll_epd_dccounts(1)"
+          },
+          {
+            "Name": "DC2 : > 1.8 MeV",
+            "Index": "3",
+            "ParameterKey": "gll_epd_dccounts(2)"
+          },
+          {
+            "Name": "DC3 : > 10.8 MeV",
+            "Index": "3",
+            "ParameterKey": "gll_epd_dccounts(3)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager2/CRS/vo2-crs-ele",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager2/CRS/vo2-crs-ele",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Voyager 2 - CRS - flyby jupiter - electron flux",
+  "sdDatePublished": "2012-09-13",
+  "description": "Voyager 2\n                CRS - Cosmic_Ray_Subsystem -\n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "abstract": "Voyager 2\n                CRS - Cosmic_Ray_Subsystem -\n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux diff",
+      "unitText": "cm-2.s-1.sr-1.MeV-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "2.6-5.1 MeV",
+            "Index": "1",
+            "ParameterKey": "vo2_crs_fedo(0)"
+          },
+          {
+            "Name": "5.1-8.0 MeV",
+            "Index": "2",
+            "ParameterKey": "vo2_crs_fedo(1)"
+          },
+          {
+            "Name": "8.0-12.0 MeV",
+            "Index": "3",
+            "ParameterKey": "vo2_crs_fedo(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

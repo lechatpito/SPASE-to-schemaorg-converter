@@ -1,0 +1,55 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/LPW/mvn-lpw-scpot",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/LPW/mvn-lpw-scpot",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - LPW - merged s/c potential",
+  "sdDatePublished": "2021-03-07",
+  "description": " This data set contains fully calibrated, science quality data produced by the LPW \n            instrument. The data include spacecraft potential.                      \n         ",
+  "abstract": " This data set contains fully calibrated, science quality data produced by the LPW \n            instrument. The data include spacecraft potential.                      \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot",
+      "description": "spacecraft potential",
+      "unitText": "V",
+      "minValue": "-20.0",
+      "maxValue": "20.0",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot quality",
+      "description": "Quality of Potential.The uncertainty of the\n values with a scale of 0-100. 100 is the best quality.  Use data with flag value\n above 50",
+      "minValue": "0",
+      "maxValue": "100"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

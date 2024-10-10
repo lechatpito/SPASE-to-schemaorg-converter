@@ -1,0 +1,52 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/KMO-JMA/MMB/Magnetogram/PT7.5S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/KMO-JMA/MMB/Magnetogram/PT7.5S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Memambetsu geomagnetic field 7.5-second digitized data in IAGA-2002 format, extracted from magnetograms",
+  "sdDatePublished": "2016-03-30",
+  "description": "The geomagnetic field 7.5-second digitized data in IAGA-2002 format, extracted from magnetograms at Memambetsu (MMB). The data may include reading errors. When a trace is overlapped with a baseline on the magnetogram, the missing value with 99999 may be embedded.",
+  "abstract": "The geomagnetic field 7.5-second digitized data in IAGA-2002 format, extracted from magnetograms at Memambetsu (MMB). The data may include reading errors. When a trace is overlapped with a baseline on the magnetogram, the missing value with 99999 may be embedded.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.kakioka-jma.go.jp/en/index.html",
+      "name": "Digital Data Service provided by Kakioka Magnetic Observatory",
+      "description": "As for digitized data extracted from magnetograms, the service allows the download of quasi-definitive geomagnetic data, which have been corrected for baseline variations."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic field digitized from magnetograms",
+      "description": "7.5-second values are calculated by interpolation of 7.62-second values. Then 7.5-second values are calibrated using absolute values observed at a one-week interval. The data may include daily variation caused by temperature change. D(eastward+)[arc minute], H[nT], Z(downward+)[nT], F[nT]"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

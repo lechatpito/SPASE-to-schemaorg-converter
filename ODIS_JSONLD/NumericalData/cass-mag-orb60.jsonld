@@ -1,0 +1,175 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/MAG/Saturn_Orbit/cass-mag-orb60",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/MAG/Saturn_Orbit/cass-mag-orb60",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - MAG - orbit saturn - 60 sec",
+  "sdDatePublished": "2019-07-26",
+  "description": " Coordinates : \n   * KSM : X (Saturn to Sun), Z (X-Z plane contains Saturn's centered magnetic dipole axis), and Y (completes right handed set)\n   * KSO : X (Saturn to Sun), Z (parallel to Saturn's orbital plane upward normal), and Y (completes the right handed set)\n   * KRTP : R (Saturn to spacecraft), Phi (parallel to Saturn's equator), and Theta (completes right handed set)\n   * RTN : R (radial component, Sun to the spacecraft), T (tangential component, parallel to the Solar Equatorial plane and perpendicular to R), and N (normal component, completes right handed set)\n            ",
+  "abstract": " Coordinates : \n   * KSM : X (Saturn to Sun), Z (X-Z plane contains Saturn's centered magnetic dipole axis), and Y (completes right handed set)\n   * KSO : X (Saturn to Sun), Z (parallel to Saturn's orbital plane upward normal), and Y (completes the right handed set)\n   * KRTP : R (Saturn to spacecraft), Phi (parallel to Saturn's equator), and Theta (completes right handed set)\n   * RTN : R (radial component, Sun to the spacecraft), T (tangential component, parallel to the Solar Equatorial plane and perpendicular to R), and N (normal component, completes right handed set)\n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_kso",
+      "description": "Magnetic field vector components in KSO coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "cass_b_kso(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "cass_b_kso(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "cass_b_kso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_ksm",
+      "description": "Magnetic field vector components in KSM coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "cass_b_ksm(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "cass_b_ksm(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "cass_b_ksm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_rtn",
+      "description": "Magnetic field vector components in RTN coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "cass_b_rtn(0)"
+          },
+          {
+            "Name": "bt",
+            "Index": "2",
+            "ParameterKey": "cass_b_rtn(1)"
+          },
+          {
+            "Name": "bn",
+            "Index": "3",
+            "ParameterKey": "cass_b_rtn(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_krtp",
+      "description": "Magnetic field vector components in KRTP coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "cass_b_krtp(0)"
+          },
+          {
+            "Name": "btheta",
+            "Index": "2",
+            "ParameterKey": "cass_b_krtp(1)"
+          },
+          {
+            "Name": "bphi",
+            "Index": "3",
+            "ParameterKey": "cass_b_krtp(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Scalar magnitude of the magnetic field in nT",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi",
+      "description": "Magnetic field phi angle",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta",
+      "description": "Magnetic field theta angle",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

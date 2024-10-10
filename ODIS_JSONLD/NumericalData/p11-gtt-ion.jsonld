@@ -1,0 +1,86 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Pioneer11/GTT/p11-gtt-ion",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Pioneer11/GTT/p11-gtt-ion",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Pioneer 11 - GTT - flyby jupiter - ion flux",
+  "sdDatePublished": "2012-09-14",
+  "description": "Pionner 11\n                GTT - Geiger Tube Telescope - \n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "abstract": "Pionner 11\n                GTT - Geiger Tube Telescope - \n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux_dif",
+      "unitText": "cm-2.sr-1.s-1.MeV-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "E0",
+            "Index": "1",
+            "ParameterKey": "p11_gtt_fpdo(0)"
+          },
+          {
+            "Name": "E1",
+            "Index": "2",
+            "ParameterKey": "p11_gtt_fpdo(1)"
+          },
+          {
+            "Name": "E2",
+            "Index": "3",
+            "ParameterKey": "p11_gtt_fpdo(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux_int",
+      "unitText": "cm-2.sr-1.s-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "E0",
+            "Index": "1",
+            "ParameterKey": "p11_gtt_fpio(0)"
+          },
+          {
+            "Name": "E1",
+            "Index": "2",
+            "ParameterKey": "p11_gtt_fpio(1)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

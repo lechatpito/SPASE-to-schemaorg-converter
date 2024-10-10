@@ -1,0 +1,83 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/CASSINI/RPWS-HFR/CAS_RPWS_HFR_NATIVE_N1",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/CASSINI/RPWS-HFR/CAS_RPWS_HFR_NATIVE_N1",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "HFR  Native L1 Data",
+  "sdDatePublished": "2022-06-02",
+  "description": "This data set contains the CASSINI RPWS HFR raw data in telemetry values. It is composed of hourly binary files.",
+  "abstract": "This data set contains the CASSINI RPWS HFR raw data in telemetry values. It is composed of hourly binary files.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CAS_RPWS_HFR_NATIVE_N1",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS Auto-correlation 'X'",
+      "description": "CASSINI RPWS Auto-correlation 'X'"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS Auto-correlation 'Z'",
+      "description": "CASSINI RPWS Auto-correlation 'Z'"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS  Cross-correlation (real)",
+      "description": "CASSINI RPWS  Cross-correlation (real)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASSINI RPWS  Cross-correlation (Imaginary)",
+      "description": "CASSINI RPWS  Cross-correlation (Imaginary)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

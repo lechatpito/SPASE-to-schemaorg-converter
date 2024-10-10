@@ -1,0 +1,93 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/SWOOPS/ulys-bae-mom",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/SWOOPS/ulys-bae-mom",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Ulysses - SWOOPS - sw electrons",
+  "sdDatePublished": "2012-03-06",
+  "description": "This data set contains 3 to 22 minutes averages of the electron density and temperature data from the \n    Ulysses Solar Wind Observations Over the Poles of the Sun instrument.",
+  "abstract": "This data set contains 3 to 22 minutes averages of the electron density and temperature data from the \n    Ulysses Solar Wind Observations Over the Poles of the Sun instrument.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Solar wind electron plasma density",
+      "unitText": "cm-3",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "n_total",
+            "Index": "1",
+            "ParameterKey": "ne_ulys(0)"
+          },
+          {
+            "Name": "n_core",
+            "Index": "2",
+            "ParameterKey": "ne_ulys(1)"
+          },
+          {
+            "Name": "n_halo",
+            "Index": "3",
+            "ParameterKey": "ne_ulys(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "description": "solar wind plasma temperature",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "t_total",
+            "Index": "1",
+            "ParameterKey": "te_ulys(0)"
+          },
+          {
+            "Name": "t_core",
+            "Index": "2",
+            "ParameterKey": "te_ulys(1)"
+          },
+          {
+            "Name": "t_halo",
+            "Index": "3",
+            "ParameterKey": "te_ulys(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

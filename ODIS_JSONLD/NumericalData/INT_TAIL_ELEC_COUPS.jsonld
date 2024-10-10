@@ -1,0 +1,56 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Tail/ELECTRON/INT_TAIL_ELEC_COUPS",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Tail/ELECTRON/INT_TAIL_ELEC_COUPS",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "INT-TAIL ELECTRON COUNTS : Electron raw Counts",
+  "sdDatePublished": "2022-04-27",
+  "description": "This dataset contains Electron raw counts  from the  ELECTRON instrument of the Interball Tail probe.\nThe mode is 2D with 16 Energy Steps.",
+  "abstract": "This dataset contains Electron raw counts  from the  ELECTRON instrument of the Interball Tail probe.\nThe mode is 2D with 16 Energy Steps.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_TAIL_ELEC_COUPS",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "INT-TAIL ELECTRON  Electrons raw counts",
+      "description": "Electrons raw counts  issued from ELECTRON  instrument of the  interball tail probe."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

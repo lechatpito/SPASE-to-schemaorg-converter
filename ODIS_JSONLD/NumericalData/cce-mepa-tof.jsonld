@@ -1,0 +1,132 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/CCE/MEPA/cce-mepa-tof",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/CCE/MEPA/cce-mepa-tof",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "AMPTE - CCE - MEPA - ion flux : 32 sectors - TOF head",
+  "sdDatePublished": "2020-01-30",
+  "description": "           \n         ",
+  "abstract": "           \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "h+ counts",
+      "description": "\n             Proton counts per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n         ",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he++ counts",
+      "description": "\n               Alpha counts per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o counts",
+      "description": "\n               Oxygen counts per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fe counts",
+      "description": "\n               Iron counts per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "counts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ cps",
+      "description": "\n               Proton counts per second per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "counts/sec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he++ cps",
+      "description": "\n               Alpha counts per second per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "counts/sec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o cps",
+      "description": "\n               Oxygen counts per second per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "counts/sec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fe cps",
+      "description": "\n               Iron counts per second per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "counts/sec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ intensity",
+      "description": "\n               Proton differential intensity per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "1/(s ster cm\u00b2 keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "he++ intensity",
+      "description": "\n               Alpha differential intensity per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "1/(s ster cm\u00b2 keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o intensity",
+      "description": "\n               Oxygen differential intensity per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "1/(s ster cm\u00b2 keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fe intensity",
+      "description": "\n               Iron differential intensity per sector with each sector being a sum from 4 spins. The time given is the sector midpoint spin 2 out of 0,1,2,3\n           ",
+      "unitText": "1/(s ster cm\u00b2 keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sector",
+      "description": "\n               angular sector number (/32)\n           "
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "spin period"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

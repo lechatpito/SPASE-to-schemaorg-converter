@@ -1,0 +1,57 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Tail/ELECTRON/INT_TAIL_ELEC_3D32E",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Tail/ELECTRON/INT_TAIL_ELEC_3D32E",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "INT-TAIL ELECTRON Particle Energy Flux : 3D Mode - 32 Energy Steps",
+  "sdDatePublished": "2022-04-27",
+  "description": "This dataset contains Electron Particle Energy Flux from the ELECTRON instrument of the Interball Tail probe\nThe mode is 3D with 32 Energy Steps.",
+  "abstract": "This dataset contains Electron Particle Energy Flux from the ELECTRON instrument of the Interball Tail probe\nThe mode is 3D with 32 Energy Steps.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_TAIL_ELEC_3D32E",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "INT-TAIL ELECTRON  Electrons Energy Flux (3D Mode with  32 Energy Steps)",
+      "description": "Electron Particle Energy Flux issued from ELECTRON instrument of the Interball Tail probe. Mode is 3D with 32 Energy Steps",
+      "unitText": "keV/(s cm^2 sr keV)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

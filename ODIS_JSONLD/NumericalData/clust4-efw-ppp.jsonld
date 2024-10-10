@@ -1,0 +1,127 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster4/EFW/clust4-efw-ppp",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster4/EFW/clust4-efw-ppp",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cluster 4 - EFW - prime parameters",
+  "sdDatePublished": "2023-12-17",
+  "description": "EFW Prime Parameters\n                are preliminary data from the CSDS system. They are \n                included mostly for historical purposes. \n            ",
+  "abstract": "EFW Prime Parameters\n                are preliminary data from the CSDS system. They are \n                included mostly for historical purposes. \n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "keywords": [
+    "4 second",
+    "magnetosphere",
+    "auroral region",
+    "polar cap",
+    "cusp",
+    "bow shock",
+    "solar wind",
+    "magnetosheath",
+    "Cluster",
+    "magnetotail",
+    "lobe"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e_dusk",
+      "description": " Duskward Electric Field, In spin plane perp to x-gse at spin time resolution (4s)\n            ",
+      "unitText": "mV/m",
+      "minValue": "-700",
+      "maxValue": "700",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e_spectral_density_F1",
+      "description": "E-field spectral density [0.3-10] Hz, from EFW waveform at spin time resolution (4s)\n            ",
+      "unitText": "(V/m)^2/Hz",
+      "minValue": "1.0000e-13",
+      "maxValue": "0.0010",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e_spectral_density_F2",
+      "description": "  E-field spectral density [10-180] Hz, from EFW waveform at spin time resolution (4s)\n            ",
+      "unitText": "(V/m)^2/Hz",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot",
+      "description": "\n                Probe potential, Relative to Spacecraft at spin time resolution (4s)\n            ",
+      "unitText": "V",
+      "defaultValue": "-1.0000e+31"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

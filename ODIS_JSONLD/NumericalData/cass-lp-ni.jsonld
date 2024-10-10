@@ -1,0 +1,49 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-lp-ni",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/RPWS/cass-lp-ni",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - RPWS - ion proxy",
+  "sdDatePublished": "2017-10-06",
+  "description": "Densities are derived from the voltage sweeps of the Cassini Langmuir probe. The data reduction method is described in detail in Holmberg et al. 2012 and Holmberg et al. 2017.\n            The Cassini RPWS/LP data are available at the University of Iowa and the Swedish Institute of Space Physics. The Swedish National Space Board (SNSB) supports the RPWS/LP instrument on board Cassini.",
+  "abstract": "Densities are derived from the voltage sweeps of the Cassini Langmuir probe. The data reduction method is described in detail in Holmberg et al. 2012 and Holmberg et al. 2017.\n            The Cassini RPWS/LP data are available at the University of Iowa and the Swedish Institute of Space Physics. The Swedish National Space Board (SNSB) supports the RPWS/LP instrument on board Cassini.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion density error",
+      "unitText": "%"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

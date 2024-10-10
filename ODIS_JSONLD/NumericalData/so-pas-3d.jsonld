@@ -1,0 +1,105 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/PAS/so-pas-3d",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/PAS/so-pas-3d",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SolarOrbiter - SWA/PAS - L1 - 3D",
+  "sdDatePublished": "2024-05-22",
+  "description": "Solar Orbiter Proton Analyser Sensor L1 data",
+  "abstract": "Solar Orbiter Proton Analyser Sensor L1 data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "energy : first"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "energy : number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elevation : first"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elevation : number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cem : number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "max cnt : energy"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "max cnt : elevation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "max cnt : cem"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": " cnts per cem ##anode##",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cnts sum on elev; cem/energy : 2D",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cnts sum on cem; elev/energy : 2D",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cnts sum on energy; cem/elev : 2D",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cnts sum per cem ##anode##",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "total cnts",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "source"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ACE/SWICS_SWIMS/L2/HDF",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ACE/SWICS_SWIMS/L2/HDF",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ACE SWICS Solar Wind Data from the ACE Science Center",
+  "sdDatePublished": "2020-07-07",
+  "description": "The Solar Wind Ion Composition Spectrometer (SWICS) Solar Wind Data set consists of time series measurements  of the elemental abundance, charge state composition, and kinetic properties of heavy ions in the solar wind. Time resolutions: 1 hour, 2 hour, and 1 day.  (Not all products are delivered at all time-resolutions.) \nThis descriptor comprises two sets of data:\n(1)The SWICS 1.1 data set which covers launch up to August 23, 2011, when a radiation and age-induced hardware anomaly altered the instrument's operational state.\n(2)The SWICS 2.0 data set which begins after August 23, 2011, and includes a subset of the items included in the SWICS 1.1 data set, as well as the O+8/O+6 ratio.\n",
+  "abstract": "The Solar Wind Ion Composition Spectrometer (SWICS) Solar Wind Data set consists of time series measurements  of the elemental abundance, charge state composition, and kinetic properties of heavy ions in the solar wind. Time resolutions: 1 hour, 2 hour, and 1 day.  (Not all products are delivered at all time-resolutions.) \nThis descriptor comprises two sets of data:\n(1)The SWICS 1.1 data set which covers launch up to August 23, 2011, when a radiation and age-induced hardware anomaly altered the instrument's operational state.\n(2)The SWICS 2.0 data set which begins after August 23, 2011, and includes a subset of the items included in the SWICS 1.1 data set, as well as the O+8/O+6 ratio.\n",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.srl.caltech.edu/ACE/ASC/level2/lvl2DATA_SWICS-SWIMS.html",
+      "name": "ACE SWICS 1.1 Level 2 Data from ASC",
+      "description": " SWICS 1.1 is the SWICS instrument prior to August 23, 2011, when a radiation and age-induced hardware anomaly altered the instrument's operational state."
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.srl.caltech.edu/ACE/ASC/level2/lvl2DATA_SWICS_2.0.html",
+      "name": "ACE SWICS 2.0 Level 2 Data from ASC",
+      "description": " SWICS 2.0 is the SWICS instrument after August 23, 2011, when a radiation and age-induced hardware anomaly altered the instrument's operational state."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

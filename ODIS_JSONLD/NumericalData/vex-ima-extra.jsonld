@@ -1,0 +1,68 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/VEX/IMA/vex-ima-extra",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/VEX/IMA/vex-ima-extra",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "VEX - IMA - imaextra spectra",
+  "sdDatePublished": "2021-05-11",
+  "description": "Venus Express (VEX) ASPERA-4 Ion Mass Analyzer (IMA) data (spectrogram)\n                Preliminary spectra obtained from Andrei Fedorov (IRAP)",
+  "abstract": "Venus Express (VEX) ASPERA-4 Ion Mass Analyzer (IMA) data (spectrogram)\n                Preliminary spectra obtained from Andrei Fedorov (IRAP)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    }
+  ],
+  "keywords": [
+    "solar wind",
+    "plasma",
+    "ion"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "protons : cnts per anode ##anode##",
+      "description": "energy-time spectrogram of proton counts",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "protons : cnts sum",
+      "description": "energy-time spectrogram of proton counts",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy : cnts per anode ##anode##",
+      "description": "energy-time spectrogram of heavy ion counts",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy : cnts sum",
+      "description": "energy-time spectrogram of heavy ion counts",
+      "unitText": "cnts"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

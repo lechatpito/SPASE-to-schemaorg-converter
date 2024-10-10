@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/JASON3/AMBRE/jason-amb-mag",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/JASON3/AMBRE/jason-amb-mag",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "JASON3 - AMBRE - mag",
+  "sdDatePublished": "2024-05-23",
+  "description": "Calculated magnetic field using ONERA-DESP library internal fields: DGRF/IGRF External field (Olson and Pfitzer, 1974)",
+  "abstract": "Calculated magnetic field using ONERA-DESP library internal fields: DGRF/IGRF External field (Olson and Pfitzer, 1974)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "calculated magnetic field strength",
+      "unitText": "nT",
+      "defaultValue": "-1.e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b_eq|",
+      "description": "calculated magnetic field strength at magnetic equator",
+      "unitText": "nT",
+      "defaultValue": "-1.e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "I",
+      "description": "Longitudinal adiabatic invariant",
+      "defaultValue": "-1.e+31"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

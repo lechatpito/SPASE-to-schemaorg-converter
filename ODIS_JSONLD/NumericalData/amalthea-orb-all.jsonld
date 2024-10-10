@@ -1,0 +1,138 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/amalthea-orb-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/amalthea-orb-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Astronomical Objects Ephemerides - Planets and Moons - Jupiter Moons - Amalthea",
+  "sdDatePublished": "2020-03-12",
+  "description": "Amalthea orbits Jupiter at a distance of 181 000 km (2.54 Jupiter radii). \n                The orbit of Amalthea has an eccentricity of 0.003 and an inclination of 0.37\u00b0 relative to the equator of Jupiter. \n                Such appreciably nonzero values of inclination and eccentricity, though still small, are unusual for an inner satellite and can \n                be explained by the influence of the innermost Galilean satellite, Io: in the past Amalthea has passed through several mean-motion \n                resonances with Io that have excited its inclination and eccentricity (in a mean-motion resonance the ratio of orbital \n                periods of two bodies is a rational number like m:n).\n            \n            Amalthea's orbit lies near the outer edge of the Amalthea Gossamer Ring, \n            which is composed of the dust ejected from the satellite.",
+  "abstract": "Amalthea orbits Jupiter at a distance of 181 000 km (2.54 Jupiter radii). \n                The orbit of Amalthea has an eccentricity of 0.003 and an inclination of 0.37\u00b0 relative to the equator of Jupiter. \n                Such appreciably nonzero values of inclination and eccentricity, though still small, are unusual for an inner satellite and can \n                be explained by the influence of the innermost Galilean satellite, Io: in the past Amalthea has passed through several mean-motion \n                resonances with Io that have excited its inclination and eccentricity (in a mean-motion resonance the ratio of orbital \n                periods of two bodies is a rational number like m:n).\n            \n            Amalthea's orbit lies near the outer edge of the Amalthea Gossamer Ring, \n            which is composed of the dust ejected from the satellite.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_jsm",
+      "unitText": "Rj",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "amal_jup_jsm(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "amal_jup_jsm(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "amal_jup_jsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_jso",
+      "unitText": "Rj",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "amal_jup_jso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "amal_jup_jso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "amal_jup_jso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_IAU_jupiter",
+      "unitText": "Rj",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "amal_jup_xyz(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "amal_jup_xyz(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "amal_jup_xyz(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance amalthea-jupiter",
+      "unitText": "Rj"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude IAU_jupiter",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude IAU_jupiter",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mlat",
+      "description": "mlat=10.31\u00b0xcos(196.61\u00b0-lon_iau_west)+lat_iau",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

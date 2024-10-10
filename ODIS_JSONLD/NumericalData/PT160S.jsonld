@@ -1,0 +1,99 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Genesis/GIM/B-Proxy/PT160S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Genesis/GIM/B-Proxy/PT160S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Genesis interplanetary field orientation proxy",
+  "sdDatePublished": "2020-07-07",
+  "description": "The vector direction of peak suprathermal electron flux as measured with the Genesis Electron Monitor (GEM) instrument. This direction serves as a proxy for the interplanetary field orientation. The suprathermal electron flux is either parallel or anti-parallel to the interplanetary magnetic field. The true field polarity (+ or -) cannot be determined from GEM. Angles are given in Geocentric Solar Ecliptic (GSE) coordinates.",
+  "abstract": "The vector direction of peak suprathermal electron flux as measured with the Genesis Electron Monitor (GEM) instrument. This direction serves as a proxy for the interplanetary field orientation. The suprathermal electron flux is either parallel or anti-parallel to the interplanetary magnetic field. The true field polarity (+ or -) cannot be determined from GEM. Angles are given in Geocentric Solar Ecliptic (GSE) coordinates.",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://cdaweb.gsfc.nasa.gov/pub/data/genesis/gim/",
+      "name": "Genesis magnetic field proxy data",
+      "description": "Wind magnetic field data deteremined for Genesis determined by LANL"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOY",
+      "description": "Day of Year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour",
+      "description": "Hour"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Min",
+      "description": "Minute"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second",
+      "description": "Fractional Second"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Elevation Angle",
+      "description": "Magnetic Field Elevation Angle (Degrees)",
+      "unitText": "degrees",
+      "defaultValue": "-9999.0000"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Azimuth Angle",
+      "description": "Magnetic Field Azimuth Angle (Degrees)",
+      "unitText": "degrees",
+      "defaultValue": "-9999.0000"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Elevation Angle RTN",
+      "description": "Magnetic Field Elevation Angle (Degrees)",
+      "unitText": "degrees",
+      "defaultValue": "-9999.0000"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Azimuth Angle RTN",
+      "description": "Magnetic Field Azimuth Angle (Degrees)",
+      "unitText": "degrees",
+      "defaultValue": "-9999.0000"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Chi Square",
+      "description": "Chi Square"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

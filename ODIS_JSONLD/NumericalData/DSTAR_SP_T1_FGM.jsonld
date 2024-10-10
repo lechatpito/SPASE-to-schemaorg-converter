@@ -1,0 +1,88 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/FGM/DSTAR_SP_T1_FGM",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/FGM/DSTAR_SP_T1_FGM",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Double Star 1 FGM Summary Parameters",
+  "sdDatePublished": "2021-11-02",
+  "description": "The Double Star 1 Flux Gate Magnetometer (FGM) summary parameter data set contains various parameters in GSE coordinates at 60 s resolution. These parameters include universal time, the instrument status, the magnetic field vector in GSE coordinates, and the magnetic field variances.",
+  "abstract": "The Double Star 1 Flux Gate Magnetometer (FGM) summary parameter data set contains various parameters in GSE coordinates at 60 s resolution. These parameters include universal time, the instrument status, the magnetic field vector in GSE coordinates, and the magnetic field variances.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_SP_T1_FGM",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 FGM DC Magnetic Field Vector Summary Parameter",
+      "description": "Double Star 1 FGM magnetic field vectors at 60 s resolution in GSE Coordinates",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 FGM Magnetic Variance Summed Summary Parameter",
+      "description": "Double Star 1 FGM normalised magnetic variance including summed component variances at 60 s resolution"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 FGM Magnetic Variance of the Magnitude Summary Parameter",
+      "description": "Double Star 1 FGM magnetic variance of the magnitude at 60 s resolution."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 FGM Status Summary Parameter",
+      "description": "Double Star 1 FGM status at 60 s resolution"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

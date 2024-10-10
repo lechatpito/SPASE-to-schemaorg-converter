@@ -1,0 +1,70 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/Ephemeris/ros-orb-earth2",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/Ephemeris/ros-orb-earth2",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Rosetta - Ephemeris - flyby earth 2",
+  "sdDatePublished": "2014-05-22",
+  "description": "GSE : Geocentric Solar Ecliptic -\n         This system has its X axis towards the Sun and its Z axis\n         perpendicular to the plane of the Earth's orbit around the\n         Sun (positive North). Y completes the right-handed system.\n\n   GSM : Geocentric Solar Magnetospheric -\n         This system has its X axis towards the Sun and its Z axis\n         is the projection of the Earth's magnetic dipole axis\n         (positive North) on to the plane perpendicular to the X\n         axis. Y completes the right-handed system.",
+  "abstract": "GSE : Geocentric Solar Ecliptic -\n         This system has its X axis towards the Sun and its Z axis\n         perpendicular to the plane of the Earth's orbit around the\n         Sun (positive North). Y completes the right-handed system.\n\n   GSM : Geocentric Solar Magnetospheric -\n         This system has its X axis towards the Sun and its Z axis\n         is the projection of the Earth's magnetic dipole axis\n         (positive North) on to the plane perpendicular to the X\n         axis. Y completes the right-handed system.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_gse",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "ros_xyz_earth2(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "ros_xyz_earth2(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "ros_xyz_earth2(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance ros-earth",
+      "unitText": "Re"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

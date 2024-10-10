@@ -1,0 +1,158 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/MAG/gll-mag-eu",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/MAG/gll-mag-eu",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - MAG - flybys europa",
+  "sdDatePublished": "2012-03-06",
+  "description": "Magnetic field data from the Galileo magnetometer during Europa flybys, obtained from NASA/PDS plasma node, in various coordinate systems\n* 1996-12-19T06:33:28 1996-12-9T07:24:15   \n* 1997-11-06T20:09:34 1997-11-06T22:51:19  \n* 1997-12-16T11:42:56 1997-12-16T12:28:25   \n* 1998-03-29T13:05:38 1998-03-29T14:00:13  \n* 1998-05-31T20:42:30 1998-05-31T21:43:10   \n* 1998-09-26T03:30:04 1998-09-26T04:29:58 \n* 1999-02-01T01:49:38 1999-02-01T02:39:08  \n* 1999-11-25T16:00:12 1999-11-25T17:00:00 \n* 2000-01-03T17:29:34 2000-01-03T18:30:14 \n\nCoordinate systems \n * System III : R is along the Jupiter to spacecraft line, positive away from Jupiter. Phi is parallel to the Jovigraphic equator (Omega x R). Theta completes the right-handed set (positive southward).\n * IRC - Inertial Rotor coordinates : Z is along the spacecraft spin axis (positive opposite the high-gain antenna). X is roughly parallel to the south ecliptic normal. Y completes the right handed set (pointing roughly dawnward).\n * EPHIO - Europa Phi-Omega coordinates : X is in the direction of corotational flow (System III Phi). Z is parallel to the Jovian spin axis (Omega). Y completes the right handed set.\n * ESPRH - spherical Europa-centered 'planetocentric' right-handed coordinates : R is along the satellite to spacecraft line, positive away from the satellite. Phi is parellel to the satellite's planetographic equator and positive in a right-handed sense. Theta completes the right-handed set (positive southward)\n            ",
+  "abstract": "Magnetic field data from the Galileo magnetometer during Europa flybys, obtained from NASA/PDS plasma node, in various coordinate systems\n* 1996-12-19T06:33:28 1996-12-9T07:24:15   \n* 1997-11-06T20:09:34 1997-11-06T22:51:19  \n* 1997-12-16T11:42:56 1997-12-16T12:28:25   \n* 1998-03-29T13:05:38 1998-03-29T14:00:13  \n* 1998-05-31T20:42:30 1998-05-31T21:43:10   \n* 1998-09-26T03:30:04 1998-09-26T04:29:58 \n* 1999-02-01T01:49:38 1999-02-01T02:39:08  \n* 1999-11-25T16:00:12 1999-11-25T17:00:00 \n* 2000-01-03T17:29:34 2000-01-03T18:30:14 \n\nCoordinate systems \n * System III : R is along the Jupiter to spacecraft line, positive away from Jupiter. Phi is parallel to the Jovigraphic equator (Omega x R). Theta completes the right-handed set (positive southward).\n * IRC - Inertial Rotor coordinates : Z is along the spacecraft spin axis (positive opposite the high-gain antenna). X is roughly parallel to the south ecliptic normal. Y completes the right handed set (pointing roughly dawnward).\n * EPHIO - Europa Phi-Omega coordinates : X is in the direction of corotational flow (System III Phi). Z is parallel to the Jovian spin axis (Omega). Y completes the right handed set.\n * ESPRH - spherical Europa-centered 'planetocentric' right-handed coordinates : R is along the satellite to spacecraft line, positive away from the satellite. Phi is parellel to the satellite's planetographic equator and positive in a right-handed sense. Theta completes the right-handed set (positive southward)\n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter.Europa"
+    }
+  ],
+  "keywords": [
+    "Jupiter",
+    "Europa",
+    "GALILEO"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_irc",
+      "description": "Magnetic field vector components in IRC coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "gll_mag_euirc(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "gll_mag_euirc(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "gll_mag_euirc(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_ephio",
+      "description": "Magnetic field vector components in Europa-centered Phi-Omega coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "gll_mag_euephio(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "gll_mag_euephio(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "gll_mag_euephio(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_esprh",
+      "description": "Magnetic field vector components in Europa-centered spherical coordinates ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "gll_mag_euesprh(0)"
+          },
+          {
+            "Name": "btheta",
+            "Index": "2",
+            "ParameterKey": "gll_mag_euesprh(1)"
+          },
+          {
+            "Name": "bphi",
+            "Index": "3",
+            "ParameterKey": "gll_mag_euesprh(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_sys3",
+      "description": "Magnetic field vector components in SYS3 spherical coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "gll_mag_eusys3(0)"
+          },
+          {
+            "Name": "btheta",
+            "Index": "2",
+            "ParameterKey": "gll_mag_eusys3(1)"
+          },
+          {
+            "Name": "bphi",
+            "Index": "3",
+            "ParameterKey": "gll_mag_eusys3(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field vector magnitude ",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

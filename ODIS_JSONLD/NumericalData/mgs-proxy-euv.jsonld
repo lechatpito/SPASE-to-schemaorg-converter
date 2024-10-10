@@ -1,0 +1,49 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MGS/Proxy/mgs-proxy-euv",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MGS/Proxy/mgs-proxy-euv",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MGS - Proxy - euv",
+  "sdDatePublished": "2012-03-06",
+  "description": "The F10.7 radio flux measured at Earth is used to estimate the solar EUV flux from 2-100 nm at Earth. These values are then scaled to Mars' orbital distance from the Sun using a 1/r2 scaling, and time-shifted to account for the solar longitude difference between the Earth and Sun. A 26-day solar rotation rate is assumed.                         \n         ",
+  "abstract": "The F10.7 radio flux measured at Earth is used to estimate the solar EUV flux from 2-100 nm at Earth. These values are then scaled to Mars' orbital distance from the Sun using a 1/r2 scaling, and time-shifted to account for the solar longitude difference between the Earth and Sun. A 26-day solar rotation rate is assumed.                         \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux_earth",
+      "unitText": "sfu"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux_mars",
+      "unitText": "sfu"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

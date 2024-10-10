@@ -1,0 +1,96 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MMS/MMS1/EDP/mms1-dce-brst",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MMS/MMS1/EDP/mms1-dce-brst",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS1 - EDP - burst - dc e-field",
+  "sdDatePublished": "2024-03-26",
+  "description": "Electric Double Probe, Three-Dimensional Electric Field, Level 2, Burst Mode Data",
+  "abstract": "Electric Double Probe, Three-Dimensional Electric Field, Level 2, Burst Mode Data",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e_gse",
+      "unitText": "mV/m",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "ex",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms1_dce_gse_brst(0)"
+          },
+          {
+            "Name": "ey",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms1_dce_gse_brst(1)"
+          },
+          {
+            "Name": "ez",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms1_dce_gse_brst(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e_gsm",
+      "unitText": "mV/m",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "ex",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms1_dce_gsm_brst(0)"
+          },
+          {
+            "Name": "ey",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms1_dce_gsm_brst(1)"
+          },
+          {
+            "Name": "ez",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms1_dce_gsm_brst(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dce : qual",
+      "description": "Quality indicator (3 good), (2 ok data, use with some caution), (1 bad data, use with caution), (0 Really bad data or no data at all)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

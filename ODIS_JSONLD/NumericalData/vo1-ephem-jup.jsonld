@@ -1,0 +1,79 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager1/Ephemeris/vo1-ephem-jup",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager1/Ephemeris/vo1-ephem-jup",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Voyager 1 - Ephemeris - orbit jupiter",
+  "sdDatePublished": "2012-03-06",
+  "description": "ephemeris - Voyager 1 position\n                orbit_jupiter@Iowa",
+  "abstract": "ephemeris - Voyager 1 position\n                orbit_jupiter@Iowa",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "keywords": [
+    "ephemeris",
+    "orbit"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "lon_iau_jup",
+      "description": "Longitude",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_iau_jup",
+      "description": "Latitude",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mlat",
+      "description": "Magnetic Latitude",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "local time",
+      "description": "Local Time",
+      "unitText": "hours"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance vo1-jup",
+      "description": "Distance",
+      "unitText": "Rj"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "io phase",
+      "description": "Io Phase",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

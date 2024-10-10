@@ -1,0 +1,48 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/Ephemeris/sun-pol-cgck",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/Ephemeris/sun-pol-cgck",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Rosetta - Ephemeris - sun in C-G_CK frame",
+  "sdDatePublished": "2018-06-13",
+  "description": "C_G-CK  C_G comet fixed frame (CK frame) \n \n     A body-fixed frame is defined using standard \n     body-fixed, CK-based frame formation rules: \n   \n      -  +Z axis is toward the North pole;\n\n      -  +X axis is toward the prime meridian;\n\n      -  +Y axis completes the right hand frame;\n\n      -  the origin of this frame is at the center of the body.\n\n   The orientation of this frame is computed by evaluating\n   corresponding C_G comet attitudes kernels.",
+  "abstract": "C_G-CK  C_G comet fixed frame (CK frame) \n \n     A body-fixed frame is defined using standard \n     body-fixed, CK-based frame formation rules: \n   \n      -  +Z axis is toward the North pole;\n\n      -  +X axis is toward the prime meridian;\n\n      -  +Y axis completes the right hand frame;\n\n      -  the origin of this frame is at the center of the body.\n\n   The orientation of this frame is computed by evaluating\n   corresponding C_G comet attitudes kernels.",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "distance C_G-sun",
+      "unitText": "AU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sun lat C-G_CK",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sun lon C-G_CK",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

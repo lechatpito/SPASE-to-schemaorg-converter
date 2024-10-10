@@ -1,0 +1,70 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/Ephemeris/ros-orb-mars",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/Ephemeris/ros-orb-mars",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Rosetta - Ephemeris - flyby mars",
+  "sdDatePublished": "2014-05-22",
+  "description": "\n    \n    MSO : Mars-centric Solar Orbital   -  \n        the +X-axis points toward the Sun, \n        +Z points northward perpendicular to Mars's orbit plane, and \n        Y completes the right hand system nominally directed opposite Mars's orbital velocity around the Sun. ",
+  "abstract": "\n    \n    MSO : Mars-centric Solar Orbital   -  \n        the +X-axis points toward the Sun, \n        +Z points northward perpendicular to Mars's orbit plane, and \n        Y completes the right hand system nominally directed opposite Mars's orbital velocity around the Sun. ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_mso",
+      "unitText": "Rm",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "ros_xyz_mars(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "ros_xyz_mars(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "ros_xyz_mars(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance ros-mars",
+      "unitText": "Re"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

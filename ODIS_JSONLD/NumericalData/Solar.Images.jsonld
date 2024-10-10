@@ -1,0 +1,61 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/JAXA/NumericalData/Yohkoh/HXT/Solar.Images",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/JAXA/NumericalData/Yohkoh/HXT/Solar.Images",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Yohkoh HXT Solar Images",
+  "sdDatePublished": "2019-08-15",
+  "description": "Yohkoh HXT (Hard X ray Telescope) Solar Images. HXT had the following characteristics: effective area: 70 sq. cm, time resolution of 2 s, angular resolution ~5 arc s FWHM, energy range 15-100 keV",
+  "abstract": "Yohkoh HXT (Hard X ray Telescope) Solar Images. HXT had the following characteristics: effective area: 70 sq. cm, time resolution of 2 s, angular resolution ~5 arc s FWHM, energy range 15-100 keV",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://ylstone.physics.montana.edu/ylegacy/weekdirs/",
+      "name": "via http from Montana",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://umbra.nascom.nasa.gov/pub/yohkoh/online_archive/",
+      "name": "via https from GSFC/SDAC",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sdac.virtualsolar.org/cgi/search",
+      "name": "from Montana via VSO",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

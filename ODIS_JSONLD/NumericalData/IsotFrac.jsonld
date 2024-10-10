@@ -1,0 +1,45 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ISEE3/IsotFrac",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ISEE3/IsotFrac",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ISEE 3 Isotopic Fractions",
+  "sdDatePublished": "2021-03-11",
+  "description": "This data product consists of a single ASCII file \ncontaining values and their uncertainties for isotopic fractions of 56 \nspecific isotopes relative to isotope-integrated elemental abundances, \nfor 15 elements (Be, B, N, S, Cl, Ar, K, Ca, Ti, V, Cr, Mn, Fe, Co, Ni).  \nBetween this data product and a companion product with isotopic abundance \nratios, isotopic composition information is given for 21 chemical elements.  \nThe fractions are based on 1978-1981 observations of ~50-500 MeV/n cosmic \nrays by the U. Chicago cosmic ray experiment on ISEE 3.  Each of the ratios \nis linked in the ASCII file to the publication where its derivation is \ndiscussed.",
+  "abstract": "This data product consists of a single ASCII file \ncontaining values and their uncertainties for isotopic fractions of 56 \nspecific isotopes relative to isotope-integrated elemental abundances, \nfor 15 elements (Be, B, N, S, Cl, Ar, K, Ca, Ti, V, Cr, Mn, Fe, Co, Ni).  \nBetween this data product and a companion product with isotopic abundance \nratios, isotopic composition information is given for 21 chemical elements.  \nThe fractions are based on 1978-1981 observations of ~50-500 MeV/n cosmic \nrays by the U. Chicago cosmic ray experiment on ISEE 3.  Each of the ratios \nis linked in the ASCII file to the publication where its derivation is \ndiscussed.",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/isee/isee3/energetic_particles_cr/cr_composition/table2.txt",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/isee/isee3/energetic_particles_cr/cr_composition/table2.txt",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

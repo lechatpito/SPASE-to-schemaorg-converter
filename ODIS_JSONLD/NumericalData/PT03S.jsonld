@@ -1,0 +1,445 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Wind/MFI/RTN/PT03S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Wind/MFI/RTN/PT03S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind Magnetic Field Investigation (MFI) Composite Data in RTN Coordinates",
+  "sdDatePublished": "2023-09-18",
+  "description": "Wind MFI composite data in RTN coordinates. The files contain multiple time resolution data: 3-second, 1-minute, and 1-hour. Final Version 5 data are accessible to within about 3 months of current date, newly defined Version 4 data (with final Bz offsets and not-yet-final spacecraft position vectors) between 3 months and about 2 weeks of current date, and newly defined Version 3 data (with the most recently determined Bz offset value, not yet final for the Version 3 interval) from 2 weeks to about 2 days of current.",
+  "abstract": "Wind MFI composite data in RTN coordinates. The files contain multiple time resolution data: 3-second, 1-minute, and 1-hour. Final Version 5 data are accessible to within about 3 months of current date, newly defined Version 4 data (with final Bz offsets and not-yet-final spacecraft position vectors) between 3 months and about 2 weeks of current date, and newly defined Version 3 data (with the most recently determined Bz offset value, not yet final for the Version 3 interval) from 2 weeks to about 2 days of current.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    }
+  ],
+  "keywords": "Magnetic field",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time Line (1 min)",
+      "description": "Number of milliseconds since CDF_EPOCH: 0000-01-01T00:00:00.000",
+      "unitText": "ms",
+      "cadence": "PT01M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of points in average (1 min)",
+      "description": "Number of data points in one-minute average",
+      "cadence": "PT01M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field magnitude (1 min)",
+      "description": "Average of the magnetic field magnitudes (F1)",
+      "unitText": "nT",
+      "cadence": "PT01M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field magnitude's RMS (1 min)",
+      "description": "RMS (standard deviation) of the average of the magnitudes (F1 RMS)",
+      "unitText": "nT",
+      "cadence": "PT01M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field vector in RTN coordinates (1 min)",
+      "description": "Average (1 min) magnetic field vector in RTN coordinates",
+      "unitText": "nT",
+      "cadence": "PT01M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Br",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Bt",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Bn",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RMS vector in RTN coordinates (1 min)",
+      "description": "RMS magnetic field vector in RTN coordinates",
+      "unitText": "nT",
+      "cadence": "PT01M",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "RMS Br",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "RMS Bt",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "RMS Bn",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Average range inner magnetometer (1 min)",
+      "description": "Average range status of the inner magnetometer (1 min)",
+      "unitText": "unitless",
+      "cadence": "PT01M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Average range outer magnetometer (1 min)",
+      "description": "Average range status of the outer magnetometer (1 min)",
+      "unitText": "unitless",
+      "cadence": "PT01M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "S/C operational mode (1 min)",
+      "description": "Spacecraft operational mode (1 min) 1 - Science mode with normal telemetry rate (92 sec major frame) 3 - Maneuver mode normal telemetry rate - no useful data 4 - Contingency mode normal telemetry rate - no useful data 5 - Science mode with double telemetry rate (46 sec major frame) 7 - Maneuver mode double telemetry rate - no useful data 8 - Contingency mode double telemetry rate - no useful data",
+      "unitText": "unitless",
+      "cadence": "PT01M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Wind/MFI operational mode (1 min)",
+      "description": "Wind/MFI instrument operational mode (1 min) 0 - Primary to Secondary mag data collection rate ratio (1:1), Outboard mag primary with FFT and Snapshot data 1 - Primary to Secondary Ratio (20:1), Outboard primary with FFT and Snapshot 2 - Primary to Secondary Ratio (20:1), Outboard primary with Snapshot only 3 - Primary to Secondary Ratio (1:1), Outboard primary, Maneuver mode - no useful data 7 - Primary to Secondary Ratio (1:1), Outboard primary but used Inboard data for processing 10 - Primary to Secondary Ratio (1:1), Inboard primary with FFT and Snapshot 11 - Primary to Secondary Ratio (20:1), Inboard primary with FFT and Snapshot 12 - Primary to Secondary Ratio (20:1), Inboard primary with Snapshot only 13 - Primary to Secondary Ratio (1:1), Inboard primary, Maneuver mode - no useful data",
+      "unitText": "unitless",
+      "cadence": "PT01M"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time Line (3 sec)",
+      "description": "Number of milliseconds since CDF_EPOCH: 0000-01-01T00:00:00.000",
+      "unitText": "ms",
+      "cadence": "PT03S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of points in average (3 sec)",
+      "description": "Number of data points in 3-second average",
+      "unitText": "unitless",
+      "cadence": "PT03S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field magnitude (3 sec)",
+      "description": "Average of the magnetic field magnitudes (F1)",
+      "unitText": "nT",
+      "cadence": "PT03S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field magnitude's RMS (3 sec)",
+      "description": "RMS (standard deviation) of the average of the magnitudes (F1 RMS)",
+      "unitText": "nT",
+      "cadence": "PT03S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field vector in RTN coordinates (3 sec)",
+      "description": "Magnetic field vector in RTN coordinates",
+      "unitText": "nT",
+      "cadence": "PT03S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Br",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Bt",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Bn",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RMS vector in RTN coordinates (3 sec)",
+      "description": "RMS magnetic field vector in RTN coordinates",
+      "unitText": "nT",
+      "cadence": "PT03S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "RMS Br",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "RMS Bt",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "RMS Bn",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time Line (1 hour)",
+      "description": "Number of milliseconds since CDF_EPOCH: 0000-01-01T00:00:00.000",
+      "unitText": "ms",
+      "cadence": "PT01H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of points in average (1 hour)",
+      "description": "Number of data points in 1-hour average",
+      "unitText": "unitless",
+      "cadence": "PT01H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field magnitude (1 hour)",
+      "description": "Average of the magnetic field magnitudes (F1)",
+      "unitText": "nT",
+      "cadence": "PT01H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field magnitude's RMS (1 hour)",
+      "description": "RMS (standard deviation) of the average of the magnitudes (F1 RMS)",
+      "unitText": "nT",
+      "cadence": "PT01H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field vector in RTN coordinates (1 hour)",
+      "description": "Magnetic field vector in RTN coordinates",
+      "unitText": "nT",
+      "cadence": "PT01H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Br",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Bt",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Bn",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RMS vector in RTN coordinates (1 hour)",
+      "description": "RMS magnetic field vector in RTN coordinates",
+      "unitText": "nT",
+      "cadence": "PT01H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "RMS Br",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "RMS Bt",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "RMS Bn",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sensor zeros (inner)",
+      "description": "Inboard sensor zero computed once a day. The count-to-nT conversion formula: B(nT) = SENS * (B(counts) - ZERO) / AMPL",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sensor sensitivities (inner)",
+      "description": "Inboard sensor sensitivity computed once a day. The count-to-nT conversion formula: B(nT) = SENS * (B(counts) - ZERO) / AMPL",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Amplitude correction (inner)",
+      "description": "Inboard sensor conversion amplitude computed once a day. The count-to-nT conversion formula: B(nT) = SENS * (B(counts) - ZERO) / AMPL",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orthogonalization matrix (inner)",
+      "description": "Orthogonalization matrix (inner magnetometer)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Payload rotation matrix (inner)",
+      "description": "Payload rotation matrix (inner magnetometer)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sensor zero flag (inner)",
+      "description": "Sensor zero flag (inner magnetometer): 1 - No calibration data for day, used last available calibration 2 - Daily calibration value used (version 3 file) 3 - Daily calibration value used with updated Z correction (version 4 file)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sensor zeros (outer)",
+      "description": "Outboard sensor zero computed once a day. The count-to-nT conversion formula: B(nT) = SENS * (B(counts) - ZERO) / AMPL",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sensor sensitivities (outer)",
+      "description": "Outboard sensor sensitivity computed once a day. The count-to-nT conversion formula: B(nT) = SENS * (B(counts) - ZERO) / AMPL",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Amplitude correction (outer)",
+      "description": "Outboard sensor conversion amplitude computed once a day. The count-to-nT conversion formula: B(nT) = SENS * (B(counts) - ZERO) / AMPL",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orthogonalization matrix (outer)",
+      "description": "Orthogonalization matrix (outer magnetometer)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Payload rotation matrix (outer)",
+      "description": "Payload rotation matrix (outer magnetometer)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sensor zero flag (outer)",
+      "description": "Sensor zero flag (outer magnetometer): 1 - No calibration data for day, used last available calibration 2 - Daily calibration value used (version 3 file) 3 - Daily calibration value used with updated Z correction (version 4 file)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

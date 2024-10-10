@@ -1,0 +1,97 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/EISCAT/UHF/eiscat-uhf-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/EISCAT/UHF/eiscat-uhf-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "EISCAT - UHF - all modes",
+  "sdDatePublished": "2018-02-07",
+  "description": "Data taken by the UHF EISCAT radar in Tromso.\n            \n            Modes :\n         * fixed position : field-aligned\n         * fixed position : other\n         * multi-position\n         * scan",
+  "abstract": "Data taken by the UHF EISCAT radar in Tromso.\n            \n            Modes :\n         * fixed position : field-aligned\n         * fixed position : other\n         * multi-position\n         * scan",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "electron density",
+      "unitText": "m-3",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "50",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion velocity",
+      "unitText": "m/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "50",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "electron temperature",
+      "unitText": "K",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "50",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion temperature",
+      "unitText": "K",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "50",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "azimuth",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elevation",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mode"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

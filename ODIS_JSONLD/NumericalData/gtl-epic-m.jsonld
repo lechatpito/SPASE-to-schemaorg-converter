@@ -1,0 +1,57 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/EPIC/gtl-epic-m",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/EPIC/gtl-epic-m",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Geotail - EPIC - ICS : low resolution - M : CNO spectra",
+  "sdDatePublished": "2019-02-06",
+  "description": "Energy bounds (keV) :\n            * open: 186.5, 221.4, 275.2, 360.2, 493.5, 697.2, 1016.2, 1522.0, 2315.7, 3565.3; \n            * closed: 405.9 , 451.9, 521.1, 627.1, 788.3, 1029.3, 1399.4, 1960.6, 2820.8, 4119.8;\n          ",
+  "abstract": "Energy bounds (keV) :\n            * open: 186.5, 221.4, 275.2, 360.2, 493.5, 697.2, 1016.2, 1522.0, 2315.7, 3565.3; \n            * closed: 405.9 , 451.9, 521.1, 627.1, 788.3, 1029.3, 1399.4, 1960.6, 2820.8, 4119.8;\n          ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "apperture flag head1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "apperture flag head2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cno flux : 2D",
+      "unitText": "1/(cm**2-s-sr-kev)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cno flux : omni",
+      "unitText": "1/(cm**2-s-sr-kev)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

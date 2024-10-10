@@ -1,0 +1,71 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Wind/3DP/SST_Open/SP/PT24S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Wind/3DP/SST_Open/SP/PT24S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind 3DP SST Open Proton Omniderectional Fluxes",
+  "sdDatePublished": "2021-05-31",
+  "description": "Proton omnidirectional fluxes 70 keV - 6.8 MeV, often at 24 sec, SST Open, Wind 3DP - R. Lin (UC Berkeley)",
+  "abstract": "Proton omnidirectional fluxes 70 keV - 6.8 MeV, often at 24 sec, SST Open, Wind 3DP - R. Lin (UC Berkeley)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Number of milliseconds since CDF_EPOCH: 0000-01-01T00:00:00.000.",
+      "unitText": "ms",
+      "minValue": "01-Jan-1956 00:00:00.000",
+      "maxValue": "01-Jan-2083 00:00:00.000",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Unix Time",
+      "description": "Time since 1970-01-01T00:00:00Z in seconds",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Flux",
+      "description": "Proton number flux 70 keV - 6.8 MeV as a function of energy in 9 channels",
+      "unitText": "#/(cm^2*ster*eV*s)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Energy",
+      "description": "Time-varying proton energies in 9 channels",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/EISCAT/TRO/MFradar/neutralwind",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/EISCAT/TRO/MFradar/neutralwind",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Neutral wind data obtained by the Medium frequency (MF) radar at the EISCAT Tromso radar site",
+  "sdDatePublished": "2013-08-01",
+  "description": "Neutral wind velocity for altitudes of ~70-90 km obtained by the Medium frequency (MF) radar at the EISCAT Tromso radar site. It has measured the neutral wind continuously since November, 1998.",
+  "abstract": "Neutral wind velocity for altitudes of ~70-90 km obtained by the Medium frequency (MF) radar at the EISCAT Tromso radar site. It has measured the neutral wind continuously since November, 1998.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.isee.nagoya-u.ac.jp/~eiscat/data/EISCAT.html",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "3-D neutral wind velocity",
+      "description": "3-dimensional velocity vector of the neutral wind at altitudes of ~70-90 km. The typical height and time resolution is 3 km and 5 min, respectively."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

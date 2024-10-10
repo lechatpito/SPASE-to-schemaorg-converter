@@ -1,0 +1,54 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/GPS/KTB/scint_drift",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/GPS/KTB/scint_drift",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Scintillation drift velocity obtained by closely-spaced single-frequency GPS receivers at Kototabang, Indonesia (text format)",
+  "sdDatePublished": "2014-09-22",
+  "description": "Scintillation drift velocity calculated from intensities of the GPS L1 signals observed by three closely-spaced single-frequency GPS receivers at a sampling rate of 20 Hz at Kototabang, Indonesia.",
+  "abstract": "Scintillation drift velocity calculated from intensities of the GPS L1 signals observed by three closely-spaced single-frequency GPS receivers at a sampling rate of 20 Hz at Kototabang, Indonesia.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE, Ionosphere, scintillation, GPS, plasma bubble",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://stdb2.isee.nagoya-u.ac.jp/QL-S4/index.html",
+      "name": "Website of Scintillation Index (S4) and Drift Velocity",
+      "description": "Scintillation drift velocity calculated from intensities of the GPS L1 signals observed by three closely-spaced single-frequency GPS receivers at a sampling rate of 20 Hz at Kototabang, Indonesia. This dataset is prepared by the Ground Network Observation Group, Ionospheric and Magnetospheric Environment Division, Institute for Space-Earth Environmental Research, Nagoya University"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Scintillation drift velocity",
+      "description": "Scintillation drift veocity obtained from GPS L1 signal",
+      "unitText": "m/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

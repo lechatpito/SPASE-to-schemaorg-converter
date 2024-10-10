@@ -1,0 +1,106 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Wind/SWE/wnd-swe-kp",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Wind/SWE/wnd-swe-kp",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind - SWE - key parameters",
+  "sdDatePublished": "2024-01-22",
+  "description": "Data consist of solar wind thermal protons and positive ions measurement\n              from the Solar Wind Experiment.",
+  "abstract": "Data consist of solar wind thermal protons and positive ions measurement\n              from the Solar Wind Experiment.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "unitText": "cm-3",
+      "defaultValue": "-1.e31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gse",
+      "unitText": "km/s",
+      "defaultValue": "-1.e31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "wnd_swe_v(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "wnd_swe_v(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "wnd_swe_v(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v|",
+      "unitText": "km/s",
+      "defaultValue": "-1.e31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_thermal",
+      "unitText": "km/s",
+      "defaultValue": "-1.e31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ram pressure",
+      "description": "P = 2*10e-6 * Np * Vp^2",
+      "unitText": "nPa"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

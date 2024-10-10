@@ -1,0 +1,161 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/STEREO-A/SWAVES/HFR/STA_WAV_HFR_L3A_DEF",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/STEREO-A/SWAVES/HFR/STA_WAV_HFR_L3A_DEF",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "HFR L3A STEREO-A 'DEF' High Frequency Receiver (125 - 16025 kHz) - Goniopolarimetry parameters",
+  "sdDatePublished": "2022-07-26",
+  "description": "This data set contains definitive goniopolarimetry parameters  derived from  STEREO-A WAVES HFR (High Frequency Receiver) high resolution data (125 - 16025 kHz). \n\nLevel 3a data are computed asssuming: (i) incoming wave properties do not change over three successive antennas-pair measurements, (ii) signals measured by an antenna are the same on the two receiver channels, (iii) radio sources have an uniform brightness distribution.",
+  "abstract": "This data set contains definitive goniopolarimetry parameters  derived from  STEREO-A WAVES HFR (High Frequency Receiver) high resolution data (125 - 16025 kHz). \n\nLevel 3a data are computed asssuming: (i) incoming wave properties do not change over three successive antennas-pair measurements, (ii) signals measured by an antenna are the same on the two receiver channels, (iii) radio sources have an uniform brightness distribution.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:STA_WAV_HFR_L3A_DEF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF Sequential sweep number",
+      "description": "Squential sweep number in the file, starting from the first sweep of the current day"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF frequency of analysis",
+      "description": "Frequency of analysis",
+      "unitText": "kHz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF sequential number in parent HFR L2 data file",
+      "description": "Sequential number in parent HFR L2 data file"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF background levels",
+      "description": "Background levels for each antenna/channel auto-correlations, computed from median values over 15 days window centered on the current day",
+      "unitText": "V^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF signal-to-noise ratio",
+      "description": "Signal-to-noise ratio"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF quality factors",
+      "description": "Quality factors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF flux density",
+      "description": "Absolute flux density measured at the antennas, using the spectral matrix and the effective antenna directions in the RTN reference frame.",
+      "unitText": "W/m^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF polarization ellipsoid planarity",
+      "description": "Planarity of polarization ellipsoid, deduced from the goniopolarimetric SVD inversion"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF  polarization ellipsoid ellipticity",
+      "description": "Ellipticity of polarization ellispoid, deduced from the goniopolarimetric SVD inversion"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF colatitude wave vector",
+      "description": "Colatitude of the wave vector in the RTN reference frame, deduced from the goniopolarimetric SVD inversion",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF  azimuth wave vector",
+      "description": "Azimuth of the wave vector in the RTN reference frame, deduced from the goniopolarimetric SVD inversion",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF major polarization axis colatitude",
+      "description": "Colatitude of the major polarization axis in the RTN reference frame, deduced from the goniopolarimetric SVD inversion",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF major polarization axis azimuth",
+      "description": "Azimuth of the major polarization axis in the RTN reference frame",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF I Stokes parameter",
+      "description": "I Stokes parameter, deduced from the goniopolarimetric SVD inversion",
+      "unitText": "W/m^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF Q Stokes parameter",
+      "description": "Q Stokes parameter, deduced from the goniopolarimetric SVD inversion"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF U Stokes parameter",
+      "description": "U Stokes parameter, deduced from the goniopolarimetric SVD inversion"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF V Stokes parameter",
+      "description": "V Stokes parameter, deduced from the goniopolarimetric SVD inversion"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF 2D degree of polarization",
+      "description": "Two dimensional degree of polarization in the polarization plane"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF spacecraft HEE coordinates",
+      "description": "Spacecraft Heliocentric-Earth-Ecliptic Cartesian coordinates",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HFR L3A STEREO-A DEF antenna RTN coordinates",
+      "description": "Effective antenna direction vector Cartesian coordinates in the RTN reference frame",
+      "unitText": "m"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

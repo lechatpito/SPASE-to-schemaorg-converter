@@ -1,0 +1,791 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Voyager2/LECP/Flux/Ion/Sectored/PT3H",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Voyager2/LECP/Flux/Ion/Sectored/PT3H",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Voyager 2 Low-Energy Charged Particle (LECP) Key Channel Intensities By Sector in ASCII Format 3-hour",
+  "sdDatePublished": "2020-07-07",
+  "description": "Count Rates, For All Sectors, Voyager2, LECP, Filtered, Channel, Calibrated, CadencePT3H",
+  "abstract": "Count Rates, For All Sectors, Voyager2, LECP, Filtered, Channel, Calibrated, CadencePT3H",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Outer"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Heliosheath"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Start Time of Data Record",
+      "description": "Start Time for the record given in year, day of\n\t\t\t\tyear, hour.",
+      "cadence": "PT3H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "5",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1",
+            "ValidMin": "1990",
+            "ValidMax": "2008"
+          },
+          {
+            "Name": "Day of year",
+            "Index": "2",
+            "ValidMin": "1",
+            "ValidMax": "366"
+          },
+          {
+            "Name": "Hour of day",
+            "Index": "3",
+            "ValidMin": "0",
+            "ValidMax": "23"
+          },
+          {
+            "Name": "Minute of hour",
+            "Index": "4",
+            "ValidMin": "0",
+            "ValidMax": "59"
+          },
+          {
+            "Name": "Seconds of minute",
+            "Index": "5",
+            "ValidMin": "0",
+            "ValidMax": "59.99"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start Time of Data Record (Decimal Year)",
+      "description": "decimal year (double precision) = year + (doy - 1 + hr/24)/dpy (dpy=365 or 366)",
+      "cadence": "PT3H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start Time of Data Record (Decimal Day of Year)",
+      "description": "Decimal Day of Year (1.0-365.0 or 366.0)",
+      "cadence": "PT3H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start Time of Data Record (Decimal Hour of Day)",
+      "description": "Decimal Hour of Day",
+      "cadence": "PT3H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PL01 Flux",
+      "description": "PL01 Ion Flux",
+      "unitText": "Ions/(cm^2 sec ster MeV)",
+      "defaultValue": "-1",
+      "cadence": "PT3H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "18",
+        "elements": [
+          {
+            "Name": "Sector 01",
+            "Index": "0"
+          },
+          {
+            "Name": "Sector 01 Uncertainty",
+            "Index": "1"
+          },
+          {
+            "Name": "Sector 02",
+            "Index": "2"
+          },
+          {
+            "Name": "Sector 02 Uncertainty",
+            "Index": "3"
+          },
+          {
+            "Name": "Sector 03",
+            "Index": "4"
+          },
+          {
+            "Name": "Sector 03 Uncertainty",
+            "Index": "5"
+          },
+          {
+            "Name": "Sector 04",
+            "Index": "6"
+          },
+          {
+            "Name": "Sector 04 Uncertainty",
+            "Index": "7"
+          },
+          {
+            "Name": "Sector 05",
+            "Index": "8"
+          },
+          {
+            "Name": "Sector 05 Uncertainty",
+            "Index": "9"
+          },
+          {
+            "Name": "Sector 06",
+            "Index": "10"
+          },
+          {
+            "Name": "Sector 06 Uncertainty",
+            "Index": "11"
+          },
+          {
+            "Name": "Sector 07",
+            "Index": "12"
+          },
+          {
+            "Name": "Sector 07 Uncertainty",
+            "Index": "13"
+          },
+          {
+            "Name": "Sector 08",
+            "Index": "14"
+          },
+          {
+            "Name": "Sector 08 Uncertainty",
+            "Index": "15"
+          },
+          {
+            "Name": "Averaged Over All Sectors",
+            "Index": "16"
+          },
+          {
+            "Name": "Averaged Over All Sectors Uncertainty",
+            "Index": "17"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PL02 Flux",
+      "description": "PL02 Ion Flux",
+      "unitText": "Ions/(cm^2 sec ster MeV)",
+      "defaultValue": "-1",
+      "cadence": "PT3H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "18",
+        "elements": [
+          {
+            "Name": "Sector 01",
+            "Index": "0"
+          },
+          {
+            "Name": "Sector 01 Uncertainty",
+            "Index": "1"
+          },
+          {
+            "Name": "Sector 02",
+            "Index": "2"
+          },
+          {
+            "Name": "Sector 02 Uncertainty",
+            "Index": "3"
+          },
+          {
+            "Name": "Sector 03",
+            "Index": "4"
+          },
+          {
+            "Name": "Sector 03 Uncertainty",
+            "Index": "5"
+          },
+          {
+            "Name": "Sector 04",
+            "Index": "6"
+          },
+          {
+            "Name": "Sector 04 Uncertainty",
+            "Index": "7"
+          },
+          {
+            "Name": "Sector 05",
+            "Index": "8"
+          },
+          {
+            "Name": "Sector 05 Uncertainty",
+            "Index": "9"
+          },
+          {
+            "Name": "Sector 06",
+            "Index": "10"
+          },
+          {
+            "Name": "Sector 06 Uncertainty",
+            "Index": "11"
+          },
+          {
+            "Name": "Sector 07",
+            "Index": "12"
+          },
+          {
+            "Name": "Sector 07 Uncertainty",
+            "Index": "13"
+          },
+          {
+            "Name": "Sector 08",
+            "Index": "14"
+          },
+          {
+            "Name": "Sector 08 Uncertainty",
+            "Index": "15"
+          },
+          {
+            "Name": "Averaged Over All Sectors",
+            "Index": "16"
+          },
+          {
+            "Name": "Averaged Over All Sectors Uncertainty",
+            "Index": "17"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PL03 Flux",
+      "description": "PL03 Ion Flux",
+      "unitText": "Ions/(cm^2 sec ster MeV)",
+      "defaultValue": "-1",
+      "cadence": "PT3H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "18",
+        "elements": [
+          {
+            "Name": "Sector 01",
+            "Index": "0"
+          },
+          {
+            "Name": "Sector 01 Uncertainty",
+            "Index": "1"
+          },
+          {
+            "Name": "Sector 02",
+            "Index": "2"
+          },
+          {
+            "Name": "Sector 02 Uncertainty",
+            "Index": "3"
+          },
+          {
+            "Name": "Sector 03",
+            "Index": "4"
+          },
+          {
+            "Name": "Sector 03 Uncertainty",
+            "Index": "5"
+          },
+          {
+            "Name": "Sector 04",
+            "Index": "6"
+          },
+          {
+            "Name": "Sector 04 Uncertainty",
+            "Index": "7"
+          },
+          {
+            "Name": "Sector 05",
+            "Index": "8"
+          },
+          {
+            "Name": "Sector 05 Uncertainty",
+            "Index": "9"
+          },
+          {
+            "Name": "Sector 06",
+            "Index": "10"
+          },
+          {
+            "Name": "Sector 06 Uncertainty",
+            "Index": "11"
+          },
+          {
+            "Name": "Sector 07",
+            "Index": "12"
+          },
+          {
+            "Name": "Sector 07 Uncertainty",
+            "Index": "13"
+          },
+          {
+            "Name": "Sector 08",
+            "Index": "14"
+          },
+          {
+            "Name": "Sector 08 Uncertainty",
+            "Index": "15"
+          },
+          {
+            "Name": "Averaged Over All Sectors",
+            "Index": "16"
+          },
+          {
+            "Name": "Averaged Over All Sectors Uncertainty",
+            "Index": "17"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PL04 Flux",
+      "description": "PL04 Ion Flux",
+      "unitText": "Ions/(cm^2 sec ster MeV)",
+      "defaultValue": "-1",
+      "cadence": "PT3H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "18",
+        "elements": [
+          {
+            "Name": "Sector 01",
+            "Index": "0"
+          },
+          {
+            "Name": "Sector 01 Uncertainty",
+            "Index": "1"
+          },
+          {
+            "Name": "Sector 02",
+            "Index": "2"
+          },
+          {
+            "Name": "Sector 02 Uncertainty",
+            "Index": "3"
+          },
+          {
+            "Name": "Sector 03",
+            "Index": "4"
+          },
+          {
+            "Name": "Sector 03 Uncertainty",
+            "Index": "5"
+          },
+          {
+            "Name": "Sector 04",
+            "Index": "6"
+          },
+          {
+            "Name": "Sector 04 Uncertainty",
+            "Index": "7"
+          },
+          {
+            "Name": "Sector 05",
+            "Index": "8"
+          },
+          {
+            "Name": "Sector 05 Uncertainty",
+            "Index": "9"
+          },
+          {
+            "Name": "Sector 06",
+            "Index": "10"
+          },
+          {
+            "Name": "Sector 06 Uncertainty",
+            "Index": "11"
+          },
+          {
+            "Name": "Sector 07",
+            "Index": "12"
+          },
+          {
+            "Name": "Sector 07 Uncertainty",
+            "Index": "13"
+          },
+          {
+            "Name": "Sector 08",
+            "Index": "14"
+          },
+          {
+            "Name": "Sector 08 Uncertainty",
+            "Index": "15"
+          },
+          {
+            "Name": "Averaged Over All Sectors",
+            "Index": "16"
+          },
+          {
+            "Name": "Averaged Over All Sectors Uncertainty",
+            "Index": "17"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PL05 Flux",
+      "description": "PL05 Ion Flux",
+      "unitText": "Ions/(cm^2 sec ster MeV)",
+      "defaultValue": "-1",
+      "cadence": "PT3H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "18",
+        "elements": [
+          {
+            "Name": "Sector 01",
+            "Index": "0"
+          },
+          {
+            "Name": "Sector 01 Uncertainty",
+            "Index": "1"
+          },
+          {
+            "Name": "Sector 02",
+            "Index": "2"
+          },
+          {
+            "Name": "Sector 02 Uncertainty",
+            "Index": "3"
+          },
+          {
+            "Name": "Sector 03",
+            "Index": "4"
+          },
+          {
+            "Name": "Sector 03 Uncertainty",
+            "Index": "5"
+          },
+          {
+            "Name": "Sector 04",
+            "Index": "6"
+          },
+          {
+            "Name": "Sector 04 Uncertainty",
+            "Index": "7"
+          },
+          {
+            "Name": "Sector 05",
+            "Index": "8"
+          },
+          {
+            "Name": "Sector 05 Uncertainty",
+            "Index": "9"
+          },
+          {
+            "Name": "Sector 06",
+            "Index": "10"
+          },
+          {
+            "Name": "Sector 06 Uncertainty",
+            "Index": "11"
+          },
+          {
+            "Name": "Sector 07",
+            "Index": "12"
+          },
+          {
+            "Name": "Sector 07 Uncertainty",
+            "Index": "13"
+          },
+          {
+            "Name": "Sector 08",
+            "Index": "14"
+          },
+          {
+            "Name": "Sector 08 Uncertainty",
+            "Index": "15"
+          },
+          {
+            "Name": "Averaged Over All Sectors",
+            "Index": "16"
+          },
+          {
+            "Name": "Averaged Over All Sectors Uncertainty",
+            "Index": "17"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PL06 Flux",
+      "description": "PL06 Ion Flux",
+      "unitText": "Ions/(cm^2 sec ster MeV)",
+      "defaultValue": "-1",
+      "cadence": "PT3H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "18",
+        "elements": [
+          {
+            "Name": "Sector 01",
+            "Index": "0"
+          },
+          {
+            "Name": "Sector 01 Uncertainty",
+            "Index": "1"
+          },
+          {
+            "Name": "Sector 02",
+            "Index": "2"
+          },
+          {
+            "Name": "Sector 02 Uncertainty",
+            "Index": "3"
+          },
+          {
+            "Name": "Sector 03",
+            "Index": "4"
+          },
+          {
+            "Name": "Sector 03 Uncertainty",
+            "Index": "5"
+          },
+          {
+            "Name": "Sector 04",
+            "Index": "6"
+          },
+          {
+            "Name": "Sector 04 Uncertainty",
+            "Index": "7"
+          },
+          {
+            "Name": "Sector 05",
+            "Index": "8"
+          },
+          {
+            "Name": "Sector 05 Uncertainty",
+            "Index": "9"
+          },
+          {
+            "Name": "Sector 06",
+            "Index": "10"
+          },
+          {
+            "Name": "Sector 06 Uncertainty",
+            "Index": "11"
+          },
+          {
+            "Name": "Sector 07",
+            "Index": "12"
+          },
+          {
+            "Name": "Sector 07 Uncertainty",
+            "Index": "13"
+          },
+          {
+            "Name": "Sector 08",
+            "Index": "14"
+          },
+          {
+            "Name": "Sector 08 Uncertainty",
+            "Index": "15"
+          },
+          {
+            "Name": "Averaged Over All Sectors",
+            "Index": "16"
+          },
+          {
+            "Name": "Averaged Over All Sectors Uncertainty",
+            "Index": "17"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PL07 Flux",
+      "description": "PL07 Ion Flux",
+      "unitText": "Ions/(cm^2 sec ster MeV)",
+      "defaultValue": "-1",
+      "cadence": "PT3H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "18",
+        "elements": [
+          {
+            "Name": "Sector 01",
+            "Index": "0"
+          },
+          {
+            "Name": "Sector 01 Uncertainty",
+            "Index": "1"
+          },
+          {
+            "Name": "Sector 02",
+            "Index": "2"
+          },
+          {
+            "Name": "Sector 02 Uncertainty",
+            "Index": "3"
+          },
+          {
+            "Name": "Sector 03",
+            "Index": "4"
+          },
+          {
+            "Name": "Sector 03 Uncertainty",
+            "Index": "5"
+          },
+          {
+            "Name": "Sector 04",
+            "Index": "6"
+          },
+          {
+            "Name": "Sector 04 Uncertainty",
+            "Index": "7"
+          },
+          {
+            "Name": "Sector 05",
+            "Index": "8"
+          },
+          {
+            "Name": "Sector 05 Uncertainty",
+            "Index": "9"
+          },
+          {
+            "Name": "Sector 06",
+            "Index": "10"
+          },
+          {
+            "Name": "Sector 06 Uncertainty",
+            "Index": "11"
+          },
+          {
+            "Name": "Sector 07",
+            "Index": "12"
+          },
+          {
+            "Name": "Sector 07 Uncertainty",
+            "Index": "13"
+          },
+          {
+            "Name": "Sector 08",
+            "Index": "14"
+          },
+          {
+            "Name": "Sector 08 Uncertainty",
+            "Index": "15"
+          },
+          {
+            "Name": "Averaged Over All Sectors",
+            "Index": "16"
+          },
+          {
+            "Name": "Averaged Over All Sectors Uncertainty",
+            "Index": "17"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PL08 Flux",
+      "description": "PL08 Ion Flux",
+      "unitText": "Ions/(cm^2 sec ster MeV)",
+      "defaultValue": "-1",
+      "cadence": "PT3H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "18",
+        "elements": [
+          {
+            "Name": "Sector 01",
+            "Index": "0"
+          },
+          {
+            "Name": "Sector 01 Uncertainty",
+            "Index": "1"
+          },
+          {
+            "Name": "Sector 02",
+            "Index": "2"
+          },
+          {
+            "Name": "Sector 02 Uncertainty",
+            "Index": "3"
+          },
+          {
+            "Name": "Sector 03",
+            "Index": "4"
+          },
+          {
+            "Name": "Sector 03 Uncertainty",
+            "Index": "5"
+          },
+          {
+            "Name": "Sector 04",
+            "Index": "6"
+          },
+          {
+            "Name": "Sector 04 Uncertainty",
+            "Index": "7"
+          },
+          {
+            "Name": "Sector 05",
+            "Index": "8"
+          },
+          {
+            "Name": "Sector 05 Uncertainty",
+            "Index": "9"
+          },
+          {
+            "Name": "Sector 06",
+            "Index": "10"
+          },
+          {
+            "Name": "Sector 06 Uncertainty",
+            "Index": "11"
+          },
+          {
+            "Name": "Sector 07",
+            "Index": "12"
+          },
+          {
+            "Name": "Sector 07 Uncertainty",
+            "Index": "13"
+          },
+          {
+            "Name": "Sector 08",
+            "Index": "14"
+          },
+          {
+            "Name": "Sector 08 Uncertainty",
+            "Index": "15"
+          },
+          {
+            "Name": "Averaged Over All Sectors",
+            "Index": "16"
+          },
+          {
+            "Name": "Averaged Over All Sectors Uncertainty",
+            "Index": "17"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

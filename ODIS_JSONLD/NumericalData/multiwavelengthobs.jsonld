@@ -1,0 +1,121 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/OMTI/YNG/All-SkyImager/multiwavelengthobs",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/OMTI/YNG/All-SkyImager/multiwavelengthobs",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "OMTI All-Sky Imager Data taken alternately with various filters at Yonaguni",
+  "sdDatePublished": "2013-08-01",
+  "description": "Optical Mesosphere Thermosphere Imagers (OMTI) All-Sky Imager Data obtained with various filters at Yonaguni, Japan",
+  "abstract": "Optical Mesosphere Thermosphere Imagers (OMTI) All-Sky Imager Data obtained with various filters at Yonaguni, Japan",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Ion Chemistry/Ionization",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://ergsc.isee.nagoya-u.ac.jp/index.shtml.en",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "epoch for image",
+      "description": "Time for which image data are taken, in double-decision Unix time"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "epoch for image in the \"yyyy mm dd hh mm ss\" format",
+      "description": "Time for which image data are taken, in an array containing year, month, day, hour, minute, and second as integers"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Exposure time",
+      "description": "Exposure time in second for which the CCD count is integrated to take each image."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "raw image data taken with the 486.1 nm filter",
+      "description": "Raw image data of H-beta emission taken with the 486.1 nm filter as 512x512 pixel or 256x256 pixel. The unit is count/sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "raw image data taken with the 557.7 nm filter",
+      "description": "Raw image data of OI emission taken with the 557.7 nm filter as 512x512 pixel or 256x256 pixel. The unit is count/sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "raw image data taken with the 572.5 nm filter",
+      "description": "Raw image data of background taken with the 572.5 nm filter as 512x512 pixel or 256x256 pixel. The unit is count/sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "raw image data taken with the 589.3 nm filter",
+      "description": "Raw image data of Na emission taken with the 589.3 nm filter as 512x512 pixel or 256x256 pixel. The unit is count/sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "raw image data taken with the 630.0 nm filter",
+      "description": "Raw image data of OI emission taken with the 630.0 nm filter as 512x512 pixel or 256x256 pixel. The unit is count/sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "raw image data taken with the longer-than-720.0 nm or 720.0-910.0 nm filter",
+      "description": "Raw image data of OH emission taken with the longer-than-720.0 nm or 720.0-910.0 nm filter as 512x512 pixel or 256x256 pixel. The unit is count/sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "raw image data taken with the 732.0 nm filter",
+      "description": "Raw image data of OI emission taken with the 732.0 nm filter as 512x512 pixel or 256x256 pixel. The unit is count/sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "raw image data taken with the 777.4 nm filter",
+      "description": "Raw image data of OI emission taken with the 777.4 nm filter as 512x512 pixel or 256x256 pixel. The unit is count/sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "raw image data taken with the 844.6 nm filter",
+      "description": "Raw image data of OI emission taken with the 844.6 nm filter as 512x512 pixel or 256x256 pixel. The unit is count/sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "raw image data taken with the 865.0 nm filter",
+      "description": "Raw image data of O2 emission taken with the 865.0 nm filter as 512x512 pixel or 256x256 pixel. The unit is count/sample."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

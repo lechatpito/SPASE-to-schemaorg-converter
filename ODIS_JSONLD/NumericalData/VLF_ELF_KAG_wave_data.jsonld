@@ -1,0 +1,54 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/VLF_ELF/KAG/VLF_ELF_KAG_wave_data",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/VLF_ELF/KAG/VLF_ELF_KAG_wave_data",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Raw data of VLF/ELF wave measurements at Kagoshima, Japan",
+  "sdDatePublished": "2014-10-08",
+  "description": "Raw wave data in CD-ROM and other off-line media obtained by ISEE VLF/ELF antenna at Kagoshima, Japan. 20kHz sampling, sensitivity peak at 2-8kHz. Only one channel (VLF-EW): N-S antenna measureing east-west magnetic field variation.",
+  "abstract": "Raw wave data in CD-ROM and other off-line media obtained by ISEE VLF/ELF antenna at Kagoshima, Japan. 20kHz sampling, sensitivity peak at 2-8kHz. Only one channel (VLF-EW): N-S antenna measureing east-west magnetic field variation.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE,Ionosphere, Magnetosphere dynamic plasma waves",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://stdb2.isee.nagoya-u.ac.jp/vlf/index.html",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "VLF spectra (EW)",
+      "description": "east-west B-field wave spectra",
+      "unitText": "V^2/Hz"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

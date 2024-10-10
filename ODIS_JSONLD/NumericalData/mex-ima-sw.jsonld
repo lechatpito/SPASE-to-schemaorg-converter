@@ -1,0 +1,57 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MEX/IMA/mex-ima-sw",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MEX/IMA/mex-ima-sw",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MEX - IMA - proton moments in SW",
+  "sdDatePublished": "2021-10-18",
+  "description": "Mex IMA protons density and velocity in SW is a subset of IMA ion moments dataset on applying an orbital restrictions. IMA ion moments are calculated in IRAP using Andrei Fedorov procedure",
+  "abstract": "Mex IMA protons density and velocity in SW is a subset of IMA ion moments dataset on applying an orbital restrictions. IMA ion moments are calculated in IRAP using Andrei Fedorov procedure",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density quality",
+      "description": "Proton moment quality flag",
+      "unitText": "0-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Proton density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v|",
+      "description": "Proton bulk velocity",
+      "unitText": "km/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

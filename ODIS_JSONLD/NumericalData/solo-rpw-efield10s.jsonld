@@ -1,0 +1,67 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/RPW/solo-rpw-efield10s",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/RPW/solo-rpw-efield10s",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SolarOrbiter - RPW - L3 - electric field (10 s)",
+  "sdDatePublished": "2023-09-28",
+  "description": "Solar Orbiter Radio/Plasma Wave, LFR L3 electric field vector, downsampled",
+  "abstract": "Solar Orbiter Radio/Plasma Wave, LFR L3 electric field vector, downsampled",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e_srf",
+      "description": "Electric field vector in SRF. Median value over 10 s interval.",
+      "unitText": "mV/m",
+      "defaultValue": "-1.0000e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "ex",
+            "Index": "1",
+            "ParameterKey": "solo_rpw10s_esrf(0)"
+          },
+          {
+            "Name": "ey",
+            "Index": "2",
+            "ParameterKey": "solo_rpw10s_esrf(1)"
+          },
+          {
+            "Name": "ez",
+            "Index": "3",
+            "ParameterKey": "solo_rpw10s_esrf(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

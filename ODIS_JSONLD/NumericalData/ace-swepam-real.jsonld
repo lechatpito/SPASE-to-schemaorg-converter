@@ -1,0 +1,65 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/SWEPAM/ace-swepam-real",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/SWEPAM/ace-swepam-real",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ACE - SWEPAM - sw : real time",
+  "sdDatePublished": "2024-05-23",
+  "description": "\n         The ram pressure is calculated using P=rho*Np*Vp\u00b2, where rho=1.672622*(1+4*(1/(1-He++_ratio)-1)). \n         We use rho=2 here, which corresponds to a ratio of He++ between 4% and 5%.\n      ",
+  "abstract": "\n         The ram pressure is calculated using P=rho*Np*Vp\u00b2, where rho=1.672622*(1+4*(1/(1-He++_ratio)-1)). \n         We use rho=2 here, which corresponds to a ratio of He++ between 4% and 5%.\n      ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_bulk",
+      "description": "Solar Wind Bulk Speed",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ram pressure",
+      "description": "P = 2*10e-6 * Np * Vp^2",
+      "unitText": "nPa"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

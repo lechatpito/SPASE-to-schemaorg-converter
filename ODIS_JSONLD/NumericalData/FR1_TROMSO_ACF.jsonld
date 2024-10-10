@@ -1,0 +1,87 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/EISCAT/CP1/Tromso/UHF-Radar/FR1_TROMSO_ACF",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/EISCAT/CP1/Tromso/UHF-Radar/FR1_TROMSO_ACF",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "EISCAT CP1 Tromso UHF Radar (ACF's - French Tapanal Analysis)",
+  "sdDatePublished": "2022-07-25",
+  "description": "This data set contains  auto-correlation functions (ACF) from the Tromso UHF Radar, reprocessed with french TAPANAL code.",
+  "abstract": "This data set contains  auto-correlation functions (ACF) from the Tromso UHF Radar, reprocessed with french TAPANAL code.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:FR1_TROMSO_ACF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP1 ACF Tromso UHF radar electrons density",
+      "description": "EISCAT CP1 ACF Tromso UHF radar electrons density",
+      "unitText": "m^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP1 ACF Tromso UHF radar  electrons temperature",
+      "description": "EISCAT CP1 ACF Tromso UHF radar electrons temperature",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP1 ACF Tromso UHF radar ions temperature",
+      "description": "EISCAT CP1 ACF Tromso UHF radar ions temperature",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EISCAT CP1 ACF Tromso UHF radar ions velocity",
+      "description": "EISCAT CP1 ACF Tromso UHF radar ions velocity",
+      "unitText": "m/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

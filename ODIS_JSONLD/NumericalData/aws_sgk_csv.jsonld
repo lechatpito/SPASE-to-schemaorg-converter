@@ -1,0 +1,128 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SGK/AWS/aws_sgk_csv",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SGK/AWS/aws_sgk_csv",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Surface meteorological data at Shigaraki MU Observatory (CSV format)",
+  "sdDatePublished": "2016-09-17",
+  "description": "The surface meteorological data taken by the Automatic Weather Station (AWS) at Shigaraki MU Observatory in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL). The observation data are stored in the the CSV (Comma Separated Values) file named (year)(month)(day).csv. The numbers of the first line of each file represent date (YYYY/MM/DD), time zone (UT + 09:00), latitude (deg), longitude (deg) and sea level (m), and the second and below are local time (hour:minute:second), pressure (hPa), temperature (degree C), relative humidity (%), zonal and meridional winds (m/s). The value of -999 means missing data.",
+  "abstract": "The surface meteorological data taken by the Automatic Weather Station (AWS) at Shigaraki MU Observatory in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL). The observation data are stored in the the CSV (Comma Separated Values) file named (year)(month)(day).csv. The numbers of the first line of each file represent date (YYYY/MM/DD), time zone (UT + 09:00), latitude (deg), longitude (deg) and sea level (m), and the second and below are local time (hour:minute:second), pressure (hPa), temperature (degree C), relative humidity (%), zonal and meridional winds (m/s). The value of -999 means missing data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Phenomena",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/radar-group/surface/shigaraki/aws/",
+      "name": "Surface Meteorological Data at Shigaraki MU Observatory",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "date",
+      "description": "Date in the form YYYY/MM/DD where YYYY= Gregorian Year AD, MM = month of year (01-12), and DD = day of month (01-31)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Time in the form hh:mm:ss where hh = hour of day (00-23), mm = minute of hour and ss = second of minute. Local time (UT+09:00:00) is used for time data.",
+      "unitText": "second"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tzone",
+      "description": "Time zone (GMT+09:00)",
+      "unitText": "hour"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude",
+      "description": "Geographic latitude",
+      "unitText": "degree"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude",
+      "description": "Geographic longitude",
+      "unitText": "degree"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "height",
+      "description": "Height above sea lebel",
+      "unitText": "m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "press",
+      "description": "Air pressure",
+      "unitText": "hPa",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temp",
+      "description": "Air temperature",
+      "unitText": "degree",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "rh",
+      "description": "Relative humidity",
+      "unitText": "%",
+      "minValue": "0",
+      "maxValue": "100",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "uwnd",
+      "description": "Zonal wind (eastward wind is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vwnd",
+      "description": "Meridional wind (northward wind is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

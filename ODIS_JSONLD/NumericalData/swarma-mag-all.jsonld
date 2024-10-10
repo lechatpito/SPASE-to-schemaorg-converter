@@ -1,0 +1,68 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SWARM-A/MAG/swarma-mag-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SWARM-A/MAG/swarma-mag-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Swarm-A - MAG (ASM/VFM) - magnetic field in North-East-Center frame",
+  "sdDatePublished": "2019-04-05",
+  "description": "magnetic field in North-East-Center frame",
+  "abstract": "magnetic field in North-East-Center frame",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_nec",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "b_north",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "swa_b_nec(0)"
+          },
+          {
+            "Name": "b_east",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "swa_b_nec(1)"
+          },
+          {
+            "Name": "b_center",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "swa_b_nec(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

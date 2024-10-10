@@ -1,0 +1,97 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/RPW/solo-rpw-survbp1.nf1",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/RPW/solo-rpw-survbp1.nf1",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SolarOrbiter - RPW - LFR L2 - BP1 - N-F1 - survey mode",
+  "sdDatePublished": "2024-01-07",
+  "description": "RPW-LFR-SURV-BP1 - RPW Low Frequency Receiver Basic parameters set 1 data in Survey mode",
+  "abstract": "RPW-LFR-SURV-BP1 - RPW Low Frequency Receiver Basic parameters set 1 data in Survey mode",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "PB",
+      "description": "Spectral power of B field in normal mode",
+      "unitText": "nT**2/Hz",
+      "defaultValue": "-1.0000e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PE",
+      "description": "Spectral power of E field in normal mode",
+      "unitText": "V**2/Hz",
+      "defaultValue": "-1.0000e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOP",
+      "description": "Degree of polarization from magnetic field in normal mode",
+      "defaultValue": "-1.0000e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ellip",
+      "description": "Wave ellipticity from magnetic field in normal mode",
+      "defaultValue": "-1.0000e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n1",
+      "description": "Component 1 of the Wave normal vector from magnetic field in normal mode in the SCM B1-B2-B3 axis system frame",
+      "defaultValue": "-1.0000e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n2",
+      "description": "Component 2 of the Wave normal vector from magnetic field in normal mode in the SCM B1-B2-B3 axis system frame",
+      "defaultValue": "-1.0000e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n3",
+      "description": "Component 3 of the Wave normal vector from magnetic field in normal mode in the SCM B1-B2-B3 axis system frame",
+      "defaultValue": "-1.0000e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SX",
+      "description": "Real part of the X component of the Poynting vector in normal mode",
+      "unitText": "nW/m**2/Hz",
+      "defaultValue": "-1.0000e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VPHI",
+      "description": "Phase velocity estimated from the X projection of Maxwell-Faraday equation in normal mode",
+      "unitText": "km/s",
+      "defaultValue": "-1.0000e+31"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

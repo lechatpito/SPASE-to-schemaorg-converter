@@ -1,0 +1,375 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MMS/MMS4/FPI/mms4-fpi-brst.desm",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MMS/MMS4/FPI/mms4-fpi-brst.desm",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS4 - FPI - burst - DES : electrons",
+  "sdDatePublished": "2022-10-29",
+  "description": "FPI usually operates in Fast Survey (FS) Mode in the MMS Region Of Interest (ROI) for  \nthe current Mission Phase.  Data are taken at burst (30/150 ms for DES/DIS) resolution in this mode. Data are also made \n available at survey (4.5 s) resolution.  Per mission design, not all burst-resolution data are downlinked, but all sur vey data are downlinked. Planning around calibration activities, avoidance of Earth radiation belts, etc, when possible\n, FPI usually operates in Slow Survey (SS) Mode (60 s resolution) outside of ROI. This moments product contains results\n from integrating the standard moments of phase-space distributions formed from the indicated data type (DES/DIS burst,\n FS or SS). For convenience, some additional parameters are included to augment those most commonly found in a moments \nproduct of this sort, plus time-stamps and other annotation characterizing the state of the instrument system at the in\ndicated time.\n            \n            Error Flags : Value of zero signifies no quality errors.\n            For non-zero values: \n            * Bit-0 = manually flagged interval\n            * Bit-1 = overcounting/saturation effects likely present in skymap\n            * Bit-2 = reported spacecraft potential above 20V\n            * Bit-3 = invalid/unavailable spacecraft potential\n            * Bit-4 = significant (greater than 10%) cold plasma (lower than 10eV) component\n            * Bit-5 = significant (greater than 25%) hot plasma (greater than 30keV) component\n            * Bit-6 = high sonic Mach number (v/vth greater than 2.5)\n            * Bit-7 = low calculated density (0.05 cm^-3)\n            * Bit-8 = bentPipe magnetic field used instead of brst l2pre magnetic field\n            * Bit-9 = srvy l2pre magnetic field used instead of brst l2pre magnetic field\n            * Bit-10 = no internally generated photoelectron correction applied\n            * Bit-11 = compression pipeline error\n            * Bit-12 = spintone calculation error (DBCS only)",
+  "abstract": "FPI usually operates in Fast Survey (FS) Mode in the MMS Region Of Interest (ROI) for  \nthe current Mission Phase.  Data are taken at burst (30/150 ms for DES/DIS) resolution in this mode. Data are also made \n available at survey (4.5 s) resolution.  Per mission design, not all burst-resolution data are downlinked, but all sur vey data are downlinked. Planning around calibration activities, avoidance of Earth radiation belts, etc, when possible\n, FPI usually operates in Slow Survey (SS) Mode (60 s resolution) outside of ROI. This moments product contains results\n from integrating the standard moments of phase-space distributions formed from the indicated data type (DES/DIS burst,\n FS or SS). For convenience, some additional parameters are included to augment those most commonly found in a moments \nproduct of this sort, plus time-stamps and other annotation characterizing the state of the instrument system at the in\ndicated time.\n            \n            Error Flags : Value of zero signifies no quality errors.\n            For non-zero values: \n            * Bit-0 = manually flagged interval\n            * Bit-1 = overcounting/saturation effects likely present in skymap\n            * Bit-2 = reported spacecraft potential above 20V\n            * Bit-3 = invalid/unavailable spacecraft potential\n            * Bit-4 = significant (greater than 10%) cold plasma (lower than 10eV) component\n            * Bit-5 = significant (greater than 25%) hot plasma (greater than 30keV) component\n            * Bit-6 = high sonic Mach number (v/vth greater than 2.5)\n            * Bit-7 = low calculated density (0.05 cm^-3)\n            * Bit-8 = bentPipe magnetic field used instead of brst l2pre magnetic field\n            * Bit-9 = srvy l2pre magnetic field used instead of brst l2pre magnetic field\n            * Bit-10 = no internally generated photoelectron correction applied\n            * Bit-11 = compression pipeline error\n            * Bit-12 = spintone calculation error (DBCS only)",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "error flags"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density : err",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gse",
+      "unitText": "km/s",
+      "defaultValue": "-1e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms4_brst_desm_v(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms4_brst_desm_v(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms4_brst_desm_v(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gse : err",
+      "unitText": "km/s",
+      "defaultValue": "-1e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms4_brst_desm_verr(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms4_brst_desm_verr(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms4_brst_desm_verr(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_para",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_perp",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heatq_gse",
+      "unitText": "mW/m^2",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mms4_brst_desm_hq(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mms4_brst_desm_hq(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mms4_brst_desm_hq(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heatq_gse : err",
+      "unitText": "mW/m^2",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "mms4_brst_desm_hqerr(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "mms4_brst_desm_hqerr(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "mms4_brst_desm_hqerr(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "press_tensor_gse",
+      "unitText": "nPa",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "xx",
+            "Index": "1",
+            "ParameterKey": "mms4_brst_desmpres(0)"
+          },
+          {
+            "Name": "xy",
+            "Index": "2",
+            "ParameterKey": "mms4_brst_desmpres(1)"
+          },
+          {
+            "Name": "xz",
+            "Index": "3",
+            "ParameterKey": "mms4_brst_desmpres(2)"
+          },
+          {
+            "Name": "yx",
+            "Index": "4",
+            "ParameterKey": "mms4_brst_desmpres(3)"
+          },
+          {
+            "Name": "yy",
+            "Index": "5",
+            "ParameterKey": "mms4_brst_desmpres(4)"
+          },
+          {
+            "Name": "yz",
+            "Index": "6",
+            "ParameterKey": "mms4_brst_desmpres(5)"
+          },
+          {
+            "Name": "zx",
+            "Index": "7",
+            "ParameterKey": "mms4_brst_desmpres(6)"
+          },
+          {
+            "Name": "zy",
+            "Index": "8",
+            "ParameterKey": "mms4_brst_desmpres(7)"
+          },
+          {
+            "Name": "zz",
+            "Index": "9",
+            "ParameterKey": "mms4_brst_desmpres(8)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "press_tensor_gse : err",
+      "unitText": "nPa",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "xx",
+            "Index": "1",
+            "ParameterKey": "mms4_brst_desmpreserr(0)"
+          },
+          {
+            "Name": "xy",
+            "Index": "2",
+            "ParameterKey": "mms4_brst_desmpreserr(1)"
+          },
+          {
+            "Name": "xz",
+            "Index": "3",
+            "ParameterKey": "mms4_brst_desmpreserr(2)"
+          },
+          {
+            "Name": "yx",
+            "Index": "4",
+            "ParameterKey": "mms4_brst_desmpreserr(3)"
+          },
+          {
+            "Name": "yy",
+            "Index": "5",
+            "ParameterKey": "mms4_brst_desmpreserr(4)"
+          },
+          {
+            "Name": "yz",
+            "Index": "6",
+            "ParameterKey": "mms4_brst_desmpreserr(5)"
+          },
+          {
+            "Name": "zx",
+            "Index": "7",
+            "ParameterKey": "mms4_brst_desmpreserr(6)"
+          },
+          {
+            "Name": "zy",
+            "Index": "8",
+            "ParameterKey": "mms4_brst_desmpreserr(7)"
+          },
+          {
+            "Name": "zz",
+            "Index": "9",
+            "ParameterKey": "mms4_brst_desmpreserr(8)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temp_tensor_gse",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "xx",
+            "Index": "1",
+            "ParameterKey": "mms4_brst_desm_t(0)"
+          },
+          {
+            "Name": "xy",
+            "Index": "2",
+            "ParameterKey": "mms4_brst_desm_t(1)"
+          },
+          {
+            "Name": "xz",
+            "Index": "3",
+            "ParameterKey": "mms4_brst_desm_t(2)"
+          },
+          {
+            "Name": "yx",
+            "Index": "4",
+            "ParameterKey": "mms4_brst_desm_t(3)"
+          },
+          {
+            "Name": "yy",
+            "Index": "5",
+            "ParameterKey": "mms4_brst_desm_t(4)"
+          },
+          {
+            "Name": "yz",
+            "Index": "6",
+            "ParameterKey": "mms4_brst_desm_t(5)"
+          },
+          {
+            "Name": "zx",
+            "Index": "7",
+            "ParameterKey": "mms4_brst_desm_t(6)"
+          },
+          {
+            "Name": "zy",
+            "Index": "8",
+            "ParameterKey": "mms4_brst_desm_t(7)"
+          },
+          {
+            "Name": "zz",
+            "Index": "9",
+            "ParameterKey": "mms4_brst_desm_t(8)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elec eflux : omni",
+      "unitText": "keV/(cm^2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elec eflux : para",
+      "unitText": "keV/(cm^2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elec eflux : anti",
+      "unitText": "keV/(cm^2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "elec eflux : perp",
+      "unitText": "keV/(cm^2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pa dist : lowen",
+      "description": "Low energy bin: 0 eV - 200 eV. \n                Pitch-angle bin size: 6 deg. Note that pitch angles are calculated in the spacecraft frame; \n                i.e., not shifted by the bulk velocity",
+      "unitText": "keV/(cm^2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pa dist : miden",
+      "description": "Mid energy bin: 200 eV - 2 keV. \n                Pitch-angle bin size: 6 deg. Note that pitch angles are calculated in the spacecraft frame; \n                i.e., not shifted by the bulk velocity",
+      "unitText": "keV/(cm^2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pa dist : highen",
+      "description": "High energy bin: 2 keV - 30 keV. \n                Pitch-angle bin size: 6 deg. Note that pitch angles are calculated in the spacecraft frame; \n                i.e., not shifted by the bulk velocity",
+      "unitText": "keV/(cm^2-s-sr-keV)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

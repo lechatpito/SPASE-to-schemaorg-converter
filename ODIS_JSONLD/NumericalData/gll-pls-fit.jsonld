@@ -1,0 +1,158 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/PLS/gll-pls-fit",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/PLS/gll-pls-fit",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - PLS - fitted parameters",
+  "sdDatePublished": "2020-08-17",
+  "description": "This product contains all the fits (both good and bad) that were found during \n                a grant from NASA's Jupiter Data Analysis Program (NNX09AE03G).             \n                The Galileo PLS plasma data used in the forward model plasma parameter     \n                calculations given here came from the PDS3 GO-J-PLS-3-RDR-FULLRES-V1.0 in        \n                the Planetary Data System (PDS). See [BAGENAL2016] for the full details:\n                \n                Bagenal, F., R. J. Wilson, S. Siler, W. R. Paterson, and W. S. Kurth      \n                (2016), Survey of Galileo plasma observations in Jupiter's plasma sheet,  \n                J. Geophys. Res. Planets, 121, 871-894, doi:10.1002/2016JE005009.",
+  "abstract": "This product contains all the fits (both good and bad) that were found during \n                a grant from NASA's Jupiter Data Analysis Program (NNX09AE03G).             \n                The Galileo PLS plasma data used in the forward model plasma parameter     \n                calculations given here came from the PDS3 GO-J-PLS-3-RDR-FULLRES-V1.0 in        \n                the Planetary Data System (PDS). See [BAGENAL2016] for the full details:\n                \n                Bagenal, F., R. J. Wilson, S. Siler, W. R. Paterson, and W. S. Kurth      \n                (2016), Survey of Galileo plasma observations in Jupiter's plasma sheet,  \n                J. Geophys. Res. Planets, 121, 871-894, doi:10.1002/2016JE005009.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Io"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Callisto"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Europa"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Ganymede"
+    }
+  ],
+  "keywords": [
+    "Jupiter",
+    "GALILEO"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Ion density fitted",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density uncertainty",
+      "description": "fitted Ion density uncertainty",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "description": "Ion temperature fitted",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature uncertainty",
+      "description": "fitted Ion temperature uncertainty",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "velocity",
+      "description": "Fitted value of V (Vr, Vtheta, Vphi) in SC coordinates",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vr",
+            "Index": "1",
+            "ParameterKey": "gll_pls_fitv(0)",
+            "Units": "km/s"
+          },
+          {
+            "Name": "vth",
+            "Index": "2",
+            "ParameterKey": "gll_pls_fitv(1)",
+            "Units": "km/s"
+          },
+          {
+            "Name": "vph",
+            "Index": "3",
+            "ParameterKey": "gll_pls_fitv(2)",
+            "Units": "km/s"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "velocity uncertainty",
+      "description": "Uncertainty of fitted value of V sigma(Vr, Vtheta, Vphi)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "sig_vr",
+            "Index": "1",
+            "ParameterKey": "gll_pls_fitvun(0)",
+            "Units": "km/s"
+          },
+          {
+            "Name": "sig_vth",
+            "Index": "2",
+            "ParameterKey": "gll_pls_fitvun(1)",
+            "Units": "km/s"
+          },
+          {
+            "Name": "sig_vph",
+            "Index": "3",
+            "ParameterKey": "gll_pls_fitvun(2)",
+            "Units": "km/s"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "m",
+      "description": "assumed mass of ion used in fit",
+      "unitText": "amu"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "q",
+      "description": "assumed charge of ion used in fit",
+      "unitText": "e"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag",
+      "description": "1=good fit, used in JGR paper; 0=bad fit"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

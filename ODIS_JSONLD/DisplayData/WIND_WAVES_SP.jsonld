@@ -1,0 +1,45 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/DisplayData/CDPP-Archive/Wind/WAVES/WIND_WAVES_SP",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/DisplayData/CDPP-Archive/Wind/WAVES/WIND_WAVES_SP",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind Waves NASA/GSFC Summary Plots",
+  "sdDatePublished": "2022-04-26",
+  "description": "This data set contains plots of summary and power spectra of local and solar noise as 3-min averages in the frquency range 4kHz - 14 MHz, as one file/day.\nPlots are in GIF format.",
+  "abstract": "This data set contains plots of summary and power spectra of local and solar noise as 3-min averages in the frquency range 4kHz - 14 MHz, as one file/day.\nPlots are in GIF format.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:WIND_WAVES_SP",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

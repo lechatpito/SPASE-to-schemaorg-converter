@@ -1,0 +1,108 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster1/PEACE/clust1-pea-pa",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster1/PEACE/clust1-pea-pa",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cluster 1 - PEACE - pitch-angle/energy distribution",
+  "sdDatePublished": "2023-12-17",
+  "description": " This data product contains a single pitch angle distribution per spin, \n                obtained by combining rebinned LEEA and HEEA data collected at various times \n                during one spin on the Cluster C1 spacecraft.",
+  "abstract": " This data product contains a single pitch angle distribution per spin, \n                obtained by combining rebinned LEEA and HEEA data collected at various times \n                during one spin on the Cluster C1 spacecraft.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "keywords": [
+    "4 second",
+    "magnetosphere",
+    "auroral region",
+    "polar cap",
+    "cusp",
+    "bow shock",
+    "solar wind",
+    "magnetosheath",
+    "Cluster",
+    "magnetotail",
+    "lobe"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "diff energy flux : 2D pa/energy",
+      "description": "\n                Electron differential energy flux at spin time resolution\n            ",
+      "unitText": "keV/cm^2-s-str-keV",
+      "defaultValue": "-1",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "background : 2D pa/energy",
+      "description": "\n                Background energy flux at spin time resolution\n            ",
+      "unitText": "keV/cm^2-s-str-keV",
+      "defaultValue": "-1",
+      "cadence": "PT4S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

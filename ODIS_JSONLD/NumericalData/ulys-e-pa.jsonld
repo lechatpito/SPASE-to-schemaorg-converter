@@ -1,0 +1,44 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/SWOOPS/ulys-e-pa",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ULYSSES/SWOOPS/ulys-e-pa",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Ulysses - SWOOPS - electron pitch-angle/energy distribution",
+  "sdDatePublished": "2020-06-30",
+  "description": "Electron velocity distribution function (s^3 cm^-6) as a function of energy and pitch angle in the solar wind frame. \n            The distribution is given at 20 energies ranging from 1.69 eV to 815 eV, and in 20 pitch angle bins of 9 degrees eachs, \n            where the 0 degree pitch angle is along the magnetic field direction, which can either point torward or away from the sun.",
+  "abstract": "Electron velocity distribution function (s^3 cm^-6) as a function of energy and pitch angle in the solar wind frame. \n            The distribution is given at 20 energies ranging from 1.69 eV to 815 eV, and in 20 pitch angle bins of 9 degrees eachs, \n            where the 0 degree pitch angle is along the magnetic field direction, which can either point torward or away from the sun.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- psd : en/pa : 2D",
+      "unitText": "s**3 cm**-6"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

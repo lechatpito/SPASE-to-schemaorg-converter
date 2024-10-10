@@ -1,0 +1,102 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/MAG/mav-mag-kp",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/MAG/mav-mag-kp",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - MAG - 4s",
+  "sdDatePublished": "2024-05-02",
+  "description": "Data follow a 4-second cadence when MAVEN is at an altitude of less than 500 km, otherwise the time cadence is 8 seconds.     \n          The in situ key parameters contain 235 parameters selected by the instrument leads and other MAVEN scientists. These data consist of values derived from L2 data provided by the in situ instruments.",
+  "abstract": "Data follow a 4-second cadence when MAVEN is at an altitude of less than 500 km, otherwise the time cadence is 8 seconds.     \n          The in situ key parameters contain 235 parameters selected by the instrument leads and other MAVEN scientists. These data consist of values derived from L2 data provided by the in situ instruments.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_mso",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "mav_bkp_mso(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "mav_bkp_mso(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "mav_bkp_mso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_iau_mars",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "mav_bkp_iau(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "mav_bkp_iau(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "mav_bkp_iau(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_rms",
+      "description": "Deviations from the mean magnitude of the magnetic field",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

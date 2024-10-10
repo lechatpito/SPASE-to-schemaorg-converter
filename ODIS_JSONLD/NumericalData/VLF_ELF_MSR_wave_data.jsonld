@@ -1,0 +1,54 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/VLF_ELF/MSR/VLF_ELF_MSR_wave_data",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/VLF_ELF/MSR/VLF_ELF_MSR_wave_data",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Raw data of VLF/ELF wave measurements at Moshiri, Japan",
+  "sdDatePublished": "2014-10-08",
+  "description": "Raw wave data in CD-ROM and other off-line media obtained by ISEE VLF/ELF antenna at Moshiri, Japan. 20kHz sampling, sensitivity peak at 5kHz. Magnetic field variation in only one direction.",
+  "abstract": "Raw wave data in CD-ROM and other off-line media obtained by ISEE VLF/ELF antenna at Moshiri, Japan. 20kHz sampling, sensitivity peak at 5kHz. Magnetic field variation in only one direction.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE,Ionosphere, Magnetosphere dynamic plasma waves",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://stdb2.isee.nagoya-u.ac.jp/vlf/index.html",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "VLF spectra",
+      "description": "B-field wave spectra",
+      "unitText": "V^2/Hz"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

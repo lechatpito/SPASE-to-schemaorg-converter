@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Indices/Ground_Based/ground-based-am",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Indices/Ground_Based/ground-based-am",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Indices - Ground Based - am",
+  "sdDatePublished": "2024-05-23",
+  "description": "Index which purpose is to provide a characterization of global geomagnetic activity using a large set of stations representing all longitudes and possible hemispheric discrepancies.",
+  "abstract": "Index which purpose is to provide a characterization of global geomagnetic activity using a large set of stations representing all longitudes and possible hemispheric discrepancies.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "am",
+      "description": "am = (an + as)/2",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Am",
+      "description": "Daily Mean of am",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

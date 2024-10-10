@@ -1,0 +1,166 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/OMNI/COHO/MergedMagPlasma/PT1H",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/OMNI/COHO/MergedMagPlasma/PT1H",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "OMNI Combined Heliopheric Observations (COHO), Merged Magnetic Field, Plasma and Ephermeris, Definitive Hourly Data",
+  "sdDatePublished": "2024-07-02",
+  "description": "Hourly Averaged Definitive Multispacecraft Interplanetary ParametersData. The Heliographic Inertial, HGI, Coordinates are Sun-Centered and inertially fixed with respect to an X-Axis directed along the Intersection Line of the Ecliptic and Solar Equatorial Planes. The Solar Equatorial Plane is inclined at 7.25\u00b0 from the Ecliptic. This Direction was towards Ecliptic Longitude of 74.367\u00b0 on 1 January 1900 at 1200 UT but because of Precession of the Celestial Equator, this Longitude increases by 1.4\u00b0 per Century. The Z-Axis is directed Perpendicular and Northward from the Solar Equator, and the Y-Axis completes the Right-Handed Set. This System differs from usual Heliographic Coordinates, e.g. Carrington Longitudes, which are fixed in the Frame of the Rotating Sun. The RTN System is fixed at a Spacecraft or a Planet. The R-Axis is directed radially away from the Sun, the T-Axis is the Cross Product of the Solar Rotation Axis and the R-Axis, and the N-Axis is the Cross Product of the R-Axis and T-Axis. At 0\u00b0 Heliographic Latitude when the Spacecraft is in the Solar Equatorial Plane, the N-Axis and Solar Rotation Axis are Parallel. Latitude and Longitude Angles of Solar Wind Plasma Flow are generally measured from the Radius Vector away from the Sun. In all cases, Latitude Angles are Positive for North-Going Flow. The Flow Longitude Angles have been treated differently for the Near-Earth Data, i.e. the OMNI, and for the Deep Space Data. The Flow is Positive for the Near-Earth Data when coming from the Right Side of the Sun as viewed from the Earth, i.e. flowing toward +Y from -X GSE or Opposite to the Direction of Planetary Motion. On the other hand, the Flow Longitudes for the Deep Space Spacecraft use the opposite Sign Convection, i.e. Positive for Flow in the +T Direction in the RTN System.",
+  "abstract": "Hourly Averaged Definitive Multispacecraft Interplanetary ParametersData. The Heliographic Inertial, HGI, Coordinates are Sun-Centered and inertially fixed with respect to an X-Axis directed along the Intersection Line of the Ecliptic and Solar Equatorial Planes. The Solar Equatorial Plane is inclined at 7.25\u00b0 from the Ecliptic. This Direction was towards Ecliptic Longitude of 74.367\u00b0 on 1 January 1900 at 1200 UT but because of Precession of the Celestial Equator, this Longitude increases by 1.4\u00b0 per Century. The Z-Axis is directed Perpendicular and Northward from the Solar Equator, and the Y-Axis completes the Right-Handed Set. This System differs from usual Heliographic Coordinates, e.g. Carrington Longitudes, which are fixed in the Frame of the Rotating Sun. The RTN System is fixed at a Spacecraft or a Planet. The R-Axis is directed radially away from the Sun, the T-Axis is the Cross Product of the Solar Rotation Axis and the R-Axis, and the N-Axis is the Cross Product of the R-Axis and T-Axis. At 0\u00b0 Heliographic Latitude when the Spacecraft is in the Solar Equatorial Plane, the N-Axis and Solar Rotation Axis are Parallel. Latitude and Longitude Angles of Solar Wind Plasma Flow are generally measured from the Radius Vector away from the Sun. In all cases, Latitude Angles are Positive for North-Going Flow. The Flow Longitude Angles have been treated differently for the Near-Earth Data, i.e. the OMNI, and for the Deep Space Data. The Flow is Positive for the Near-Earth Data when coming from the Right Side of the Sun as viewed from the Earth, i.e. flowing toward +Y from -X GSE or Opposite to the Direction of Planetary Motion. On the other hand, the Flow Longitudes for the Deep Space Spacecraft use the opposite Sign Convection, i.e. Positive for Flow in the +T Direction in the RTN System.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time",
+      "minValue": "01-Jan-1963 00:00:00.000",
+      "maxValue": "31-Dec-2020 23:59:59.000",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Latitude, HGI",
+      "description": "Spacecraft Latitude, Heliographic, HGI, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Longitude, HGI",
+      "description": "Spacecraft Longitude, Heliographic, HGI, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field BR, HGI, RTN",
+      "description": "Magnetic Field BR Component, Heliographic Inertial, HGI, Radial-Tangential-Normal, RTN, Coordinates",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field BT, HGI, RTN",
+      "description": "Magnetic Field BT Component, Heliographic Inertial, HGI, Radial-Tangential-Normal, RTN, Coordinates",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field BN, HGI, RTN",
+      "description": "Magnetic Field BN Component, Heliographic Inertial, HGI, Radial-Tangential-Normal, RTN, Coordinates",
+      "unitText": "nT",
+      "minValue": "-1000.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field B, Average",
+      "description": "Magnetic Field Magnitude, B, Average",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bulk Flow Speed",
+      "description": "Bulk Flow Speed",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "1200.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Flow, Elevation Angle, HGI",
+      "description": "Proton Flow, Elevation Angle, equivalently Latitude, Heliographic, HGI, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Flow, Azimuth Angle, HGI",
+      "description": "Proton Flow, Azimuth Angle, equivalently Longitude, Heliographic, HGI, Coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-180.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion Density",
+      "description": "Ion Density",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "150.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Temperature",
+      "description": "Temperature",
+      "unitText": "\u00b0K",
+      "minValue": "0.0",
+      "maxValue": "1.0e+07",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT1H"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

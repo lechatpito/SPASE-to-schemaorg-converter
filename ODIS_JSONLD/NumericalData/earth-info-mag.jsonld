@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Planets/Earth/earth-info-mag",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Planets/Earth/earth-info-mag",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Planets Properties - Earth - earth dipole",
+  "sdDatePublished": "2020-07-31",
+  "description": "For characterizing the attitude of the Earth Magnetic dipole relatively to the Earth-Sun axis, 2 \n            angles can be used. The magnetic moment of the Earth is a vector opposite to the unit vector carrying the ZSM axis \n            (SM: Solar Magnetic reference frame). \n            \n            The tilt angle is the angle between the ZSM (the opposite of the Earth magnetic moment) and ZGSM \n            directions.\n            \n            The roll angle is the angle between the projection of the Earth magnetic moment on the \n            YZGSE plane and the ZGSE direction. It is also the angle between the XZGSM and the XZGSE \n            planes or the XYGSM and XYGSE planes. \n            \n            Earth dipole tilt and roll angles are calculated with the use of GEOPACK-2008 package.",
+  "abstract": "For characterizing the attitude of the Earth Magnetic dipole relatively to the Earth-Sun axis, 2 \n            angles can be used. The magnetic moment of the Earth is a vector opposite to the unit vector carrying the ZSM axis \n            (SM: Solar Magnetic reference frame). \n            \n            The tilt angle is the angle between the ZSM (the opposite of the Earth magnetic moment) and ZGSM \n            directions.\n            \n            The roll angle is the angle between the projection of the Earth magnetic moment on the \n            YZGSE plane and the ZGSE direction. It is also the angle between the XZGSM and the XZGSE \n            planes or the XYGSM and XYGSE planes. \n            \n            Earth dipole tilt and roll angles are calculated with the use of GEOPACK-2008 package.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "tilt angle",
+      "description": "The angle between the ZSM (the opposite of the Earth magnetic moment) and ZGSM\n            directions",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "roll angle",
+      "description": "The angle between the projection of the Earth magnetic moment on the\n            YZGSE plane and the ZGSE direction",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

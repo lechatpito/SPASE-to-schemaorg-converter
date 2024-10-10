@@ -1,0 +1,249 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NOAA/NumericalData/DSCOVR/PlasMag/FluxgateMagnetometer/L1/PT0.02S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NOAA/NumericalData/DSCOVR/PlasMag/FluxgateMagnetometer/L1/PT0.02S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "DSCOVR Fluxgate Magnetometer (MAG) Level 1",
+  "sdDatePublished": "2019-05-05",
+  "description": "Interplanetary magnetic field observations collected from magnetometer on DSCOVR satellite - calibrated, full resolution",
+  "abstract": "Interplanetary magnetic field observations collected from magnetometer on DSCOVR satellite - calibrated, full resolution",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "keywords": [
+    "L1",
+    "Solar Wind",
+    "Magnetic Field"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.ngdc.noaa.gov/dscovr/portal/index.html",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "by_interplanetary_magnetic_field_strength_gse",
+      "description": "Interplanetary Magnetic Field strength By component in Geocentric Solar Ecliptic coordinates",
+      "unitText": "nT",
+      "minValue": "0",
+      "maxValue": "4095",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "bx_interplanetary_magnetic_field_strength_gse",
+      "description": "Interplanetary Magnetic Field strength Bx component in Geocentric Solar Ecliptic coordinates",
+      "unitText": "nT",
+      "minValue": "0",
+      "maxValue": "4095",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta_gse",
+      "description": "Interplanetary Magnetic Field clock angle in Geocentric Solar Ecliptic coordinates",
+      "unitText": "degrees",
+      "minValue": "-90",
+      "maxValue": "90",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "bz_interplanetary_magnetic_field_strength_gse",
+      "description": "Interplanetary Magnetic Field strength Bz component in Geocentric Solar Ecliptic coordinates",
+      "unitText": "nT",
+      "minValue": "0",
+      "maxValue": "4095",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mode",
+      "description": "measurement range selection mode (0 = auto, 1 = manual)",
+      "minValue": "0",
+      "maxValue": "1",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "date and time for each observation",
+      "unitText": "milliseconds since 1970-01-01T00:00:00Z",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "bt_interplanetary_magnetic_field_strength",
+      "description": "Interplanetary Magnetic Field strength Bt",
+      "unitText": "nT",
+      "minValue": "0",
+      "maxValue": "65536",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "range",
+      "description": "measurement range (~4x sensitivity increase per step)",
+      "minValue": "0",
+      "maxValue": "7",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "bx_interplanetary_magnetic_field_strength_gsm",
+      "description": "Interplanetary Magnetic Field strength Bx component in Geocentric Solar Magnetospheric coordinates",
+      "unitText": "nT",
+      "minValue": "0",
+      "maxValue": "4095",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi_gse",
+      "description": "Interplanetary Magnetic Field polar angle in Geocentric Solar Ecliptic coordinates",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "360",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "bz_interplanetary_magnetic_field_strength_gsm",
+      "description": "Interplanetary Magnetic Field strength Bz component in Geocentric Solar Magnetospheric coordinates",
+      "unitText": "nT",
+      "minValue": "0",
+      "maxValue": "4095",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "by_interplanetary_magnetic_field_strength_gsm",
+      "description": "Interplanetary Magnetic Field strength By component in Geocentric Solar Magnetospheric coordinates",
+      "unitText": "nT",
+      "minValue": "0",
+      "maxValue": "4095",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi_gsm",
+      "description": "Interplanetary Magnetic Field polar angle in Geocentric Solar Magnetospheric coordinates",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "360",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta_gsm",
+      "description": "Interplanetary Magnetic Field clock angle in Geocentric Solar Magnetospheric coordinates",
+      "unitText": "degrees",
+      "minValue": "-90",
+      "maxValue": "90",
+      "defaultValue": "-99999.0",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "packet_time_in_future_flag",
+      "description": "One or more measurements were extracted from a packet whose timestamp was in the future at the point of processing",
+      "minValue": "0",
+      "maxValue": "1",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "backfilled_data_flag",
+      "description": "One or more measurements were backfilled from the spacecraft recorder and therefore were not available to forecasters in real-time",
+      "minValue": "0",
+      "maxValue": "1",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fill_flag",
+      "description": "Fill",
+      "minValue": "0",
+      "maxValue": "1",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "packet_time_older_than_threshold_flag",
+      "description": "One or more measurements were extracted from a packet whose timestamp was older than the threshold at the point of processing",
+      "minValue": "0",
+      "maxValue": "1",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "calibration_mode_flag",
+      "description": "Instrument in calibration mode",
+      "minValue": "0",
+      "maxValue": "1",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "possible_magnetometer_saturation_flag",
+      "description": "Possible magnetometer saturation based on a measurement range smaller than the next packet's range or by the mag being in manual range mode.",
+      "minValue": "0",
+      "maxValue": "1",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AOCS_non_science_mode_maneuver_or_safehold_flag",
+      "description": "AOCS non-science mode (spacecraft maneuver/safehold)",
+      "minValue": "0",
+      "maxValue": "1",
+      "cadence": "PT0H0M0.02S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "average_sample_count_below_threshold_flag",
+      "description": "Average sample count below threshold",
+      "minValue": "0",
+      "maxValue": "1",
+      "cadence": "PT0H0M0.02S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

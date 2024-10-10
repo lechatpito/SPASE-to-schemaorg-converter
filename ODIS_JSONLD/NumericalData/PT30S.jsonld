@@ -1,0 +1,222 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/STEREO-B/IMPACT/SWEA/PAD/L2/PT30S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/STEREO-B/IMPACT/SWEA/PAD/L2/PT30S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO-B In-Situ Measurements of Particles and CME Transients (IMPACT) Solar Wind Electron Analyzer (SWEA) Pitch Angle Distribution, Level 2 (L2), 30 s Data in CDF format",
+  "sdDatePublished": "2024-06-13",
+  "description": "STEREO-B In-Situ Measurements of Particles and CME Transients (IMPACT) Solar Wind Electron Analyzer (SWEA) electron pitch angle distribution (PAD) in phase space density (in units of s^3/km^6) as a function of 12 pitch angle bins (centered at 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5 deg) and 10 variable energy bins (PAD values for energies < 50 eV are forced to fill values).",
+  "abstract": "STEREO-B In-Situ Measurements of Particles and CME Transients (IMPACT) Solar Wind Electron Analyzer (SWEA) electron pitch angle distribution (PAD) in phase space density (in units of s^3/km^6) as a function of 12 pitch angle bins (centered at 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5 deg) and 10 variable energy bins (PAD values for energies < 50 eV are forced to fill values).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Time since 0 AD",
+      "unitText": "ms",
+      "minValue": "01-Jan-1990 00:00:00.000",
+      "maxValue": "01-Jan-2099 00:00:00.000",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Half_interval",
+      "description": "Acquisition period half interval",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "60.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality_index_0",
+      "description": "B field INSIDE(0) or OUTSIDE(1) instrument field-of-view",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "255",
+      "cadence": "PT30S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality_index_1",
+      "description": "PA distributions corrected(0) or NOT corrected(1) for ion bulk",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "255",
+      "cadence": "PT30S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy",
+      "description": "Energy bins (plotted with error bars)",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "30000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "16",
+        "elements": [
+          {
+            "Name": "Energy00",
+            "Index": "1"
+          },
+          {
+            "Name": "Energy01",
+            "Index": "2"
+          },
+          {
+            "Name": "Energy02",
+            "Index": "3"
+          },
+          {
+            "Name": "Energy03",
+            "Index": "4"
+          },
+          {
+            "Name": "Energy04",
+            "Index": "5"
+          },
+          {
+            "Name": "Energy05",
+            "Index": "6"
+          },
+          {
+            "Name": "Energy06",
+            "Index": "7"
+          },
+          {
+            "Name": "Energy07",
+            "Index": "8"
+          },
+          {
+            "Name": "Energy08",
+            "Index": "9"
+          },
+          {
+            "Name": "Energy09",
+            "Index": "10"
+          },
+          {
+            "Name": "Energy10",
+            "Index": "11"
+          },
+          {
+            "Name": "Energy11",
+            "Index": "12"
+          },
+          {
+            "Name": "Energy12",
+            "Index": "13"
+          },
+          {
+            "Name": "Energy13",
+            "Index": "14"
+          },
+          {
+            "Name": "Energy14",
+            "Index": "15"
+          },
+          {
+            "Name": "Energy15",
+            "Index": "16"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "delta_p_Energy",
+      "description": "Delta plus energy bins",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "16",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "delta_m_Energy",
+      "description": "Delta minus energy bins",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "5000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "16",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitchangle",
+      "description": "Center of pitch angle bins",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "delta_Pitchangle",
+      "description": "Delta pitch angle bins",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pad",
+      "description": "Electron pitch angle distribution in Phase Space Density (@ energies 1-10). Column 1 Labels from PITCHANGLE: [\"7.50 deg\",\"22.50 deg\",\"37.50 deg\",\"52.50 deg\",\"67.50 deg\",\"82.50 deg\",\"97.50 deg\",\"112.50 deg\",\"127.50 deg\",\"142.50 deg\",\"157.50 deg\",\"172.50 deg\"]. Column 2 Labels from ENERGY: [\"PAD @ energy00\",\"PAD @ energy01\",\"PAD @ energy02\",\"PAD @ energy03\",\"PAD @ energy04\",\"PAD @ energy05\",\"PAD @ energy06\",\"PAD @ energy07\",\"PAD @ energy08\",\"PAD @ energy09\",\"PAD @ energy10\",\"PAD @ energy11\",\"PAD @ energy12\",\"PAD @ energy13\",\"PAD @ energy14\",\"PAD @ energy15\"].",
+      "unitText": "s^3/km^6",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT30S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "12 16",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/IBEX/Lo/Angular_Histograms",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/IBEX/Lo/Angular_Histograms",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "IBEX-Lo Angular Histograms",
+  "sdDatePublished": "2021-03-11",
+  "description": "Each table (CSV file) captures the numbers \nof counts of arriving energetic neutral atoms, as integrated \nover a full 8-day orbit, for a single IBEX-Lo energy step, \nfor one of two categories of species (hydrogen, oxygen plus\ncarbon, the latter being labelled \"Oxygen\" in file names).  \nNumbers of counts are given in 360 1-degree bands in\nspacecraft spin phase.  Each table is CSV-formatted Excel.  \nEach subdirectory is for a given energy band and has the \ntables (files) for each of several orbits for each of the two \nspecies categories.",
+  "abstract": "Each table (CSV file) captures the numbers \nof counts of arriving energetic neutral atoms, as integrated \nover a full 8-day orbit, for a single IBEX-Lo energy step, \nfor one of two categories of species (hydrogen, oxygen plus\ncarbon, the latter being labelled \"Oxygen\" in file names).  \nNumbers of counts are given in 360 1-degree bands in\nspacecraft spin phase.  Each table is CSV-formatted Excel.  \nEach subdirectory is for a given energy band and has the \ntables (files) for each of several orbits for each of the two \nspecies categories.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Heliosheath"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/mass_spectrometer_data/angular_histograms/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Directory with energy-range-specific subdirectories"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/mass_spectrometer_data/angular_histograms/",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ENA arrival direction histogram",
+      "description": "ENA arrival direction histogram",
+      "unitText": "Counts"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

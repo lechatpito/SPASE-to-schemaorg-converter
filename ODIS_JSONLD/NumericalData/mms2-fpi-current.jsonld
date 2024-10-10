@@ -1,0 +1,64 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MMS/MMS2/FPI/mms2-fpi-current",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MMS/MMS2/FPI/mms2-fpi-current",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS2 - FPI - fast mode - electric current",
+  "sdDatePublished": "2024-05-23",
+  "description": "Derived parameter from electron and ion datasets of FPI instrument in Fast Survey Mode.\n\n            Electric current: mms2_fast_jgse = 1.6e-10*(mms2_des_ne+mms2_dis_ni)*0.5*(mms2_dis_vgse-mms2_des_vgse)\n            ",
+  "abstract": "Derived parameter from electron and ion datasets of FPI instrument in Fast Survey Mode.\n\n            Electric current: mms2_fast_jgse = 1.6e-10*(mms2_des_ne+mms2_dis_ni)*0.5*(mms2_dis_vgse-mms2_des_vgse)\n            ",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "j_gse",
+      "description": "Electric current = 1.6e-10*(mms2_des_ne+mms2_dis_ni)*0.5*(mms2_dis_vgse-mms2_des_vgse)",
+      "unitText": "A/m**2",
+      "defaultValue": "-1e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "jx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "mms2_fast_jgse(0)"
+          },
+          {
+            "Name": "jy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "mms2_fast_jgse(1)"
+          },
+          {
+            "Name": "jz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "mms2_fast_jgse(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

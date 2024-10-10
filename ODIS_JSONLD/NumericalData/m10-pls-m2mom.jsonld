@@ -1,0 +1,73 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Mariner10/PLS/m10-pls-m2mom",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Mariner10/PLS/m10-pls-m2mom",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Mariner 10 - PLS - e- : flyby mercury 2 - moments",
+  "sdDatePublished": "2021-02-12",
+  "description": "This dataset contains parameters of the electron distribution (density,  \ntemperature) derived from the plasma science experiment on Mariner 10         \nduring the first Mercury encounter. This file contains Maxwellian fits        \nto the distribution halo, and two cores, plus a moment estimate. If the       \ndistribution does not have a halo, or only has a single core, then the        \n\t\t    halo or core2 columns will contain missing data flags.\n    ",
+  "abstract": "This dataset contains parameters of the electron distribution (density,  \ntemperature) derived from the plasma science experiment on Mariner 10         \nduring the first Mercury encounter. This file contains Maxwellian fits        \nto the distribution halo, and two cores, plus a moment estimate. If the       \ndistribution does not have a halo, or only has a single core, then the        \n\t\t    halo or core2 columns will contain missing data flags.\n    ",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "halo temp",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "core 1 temp",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "core 2 temp",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "moment temp",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "halo dens",
+      "unitText": "cm**-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "core 1 dens",
+      "unitText": "cm**-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "core 2 dens",
+      "unitText": "cm**-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "moment dens",
+      "unitText": "cm**-3"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

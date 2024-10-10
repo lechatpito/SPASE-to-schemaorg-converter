@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/THEMIS/E/Models/the-msph-models",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/THEMIS/E/Models/the-msph-models",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "THEMIS-E - Analytical Models - distance to neutral sheet",
+  "sdDatePublished": "2024-05-23",
+  "description": "\n            * Distance (Re) from s/c location to Fairfield1970 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle. Valid for Ysm less than 15 Re.\n            * Distance (Re) from s/c location to Fairfield1980 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle.\n         ",
+  "abstract": "\n            * Distance (Re) from s/c location to Fairfield1970 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle. Valid for Ysm less than 15 Re.\n            * Distance (Re) from s/c location to Fairfield1980 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle.\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "dZ Fairfield70",
+      "description": "Distance (Re) from s/c location to Fairfield1970 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle. Valid for Ysm less than 15 Re.",
+      "unitText": "Re"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dZ Fairfield80",
+      "description": "Distance (Re) from s/c location to Fairfield1980 neutral sheet position. Depends on spacecraft location in SM coordinates and dipole tilt angle.",
+      "unitText": "Re"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

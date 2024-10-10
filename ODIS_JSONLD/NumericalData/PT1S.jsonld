@@ -1,0 +1,125 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NSF/NumericalData/AALPIP/magnetometer/PG5/PT1S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NSF/NumericalData/AALPIP/magnetometer/PG5/PT1S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PG5 Ground-based Vector Magnetic Field 1 s Data",
+  "sdDatePublished": "2024-07-08",
+  "description": "PG5 is located at -81.96 deg GeoLat, 5.71 deg GeoLong and is part of an autonomous adaptive low-power instrument platform (AAL-PIP) chain of six stations has been established on East Antarctic Plateau along the 40 deg geomagnetic meridian, to investigate interhemispheric geomagnetically conjugate current systems, waves, and other space weather phenomena in Polar Regions. These six stations, PG0 to PG5, which host low-power Fluxgate magnetometers, dual frequency GPS receivers, HF radio experiment, and run autonomously with solar power and two-way satellite communication, are designated at the geomagnetically conjugate (based on the International Geomagnetic Reference Field) locations of the West Greenland geomagnetic chain covering magnetic latitudes from 70 deg to 80 deg.",
+  "abstract": "PG5 is located at -81.96 deg GeoLat, 5.71 deg GeoLong and is part of an autonomous adaptive low-power instrument platform (AAL-PIP) chain of six stations has been established on East Antarctic Plateau along the 40 deg geomagnetic meridian, to investigate interhemispheric geomagnetically conjugate current systems, waves, and other space weather phenomena in Polar Regions. These six stations, PG0 to PG5, which host low-power Fluxgate magnetometers, dual frequency GPS receivers, HF radio experiment, and run autonomously with solar power and two-way satellite communication, are designated at the geomagnetically conjugate (based on the International Geomagnetic Reference Field) locations of the West Greenland geomagnetic chain covering magnetic latitudes from 70 deg to 80 deg.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "HDZ Magnetic Field Components ",
+      "description": "HDZ magnetic field components",
+      "unitText": "nT",
+      "minValue": "-60000",
+      "maxValue": "+60000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT1S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1: H component of the magnetic field.",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2: D component of the magnetic field.",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3: Z component of the magnetic field.",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Component Labels",
+      "description": "This is metadata: Units for the magnetic field component. These should all be nT."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Component Labels",
+      "description": "This is metadata: Labels for the magnetic field component."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Component Number",
+      "description": "Number of the magnetic field component.",
+      "minValue": "1",
+      "maxValue": "3",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Seconds since Jan 1, 1970",
+      "description": "Second since Jan 1, 1970 00:00:00",
+      "unitText": "s",
+      "minValue": "0",
+      "maxValue": "5.0000e+09",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT1S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Date and Time",
+      "description": "Date and Time",
+      "unitText": "msec",
+      "minValue": "01-Jan-2001 00:00:00.000",
+      "maxValue": "31-Dec-2100 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Zero Time",
+      "description": "'01-Jan-1970 00:00:00'",
+      "unitText": "msec",
+      "minValue": "01-Jan-1900 00:00:00.000",
+      "maxValue": "31-Dec-2029 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time Range of Data",
+      "description": "Time range of data in the data file.",
+      "unitText": "msec",
+      "minValue": "01-Jan-2001 00:00:00.000",
+      "maxValue": "31-Dec-2100 23:59:59.999",
+      "defaultValue": "31-Dec-9999 23:59:59.999"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

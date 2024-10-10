@@ -1,0 +1,146 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/VEX/IMA/vex-ima-param",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/VEX/IMA/vex-ima-param",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "VEX - IMA - imaextra moments",
+  "sdDatePublished": "2021-05-11",
+  "description": "Venux Express (VEX) ASPERA-4 Ion Mass Analyzer (IMA) data (moments)\n                Calculated using Andrei Fedorov (IRAP) procedure",
+  "abstract": "Venux Express (VEX) ASPERA-4 Ion Mass Analyzer (IMA) data (moments)\n                Calculated using Andrei Fedorov (IRAP) procedure",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Venus"
+    },
+    {
+      "@type": "Place",
+      "name": "Venus.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "protons: moments quality",
+      "description": "Proton moments quality flag",
+      "unitText": "0-1",
+      "minValue": "0",
+      "maxValue": "1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy: moments quality",
+      "description": "Heavy ion moments quality flag",
+      "unitText": "0-1",
+      "minValue": "0",
+      "maxValue": "1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "protons: density",
+      "description": "Proton density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy: density",
+      "description": "Heavy ion density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "protons: temperature",
+      "description": "Proton temperature",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy: temperature",
+      "description": "Heavy ion temperature",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "protons: v_vso",
+      "description": "Proton bulk velocity components in VSO coordinates",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "vex_h_vel(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "vex_h_vel(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "vex_h_vel(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heavy: v_vso",
+      "description": "Heavy ion bulk velocity components in VSO coordinates",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "vex_o_vel(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "vex_o_vel(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "vex_o_vel(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "scan flag",
+      "description": "Scan flag : 0 - no scanning; 1 - scanning"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

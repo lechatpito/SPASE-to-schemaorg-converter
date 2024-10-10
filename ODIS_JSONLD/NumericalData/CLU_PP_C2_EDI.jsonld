@@ -1,0 +1,109 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Cluster-2/EDI/CLU_PP_C2_EDI",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Cluster-2/EDI/CLU_PP_C2_EDI",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cluster 2 EDI Prime Parameters",
+  "sdDatePublished": "2022-02-22",
+  "description": "This data set contains the Cluster 2 EDI Prime Parameters. Those parameters  are the 3 components of the electron drift velocity and the 3 components of the electric field (cartesian components, GSE coordinates, corrected for spacecraft motion), the instrument status and a Reduced chi-squared variable which is a floating point scalar.\n\nCaveats\nThe measured electron drift velocity cannot always be separated into the electric-field and magnetic-gradient induced parts. In such cases the computed electric fields are subject to contamination by magnetic gradient effects.\nThe data quality is variable, and it is therefore mandatory that the status bytes be consulted before interpreting the data.\nThe number of samples in the averages is variable.",
+  "abstract": "This data set contains the Cluster 2 EDI Prime Parameters. Those parameters  are the 3 components of the electron drift velocity and the 3 components of the electric field (cartesian components, GSE coordinates, corrected for spacecraft motion), the instrument status and a Reduced chi-squared variable which is a floating point scalar.\n\nCaveats\nThe measured electron drift velocity cannot always be separated into the electric-field and magnetic-gradient induced parts. In such cases the computed electric fields are subject to contamination by magnetic gradient effects.\nThe data quality is variable, and it is therefore mandatory that the status bytes be consulted before interpreting the data.\nThe number of samples in the averages is variable.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:CLU_PP_C2_EDI",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 2 EDI Drift Velocity",
+      "description": "Cluster 2 Prime Parameter Electron Drift Instrument drift velocity at spin time resolution",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 2 EDI Electric Field",
+      "description": "Cluster 2 Prime Parameter Electron Drift Instrument electric field at spin time resolution",
+      "unitText": "mV/m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 2 EDI Reduced_chi_sq",
+      "description": "Cluster 2 Prime Parameter Electron Drift Instrument reduced chi-squared values of the BESTARG fit at spin time resolution"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cluster 2 EDI Instrument Status",
+      "description": "Cluster 2 Prime Parameter Electron Drift Instrument status at spin time resolution"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

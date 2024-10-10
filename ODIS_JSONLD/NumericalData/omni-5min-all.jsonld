@@ -1,0 +1,154 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/OMNI/omni-5min-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/OMNI/omni-5min-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "OMNI - Sun / Solar Wind / Ground-Based Indices - 5 min",
+  "sdDatePublished": "2024-04-15",
+  "description": "5 min averaged, multi-source, near-Earth solar wind magnetic \n              field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst \n              geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).\n            ",
+  "abstract": "5 min averaged, multi-source, near-Earth solar wind magnetic \n              field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst \n              geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).\n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "omni5_imf(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "omni5_imf(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "omni5_imf(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw temperature",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw v_bulk",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw v_gse",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "omni5_sw_vgse(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "omni5_sw_vgse(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "omni5_sw_vgse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw ram pressure",
+      "unitText": "nPa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw electric field",
+      "unitText": "mV/m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw beta"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw mach alfven"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw integral proton fluxes",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": ">10MeV",
+            "Index": "1",
+            "ParameterKey": "omni_5min_pflux(0)"
+          },
+          {
+            "Name": ">30MeV",
+            "Index": "2",
+            "ParameterKey": "omni_5min_pflux(1)"
+          },
+          {
+            "Name": ">60MeV",
+            "Index": "3",
+            "ParameterKey": "omni_5min_pflux(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

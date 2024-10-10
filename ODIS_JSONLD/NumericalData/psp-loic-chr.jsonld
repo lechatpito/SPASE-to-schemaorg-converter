@@ -1,0 +1,55 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/epiLo/psp-loic-chr",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/epiLo/psp-loic-chr",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP - IS\u2299IS EPI-Lo - ion composition mode : wedges - channel R",
+  "sdDatePublished": "2022-09-02",
+  "description": "         \n             Ion composition mode channel R. The available spectras are obtained by summing 80 directions by wedges of 10 detectors into producing 8 data with 8 looking directions.\n             * Species : Protons\n             * Nb of energy Bins : 16\n             * Energy range : 62 keV - 8.32 MeV\n             * Nb of looking directions : 80\n         ",
+  "abstract": "         \n             Ion composition mode channel R. The available spectras are obtained by summing 80 directions by wedges of 10 detectors into producing 8 data with 8 looking directions.\n             * Species : Protons\n             * Nb of energy Bins : 16\n             * Energy range : 62 keV - 8.32 MeV\n             * Nb of looking directions : 80\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux : 2D",
+      "description": "\n               Proton flux on 8 wedges\n           ",
+      "unitText": "1/cm\u00b2/sr/s/(MeV/nuc)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ count rate : 2D",
+      "description": "\n             Protons count rate on 8 wedges\n         ",
+      "unitText": "counts/sec"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

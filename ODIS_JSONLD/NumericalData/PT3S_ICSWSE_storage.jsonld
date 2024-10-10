@@ -1,0 +1,54 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ICSWSE/EMN/YAP/fluxgate/PT3S_ICSWSE_storage",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ICSWSE/EMN/YAP/fluxgate/PT3S_ICSWSE_storage",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "EMN observation network 3sec resolution geomagnetic field data at Yap, FSM",
+  "sdDatePublished": "2014-01-03",
+  "description": "Geomagnetic field data observed at EMN Yap station, FSM. The time resolution is 3 second. The data consist of 3 components (H, D, Z).",
+  "abstract": "Geomagnetic field data observed at EMN Yap station, FSM. The time resolution is 3 second. The data consist of 3 components (H, D, Z).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "keywords": "ground observation magnetometer geomagnetic field",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://data.icswse.kyushu-u.ac.jp/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "hdz_3sec",
+      "description": "3 components and total geomagnetic field value in unit of nano tesla. H is horizontal component (northward positive). D is declination component (northward positive). Z is vertical component (downward positive). Our observation system can keep time accuracy within 0.1 second. However it depends on the receiving condition of radio wave at observatory. Pay attention to use of our data, especially in a study affected by time accuracy. Our recording system cannot record quick variation more than about 2nT/3sec (corresponds to 40nT/min). There is not a problem for use of data in usual variation, but attention is necessary for use of data at SC.",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

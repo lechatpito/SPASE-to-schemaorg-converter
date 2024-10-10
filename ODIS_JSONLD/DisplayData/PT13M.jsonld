@@ -1,0 +1,45 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/SDO/PT13M",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/SDO/PT13M",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SDO Browse Images and Movies",
+  "sdDatePublished": "2020-07-07",
+  "description": "Solar movies and imagery from each of the 10 AIA\n(Atmospheric Imaging Assembly) wavelengths, plus HMI (Helioseismic\nand Magnetic Imager) magnetograms, intensitygrams and dopplergrams,\nplus certain multi-wavelength and multi-sensor composites are\noffered.  Timespan and temporal and spatial resolution are user-\nspecified, subject to a 400 images per query limit.\n",
+  "abstract": "Solar movies and imagery from each of the 10 AIA\n(Atmospheric Imaging Assembly) wavelengths, plus HMI (Helioseismic\nand Magnetic Imager) magnetograms, intensitygrams and dopplergrams,\nplus certain multi-wavelength and multi-sensor composites are\noffered.  Timespan and temporal and spatial resolution are user-\nspecified, subject to a 400 images per query limit.\n",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://sdo.gsfc.nasa.gov/data/aiahmi/",
+      "name": "SDO Project browse page",
+      "description": "Specify date range, images vs. movie, AIA\nwavelength or HMI data type or composite, pixel resolution, time\nresolution."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,2064 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RBSP/B/RPS/L2/PT0.058S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RBSP/B/RPS/L2/PT0.058S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Van Allen Probe B Proton Spectrometer Belt Research - Relativistic Proton Spectrometer (PSBR-RPS) Energies from ~60 MeV to ~2 GeV, Level 2 (L2), 0.058 s Data",
+  "sdDatePublished": "2022-08-18",
+  "description": "Van Allen Probe B, Relativistic Proton Spectrometer, RPS, Proton Spectrometer Belt Research, PSBR, Data. The RPS instrument is a solid state detector telescope combined with a Cherenkov radiator. It measures protons with energies from about 60 MeV to about 2 GeV. For more information, see http://rbsp.aerospace.org/. For a complete description of the instrument, see Mazur et al., 2012, The Relativistic Proton Spectrometer (RPS) for the Van Allen Probes Mission (formerly known as Radiation Belt Storm Probes, RBSP), Space Science Reviews. DOI 10.1007/s11214-012-9926-9, http://www.springerlink.com/content/p84680786570g7qp/. The instrument PI, Joseph Mazur, can be reached at Joseph.E.Mazur@aero.org.",
+  "abstract": "Van Allen Probe B, Relativistic Proton Spectrometer, RPS, Proton Spectrometer Belt Research, PSBR, Data. The RPS instrument is a solid state detector telescope combined with a Cherenkov radiator. It measures protons with energies from about 60 MeV to about 2 GeV. For more information, see http://rbsp.aerospace.org/. For a complete description of the instrument, see Mazur et al., 2012, The Relativistic Proton Spectrometer (RPS) for the Van Allen Probes Mission (formerly known as Radiation Belt Storm Probes, RBSP), Space Science Reviews. DOI 10.1007/s11214-012-9926-9, http://www.springerlink.com/content/p84680786570g7qp/. The instrument PI, Joseph Mazur, can be reached at Joseph.E.Mazur@aero.org.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, Sector Midpoint",
+      "description": "Epoch Time, Coordinated Universal Time, UTC, Midpoint of Sector",
+      "unitText": "ms",
+      "minValue": "01-Jan-0000 00:00:00.000",
+      "maxValue": "31-Dec-9999 23:59:59.998",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, Sector Start",
+      "description": "Epoch Time, Coordinated Universal Time, UTC, Start of Sector",
+      "unitText": "ms",
+      "minValue": "01-Jan-0000 00:00:00.000",
+      "maxValue": "31-Dec-9999 23:59:59.998",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, UTC, Sector End",
+      "description": "Epoch Time, Coordinated Universal Time, UTC, End of Sector",
+      "unitText": "ms",
+      "minValue": "01-Jan-0000 00:00:00.000",
+      "maxValue": "31-Dec-9999 23:59:59.998",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Seconds of Livetime",
+      "description": "Seconds of Livetime in Sector",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "600.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mission Elapsed Time, Sector Midpoint",
+      "description": "Mission Elapsed Time, MET, Midpoint of the Sector",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mission Day, Level 0 Data Point",
+      "description": "Mission Day of Level 0 Files for this Data Point",
+      "minValue": "0",
+      "maxValue": "10000",
+      "defaultValue": "65535",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position Vector, Geographic Cartesian Coordinates",
+      "description": "Spacecraft Position Vector, Geographic, GEO, Cartesian Coordinates, 0=Definitive, 1=Predicted",
+      "unitText": "km",
+      "minValue": "-50000.0",
+      "maxValue": "50000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Xgeo",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "Xgeo"
+            }
+          },
+          {
+            "Name": "Ygeo",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "Ygeo"
+            }
+          },
+          {
+            "Name": "Zgeo",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "Zgeo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Spacecraft Position Vector, Geographic Cartesian Coordinates",
+      "description": "Data Quality Flag, Spacecraft Position Vector, Geographic, GEO, Cartesian Coordinates, 0=Definitive, 1=Predicted",
+      "unitText": "(0=def)",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "65535",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Spacecraft Attitude",
+      "description": "Data Quality Flag, Spacecraft Attitude: 0=Definitive, 1=Quick-Look, 2=Predicted",
+      "unitText": "(0=def)",
+      "minValue": "0",
+      "maxValue": "2",
+      "defaultValue": "65535",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbit Number",
+      "description": "Orbit Number",
+      "minValue": "0",
+      "maxValue": "10000",
+      "defaultValue": "65535",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbit Status",
+      "description": "Orbit Status: 0=Outbound, 1=Inbound",
+      "unitText": "(0=out,1=in)",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "255",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Orbit Epoch",
+      "description": "Orbit Epoch, Decimal Hours since Perigee",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Particle Incidence Angle",
+      "description": "Particle Incidence Angle coming from the Center of Earth relative to Normal Incidence",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Earth Cone Angle",
+      "description": "Earth Cone Angle, Half-Angle of Earth as seen from the Spacecraft",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Measured Magnetic Field Vector, Geographic Cartesian Coordinates",
+      "description": "Measured Magnetic Field Vector, Geographic, GEO, Cartesian Coordinates",
+      "unitText": "nT",
+      "minValue": "-200000.0",
+      "maxValue": "200000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Meas. BXgeo",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "Meas. BXgeo"
+            }
+          },
+          {
+            "Name": "Meas. BYgeo",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "Meas. BYgeo"
+            }
+          },
+          {
+            "Name": "Meas. BZgeo",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "Meas. BZgeo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Measured Magnetic Field Flag",
+      "description": "Measured Magnetic Field Flag: 0=MAG L0 File, 1=MAG L1 File, etc. If this Flag equals 255, then the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model is used for computing Alpha and Beta",
+      "unitText": "(source level)",
+      "minValue": "0",
+      "maxValue": "5",
+      "defaultValue": "255",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RPS Boresight Vector, Geographic Cartesian Coordinates",
+      "description": "Relativistic Proton Spectrometer, RPS, Boresight Vector in Geographic, GEO, Cartesian Coordinates, parallel to incoming normally incident Particles",
+      "minValue": "-1.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Boresight Xgeo",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "Boresight Xgeo"
+            }
+          },
+          {
+            "Name": "Boresight Ygeo",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "Boresight Ygeo"
+            }
+          },
+          {
+            "Name": "Boresight Zgeo",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "Boresight Zgeo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spin Rate, Omega, Geographic Cartesian Coordinates",
+      "description": "Spin Rate, Omega, the Relativistic Proton Spectrometer, RPS, Spin Axis Vector in Geographic, GEO, Cartesian Coordinates, the Vector Norm is the Spin Rate",
+      "unitText": "rad/s",
+      "minValue": "-10.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Spin Xgeo",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "Spin Xgeo"
+            }
+          },
+          {
+            "Name": "Spin Ygeo",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "Spin Ygeo"
+            }
+          },
+          {
+            "Name": "Spin Zgeo",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "Spin Zgeo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Channel Count Rate, Spectrograms, based on EVENT_ENERGY_MIN2SSD",
+      "description": "Data Channel Count Rate, Spectrograms, based on EVENT_ENERGY_MIN2SSD, the Estimated Event Energy calculated by using the Average of Minimum 2 Solid State Detector, SSD, Deposits Algorithm",
+      "unitText": "s^-1",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": [
+          {
+            "Name": "0",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "0"
+            }
+          },
+          {
+            "Name": "1",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "2",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "3",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          },
+          {
+            "Name": "4",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "4"
+            }
+          },
+          {
+            "Name": "5",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "5"
+            }
+          },
+          {
+            "Name": "6",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "6"
+            }
+          },
+          {
+            "Name": "7",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "7"
+            }
+          },
+          {
+            "Name": "8",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "8"
+            }
+          },
+          {
+            "Name": "9",
+            "Index": "10",
+            "RenderingHints": {
+              "AxisLabel": "9"
+            }
+          },
+          {
+            "Name": "10",
+            "Index": "11",
+            "RenderingHints": {
+              "AxisLabel": "10"
+            }
+          },
+          {
+            "Name": "11",
+            "Index": "12",
+            "RenderingHints": {
+              "AxisLabel": "11"
+            }
+          },
+          {
+            "Name": "12",
+            "Index": "13",
+            "RenderingHints": {
+              "AxisLabel": "12"
+            }
+          },
+          {
+            "Name": "13",
+            "Index": "14",
+            "RenderingHints": {
+              "AxisLabel": "13"
+            }
+          },
+          {
+            "Name": "14",
+            "Index": "15",
+            "RenderingHints": {
+              "AxisLabel": "14"
+            }
+          },
+          {
+            "Name": "15",
+            "Index": "16",
+            "RenderingHints": {
+              "AxisLabel": "15"
+            }
+          },
+          {
+            "Name": "16",
+            "Index": "17",
+            "RenderingHints": {
+              "AxisLabel": "16"
+            }
+          },
+          {
+            "Name": "17",
+            "Index": "18",
+            "RenderingHints": {
+              "AxisLabel": "17"
+            }
+          },
+          {
+            "Name": "18",
+            "Index": "19",
+            "RenderingHints": {
+              "AxisLabel": "18"
+            }
+          },
+          {
+            "Name": "19",
+            "Index": "20",
+            "RenderingHints": {
+              "AxisLabel": "19"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Differential Flux Intensity, Unidirectional, Spectrograms versus Energy",
+      "description": "Proton Differential Flux Intensity, Unidirectional, Spectrograms versus Energy",
+      "unitText": "(cm^2 s sr MeV)^-1",
+      "minValue": "0.0",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": [
+          {
+            "Name": "58 MeV",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "58.1000"
+            }
+          },
+          {
+            "Name": "75 MeV",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "74.9000"
+            }
+          },
+          {
+            "Name": "90 MeV",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "89.9000"
+            }
+          },
+          {
+            "Name": "106 MeV",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "106.000"
+            }
+          },
+          {
+            "Name": "123 MeV",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "123.000"
+            }
+          },
+          {
+            "Name": "143 MeV",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "143.000"
+            }
+          },
+          {
+            "Name": "165 MeV",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "165.000"
+            }
+          },
+          {
+            "Name": "192 MeV",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "192.000"
+            }
+          },
+          {
+            "Name": "224 MeV",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "224.000"
+            }
+          },
+          {
+            "Name": "261 MeV",
+            "Index": "10",
+            "RenderingHints": {
+              "AxisLabel": "261.000"
+            }
+          },
+          {
+            "Name": "305 MeV",
+            "Index": "11",
+            "RenderingHints": {
+              "AxisLabel": "305.000"
+            }
+          },
+          {
+            "Name": "356 MeV",
+            "Index": "12",
+            "RenderingHints": {
+              "AxisLabel": "356.000"
+            }
+          },
+          {
+            "Name": "414 MeV",
+            "Index": "13",
+            "RenderingHints": {
+              "AxisLabel": "414.000"
+            }
+          },
+          {
+            "Name": "469 MeV",
+            "Index": "14",
+            "RenderingHints": {
+              "AxisLabel": "469.000"
+            }
+          },
+          {
+            "Name": "529 MeV",
+            "Index": "15",
+            "RenderingHints": {
+              "AxisLabel": "529.000"
+            }
+          },
+          {
+            "Name": "600 MeV",
+            "Index": "16",
+            "RenderingHints": {
+              "AxisLabel": "600.000"
+            }
+          },
+          {
+            "Name": "683 MeV",
+            "Index": "17",
+            "RenderingHints": {
+              "AxisLabel": "683.000"
+            }
+          },
+          {
+            "Name": "787 MeV",
+            "Index": "18",
+            "RenderingHints": {
+              "AxisLabel": "787.000"
+            }
+          },
+          {
+            "Name": "907 MeV",
+            "Index": "19",
+            "RenderingHints": {
+              "AxisLabel": "907.000"
+            }
+          },
+          {
+            "Name": "1325 MeV",
+            "Index": "20",
+            "RenderingHints": {
+              "AxisLabel": "1320.00"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RMS Error, Natural Logarithm, Proton Differential Flux Intensity, Unidirectional, Spectrograms versus Energy",
+      "description": "RMS Error, Natural Logarithm of the Proton Differential Flux Intensity, Unidirectional, ln(FPDU), Spectrograms versus Energy, including Poisson and Cross-Calibration Errors",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": [
+          {
+            "Name": "58 MeV",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "58.1000"
+            }
+          },
+          {
+            "Name": "75 MeV",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "74.9000"
+            }
+          },
+          {
+            "Name": "90 MeV",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "89.9000"
+            }
+          },
+          {
+            "Name": "106 MeV",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "106.000"
+            }
+          },
+          {
+            "Name": "123 MeV",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "123.000"
+            }
+          },
+          {
+            "Name": "143 MeV",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "143.000"
+            }
+          },
+          {
+            "Name": "165 MeV",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "165.000"
+            }
+          },
+          {
+            "Name": "192 MeV",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "192.000"
+            }
+          },
+          {
+            "Name": "224 MeV",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "224.000"
+            }
+          },
+          {
+            "Name": "261 MeV",
+            "Index": "10",
+            "RenderingHints": {
+              "AxisLabel": "261.000"
+            }
+          },
+          {
+            "Name": "305 MeV",
+            "Index": "11",
+            "RenderingHints": {
+              "AxisLabel": "305.000"
+            }
+          },
+          {
+            "Name": "356 MeV",
+            "Index": "12",
+            "RenderingHints": {
+              "AxisLabel": "356.000"
+            }
+          },
+          {
+            "Name": "414 MeV",
+            "Index": "13",
+            "RenderingHints": {
+              "AxisLabel": "414.000"
+            }
+          },
+          {
+            "Name": "469 MeV",
+            "Index": "14",
+            "RenderingHints": {
+              "AxisLabel": "469.000"
+            }
+          },
+          {
+            "Name": "529 MeV",
+            "Index": "15",
+            "RenderingHints": {
+              "AxisLabel": "529.000"
+            }
+          },
+          {
+            "Name": "600 MeV",
+            "Index": "16",
+            "RenderingHints": {
+              "AxisLabel": "600.000"
+            }
+          },
+          {
+            "Name": "683 MeV",
+            "Index": "17",
+            "RenderingHints": {
+              "AxisLabel": "683.000"
+            }
+          },
+          {
+            "Name": "787 MeV",
+            "Index": "18",
+            "RenderingHints": {
+              "AxisLabel": "787.000"
+            }
+          },
+          {
+            "Name": "907 MeV",
+            "Index": "19",
+            "RenderingHints": {
+              "AxisLabel": "907.000"
+            }
+          },
+          {
+            "Name": "1325 MeV",
+            "Index": "20",
+            "RenderingHints": {
+              "AxisLabel": "1320.00"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Quality Flag, Proton Differential Flux Intensity, Unidirectional, Spectrograms versus Energy",
+      "description": "Data Quality Flag, Proton Differential Flux Intensity, Unidirectional, Spectrograms versus Energy",
+      "minValue": "0",
+      "maxValue": "100",
+      "defaultValue": "65535",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": [
+          {
+            "Name": "58 MeV",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "58.1000"
+            }
+          },
+          {
+            "Name": "75 MeV",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "74.9000"
+            }
+          },
+          {
+            "Name": "90 MeV",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "89.9000"
+            }
+          },
+          {
+            "Name": "106 MeV",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "106.000"
+            }
+          },
+          {
+            "Name": "123 MeV",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "123.000"
+            }
+          },
+          {
+            "Name": "143 MeV",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "143.000"
+            }
+          },
+          {
+            "Name": "165 MeV",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "165.000"
+            }
+          },
+          {
+            "Name": "192 MeV",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "192.000"
+            }
+          },
+          {
+            "Name": "224 MeV",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "224.000"
+            }
+          },
+          {
+            "Name": "261 MeV",
+            "Index": "10",
+            "RenderingHints": {
+              "AxisLabel": "261.000"
+            }
+          },
+          {
+            "Name": "305 MeV",
+            "Index": "11",
+            "RenderingHints": {
+              "AxisLabel": "305.000"
+            }
+          },
+          {
+            "Name": "356 MeV",
+            "Index": "12",
+            "RenderingHints": {
+              "AxisLabel": "356.000"
+            }
+          },
+          {
+            "Name": "414 MeV",
+            "Index": "13",
+            "RenderingHints": {
+              "AxisLabel": "414.000"
+            }
+          },
+          {
+            "Name": "469 MeV",
+            "Index": "14",
+            "RenderingHints": {
+              "AxisLabel": "469.000"
+            }
+          },
+          {
+            "Name": "529 MeV",
+            "Index": "15",
+            "RenderingHints": {
+              "AxisLabel": "529.000"
+            }
+          },
+          {
+            "Name": "600 MeV",
+            "Index": "16",
+            "RenderingHints": {
+              "AxisLabel": "600.000"
+            }
+          },
+          {
+            "Name": "683 MeV",
+            "Index": "17",
+            "RenderingHints": {
+              "AxisLabel": "683.000"
+            }
+          },
+          {
+            "Name": "787 MeV",
+            "Index": "18",
+            "RenderingHints": {
+              "AxisLabel": "787.000"
+            }
+          },
+          {
+            "Name": "907 MeV",
+            "Index": "19",
+            "RenderingHints": {
+              "AxisLabel": "907.000"
+            }
+          },
+          {
+            "Name": "1325 MeV",
+            "Index": "20",
+            "RenderingHints": {
+              "AxisLabel": "1320.00"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mission accumulated Dose, Dosimeter 1",
+      "description": "Mission accumulated Dose, Dosimeter 1, Front",
+      "unitText": "rad",
+      "minValue": "0.0",
+      "maxValue": "1.0e+07",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dose Rate, Dosimeter 1",
+      "description": "Dose Rate, Dosimeter 1, Front",
+      "unitText": "rad/s",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mission accumulated Dose, Dosimeter 2",
+      "description": "Mission accumulated Dose, Dosimeter 2, Side",
+      "unitText": "rad",
+      "minValue": "0.0",
+      "maxValue": "1.0e+07",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dose Rate, Dosimeter 2",
+      "description": "Dose Rate, Dosimeter 2, Side",
+      "unitText": "rad/s",
+      "minValue": "0.0",
+      "maxValue": "1.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "McIlwain L Shell Parameter, locally mirroring Particle, OP77Q Magnetic Field Model",
+      "description": "McIlwain L Shell Parameter for a locally mirroring Particle, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pitch Angle, Alpha, incoming along the RPS Boresight Axis",
+      "description": "Pitch Angle, Alpha, incoming along the Relativistic Proton Spectrometer, RPS, Boresight Axis",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gyrophase Angle, Beta, incoming along the RPS Boresight Axis",
+      "description": "Gyrophase Angle, Beta, incoming along the Relativistic Proton Spectrometer, RPS, Boresight Axis, 0\u00b0 when heading away from the Earth, when heading toward from the Earth, 180\u00b0",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Magnetic Field Magnitude, Mirror Point,",
+      "description": "Model Magnetic Field Magnitude, Mirror Point, for an incoming Particle along the Relativistic Proton Spectrometer, RPS, Boresight Axis, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "2.0e+07",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Equatorial Pitch Angle, Alpha, for an incoming Particle, OP77Q Magnetic Field Model",
+      "description": "Equatorial Pitch Angle, Alpha, for an incoming Particle along the Relativistic Proton Spectrometer, RPS, Boresight Axis, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "McIlwain L Shell Parameter, normally incident Particle, OP77Q Magnetic Field Model",
+      "description": "McIlwain L Shell Parameter for a normally incident Particle, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "Re",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roederer L* generalized L Shell Parameter, normally incident Particle, OP77Q Magnetic Field Model",
+      "description": "Roederer L* generalized L Shell Parameter for a normally incident Particle, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "Re",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Third Drift Invariant, normally incident Particle, OP77Q Magnetic Field Model",
+      "description": "Third Drift Invariant, Phi, for a normally incident Particle, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "nT Re^2",
+      "minValue": "1000.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second Adiabatic Invariant, Bounce, for an incident Particle, OP77Q Magnetic Field Model",
+      "description": "Second Adiabatic Invariant, Bounce, for an incident Particle, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "Re",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Kaufmann Integral Invariant, for an incident Particle, OP77Q Magnetic Field Model",
+      "description": "Kaufmann Integral Invariant, K, for an incident Particle, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "nT^1/2 Re",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Spacecraft Magnetic Field Vector, Geographic Cartesian Coordinates, OP77Q Magnetic Field Model",
+      "description": "Model Spacecraft Magnetic Field Vector, Geographic, GEO, Cartesian Coordinates, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "nT",
+      "minValue": "-200000.0",
+      "maxValue": "200000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "OPQ BXgeo",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "OPQ BXgeo"
+            }
+          },
+          {
+            "Name": "OPQ BYgeo",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "OPQ BYgeo"
+            }
+          },
+          {
+            "Name": "OPQ BZgeo",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "OPQ BZgeo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Magnetic Field Magnitude, Field Line Local Minimum, OP77Q Magnetic Field Model",
+      "description": "Model Magnetic Field Magnitude, Field Line Local Minimum, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "200000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Magnetic Local Time, OP77Q Magnetic Field Model",
+      "description": "Spacecraft Position, Magnetic Local Time, MLT, in Hours, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minimum Geodetic Altitude, Particle Drift Orbit, OP77Q Magnetic Field Model",
+      "description": "Minimum Geodetic Altitude, Particle Drift Orbit, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "km",
+      "minValue": "-2000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Equatorial Pitch Angle, Alpha, for an incoming Particle, T89Q Magnetic Field Model",
+      "description": "Equatorial Pitch Angle, Alpha, for an incoming Particle along the Relativistic Proton Spectrometer, RPS, Boresight Axis, computed by using the Tsyganenko 1989 Quiet, T89Q, Magnetic Field Model",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "McIlwain L Shell Parameter, normally incident Particle, T89Q Magnetic Field Model",
+      "description": "McIlwain L Shell Parameter for a normally incident Particle, computed by using the Tsyganenko 1989 Quiet, T89Q, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roederer L* generalized L Shell Parameter, normally incident Particle, T89Q Magnetic Field Model",
+      "description": "Roederer L* generalized L Shell Parameter for a normally incident Particle, computed by using the Tsyganenko 1989 Quiet, T89Q, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Third Drift Invariant, normally incident Particle, T89Q Magnetic Field Model",
+      "description": "Third Drift Invariant, Phi, for a normally incident Particle, computed by using the Tsyganenko 1989 Quiet, T89Q, Magnetic Field Model",
+      "unitText": "nT Re^2",
+      "minValue": "1000.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second Adiabatic Invariant, Bounce, for an incident Particle, T89Q Magnetic Field Model",
+      "description": "Second Adiabatic Invariant, Bounce, for an incident Particle, computed by using the Tsyganenko 1989 Quiet, T89Q, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Kaufmann Integral Invariant, for an incident Particle, T89Q Magnetic Field Model",
+      "description": "Kaufmann Integral Invariant, K, for an incident Particle, computed by using the Tsyganenko 1989 Quiet, T89Q, Magnetic Field Model",
+      "unitText": "nT^1/2 Re",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Spacecraft Magnetic Field Vector, Geographic Cartesian Coordinates, T89Q Magnetic Field Model",
+      "description": "Model Spacecraft Magnetic Field Vector, Geographic, GEO, Cartesian Coordinates, computed by using the Tsyganenko 1989 Quiet, T89Q, Magnetic Field Model",
+      "unitText": "nT",
+      "minValue": "-200000.0",
+      "maxValue": "200000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "T89Q BXgeo",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "T89Q BXgeo"
+            }
+          },
+          {
+            "Name": "T89Q BYgeo",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "T89Q BYgeo"
+            }
+          },
+          {
+            "Name": "T89Q BZgeo",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "T89Q BZgeo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Magnetic Field Magnitude, Field Line Local Minimum, T89Q Magnetic Field Model",
+      "description": "Model Magnetic Field Magnitude, Field Line Local Minimum, computed by using the Tsyganenko 1989 Quiet, T89Q, Magnetic Field Model",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "200000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Magnetic Local Time, T89Q Magnetic Field Model",
+      "description": "Spacecraft Position, Magnetic Local Time, MLT, computed by using the Tsyganenko 1989 Quiet, T89Q, Magnetic Field Model",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minimum Geodetic Altitude, Particle Drift Orbit, T89Q Magnetic Field Model",
+      "description": "Minimum Geodetic Altitude, Particle Drift Orbit, computed by using the Tsyganenko 1989 Quiet, T89Q, Magnetic Field Model",
+      "unitText": "km",
+      "minValue": "-2000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Equatorial Pitch Angle, Alpha, for an incoming Particle, T89D Magnetic Field Model",
+      "description": "Equatorial Pitch Angle, Alpha, for an incoming Particle along the Relativistic Proton Spectrometer, RPS, Boresight Axis, computed by using the Tsyganenko 1989 Disturbed, T89D, Magnetic Field Model",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "McIlwain L Shell Parameter, normally incident Particle, T89D Magnetic Field Model",
+      "description": "McIlwain L Shell Parameter for a normally incident Particle, computed by using the Tsyganenko 1989 Disturbed, T89D, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roederer L* generalized L Shell Parameter, normally incident Particle, T89D Magnetic Field Model",
+      "description": "Roederer L* generalized L Shell Parameter for a normally incident Particle, computed by using the Tsyganenko 1989 Disturbed, T89D, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Third Drift Invariant, normally incident Particle, T89D Magnetic Field Model",
+      "description": "Third Drift Invariant, Phi, for a normally incident Particle, computed by using the Tsyganenko 1989 Disturbed, T89D, Magnetic Field Model",
+      "unitText": "nT Re^2",
+      "minValue": "1000.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second Adiabatic Invariant, Bounce, for an incident Particle, T89D Magnetic Field Model",
+      "description": "Second Adiabatic Invariant, Bounce, for an incident Particle, computed by using the Tsyganenko 1989 Disturbed, T89D, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Kaufmann Integral Invariant, for an incident Particle, T89D Magnetic Field Model",
+      "description": "Kaufmann Integral Invariant, K, for an incident Particle, computed by using the Tsyganenko 1989 Disturbed, T89D, Magnetic Field Model",
+      "unitText": "nT^1/2 Re",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Spacecraft Magnetic Field Vector, Geographic Cartesian Coordinates, T89D Magnetic Field Model",
+      "description": "Model Spacecraft Magnetic Field Vector, Geographic, GEO, Cartesian Coordinates, computed by using the Tsyganenko 1989 Disturbed, T89D, Magnetic Field Model",
+      "unitText": "nT",
+      "minValue": "-200000.0",
+      "maxValue": "200000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "T89D BXgeo",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "T89D BXgeo"
+            }
+          },
+          {
+            "Name": "T89D BYgeo",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "T89D BYgeo"
+            }
+          },
+          {
+            "Name": "T89D BZgeo",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "T89D BZgeo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Magnetic Field Magnitude, Field Line Local Minimum, T89D Magnetic Field Model",
+      "description": "Model Magnetic Field Magnitude, Field Line Local Minimum, computed by using the Tsyganenko 1989 Disturbed, T89D, Magnetic Field Model",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "200000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Magnetic Local Time, T89D Magnetic Field Model",
+      "description": "Spacecraft Position, Magnetic Local Time, MLT, computed by using the Tsyganenko 1989 Disturbed, T89D, Magnetic Field Model",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minimum Geodetic Altitude, Particle Drift Orbit, T89D Magnetic Field Model",
+      "description": "Minimum Geodetic Altitude, Particle Drift Orbit, computed by using the Tsyganenko 1989 Disturbed, T89D, Magnetic Field Model",
+      "unitText": "km",
+      "minValue": "-2000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Equatorial Pitch Angle, Alpha, for an incoming Particle, TS04D Magnetic Field Model",
+      "description": "Equatorial Pitch Angle, Alpha, for an incoming Particle along the Relativistic Proton Spectrometer, RPS, Boresight Axis, computed by using the Tsyganenko-Sitnov 2004 Disturbed, TS04D, Magnetic Field Model",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "McIlwain L Shell Parameter, normally incident Particle, TS04D Magnetic Field Model",
+      "description": "McIlwain L Shell Parameter for a normally incident Particle, computed by using the Tsyganenko-Sitnov 2004 Disturbed, TS04D, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Roederer L* generalized L Shell Parameter, normally incident Particle, TS04D Magnetic Field Model",
+      "description": "Roederer L* generalized L Shell Parameter for a normally incident Particle, computed by using the Tsyganenko-Sitnov 2004 Disturbed, TS04D, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Third Drift Invariant, normally incident Particle, TS04D Magnetic Field Model",
+      "description": "Third Drift Invariant, Phi, for a normally incident Particle, computed by using the Tsyganenko-Sitnov 2004 Disturbed, TS04D, Magnetic Field Model",
+      "unitText": "nT Re^2",
+      "minValue": "1000.0",
+      "maxValue": "1.0e+06",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second Adiabatic Invariant, Bounce, for an incident Particle, TS04D Magnetic Field Model",
+      "description": "Second Adiabatic Invariant, Bounce, for an incident Particle, computed by using the Tsyganenko-Sitnov 2004 Disturbed, TS04D, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Kaufmann Integral Invariant, for an incident Particle, TS04D Magnetic Field Model",
+      "description": "Kaufmann Integral Invariant, K, for an incident Particle, computed by using the Tsyganenko-Sitnov 2004 Disturbed, TS04D, Magnetic Field Model",
+      "unitText": "nT^1/2 Re",
+      "minValue": "0.0",
+      "maxValue": "2000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Spacecraft Magnetic Field Vector, Geographic Cartesian Coordinates, TS04D Magnetic Field Model",
+      "description": "Model Spacecraft Magnetic Field Vector, Geographic, GEO, Cartesian Coordinates, computed by using the Tsyganenko-Sitnov 2004 Disturbed, TS04D, Magnetic Field Model",
+      "unitText": "nT",
+      "minValue": "-200000.0",
+      "maxValue": "200000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "TS04D BXgeo",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "TS04D BXgeo"
+            }
+          },
+          {
+            "Name": "TS04D BYgeo",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "TS04D BYgeo"
+            }
+          },
+          {
+            "Name": "TS04D BZgeo",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "TS04D BZgeo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Model Magnetic Field Magnitude, Field Line Local Minimum, TS04D Magnetic Field Model",
+      "description": "Model Magnetic Field Magnitude, Field Line Local Minimum, computed by using the Tsyganenko-Sitnov 2004 Disturbed, TS04D, Magnetic Field Model",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "200000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft Position, Magnetic Local Time, TS04D Magnetic Field Model",
+      "description": "Spacecraft Position, Magnetic Local Time, MLT, computed by using the Tsyganenko-Sitnov 2004 Disturbed, TS04D, Magnetic Field Model",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minimum Geodetic Altitude, Particle Drift Orbit, TS04D Magnetic Field Model",
+      "description": "Minimum Geodetic Altitude, Particle Drift Orbit, computed by using the Tsyganenko-Sitnov 2004 Disturbed, TS04D, Magnetic Field Model",
+      "unitText": "km",
+      "minValue": "-2000.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Epoch Time, UTC",
+      "description": "Event Epoch Time, Coordinated Universal Time, UTC, accurate to 1/64 s Time Resolution",
+      "unitText": "ms",
+      "minValue": "01-Jan-0000 00:00:00.000",
+      "maxValue": "31-Dec-9999 23:59:59.998",
+      "defaultValue": "31-Dec-9999 23:59:59.999",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Mission Elapsed Time",
+      "description": "Event Mission Elapsed Time, Combination of the Packet Mission Elapsed Time, MET, at the Midpoint of the Sector, MET_SEC, and the Packet EVENT_SUBTIME_CODE",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Mission Day, Level 0 Files",
+      "description": "Event Mission Day of Level 0 Files for this Data Point",
+      "minValue": "0",
+      "maxValue": "10000",
+      "defaultValue": "4294967295",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Serial Number, Level 1",
+      "description": "Event Serial Number in the Level 1 Daily File, the Event Number Counts starts from Zero each Day",
+      "minValue": "0",
+      "maxValue": "86500",
+      "defaultValue": "4294967295",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Serial Number, Level 0",
+      "description": "Event Serial Number in the Level 0 Daily File, the Event Number Counts starts from Zero each Day",
+      "minValue": "0",
+      "maxValue": "1000000",
+      "defaultValue": "4294967295",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Packet Serial Number",
+      "description": "Event Packet Serial Number, Level 0, of the Direct Event Packet, the Direct Event Packet Number ranges from 0 to 86400",
+      "minValue": "0",
+      "maxValue": "86500",
+      "defaultValue": "4294967295",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Slot Serial Number",
+      "description": "Event Slot Serial Number of this Event within its Packet, the Event Slot Serial Number ranges from 0 to about 650",
+      "minValue": "0",
+      "maxValue": "700",
+      "defaultValue": "65535",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Spacecraft Position Vector, Geographic Cartesian Coordinates",
+      "description": "Event Spacecraft Position Vector, Geographic, GEO, Cartesian Coordinates",
+      "unitText": "km",
+      "minValue": "-50000.0",
+      "maxValue": "50000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Xgeo",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "Xgeo"
+            }
+          },
+          {
+            "Name": "Ygeo",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "Ygeo"
+            }
+          },
+          {
+            "Name": "Zgeo",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "Zgeo"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Orbit Number",
+      "description": "Event Orbit Number",
+      "minValue": "0",
+      "maxValue": "10000",
+      "defaultValue": "65535",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Orbit Status",
+      "description": "Event Orbit Status: 0=Outbound, 1=Inbound",
+      "unitText": "(0=out,1=in)",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "255",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Orbit Epoch",
+      "description": "Event Orbit Epoch, Decimal Hours since Perigee",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event McIlwain L Shell Parameter, locally mirroring Particle, OP77Q Magnetic Field Model",
+      "description": "Event McIlwain L Shell Parameter for a locally mirroring Particle, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event McIlwain L Shell Parameter, normally incident Particle, OP77Q Magnetic Field Model",
+      "description": "Event McIlwain L Shell Parameter for a normally incident Particle, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "Earth radii",
+      "minValue": "0.0",
+      "maxValue": "20.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Spacecraft Position, Magnetic Local Time, OP77Q Magnetic Field Model",
+      "description": "Event Spacecraft Position, Magnetic Local Time, MLT, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "h",
+      "minValue": "0.0",
+      "maxValue": "24.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Pitch Angle, Alpha, incoming along the RPS Boresight Axis",
+      "description": "Event Pitch Angle, Alpha, incoming along the Relativistic Proton Spectrometer, RPS, Boresight Axis",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "180.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Gyrophase Angle, Beta, incoming along the RPS Boresight Axis",
+      "description": "Event Gyrophase Angle, Beta, incoming along the Relativistic Proton Spectrometer, RPS, Boresight Axis, 0\u00b0 when heading away from the Earth, when heading toward from the Earth, 180\u00b0",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "360.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Magnetic Field Magnitude at the Mirror Point",
+      "description": "Event Magnetic Field Magnitude at the Mirror Point for an incoming Particle along the Relativistic Proton Spectrometer, RPS, Boresight Axis, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "2.0e+07",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Equatorial Pitch Angle, Alpha, for an incoming Particle, OP77Q Magnetic Field Model",
+      "description": "Event Equatorial Pitch Angle, Alpha, for an incoming Particle along the Relativistic Proton Spectrometer, RPS, Boresight Axis, computed by using the Olson-Pfitzer 1977 Quiet, OP77Q, Magnetic Field Model",
+      "unitText": "\u00b0",
+      "minValue": "0.0",
+      "maxValue": "90.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Detector Pulse Heights",
+      "description": "Event Detector Pulse Heights, D1 to D9",
+      "minValue": "0",
+      "maxValue": "4096",
+      "defaultValue": "65535",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "D1",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "D1"
+            }
+          },
+          {
+            "Name": "D2",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "D2"
+            }
+          },
+          {
+            "Name": "D3",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "D3"
+            }
+          },
+          {
+            "Name": "D4",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "D4"
+            }
+          },
+          {
+            "Name": "D5",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "D5"
+            }
+          },
+          {
+            "Name": "D6",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "D6"
+            }
+          },
+          {
+            "Name": "D7",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "D7"
+            }
+          },
+          {
+            "Name": "D8",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "D8"
+            }
+          },
+          {
+            "Name": "D9",
+            "Index": "9",
+            "RenderingHints": {
+              "AxisLabel": "D9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Energy Deposit",
+      "description": "Event Energy Deposit, D1 to D8",
+      "unitText": "MeV",
+      "minValue": "0.0",
+      "maxValue": "15.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "D1",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "D1"
+            }
+          },
+          {
+            "Name": "D2",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "D2"
+            }
+          },
+          {
+            "Name": "D3",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "D3"
+            }
+          },
+          {
+            "Name": "D4",
+            "Index": "4",
+            "RenderingHints": {
+              "AxisLabel": "D4"
+            }
+          },
+          {
+            "Name": "D5",
+            "Index": "5",
+            "RenderingHints": {
+              "AxisLabel": "D5"
+            }
+          },
+          {
+            "Name": "D6",
+            "Index": "6",
+            "RenderingHints": {
+              "AxisLabel": "D6"
+            }
+          },
+          {
+            "Name": "D7",
+            "Index": "7",
+            "RenderingHints": {
+              "AxisLabel": "D7"
+            }
+          },
+          {
+            "Name": "D8",
+            "Index": "8",
+            "RenderingHints": {
+              "AxisLabel": "D8"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Coulombs deposited in the Microchannel Plate",
+      "description": "Event Coulombs deposited in the Microchannel Plate, MCP, behind the Cherenkov Radiator",
+      "unitText": "C",
+      "minValue": "0.0",
+      "maxValue": "1.0e-10",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Photons collected in the Cherenkov Radiator",
+      "description": "Event Photons collected in the Cherenkov Radiator",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Direction",
+      "description": "Event Direction: 0=Forward, 1=Backward",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "255",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Estimated Event Energy calculated by using EVENT_ENERGY_MIN2SSD",
+      "description": "Estimated Event Energy calculated by using EVENT_ENERGY_MIN2SSD, the Average of Minimum 2 Solid State Detector Deposits, MIN2SSD, Algorithm",
+      "unitText": "MeV",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Estimated Event Energy MIN2SSD Algorithm",
+      "description": "Estimated Event Energy calculated by using the Average of Minimum 2 Solid State Detector Deposits, MIN2SSD, Algorithm",
+      "unitText": "MeV",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Estimated Event Energy, SSD Average Algorithm",
+      "description": "Estimated Event Energy calculated by using the Solid State Detector Average, SSDA, Algorithm",
+      "unitText": "MeV",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Estimated Event Energy, Cherenkov Light",
+      "description": "Estimated Event Energy calculated only by using the Cherenkov Light",
+      "unitText": "MeV",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Standard Error, Natural Logarithm, Event Energy",
+      "description": "Event Standard Error, Natural Logarithm of the Event Energy, ln(E)",
+      "unitText": "MeV",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Data Channel ID Number Particle Assignment",
+      "description": "Event Data Channel ID Number Particle Assignment",
+      "minValue": "0",
+      "maxValue": "20",
+      "defaultValue": "255",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Event Type Classification",
+      "description": "Event Type Classification: -1=Invalid, 0=Unknown, 1=PEN, 2=CHE, 3=Alpha Mode, 127=Fill",
+      "minValue": "-128",
+      "maxValue": "127",
+      "defaultValue": "-128",
+      "cadence": "PT0.058S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Cross-Calibration Factors, Proton Differential Flux Intensity, Unidirectional",
+      "description": "Cross-Calibration Factors, Proton Differential Flux Intensity, Unidirectional, relative to Reference Instrument",
+      "minValue": "0.0",
+      "maxValue": "1.0e+10",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RMS Error, Natural Logarithm, Proton Differential Flux Intensity, Unidirectional",
+      "description": "RMS Error, Natural Logarithm of the Proton Differential Flux Intensity, Unidirectional, ln(FPDU), relative to Reference Instrument",
+      "minValue": "0.0",
+      "maxValue": "4096.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy Channel Centroids, Proton Differential Flux Intensity, Unidirectional",
+      "description": "Energy Channel Centroids, Proton Differential Flux Intensity, Unidirectional",
+      "unitText": "MeV",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Channel, Energy Range",
+      "description": "Proton Channel, Nominal Energy Range for each Channel",
+      "unitText": "MeV",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20 2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Proton Flux Intensity, Differential, Geometric-Energy Factors",
+      "description": "Proton Flux Intensity, Differential, Geometric-Energy Factors, calculated by using Bowtie Analysis",
+      "unitText": "cm^2 sr MeV",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.058S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "20",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

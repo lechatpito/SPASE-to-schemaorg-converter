@@ -1,0 +1,458 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/LANL/1997/MPA/PT86S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/LANL/1997/MPA/PT86S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "LANL1997 Magnetospheric Plasma Analyzer (MPA) at 87 sec Resolution in Spacecraft Coordinates",
+  "sdDatePublished": "2023-12-24",
+  "description": "The LANL 1997-97A MPA data set contains various parameters in a variety of coordinates systems including GEI, spacecraft, polar geographic, and polar magnetic coordinates at about 87 s resolution. These parameters include universal time, denisty, velocity, and temperature for both low and high energy ions and electrons as well as position information and instrument status flags.",
+  "abstract": "The LANL 1997-97A MPA data set contains various parameters in a variety of coordinates systems including GEI, spacecraft, polar geographic, and polar magnetic coordinates at about 87 s resolution. These parameters include universal time, denisty, velocity, and temperature for both low and high energy ions and electrons as well as position information and instrument status flags.",
+  "keywords": [
+    "87 sec",
+    "Geosynchronous",
+    "LANL",
+    "Magnetospheric Plasma Analyzer",
+    "MPA"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Time of proton collection",
+      "description": "This is the time of the proton data collection (electrons 21.5 seconds later). Universal Time in data cell: day, month, year hour, min, seconds. Ex: '01-Jan-1981 00:00:00.000'.",
+      "unitText": "ms",
+      "minValue": "01-08-1992T00:00:00.000",
+      "maxValue": "31-12-2020T23:59:59.000",
+      "defaultValue": "-1.0000e+031"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Time of proton collection",
+      "description": "This is the time of the proton collection (electrons 21.5 seconds later). Time in the format: year, day of year, and second of the same day.",
+      "defaultValue": "-2147483648",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1",
+            "Units": "Years",
+            "ValidMin": "1992",
+            "ValidMax": "2020"
+          },
+          {
+            "Name": "Day of Year",
+            "Index": "2",
+            "Units": "Days",
+            "ValidMin": "0",
+            "ValidMax": "366"
+          },
+          {
+            "Name": "milliseconds of the day",
+            "Index": "3",
+            "Units": "ms",
+            "ValidMin": "0",
+            "ValidMax": "86399000"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Partial Density of Low Energy Ions",
+      "description": "Partial density of low energy ions (1-130 eV/e) at 87 s resolution.",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0000e+031"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Velocity Vector Low-Enery Ions",
+      "description": "Velocity vector low-enery Ions (1-130 eV/e) in spacecraft Coordinates in units of km/s.",
+      "unitText": "km/s",
+      "minValue": "-2000",
+      "maxValue": "2000",
+      "defaultValue": "-1.0000e+031",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "VX",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "VY",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "VZ",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Temperature Low Energy Ions",
+      "description": "Temperature of low energy ions (1-130 eV/e) at 87 s resolution.",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "50000.0",
+      "defaultValue": "-1.0000e+031"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Ratio of Temperature Eigenvalues for Low-E Ions",
+      "description": "Ratio of temperature (Tperp/Tmid) of low energy ions (1-130 eV/e) at 87 s resolution.",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0000e+031"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Partial Density High-E Ions",
+      "description": "Partial density of high energy ions (.13-45 keV/e) at 87 s resolution.",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "10000.0",
+      "defaultValue": "-1.0000e+031"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Velocity Vector High-E Ions",
+      "description": "Velocity vector high-enery protons (.13-45 keV/e) in spacecraft Coordinates in units of km/s.",
+      "unitText": "km/s",
+      "minValue": "-2000",
+      "maxValue": "2000",
+      "defaultValue": "-1.0000e+031",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "VX",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "VY",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "VZ",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Temperature High-E Ions",
+      "description": "Temperature of high energy ions (.13-45 keV/e) at 87 s resolution.",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "50000.0",
+      "defaultValue": "-1.0000e+031",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Temp Parallel",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Temp Perpendicular",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Polar, Azimuthal Angle High-E Proton Symmetry Axis",
+      "description": "Proton symmetry axis: polar angle relative to Earth direction, azimuthal angle from the north at 87 s resolution.",
+      "unitText": "deg",
+      "defaultValue": "-1.0000e+031",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Polar Angle",
+            "Qualifier": "DirectionAngle.PolarAngle",
+            "Index": "1",
+            "Units": "degrees",
+            "ValidMin": "0",
+            "ValidMax": "180"
+          },
+          {
+            "Name": "Azimuthal Angle",
+            "Qualifier": "DirectionAngle.AzimuthAngle",
+            "Index": "2",
+            "Units": "degrees",
+            "ValidMin": "-90",
+            "ValidMax": "90"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Ratio of Temperature Eigenvalues for High-E Ions",
+      "description": "Ratio of temperature (Tperp/Tmid) of low energy ions (.13-45 keV/e) at 87 s resolution.",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0000e+031"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Partial Density Electrons",
+      "description": "Partial density of electrons (.03-45 keV/q) at 87 s resolution.",
+      "unitText": "# cm^-3",
+      "minValue": "0.0",
+      "maxValue": "100000.0",
+      "defaultValue": "-1.0000e+031"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Temperature Electrons",
+      "description": "Temperature of electrons (.03-45 keV/q) at 87 s resolution.",
+      "unitText": "eV",
+      "minValue": "0.0",
+      "maxValue": "50000.0",
+      "defaultValue": "-1.0000e+031",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Temp Parallel",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Temp Perpendicular",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Polar, Azimuthal Angle Electron Symmetry Axis",
+      "description": "Electron symmetry axis: polar angle relative to Earth direction, azimuthal angle from the north at 87 s resolution.",
+      "defaultValue": "-1.0000e+031",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "Polar Angle",
+            "Qualifier": "DirectionAngle.PolarAngle",
+            "Index": "1",
+            "Units": "degrees",
+            "ValidMin": "0",
+            "ValidMax": "180"
+          },
+          {
+            "Name": "Azimuthal Angle",
+            "Qualifier": "DirectionAngle.AzimuthAngle",
+            "Index": "2",
+            "Units": "degrees",
+            "ValidMin": "-90",
+            "ValidMax": "90"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Ratio of Temperature Eigenvalues for Electrons",
+      "description": "Ratio of temperature (Tperp/Tmid) of electrons (.03-45 keV/q) at 87 s resolution.",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "-1.0000e+031"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Spacecraft Potential",
+      "description": "Spacecraft potential in units of volts at 87 s resolution.",
+      "unitText": "volts",
+      "minValue": "-20000.",
+      "maxValue": "0.0",
+      "defaultValue": "-1.0000e+031"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Background Count Rate (Not Clear what this is the background for)",
+      "description": "Background Count Rate at 87 s resolution.",
+      "unitText": "cts/9ms",
+      "minValue": "0.0",
+      "maxValue": "1000.0",
+      "defaultValue": "-1.0000e+031",
+      "cadence": "PT87S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Spacecraft Position, Polar Geographic Coordinates",
+      "description": "Spacecraft position, polar geographic coordinates (radius,lat,long) at 87 s resolution.",
+      "defaultValue": "-1.0000e+031",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Radius",
+            "Qualifier": "Magnitude",
+            "Index": "1",
+            "Units": "EarthRadii",
+            "ValidMin": "0",
+            "ValidMax": "10"
+          },
+          {
+            "Name": "Latitude",
+            "Qualifier": "DirectionAngle.ElevationAngle",
+            "Index": "2",
+            "Units": "degrees",
+            "ValidMin": "-90",
+            "ValidMax": "90"
+          },
+          {
+            "Name": "Longitude",
+            "Qualifier": "DirectionAngle.AzimuthAngle",
+            "Index": "3",
+            "Units": "degrees",
+            "ValidMin": "-180",
+            "ValidMax": "180"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Spacecraft Position, Cartesian Geocentric Celestial Inertial coordinates",
+      "description": "Spacecraft position, cartesian coordinates (radius,lat,long) at 87 s resolution. Geocentric Celestial Inertial, is earth centered, with the X-axis pointing from the Earth towards the first point of Aries (the position of the Sun at vernal equinox). This direction is the intersection of the Earth's equatorial plane and the ecliptic plane--thus the X-axis lies in both planes. The Z-axis is parallel to the rotation axis of the Earth, and the Y-axis completes a right-handed orthogonal coordinate system. The X-axis is the direction of the mean vernal equinox of J2000. This is a virtual variable generated by read_myCDF w/ useof the data in the sc_pos_geo variable and a conversion routinespecified in the function attribute, namely conv_pos.",
+      "defaultValue": "-1.0000e+031",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "X",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ValidMin": "-1000",
+            "ValidMax": "1000"
+          },
+          {
+            "Name": "Y",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ValidMin": "-1000",
+            "ValidMax": "1000"
+          },
+          {
+            "Name": "Z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ValidMin": "-1000",
+            "ValidMax": "1000"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Spacecraft Position, Polar Magnetic Coordinates",
+      "description": "Spacecraft position, polar magnetic coordinates (radius,lat,long) at 87 s resolution.",
+      "defaultValue": "-1.0000e+031",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Radius",
+            "Qualifier": "Magnitude",
+            "Index": "1",
+            "Units": "EarthRadii",
+            "ValidMin": "0",
+            "ValidMax": "10"
+          },
+          {
+            "Name": "Latitude",
+            "Qualifier": "DirectionAngle.ElevationAngle",
+            "Index": "2",
+            "Units": "degrees",
+            "ValidMin": "-90",
+            "ValidMax": "90"
+          },
+          {
+            "Name": "Magnetic Local Time",
+            "Qualifier": "DirectionAngle.AzimuthAngle",
+            "Index": "3",
+            "Units": "hours",
+            "ValidMin": "0",
+            "ValidMax": "24"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Data Quality Flag",
+      "description": "Data quality flag at 87 s resolution. Data quality flag, 0 = ok, 1 = Results unreliable.",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Data Gap Flag",
+      "description": "LANL 97A data gap flag at 87 s resolution. Data gap flag, 0 = No Gap, 10 = No data available.",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "-2147483648"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LANL 97A MPA Time Offset for Electron Measurements",
+      "description": "Time offset for electron measurements at 87 s resolution. Electron sample time is 21.5 seconds after that of ions.",
+      "unitText": "ms",
+      "minValue": "21500.0",
+      "maxValue": "21500.0",
+      "defaultValue": "-1.0000e+031"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

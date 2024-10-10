@@ -1,0 +1,99 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/MMS-2/Fields/SCM/MMS_SCM_2_L2_BPSD_FAST",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/MMS-2/Fields/SCM/MMS_SCM_2_L2_BPSD_FAST",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS-2 SCM Search Coil Magnetometer Level-2 Onboard Fast Survey Power Spectral Density (CDF)",
+  "sdDatePublished": "2022-07-07",
+  "description": "This data set contains the  power spectral density of magnetic field fluctuations computed by onboard FFTs by the Digital Signal Processor (DSP) from from MMS-2 SCM waveforms during fast survey modes between 0 and 8192 Hz. Their nominal time resolution is 2 s, and nominal number of frequency channels is 56 with logarithmic frequency scale.\nThis product is computed in space from individual components that are not synchronized to the 1 second pulse. Therefore, the timing between channels can be inaccurate by a fraction of a second. The samples times are interval start times taken from the x component.\nSCM1 (spin plane component, -x SCM sensor) component magnetic power spectral density.\nSCM2 (spin plane component, -z SCM sensor) component magnetic power spectral density.\nSCM3 (spin axis component, -y SCM sensor) component magnetic power spectral density.\nOmni-directional magnetic power spectral density: square root of the sum of the squares of 3 components.",
+  "abstract": "This data set contains the  power spectral density of magnetic field fluctuations computed by onboard FFTs by the Digital Signal Processor (DSP) from from MMS-2 SCM waveforms during fast survey modes between 0 and 8192 Hz. Their nominal time resolution is 2 s, and nominal number of frequency channels is 56 with logarithmic frequency scale.\nThis product is computed in space from individual components that are not synchronized to the 1 second pulse. Therefore, the timing between channels can be inaccurate by a fraction of a second. The samples times are interval start times taken from the x component.\nSCM1 (spin plane component, -x SCM sensor) component magnetic power spectral density.\nSCM2 (spin plane component, -z SCM sensor) component magnetic power spectral density.\nSCM3 (spin axis component, -y SCM sensor) component magnetic power spectral density.\nOmni-directional magnetic power spectral density: square root of the sum of the squares of 3 components.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:MMS_SCM_2_L2_BPSD_FAST",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-2 SCM1 component   Onboard Fast  Survey magnetic power spectral  density",
+      "description": "MMS-2 SCM1 component Onboard Fast Survey magnetic power spectral  density (spin plane component, -x SCM sensor)",
+      "unitText": "nT^2 Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-2 SCM2 component   Onboard Fast  Survey magnetic power spectral  density",
+      "description": "MMS-2 SCM2 component Onboard Fast Survey magnetic power spectral  density (spin plane component, -z SCM sensor)",
+      "unitText": "nT^2 Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-2 SCM3 component   Onboard Fast  Survey magnetic power spectral  density",
+      "description": "MMS-2 SCM3 component Onboard Fast Survey magnetic power spectral  density (spin axis component, -y SCM sensor)",
+      "unitText": "nT^2 Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMS-2 SCM Omni-directional Onboard Fast  Survey magnetic power spectral density",
+      "description": "MMS-2 SCM Omni-directional Onboard Fast  Survey magnetic power spectral density: square root of the  sum of the squares of 3 components",
+      "unitText": "nT^2 Hz^-1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

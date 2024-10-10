@@ -1,0 +1,115 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/MMS/4/FIELDS/EDP/Burst/Level2Pre/HMFE/PT0.00001525878906S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/MMS/4/FIELDS/EDP/Burst/Level2Pre/HMFE/PT0.00001525878906S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS 4 Electric Double Probe (EDP) Axial Double Probe, Spin Plane Double Probe (ADP-SDP) Three-Dimensional HMFE Electric Field, Level 2 (L2), Burst Mode, 0.01525878906 ms Data",
+  "sdDatePublished": "2023-03-28",
+  "description": "Electric Double Probe, Three-Dimensional HMFE Electric Field, Level 2, Burst Mode, Level 1B AC Electric Field Data",
+  "abstract": "Electric Double Probe, Three-Dimensional HMFE Electric Field, Level 2, Burst Mode, Level 1B AC Electric Field Data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time Tags, Interval Centered, in Terrestrial Time 2000 (TT2000)",
+      "unitText": "ns",
+      "minValue": "-946727959814622001",
+      "maxValue": "946728068183999999",
+      "defaultValue": "-9223372036854775808",
+      "cadence": "PT0.00001525878906S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ADP and SDP Calibrated DC Electric Field, L2pre (DSL)",
+      "description": "L2pre Axial Double Probe (ADP) and Spin-Plane Double Probe (SDP) Calibrated DC Electric Field, Despun Angular Momentum (DSL) Coordinates, Level 2, Burst Mode",
+      "unitText": "mV/m",
+      "minValue": "-700",
+      "maxValue": "700",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.00001525878906S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Ex",
+            "Index": "1"
+          },
+          {
+            "Name": "Ey",
+            "Index": "2"
+          },
+          {
+            "Name": "Ez",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ADP and SDP Parallel DC Electric Field and Error",
+      "description": "L2pre Axial Double Probe (ADP) and Spin-Plane Double Probe (SDP) Calibrated Parallel DC Electric Field and the Parallel DC Electric Field Error, Level 2, Burst Mode",
+      "unitText": "mV/m",
+      "minValue": "-700",
+      "maxValue": "700",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.00001525878906S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

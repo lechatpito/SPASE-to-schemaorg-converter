@@ -1,0 +1,154 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/PSP/FIELDS/SCM/PARKERSP_FIELDS_SCM_DBM",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/PSP/FIELDS/SCM/PARKERSP_FIELDS_SCM_DBM",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PARKER SOLAR PROBE FIELDS Level 2 DFB Search Coil Magnetometer (SCM) Burst Waveform (DBM) Data (CDF)",
+  "sdDatePublished": "2022-07-04",
+  "description": "This data set contains the PARKER SOLAR PROBE FIELDS Level 2 Search-coil (SCM) burst waveform data from the low-frequency (LF) antennas. In contrast to regular waveforms, bursts are recorded at higher frequency and for short time intervals.\nThe waveforms consist of 3 components of the magnetic field, expressed in sensor coordinates (Bu, Bv, Bw) and in spacecraft coordinates (Bx, By, Bz). For the description of the coordinate systems, see the description of the SCM. Time (epoch) is in TT2000 format and corresponds to nanoseconds since 1 Jan 2000 12:00:00 with leap seconds included.\nBurst waveforms are general recorded below 0.25 AU but not exclusively at perihelion. They are triggered by events seen in the electric field. Their time resolution is 150000 Hz / 2^N with, in general, N=1. The LF antennas of the SCM have an upper frequency rolloff at 10 kHz. For that reason, waveforms are more likely to be contaminated by noise above 10 kHz.\nBurst waveforms of the Search-Coil Magnetometer (SCM) [Jannet et al., 2021] are registered by the Digital Fields Board (DFB) instrument [Malaspina et al., 2016], which is part of the FIELDS suite [Bale et al., 2016]. DFB provides waveform data for various FIELDS sensors.\nThe Level 2 data products are calibrated for :\n   1. DFB in-band gain,\n   2. DFB analog filter gain/phase response,\n   3. DFB digital filter phase (*not* gain) response, and \n   4. the search coil preamplifier gain/phase response (when applicable).\nCalibrations for the DFB digital filter gain response have *not* been implemented, but the required convolution kernel is provided in the cdf datafiles. The reason for not including this gain response to the L2 data is because this can introduce unphysical enhancements of spectral power at high frequencies when the uncorrected signal is dominated by noise. This effect should be examined carefully when determining spectral slopes and features at the highest frequencies. All magnetic fields are expressed in nT.\nCalculation of the PSP-Sun distance for the selection criterion (see Filter tab) is realized each day at 00:00.\nSCM anomaly:\nFrom 3 March 2019 onwards the LF Bu antenna lost its sensitivity below 1 kHz. This problem occurs whenever the sensor is cold, i.e. at perihelion. At the same time, the sensitivity of the LF Bu antenna to periodic spikes associated with heater cycling has increased by two orders of magnitude. The data are correct for encounter 1 (October-November 2018) only. For subsequent encounters, only Bv and Bw should be used, or Bu above 1 kHz.\nReferences:\nFIELDS website: https://fields.ssl.berkeley.edu/\n[2] Bale, S. et al. (2016), The FIELDS Instrument Suite for Solar Probe Plus. Measuring the Coronal Plasma and Magnetic Field, Plasma Waves and Turbulence, and Radio Signatures of Solar Transients, Space Science Reviews, Volume 204, Issue 1-4, pp.49-82, doi:10.1007/s11214-016-0244-5\n[3] Malaspina, D.M., Ergun, R.E., Bolton, M. et al. (2016), The Digital Fields Board for the FIELDS instrument suite on the Solar Probe Plus mission: Analog and digital signal processing, Journal of Geophysical Research: Space Physics, 121, 5088-5096, doi: 10.1002/2016JA022344\n[4] Jannet, G., Dudok de Wit, T., Krasnoselskikh, V. et al. (2021), Measurement of magnetic field fluctuations in the parker solar probe and solar orbiter missions, Journal of Geophysical Research: Space Physics, 126, e2020JA028543 doi: 10.1029/2020JA028543",
+  "abstract": "This data set contains the PARKER SOLAR PROBE FIELDS Level 2 Search-coil (SCM) burst waveform data from the low-frequency (LF) antennas. In contrast to regular waveforms, bursts are recorded at higher frequency and for short time intervals.\nThe waveforms consist of 3 components of the magnetic field, expressed in sensor coordinates (Bu, Bv, Bw) and in spacecraft coordinates (Bx, By, Bz). For the description of the coordinate systems, see the description of the SCM. Time (epoch) is in TT2000 format and corresponds to nanoseconds since 1 Jan 2000 12:00:00 with leap seconds included.\nBurst waveforms are general recorded below 0.25 AU but not exclusively at perihelion. They are triggered by events seen in the electric field. Their time resolution is 150000 Hz / 2^N with, in general, N=1. The LF antennas of the SCM have an upper frequency rolloff at 10 kHz. For that reason, waveforms are more likely to be contaminated by noise above 10 kHz.\nBurst waveforms of the Search-Coil Magnetometer (SCM) [Jannet et al., 2021] are registered by the Digital Fields Board (DFB) instrument [Malaspina et al., 2016], which is part of the FIELDS suite [Bale et al., 2016]. DFB provides waveform data for various FIELDS sensors.\nThe Level 2 data products are calibrated for :\n   1. DFB in-band gain,\n   2. DFB analog filter gain/phase response,\n   3. DFB digital filter phase (*not* gain) response, and \n   4. the search coil preamplifier gain/phase response (when applicable).\nCalibrations for the DFB digital filter gain response have *not* been implemented, but the required convolution kernel is provided in the cdf datafiles. The reason for not including this gain response to the L2 data is because this can introduce unphysical enhancements of spectral power at high frequencies when the uncorrected signal is dominated by noise. This effect should be examined carefully when determining spectral slopes and features at the highest frequencies. All magnetic fields are expressed in nT.\nCalculation of the PSP-Sun distance for the selection criterion (see Filter tab) is realized each day at 00:00.\nSCM anomaly:\nFrom 3 March 2019 onwards the LF Bu antenna lost its sensitivity below 1 kHz. This problem occurs whenever the sensor is cold, i.e. at perihelion. At the same time, the sensitivity of the LF Bu antenna to periodic spikes associated with heater cycling has increased by two orders of magnitude. The data are correct for encounter 1 (October-November 2018) only. For subsequent encounters, only Bv and Bw should be used, or Bu above 1 kHz.\nReferences:\nFIELDS website: https://fields.ssl.berkeley.edu/\n[2] Bale, S. et al. (2016), The FIELDS Instrument Suite for Solar Probe Plus. Measuring the Coronal Plasma and Magnetic Field, Plasma Waves and Turbulence, and Radio Signatures of Solar Transients, Space Science Reviews, Volume 204, Issue 1-4, pp.49-82, doi:10.1007/s11214-016-0244-5\n[3] Malaspina, D.M., Ergun, R.E., Bolton, M. et al. (2016), The Digital Fields Board for the FIELDS instrument suite on the Solar Probe Plus mission: Analog and digital signal processing, Journal of Geophysical Research: Space Physics, 121, 5088-5096, doi: 10.1002/2016JA022344\n[4] Jannet, G., Dudok de Wit, T., Krasnoselskikh, V. et al. (2021), Measurement of magnetic field fluctuations in the parker solar probe and solar orbiter missions, Journal of Geophysical Research: Space Physics, 126, e2020JA028543 doi: 10.1029/2020JA028543",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:PARKERSP_FIELDS_SCM_DBM",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Waveform from Bu axis",
+      "description": "L2 AC Burst Search Coil from Bu axis",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Search Coil from Bu axis rms value",
+      "description": "L2 AC Burst Search Coil from Bu axis rms value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AC Burst Search Coil from Bu axis max value",
+      "description": "L2 AC Burst Search Coil from Bu axis max value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AC Burst Search Coil from Bu axis min value",
+      "description": "L2 AC Burst Search Coil from Bu axis min value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AC Burst Search Coil from Bu axis median value",
+      "description": "L2 AC Burst Search Coil from Bu axis median value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Waveform from Bv axis",
+      "description": "L2 AC Burst Search Coil from Bv axis",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Search Coil from Bv axis rms value",
+      "description": "L2 AC Burst Search Coil from Bv axis rms value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Search Coil from Bv axis max value",
+      "description": "L2 AC Burst Search Coil from Bv axis max value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Search Coil from Bv axis min value",
+      "description": "L2 AC Burst Search Coil from Bv axis min value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Search Coil from Bv axis median value",
+      "description": "L2 AC Burst Search Coil from Bv axis median value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Waveform from Bw axis",
+      "description": "L2 AC Burst Search Coil from Bw axis",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Search Coil from Bw axis rms value",
+      "description": "L2 AC Burst Search Coil from Bw axis rms value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Search Coil from Bw axis max value",
+      "description": "L2 AC Burst Search Coil from Bw axis max value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Search Coil from Bw axis min value",
+      "description": "L2 AC Burst Search Coil from Bw axis min value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Burst Search Coil from Bw axis median value",
+      "description": "L2 AC Burst Search Coil from Bw axis median value",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FIELDS quality flag",
+      "description": "FIELDS quality flags. This is a bitwise variable, meaning that multiple flags can be set for a single time, by adding flag values. Current flagged values are: 1: FIELDS antenna bias sweep, 2: PSP thruster firing, 4: SCM Calibration, 8: PSP rotations for MAG calibration (MAG rolls), 16: FIELDS MAG calibration sequence, 32: SWEAP SPC in electron mode, 64: PSP Solar limb sensor (SLS) test. 128: PSP spacecraft is off umbra pointing. A value of zero corresponds to no set flags. Not all flags are relevant to all FIELDS data products, refer to notes in the CDF metadata and on the FIELDS SOC website for information on how the various flags impact FIELDS data. Additional flagged items may be added in the future."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/SWEPAM/ace-swepam-stea",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/SWEPAM/ace-swepam-stea",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ACE - SWEPAM - e- pitch angle : 272 eV",
+  "sdDatePublished": "2021-02-24",
+  "description": "These data files contain suprathermal electron pitch angle distribution functions (s^3 cm^-6) at 272 eV from the ACE/SWEPAM-E instrument. The energy channel is ~12% wide, centered at 272 eV. Pitch angle bins are 9 degrees wide, and run from 0 to 180 degrees (so 0-9, 9-18, 18-27 degrees, etc.).\n\nThe break between the core and suprathermal electrons is generally around 70 eV at 1 AU, but varies around this value, at times exceeding 100 eV. Electrons at 272 eV are generally well within the suprathermal range, and the distribution at this energy typically shows very little contribution from the core population. The measured count rates at 272 eV energy provide excellent statistical significance. In addition, because of the high count rates, very few artifacts (for example due to sunlight contamination) are seen in the data at this energy.\n\nThe data are in the solar wind frame, and have been corrected for the spacecraft potential. The spacecraft potential determination requires measurement of the lower energy electrons, and so the potentials calcuated at these times have been interpolated to the times of the suprathermal electron measurements. Transformation to the solar wind frame requires interpolation of the measurements (each at a different energy in the solar wind frame) to the desired energy (272 eV).\n\nAlso note that the detector gains on the SWEPAM-E instrument change over time, including both slowly decreasing gains and abrupt increases when the instrument voltages are increased. The use of these data for long-term studies of the distribution function amplitudes is therefore strongly discouraged.",
+  "abstract": "These data files contain suprathermal electron pitch angle distribution functions (s^3 cm^-6) at 272 eV from the ACE/SWEPAM-E instrument. The energy channel is ~12% wide, centered at 272 eV. Pitch angle bins are 9 degrees wide, and run from 0 to 180 degrees (so 0-9, 9-18, 18-27 degrees, etc.).\n\nThe break between the core and suprathermal electrons is generally around 70 eV at 1 AU, but varies around this value, at times exceeding 100 eV. Electrons at 272 eV are generally well within the suprathermal range, and the distribution at this energy typically shows very little contribution from the core population. The measured count rates at 272 eV energy provide excellent statistical significance. In addition, because of the high count rates, very few artifacts (for example due to sunlight contamination) are seen in the data at this energy.\n\nThe data are in the solar wind frame, and have been corrected for the spacecraft potential. The spacecraft potential determination requires measurement of the lower energy electrons, and so the potentials calcuated at these times have been interpolated to the times of the suprathermal electron measurements. Transformation to the solar wind frame requires interpolation of the measurements (each at a different energy in the solar wind frame) to the desired energy (272 eV).\n\nAlso note that the detector gains on the SWEPAM-E instrument change over time, including both slowly decreasing gains and abrupt increases when the instrument voltages are increased. The use of these data for long-term studies of the distribution function amplitudes is therefore strongly discouraged.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- pitch angle : 272 eV",
+      "unitText": "s^3 cm^-6"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

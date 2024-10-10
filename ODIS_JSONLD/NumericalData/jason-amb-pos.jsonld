@@ -1,0 +1,87 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/JASON3/Ephemeris/jason-amb-pos",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/JASON3/Ephemeris/jason-amb-pos",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "JASON3 - Ephemeris - orbit",
+  "sdDatePublished": "2024-05-23",
+  "description": "xyz in GEO : Origin = Earth's center of mass. X = Intersec\n                tion of Greenwich meridian and geographic equator. Z = Geographic North Pole. Y = c\n                ompletes a right-handed Cartesian triad",
+  "abstract": "xyz in GEO : Origin = Earth's center of mass. X = Intersec\n                tion of Greenwich meridian and geographic equator. Z = Geographic North Pole. Y = c\n                ompletes a right-handed Cartesian triad",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_geo",
+      "unitText": "km",
+      "defaultValue": "-1.e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "jason_amb_xyz(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "jason_amb_xyz(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "jason_amb_xyz(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L",
+      "description": "Calculated McIlwain's L parameter",
+      "unitText": "Re",
+      "defaultValue": "-1.e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L*",
+      "description": "Calculated Roederer's L* parameter",
+      "unitText": "Re",
+      "defaultValue": "-1.e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mlt",
+      "description": "Calculated Magnetic Local Time",
+      "unitText": "hours",
+      "defaultValue": "-1.e+31"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

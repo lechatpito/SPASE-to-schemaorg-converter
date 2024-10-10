@@ -1,0 +1,73 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/FIPS/mess-fips-ntp",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/FIPS/mess-fips-ntp",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MESSENGER - FIPS - ntp",
+  "sdDatePublished": "2019-07-26",
+  "description": "This data set contains FIPS ( FIPS_NTP) ion number densities and temperatures,  \nas well as the pressure calculated from their product.   \nQuantities are calculated after sufficient time accumulation \nto allow meaningful interpretation. \n            \nIn this version of the dataset, many of these products are provided \n      in regions determined by hand-picked or modeled bow shock and \n      magnetopause boundaries.  Boundary picking was done by the MAG team at \n      a level of accuracy sufficient for the relatively low time resolution \n      FIPS data (10s - 60s).  Where these were not available, the model given \n      by Slavin et al. [Science, 2010] is used.            \n            ",
+  "abstract": "This data set contains FIPS ( FIPS_NTP) ion number densities and temperatures,  \nas well as the pressure calculated from their product.   \nQuantities are calculated after sufficient time accumulation \nto allow meaningful interpretation. \n            \nIn this version of the dataset, many of these products are provided \n      in regions determined by hand-picked or modeled bow shock and \n      magnetopause boundaries.  Boundary picking was done by the MAG team at \n      a level of accuracy sufficient for the relatively low time resolution \n      FIPS data (10s - 60s).  Where these were not available, the model given \n      by Slavin et al. [Science, 2010] is used.            \n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mercury"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density h+",
+      "unitText": "cm**-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density h+ : err",
+      "unitText": "cm**-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature h+",
+      "unitText": "MK"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature h+ : err",
+      "unitText": "MK"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure h+",
+      "unitText": "nPa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure h+ : err",
+      "unitText": "nPa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

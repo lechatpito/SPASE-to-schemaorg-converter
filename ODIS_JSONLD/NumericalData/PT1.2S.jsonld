@@ -1,0 +1,44 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/GBO/NumericalData/RadioJOVE/HNRAO/TFD-SDRPlay/PT1.2S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/GBO/NumericalData/RadioJOVE/HNRAO/TFD-SDRPlay/PT1.2S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Radio JOVE HNRAO Terminated Folded Dipole and SDRPlay 16-24 MHz Data",
+  "sdDatePublished": "2022-02-19",
+  "description": "RadioJOVE Multiple Frequency Data Product. This data set consists of observations made at the Hawk's Nest Radio Astronomy Observatory (HNRAO) using a Terminated Folded Dipole and an SDRPlay receiver. These data are generated using the Radio Sky Spectrograph software. The data set consists of one channel of data. A RCP and a LCP data product are produced.\n\nThese data may include observations of Solar Radio Bursts, Jupiter decametric radio emission, or Galactic Background radio emission.\n\nThe Radio-Sky Spectrograph produced datafiles consist of a fixed length header and a variable length note. The data portion of the file for single channel data consists of an 8 byte timestamp using the VisualBasic 6 date format (days since 1 Jan 1900) followed by one 8 byte data values this pattern repeats until the end of file. More details can be found in the Data File Structure document on the Radio-SkyPipe help page (see Information URL).\n\nThese data are submitted to the RadioJOVE Archive and to the PDS/PPI archive at UCLA.",
+  "abstract": "RadioJOVE Multiple Frequency Data Product. This data set consists of observations made at the Hawk's Nest Radio Astronomy Observatory (HNRAO) using a Terminated Folded Dipole and an SDRPlay receiver. These data are generated using the Radio Sky Spectrograph software. The data set consists of one channel of data. A RCP and a LCP data product are produced.\n\nThese data may include observations of Solar Radio Bursts, Jupiter decametric radio emission, or Galactic Background radio emission.\n\nThe Radio-Sky Spectrograph produced datafiles consist of a fixed length header and a variable length note. The data portion of the file for single channel data consists of an 8 byte timestamp using the VisualBasic 6 date format (days since 1 Jan 1900) followed by one 8 byte data values this pattern repeats until the end of file. More details can be found in the Data File Structure document on the Radio-SkyPipe help page (see Information URL).\n\nThese data are submitted to the RadioJOVE Archive and to the PDS/PPI archive at UCLA.",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "The time array of the data. The time resolution is variable but is typically set at about 1.2 seconds",
+      "unitText": "Days since 1 January 1900"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Channel 1 Data - Right or Left Circular Polarization",
+      "unitText": "KiloKelvins"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

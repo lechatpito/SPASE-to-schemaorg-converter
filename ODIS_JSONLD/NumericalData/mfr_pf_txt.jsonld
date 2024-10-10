@@ -1,0 +1,111 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NICT/SALMON/PF/MFradar/FCAWind/mfr_pf_txt",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NICT/SALMON/PF/MFradar/FCAWind/mfr_pf_txt",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Profiles of neutral atmosphere winds with MF radar at Poker Flat, Alaska.",
+  "sdDatePublished": "2012-03-28",
+  "description": "The radar transmits radio pulses vertically into the upper atmosphere at 2.43 MHz. Returns will be produced by stratified layers and irregularities in the ionospheric D-region, to deduce height profiles of neutral atmosphere winds at 50-100 km.",
+  "abstract": "The radar transmits radio pulses vertically into the upper atmosphere at 2.43 MHz. Returns will be produced by stratified layers and irregularities in the ionospheric D-region, to deduce height profiles of neutral atmosphere winds at 50-100 km.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Mesosphere Atmosphere Atmospheric Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://salmon.nict.go.jp/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Universal Time",
+      "unitText": "minute"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Height",
+      "description": "Height",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zonal wind",
+      "description": "Zonal wind. Positive means eastward wind.",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard deviation of zonal wind",
+      "description": "Standard deviation of zonal wind",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Count of zonal wind",
+      "description": "Count of zonal wind"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Meridional wind",
+      "description": "Meridional wind. Positive means northward wind",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard deviation of meridional wind",
+      "description": "Standard deviation of meridional wind",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Count of meridional wind",
+      "description": "Count of meridional wind"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Whirl wind",
+      "description": "Whirl wind. Positive means upward wind",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Standard deviation of whirl wind",
+      "description": "Standard deviation of whirl wind",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Count of whirl wind",
+      "description": "Count of whirl wind"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

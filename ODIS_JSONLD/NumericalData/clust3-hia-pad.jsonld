@@ -1,0 +1,113 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster3/CIS-HIA/clust3-hia-pad",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster3/CIS-HIA/clust3-hia-pad",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cluster 3 - CIS-HIA - pitch-angle/energy distribution",
+  "sdDatePublished": "2012-03-26",
+  "description": "Pitch-angle distributions (PADs) are given in particle flux units, as a function of the particle energy and pitch-angle (2D distributions), and their  resolution is in 16 angular sectors covering the pitch angle range from 0\u00b0 to 180\u00b0.\n            PADs are calculated for HIA magnetospheric modes. The  dataset  is  provided  with  31  energy  bins  resolution",
+  "abstract": "Pitch-angle distributions (PADs) are given in particle flux units, as a function of the particle energy and pitch-angle (2D distributions), and their  resolution is in 16 angular sectors covering the pitch angle range from 0\u00b0 to 180\u00b0.\n            PADs are calculated for HIA magnetospheric modes. The  dataset  is  provided  with  31  energy  bins  resolution",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "keywords": [
+    "4 second",
+    "magnetosphere",
+    "auroral region",
+    "polar cap",
+    "cusp",
+    "bow shock",
+    "solar wind",
+    "magnetosheath",
+    "Cluster",
+    "magnetotail",
+    "lobe"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux : 2D pa/energy",
+      "description": "Hot ion pitch angle distribution",
+      "unitText": "1/(cm**2-s-sr-keV)",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux : sum over energy",
+      "description": "Hot ion pitch angle distribution (sum over all energy bins)",
+      "unitText": "1/(cm**2-s-sr-keV)",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux : omni",
+      "description": "Hot ion pitch angle distribution (sum over all angle bins)",
+      "unitText": "1/(cm**2-s-sr-keV)",
+      "cadence": "PT4S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

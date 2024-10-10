@@ -1,0 +1,435 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TIMED/GUVI/Electron_Density_Product",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TIMED/GUVI/Electron_Density_Product",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "TIMED GUVI L2B Electron Density Profiles",
+  "sdDatePublished": "2023-07-30",
+  "description": "The Level-2 Electron Density Profiles data product contains F-region electron density as a function of altitude and latitude derived from the GUVI limb data. Summaries of estimated peak electron density and total electron content are also given as Level 3 products. The profiles are derived from the 135.6-nm channel of the GUVI limb data. The 135.6-nm emission at night is due almost exclusively to recombination of O+ ions. Since O+ is the primary ion in the F region, the 135.6-nm volume emission rate is closely related to the square of the electron density. Details of the procedure of producing the electron densities are given in: DeMajistre, R., L.J. Paxton, D. Morrison, J-H. Yee, L.P. Goncherenko and A.B. Christensen, Retrievals of nighttime electron density from Thermosphere Ionosphere Mesosphere and Dynamics (TIMED) mission Global Ultraviolet Imager (GUVI) Measurements, J. Geophys Res., 109, A05305, doi:10.1029/2003JA010296.",
+  "abstract": "The Level-2 Electron Density Profiles data product contains F-region electron density as a function of altitude and latitude derived from the GUVI limb data. Summaries of estimated peak electron density and total electron content are also given as Level 3 products. The profiles are derived from the 135.6-nm channel of the GUVI limb data. The 135.6-nm emission at night is due almost exclusively to recombination of O+ ions. Since O+ is the primary ion in the F region, the 135.6-nm volume emission rate is closely related to the square of the electron density. Details of the procedure of producing the electron densities are given in: DeMajistre, R., L.J. Paxton, D. Morrison, J-H. Yee, L.P. Goncherenko and A.B. Christensen, Retrievals of nighttime electron density from Thermosphere Ionosphere Mesosphere and Dynamics (TIMED) mission Global Ultraviolet Imager (GUVI) Measurements, J. Geophys Res., 109, A05305, doi:10.1029/2003JA010296.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "GUVI",
+    "lower thermosphere",
+    "MLTI"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Latitude",
+      "description": "Geographic Latitude (registered at ~300km)",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Longitude",
+      "description": "Geographic Longitude (registered at ~300km)",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Latitude",
+      "description": "Geomagnetic (simple dipole) Latitude (registered at ~300km)",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Longitude",
+      "description": "Geomagnetic (simple dipole) Longitude (registered at ~300km)",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Universal Time of observation in number of milliseconds since start of current day. Timestamp marks beginning of interval",
+      "unitText": "ms",
+      "minValue": "0",
+      "maxValue": "86399999",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Density",
+      "description": "Electron Density Profiles Data",
+      "unitText": "cm-3",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "23",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Retrieved Uncertainty in Electron Density",
+      "description": "Retrieved Uncertainty in Electron Density",
+      "unitText": "cm-3",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "23",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Volume Emission Rate",
+      "description": "Volume Emission Rate",
+      "unitText": "Rayleighs",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "23",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncertainty in Volume Emission Rate",
+      "description": "Uncertainty in Volume Emission Rate",
+      "unitText": "Rayleighs",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "23",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Atomic Oxygen Density Profile",
+      "description": "Atomic Oxygen Density Profile (from MSIS)",
+      "unitText": "cm-3",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "23",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncorrected Volume Emission Rate",
+      "description": "Volume Emission Rate (no mutual neutralization correction)",
+      "unitText": "Rayleigh",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "23",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncertainty in Uncorrected Volume Emission Rate",
+      "description": "Uncertainty in Volume Emission Rate (no mutual neutralization correction",
+      "unitText": "Rayleighs",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "23",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Chapman Layer Maximum Density",
+      "description": "Chapman Layer Maximum Density",
+      "unitText": "cm-3",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Chapman Layer Maximum Radius",
+      "description": "Chapman Layer Maximum Radius",
+      "unitText": "km",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Chapman Layer Topside Scaleheight",
+      "description": "Chapman Layer Topside Scaleheight",
+      "unitText": "unitless",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncertainty in Chapman Layer Maximum Density",
+      "description": "Uncertainty in Chapman Layer Maximum Density",
+      "unitText": "cm -3",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncertainty in Chapman Layer Maximum Radius",
+      "description": "Uncertainty in Chapman Layer Maximum Radius",
+      "unitText": "km",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncertainty in Chapman Layer Topside Scaleheight",
+      "description": "Uncertainty in Chapman Layer Topside Scaleheight",
+      "unitText": "unitless",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AACGM Geomagnetic Latitude",
+      "description": "Geomagnetic (AACGM) Latitude (registered at ~300km)",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AACGM Geomagnetic Longitude",
+      "description": "Geomagnetic (AACGM) Longitude (registered at ~300km)",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Earth radius",
+      "description": "Earth radius at the given geographic latitude",
+      "unitText": "km",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Index map",
+      "description": "Index map into level 1B file",
+      "unitText": "unitless",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "0",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EDP/VER radius grid",
+      "description": "EDP/VER radius grid where altitude grid is (k_nonpar_r - re)",
+      "unitText": "km",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "23",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Observational Angles for Observation",
+      "description": "Observational Angles for Observation where tangent altitudes are (625.+Re)*sin(k_nonpar_thetapix) - re",
+      "unitText": "radian",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Chapman Layers Parameters Existence flag",
+      "description": "If 1, chapman layers parameters present, 0 if not",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radiances at 135.6 nm",
+      "description": "Radiances at 135.6 nm",
+      "unitText": "Rayleigh",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 14",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uncertainties of Radiances at 135.6 nm",
+      "description": "Uncertainties of Radiances at 135.6 nm",
+      "unitText": "Rayleigh",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 14",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "H+ Correction flag",
+      "description": "H+ correction from IRI made, -1 if not",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of limb scans for smoothing",
+      "description": "Number of limb scans for smoothing",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "k_nonpar_w0",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "448",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "k_nonpar_w1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "448",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "k_nonpar_w0c",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "k_nonpar_w1c",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32 2",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "k_par_r",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "50",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "k_par_thetapix",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "k_par_w0",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "448 50",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "k_par_w1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "448 50",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

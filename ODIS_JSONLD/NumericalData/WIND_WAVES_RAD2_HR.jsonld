@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Wind/WAVES/WIND_WAVES_RAD2_HR",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Wind/WAVES/WIND_WAVES_RAD2_HR",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind Waves RAD2_L2 : High Resolution Data (Range 1.075 - 13.825 MHz)",
+  "sdDatePublished": "2022-09-01",
+  "description": "This data set contains Wind Waves RADIO RAD2 high resolution calibrated spectra. The spectral power density is given in \u00b5V^2/Hz measured at the Preamplifiers (PA) for the three receiver channels S, SP and Z.\nNo background level is removed from the data, and the intensity modulation due to the spacecraft rotation is not corrected.",
+  "abstract": "This data set contains Wind Waves RADIO RAD2 high resolution calibrated spectra. The spectral power density is given in \u00b5V^2/Hz measured at the Preamplifiers (PA) for the three receiver channels S, SP and Z.\nNo background level is removed from the data, and the intensity modulation due to the spacecraft rotation is not corrected.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:WIND_WAVES_RAD2_HR",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "WIND RAD2 High Resolution  power spectral  density (Range 1.075 - 13.825 MHz)",
+      "description": "WIND RAD2 High Resolution  power spectral  density (Range 1.075 - 13.825 MHz)",
+      "unitText": "uV^2/Hz"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

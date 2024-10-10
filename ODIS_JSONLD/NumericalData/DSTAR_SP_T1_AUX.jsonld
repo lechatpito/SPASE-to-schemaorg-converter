@@ -1,0 +1,107 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/Ephemeris/DSTAR_SP_T1_AUX",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/Ephemeris/DSTAR_SP_T1_AUX",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Double Star 1 Auxiliary Data (Summary Parameters)",
+  "sdDatePublished": "2021-11-02",
+  "description": "This data set  contains DoubleStar 1 auxiliary data summary parameters.",
+  "abstract": "This data set  contains DoubleStar 1 auxiliary data summary parameters.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_SP_T1_AUX",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 SC Orbit Number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 Reference SC Position GSE",
+      "description": "Double Star 1 Position, in GSE, of the  Spacecraft.",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 Reference SC Velocity GSE",
+      "description": "Double Star 1 Velocity, in GSE, of the  Spacecraft.",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 GSE latitude of SC spin axis",
+      "description": "Double Star 1 GSE latitude of the Spacecraft  spin axis",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 GSE longitude of SC spin axis",
+      "description": "Double Star 1 GSE longitude of the Spacecraft  spin axis",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1  Rotation angle GSE to GSM",
+      "description": "Rotation angle GSE to GSM",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1  Dipole tilt in GSM z-x plane",
+      "description": "Dipole tilt in GSM z-x plane",
+      "unitText": "\u00b0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

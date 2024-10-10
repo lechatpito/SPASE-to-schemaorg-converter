@@ -1,0 +1,58 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/TIMED/GUVI/Nightside_Cylindrical_Disk",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/DisplayData/TIMED/GUVI/Nightside_Cylindrical_Disk",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "TIMED GUVI Nightside Cylindrical Composite Disk Images",
+  "sdDatePublished": "2020-07-07",
+  "description": "This composite image is produced from GUVI radiance data (Level 1C) where the SZA > 95 deg. (nightside) for a complete day mapped onto the globe. It is a composite of the O I 130.4 nm emission (blue), O I 135.6 nm (green), and LBH Short (140 - 150 nm) (red). White color indicates emission from particles in aurora (all colors), pink areas generally indicate particle precipitation (SAA) or solar glint, blue emissions indicate typical nighttime recombination emissions.",
+  "abstract": "This composite image is produced from GUVI radiance data (Level 1C) where the SZA > 95 deg. (nightside) for a complete day mapped onto the globe. It is a composite of the O I 130.4 nm emission (blue), O I 135.6 nm (green), and LBH Short (140 - 150 nm) (red). White color indicates emission from particles in aurora (all colors), pink areas generally indicate particle precipitation (SAA) or solar glint, blue emissions indicate typical nighttime recombination emissions.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "GUVI",
+    "mesosphere",
+    "lower thermosphere",
+    "ionosphere",
+    "MLTI",
+    "aurora"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://guvitimed.jhuapl.edu/guvi-gallerydaily",
+      "name": "GUVI POC Daily Summary Image Gallery",
+      "description": "This web page allows viewing of individual images or a slideshow of a sequence of images.  To request data: select the year and day and the CylinDisk Display type then click display for the desired image."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/Ephemeris/cass-ephem-polar",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/Ephemeris/cass-ephem-polar",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - Ephemeris: Cassini - orbit saturn : special - polar",
+  "sdDatePublished": "2018-01-19",
+  "description": "Some special Cassini ephemeris calculated by Joseph Groene tool (University of Iowa).\n                *  Western Longitude (IAU_Saturn) based on the Voyager determination of the period of Saturn kilometric radiation (SKR).\n                *  L-shell (assuming dipolar magnetic field)\n                *  Local Time ",
+  "abstract": "Some special Cassini ephemeris calculated by Joseph Groene tool (University of Iowa).\n                *  Western Longitude (IAU_Saturn) based on the Voyager determination of the period of Saturn kilometric radiation (SKR).\n                *  L-shell (assuming dipolar magnetic field)\n                *  Local Time ",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "wl iau_saturn",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L-shell",
+      "description": "Cassini L-shell (assuming dipolar magnetic field)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "local time",
+      "description": "Cassini Local Time",
+      "unitText": "hours"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

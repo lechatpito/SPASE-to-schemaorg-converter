@@ -1,0 +1,67 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ASWS/NumericalData/Riometer/Cas_Riometer",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ASWS/NumericalData/Riometer/Cas_Riometer",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Australian Space Weather Services Casey Riometer",
+  "sdDatePublished": "2021-03-29",
+  "description": "\r\n\t  A riometer (relative ionospheric opacity meter) (30 MHz) is an instrument used to quantify the amount of electromagnetic wave ionospheric absorption in the atmosphere.[1] As the name implies, a riometer measures the \"opacity\" of the ionosphere to radio noise emanating from distant stars and galaxies. In the absence of any ionospheric absorption, this radio noise, averaged over a sufficiently long period of time, forms a quiet-day curve. Increased ionization in the ionosphere will cause absorption of radio signals (both terrestrial and extraterrestrial), and a departure from the quiet-day curve. The difference between the quiet-day curve and the riometer signal is an indicator of the amount of absorption, and is measured in decibels. Riometers are generally passive radio antenna operating in the VHF radio frequency range (~30 MHz). The SWS WDC archives Riometer data obtained from Casey, Davis, Mawson and Macquarie Island in Antarctica. The first Riometer data file from Casey was obtained on 17/01/1989. \r\n      ",
+  "abstract": "\r\n\t  A riometer (relative ionospheric opacity meter) (30 MHz) is an instrument used to quantify the amount of electromagnetic wave ionospheric absorption in the atmosphere.[1] As the name implies, a riometer measures the \"opacity\" of the ionosphere to radio noise emanating from distant stars and galaxies. In the absence of any ionospheric absorption, this radio noise, averaged over a sufficiently long period of time, forms a quiet-day curve. Increased ionization in the ionosphere will cause absorption of radio signals (both terrestrial and extraterrestrial), and a departure from the quiet-day curve. The difference between the quiet-day curve and the riometer signal is an indicator of the amount of absorption, and is measured in decibels. Riometers are generally passive radio antenna operating in the VHF radio frequency range (~30 MHz). The SWS WDC archives Riometer data obtained from Casey, Davis, Mawson and Macquarie Island in Antarctica. The first Riometer data file from Casey was obtained on 17/01/1989. \r\n      ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    }
+  ],
+  "keywords": "Riometer",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Raw",
+      "description": "Cosmic noise intensity measured with a riometer.",
+      "unitText": "DU",
+      "minValue": "-2047",
+      "maxValue": "2047",
+      "cadence": "PT10S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QDC(quiet-day curve)",
+      "description": "A QDC is defined as the signal intensity that is observed with a quiet and undisturbed ionosphere. The QDC thus defined is subjected to seasonal and even shorter-term variations. A QDC determined for a given period is therefore only valid for that particular period of time.",
+      "unitText": "DU",
+      "minValue": "-2047",
+      "maxValue": "2047",
+      "cadence": "PT10S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Absorption",
+      "description": "Absorption = (QDC \u2013 Raw) / obliquity factor.",
+      "unitText": "dB",
+      "minValue": "-20",
+      "maxValue": "20",
+      "cadence": "PT10S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

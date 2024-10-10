@@ -1,0 +1,69 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/ephemeris/gll-eph-pol",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/ephemeris/gll-eph-pol",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - Ephemeris : Galileo - orbit jupiter : special",
+  "sdDatePublished": "2012-03-06",
+  "description": "Some special Galileo ephemeris calculated by Joseph Groene tool (University of Iowa)",
+  "abstract": "Some special Galileo ephemeris calculated by Joseph Groene tool (University of Iowa)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "lon_sys3",
+      "description": "Galileo Longitude (in System III jovian longitude)",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat eqt",
+      "description": "Galileo Latitude (relative to Jovian equator)",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mag lat",
+      "description": "Galileo invariant Magnetic Latitude",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "local time",
+      "description": "Galileo Local Time",
+      "unitText": "hours"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Io phase",
+      "description": "Galileo Phase relative to Io",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

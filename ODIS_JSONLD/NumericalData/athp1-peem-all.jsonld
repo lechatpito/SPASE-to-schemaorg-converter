@@ -1,0 +1,72 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ARTEMIS/P1/ESA/athp1-peem-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ARTEMIS/P1/ESA/athp1-peem-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ARTEMIS-P1 - ESA - electron onboard moments",
+  "sdDatePublished": "2024-05-23",
+  "description": "Electrostatic Analyzer (ESA) data - Level 2 - electron onboard moments",
+  "abstract": "Electrostatic Analyzer (ESA) data - Level 2 - electron onboard moments",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Electron Density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "description": "Temperature",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "t_para",
+            "Index": "1",
+            "ParameterKey": "athp1_t_peem(2)"
+          },
+          {
+            "Name": "t_perp1",
+            "Index": "2",
+            "ParameterKey": "athp1_t_peem(0)"
+          },
+          {
+            "Name": "t_perp2",
+            "Index": "3",
+            "ParameterKey": "athp1_t_peem(1)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/MMS-2/FPI/DES/MMS_FPI_2_L2_FAST_DES_DIST",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/MMS-2/FPI/DES/MMS_FPI_2_L2_FAST_DES_DIST",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MMS-2 FPI DES Level-2 Fast electron distribution functions (CDF)",
+  "sdDatePublished": "2022-07-07",
+  "description": "This dataset provides the full electron distribution functions at the FAST cadence (4.5 s). The data is provided in units of phase space density. The reference frame is related to the instrument frame, and is called near-GSE. \nFor more information on the FPI instruments, data set, and user guide, please see:\n MMS Science Data Center (https://lasp.colorado.edu/mms/sdc/public/datasets/fpi/)\n MMS FPI Data Users and Products Guide (https://lasp.colorado.edu/galaxy/display/MFDPG/MMS+FPI+Data+Users+and+Products+Guide)\n FPI Release Notes (https://lasp.colorado.edu/mms/sdc/public/datasets/fpi/mms-FPIReleaseNotes-220217.pdf)",
+  "abstract": "This dataset provides the full electron distribution functions at the FAST cadence (4.5 s). The data is provided in units of phase space density. The reference frame is related to the instrument frame, and is called near-GSE. \nFor more information on the FPI instruments, data set, and user guide, please see:\n MMS Science Data Center (https://lasp.colorado.edu/mms/sdc/public/datasets/fpi/)\n MMS FPI Data Users and Products Guide (https://lasp.colorado.edu/galaxy/display/MFDPG/MMS+FPI+Data+Users+and+Products+Guide)\n FPI Release Notes (https://lasp.colorado.edu/mms/sdc/public/datasets/fpi/mms-FPIReleaseNotes-220217.pdf)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:MMS_FPI_2_L2_FAST_DES_DIST",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Data quality error flag",
+      "description": "MMS2 FPI/DES quality error flag"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Compression Flag",
+      "description": "MMS2 FPI/DES compression flag"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start Del-Phi",
+      "description": "MMS2 FPI/DES start Del-Phi count"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Start Del-Phi Angle",
+      "description": "MMS2 FPI/DES start Del-Phi angle"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Distribution",
+      "description": "MMS2 FPI/DES Electron Fast Survey Sky Map Instrument Distribution. \nColumn 1 Labels from MMS2_DES_PHI_FAST: [2.7500 deg,14.000 deg,25.250 deg,36.500 deg,47.750 deg,59.000 deg,70.250 deg,81.500 deg,92.750 deg,104.00 deg,115.25 deg,126.50 deg,137.75 deg,149.00 deg,160.25 deg,171.50 deg,182.75 deg,194.00 deg,205.25 deg,216.50 deg,227.75 deg,239.00 deg,250.25 deg,261.50 deg,272.75 deg,284.00 deg,295.25 deg,306.50 deg,317.75 deg,329.00 deg,340.25 deg,351.50 deg]. Column 2 Labels from MMS2_DES_THETA_FAST: [5.6250 deg,16.875 deg,28.125 deg,39.375 deg,50.625 deg,61.875 deg,73.125 deg,84.375 deg,95.625 deg,106.88 deg,118.13 deg,129.38 deg,140.63 deg,151.88 deg,163.13 deg,174.38 deg]. Column 3 Labels from MMS2_DES_ENERGY_FAST: [energy00,energy01,energy02,energy03,energy04,energy05,energy07,energy07,energy08,energy09,energy10,energy11,energy12,energy13,energy14,energy15,energy16,energy17,energy18,energy19,energy20,energy21,energy22,energy23,energy24,energy25,energy26,energy27,energy28,energy29,energy30,energy31]",
+      "unitText": "s^3/cm^6"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Distribution, Error",
+      "description": "MMS2 FPI/DES Fast Survey sky-map instrument distribution 1-sigma error\n Column 1 Labels from MMS2_DES_PHI_FAST: [2.7500 deg,14.000 deg,25.250 deg,36.500 deg,47.750 deg,59.000 deg,70.250 deg,81.500 deg,92.750 deg,104.00 deg,115.25 deg,126.50 deg,137.75 deg,149.00 deg,160.25 deg,171.50 deg,182.75 deg,194.00 deg,205.25 deg,216.50 deg,227.75 deg,239.00 deg,250.25 deg,261.50 deg,272.75 deg,284.00 deg,295.25 deg,306.50 deg,317.75 deg,329.00 deg,340.25 deg,351.50 deg]. Column 2 Labels from MMS2_DES_THETA_FAST: [5.6250 deg,16.875 deg,28.125 deg,39.375 deg,50.625 deg,61.875 deg,73.125 deg,84.375 deg,95.625 deg,106.88 deg,118.13 deg,129.38 deg,140.63 deg,151.88 deg,163.13 deg,174.38 deg]. Column 3 Labels from MMS2_DES_ENERGY_FAST: [energy00,energy01,energy02,energy03,energy04,energy05,energy07,energy07,energy08,energy09,energy10,energy11,energy12,energy13,energy14,energy15,energy16,energy17,energy18,energy19,energy20,energy21,energy22,energy23,energy24,energy25,energy26,energy27,energy28,energy29,energy30,energy31].",
+      "unitText": "s^3/cm^6"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Zenith Angle, Theta",
+      "description": "MMS2 FPI/DES Electron Fast Survey Sky Map Zenith Angle, Theta",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Zenith Angle, Theta, Delta Value",
+      "description": "MMS2 FPI/DES Electron Fast Survey Sky Map Zenith Angle, Theta, Bin Delta Value",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Energy",
+      "description": "MMS2 FPI/DES Electron Fast Survey Sky Map Energy",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Energy, Delta Value",
+      "description": "MMS2 FPI/DES  Electron Fast Survey Sky Map Energy, Delta Value",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Azimuth Angle, Phi",
+      "description": "MMS2 FPI/DES  Fast Survey Sky Map Azimuth Angle, Phi",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electron Sky Map Azimuth Angle, Phi, Delta Value",
+      "description": "MMS2 FPI/DES  Electron Fast Survey Sky Map Azimuth Angle, Phi, Bin Delta Value",
+      "unitText": "\u00b0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

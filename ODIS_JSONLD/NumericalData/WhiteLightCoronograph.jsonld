@@ -1,0 +1,45 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Skylab/WhiteLightCoronograph",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Skylab/WhiteLightCoronograph",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Skylab White Light Coronograph in FITS Format",
+  "sdDatePublished": "2021-03-29",
+  "description": "This data set contains Skylab SO-52 whitelight coronagraph FITS images, as originally posted at UCAR/HAO. Four types of data are provided: intensity of the corona in B/Bsun units, alpha-angle data, polarization data, and polarization brightness data. The data have been corrected for Earths elliptic orbit around the sun.",
+  "abstract": "This data set contains Skylab SO-52 whitelight coronagraph FITS images, as originally posted at UCAR/HAO. Four types of data are provided: intensity of the corona in B/Bsun units, alpha-angle data, polarization data, and polarization brightness data. The data have been corrected for Earths elliptic orbit around the sun.",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/skylab/whitelight_coronagraph/calibrated_fits_images/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In FITS via FTP from SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/skylab/whitelight_coronagraph/calibrated_fits_images/",
+      "name": "HTTPS from SPDF",
+      "description": "In FITS via HTTP from SPDF"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/PEACE/DSTAR_SP_T1_PEA",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/PEACE/DSTAR_SP_T1_PEA",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Double Star 1 PEACE Summary Parameters",
+  "sdDatePublished": "2021-11-02",
+  "description": "The  Plasma Electron and Current Experiment (PEACE)  provides  the electron velocity distribution function at the satellite in three dimensions with good time, energy, and angular resolution for electron energies up to ~25 keV.\n\nThis data set contains  Double Star 1 PEACE summary  parameters at 1 min  resolution including  the instrument status, the electron density, electron bulk velocity, electron temperature, and electron heat flux.",
+  "abstract": "The  Plasma Electron and Current Experiment (PEACE)  provides  the electron velocity distribution function at the satellite in three dimensions with good time, energy, and angular resolution for electron energies up to ~25 keV.\n\nThis data set contains  Double Star 1 PEACE summary  parameters at 1 min  resolution including  the instrument status, the electron density, electron bulk velocity, electron temperature, and electron heat flux.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_SP_T1_PEA",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 PEACE Status Summary Parameter",
+      "description": "Double Star 1 PEACE status at 60 s resolution Summary Parameter"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 PEACE Electron Number Density Summary Parameter",
+      "description": "Double Star 1 PEACE electron number density at 60 s resolution",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 PEACE Electron Velocity Summary Parameter",
+      "description": "Double Star 1 PEACE electron velocity at 60 s resolution in GSE Coordinates",
+      "unitText": "km s^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 PEACE Parallel Electron Temperature Summary Parameter",
+      "description": "Double Star 1 PEACE parallel electron temperature at 60 s resolution",
+      "unitText": "MK"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 PEACE Perpendicular Electron Temperature Summary Parameter",
+      "description": "Double Star 1 PEACE perpendicular electron temperature at 60 s",
+      "unitText": "MK"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 PEACE Parallel Electron Heat Flux Summary Parameter",
+      "description": "Double Star 1 PEACE parallel electron heat flux at 60 s resolution",
+      "unitText": "uJ m^-2 s^-1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

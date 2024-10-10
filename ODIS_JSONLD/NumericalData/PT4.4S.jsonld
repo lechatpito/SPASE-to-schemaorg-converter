@@ -1,0 +1,216 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/AMPTE-IRM/Plasma/PT4.4S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/AMPTE-IRM/Plasma/PT4.4S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "AMPTE-IRM Plasma Data",
+  "sdDatePublished": "2020-07-07",
+  "description": "AMPT-IRM spin-averaged plasma moments at ~4.4 second resolution.",
+  "abstract": "AMPT-IRM spin-averaged plasma moments at ~4.4 second resolution.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://vmo.nasa.gov/mission/ampte_irm/",
+      "name": "AMPTE/IRM Data",
+      "description": "A web-accessible directory hosting AMPTE/IRM spin-averaged magnetic field and plasma data."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "The center of the accumulation time interval for the data point, in DA/MO/YR HR:MI:SS format."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DT",
+      "description": "The accumulation time for the measurement, normally one spin",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Xgse",
+      "description": "The X component of spacecraft location in GSE, in Re (Re=6378 km)",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": {
+          "Name": "Xgse",
+          "Qualifier": "Component.I",
+          "Index": "1"
+        }
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ygse",
+      "description": "The Y component of spacecraft location in GSE, in Re (Re=6378 km)",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": {
+          "Name": "Ygse",
+          "Qualifier": "Component.J",
+          "Index": "1"
+        }
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zgse",
+      "description": "The Z component of spacecraft location in GSE, in Re (Re=6378 km)",
+      "unitText": "Re",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": {
+          "Name": "Zgse",
+          "Qualifier": "Component.K",
+          "Index": "1"
+        }
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rgse",
+      "description": "Radial distance in SM, in Re (Re=6378 km)",
+      "unitText": "Re"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MLAT",
+      "description": "Magnetic latitude in SM, in degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MLT",
+      "description": "Magnetic Local Time in SM, in hours",
+      "unitText": "hour"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Np",
+      "description": "Number density of protons",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vp",
+      "description": "Velocity of protons",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Vx_p",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "Column 10"
+          },
+          {
+            "Name": "Vy_p",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "Column 11"
+          },
+          {
+            "Name": "Vz_p",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "Column 12"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tp",
+      "description": "Temperature of protons",
+      "unitText": "MK"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ne",
+      "description": "Number density of electrons",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ve",
+      "description": "Velocity of electrons",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Vx_e",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "Column 15"
+          },
+          {
+            "Name": "Vy_e",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "Column 16"
+          },
+          {
+            "Name": "Vz_e",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "Column 17"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Te",
+      "description": "Temperature of electrons",
+      "unitText": "MK"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

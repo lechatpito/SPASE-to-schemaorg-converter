@@ -1,0 +1,54 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/DisplayData/RISH/misc/UJI/Radiosonde/radiosonde_uji_png",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/DisplayData/RISH/misc/UJI/Radiosonde/radiosonde_uji_png",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Profiles of pressure, temperature, relative humidity, zonal and meridional wind data taken by radiosonde observation at Uji (png format)",
+  "sdDatePublished": "2016-07-21",
+  "description": "Profiles of pressure, temperature, relative humidity, zonal and meridional wind data in the troposphere and lower stratosphere (0-40 km)observed by radiosonde soundings at Uji in Kyoto Prefecture, Japan (34.91N, 135.80E, 23m MSL) since March 30, 1990. File names of png data are composed of (year)(month)(day)(hour)(minute).png in universal time. The value of -999 means missing data.",
+  "abstract": "Profiles of pressure, temperature, relative humidity, zonal and meridional wind data in the troposphere and lower stratosphere (0-40 km)observed by radiosonde soundings at Uji in Kyoto Prefecture, Japan (34.91N, 135.80E, 23m MSL) since March 30, 1990. File names of png data are composed of (year)(month)(day)(hour)(minute).png in universal time. The value of -999 means missing data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Atmosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Troposphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Stratosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Altitude Geopotential Height Tropopause Hydrostatic Pressure Atmospheric Temperature Profiles Water Vapor Humidity Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/iugonet/sonde/index-jpn.html",
+      "name": "Radiosonde Observation Data at Uji",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

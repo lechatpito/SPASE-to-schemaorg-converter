@@ -1,0 +1,134 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/POLAR/MFE/plr-mfe-k0",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/POLAR/MFE/plr-mfe-k0",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Polar - MFE - key parameters",
+  "sdDatePublished": "2012-03-06",
+  "description": "0.92 minute averages",
+  "abstract": "0.92 minute averages",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "description": "Observed vector magnetic field in cartesian GSE (0.92 min res.)",
+      "unitText": "nT",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "plr_b(0)",
+            "ValidMin": "-10000.0",
+            "ValidMax": "10000.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "plr_b(1)",
+            "ValidMin": "-10000.0",
+            "ValidMax": "10000.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "plr_b(2)",
+            "ValidMin": "-10000.0",
+            "ValidMax": "10000.0",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "description": "Observed vector magnetic field in cartesian GSM (0.92 min res.)",
+      "unitText": "nT",
+      "defaultValue": "-1.0E31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "plr_b_gsm(0)",
+            "ValidMin": "-10000.0",
+            "ValidMax": "10000.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "plr_b_gsm(1)",
+            "ValidMin": "-10000.0",
+            "ValidMax": "10000.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "plr_b_gsm(2)",
+            "ValidMin": "-10000.0",
+            "ValidMax": "10000.0",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "\u239cb|",
+      "description": "Scalar magnitude of the magnetic field in nT",
+      "unitText": "nT",
+      "defaultValue": "-1.0E31"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

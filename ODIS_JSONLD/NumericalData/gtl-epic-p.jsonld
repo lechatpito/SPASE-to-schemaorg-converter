@@ -1,0 +1,57 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/EPIC/gtl-epic-p",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/EPIC/gtl-epic-p",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Geotail - EPIC - ICS : low resolution - P : proton spectra",
+  "sdDatePublished": "2019-02-06",
+  "description": "Energy bounds (keV) :\n            * open: 58.10, 77.30, 107.40, 154.30, 227.50, 341.60, 522.50, 813.50, 1560.80, 3005.40;\n            * closed: 89.50, 110.70, 142.4, 189.2, 258.6, 365.5, 541.3, 831.4, 1570.6, 3003.8;\n         ",
+  "abstract": "Energy bounds (keV) :\n            * open: 58.10, 77.30, 107.40, 154.30, 227.50, 341.60, 522.50, 813.50, 1560.80, 3005.40;\n            * closed: 89.50, 110.70, 142.4, 189.2, 258.6, 365.5, 541.3, 831.4, 1570.6, 3003.8;\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "apperture flag head1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "apperture flag head2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux : 2D",
+      "unitText": "1/(cm**2-s-sr-kev)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux : omni",
+      "unitText": "1/(cm**2-s-sr-kev)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

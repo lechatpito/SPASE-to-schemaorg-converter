@@ -1,0 +1,220 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SGK/MUradar/mur_sgk_ionostd_txt",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SGK/MUradar/mur_sgk_ionostd_txt",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Observation data in the ionosphere taken by the MU radar (Text format)",
+  "sdDatePublished": "2016-11-17",
+  "description": "The 1-hour average observation data of ion drift velocities, electron and ion temperatures and echo power in the ionosphere taken by the MU radar at Shigaraki in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL), which has been operated in the incoherent scatter observation mode. The data are stored in the text file named (year)(month)(day)_(variable).txt. The variable abbreviations are dv, teti, pwr1, pwr2, pwr3, and pwr4 which mean plasma drift, electron and ion temperatures and echo powers for radar beam 1-5 directions, respectively. The plasma drift data include nine kinds of drift velocity components for eastward and northward/upward directions perpendicular to the magnetic field line, southward/upward direction parallel to the magnetic field line, vertical direction calculated from northward and southward beams, vertical direction calculated from eastward and westward beams, and for beam 1-4 directions, respectively. The azimuth and zenith angles of beam 1, 2, 3, and 4 are (355.0, 20.0), (85.0, 20.0), (175.0, 20.0), and (265.0, 20.0), respectively, in unit of degree. The temperature data include electron and ion temperature, their error values, condition code and signal to noise ratio between 228.5 and 724.6 km. The echo power data show the intensity of electromagnetic wave reflected from the ionosphere between 80 and 1,200 km for radar beam 1-4 directions. The value of -999.0 means missing data. Local time (UT + 09:00) is used for time data. The plasma drift and temperature data are essential for understanding of ionospheric plasma dynamics and chemical reactions of electron and ions in the middle latitude.",
+  "abstract": "The 1-hour average observation data of ion drift velocities, electron and ion temperatures and echo power in the ionosphere taken by the MU radar at Shigaraki in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL), which has been operated in the incoherent scatter observation mode. The data are stored in the text file named (year)(month)(day)_(variable).txt. The variable abbreviations are dv, teti, pwr1, pwr2, pwr3, and pwr4 which mean plasma drift, electron and ion temperatures and echo powers for radar beam 1-5 directions, respectively. The plasma drift data include nine kinds of drift velocity components for eastward and northward/upward directions perpendicular to the magnetic field line, southward/upward direction parallel to the magnetic field line, vertical direction calculated from northward and southward beams, vertical direction calculated from eastward and westward beams, and for beam 1-4 directions, respectively. The azimuth and zenith angles of beam 1, 2, 3, and 4 are (355.0, 20.0), (85.0, 20.0), (175.0, 20.0), and (265.0, 20.0), respectively, in unit of degree. The temperature data include electron and ion temperature, their error values, condition code and signal to noise ratio between 228.5 and 724.6 km. The echo power data show the intensity of electromagnetic wave reflected from the ionosphere between 80 and 1,200 km for radar beam 1-4 directions. The value of -999.0 means missing data. Local time (UT + 09:00) is used for time data. The plasma drift and temperature data are essential for understanding of ionospheric plasma dynamics and chemical reactions of electron and ions in the middle latitude.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.FRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.Topside"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Ion Chemistry/Ionization",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/radar-group/mu/isdata/",
+      "name": "MU Ionospheric Observation",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "year",
+      "description": "Year in the form YY where YY = the last two digits of year (00-99)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "month",
+      "description": "Month in the form MM where MM = month of year (01-12)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "day",
+      "description": "Day in the form DD where DD = day of month (01-31)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Time in the form hh where hh = hour of day (00-23). Local time (UT + 09:00:00) is used for time data.",
+      "unitText": "hour"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vperp_e",
+      "description": "Ion drift velocity (eastward direction perpendicular to the magnetic field line)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vperp_n",
+      "description": "Ion drift velocity (northward/upward direction perpendicular to the magnetic field line)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vpara_u",
+      "description": "Ion Drift Velocity (southward/upward direction parallel to the magnetic field line)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vz_ns",
+      "description": "Ion Drift Velocity (vertical direction calculated from northward and southward beams)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vz_ew",
+      "description": "Ion Drift Velocity (vertical direction calculated from eastward and westward beams)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vd_b1",
+      "description": "Ion Drift Velocity for beam 1 direction (azimuth angle:355.0, zenith angle:20.0)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vd_b2",
+      "description": "Ion Drift Velocity for beam 2 direction (azimuth angle:85.0, zenith angle:20.0)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vd_b3",
+      "description": "Ion Drift Velocity for beam 3 direction (azimuth angle:175.0, zenith angle:20.0)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Vd_b4",
+      "description": "Ion Drift Velocity for beam 4 direction (azimuth angle:265.0, zenith angle:20.0)",
+      "unitText": "m/s",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ti",
+      "description": "Ion temperature",
+      "unitText": "K",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Te",
+      "description": "Electron temperature",
+      "unitText": "K",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "icon",
+      "description": "Condition code (0 is normal. 0, 1 and 4 are available)",
+      "unitText": "1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "er_ti",
+      "description": "Error of estimate for ion temperature",
+      "unitText": "K",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "er_te",
+      "description": "Error of estimate for electron temperature",
+      "unitText": "K",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "er_tr",
+      "description": "Error of estimate for Tr (= Te/Ti)",
+      "unitText": "1",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "snr",
+      "description": "Signal to noise ratio",
+      "unitText": "dB",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr1",
+      "description": "Echo power for radar beam 1 (azimuth angle:355.0, zenith angle:20.0)",
+      "unitText": "dB",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr2",
+      "description": "Echo power for radar beam 2 (azimuth angle:85.0, zenith angle:20.0)",
+      "unitText": "dB",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr3",
+      "description": "Echo power for radar beam 3 (azimuth angle:175.0, zenith angle:20.0)",
+      "unitText": "dB",
+      "defaultValue": "-999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr4",
+      "description": "Echo power for radar beam 4 (azimuth angle:265.0, zenith angle:20.0)",
+      "unitText": "dB",
+      "defaultValue": "-999.0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

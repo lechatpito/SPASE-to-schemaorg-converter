@@ -1,0 +1,68 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/TohokuU/radio_obs/iit/iprt/iprt_sun_numerical",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/TohokuU/radio_obs/iit/iprt/iprt_sun_numerical",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "IPRT solar radio spectral data in VHF-band",
+  "sdDatePublished": "2012-12-12",
+  "description": "Polarized frequency spectrum of solar radio emission containing various kinds of solar radio bursts in the 150-500 MHz range measured using the high-time resolution spectropolarimeter system installed on the Iitate Planetary radio Telescope (IPRT/AMATERAS).",
+  "abstract": "Polarized frequency spectrum of solar radio emission containing various kinds of solar radio bursts in the 150-500 MHz range measured using the high-time resolution spectropolarimeter system installed on the Iitate Planetary radio Telescope (IPRT/AMATERAS).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "keywords": "IPRT Solar Radio Emission",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://pparc.gp.tohoku.ac.jp/data/iprt/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Radio intensity",
+      "description": "Description",
+      "unitText": "db"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Spectral range",
+      "unitText": "MHz",
+      "minValue": "100",
+      "maxValue": "500"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Observed Time",
+      "unitText": "Julian day"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

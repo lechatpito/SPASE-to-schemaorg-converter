@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/GIOTTO/Ephemeris/GIOTTO_ORBIT_GSE",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/GIOTTO/Ephemeris/GIOTTO_ORBIT_GSE",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "GIOTTO orbit data (GSE frame, 1 min resolution)",
+  "sdDatePublished": "2022-03-22",
+  "description": "This data set contains 1 min resolution  GIOTTO position and velocity.  \n\nData in  records are separated by commas and blanks.\n\nCaution: For the first row, the velocity is NaN (Not a Number) initialized.",
+  "abstract": "This data set contains 1 min resolution  GIOTTO position and velocity.  \n\nData in  records are separated by commas and blanks.\n\nCaution: For the first row, the velocity is NaN (Not a Number) initialized.",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:GIOTTO_ORBIT_GSE",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "GIOTTO position",
+      "description": "GIOTTO position  (GSE,  1-min resolution)",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GIOTTO position",
+      "description": "GIOTTO velocity (GSE,  1-min resolution)",
+      "unitText": "km/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

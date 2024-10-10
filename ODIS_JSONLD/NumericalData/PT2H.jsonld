@@ -1,0 +1,74 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/STEREO-B/PLASTIC/Fe-abundance/PT2H",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/STEREO-B/PLASTIC/Fe-abundance/PT2H",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO-B Plasma and Suprathermal Ion Composition (PLASTIC) 2-hour Iron Plasma Parameters",
+  "sdDatePublished": "2023-07-30",
+  "description": "This data product contains 2-hour averaged values of solar wind iron flow speed, density, thermal speed, iron to proton density ratio, and quality flags for each of these parameters. It also contains the iron charge state used in the V and Vth (1D Maxwellian) fitting algorithm",
+  "abstract": "This data product contains 2-hour averaged values of solar wind iron flow speed, density, thermal speed, iron to proton density ratio, and quality flags for each of these parameters. It also contains the iron charge state used in the V and Vth (1D Maxwellian) fitting algorithm",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Beginning of time interval",
+      "unitText": "ms"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PB5 Time",
+      "description": "Time of observation in Year, Day, and millisecond"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Average Charge State Iron",
+      "description": "Average charge state for iron. Charge state 1 is singly ionized ion. Typical uncertainty is half a charge unit.",
+      "minValue": "26.0",
+      "maxValue": "0.5",
+      "defaultValue": "-1e31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Normalized Counts",
+      "description": "Normalized counts used in the charge state calculation process. Provided as a measure of counting statistics",
+      "minValue": "0",
+      "maxValue": "7000000",
+      "defaultValue": "-1e31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fe charge state histogram",
+      "description": "Fe charge state histograms. Example: bin 10 includes all calculated charge states 10.0 less than or equal to Q and less than 11.0. Avg Q may be calculated by combining the counts at each bin with the bin value of bin +0.5",
+      "minValue": "0",
+      "maxValue": "7000000",
+      "defaultValue": "-1e31"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

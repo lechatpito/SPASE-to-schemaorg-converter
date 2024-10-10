@@ -1,0 +1,93 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/STEREO-B/Ephemeris/HEEQ/PT05M",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/STEREO-B/Ephemeris/HEEQ/PT05M",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO-B Ephemeris in the HEEQ Coordinate System",
+  "sdDatePublished": "2020-07-07",
+  "description": "STEREO atttitude and orbit data are distributed as SPICE kernels. Since most SEP investigators would rather not deal with SPICE kernels, Caltech provides text files containing position data for the two STEREO spacecraft, in the following coordinate systems: GEI, GSE, GSM, HCI, HEE, HEEQ.",
+  "abstract": "STEREO atttitude and orbit data are distributed as SPICE kernels. Since most SEP investigators would rather not deal with SPICE kernels, Caltech provides text files containing position data for the two STEREO spacecraft, in the following coordinate systems: GEI, GSE, GSM, HCI, HEE, HEEQ.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.srl.caltech.edu/STEREO/attorb.html",
+      "name": "STEREO Attitude and Orbit Data",
+      "description": "Predicted or definitive STEREO attitude and orbit data are generated from SPICE kernels and offered in various coordinate system."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "The year of the data point"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOY",
+      "description": "The day of year of the data point"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second",
+      "description": "The second of the day of the data point"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Flag",
+      "description": "0 if the data are predictive and 1 if the data are definitive"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "X",
+      "description": "The X component of the spacecraft position vector",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Y",
+      "description": "The Y component of the spacecraft position vector",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Z",
+      "description": "The Z component of the spacecraft position vector",
+      "unitText": "km"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/STAFF/DSTAR_SP_T1_STA",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/STAFF/DSTAR_SP_T1_STA",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Double Star 1 STAFF Summary Parameters",
+  "sdDatePublished": "2022-02-16",
+  "description": "This data set contains Double Star 1 STAFF summary   parameters at spin resolution including  the instrument status, and magnetic field spectral density  in three frequency ranges up to 4 kHz.",
+  "abstract": "This data set contains Double Star 1 STAFF summary   parameters at spin resolution including  the instrument status, and magnetic field spectral density  in three frequency ranges up to 4 kHz.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_SP_T1_STA",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 STAFF-DWP Status Summary Parameter",
+      "description": "Status of the STAFF-DWP data Summary Parameter"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 STAFF-DWP Magnetic Field Power  (2 - 10 Hz) Summary Parameter",
+      "description": "Double Star 1 STAFF-DWP Magnetic Field Power  (2 - 10  Hz) Summary Parameter",
+      "unitText": "nT^2 Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 STAFF-DWP Magnetic Field Power  (10 - 180 Hz) Summary Parameter",
+      "description": "Double Star 1 STAFF-DWP Magnetic Field Power  (10 - 180  Hz) Summary Parameter",
+      "unitText": "nT^2 Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 1 STAFF-DWP Magnetic Field Power  (180 - 4000 Hz) Summary Parameter",
+      "description": "Double Star 1 STAFF-DWP Magnetic Field Power  (180 - 4000  Hz) Summary Parameter",
+      "unitText": "nT^2 Hz^-1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

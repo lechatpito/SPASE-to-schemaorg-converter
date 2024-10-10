@@ -1,0 +1,438 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/POLAR/UVI/L1_CDF",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/POLAR/UVI/L1_CDF",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Polar UVI Imagery from CDAWeb",
+  "sdDatePublished": "2023-08-01",
+  "description": "The Ultraviolet Imager (UVI) is a small camera that detected and produced images of the ultraviolet light of the aurora, day and night. Using any of five specially designed filters the UVI camera imaged an eight degree circular field of view. Images are generated once every 37 seconds with a nominal pixel angular resolution of 0.036 degrees.",
+  "abstract": "The Ultraviolet Imager (UVI) is a small camera that detected and produced images of the ultraviolet light of the aurora, day and night. Using any of five specially designed filters the UVI camera imaged an eight degree circular field of view. Images are generated once every 37 seconds with a nominal pixel angular resolution of 0.036 degrees.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "INT_IMAGE",
+      "description": "The image array with instrument CCD pixel values.",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "228 200",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EPOCH",
+      "description": "Timestamp of first major frame of image",
+      "minValue": "24-Feb-1996 00:00:00.000",
+      "maxValue": "16-Apr-2008 23:59:59.999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC_DATE",
+      "description": "Spacecraft truncated Julian date",
+      "unitText": "Days since midnight Oct. 10, 1995"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC_TIME",
+      "description": "Spacecraft time",
+      "unitText": "msec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MCP",
+      "description": "Microchannel plate voltage",
+      "unitText": "volts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BASEPLATE",
+      "description": "Baseplate temperature",
+      "unitText": "deg. C",
+      "minValue": "-25.0",
+      "maxValue": "40.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PRIDET",
+      "description": "Primary detector electronics temperature",
+      "unitText": "deg. C",
+      "minValue": "-25.0",
+      "maxValue": "40.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SECDET",
+      "description": "Secondary detector electronics temperature\"",
+      "unitText": "deg. C",
+      "minValue": "-25.0",
+      "maxValue": "40.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "OPTBENCH",
+      "description": "Optical bench temperature",
+      "unitText": "deg. C",
+      "minValue": "-20.0",
+      "maxValue": "40.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC_BAFFLE",
+      "description": "Baffle temperature (spacecraft)",
+      "unitText": "deg. C",
+      "minValue": "-60.0",
+      "maxValue": "150.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RADIATOR",
+      "description": "Radiator temperature",
+      "unitText": "deg. C",
+      "minValue": "-110.0",
+      "maxValue": "60.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC_STKHSE",
+      "description": "Stack housing temperature (spacecraft)",
+      "unitText": "deg. C",
+      "minValue": "-30.0",
+      "maxValue": "50.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SC_STKELE",
+      "description": "Stack electronics temperature (spacecraft)",
+      "unitText": "deg. C",
+      "minValue": "-30.0",
+      "maxValue": "50.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "METERPNL",
+      "description": "Metering panel temperature",
+      "unitText": "deg. C",
+      "minValue": "-20.0",
+      "maxValue": "40.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TOPPNL",
+      "description": "Top panel temperature",
+      "unitText": "deg. C",
+      "minValue": "-20.0",
+      "maxValue": "40.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SECSENSPNL",
+      "description": "Secondary sensor panel temperature",
+      "unitText": "deg. C",
+      "minValue": "-20.0",
+      "maxValue": "40.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BOTTOMPNL",
+      "description": "Bottom panel temperature",
+      "unitText": "deg. C",
+      "minValue": "-20.0",
+      "maxValue": "40.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BAFFLE",
+      "description": "Baffle temperature (operational)",
+      "unitText": "deg. C",
+      "minValue": "-60.0",
+      "maxValue": "150.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FWMOTOR",
+      "description": "Filter wheel motor temperature",
+      "unitText": "deg. C",
+      "minValue": "-20.0",
+      "maxValue": "40.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CCD",
+      "description": "CCD temperature",
+      "unitText": "deg. C",
+      "minValue": "-90.0",
+      "maxValue": "50.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DETCASE",
+      "description": "Detector case temperature",
+      "unitText": "deg. C",
+      "minValue": "-25.0",
+      "maxValue": "40.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STKHSE",
+      "description": "Stack housing temperature (operational)",
+      "unitText": "deg. C",
+      "minValue": "-30.0",
+      "maxValue": "50.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STKELE",
+      "description": "Stack electronics temperature (operational)",
+      "unitText": "deg. C",
+      "minValue": "-30.0",
+      "maxValue": "50.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HVPS_TEMP",
+      "description": "High voltage power supply temperature",
+      "unitText": "deg. C",
+      "minValue": "-25.0",
+      "maxValue": "50.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "+5V",
+      "description": "+5 voltage monitor",
+      "unitText": "volts",
+      "minValue": "4.3",
+      "maxValue": "5.8"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "+5I",
+      "description": "+5 current monitor",
+      "unitText": "mAMPS",
+      "minValue": "350.0",
+      "maxValue": "650.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "+15V",
+      "description": "+15 voltage monitor",
+      "unitText": "volts",
+      "minValue": "13.0",
+      "maxValue": "16.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "-15V",
+      "description": "-15 voltage monitor",
+      "unitText": "volts",
+      "minValue": "-16.0",
+      "maxValue": "-13.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "+15I",
+      "description": "+15 current monitor",
+      "unitText": "mAMPS",
+      "minValue": "60.0",
+      "maxValue": "200.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "-15I",
+      "description": "-15 current monitor",
+      "unitText": "mAMPS",
+      "minValue": "40.0",
+      "maxValue": "150.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SUSPECT",
+      "description": "Data quality suspect flag"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SYSTEM",
+      "description": "System ID"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FILTER",
+      "description": "Filter"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MIRPOS",
+      "description": "Mirror position"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOORPOS",
+      "description": "Aperture door position"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GAIN",
+      "description": "Gain step",
+      "minValue": "0",
+      "maxValue": "20"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HVPSEN",
+      "description": "High voltage power supply enable"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "UVIMODE",
+      "description": "Instrument operating mode"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FRAMERATE",
+      "description": "Actual integration period",
+      "unitText": "major frames"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "OBSEQNUM",
+      "description": "Observation sequence number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SEQSTEP",
+      "description": "Sequence step number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RECORD",
+      "description": "Number of images to record with current gain/filter"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LOOP",
+      "description": "Sequence pass count (loop counter)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ITIME",
+      "description": "Nominal integration period",
+      "unitText": "major frames"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "UVITLM",
+      "description": "UVI Telemetry Mode"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SAFEING",
+      "description": "Safe mode enable"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PFLCK",
+      "description": "Platform Lock"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IMGNUM",
+      "description": "Image number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TBLNUM",
+      "description": "Mode table in use"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NFRM",
+      "description": "# frames summed for image"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NSPIN",
+      "description": "# spin pulse per image acquisition"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NFRMSUM",
+      "description": "# of frames to sum"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NIMAGE",
+      "description": "# images every 4 major frames"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NROWS",
+      "description": "# detector rows per image"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STARTROW",
+      "description": "Starting detector row"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "RESOLUTION",
+      "description": "# detector rows per line readout"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PAD",
+      "description": "Structure padding"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PAD1",
+      "description": "Structure padding"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INTEGTIME",
+      "description": "Integration time = msec/10"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SPINDELT",
+      "description": "Delta time offset from spin pulse=msec/2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MAJDELT",
+      "description": "Delta time from top of major frame 1=msec/10"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SPINRATE",
+      "description": "Spacecraft spin rate=msec/2"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

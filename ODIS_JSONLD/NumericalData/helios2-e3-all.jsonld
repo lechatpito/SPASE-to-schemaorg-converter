@@ -1,0 +1,148 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Helios2/E3/helios2-e3-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Helios2/E3/helios2-e3-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Helios2 - E3 - magnetic field 6-sec average",
+  "sdDatePublished": "2020-08-18",
+  "description": "\n            The instrument is a dual configuration of two tri-axial fluxgate magnetometers\n            operating at four different sensitivities (from 0.84 to 0.03 nT).\n            The time resolution, depending the operation mode, telemetry format, and \n            bit rate, for most cases varied from 0.07 to 1.5 seconds.\n            \n            The present data set contains six-second averages of the magnetic field\n            elements in solar-ecliptic (SE) spacecraft-centered coordinates.\n            Data are stored in files on a daily basis.\n",
+  "abstract": "\n            The instrument is a dual configuration of two tri-axial fluxgate magnetometers\n            operating at four different sensitivities (from 0.84 to 0.03 nT).\n            The time resolution, depending the operation mode, telemetry format, and \n            bit rate, for most cases varied from 0.07 to 1.5 seconds.\n            \n            The present data set contains six-second averages of the magnetic field\n            elements in solar-ecliptic (SE) spacecraft-centered coordinates.\n            Data are stored in files on a daily basis.\n",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_se",
+      "description": "Magnetic field in solar ecliptic spacecraft centered coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "helios2_e3_bse(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "helios2_e3_bse(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "helios2_e3_bse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_rtn",
+      "description": "Magnetic field in RTN coordinates",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "helios2_e3_brtn(0)"
+          },
+          {
+            "Name": "bt",
+            "Index": "2",
+            "ParameterKey": "helios2_e3_brtn(1)"
+          },
+          {
+            "Name": "bn",
+            "Index": "3",
+            "ParameterKey": "helios2_e3_brtn(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "std_b",
+      "description": "Magnetic field standard deviation",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "helios2_e3_std(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "helios2_e3_std(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "helios2_e3_std(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi",
+      "description": "Magnetic field phi angle",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta",
+      "description": "Magnetic field theta angle",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

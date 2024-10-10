@@ -1,0 +1,100 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TIMED/TIDI/L3_Vectors",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/TIMED/TIDI/L3_Vectors",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "TIMED TIDI Vectors",
+  "sdDatePublished": "2020-07-07",
+  "description": "Contains the TIDI Level 3 data mapped onto a fixed angle-along-the-track grid. The wind is decomposed into its zonal and meridional components. Each profile is annotated with ancillary data including profile position and processing status.",
+  "abstract": "Contains the TIDI Level 3 data mapped onto a fixed angle-along-the-track grid. The wind is decomposed into its zonal and meridional components. Each profile is annotated with ancillary data including profile position and processing status.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    }
+  ],
+  "keywords": [
+    "TIMED",
+    "TIDI",
+    "mesosphere",
+    "lower thermosphere",
+    "MLTI"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftp://tidi.engin.umich.edu/tidi/vector/",
+      "name": "TIDI POC website",
+      "description": "The fastest/easiest way to download a lot of TIDI product files is to use TIDI's anonymous FTP site. Please download our latest version for all the data products that you need."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Zonal wind",
+      "description": "Zonal wind at each level in the profile.",
+      "unitText": "m/s",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Meridional wind",
+      "description": "Meridional wind at each level in profile.",
+      "unitText": "m/s",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Doppler temperature",
+      "description": "Inverted line-of-sight Doppler temperature",
+      "unitText": "K",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rotational temperature",
+      "description": "Inverted line-of-sight rotational temperature in profile",
+      "unitText": "K",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ion temperature",
+      "description": "Inverted line-of-sight ion temperature in profile",
+      "unitText": "K",
+      "defaultValue": "-9999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Brightness",
+      "description": "Inverted line-of-sight backgrounds at 557.7, 589, 630, 732, 762, 780, 845, 867, and 892nm",
+      "unitText": "R/cm-1",
+      "defaultValue": "-999"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

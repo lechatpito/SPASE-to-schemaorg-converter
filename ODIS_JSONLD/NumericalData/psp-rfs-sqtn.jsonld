@@ -1,0 +1,80 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/LFR/psp-rfs-sqtn",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/LFR/psp-rfs-sqtn",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP - FIELDS RFS/LFR - L3 - SQTN",
+  "sdDatePublished": "2024-04-22",
+  "description": "These data are derived from power spectra (10.5 kHz to 1.7 MHz) acquired by the low-frequency receiver (LFR) of the Radio Frequency Spectrometer (RFS), part of the FIELDS instrument suite on PSP.\n\nThe technique of QTN spectroscopy consists of using the power spectrum of the voltage induced on an electric antenna by the particle quasi-thermal motion, measured by a radio receiver connected to an electric antenna. The signature of the electrons is a line at the electron plasma frequency, which leads to the total electron density (proportionnal to the square of electron plasma frequency), whereas the shape of the line reveals the electron kinetic temperature, as well as its themral (core) and suprathermal components.\n\nFor more information on the QTN spectroscopy, please see : Moncuquet, M. et al. (2020), First in-situ measurements electron density and temperature from quasi-thermal noise spectroscopy with Parker Solar Probe/FIELDS, The Astrophysical Journal Supplement Series, Volume 246, p.44, doi:10.3847/1538-4365/ab5a84/\n\nFor more information on the FIELDS instruments and datasets, please see: FIELDS Data Center",
+  "abstract": "These data are derived from power spectra (10.5 kHz to 1.7 MHz) acquired by the low-frequency receiver (LFR) of the Radio Frequency Spectrometer (RFS), part of the FIELDS instrument suite on PSP.\n\nThe technique of QTN spectroscopy consists of using the power spectrum of the voltage induced on an electric antenna by the particle quasi-thermal motion, measured by a radio receiver connected to an electric antenna. The signature of the electrons is a line at the electron plasma frequency, which leads to the total electron density (proportionnal to the square of electron plasma frequency), whereas the shape of the line reveals the electron kinetic temperature, as well as its themral (core) and suprathermal components.\n\nFor more information on the QTN spectroscopy, please see : Moncuquet, M. et al. (2020), First in-situ measurements electron density and temperature from quasi-thermal noise spectroscopy with Parker Solar Probe/FIELDS, The Astrophysical Journal Supplement Series, Volume 246, p.44, doi:10.3847/1538-4365/ab5a84/\n\nFor more information on the FIELDS instruments and datasets, please see: FIELDS Data Center",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density e-",
+      "description": "The electron density is deduced from the automatic detection of the plasma frequency in RFS spectra with SQTN spectroscopy",
+      "unitText": "cm-3",
+      "defaultValue": "-1.0e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density e- : delta",
+      "description": "Uncertainty of electron density.",
+      "unitText": "cm-3",
+      "defaultValue": "-1.0e+31",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "n_delta_minus",
+            "Index": "1",
+            "ParameterKey": "psp_sqtn_ndelta(0)"
+          },
+          {
+            "Name": "n_delta_plus",
+            "Index": "2",
+            "ParameterKey": "psp_sqtn_ndelta(1)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature e-",
+      "description": "The electron core temperature is deduced from the QTN level below fp in RFS spectra with SQTN spectroscopy",
+      "unitText": "eV",
+      "defaultValue": "-1.0e+31"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

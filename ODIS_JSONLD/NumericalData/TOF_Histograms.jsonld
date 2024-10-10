@@ -1,0 +1,59 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/IBEX/Lo/TOF_Histograms",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/IBEX/Lo/TOF_Histograms",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "IBEX-Lo TOF Histograms",
+  "sdDatePublished": "2021-03-11",
+  "description": "Each table (CSV file) captures the numbers \nof counts of arriving energetic neutral atoms, as integrated \nover a full 8-day orbit, for a single IBEX-Lo energy step, \nfor one of three categories of species (hydrogen, oxygen plus\ncarbon, and hydrogen plus oxygen plus carbon, the latter \ntwo being labelled \"Oxygen\" and \"All,\" respectively in file\nnames).  Numbers of counts are given in 1024 0.33-nanosecond \nTOF bins ranging from 0-0.33 ns to 339.67-340 ns.  Each table \nis CSV-formatted Excel.  Each subdirectory is for a given \nenergy band and has the tables (files) for each of several \norbits for each of the three species categories.",
+  "abstract": "Each table (CSV file) captures the numbers \nof counts of arriving energetic neutral atoms, as integrated \nover a full 8-day orbit, for a single IBEX-Lo energy step, \nfor one of three categories of species (hydrogen, oxygen plus\ncarbon, and hydrogen plus oxygen plus carbon, the latter \ntwo being labelled \"Oxygen\" and \"All,\" respectively in file\nnames).  Numbers of counts are given in 1024 0.33-nanosecond \nTOF bins ranging from 0-0.33 ns to 339.67-340 ns.  Each table \nis CSV-formatted Excel.  Each subdirectory is for a given \nenergy band and has the tables (files) for each of several \norbits for each of the three species categories.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Heliosheath"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/mass_spectrometer_data/TOF_histograms/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "Directory with energy-range-specific subdirectories"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/mass_spectrometer_data/TOF_histograms//",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ENA time of flight histogram",
+      "description": "ENA time of flight histogram",
+      "unitText": "Counts"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

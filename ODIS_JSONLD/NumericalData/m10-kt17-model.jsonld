@@ -1,0 +1,74 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Mariner10/Models/m10-kt17-model",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Mariner10/Models/m10-kt17-model",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Mariner 10 - Analytical Models - KT17 model",
+  "sdDatePublished": "2021-02-12",
+  "description": "Magnetic field along Mercury orbit is being real-time calculated.\n                   S/C, sampling time, distance of Mercury from the Sun (AU) and Anderson et al., 2013 disturbance index should be defined by user. \n         \n                   KT17 magnetic field model (Korth et al., 2017) model is used in calculations.\n      ",
+  "abstract": "Magnetic field along Mercury orbit is being real-time calculated.\n                   S/C, sampling time, distance of Mercury from the Sun (AU) and Anderson et al., 2013 disturbance index should be defined by user. \n         \n                   KT17 magnetic field model (Korth et al., 2017) model is used in calculations.\n      ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mercury"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b msm",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "b_kt17_model_60_0.427_50_m10_m1_xyz_mso(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "b_kt17_model_60_0.427_50_m10_m1_xyz_mso(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "b_kt17_model_60_0.427_50_m10_m1_xyz_mso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Scalar magnitude of the magnetic field in nT",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

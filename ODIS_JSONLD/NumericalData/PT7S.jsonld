@@ -1,0 +1,485 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ParkerSolarProbe/SWEAP/SPAN-A/Level3/ProtonPartialMoments/InstrumentFrame/PT7S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ParkerSolarProbe/SWEAP/SPAN-A/Level3/ProtonPartialMoments/InstrumentFrame/PT7S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP Solar Wind Electrons Alphas and Protons (SWEAP) SPAN-A Proton Distribution Function, Partial Moments, Instrument Frame, Level 3 (L3), 7 s Data",
+  "sdDatePublished": "2021-04-27",
+  "description": "SPI Level 3 Data\n----------------\n\nFile Naming Format: psp_swp_spi_sf00_l3_mom_inst_YYYYMMDD_v01.cdf\n\nThis data product contains measurements of partial moments of the proton distribution function in the instrument frame of reference. Users should be aware that the full ion distribution is typicaly not in the field of view, FOV, of the SPAN Ion instrument.\n\nParker Solar Probe SWEAP Rules of the Road\n------------------------------------------\n\nAs part of the development of collaboration with the broader Heliophysics community, the mission has drafted a \"Rules of the Road\" to govern how PSP instrument data are to be used.\n\n* 1) Users should consult with the PI to discuss the appropriate use of instrument data or model results and to ensure that the users are accessing the most recently available versions of the data and of the analysis routines. Instrument team Science Operations Centers, SOCs, and/or Virtual Observatories, VOs, should facilitate this process serving as the contact point between PI and users in most cases.\n\n* 2) Users should heed the caveats of investigators to the interpretations and limitations of data or model results. Investigators supplying data or models may insist that such caveats be published. Data and model version numbers should also be specified.\n\n* 3) Browse products, Quicklook, and Planning data are not intended for science analysis or publication and should not be used for those purposes without consent of the PI.\n\n* 4) Users should acknowledge the sources of data used in all publications, presentations, and reports: \"We acknowledge the NASA Parker Solar Probe Mission and the SWEAP team led by J. Kasper for use of data.\".\n\n* 5) Users are encouraged to provide the PI a copy of each manuscript that uses the PI data prior to submission of that manuscript for consideration of publication. On publication, the citation should be transmitted to the PI and any other providers of data.",
+  "abstract": "SPI Level 3 Data\n----------------\n\nFile Naming Format: psp_swp_spi_sf00_l3_mom_inst_YYYYMMDD_v01.cdf\n\nThis data product contains measurements of partial moments of the proton distribution function in the instrument frame of reference. Users should be aware that the full ion distribution is typicaly not in the field of view, FOV, of the SPAN Ion instrument.\n\nParker Solar Probe SWEAP Rules of the Road\n------------------------------------------\n\nAs part of the development of collaboration with the broader Heliophysics community, the mission has drafted a \"Rules of the Road\" to govern how PSP instrument data are to be used.\n\n* 1) Users should consult with the PI to discuss the appropriate use of instrument data or model results and to ensure that the users are accessing the most recently available versions of the data and of the analysis routines. Instrument team Science Operations Centers, SOCs, and/or Virtual Observatories, VOs, should facilitate this process serving as the contact point between PI and users in most cases.\n\n* 2) Users should heed the caveats of investigators to the interpretations and limitations of data or model results. Investigators supplying data or models may insist that such caveats be published. Data and model version numbers should also be specified.\n\n* 3) Browse products, Quicklook, and Planning data are not intended for science analysis or publication and should not be used for those purposes without consent of the PI.\n\n* 4) Users should acknowledge the sources of data used in all publications, presentations, and reports: \"We acknowledge the NASA Parker Solar Probe Mission and the SWEAP team led by J. Kasper for use of data.\".\n\n* 5) Users are encouraged to provide the PI a copy of each manuscript that uses the PI data prior to submission of that manuscript for consideration of publication. On publication, the citation should be transmitted to the PI and any other providers of data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time, TT2000, Midpoint of Integration",
+      "description": "Epoch Time Tags, TT2000, Nanoseconds since J2000 at Midpoint of the Integration",
+      "unitText": "ns",
+      "minValue": "01-Jan-1990 00:00:00.000000000",
+      "maxValue": "31-Dec-2029 23:59:58.999000000",
+      "defaultValue": "01-Jan-2000 11:58:55.816065535",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time",
+      "description": "Time",
+      "unitText": "s",
+      "minValue": "1.2623e+09",
+      "maxValue": "1.89346e+09",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Parker Solar Probe, Mission Elapsed Time",
+      "description": "Parker Solar Probe, PSP, Mission Elapsed Time, MET, in string format",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Application ID",
+      "description": "Application Identifier, APID",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sequence Number",
+      "description": "Sequence Number",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Source",
+      "description": "Source",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Source Hash Value",
+      "description": "Source Hash Value",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Compression Ratio",
+      "description": "Compression Ratio",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Data Points",
+      "description": "Number of Data Points",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Data Size",
+      "description": "Data Size",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SMP Bits",
+      "description": "SMP Bits",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LTCS NNNN Bits",
+      "description": "LTCS NNNN Bits",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCH Bits",
+      "description": "ARCH Bits",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mode 1",
+      "description": "Mode Number 1",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCH SUM",
+      "description": "ARCH SUM",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCH SMP Data Quality Flag",
+      "description": "ARCH SMP Data Quality Flag",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Accumulation Period",
+      "description": "Total Accumulation Period",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Accumulations",
+      "description": "Number of Accumulations",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mode 2, ORI",
+      "description": "Mode Number 2, ORI",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mode 2",
+      "description": "Mode Number 2",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "F0",
+      "description": "F0",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Status Bits",
+      "description": "Status Bits",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Peak Bin",
+      "description": "Peak Bin",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Product Bits",
+      "description": "Product Bits",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Particle Counts",
+      "description": "Particle Counts",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gap",
+      "description": "Gap",
+      "minValue": "-1.0e+30",
+      "maxValue": "1.0e+30",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Quality Flag",
+      "description": "Quality Flag",
+      "maxValue": "256",
+      "defaultValue": "-1",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rotation Matrix, Spacecraft Instrument",
+      "description": "Rotation Matrix, Spacecraft Instrument",
+      "defaultValue": "nan",
+      "cadence": "PT7S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3 3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial Moment Number Density",
+      "description": "Partial Moment Number Density",
+      "unitText": "cm^-3",
+      "minValue": "0.1",
+      "maxValue": "10000.0",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Particle Velocity Moment",
+      "description": "Particle Velocity Moment",
+      "unitText": "km/s",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "nan",
+      "cadence": "PT7S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Vx",
+            "Index": "1"
+          },
+          {
+            "Name": "Vy",
+            "Index": "2"
+          },
+          {
+            "Name": "Vz",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Temperature Tensor",
+      "description": "Temperature, T, Tensor",
+      "unitText": "eV",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "nan",
+      "cadence": "PT7S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": [
+          {
+            "Name": "Txx",
+            "Index": "1"
+          },
+          {
+            "Name": "Tyy",
+            "Index": "2"
+          },
+          {
+            "Name": "Tzz",
+            "Index": "3"
+          },
+          {
+            "Name": "Txy",
+            "Index": "4"
+          },
+          {
+            "Name": "Txz",
+            "Index": "5"
+          },
+          {
+            "Name": "Tyz",
+            "Index": "6"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Temperature, Partial Moment",
+      "description": "Temperature, Partial Moment, Average of Trace of Temperature Tensor",
+      "unitText": "eV",
+      "minValue": "-10000.0",
+      "maxValue": "10000.0",
+      "defaultValue": "nan",
+      "cadence": "PT7S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Energy Flux versus Energy",
+      "description": "Differential Energy Flux versus Energy",
+      "unitText": "eV/(cm^2 s sr eV)",
+      "minValue": "0.001",
+      "maxValue": "1.0e+12",
+      "defaultValue": "nan",
+      "cadence": "PT7S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Energy Flux versus Theta",
+      "description": "Differential Energy Flux versus Elevation Angle, Theta",
+      "unitText": "eV/(cm^2 s sr eV)",
+      "minValue": "0.001",
+      "maxValue": "1.0e+12",
+      "defaultValue": "nan",
+      "cadence": "PT7S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Differential Energy Flux versus Phi",
+      "description": "Differential Energy Flux versus Azimuth Angle, Phi",
+      "unitText": "eV/(cm^2 s sr eV)",
+      "minValue": "0.001",
+      "maxValue": "1.0e+12",
+      "defaultValue": "nan",
+      "cadence": "PT7S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Particle Energy",
+      "description": "Particle Energy",
+      "unitText": "eV",
+      "minValue": "1.0",
+      "maxValue": "100000.0",
+      "defaultValue": "nan",
+      "cadence": "PT7S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Elevation Angle, Spacecraft coordinates",
+      "description": "Elevation Angle, Spacecraft, SC, coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-90.0",
+      "maxValue": "90.0",
+      "defaultValue": "nan",
+      "cadence": "PT7S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Azimuth Angle, Spacecraft coordinates",
+      "description": "Azimuth Angle, Spacecraft, SC, coordinates",
+      "unitText": "\u00b0",
+      "minValue": "-180.0",
+      "maxValue": "360.0",
+      "defaultValue": "nan",
+      "cadence": "PT7S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

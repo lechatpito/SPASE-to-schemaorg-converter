@@ -1,0 +1,121 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/EUV/mvn-euv-clb",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/EUV/mvn-euv-clb",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - EUV - measured EUV flux",
+  "sdDatePublished": "2024-03-02",
+  "description": "Extreme Ultraviolet (EUV) monitor calibrated irradiances in three bandpasses: 17-22 nm, \n            0-7 nm, and 121-122 nm. See Eparvier et al, Space Research, 195, 203-301 2015               \n         ",
+  "abstract": "Extreme Ultraviolet (EUV) monitor calibrated irradiances in three bandpasses: 17-22 nm, \n            0-7 nm, and 121-122 nm. See Eparvier et al, Space Research, 195, 203-301 2015               \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "energy flux",
+      "unitText": "Watts/m^2",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "A: 17-22 nm",
+            "Index": "1",
+            "ParameterKey": "mav_euv_fluxc(0)"
+          },
+          {
+            "Name": "B: 0-7 nm",
+            "Index": "2",
+            "ParameterKey": "mav_euv_fluxc(1)"
+          },
+          {
+            "Name": "C: 121-122 nm",
+            "Index": "3",
+            "ParameterKey": "mav_euv_fluxc(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "measurement uncertainty",
+      "unitText": "%",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "A: 17-22 nm",
+            "Index": "1",
+            "ParameterKey": "mav_euv_deltac(0)"
+          },
+          {
+            "Name": "B: 0-7 nm",
+            "Index": "2",
+            "ParameterKey": "mav_euv_deltac(1)"
+          },
+          {
+            "Name": "C: 121-122 nm",
+            "Index": "3",
+            "ParameterKey": "mav_euv_deltac(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "total uncertainty",
+      "unitText": "%",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "A: 17-22 nm",
+            "Index": "1",
+            "ParameterKey": "mav_euv_deltatot(0)"
+          },
+          {
+            "Name": "B: 0-7 nm",
+            "Index": "2",
+            "ParameterKey": "mav_euv_deltatot(1)"
+          },
+          {
+            "Name": "C: 121-122 nm",
+            "Index": "3",
+            "ParameterKey": "mav_euv_deltatot(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

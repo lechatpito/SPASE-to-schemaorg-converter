@@ -1,0 +1,97 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NICT/misc/Okinawa/IonogramOkinawa_AutomaticScaling",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/NICT/misc/Okinawa/IonogramOkinawa_AutomaticScaling",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "IONO_Automatic_Scaling_Okinawa",
+  "sdDatePublished": "2015-05-14",
+  "description": "Observation data taken by the ionosonde at Okinawa, Japan (Automatic Scaling data)",
+  "abstract": "Observation data taken by the ionosonde at Okinawa, Japan (Automatic Scaling data)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": "Space Weather",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://wdc.nict.go.jp/IONO/wdc/index.html",
+      "name": "Website of WDC for Inosphere and Spaceweather",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "observation method (ionospheric environment)",
+      "description": "Single pulse"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "transmission peak electric power (ionospheric environment)",
+      "unitText": "kW",
+      "maxValue": "10"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "observed frequency band range (ionospheric environment)",
+      "unitText": "MHz",
+      "minValue": "1",
+      "maxValue": "29.98"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "frequency resolution (ionospheric environment)",
+      "unitText": "kHz (linear)",
+      "maxValue": "20"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pulse repetition frequency (ionospheric environment)",
+      "unitText": "Hz",
+      "maxValue": "100"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "actual elevation range (ionospheric environment)",
+      "unitText": "km",
+      "minValue": "60",
+      "maxValue": "1500"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vertical resolution (ionospheric environment)",
+      "unitText": "km",
+      "maxValue": "1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "intensity information (ionospheric environment)",
+      "unitText": "bit",
+      "maxValue": "8"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

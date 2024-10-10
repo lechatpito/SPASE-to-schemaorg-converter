@@ -1,0 +1,108 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/ephemeris/gll-orb-io",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/ephemeris/gll-orb-io",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - Ephemeris : Galileo - flybys io",
+  "sdDatePublished": "2012-03-06",
+  "description": "Trajectory of Galileo during Io flybys. Obtained from NASA/PDS MAG dataset.\n* 1995-12-07T15:21:02 1995-12-07T18:25:40 \n* 1999-10-11T03:42:20 1999-10-11T06:41:52\n* 2000-02-22T13:04:50 2000-02-22T14:25:42 \n* 2001-08-06T04:25:48 2001-08-06T05:29:08\n* 2001-10-16T01:04:35 2001-10-16T02:21:47           \n                \n                Available coordinate systems:\n                * System III : R is along the Jupiter to spacecraft line, positive away from Jupiter. Phi is parallel to the Jovigraphic equator (Omega x R). Theta completes the right-handed set (positive southward).\n                * IPHIO - Callisto Phi-Omega coordinates : X is in the direction of corotational flow (System III Phi). Z is parallel to the Jovian spin axis (Omega). Y completes the right handed set.\n                * ISPRH - spherical Callisto-centered 'planetocentric' right-handed coordinates : R is along the satellite to spacecraft line, positive away from the satellite. Phi is parellel to the satellite's planetographic equator and positive in a right-handed sense. Theta completes the right-handed set (positive southward).",
+  "abstract": "Trajectory of Galileo during Io flybys. Obtained from NASA/PDS MAG dataset.\n* 1995-12-07T15:21:02 1995-12-07T18:25:40 \n* 1999-10-11T03:42:20 1999-10-11T06:41:52\n* 2000-02-22T13:04:50 2000-02-22T14:25:42 \n* 2001-08-06T04:25:48 2001-08-06T05:29:08\n* 2001-10-16T01:04:35 2001-10-16T02:21:47           \n                \n                Available coordinate systems:\n                * System III : R is along the Jupiter to spacecraft line, positive away from Jupiter. Phi is parallel to the Jovigraphic equator (Omega x R). Theta completes the right-handed set (positive southward).\n                * IPHIO - Callisto Phi-Omega coordinates : X is in the direction of corotational flow (System III Phi). Z is parallel to the Jovian spin axis (Omega). Y completes the right handed set.\n                * ISPRH - spherical Callisto-centered 'planetocentric' right-handed coordinates : R is along the satellite to spacecraft line, positive away from the satellite. Phi is parellel to the satellite's planetographic equator and positive in a right-handed sense. Theta completes the right-handed set (positive southward).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter.Io"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_iphio",
+      "description": "Galileo trajectory coordinates in IPIO coordinates",
+      "unitText": "Rio",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x_iphio",
+            "Index": "1",
+            "ParameterKey": "gll_orb_ioxyziphio(0)"
+          },
+          {
+            "Name": "y_iphio",
+            "Index": "2",
+            "ParameterKey": "gll_orb_ioxyziphio(1)"
+          },
+          {
+            "Name": "z_iphio",
+            "Index": "3",
+            "ParameterKey": "gll_orb_ioxyziphio(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "r_isprh",
+      "description": "Galileo distance to Io (in Io Radii)",
+      "unitText": "Rio"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_isprh",
+      "description": "Galileo latitude in ISPRH coordinates",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_isprh",
+      "description": "Galileo longitude in ISPRH coordinates",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "r_sys3",
+      "description": "Galileo distance to Jupiter in Jovian Radii",
+      "unitText": "Rio"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat_sys3",
+      "description": "Galileo latitude in System III coordinates",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_east_sys3",
+      "description": "Galileo east-longitude in System III coordinates",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon_west_sys3",
+      "description": "Galileo west-longitude in System III coordinates",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

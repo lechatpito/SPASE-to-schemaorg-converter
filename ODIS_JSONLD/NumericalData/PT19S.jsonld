@@ -1,0 +1,63 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Apollo14-LM/CPLEE/PT19S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Apollo14-LM/CPLEE/PT19S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Apollo 14 ALSEP Electron and Proton Spectra, offline at NSSDC",
+  "sdDatePublished": "2021-03-10",
+  "description": "The data are 19.2-s count rates of electrons and protons at several energy steps between 40 eV and 20 keV.  Two electrostatic analyzers, each feeding 6 detectors, are oriented vertical from the lunar surface and 60 degrees from vertical, towards lunar west.",
+  "abstract": "The data are 19.2-s count rates of electrons and protons at several energy steps between 40 eV and 20 keV.  Two electrostatic analyzers, each feeding 6 detectors, are oriented vertical from the lunar surface and 60 degrees from vertical, towards lunar west.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://nssdc.gsfc.nasa.gov/nssdc/obtaining_data.html",
+      "name": "NSSDC",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Count rates",
+      "description": "Count rates of electrons and protons from each of two electrostatic analyzers, each of six detectors per analyzer, and each of 8 voltage steps for each 19.2 sec cycle",
+      "unitText": "counts per 1.2 sec",
+      "cadence": "PT19S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2 6 8",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

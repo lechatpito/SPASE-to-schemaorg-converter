@@ -1,0 +1,106 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/EPOS/Catalogues/DSTAR_JP_T1_PMP",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar1/EPOS/Catalogues/DSTAR_JP_T1_PMP",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Double Star 1 EPOS Catalogues Predicted Magnetic Position",
+  "sdDatePublished": "2021-11-02",
+  "description": "This data set contains the predicted invariant latitude, magnetic local time, L-value and magnetic field strength at five minute intervals for the Double Star 1 spacecraft. The data are provided  by the European Payload Operations Service (EPOS).",
+  "abstract": "This data set contains the predicted invariant latitude, magnetic local time, L-value and magnetic field strength at five minute intervals for the Double Star 1 spacecraft. The data are provided  by the European Payload Operations Service (EPOS).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_JP_T1_PMP",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Status components",
+      "description": "Status components"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GSE cartesian components",
+      "description": "Components in GSE cartesian coordinates",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Half sample time interval",
+      "description": "Half the mean separation between time tags, averaged over the file"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Invariant Latitude",
+      "description": "Spacecraft invariant Latitude (Null outside magnetosphere)",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft local magnetic time",
+      "description": "Spacecraft local magnetic time in hours",
+      "unitText": "h"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft L-value",
+      "description": "Spacecraft L-value (Null outside magnetosphere)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Predicted B Field Magnitude",
+      "description": "Predicted magnetic field magnitude",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

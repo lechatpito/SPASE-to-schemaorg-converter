@@ -1,0 +1,341 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NOAA/NumericalData/POES/19/SEM-2/Processed/Avg/PT16S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NOAA/NumericalData/POES/19/SEM-2/Processed/Avg/PT16S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "NOAA 19 POES Space Environment Monitor-2 (SEM-2) Averaged ASCII data at 16 s Resolution",
+  "sdDatePublished": "2018-05-15",
+  "description": "The NOAA POES SEM data consists of geographic location information, counts/s from the Medium Energy Proton/Electron Detector (MEPED), and total energies from the Total Energy Detector (TED).",
+  "abstract": "The NOAA POES SEM data consists of geographic location information, counts/s from the Medium Energy Proton/Electron Detector (MEPED), and total energies from the Total Energy Detector (TED).",
+  "keywords": [
+    "16 s",
+    "polar orbiting",
+    "NOAA",
+    "POES",
+    "SEM-2",
+    "Magnetospheric Electron Detector",
+    "Magnetospheric Proton Detector"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://satdat.ngdc.noaa.gov/sem/poes/data/processed/swpc/uncorrected/avg/",
+      "name": "Direct access to the NOAA POES SEM data",
+      "description": "Direct link to the NOAA POES SEM averaged ascii data. The data are sorted by year and spacecraft. The data files are daily files."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Universal time columns from left to right are: year month day hour minute sec and doy in the format of yyyy mm dd hh mm ss.sss dyd.ydydydy.",
+      "cadence": "PT16S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "7",
+        "elements": [
+          {
+            "Name": "Year",
+            "Index": "1",
+            "ParameterKey": "Year"
+          },
+          {
+            "Name": "Month",
+            "Index": "2",
+            "ParameterKey": "Month"
+          },
+          {
+            "Name": "Day",
+            "Index": "3",
+            "ParameterKey": "Day"
+          },
+          {
+            "Name": "Hour",
+            "Index": "4",
+            "ParameterKey": "Hour"
+          },
+          {
+            "Name": "Minute",
+            "Index": "5",
+            "ParameterKey": "Minute"
+          },
+          {
+            "Name": "Second",
+            "Index": "6",
+            "ParameterKey": "Second"
+          },
+          {
+            "Name": "Day Of Year",
+            "Index": "7",
+            "ParameterKey": "dayofyear"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Latitude of sub-satellite point.",
+      "description": "Geographic Position of sub-satellite point in degrees.",
+      "unitText": "degrees",
+      "minValue": "-90",
+      "maxValue": "90"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Longitude of sub-satellite point.",
+      "description": "Geographic Longitude of sub-satellite point in degrees.",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "360"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Latitude of foot-of-field-line.",
+      "description": "Geographic Position of foot-of-field-line point in degrees.",
+      "unitText": "degrees",
+      "minValue": "-90",
+      "maxValue": "90"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Longitude of foot-of-field-line.",
+      "description": "Geographic position of foot-of-field-line point in degrees.",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "360"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L-Value Position of the Spacecraft.",
+      "description": "L-value position of the spacecraft."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Local Time of the Spacecraft.",
+      "description": "The eccentric magnetic local time at the fofl location is calculated following the \r\nprocedures set down by Cole, (1963) and Fraser-Smith, (1987). The calculation \r\nis updated once a year using the current IGRF model field. The eccentric \r\nmagnetic local time is returned as an angle from 0\u00ba to 360\u00ba, with 0\u00ba being \r\nmagnetic midnight, and the angle incremented by 15\u00ba per hour magnetic local \r\ntime. \r\n\r\nThe local time is calculated at the sub-satellite location by assuming the local \r\ntime is the Universal Time incremented by one hour for every 15\u00ba east of the \r\nGreenwich meridian. The equation of time is not used in the calculation, so this \r\nvariable is only approximately the true local solar time at the sub-satellite point. \r\nThe local time is also returned as an angle from 0\u00ba to 360\u00ba with 0\u00ba being midnight.",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "360"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-0 pitch angle at the satellite.",
+      "description": "Medium Energy Proton/Electron Detector-0 degree electron detector on the NOAA 3 axis stabilized spacecraft is set to view outward along the Earth-center to satellite line.\r\n      \t\tThe angle given in this parameter is the angle between the 0 degree electron detector and the Earth-center to spacecraft line. At the north polar region the angle will be about zero and \r\n      \t\tat the south pole the angle will be around 180 degrees.\t",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "180"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-90 pitch angle at the satellite.",
+      "description": "Medium Energy Proton/Electron Detector-90 electron detector on the NOAA 3 axis stabilized spacecraft is set to view perpendicular along the Earth-center to satellite line.\r\n      \t\tThe angle given in this parameter is the angle between the 0 degree electron detector and the Earth-center to spacecraft line. At the polar regiond the angle will be about 90 degrees.\t\t",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "180"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-0 > 30 keV electrons.",
+      "description": "MEPED-0 >30 keV electrons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-0 > 100 keV electrons.",
+      "description": "MEPED-0 >100 keV electrons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-0 > 300 keV electrons.",
+      "description": "MEPED-0 >300 keV electrons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-0 30 keV to 80 keV protons.",
+      "description": "MEPED-0 30 keV to 80 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-0 80 keV to 240 keV protons.",
+      "description": "MEPED-0 80 keV to 240 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-0 240 keV to 800 keV protons.",
+      "description": "MEPED-0 240 keV to 800 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-0 800 keV to 2500 keV protons.",
+      "description": "MEPED-0 800 keV to 2500 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-0 2500 keV to 6900 keV protons.",
+      "description": "MEPED-0 2500 keV to 6900 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-0 > 6900 keV protons.",
+      "description": "MEPED-0 >6900 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-90 > 30 keV electrons.",
+      "description": "MEPED-90 >30 keV electrons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-90 > 100 keV electrons.",
+      "description": "MEPED-90 >100 keV electrons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-90 > 300 keV electrons.",
+      "description": "MEPED-90 >300 keV electrons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-90 30 keV to 80 keV protons.",
+      "description": "MEPED-90 30 keV to 80 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-90 80 keV to 240 keV protons.",
+      "description": "MEPED-90 80 keV to 240 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-90 240 keV to 800 keV protons.",
+      "description": "MEPED-90 240 keV to 800 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-90 800 keV to 2500 keV protons.",
+      "description": "MEPED-90 800 keV to 2500 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-90 2500 keV to 6900 keV protons.",
+      "description": "MEPED-90 2500 keV to 6900 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED-90 > 6900 keV protons.",
+      "description": "MEPED-90 >6900 keV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED omni-directional > 16 MeV protons",
+      "description": "MEPED omni-directional >16 MeV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED omni-directional > 36 MeV protons",
+      "description": "MEPED omni-directional >36 MeV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED omni-directional > 70 MeV protons",
+      "description": "MEPED omni-directional >70 MeV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MEPED omni-directional >= 140 MeV protons",
+      "description": "MEPED omni-directional >=140 MeV protons.",
+      "unitText": "counts/s",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total Energy Detector (TED) Average",
+      "description": "TED, Total Energy Detector Average.",
+      "unitText": "ergs/cm2/sec",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TED Characteristic Energy of Electrons",
+      "description": "TED characteristic energy of electrons.",
+      "unitText": "eV",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TED Characteristic Energy of Protons",
+      "description": "TED characteristic energy of protons.",
+      "unitText": "eV",
+      "defaultValue": "-999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TED electron contribution",
+      "description": "TED electron contribution.",
+      "minValue": "0",
+      "maxValue": "1",
+      "defaultValue": "-999"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/GOLD/L1C/OCC/PT0.3S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/GOLD/L1C/OCC/PT0.3S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Gold Level 1C Occultation data",
+  "sdDatePublished": "2020-09-14",
+  "description": "The Level 1C Dayside Disk Images are interrupted via stored instrument commands when \n\t  target stars suitable for occultation measurements approach either limb. \n\t  To perform the occultation measurement, the slit mechanism inserts the 1 degree wide occultation (OCC) \n\t  slit at the spectrometer focal plane, and the scan mirrors slew the Field of View to the star. \n\t  The mirror is centered at a 225 km tangent point altitude. Occultations require 6 minutes to \n\t  execute (30 seconds to configure the instrument, 30 seconds for uncertainty in timing and pointing, \n\t  4 minutes for the actual occultation, 30 seconds for uncertainty in timing and pointing, and 30 \n\t  seconds to return to HR slit). Once the occultation is complete, the HR slit is inserted, the scan \n\t  mirror returns to its departure point in the original mapping observation, and Dayside Disk Image is \n\t  resumed. By choice GOLD is limited to performing ~10 occultations a day for most of the year, \n\t  reducing the dayside mapping duty cycle by ~5%. ",
+  "abstract": "The Level 1C Dayside Disk Images are interrupted via stored instrument commands when \n\t  target stars suitable for occultation measurements approach either limb. \n\t  To perform the occultation measurement, the slit mechanism inserts the 1 degree wide occultation (OCC) \n\t  slit at the spectrometer focal plane, and the scan mirrors slew the Field of View to the star. \n\t  The mirror is centered at a 225 km tangent point altitude. Occultations require 6 minutes to \n\t  execute (30 seconds to configure the instrument, 30 seconds for uncertainty in timing and pointing, \n\t  4 minutes for the actual occultation, 30 seconds for uncertainty in timing and pointing, and 30 \n\t  seconds to return to HR slit). Once the occultation is complete, the HR slit is inserted, the scan \n\t  mirror returns to its departure point in the original mapping observation, and Dayside Disk Image is \n\t  resumed. By choice GOLD is limited to performing ~10 occultations a day for most of the year, \n\t  reducing the dayside mapping duty cycle by ~5%. ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": [
+    "Occultation data",
+    "GOLD",
+    "SES-14"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/gold/level1c/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "FTPS access to Gold Level 1C data"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/gold/level1c/",
+      "name": "HTTPS from SPDF",
+      "description": "HTTPS access to Gold Level 1C data"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ET time",
+      "description": "TDB seconds from January 1, 2000, 11:58:55.816 UTC at start of L1B time bin.",
+      "unitText": "Seconds",
+      "minValue": "0",
+      "maxValue": "1893456004",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "UTC time",
+      "description": "UTC date/time string: \"2017-06-21T23:46:38.015Z\".",
+      "unitText": "date/time",
+      "minValue": "'1970-01-01T00:00:00Z'",
+      "maxValue": "'2150-01-01T00:00:00Z'",
+      "defaultValue": " ",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "24 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L1B time per grid",
+      "description": "The number of L1B dwells in each L1C pixel.",
+      "unitText": "counts",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "L1B pixels per grid",
+      "description": "The number of L1B pixels in each L1C pixel.",
+      "unitText": "counts",
+      "minValue": "0",
+      "maxValue": "65535",
+      "defaultValue": "65535",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Quality flag",
+      "description": "Per pixel quality flags.",
+      "unitText": "counts",
+      "minValue": "0",
+      "maxValue": "4294967295",
+      "defaultValue": "4294967295",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Wavelength",
+      "description": "The wavelengths at each row.",
+      "unitText": "nm",
+      "minValue": "0",
+      "maxValue": "400",
+      "defaultValue": "NaN",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "266 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Raw Count",
+      "description": "The co-added raw count data.",
+      "unitText": "counts",
+      "minValue": "0",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "266 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Raw count random uncertainty",
+      "description": "The random uncertainty of the raw counts.",
+      "unitText": "counts",
+      "minValue": "0",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "266 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Corrected count",
+      "description": "The co-added corrected counts.",
+      "unitText": "counts",
+      "minValue": "0",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "266 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Corrected count systematic uncertainty",
+      "description": "Systematic uncertainty of the corrected counts.",
+      "unitText": "counts",
+      "minValue": "0",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "266 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Corrected count random uncertainty",
+      "description": "Random uncertainty of the corrected counts.",
+      "unitText": "counts",
+      "minValue": "0",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "266 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radiance",
+      "description": "The spectral radiance at each grid position.",
+      "unitText": "Rayleighs/nm",
+      "minValue": "0",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "266 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radiance systematic uncertainty",
+      "description": "The spectral radiance systematic uncertainty.",
+      "unitText": "Rayleighs/nm",
+      "minValue": "0",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "266 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Radiance random uncertainty",
+      "description": "The spectral radiance random uncertainty.",
+      "unitText": "Rayleighs/nm",
+      "minValue": "0",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "266 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Background counts",
+      "description": "The background counts subtracted in the background correction.",
+      "unitText": "counts",
+      "minValue": "0",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "266 980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Reference point latitude",
+      "description": "Latitude of the reference point.",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "360",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Reference point longitude",
+      "description": "Longitude of the reference point.",
+      "unitText": "degrees",
+      "minValue": "-180",
+      "maxValue": "180",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tangent Height",
+      "description": "The tangent height of the pixel center ray from the Earth's crust.",
+      "unitText": "km",
+      "minValue": "-1000000000",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ray solar phase angles",
+      "description": "The planar angle between the pixel ray from center and the sun direction.",
+      "unitText": "degrees",
+      "minValue": "-360",
+      "maxValue": "360",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ray nadir angle",
+      "description": "The planar angle between the pixel ray from center and the spacecraft nadir.",
+      "unitText": "degrees",
+      "minValue": "-360",
+      "maxValue": "360",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Emission angle",
+      "description": "The planar angle between the pixel ray from center and the normal to the reference point.",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "180",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar zenith angle",
+      "description": "The planar angle between the sun direction to the reference point and the normal to the reference point.",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "180",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Star Tangent Height",
+      "description": "The tangent height of the reference star with respect to GOLD.",
+      "unitText": "km",
+      "minValue": "-1000000000",
+      "maxValue": "1000000000",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Solar zenith angle ????",
+      "description": "The planar angle between the sun direction to the star tangent point normal.",
+      "unitText": "degrees",
+      "minValue": "-360",
+      "maxValue": "360",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Star Tangent Latitude",
+      "description": "Tangent point Latitude relative to fixed Earth frame of line to star.",
+      "unitText": "degrees",
+      "minValue": "-180",
+      "maxValue": "180",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Star Tangent longitude",
+      "description": "Tangent point Longitude relative to fixed Earth frame of line to star.",
+      "unitText": "degrees",
+      "minValue": "0",
+      "maxValue": "360",
+      "defaultValue": "9.9692e+36",
+      "cadence": "PT0.3S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "980",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

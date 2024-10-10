@@ -1,0 +1,49 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MEX/MARSIS/mex-marsis-ele",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MEX/MARSIS/mex-marsis-ele",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MEX - MARSIS - total electron content",
+  "sdDatePublished": "2016-01-27",
+  "description": "The level 5 TEC data are derived following a method described in \n             details by Mouginot et al. Planetary Space Science, V56, 2008. \n             The correction method consists in finding the three parameters [ a1 ; a2 ; a3 ] \n             defining the signal distortion phase \u0394\u03c6 induced by the ionosphere. \n             In the time domain, the ionosphere distortion generates a delay and a spreading \n             of the radar pulse. It is clearly visible on MARSIS radargram without correction. \n             A by-product of the ionospheric correction is the TEC, that can be easily obtained\n             from the [ a1 ; a2 ; a3 ] parameters. [ a1 ; a2 ; a3 ] are \n             investigated in ordrer to get \u0394\u03c6 with the best SNR As initial conditions for this\n             optimization, we use the parameters fitting with a simplified Gaussian \n             density-profile of the ionosphere.\nThen the optimization is done by using the following constraints:\n * A constraint on the vertical position of the surface echo estimated with the digital elevation model MOLA.\n * A constraint on the SNR. The signal amplitude must be maximal after correction.\n",
+  "abstract": "The level 5 TEC data are derived following a method described in \n             details by Mouginot et al. Planetary Space Science, V56, 2008. \n             The correction method consists in finding the three parameters [ a1 ; a2 ; a3 ] \n             defining the signal distortion phase \u0394\u03c6 induced by the ionosphere. \n             In the time domain, the ionosphere distortion generates a delay and a spreading \n             of the radar pulse. It is clearly visible on MARSIS radargram without correction. \n             A by-product of the ionospheric correction is the TEC, that can be easily obtained\n             from the [ a1 ; a2 ; a3 ] parameters. [ a1 ; a2 ; a3 ] are \n             investigated in ordrer to get \u0394\u03c6 with the best SNR As initial conditions for this\n             optimization, we use the parameters fitting with a simplified Gaussian \n             density-profile of the ionosphere.\nThen the optimization is done by using the following constraints:\n * A constraint on the vertical position of the surface echo estimated with the digital elevation model MOLA.\n * A constraint on the SNR. The signal amplitude must be maximal after correction.\n",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "tec",
+      "description": "Total electron content derived from the ionosphere        \n                   distortion correction",
+      "unitText": "m-2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

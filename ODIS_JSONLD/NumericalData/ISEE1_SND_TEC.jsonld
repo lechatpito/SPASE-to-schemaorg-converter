@@ -1,0 +1,60 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ISEE1/SND/ISEE1_SND_TEC",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ISEE1/SND/ISEE1_SND_TEC",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ISEE1 Resonance Sounder Technological Parameters (CDF)",
+  "sdDatePublished": "2022-02-04",
+  "description": "This data set contains  all technical parameters used for the operation of the ISEE1 SND resonance sounder  instrument and downlinked through the telemetry for each recorded spectrum.",
+  "abstract": "This data set contains  all technical parameters used for the operation of the ISEE1 SND resonance sounder  instrument and downlinked through the telemetry for each recorded spectrum.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ISEE1_SND_TEC",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ISEE1 Resonance Sounder Technological Parameters",
+      "description": "ISEE1 Resonance Sounder  technological parameters used for the operation of the instrument and down linked through the telemetry for each recorded spectrum"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

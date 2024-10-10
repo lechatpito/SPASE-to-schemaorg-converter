@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Wind/WAVES/WIND_WAVES_RAD1_L2_60S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Wind/WAVES/WIND_WAVES_RAD1_L2_60S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Wind Waves RAD1_L2_60S : 60-second Averaged Data (Range 20 - 1040 kHz)",
+  "sdDatePublished": "2022-09-01",
+  "description": "This data set contains Wind Waves RADIO RAD1 60-second Averaged Data (Range 1.075 - 13.825 MHz, number of channels 16, 32, 64 or 256)\n Experimental data have been processed and averaged over 60-second intervalls from the corresponding high resolution datasets at L2 level. They are presented as temporal series. Each record consists on an averaged spectrum (given in \u00b5V^2/Hz @ PA), as well as the minimum and maximum spectrum values.\nInterpolations are performed in the case of missing/bad values, while the min. and max. values are left equal to -1.0e31.\nThe intensity modulation due to the spacecraft rotation, as well as the background level are not removed from the data.",
+  "abstract": "This data set contains Wind Waves RADIO RAD1 60-second Averaged Data (Range 1.075 - 13.825 MHz, number of channels 16, 32, 64 or 256)\n Experimental data have been processed and averaged over 60-second intervalls from the corresponding high resolution datasets at L2 level. They are presented as temporal series. Each record consists on an averaged spectrum (given in \u00b5V^2/Hz @ PA), as well as the minimum and maximum spectrum values.\nInterpolations are performed in the case of missing/bad values, while the min. and max. values are left equal to -1.0e31.\nThe intensity modulation due to the spacecraft rotation, as well as the background level are not removed from the data.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:WIND_WAVES_RAD1_L2_60S",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "WIND RAD1 L2 60S : 60-second Averaged Power spectral density  (Range 20 - 1040 kHz)",
+      "description": "WIND  RAD1 L2 60S : 60-second Averaged Power spectral density  (Range 20 - 1040 kHz)",
+      "unitText": "uV^2/Hz"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

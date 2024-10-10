@@ -1,0 +1,75 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Phobos2/ASPERA/pho-asp-ion",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Phobos2/ASPERA/pho-asp-ion",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Phobos-2 - ASPERA - ion spectra",
+  "sdDatePublished": "2019-12-06",
+  "description": "Ion spectra",
+  "abstract": "Ion spectra",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "h+ : perp flow",
+      "description": "energy-time spectrogram of proton counts : perpendicular flow",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ : sunward flow",
+      "description": "energy-time spectrogram of proton counts : sunward flow",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ : tailward flow",
+      "description": "energy-time spectrogram of proton counts : tailward flow",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o+ : perp flow",
+      "description": "energy-time spectrogram of heavy ion counts : perpendicular flow",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o+ : sunward flow",
+      "description": "energy-time spectrogram of heavy ion counts : sunward flow",
+      "unitText": "cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "o+ : tailward flow",
+      "description": "energy-time spectrogram of heavy ion counts : tailward flow",
+      "unitText": "cnts"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/CRRES/PROTEL/PT5H",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/CRRES/PROTEL/PT5H",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "CRRES PROTEL proton equatorial distributions vs.L",
+  "sdDatePublished": "2021-03-10",
+  "description": "This data set holds half-orbit (~5 hour) resolution \nproton distributions (19 5-deg equatorial pitch angles vs. 24 energies) \nfrom the Proton Telescope (PROTEL) on the CRRES spacecraft.  \nThe energy range covered is 1-100 MeV.  These data are developed from \nthe 1-min insitu pitch angle distributions by assigning each 5-deg bin \nin pitch angle a corresponding McIlwain L value and then by mapping the \ninsitu pitch angle distribution to the equator, into 0.05-wide L bins, \nassuming first adiabatic invariant conservation.  The mapping yields \nequivalent equatorial pitch angles.  Flux data for a given half-orbit, \ngiven 0.05-wide L bin,  given equatorial pitch angle and given energy bin\nare then averaged.  Data records are for a given half-orbit and given\nL bin; each record contains averaged fluxes vs. equatorial pitch angle\nand energy.  The data are in SGI(UNIX) binary format.  Read software\nis contained within the companion documentation.",
+  "abstract": "This data set holds half-orbit (~5 hour) resolution \nproton distributions (19 5-deg equatorial pitch angles vs. 24 energies) \nfrom the Proton Telescope (PROTEL) on the CRRES spacecraft.  \nThe energy range covered is 1-100 MeV.  These data are developed from \nthe 1-min insitu pitch angle distributions by assigning each 5-deg bin \nin pitch angle a corresponding McIlwain L value and then by mapping the \ninsitu pitch angle distribution to the equator, into 0.05-wide L bins, \nassuming first adiabatic invariant conservation.  The mapping yields \nequivalent equatorial pitch angles.  Flux data for a given half-orbit, \ngiven 0.05-wide L bin,  given equatorial pitch angle and given energy bin\nare then averaged.  Data records are for a given half-orbit and given\nL bin; each record contains averaged fluxes vs. equatorial pitch angle\nand energy.  The data are in SGI(UNIX) binary format.  Read software\nis contained within the companion documentation.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/crres/particle_protel/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": ""
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/crres/particle_protel/",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

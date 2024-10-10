@@ -1,0 +1,84 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/INTERBALL-Tail/DOK2/iball-dok-3t",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/INTERBALL-Tail/DOK2/iball-dok-3t",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Interball Tail - DOK2 - ions - time profiles : sunward",
+  "sdDatePublished": "2004-12-02",
+  "description": "DOK2 is solid state spectrometer measuring ions in the energy range 20 keV - 750 keV and electrons in the energy range 30 keV - 400 keV. DOK2 includes two detectors - one looks tailward, the other one looks most of the time at 62 deg to spin axis of satellite.",
+  "abstract": "DOK2 is solid state spectrometer measuring ions in the energy range 20 keV - 750 keV and electrons in the energy range 30 keV - 400 keV. DOK2 includes two detectors - one looks tailward, the other one looks most of the time at 62 deg to spin axis of satellite.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ions flux sunward",
+      "unitText": "cm**-2.sr**-1.s**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "22 - 29 keV",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "it_dok_1ti(0)"
+          },
+          {
+            "Name": "47 - 61 keV",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "it_dok_1ti(1)"
+          },
+          {
+            "Name": "102 - 133 keV",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "it_dok_1ti(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dT",
+      "description": "Time Exposition",
+      "unitText": "sec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pitch sunward",
+      "description": "Pitch angle with incoming flux direction",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

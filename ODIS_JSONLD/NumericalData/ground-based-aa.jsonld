@@ -1,0 +1,50 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Indices/Ground_Based/ground-based-aa",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Indices/Ground_Based/ground-based-aa",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Indices - Ground Based - aa",
+  "sdDatePublished": "2024-05-23",
+  "description": "Index which purpose is to measure the amplitude of global geomagnetic activity during 3-hour intervals normalized to geomagnetic latitude \u00b150\u00b0. aa was introduced to monitor geomagnetic activity over the longest possible time period.",
+  "abstract": "Index which purpose is to measure the amplitude of global geomagnetic activity during 3-hour intervals normalized to geomagnetic latitude \u00b150\u00b0. aa was introduced to monitor geomagnetic activity over the longest possible time period.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "aa",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Aa",
+      "description": "Daily Mean of aa",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

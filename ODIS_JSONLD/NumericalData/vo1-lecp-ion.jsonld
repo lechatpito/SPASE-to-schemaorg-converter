@@ -1,0 +1,117 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager1/LECP/vo1-lecp-ion",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager1/LECP/vo1-lecp-ion",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Voyager 1 - LECP - flyby jupiter - ion flux",
+  "sdDatePublished": "2012-09-13",
+  "description": "Voyager_1\n                LECP - Low_Energy_Charged_Particle - Ions\n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "abstract": "Voyager_1\n                LECP - Low_Energy_Charged_Particle - Ions\n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "keywords": [
+    "Proton",
+    "Alpha Particle"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux diff : protons",
+      "description": "Differential Proton Flux",
+      "unitText": "cm-2.s-1.sr-1.MeV-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "0.03-0.053 MeV",
+            "Index": "1",
+            "ParameterKey": "vo1_lecp_fpdo(0)"
+          },
+          {
+            "Name": "0.053-0.085 MeV",
+            "Index": "2",
+            "ParameterKey": "vo1_lecp_fpdo(1)"
+          },
+          {
+            "Name": "0.085-0.139 MeV",
+            "Index": "3",
+            "ParameterKey": "vo1_lecp_fpdo(2)"
+          },
+          {
+            "Name": "0.139-0.2 MeV",
+            "Index": "4",
+            "ParameterKey": "vo1_lecp_fpdo(3)"
+          },
+          {
+            "Name": "0.2-0.55 MeV",
+            "Index": "5",
+            "ParameterKey": "vo1_lecp_fpdo(4)"
+          },
+          {
+            "Name": "0.55-1.05 MeV",
+            "Index": "6",
+            "ParameterKey": "vo1_lecp_fpdo(5)"
+          },
+          {
+            "Name": "1.05-2.03 MeV",
+            "Index": "7",
+            "ParameterKey": "vo1_lecp_fpdo(6)"
+          },
+          {
+            "Name": "2.03-4.01 MeV",
+            "Index": "8",
+            "ParameterKey": "vo1_lecp_fpdo(7)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "aflux diff : alphas",
+      "description": "Integrated Alpha Flux",
+      "unitText": "cm-2.s-1.sr-1.MeV-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2",
+        "elements": [
+          {
+            "Name": "0.98-1.77 MeV",
+            "Index": "1",
+            "ParameterKey": "vo1_lecp_fado(0)"
+          },
+          {
+            "Name": "1.77-4.22 MeV",
+            "Index": "2",
+            "ParameterKey": "vo1_lecp_fado(1)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

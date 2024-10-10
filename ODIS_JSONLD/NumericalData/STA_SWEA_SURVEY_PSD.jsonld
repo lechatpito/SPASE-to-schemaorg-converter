@@ -1,0 +1,91 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/STEREO-A/IMPACT/SWEA/STA_SWEA_SURVEY_PSD",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/STEREO-A/IMPACT/SWEA/STA_SWEA_SURVEY_PSD",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO-A IMPACT SWEA Level-2 Survey electron distribution functions in phase space density",
+  "sdDatePublished": "2022-07-26",
+  "description": "This data set contains the electron distribution functions at the SURVEY cadence (30 s).\nThe data is provided in units of phase space density. The reference frame is related to the instrument frame.",
+  "abstract": "This data set contains the electron distribution functions at the SURVEY cadence (30 s).\nThe data is provided in units of phase space density. The reference frame is related to the instrument frame.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:STA_SWEA_SURVEY_PSD",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron distribution functions  energy table",
+      "description": "STEREO-A SWEA electron distribution functions  energy table",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron distribution functions delta plus energy table",
+      "description": "STEREO-A SWEA electron distribution functions delta plus energy table",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron distribution functions  delta minus energy table",
+      "description": "STEREO-A SWEA electron distribution functions  delta minus energy table",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron distribution functions  Phase Space Density",
+      "description": "STEREO-B SWEA electron distribution functions Phase Space Density",
+      "unitText": "s^3/km^6"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron distribution functions theta table",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron distribution functions phi table",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron distribution functions delta plus phi table",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-A SWEA electron distribution functions delta minus phi table",
+      "unitText": "\u00b0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

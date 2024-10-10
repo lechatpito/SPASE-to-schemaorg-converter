@@ -1,0 +1,223 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/STEREO-A/HET/sta-het-1min",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/STEREO-A/HET/sta-het-1min",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO A - HET - 1 minute",
+  "sdDatePublished": "2024-05-20",
+  "description": "STEREO IMPACT HET fluxes @1min. Detal data description is at http://www.srl.caltech.edu/STEREO/Level1/HET_public.html",
+  "abstract": "STEREO IMPACT HET fluxes @1min. Detal data description is at http://www.srl.caltech.edu/STEREO/Level1/HET_public.html",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- flux",
+      "unitText": "1/(cm2-sr-sec-MeV)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "0.7-1.4 MeV",
+            "Index": "1",
+            "ParameterKey": "sta_het_1min_efl(0)"
+          },
+          {
+            "Name": "1.4-2.8 MeV",
+            "Index": "2",
+            "ParameterKey": "sta_het_1min_efl(1)"
+          },
+          {
+            "Name": "2.8-4.0 MeV",
+            "Index": "3",
+            "ParameterKey": "sta_het_1min_efl(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- flux uncertainty",
+      "unitText": "1/(cm2-sr-sec-MeV)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "0.7-1.4 MeV",
+            "Index": "1",
+            "ParameterKey": "sta_het_1min_eflu(0)"
+          },
+          {
+            "Name": "1.4-2.8 MeV",
+            "Index": "2",
+            "ParameterKey": "sta_het_1min_eflu(1)"
+          },
+          {
+            "Name": "2.8-4.0 MeV",
+            "Index": "3",
+            "ParameterKey": "sta_het_1min_eflu(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux",
+      "unitText": "1/(cm2-sr-sec-MeV)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "11",
+        "elements": [
+          {
+            "Name": "13.6-15.1 MeV",
+            "Index": "1",
+            "ParameterKey": "sta_het_1min_hfl(0)"
+          },
+          {
+            "Name": "14.9-17.1 MeV",
+            "Index": "2",
+            "ParameterKey": "sta_het_1min_hfl(1)"
+          },
+          {
+            "Name": "17.0-19.3 MeV",
+            "Index": "3",
+            "ParameterKey": "sta_het_1min_hfl(2)"
+          },
+          {
+            "Name": "20.8-23.8 MeV",
+            "Index": "4",
+            "ParameterKey": "sta_het_1min_hfl(3)"
+          },
+          {
+            "Name": "23.8-26.4 MeV",
+            "Index": "5",
+            "ParameterKey": "sta_het_1min_hfl(4)"
+          },
+          {
+            "Name": "26.3-29.7 MeV",
+            "Index": "6",
+            "ParameterKey": "sta_het_1min_hfl(5)"
+          },
+          {
+            "Name": "29.5-33.4 MeV",
+            "Index": "7",
+            "ParameterKey": "sta_het_1min_hfl(6)"
+          },
+          {
+            "Name": "33.4-35.8 MeV",
+            "Index": "8",
+            "ParameterKey": "sta_het_1min_hfl(7)"
+          },
+          {
+            "Name": "35.5-40.5 MeV",
+            "Index": "9",
+            "ParameterKey": "sta_het_1min_hfl(8)"
+          },
+          {
+            "Name": "40.0-60.0 MeV",
+            "Index": "10",
+            "ParameterKey": "sta_het_1min_hfl(9)"
+          },
+          {
+            "Name": "60.0-100.0 MeV",
+            "Index": "11",
+            "ParameterKey": "sta_het_1min_hfl(10)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux uncertainty",
+      "unitText": "1/(cm2-sr-sec-MeV)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "11",
+        "elements": [
+          {
+            "Name": "13.6-15.1 MeV",
+            "Index": "1",
+            "ParameterKey": "sta_het_1min_hflu(0)"
+          },
+          {
+            "Name": "14.9-17.1 MeV",
+            "Index": "2",
+            "ParameterKey": "sta_het_1min_hflu(1)"
+          },
+          {
+            "Name": "17.0-19.3 MeV",
+            "Index": "3",
+            "ParameterKey": "sta_het_1min_hflu(2)"
+          },
+          {
+            "Name": "20.8-23.8 MeV",
+            "Index": "4",
+            "ParameterKey": "sta_het_1min_hflu(3)"
+          },
+          {
+            "Name": "23.8-26.4 MeV",
+            "Index": "5",
+            "ParameterKey": "sta_het_1min_hflu(4)"
+          },
+          {
+            "Name": "26.3-29.7 MeV",
+            "Index": "6",
+            "ParameterKey": "sta_het_1min_hflu(5)"
+          },
+          {
+            "Name": "29.5-33.4 MeV",
+            "Index": "7",
+            "ParameterKey": "sta_het_1min_hflu(6)"
+          },
+          {
+            "Name": "33.4-35.8 MeV",
+            "Index": "8",
+            "ParameterKey": "sta_het_1min_hflu(7)"
+          },
+          {
+            "Name": "35.5-40.5 MeV",
+            "Index": "9",
+            "ParameterKey": "sta_het_1min_hflu(8)"
+          },
+          {
+            "Name": "40.0-60.0 MeV",
+            "Index": "10",
+            "ParameterKey": "sta_het_1min_hflu(9)"
+          },
+          {
+            "Name": "60.0-100.0 MeV",
+            "Index": "11",
+            "ParameterKey": "sta_het_1min_hflu(10)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

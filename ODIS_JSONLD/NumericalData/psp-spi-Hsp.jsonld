@@ -1,0 +1,61 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/SPI/psp-spi-Hsp",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/PSP/SPI/psp-spi-Hsp",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "PSP - SWEAP SPANi - protons - spectrograms",
+  "sdDatePublished": "2022-02-14",
+  "description": "\n            This data set provides spectra of the energy flux versus Energy, Elevation and Azimuth angle  in RTN coordinates.\n         ",
+  "abstract": "\n            This data set provides spectra of the energy flux versus Energy, Elevation and Azimuth angle  in RTN coordinates.\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "h+ eflux/ener",
+      "description": "\n               Differential Energy Flux vs Energy\n           ",
+      "unitText": "eV/cm**2-s-ster-eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ eflux/theta",
+      "description": "\n               Differential Energy Flux vs Elevation Instrument Coordinates\n           ",
+      "unitText": "eV/cm**2-s-ster-eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ eflux/phi",
+      "description": "\n               Differential Energy Flux vs Azimuth Instrument Coordinates\n           ",
+      "unitText": "eV/cm**2-s-ster-eV"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

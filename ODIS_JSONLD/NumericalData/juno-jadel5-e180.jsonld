@@ -1,0 +1,83 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/JADE/juno-jadel5-e180",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Juno/JADE/juno-jadel5-e180",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Juno - JADE - L5 : electrons - instrument-180",
+  "sdDatePublished": "2023-07-13",
+  "description": "This data set consists of all of the         \n        calibrated data collected by the JADE (Jovian Auroral Distributions      \n        Experiment) on-board the Juno spacecraft, converted in to units of DEF,  \n        and with pitch angles included for JADE-E.",
+  "abstract": "This data set consists of all of the         \n        calibrated data collected by the JADE (Jovian Auroral Distributions      \n        Experiment) on-board the Juno spacecraft, converted in to units of DEF,  \n        and with pitch angles included for JADE-E.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "diff flux",
+      "unitText": "1/(m^2 sr s)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "diff flux - Sum",
+      "unitText": "1/(m^2 sr s)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "64",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "diff flux - PAD",
+      "unitText": "1/(m^2 sr s)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mode"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pitch angle",
+      "unitText": "deg",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

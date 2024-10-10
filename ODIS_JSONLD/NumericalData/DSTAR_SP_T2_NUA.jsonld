@@ -1,0 +1,96 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar2/NUADU/DSTAR_SP_T2_NUA",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar2/NUADU/DSTAR_SP_T2_NUA",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Double Star 2 NUADU Summary Parameters",
+  "sdDatePublished": "2021-11-02",
+  "description": "The NUADU (NeUtral Atom Detector Unit) instrument   is an ENA-sensitive imager that covers 4-\u03c0 solid angle with an angular resolution of 16 \u00d7 128 = 2048 pixels.\n\nThis data set conatins Double Star 2 NUADU summary  parameters at 1 min including the instrument status and omni-directional ENA fluxes in 4 energy bands.",
+  "abstract": "The NUADU (NeUtral Atom Detector Unit) instrument   is an ENA-sensitive imager that covers 4-\u03c0 solid angle with an angular resolution of 16 \u00d7 128 = 2048 pixels.\n\nThis data set conatins Double Star 2 NUADU summary  parameters at 1 min including the instrument status and omni-directional ENA fluxes in 4 energy bands.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_SP_T2_NUA",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 NUADU Omni-directional ENA flux Summary Parameter (< 50 keV)",
+      "description": "Double Star 2 NUADU Omni-directional ENA flux Summary Parameter (< 50 keV) at 60 s time resolution",
+      "unitText": "cm^-2 s^-1 sr^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 NUADU Omni-directional ENA flux Summary Parameter (50 -81 keV)",
+      "description": "Double Star 2 NUADU Omni-directional ENA flux Summary Parameter (50 - 81 keV) at 60 s time resolution",
+      "unitText": "cm^-2 s^-1 sr^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 NUADU Omni-directional ENA flux Summary Parameter (81 -158 keV)",
+      "description": "Double Star 2 NUADU Omni-directional ENA flux Summary Parameter (81 - 158 keV) at 60 s time resolution",
+      "unitText": "cm^-2 s^-1 sr^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 NUADU Omni-directional ENA flux Summary Parameter ( > 158 keV)",
+      "description": "Double Star 2 NUADU Omni-directional ENA flux Summary Parameter ( > 158 keV) at 60 s time resolution",
+      "unitText": "cm^-2 s^-1 sr^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Double Star 2 NUADU Instrument Status Summary Parameter",
+      "description": "Double Star 2 NUADU Instrument Status Summary Parameter"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Pioneer11/Ephemeris/p11-orb-jup",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Pioneer11/Ephemeris/p11-orb-jup",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Pioneer 11 - Ephemeris - orbit jupiter",
+  "sdDatePublished": "2012-03-06",
+  "description": "Pioneer11 satellite positions.",
+  "abstract": "Pioneer11 satellite positions.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "distance p11-jupiter",
+      "description": "Range of the spacecraft from the Jupiter center of mass",
+      "unitText": "Rj"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat planetographic",
+      "description": "Planetographic latitude of the spacecraft",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon planetographic (east)",
+      "description": "Planetographic east longitude of the spacecraft",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "local time",
+      "description": "Local Time of the spacecraft",
+      "unitText": "hours"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster3/CIS-HIA/clust3-hia-mom",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster3/CIS-HIA/clust3-hia-mom",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cluster 3 - CIS-HIA - ion moments",
+  "sdDatePublished": "2018-11-16",
+  "description": "      \n             HIA ion moments are onboard calculated, then reprocessed on ground with the following steps:            \n             * detection  efficiency  correction  using  total  efficiency  calibration  coefficients  (from  calibration files)            \n             * coordinate transformations to ISR2 and GSE systems (for ion bulk velocity)            \n             * parallel  and  perpendicular  temperature  calculations using  the  B-field  vector  (FGM-CAA  spin resolution)\n            \n            They have 1-spin time resolution (~4 s), and are calculated from the full angular and energy resolution 3-D ion distributions.  \n            They  include  ion  density,  bulk  velocity  vector  (in  both  GSE  and  GSM  frame),  pressure  tensor,  total  pressure, and temperatures (parallel and perpendicular to the magnetic field, and total temperature",
+  "abstract": "      \n             HIA ion moments are onboard calculated, then reprocessed on ground with the following steps:            \n             * detection  efficiency  correction  using  total  efficiency  calibration  coefficients  (from  calibration files)            \n             * coordinate transformations to ISR2 and GSE systems (for ion bulk velocity)            \n             * parallel  and  perpendicular  temperature  calculations using  the  B-field  vector  (FGM-CAA  spin resolution)\n            \n            They have 1-spin time resolution (~4 s), and are calculated from the full angular and energy resolution 3-D ion distributions.  \n            They  include  ion  density,  bulk  velocity  vector  (in  both  GSE  and  GSM  frame),  pressure  tensor,  total  pressure, and temperatures (parallel and perpendicular to the magnetic field, and total temperature",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "keywords": [
+    "4 second",
+    "magnetosphere",
+    "auroral region",
+    "polar cap",
+    "cusp",
+    "bow shock",
+    "solar wind",
+    "magnetosheath",
+    "Cluster",
+    "magnetotail",
+    "lobe"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Hot ion number density at spin time resolution",
+      "unitText": "cm^-3",
+      "minValue": "0.0010",
+      "maxValue": "1000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gse",
+      "description": "Hot ion bulk velocity at spin time resolution in GSE",
+      "unitText": "km/s",
+      "minValue": "-2000",
+      "maxValue": "2000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "c3_hia_v(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "c3_hia_v(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "c3_hia_v(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gsm",
+      "description": "Hot ion bulk velocity at spin time resolution in GSM",
+      "unitText": "km/s",
+      "minValue": "-2000",
+      "maxValue": "2000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "c3_hia_v_gsm(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "c3_hia_v_gsm(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "c3_hia_v_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v|",
+      "description": " Hot ion bulk velocity magnitude at spin time resolution",
+      "unitText": "km/s",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature total",
+      "description": "\n               Hot ion temperature at spin time resolution\n            ",
+      "unitText": "eV",
+      "defaultValue": "-1.e+31",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_para",
+      "description": "\n                Hot ion parallel temperature at spin time resolution\n            ",
+      "unitText": "eV",
+      "defaultValue": "-1.e+31",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_perp",
+      "description": "\n               Hot ion perpendicular temperature at spin time resolution\n            ",
+      "unitText": "eV",
+      "defaultValue": "-1.e+31",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure total",
+      "description": "\n                Hot ion pressure (scalar) at spin time resolution\n            ",
+      "unitText": "nPa",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure tensor gse",
+      "description": "\n                Hot ion pressure (tensor) at spin time resolution in GSE\n            ",
+      "unitText": "nPa",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "xx",
+            "Index": "1",
+            "ParameterKey": "c3_hia_prest(0)"
+          },
+          {
+            "Name": "xy",
+            "Index": "2",
+            "ParameterKey": "c3_hia_prest(1)"
+          },
+          {
+            "Name": "xz",
+            "Index": "3",
+            "ParameterKey": "c3_hia_prest(2)"
+          },
+          {
+            "Name": "yx",
+            "Index": "4",
+            "ParameterKey": "c3_hia_prest(3)"
+          },
+          {
+            "Name": "yy",
+            "Index": "5",
+            "ParameterKey": "c3_hia_prest(4)"
+          },
+          {
+            "Name": "yz",
+            "Index": "6",
+            "ParameterKey": "c3_hia_prest(5)"
+          },
+          {
+            "Name": "zx",
+            "Index": "7",
+            "ParameterKey": "c3_hia_prest(6)"
+          },
+          {
+            "Name": "zy",
+            "Index": "8",
+            "ParameterKey": "c3_hia_prest(7)"
+          },
+          {
+            "Name": "zz",
+            "Index": "9",
+            "ParameterKey": "c3_hia_prest(8)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

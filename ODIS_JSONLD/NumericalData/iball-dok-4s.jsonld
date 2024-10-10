@@ -1,0 +1,72 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/INTERBALL-Tail/DOK2/iball-dok-4s",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/INTERBALL-Tail/DOK2/iball-dok-4s",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Interball Tail - DOK2 - ions - spectra : tailward",
+  "sdDatePublished": "2004-12-16",
+  "description": "DOK2 is solid state spectrometer measuring ions in the energy range 20 keV - 750 keV and electrons in the energy range 30 keV - 400 keV. DOK2 includes two detectors - one looks tailward, the other one looks most of the time at 62 deg to spin axis of satellite.",
+  "abstract": "DOK2 is solid state spectrometer measuring ions in the energy range 20 keV - 750 keV and electrons in the energy range 30 keV - 400 keV. DOK2 includes two detectors - one looks tailward, the other one looks most of the time at 62 deg to spin axis of satellite.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux tail",
+      "unitText": "cm**-2.sr**-1.s**-1.keV**-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "55",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dT",
+      "description": "Time Exposition",
+      "unitText": "sec"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta",
+      "description": "Detector angle with axe pointed to Sun",
+      "unitText": "deg",
+      "defaultValue": "999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pitch tailward",
+      "description": "Pitch angle with incoming flux direction",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

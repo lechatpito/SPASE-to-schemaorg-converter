@@ -1,0 +1,163 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SOHO/ERNE/soho-erne-hed",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/SOHO/ERNE/soho-erne-hed",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SOHO - ERNE - HED",
+  "sdDatePublished": "2024-05-13",
+  "description": "High Energy Detector consist of 7 detector layers and an anticoincidence \n(AC) shield. First 4 layers are position sensitive silicon strip detectors\n(S1x, S1y, S2x, S2y), they are followed by an other silicon detector (D1),\na CsI scintillator (D2) and a BGO-scintillator (D3).",
+  "abstract": "High Energy Detector consist of 7 detector layers and an anticoincidence \n(AC) shield. First 4 layers are position sensitive silicon strip detectors\n(S1x, S1y, S2x, S2y), they are followed by an other silicon detector (D1),\na CsI scintillator (D2) and a BGO-scintillator (D3).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "proton flux",
+      "unitText": "1/(cm**2 sr s MeV)",
+      "defaultValue": "-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "10",
+        "elements": [
+          {
+            "Name": "13 - 16 MeV",
+            "Index": "1",
+            "ParameterKey": "soho_erne_hedp(0)"
+          },
+          {
+            "Name": "16 - 20 MeV",
+            "Index": "2",
+            "ParameterKey": "soho_erne_hedp(1)"
+          },
+          {
+            "Name": "20 - 25 MeV",
+            "Index": "3",
+            "ParameterKey": "soho_erne_hedp(2)"
+          },
+          {
+            "Name": "25 - 32 MeV",
+            "Index": "4",
+            "ParameterKey": "soho_erne_hedp(3)"
+          },
+          {
+            "Name": "32 - 40 MeV",
+            "Index": "5",
+            "ParameterKey": "soho_erne_hedp(4)"
+          },
+          {
+            "Name": "40 - 50 MeV",
+            "Index": "6",
+            "ParameterKey": "soho_erne_hedp(5)"
+          },
+          {
+            "Name": "50 - 64 MeV",
+            "Index": "7",
+            "ParameterKey": "soho_erne_hedp(6)"
+          },
+          {
+            "Name": "64 - 80 MeV",
+            "Index": "8",
+            "ParameterKey": "soho_erne_hedp(7)"
+          },
+          {
+            "Name": "80 - 100 MeV",
+            "Index": "9",
+            "ParameterKey": "soho_erne_hedp(8)"
+          },
+          {
+            "Name": "100 - 130 MeV",
+            "Index": "10",
+            "ParameterKey": "soho_erne_hedp(9)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "4He flux",
+      "unitText": "1/(cm**2 sr s MeV/n)",
+      "defaultValue": "-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "10",
+        "elements": [
+          {
+            "Name": "13 - 16 MeV/n",
+            "Index": "1",
+            "ParameterKey": "soho_erne_heda(0)"
+          },
+          {
+            "Name": "16 - 20 MeV/n",
+            "Index": "2",
+            "ParameterKey": "soho_erne_heda(1)"
+          },
+          {
+            "Name": "20 - 25 MeV/n",
+            "Index": "3",
+            "ParameterKey": "soho_erne_heda(2)"
+          },
+          {
+            "Name": "25 - 32 MeV/n",
+            "Index": "4",
+            "ParameterKey": "soho_erne_heda(3)"
+          },
+          {
+            "Name": "32 - 40 MeV/n",
+            "Index": "5",
+            "ParameterKey": "soho_erne_heda(4)"
+          },
+          {
+            "Name": "40 - 50 MeV/n",
+            "Index": "6",
+            "ParameterKey": "soho_erne_heda(5)"
+          },
+          {
+            "Name": "50 - 64 MeV/n",
+            "Index": "7",
+            "ParameterKey": "soho_erne_heda(6)"
+          },
+          {
+            "Name": "64 - 80 MeV/n",
+            "Index": "8",
+            "ParameterKey": "soho_erne_heda(7)"
+          },
+          {
+            "Name": "80 - 100 MeV/n",
+            "Index": "9",
+            "ParameterKey": "soho_erne_heda(8)"
+          },
+          {
+            "Name": "100 - 130 MeV/n",
+            "Index": "10",
+            "ParameterKey": "soho_erne_heda(9)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

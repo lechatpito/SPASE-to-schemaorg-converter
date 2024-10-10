@@ -1,0 +1,74 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/EPIC/gtl-epic-hr0",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/EPIC/gtl-epic-hr0",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Geotail - EPIC - STICS : hro : protons",
+  "sdDatePublished": "2016-10-11",
+  "description": "\n            * 6 Heads : Elevation Sector Bounds : 80.0\u00b0, 53.4\u00b0, 26.6\u00b0, 0.0\u00b0, -26.6\u00b0, -53.4\u00b0, -80.0\u00b0  : 90\u00b0 - southward flow; -90\u00b0 - northward flow;  \n            \n            * 16 Azimuthal Sectors : 0\u00b0, 22.5\u00b0, 45\u00b0, 67.5\u00b0, 90\u00b0, 112.5\u00b0, 135\u00b0, 157.5\u00b0, 180\u00b0, 202.5\u00b0, 225\u00b0, 247.5\u00b0, 270,\u00b0 292.5\u00b0, 315\u00b0, 337.5\u00b0 : 0\u00b0 - tailward flow; 180\u00b0 - sunward flow;\n                          \n            * Energy Bounds (keV) : 212.14, 135.87, 87.02, 55.74, 35.70, 22.86, 14.64, 9.38 ;\n            \n            Parameters :\n            * omni : averaged over 6 heads and 16 sectors\n            * eqt - equatorial : averaged over 2,3 heads \n            * eqt - 'directionward' : averaged over 2,3 heads and 3 corresponding azimuthal sectors\n            ",
+  "abstract": "\n            * 6 Heads : Elevation Sector Bounds : 80.0\u00b0, 53.4\u00b0, 26.6\u00b0, 0.0\u00b0, -26.6\u00b0, -53.4\u00b0, -80.0\u00b0  : 90\u00b0 - southward flow; -90\u00b0 - northward flow;  \n            \n            * 16 Azimuthal Sectors : 0\u00b0, 22.5\u00b0, 45\u00b0, 67.5\u00b0, 90\u00b0, 112.5\u00b0, 135\u00b0, 157.5\u00b0, 180\u00b0, 202.5\u00b0, 225\u00b0, 247.5\u00b0, 270,\u00b0 292.5\u00b0, 315\u00b0, 337.5\u00b0 : 0\u00b0 - tailward flow; 180\u00b0 - sunward flow;\n                          \n            * Energy Bounds (keV) : 212.14, 135.87, 87.02, 55.74, 35.70, 22.86, 14.64, 9.38 ;\n            \n            Parameters :\n            * omni : averaged over 6 heads and 16 sectors\n            * eqt - equatorial : averaged over 2,3 heads \n            * eqt - 'directionward' : averaged over 2,3 heads and 3 corresponding azimuthal sectors\n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux : omni",
+      "unitText": "1/(cm**2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux : eqt-omni",
+      "unitText": "1/(cm**2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux : eqt-tail",
+      "unitText": "1/(cm**2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux : eqt-dusk",
+      "unitText": "1/(cm**2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux : eqt-dawn",
+      "unitText": "1/(cm**2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux : eqt-sun",
+      "unitText": "1/(cm**2-s-sr-keV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "h+ flux : eqt : 2D",
+      "unitText": "1/(cm**2-s-sr-keV)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

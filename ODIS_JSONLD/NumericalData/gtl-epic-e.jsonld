@@ -1,0 +1,57 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/EPIC/gtl-epic-e",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/EPIC/gtl-epic-e",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Geotail - EPIC - ICS : low resolution - E : ion spectra",
+  "sdDatePublished": "2019-02-05",
+  "description": "Energy bounds (keV):\n            * open: 61.5, 73.7, 89.3, 110.2, 137.4, 173.1, 220.0, 281.5, 362.9, 471.4, 615.9, 913.2, 1352.3, 2013.9, 3005.4\n            * closed: 93.3, 106.8, 123.5, 145.2, 172.5, 207.3, 251.6, 309, 385.8, 490.9, 634.4, 929.6, 1361, 2024.3, 3003.8;\n           ",
+  "abstract": "Energy bounds (keV):\n            * open: 61.5, 73.7, 89.3, 110.2, 137.4, 173.1, 220.0, 281.5, 362.9, 471.4, 615.9, 913.2, 1352.3, 2013.9, 3005.4\n            * closed: 93.3, 106.8, 123.5, 145.2, 172.5, 207.3, 251.6, 309, 385.8, 490.9, 634.4, 929.6, 1361, 2024.3, 3003.8;\n           ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "apperture flag head1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "apperture flag head2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux : 2D",
+      "unitText": "1/(cm**2-s-sr-kev)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux : omni",
+      "unitText": "1/(cm**2-s-sr-kev)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

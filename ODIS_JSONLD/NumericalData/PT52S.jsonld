@@ -1,0 +1,160 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ESA/NumericalData/Cluster-Tango/WHISPER/PT52S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ESA/NumericalData/Cluster-Tango/WHISPER/PT52S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cluster-Tango Waves of HF and Sounder for Probing Electron Density by Relaxation (WHISPER) Active Electric Power Spectral Density",
+  "sdDatePublished": "2018-06-28",
+  "description": "The Waves of HIgh frequency and Sounder for Probing of Electron density by Relaxation (WHISPER) performs the measurement of the electron density on the four satellites of the Cluster project. The two main purposes of the WHISPER experiment are to record the natural waves and to make a diagnostic of the electron density using the sounding technique. The various working modes and the fourier transforms calculated on board provide a good frequency resolution obtained in the bandwidth 2-83 kHz. Onboard data compression by the Digital Wave Processing (DWP) intrument allows a good dynamic and level resolution of the electric signal amplitude. Data products available from the Cluster Science Archive include: electric spectral power density (natural spectra and active spectra), electric spectral power density from passive emission during sounding, and electric waveform power density in 0.2 second resolution. Ancillary data include Quicklook plots (JPEG) in both active and natural mode, sounding times, housekeeping data, instrument parameters during natural and active mode, and active to passive spectral power density coded ratio. Access to data through the Cluster Science Archive is available via a java GUI interface and a command-line interface. Registration is required.",
+  "abstract": "The Waves of HIgh frequency and Sounder for Probing of Electron density by Relaxation (WHISPER) performs the measurement of the electron density on the four satellites of the Cluster project. The two main purposes of the WHISPER experiment are to record the natural waves and to make a diagnostic of the electron density using the sounding technique. The various working modes and the fourier transforms calculated on board provide a good frequency resolution obtained in the bandwidth 2-83 kHz. Onboard data compression by the Digital Wave Processing (DWP) intrument allows a good dynamic and level resolution of the electric signal amplitude. Data products available from the Cluster Science Archive include: electric spectral power density (natural spectra and active spectra), electric spectral power density from passive emission during sounding, and electric waveform power density in 0.2 second resolution. Ancillary data include Quicklook plots (JPEG) in both active and natural mode, sounding times, housekeeping data, instrument parameters during natural and active mode, and active to passive spectral power density coded ratio. Access to data through the Cluster Science Archive is available via a java GUI interface and a command-line interface. Registration is required.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "keywords": [
+    "Dynamic Spectrogram",
+    "AKR",
+    "Auroral hiss",
+    "Auroral Kilometric Radiation",
+    "Chorus",
+    "Continuum radiation",
+    "Equatorial Noise",
+    "Kilometric Continuum radiation",
+    "Plasmaspheric Hiss",
+    "Terrestrial Kilometric Radiation",
+    "TKR",
+    "Very Long Baseline Interferometry",
+    "VLBI",
+    "Langmuir Waves",
+    "Type III Solar Bursts",
+    "Electostatic Solitary Waves",
+    "ESW",
+    "Whistlers",
+    "Ion Acoustic Waves",
+    "Bernstein Waves",
+    "Upper Hybrid Waves",
+    "Lower Hybrid Waves"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.cosmos.esa.int/web/csa",
+      "name": "Access to Cluster WHISPER CEFs and CDFs",
+      "description": "Access to repository of Cluster 4 WHISPER data in Cluster Exchange Format (CEF) and CDF at the Cluster Science Archive. Access is open but registration is required."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Interval centred time tag",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Delta",
+      "description": "Delta. Half of the number of seconds corresponding to the sampling interval + the uncertainty of the time tags",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Receiving antenna",
+      "description": "Receiving antenna Ey or Ez"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Spectral Power Density",
+      "description": "Electric Spectral Power Density",
+      "unitText": "Vrms^2*m^-2*Hz^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spectral Frequencies",
+      "description": "Spectral Frequencies between 1.953 and 79.915 kHz, that is to say the frequencies corresponding point to point to the 512 elements of the fixed size spectrum",
+      "unitText": "kHz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Table Number",
+      "description": "Frequency Swept Table Number between 0 and 127"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sounding Interval",
+      "description": "Time interval between two successive emission pulses in unit of 40/3 (=13.3)ms. 0: 1 unit (13.3 ms) ; 1: 2 units (26.6 ms); 2: 3 units (40 ms); 3: 5 units (66.6 ms); 4: 8 units (106.6 ms); 5: 40 units+2106.66 ms waiting+256 units+2446.66 ms waiting (8.5 s) ; 6: 6 units+45 ms waiting (125 ms); 7: 14 units+63.34 ms waiting (250 ms)",
+      "unitText": "ms"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Emission/Reception Delay",
+      "description": "Delay between the leading edge of the emission pulse and the starting edge of the associated reception (acquisition time interval)",
+      "unitText": "ms"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Gain Change Number",
+      "description": "Number of gain changes during the acquisition"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mantissa",
+      "description": "First part of the compressed value which is a fixed point integer defined in the compression algorithm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Exponent",
+      "description": "Second part of the compressed value"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

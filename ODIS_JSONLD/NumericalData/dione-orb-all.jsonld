@@ -1,0 +1,136 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/dione-orb-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/dione-orb-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Astronomical Objects Ephemerides - Planets and Moons - Saturn Moons - Dione",
+  "sdDatePublished": "2023-03-08",
+  "description": "Dione orbits Saturn with a semimajor axis about 2% less than that of the Moon. However, reflecting Saturn's greater mass (95 times that of Earth's), Dione's orbital period is one tenth that of the Moon. Dione is currently in a 1:2 mean-motion orbital resonance with moon Enceladus, completing one orbit of Saturn for every two orbits completed by Enceladus. This resonance maintains Enceladus's orbital eccentricity (0.0047), providing a source of heat for Enceladus's extensive geological activity, which shows up most dramatically in its cryovolcanic geyser-like jets. The resonance also maintains a smaller eccentricity in Dione's orbit (0.0022), tidally heating it as well.\n                \n                Dione has two co-orbital, or trojan, moons, Helene and Polydeuces. They are located within Dione's Lagrangian points L4 and L5, 60 degrees ahead of and behind Dione respectively.",
+  "abstract": "Dione orbits Saturn with a semimajor axis about 2% less than that of the Moon. However, reflecting Saturn's greater mass (95 times that of Earth's), Dione's orbital period is one tenth that of the Moon. Dione is currently in a 1:2 mean-motion orbital resonance with moon Enceladus, completing one orbit of Saturn for every two orbits completed by Enceladus. This resonance maintains Enceladus's orbital eccentricity (0.0047), providing a source of heat for Enceladus's extensive geological activity, which shows up most dramatically in its cryovolcanic geyser-like jets. The resonance also maintains a smaller eccentricity in Dione's orbit (0.0022), tidally heating it as well.\n                \n                Dione has two co-orbital, or trojan, moons, Helene and Polydeuces. They are located within Dione's Lagrangian points L4 and L5, 60 degrees ahead of and behind Dione respectively.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    },
+    {
+      "@type": "Place",
+      "name": "Saturn.Dione"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "distance dione-saturn",
+      "unitText": "Rs"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_ksm",
+      "unitText": "Rs",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "dio_sat_ksm(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "dio_sat_ksm(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "dio_sat_ksm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_kso",
+      "unitText": "Rs",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "dio_sat_kso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "dio_sat_kso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "dio_sat_kso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_IAU_saturn",
+      "unitText": "Rs",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "dio_sat_xyz(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "dio_sat_xyz(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "dio_sat_xyz(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude IAU_saturn",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude IAU_saturn",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

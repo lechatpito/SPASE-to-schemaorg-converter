@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Zond-3/KS-18/Heliospheric/PT4H",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/Zond-3/KS-18/Heliospheric/PT4H",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Russian MSU Zond-3 Heliopsheric Data",
+  "sdDatePublished": "2020-07-07",
+  "description": "This set of heliospheric data in ASCII contains measurements of energetic particles by the KS-18 instrument onboard the third Russian space probe of the Zond series at heliocentric distances larger than 1 AU.  It includes proton flux intensities at >30 MeV energy from Sun (gas-discharge counter) and at 1-5 MeV energy arriving from the direction perpendicular to the Sun-spacecraft line (stand-alone SSD sensor of 35 micron Si). Subdirectory /lownoise contains the same measured data but in its extra-rectified variant.  Besides the trajectory data in two coordinate systesms, there are overview plots in GIF.",
+  "abstract": "This set of heliospheric data in ASCII contains measurements of energetic particles by the KS-18 instrument onboard the third Russian space probe of the Zond series at heliocentric distances larger than 1 AU.  It includes proton flux intensities at >30 MeV energy from Sun (gas-discharge counter) and at 1-5 MeV energy arriving from the direction perpendicular to the Sun-spacecraft line (stand-alone SSD sensor of 35 micron Si). Subdirectory /lownoise contains the same measured data but in its extra-rectified variant.  Besides the trajectory data in two coordinate systesms, there are overview plots in GIF.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "ftps://spdf.gsfc.nasa.gov/pub/data/russian_msu/zond-3/",
+      "name": "FTPS from SPDF (not with most browsers)",
+      "description": "In ASCII via SPDF"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://spdf.gsfc.nasa.gov/pub/data/russian_msu/zond-3/",
+      "name": "HTTPS from SPDF",
+      "description": "In CDF via HTTP from SPDF"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

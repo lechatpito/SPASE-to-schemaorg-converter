@@ -1,0 +1,64 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/FIPS/mess-fips-espec",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MESSENGER/FIPS/mess-fips-espec",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MESSENGER - FIPS - espec",
+  "sdDatePublished": "2019-08-23",
+  "description": "FIPS Energy Spectra (FIPS_ESPEC) contains differential energy flux at\n      each of the 64 E/q values (0.046 - 13.3 keV/e) for selected major\n      ion species during selected time periods.",
+  "abstract": "FIPS Energy Spectra (FIPS_ESPEC) contains differential energy flux at\n      each of the 64 E/q values (0.046 - 13.3 keV/e) for selected major\n      ion species during selected time periods.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mercury"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "eflux h+",
+      "unitText": "(keV/e)^-1 s^-1 cm^-2 sr^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "eflux he2+",
+      "unitText": "(keV/e)^-1 s^-1 cm^-2 sr^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "eflux he+",
+      "unitText": "(keV/e)^-1 s^-1 cm^-2 sr^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "eflux na+",
+      "unitText": "(keV/e)^-1 s^-1 cm^-2 sr^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "eflux o+",
+      "unitText": "(keV/e)^-1 s^-1 cm^-2 sr^-1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

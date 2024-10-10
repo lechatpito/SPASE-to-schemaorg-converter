@@ -1,0 +1,61 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SWIA/mavpds-swia-specboard",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SWIA/mavpds-swia-specboard",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - SWIA - onboard omni ion spectra",
+  "sdDatePublished": "2024-03-02",
+  "description": "Onboard Survey Spectra - Ion energy spectra in units of differential \n           energy flux calculated onboard from SWIA coarse data                  \n         ",
+  "abstract": "Onboard Survey Spectra - Ion energy spectra in units of differential \n           energy flux calculated onboard from SWIA coarse data                  \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ion counts",
+      "description": "Onboard Survey Spectra - Ion energy spectra  from SWIA coarse data",
+      "unitText": "cnts",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion diff eflux",
+      "description": "Onboard Survey Spectra - Ion energy spectra in units of differential \n            energy flux calculated onboard from SWIA coarse data\n            (LID = urn:nasa:pds:maven.swia.calibrated:data.onboard_svy_spec)",
+      "unitText": "eV/cm^2 sr eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "48",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

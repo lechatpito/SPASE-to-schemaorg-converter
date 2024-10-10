@@ -1,0 +1,117 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/BIK/MWradar/mwr_bik_netcdf",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/BIK/MWradar/mwr_bik_netcdf",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Horizontal wind data in the equatorial mesosphere and lower thermosphere estimated from the meteor radar observations at Biak (NetCDF format)",
+  "sdDatePublished": "2016-07-21",
+  "description": "The horizontal wind data in the equatorial mesosphere and lower thermosphere (70-110 km) estimated from the meteor wind radar observations at Biak, Indonesia (1.17S, 136.10E, 45m MSL). The wind data are calculated from the original observation data with a weighting function. They are stored in the netCDF (network Common Data Form) file named Wb(year)(month).(resolution).nc or Wb(year)(month)(day).(resolution).nc. The resolution abbreviations are h2t60min00, h2t60min30, h4t60min00 and h4t60min30. For example, the h2t60 means weighted average of the horizontal wind with Gaussian factors over +/-2 km in height and +/-60 minutes in time. In this case, the number of meteors stands for that of data points included in the height and time window. The min00 shows that the center of the Gaussian window corresponds to 00 minute of every hour. The intervals of the wind data are every 2 km and 60 minutes. The netCDF file includes time, height, zonal and meridional winds, standard deviations of zonal and meridional winds, and number of meteors.",
+  "abstract": "The horizontal wind data in the equatorial mesosphere and lower thermosphere (70-110 km) estimated from the meteor wind radar observations at Biak, Indonesia (1.17S, 136.10E, 45m MSL). The wind data are calculated from the original observation data with a weighting function. They are stored in the netCDF (network Common Data Form) file named Wb(year)(month).(resolution).nc or Wb(year)(month)(day).(resolution).nc. The resolution abbreviations are h2t60min00, h2t60min30, h4t60min00 and h4t60min30. For example, the h2t60 means weighted average of the horizontal wind with Gaussian factors over +/-2 km in height and +/-60 minutes in time. In this case, the number of meteors stands for that of data points included in the height and time window. The min00 shows that the center of the Gaussian window corresponds to 00 minute of every hour. The intervals of the wind data are every 2 km and 60 minutes. The netCDF file includes time, height, zonal and meridional winds, standard deviations of zonal and meridional winds, and number of meteors.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Thermosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.EquatorialRegion"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://database.rish.kyoto-u.ac.jp/arch/iugonet/index-idr.html",
+      "name": "Meteor Wind and Medium Frequency Radar Data over Indonesia",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "lat",
+      "description": "Latitude of radar location",
+      "unitText": "degree_north"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon",
+      "description": "Longitude of radar location",
+      "unitText": "degree_east"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "range",
+      "description": "Height",
+      "unitText": "km",
+      "minValue": "70",
+      "maxValue": "110"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Hours since midnight of the first day of every month (1-month data) or hours since midnight of every day (1-day data). The time data are universal time.",
+      "unitText": "hour"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "uwind",
+      "description": "Zonal wind (eastward wind is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vwind",
+      "description": "Meridional wind (northward wind is positive.)",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sig_uwind",
+      "description": "Standard deviation of the zonal wind",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sig_vwind",
+      "description": "Standard deviation of the meridional wind",
+      "unitText": "m/s",
+      "defaultValue": "-9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "num",
+      "description": "Number of meteors used for the weighted average of the horizontal wind",
+      "unitText": "1",
+      "defaultValue": "-9999.0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-elemo",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cassini/CAPS/cass-caps-elemo",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cassini - CAPS - electron moments",
+  "sdDatePublished": "2014-09-01",
+  "description": "Electron moments derived from CAPS/ELS sensor",
+  "abstract": "Electron moments derived from CAPS/ELS sensor",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Saturn"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "anode used"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "signal/noise ratio"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- density",
+      "unitText": "m-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- temperature",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality factor"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "s/c charge state"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "penetrating radiation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- density without penetrating radiation",
+      "unitText": "m-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- temperature without penetrating radiation",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality factor without penetrating radiation"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/THEMIS/B/ESA/thb-peim-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/THEMIS/B/ESA/thb-peim-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "THEMIS-B - ESA - ion onboard moments",
+  "sdDatePublished": "2024-05-23",
+  "description": "Electrostatic Analyzer (ESA) data - Level 2 - ion onboard moments",
+  "abstract": "Electrostatic Analyzer (ESA) data - Level 2 - ion onboard moments",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Ion Density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gse",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "thb_v_peim(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "thb_v_peim(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "thb_v_peim(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v|",
+      "description": "Module of Velocity",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "description": "Temperature",
+      "unitText": "eV",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "t_para",
+            "Index": "1",
+            "ParameterKey": "thb_t_peim(2)"
+          },
+          {
+            "Name": "t_perp1",
+            "Index": "2",
+            "ParameterKey": "thb_t_peim(0)"
+          },
+          {
+            "Name": "t_perp2",
+            "Index": "3",
+            "ParameterKey": "thb_t_peim(1)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

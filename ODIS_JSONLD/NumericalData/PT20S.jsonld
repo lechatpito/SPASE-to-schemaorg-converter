@@ -1,0 +1,172 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/THEMIS/Ground/Savissivik/Magnetometer/PT20S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/THEMIS/Ground/Savissivik/Magnetometer/PT20S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Savissivik (SVS) Ground-based Vector Magnetic Field (L2) 20.0 s Data",
+  "sdDatePublished": "2023-07-30",
+  "description": "Savissivik, Greenland, Ground-based Vector Magnetic Field Level 2 Data, 20.0 s Time Resolution, Station Code: (SVS), Station Location: (GEO Latitude 76.0, Longitude 294.9), DTU Network",
+  "abstract": "Savissivik, Greenland, Ground-based Vector Magnetic Field Level 2 Data, 20.0 s Time Resolution, Station Code: (SVS), Station Location: (GEO Latitude 76.0, Longitude 294.9), DTU Network",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "B in HEZ Components",
+      "description": "Magnetic field B in HEZ vector components",
+      "unitText": "nT",
+      "minValue": "-60000.0",
+      "maxValue": "60000.0",
+      "defaultValue": "NaN",
+      "cadence": "PT20S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Magnetic North - H",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "RenderingHints": {
+              "AxisLabel": "1"
+            }
+          },
+          {
+            "Name": "Magnetic East - E",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "RenderingHints": {
+              "AxisLabel": "2"
+            }
+          },
+          {
+            "Name": "Vertical Down - Z",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "RenderingHints": {
+              "AxisLabel": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "H component of B",
+      "description": "---> H - Local magnetic North component of B",
+      "unitText": "nT",
+      "minValue": "-60000.0",
+      "maxValue": "60000.0",
+      "defaultValue": "NaN",
+      "cadence": "PT20S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "E component of B",
+      "description": "---> E - Local magnetic East component of B",
+      "unitText": "nT",
+      "minValue": "-60000.0",
+      "maxValue": "60000.0",
+      "defaultValue": "NaN",
+      "cadence": "PT20S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Z component of B",
+      "description": "---> Z - Local vertical down component of B",
+      "unitText": "nT",
+      "minValue": "-60000.0",
+      "maxValue": "60000.0",
+      "defaultValue": "NaN",
+      "cadence": "PT20S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HEZ Component Number",
+      "description": "HEZ Component Number",
+      "minValue": "1",
+      "maxValue": "3",
+      "defaultValue": "-2147483648",
+      "cadence": "PT20S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "Element 1",
+            "Qualifier": "Component.I",
+            "Index": "1"
+          },
+          {
+            "Name": "Element 2",
+            "Qualifier": "Component.J",
+            "Index": "2"
+          },
+          {
+            "Name": "Element 3",
+            "Qualifier": "Component.K",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "thg_mag_svs_time",
+      "description": "thg_mag_svs_time, UTC, in seconds since 01-Jan-1970 00:00:00",
+      "unitText": "s",
+      "minValue": "0.0",
+      "maxValue": "5.0e+09",
+      "defaultValue": "NaN",
+      "cadence": "PT20S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "thg_mag_svs_epoch",
+      "description": "thg_mag_svs_epoch",
+      "minValue": "6.31455e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT20S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "thg_mag_svs_epoch0",
+      "description": "EPOCH0 of THEMIS TIME BASE",
+      "unitText": "ms",
+      "minValue": "5.99582e+13",
+      "maxValue": "6.40607e+13",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT20S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "range_epoch",
+      "description": "range_epoch",
+      "unitText": "ms",
+      "minValue": "6.31455e+13",
+      "maxValue": "6.63012e+13",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT20S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

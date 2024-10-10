@@ -1,0 +1,65 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Auroral/IESP/INT_AUR_IESP_POT",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Auroral/IESP/INT_AUR_IESP_POT",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "INT-AUR IESP POT : DC electric field (Ey) and Spacecraft potential",
+  "sdDatePublished": "2022-04-27",
+  "description": "This data set contains  the potential of the two sensors ED1 and ED2 of the IESP experiment on board of  Interball-Auroral.",
+  "abstract": "This data set contains  the potential of the two sensors ED1 and ED2 of the IESP experiment on board of  Interball-Auroral.",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_AUR_IESP_POT",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Calibrated value of the potential of the ED1 sensor.",
+      "description": "IESP Calibrated value of the potential of the ED1 sensor.",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Calibrated value of the potential of the ED2 sensor",
+      "description": "IESP Calibrated value of the potential of the ED2 sensor",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Spacecraft potential: ED1 and ED2 average value",
+      "description": "IESP Space craft potential: ED1 and ED2 average value",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IESP DC electric field of the Ey antenna.",
+      "description": "IESP DC electric field of the Ey antenna.",
+      "unitText": "V m^-1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

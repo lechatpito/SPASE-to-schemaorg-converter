@@ -1,0 +1,62 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RENU2/UVPMT/PT0.042S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RENU2/UVPMT/PT0.042S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "RENU2 UltraViolet PhotoMultiplier Tube (UVPMT) Atomic Oxygen Density, High Time Resolution (H0), 42 ms Data",
+  "sdDatePublished": "2023-07-30",
+  "description": "Rocket Experiment for Neutral Upwelling 2, RENU2, UltraViolet PhotoMultiplier Tube, UVPMT, Counts. The UVPMT Instrument is used to observe Atomic Oxygen Signatures in Sunlight, that is, above the Payload.",
+  "abstract": "Rocket Experiment for Neutral Upwelling 2, RENU2, UltraViolet PhotoMultiplier Tube, UVPMT, Counts. The UVPMT Instrument is used to observe Atomic Oxygen Signatures in Sunlight, that is, above the Payload.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch Time",
+      "description": "Epoch Time, Terrestrial Time 2000, Interval Centered Time",
+      "unitText": "ns",
+      "minValue": "2015-01-01T00:00:00.000000000",
+      "maxValue": "2016-12-31T23:59:59.999999999",
+      "defaultValue": "9999-12-31T23:59:59.999999999",
+      "cadence": "PT0.042S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Counts",
+      "description": "Ultraviolet Photomultiplier Counts",
+      "minValue": "0.0",
+      "maxValue": "60000.0",
+      "defaultValue": "-1.0e+31",
+      "cadence": "PT0.042S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

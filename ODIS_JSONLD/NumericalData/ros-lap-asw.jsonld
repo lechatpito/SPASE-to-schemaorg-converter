@@ -1,0 +1,110 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/LAP/ros-lap-asw",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Rosetta/LAP/ros-lap-asw",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Rosetta - LAP - parameters from sweeps (ASW)",
+  "sdDatePublished": "2019-08-29",
+  "description": "Time series of sweep-based estimates of electron density, ion bulk speed, electron temperature, and photoelectron knee potential. Timestamps represent the middle of the corresponding sweeps.\n            This is a preliminary data set which will be replaced by another in a few months.",
+  "abstract": "Time series of sweep-based estimates of electron density, ion bulk speed, electron temperature, and photoelectron knee potential. Timestamps represent the middle of the corresponding sweeps.\n            This is a preliminary data set which will be replaced by another in a few months.",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "n_e_fix_t",
+      "description": "Electron density derived from individual sweep. An electron temperature is assumed to be fixed (value of 5 eV)",
+      "unitText": "cm^-3",
+      "defaultValue": "-1.e+09"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "n_e_fix_t : qual",
+      "description": "Quality value in the range 0 (worst) to 1 (best). Corresponds to goodness of fit or how well the model fits the data"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_e",
+      "description": "Electron temperature derived from exponential part of sweep",
+      "unitText": "eV",
+      "defaultValue": "-1.e+09"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_e : qual",
+      "description": "Quality value in the range 0 (worst) to 1 (best). Corresponds to goodness of fit or how well the model fits the data"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_e_xcal",
+      "description": "Electron temperature, derived by using the linear part of the electron current of the sweep, and density measurement from RPCMIP.",
+      "unitText": "eV",
+      "defaultValue": "-1.e+09"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_e_xcal : qual",
+      "description": "Quality value in the range 0 (worst) to 1 (best). Corresponds to goodness of fit or how well the model fits the data"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "i_ph0_s",
+      "description": "Photosaturation current derived from individual sweep. As LAP1 has shown no significant \ncontamination effects, these estimates should be directly proportional to the EUV flux at Rosetta position in the 20-130 nm band.",
+      "unitText": "A",
+      "defaultValue": "-1.e+09"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "i_ph0_s : qual",
+      "description": "Quality value in the range 0 (worst) to 1 (best). Corresponds to goodness of fit or how well the model fits the data"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_ion_eff_xcal",
+      "description": "Effective ion speed derived from individual sweep (speed; always non-negative scalar), while assuming a specific ion mass. Cross-calibrated with RPCMIP",
+      "unitText": "m/s",
+      "defaultValue": "-1.e+09"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_ion_eff_xcal : qual",
+      "description": "Quality value in the range 0 (worst) to 1 (best). Corresponds to goodness of fit or how well the model fits the data"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_ph_knee",
+      "description": "Photoelectron knee potential",
+      "unitText": "V",
+      "defaultValue": "-1.e+09"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_ph_knee : qual",
+      "description": "Quality value in the range 0 (worst) to 1 (best). Corresponds to goodness of fit or how well the model fits the data"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "quality flag",
+      "description": "Quality flag constructed as the sum of multiple terms, depending on what quality related effects are present. Each digit is either in \nthe range 0 (best) to 7 (worst), or 9 (not used)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

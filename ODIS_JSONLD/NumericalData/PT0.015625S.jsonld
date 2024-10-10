@@ -1,0 +1,109 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RBSP/B/EMFISIS/MAGNETOMETER/L3/SM/PT0.015625S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/RBSP/B/EMFISIS/MAGNETOMETER/L3/SM/PT0.015625S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Van Allen Probe B Fluxgate Magnetometer high resolution data in SM coordinates",
+  "sdDatePublished": "2022-08-18",
+  "description": "Fluxgate magnetometer data - Craig Kletzing (University of Iowa)",
+  "abstract": "Fluxgate magnetometer data - Craig Kletzing (University of Iowa)",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Epoch",
+      "description": "Default time",
+      "unitText": "ns"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mag",
+      "description": "Magnetometer vector in SM",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnitude",
+      "description": "Average magnitude (average of B values in the interval)",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "delta",
+      "description": "Latitude (angle delta) of the field vector (where (0,0) is the positive Bx direction)",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "delta",
+      "description": "Longitude (angle lambda) of the field vector (where (0,0) is the positive Bx direction)",
+      "unitText": "degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mag",
+      "description": "S/C position vector in SM",
+      "unitText": "km",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "range_flag",
+      "description": "range_flag"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MET partition",
+      "description": "partition"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MET",
+      "description": "MET"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "calState_flag",
+      "description": "calState_flag"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "magInvalid_flag",
+      "description": "magInvalid_flag"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "magFill_flag",
+      "description": "magFill_flag"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

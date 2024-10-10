@@ -1,0 +1,75 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/VEX/ephemeris/vex-orb-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/VEX/ephemeris/vex-orb-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "VEX - Ephemeris - orbit venus",
+  "sdDatePublished": "2016-01-06",
+  "description": "Venus Express (VEX) orbital data from spice kernels ftp://psa.esac.esa.int/pub/mirror/VENUS-EXPRESS/SPICE/VEX-E-V-SPICE-6-V1.0/",
+  "abstract": "Venus Express (VEX) orbital data from spice kernels ftp://psa.esac.esa.int/pub/mirror/VENUS-EXPRESS/SPICE/VEX-E-V-SPICE-6-V1.0/",
+  "keywords": [
+    "trajectory",
+    "orbit",
+    "ephemeris",
+    "artificial satellite"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_vso",
+      "description": "Venus Express trajectory in VSO coordinates",
+      "unitText": "Rv",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "vex_xyz_vso(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "vex_xyz_vso(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "vex_xyz_vso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance vex-venus",
+      "unitText": "Rv"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vex_orbit_num"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

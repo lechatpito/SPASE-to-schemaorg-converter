@@ -1,0 +1,81 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Pioneer10/MAG/p10-mag-jupsys3",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Pioneer10/MAG/p10-mag-jupsys3",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Pioneer 10 - MAG - flyby jupiter - 60 sec",
+  "sdDatePublished": "2012-03-06",
+  "description": "Pioneer 10 Magnetometer observations at Jupiter\n                Obtained from NASA/PDS",
+  "abstract": "Pioneer 10 Magnetometer observations at Jupiter\n                Obtained from NASA/PDS",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "keywords": [
+    "magnetic field",
+    "Solar wind"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_sys3",
+      "description": "Hourly averages of SYS3 components of fine time scale magnetic field vectors",
+      "unitText": "nT",
+      "defaultValue": "999.9999",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "p10_b_jupsys3(0)"
+          },
+          {
+            "Name": "btheta",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "p10_b_jupsys3(1)"
+          },
+          {
+            "Name": "bphi",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "p10_b_jupsys3(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Hourly average of fine time scale magnetic field magnitudes",
+      "unitText": "nT",
+      "defaultValue": "999.9999"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

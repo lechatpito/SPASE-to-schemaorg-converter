@@ -1,0 +1,104 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/PLS/gll-pls-mom",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/PLS/gll-pls-mom",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - PLS - ion moments",
+  "sdDatePublished": "2012-03-06",
+  "description": "Galileo Plasma Science Spectometer data (moments)",
+  "abstract": "Galileo Plasma Science Spectometer data (moments)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Io"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Callisto"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Europa"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Ganymede"
+    }
+  ],
+  "keywords": [
+    "Jupiter",
+    "GALILEO"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Ion density",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "description": "Ion temperature",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v sc",
+      "description": "Ion bulk velocity components in SpaceCraft coordinates",
+      "unitText": "counts",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "gll_pls_momv(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "gll_pls_momv(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "gll_pls_momv(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v|",
+      "description": "Ion bulk velocity magnitude",
+      "unitText": "km.s-1"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Auroral/IESP/INT_AUR_IESP_N1",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/Interball-Auroral/IESP/INT_AUR_IESP_N1",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "INT-AUR IESP N1 : Electric and Magnetic Waves (0.2-10, 30 HZ) - raw data",
+  "sdDatePublished": "2022-04-27",
+  "description": "This data set contains calibrated  waveforms of magnetic and electric fluctuations (0.2-10, 30 Hz) from the Interball-Auroral IESP experiment.",
+  "abstract": "This data set contains calibrated  waveforms of magnetic and electric fluctuations (0.2-10, 30 Hz) from the Interball-Auroral IESP experiment.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:INT_AUR_IESP_N1",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Status of EX antenna",
+      "description": "IESP Status of EX antenna (Active/Inactive)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Status of EY antenna",
+      "description": "IESP Status of EY antenna (Active/Inactive)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Status of EZ antenna",
+      "description": "IESP Status of EZ antenna (Active/Inactive)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Status of BX antenna",
+      "description": "IESP Status of BX antenna (Active/Inactive)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Status of BY antenna",
+      "description": "IESP Status of BY antenna (Active/Inactive)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Status of BZ antenna",
+      "description": "IESP Status of BZ antenna (Active/Inactive)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Electric Field components  Raw data (0.1 - 30 Hz)",
+      "description": "IESP Electric Field components  Raw data (0.1 - 30 Hz)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IESP Magnetic Field components  Raw data (0.1 - 30 Hz)",
+      "description": "IESP Magnetic Field components  Raw data (0.1 - 30 Hz)"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SGK/MUradar/mur_sgk_mesostd_netcdf",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/RISH/misc/SGK/MUradar/mur_sgk_mesostd_netcdf",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Mesospheric observation data taken by the MU radar at Shigaraki (netCDF format)",
+  "sdDatePublished": "2013-07-22",
+  "description": "The observation data in the mesosphere (60-100 km) taken by the MU radar at Shigaraki in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL), which has been operated in the standard observation mode of the mesosphere. The data are stored in the netCDF (network Common Data Form) file named (year)(month)(day).wnd.nc (wind data) and (year)(month)(day).nc (other data). The azimuth and zenith angles of beam 1, 2, 3, 4 and 5 are (0, 0), (0, 10), (90, 10), (180, 10) and (270, 10), respectively, in unit of degree. The time interval of data is the same as that of the original data, but the wind data are 1 hour average. The value of 999 contained in the wind data means missing value. The information of condition code and flag can be found in the README (http://www.rish.kyoto-u.ac.jp/mu/mesosphere/note/README_mur_mesosphere_data.html and http://www.rish.kyoto-u.ac.jp/mu/mesosphere/note/README_mur_mesosphere_wind_data.html).",
+  "abstract": "The observation data in the mesosphere (60-100 km) taken by the MU radar at Shigaraki in Shiga Prefecture, Japan (34.86N, 136.11E, 385m MSL), which has been operated in the standard observation mode of the mesosphere. The data are stored in the netCDF (network Common Data Form) file named (year)(month)(day).wnd.nc (wind data) and (year)(month)(day).nc (other data). The azimuth and zenith angles of beam 1, 2, 3, 4 and 5 are (0, 0), (0, 10), (90, 10), (180, 10) and (270, 10), respectively, in unit of degree. The time interval of data is the same as that of the original data, but the wind data are 1 hour average. The value of 999 contained in the wind data means missing value. The information of condition code and flag can be found in the README (http://www.rish.kyoto-u.ac.jp/mu/mesosphere/note/README_mur_mesosphere_data.html and http://www.rish.kyoto-u.ac.jp/mu/mesosphere/note/README_mur_mesosphere_wind_data.html).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Mesosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Atmospheric Winds Wind Profiles",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.rish.kyoto-u.ac.jp/radar-group/mu/mesosphere/",
+      "name": "MU Mesosphere Observation",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "lat",
+      "description": "Latitude of radar location",
+      "unitText": "degree_north"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon",
+      "description": "Longitude of radar location",
+      "unitText": "degree_east"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sealvl",
+      "description": "Mean sea level of radar location",
+      "unitText": "m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "bmwdh",
+      "description": "Radar beam width in one-way half-power full width",
+      "unitText": "degree"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "az",
+      "description": "Azimuth angle of each radar beam",
+      "unitText": "degree"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ze",
+      "description": "Zenith angle of each radar beam",
+      "unitText": "degree"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "date",
+      "description": "Observation date",
+      "unitText": "year, month, day"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "description": "Seconds since midnight of every day. Local time (UT + 09:00:00) is used for time data.",
+      "unitText": "second"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "height_v",
+      "description": "Height in vertical beam",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "height_mz",
+      "description": "Height in oblique beams",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "range",
+      "description": "Range of radar beam",
+      "unitText": "km"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "uwnd",
+      "description": "Zonal wind (eastward is positive).",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vwnd",
+      "description": "Meridional wind (northward is positive).",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wind",
+      "description": "Vertical wind (Upflow is positive).",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flg_uwnd",
+      "description": "Flag of zonal wind. It represents the quality of wind data calculated from 1-hour average of radial Doppler velocity for radar beam 1-5, and this value is the integer of 0 and 1. For 1-hour average, only the data satisfied with the above screening condition are used. If the wind data are missing value (999.0), the flag value is also 999. The flag 1 of zonal and meridional wind means that magnitude of the sum of 1-hour average of radial Doppler velocity of beam 2 and 4 or 3 and 5 used for caluculation of wind data is more than 5.0 at each altitude. The flag 1 of vertical wind means that magnitude of 1-hour average of radial Doppler velocity of vertical beam is more than 5.0. These wind data strongly effect on the contamination of radio interference or are not satisfied with the assumption that horizontal wind is uniform in the observation region of the MU radar. If you want to analyze the wind data with high quality in the mesosphere, you should select the data with flag 0.",
+      "unitText": "1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flg_vwnd",
+      "description": "Flag of meridional wind. It represents the quality of wind data calculated from 1-hour average of radial Doppler velocity for radar beam 1-5, and this value is the integer of 0 and 1. For 1-hour average, only the data satisfied with the above screening condition are used. If the wind data are missing value (999.0), the flag value is also 999. The flag 1 of zonal and meridional wind means that magnitude of the sum of 1-hour average of radial Doppler velocity of beam 2 and 4 or 3 and 5 used for caluculation of wind data is more than 5.0 at each altitude. The flag 1 of vertical wind means that magnitude of 1-hour average of radial Doppler velocity of vertical beam is more than 5.0. These wind data strongly effect on the contamination of radio interference or are not satisfied with the assumption that horizontal wind is uniform in the observation region of the MU radar. If you want to analyze the wind data with high quality in the mesosphere, you should select the data with flag 0.",
+      "unitText": "1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flg_wwnd",
+      "description": "Flag of vertical wind. It represents the quality of wind data calculated from 1-hour average of radial Doppler velocity for radar beam 1-5, and this value is the integer of 0 and 1. For 1-hour average, only the data satisfied with the above screening condition are used. If the wind data are missing value (999.0), the flag value is also 999. The flag 1 of zonal and meridional wind means that magnitude of the sum of 1-hour average of radial Doppler velocity of beam 2 and 4 or 3 and 5 used for caluculation of wind data is more than 5.0 at each altitude. The flag 1 of vertical wind means that magnitude of 1-hour average of radial Doppler velocity of vertical beam is more than 5.0. These wind data strongly effect on the contamination of radio interference or are not satisfied with the assumption that horizontal wind is uniform in the observation region of the MU radar. If you want to analyze the wind data with high quality in the mesosphere, you should select the data with flag 0.",
+      "unitText": "1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pwr",
+      "description": "Echo power for beam 1-5.",
+      "unitText": "dB"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wdt",
+      "description": "Spectral width for beam 1-5.",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dpl",
+      "description": "Radial Doppler velocity away from the radar for beam 1-5.",
+      "unitText": "m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "if_cond",
+      "description": "This parameter is the condition code showing the quality of the original data calculated from nonlinear least-square fitting by the Gauss-Newton method, and this value is the integer from 0 to 4. When this value becomes large, the quality of the original data decreases. Moreover, in this data set, for the data not satisfied with the screening condition shown below, this value is replaced by the original condition code plus 10000. If you want to analyze the screening data in the mesosphere, you should exclude the data with condition code of 10000 or more.",
+      "unitText": "1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pnoise",
+      "description": "Noise level for beam 1-5.",
+      "unitText": "dB"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

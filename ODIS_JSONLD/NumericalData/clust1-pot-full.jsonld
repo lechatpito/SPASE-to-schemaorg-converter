@@ -1,0 +1,102 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster1/EFW/clust1-pot-full",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster1/EFW/clust1-pot-full",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cluster 1 - EFW - s/c potential - 0.2 sec (full)",
+  "sdDatePublished": "2023-12-17",
+  "description": "L2 Spacecraft potential (0.2 sec)\n                is normally the average potential of all available probes, measured relative to \n                the spacecraft. If all four probes are available, the average is done over all 4 probes. If only two\n                or three probes are available, the average is done over 2 opposing probes ( P1 and \n                P, or P3 and P4). If only two non-opposing probes are available (e.g. P2 and P3), this quantity is the \n                value of one of the probes. If only one probe is available, this quantity is the value of that \n                probe. The probes used are given by the parameter P_probes. When moderate high-bias \n                saturation is detected on one of the probes (indicated by bit 14 in the P_bitmask), the average \n                over 4 seconds is replaced by a maximum over 4 seconds to avoid errors resulting from the \n                resulting spikes; also the data quality is lowered for such intervals. The \n                individual probe potentials are available in the ancillary data",
+  "abstract": "L2 Spacecraft potential (0.2 sec)\n                is normally the average potential of all available probes, measured relative to \n                the spacecraft. If all four probes are available, the average is done over all 4 probes. If only two\n                or three probes are available, the average is done over 2 opposing probes ( P1 and \n                P, or P3 and P4). If only two non-opposing probes are available (e.g. P2 and P3), this quantity is the \n                value of one of the probes. If only one probe is available, this quantity is the value of that \n                probe. The probes used are given by the parameter P_probes. When moderate high-bias \n                saturation is detected on one of the probes (indicated by bit 14 in the P_bitmask), the average \n                over 4 seconds is replaced by a maximum over 4 seconds to avoid errors resulting from the \n                resulting spikes; also the data quality is lowered for such intervals. The \n                individual probe potentials are available in the ancillary data",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "keywords": [
+    "0.2 second",
+    "magnetosphere",
+    "auroral region",
+    "polar cap",
+    "cusp",
+    "bow shock",
+    "solar wind",
+    "magnetosheath",
+    "Cluster",
+    "magnetotail",
+    "lobe"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "s/c pot",
+      "description": "\n                Probe potential, Relative to Spacecraft at full resolution (0.2s) \n            ",
+      "unitText": "V",
+      "minValue": "-75",
+      "maxValue": "25",
+      "defaultValue": "-1.0000e+9",
+      "cadence": "PT0.2S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

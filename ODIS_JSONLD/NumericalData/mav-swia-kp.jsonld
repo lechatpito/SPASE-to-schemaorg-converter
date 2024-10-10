@@ -1,0 +1,95 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SWIA/mav-swia-kp",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SWIA/mav-swia-kp",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - SWIA - ions : key parameters",
+  "sdDatePublished": "2024-05-02",
+  "description": "Data follow a 4-second cadence when MAVEN is at an altitude of less than 500 km, otherwise the time cadence is 8 seconds.     \n          The in situ key parameters contain 235 parameters selected by the instrument leads and other MAVEN scientists. These data consist of values derived from L2 data provided by the in situ instruments.",
+  "abstract": "Data follow a 4-second cadence when MAVEN is at an altitude of less than 500 km, otherwise the time cadence is 8 seconds.     \n          The in situ key parameters contain 235 parameters selected by the instrument leads and other MAVEN scientists. These data consist of values derived from L2 data provided by the in situ instruments.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Total ion density from SWIA onboard moment calculation, assuming 100% protons",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "moments quality",
+      "description": "Quality flag (0 = bad, 1 = good) indicating whether the distribution is well-measured and decommutation parameters are definite"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_mso",
+      "description": "Bulk ion flow velocity from SWIA onboard moment calculation, assuming 100% protons",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "mav_swiakp_vmso(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "mav_swiakp_vmso(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "mav_swiakp_vmso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v|",
+      "description": "Bulk ion flow velocity magnitude from SWIA onboard moment calculation, assuming 100% protons",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "description": " Scalar ion temperature from SWIA onboard moment calculation, assuming 100% protons",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dynamic pressure",
+      "description": "Ion dynamic pressure computed on the SWIA ground from density and velocity moments, assuming 100% protons",
+      "unitText": "nPa"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

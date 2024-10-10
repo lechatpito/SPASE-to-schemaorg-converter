@@ -1,0 +1,61 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/WDC_Kyoto/WDC/AE/index/PT1M_quicklook",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/WDC_Kyoto/WDC/AE/index/PT1M_quicklook",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Geomagnetic Auroral Electrojet Index Real-time AE",
+  "sdDatePublished": "2011-02-17",
+  "description": "The geomagnetic auroral electrojet index at 1-min time resolution, derived at World Data Center for Geomagnetism, Kyoto, Kyoto University. The real-time Auroral Electrojet (AE) indices are only for monitoring, diagnostics and forcasting purposes. Since the values are derived from unverified raw data, they may contain inacuracies. These data will be replaced by provisional and final AE index at later dates. Users are advised to use final/provisional AE index for analyses.",
+  "abstract": "The geomagnetic auroral electrojet index at 1-min time resolution, derived at World Data Center for Geomagnetism, Kyoto, Kyoto University. The real-time Auroral Electrojet (AE) indices are only for monitoring, diagnostics and forcasting purposes. Since the values are derived from unverified raw data, they may contain inacuracies. These data will be replaced by provisional and final AE index at later dates. Users are advised to use final/provisional AE index for analyses.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "keywords": "AE INDEX",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://wdc.kugi.kyoto-u.ac.jp/wdc/Sec3.html",
+      "name": "Geomagnetic Data Service",
+      "description": "Geomagnetic Data Service at World Data Center for Geomagnetism, Kyoto."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "Time is expressed with year, month, day, hour, and min, each stored in integer format. Details of the data record format is described at http://wdc.kugi.kyoto-u.ac.jp/aeasy/format/aeformat.html"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geomagnetic Auroral Electrojet index Real-time AE",
+      "description": "The AE index is expressed in integer format. Details of the data record format is described at http://wdc.kugi.kyoto-u.ac.jp/aeasy/format/aeformat.html",
+      "unitText": "nT",
+      "defaultValue": "99999",
+      "cadence": "PT1M"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

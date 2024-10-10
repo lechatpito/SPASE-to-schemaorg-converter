@@ -1,0 +1,152 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ISWI/NumericalData/AWESOME/LF/PT0.000001S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ISWI/NumericalData/AWESOME/LF/PT0.000001S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "AWESOME receiver system broadband VLF/LF data",
+  "sdDatePublished": "2021-05-31",
+  "description": "The Low Frequency Atmospheric Weather Electromagnetic System for Observation, Modeling, and Education, or LF AWESOME is a high-sensitivity radio receiver for the frequency band 0.5-470 kHz. The receiver is an upgraded version of the VLF AWESOME, which provided high sensitivity broadband radio measurements of natural lightning emissions, transmitting beacons, and radio emissions from the near-Earth space environment. The expanded capabilities of LF AWESOME allow detection of radio atmospherics from lightning strokes at global distances and multiple traverses a round the world. It also allows monitoring of transmitting beacons in the LF/MF band at thousands of km distance.\r\n\r\nMost of the data is collected on two air-core loop antennas, oriented orthogonal, to collect the two horizontal components of the magnetic field. The north-south, or N/S antenna is sensitive mostly to waves arriving from the north of from the south direction, meaning it picks up the magnetic field component in the east-west direction. The other antenna is the east-west antenna, which is the opposite. \r\n\r\nBroadband data contain direct samples of the receiver output, usually at 100 kHz or 1 MHz sampling frequency. These files essentially contain everything that the receiver records, entirely uncompressed. The files are very large, for instance just one minute of VLF data will produce a ~12 MB file for each antenna channel. This adds up to 35 GB per day if you have two antenna channels.",
+  "abstract": "The Low Frequency Atmospheric Weather Electromagnetic System for Observation, Modeling, and Education, or LF AWESOME is a high-sensitivity radio receiver for the frequency band 0.5-470 kHz. The receiver is an upgraded version of the VLF AWESOME, which provided high sensitivity broadband radio measurements of natural lightning emissions, transmitting beacons, and radio emissions from the near-Earth space environment. The expanded capabilities of LF AWESOME allow detection of radio atmospherics from lightning strokes at global distances and multiple traverses a round the world. It also allows monitoring of transmitting beacons in the LF/MF band at thousands of km distance.\r\n\r\nMost of the data is collected on two air-core loop antennas, oriented orthogonal, to collect the two horizontal components of the magnetic field. The north-south, or N/S antenna is sensitive mostly to waves arriving from the north of from the south direction, meaning it picks up the magnetic field component in the east-west direction. The other antenna is the east-west antenna, which is the opposite. \r\n\r\nBroadband data contain direct samples of the receiver output, usually at 100 kHz or 1 MHz sampling frequency. These files essentially contain everything that the receiver records, entirely uncompressed. The files are very large, for instance just one minute of VLF data will produce a ~12 MB file for each antenna channel. This adds up to 35 GB per day if you have two antenna channels.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://waldo.world/broadband-data/",
+      "name": "Worldwide Archive of Low-Frequency Data and Observations (WALDO) Bbroadband Data",
+      "description": ""
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "start_year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "start_month"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "start_day"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "start_hour"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "start_minute"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "start_second"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "altitude"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Fs",
+      "description": "Sampling rate of the data, usually 100 kHz or 1 MHz."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "gps_quality"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "adc_channel_number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "adc_sn"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "adc_type"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "antenna_bearings"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "antenna_description"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "cal_factor"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "computer_sn"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "gps_sn"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "hardware_description"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "is_broadband"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "station_description"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "station_name"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "VERSION"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "data"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

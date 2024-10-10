@@ -1,0 +1,80 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/STEREO-B/IMPACT/SWEA/STB_SWEA_SURVEY_DIST",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/STEREO-B/IMPACT/SWEA/STB_SWEA_SURVEY_DIST",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO-B IMPACT SWEA Level-1 Survey raw electron distribution functions in counts",
+  "sdDatePublished": "2022-07-26",
+  "description": "This data set contains contains Level 1 3D electron distributions from the IMPACT/SWEA instrument on the STEREO Behind spacecraft.",
+  "abstract": "This data set contains contains Level 1 3D electron distributions from the IMPACT/SWEA instrument on the STEREO Behind spacecraft.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:STB_SWEA_SURVEY_DIST",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA electron distribution Time Interval",
+      "description": "SWEA 3D Distribution Time Interval in seconds",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA Mode",
+      "description": "SWEA Mode ID"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA electron distribution angle Bins",
+      "description": "SWEA 3D Distribution Angle Bins",
+      "unitText": "\u00b0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B SWEA 3D  electron  distribution",
+      "description": "SWEA 3D Distribution in cnts"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B  SWEA V0 Value",
+      "description": "SWEA V0 Value"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STEREO-B  SWEA Electron distribution energy Bins",
+      "description": "SWEA Energy Bins",
+      "unitText": "eV"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

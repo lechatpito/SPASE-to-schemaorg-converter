@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ARCAD-3/Spectro/ARC_SPECTRO_DAYFILE",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ARCAD-3/Spectro/ARC_SPECTRO_DAYFILE",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ARCAD3 SPECTRO : Informal file on processing status",
+  "sdDatePublished": "2022-03-22",
+  "description": "This data set contains an  informal file with information about the processing status of the ARCAD3 SPECTRO experiment\nEach data ION file has an associated informal file. Its name is given in the file general header.\nThe informal file is a sequential ASCII file. It contains information about ROBE data too.",
+  "abstract": "This data set contains an  informal file with information about the processing status of the ARCAD3 SPECTRO experiment\nEach data ION file has an associated informal file. Its name is given in the file general header.\nThe informal file is a sequential ASCII file. It contains information about ROBE data too.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ARC_SPECTRO_DAYFILE",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

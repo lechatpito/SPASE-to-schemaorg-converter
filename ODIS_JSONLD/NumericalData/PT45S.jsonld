@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/SDO/HMI/PT45S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/SDO/HMI/PT45S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SDO/HMI Data Products at JSOC/Stanford U.",
+  "sdDatePublished": "2020-07-07",
+  "description": "The HMI-AIA (Helioseismic and Magnetic Imager -\nAtmospheric Imaging Assembly) JSOC (Joint Science Operations Center) \nat Stanford University archives, and provides multiple access paths \nto, a variety of SDO(Solar Dynamics Observatory)/HMI digital and \ndisplay solar images and movies.  Included are dopplergrams (maps \nof solar surface velocity), continuum filtergrams (broad-wavelength \nphotographs of the solar photosphere), and both line-of-sight and \nvector magnetograms (maps of the photospheric magnetic field).\n",
+  "abstract": "The HMI-AIA (Helioseismic and Magnetic Imager -\nAtmospheric Imaging Assembly) JSOC (Joint Science Operations Center) \nat Stanford University archives, and provides multiple access paths \nto, a variety of SDO(Solar Dynamics Observatory)/HMI digital and \ndisplay solar images and movies.  Included are dopplergrams (maps \nof solar surface velocity), continuum filtergrams (broad-wavelength \nphotographs of the solar photosphere), and both line-of-sight and \nvector magnetograms (maps of the photospheric magnetic field).\n",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Sun"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://jsoc.stanford.edu/",
+      "name": "SDO JSOC main page",
+      "description": "Selection of HMI data products and access paths"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://sdac.virtualsolar.org/cgi/search?time=1&instrument=1&version=current&build=1",
+      "name": "VSO path to SDO data",
+      "description": "VSO path to JSOC-resident SDO HMI and AIA data files "
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

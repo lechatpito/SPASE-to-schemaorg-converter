@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/POLAR/Hydra/plr-hyd-h0",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/POLAR/Hydra/plr-hyd-h0",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Polar - HYDRA - ion and electron fluxes",
+  "sdDatePublished": "2020-12-08",
+  "description": "Polar HYDRA 13.8 sec ion and electron fluxes, 12.5 eV - 18.3 keV, 29 energy channels",
+  "abstract": "Polar HYDRA 13.8 sec ion and electron fluxes, 12.5 eV - 18.3 keV, 29 energy channels",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "e- flux",
+      "unitText": "1/(cm^2-s-sr)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "29",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ion flux",
+      "unitText": "1/(cm^2-s-sr)",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "29",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

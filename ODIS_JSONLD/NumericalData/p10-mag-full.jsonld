@@ -1,0 +1,101 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Pioneer10/MAG/p10-mag-full",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Pioneer10/MAG/p10-mag-full",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Pioneer 10 - MAG - cruise",
+  "sdDatePublished": "2012-03-06",
+  "description": "Pioneer 10 Magnetometer observations during cruise phase\n                Obtained from CDAWeb",
+  "abstract": "Pioneer 10 Magnetometer observations during cruise phase\n                Obtained from CDAWeb",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_rtn",
+      "description": "Hourly averages of RTN components of fine time scale magnetic field vectors",
+      "unitText": "nT",
+      "defaultValue": "999.9999",
+      "cadence": "PT1H",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "p10_b_full(0)"
+          },
+          {
+            "Name": "bt",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "p10_b_full(1)"
+          },
+          {
+            "Name": "bn",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "p10_b_full(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Hourly average of fine time scale magnetic field magnitudes",
+      "unitText": "nT",
+      "defaultValue": "999.9999",
+      "cadence": "PT1H"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "phi",
+      "description": "Magnetic field phi angle",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "theta",
+      "description": "Magnetic field theta angle",
+      "unitText": "degrees",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "1",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

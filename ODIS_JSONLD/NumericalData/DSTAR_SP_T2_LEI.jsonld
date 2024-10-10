@@ -1,0 +1,96 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar2/LEID/DSTAR_SP_T2_LEI",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/DoubleStar2/LEID/DSTAR_SP_T2_LEI",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Double Star 2 LEID Summary Parameters",
+  "sdDatePublished": "2021-11-02",
+  "description": "The Low Energy Ion Detector (LEID) is present on the polar spacecraft (Double Star 2) only. The instrument performs measurements of the energy spectrum, the velocity distribution function and the differential flux of low energy ions in the polar regions.\n\nThis data sets contains Double Star 2 LEID summary  parameters at 1 min resolution.  These parameters include the instrument status and several moments (ion density and velocity, and parallel and perpendicular ion temperature).",
+  "abstract": "The Low Energy Ion Detector (LEID) is present on the polar spacecraft (Double Star 2) only. The instrument performs measurements of the energy spectrum, the velocity distribution function and the differential flux of low energy ions in the polar regions.\n\nThis data sets contains Double Star 2 LEID summary  parameters at 1 min resolution.  These parameters include the instrument status and several moments (ion density and velocity, and parallel and perpendicular ion temperature).",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:DSTAR_SP_T2_LEI",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Doiuble Star 2 LEID Ion density Summary  Parameter",
+      "description": "Doiuble Star 2 LEID Ion density Summary Parameter",
+      "unitText": "cm^-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Doiuble Star 2 LEID Ion velocity in GSE Coordinates Summary Parameter",
+      "description": "Doiuble Star 2 LEID Ion velocity in GSE Coordinates Summary Parameter",
+      "unitText": "km s^-1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Doiuble Star 2 LEID Parallel ion temperature Summary Parameter",
+      "description": "Doiuble Star 2 LEID Parallel ion temperature Summary Parameter",
+      "unitText": "MK"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Doiuble Star 2 LEID Perpendicular ion temperature Summary Parameter",
+      "description": "Doiuble Star 2 LEID Perpendicular ion temperature Summary Parameter",
+      "unitText": "MK"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Doiuble Star 2 LEID Instrument Status Summary Parameter",
+      "description": "Doiuble Star 2 LEID Instrument Status Summary Parameter"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

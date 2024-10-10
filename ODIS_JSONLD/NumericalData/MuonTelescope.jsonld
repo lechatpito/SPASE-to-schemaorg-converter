@@ -1,0 +1,56 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/muon/Sakashita/MuonTelescope",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/ISEE/muon/Sakashita/MuonTelescope",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Multi-directional cosmic-ray muon telescope at Sakashita",
+  "sdDatePublished": "2014-09-10",
+  "description": "This is the database of cosmic ray intensity obtained by the Sakashita Underground Multi-Directional Telescope. This telescope was constructed as one of the Japanese projects for International Magnetospheric Study (IMS, 1975-1977) to study solar modulation of cosmic rays in high energy region. This telescope was built by the Nagoya University in 1976 in a disused railway tunnel of Japan National Railways (now Central Japan Railway Co.) at Sakashita-cho, Gifu prefecture. The vertical depth is estimated at 80 mwe (meter water equivalent) from the topography. The telescope size was extended with three steps in 1977 to 1979 to 4 x 15 m^2 upper and 3 x 14 m^2 lower finally, and full observations of 10 directional cosmic ray intensities started in Dec. 1979. For details of the data, please take a look at http://www.stelab.nagoya-u.ac.jp/ste-www1/div3/muon/db_sak.pdf. In this meta-database, we chose particle as proton due to restriction of the current SPASE format. However, the actual measurement is done for muon. The primary cosmic ray intensity and energy range recorded in this metadata was inferred from the muon measurement at Sakashita underground.",
+  "abstract": "This is the database of cosmic ray intensity obtained by the Sakashita Underground Multi-Directional Telescope. This telescope was constructed as one of the Japanese projects for International Magnetospheric Study (IMS, 1975-1977) to study solar modulation of cosmic rays in high energy region. This telescope was built by the Nagoya University in 1976 in a disused railway tunnel of Japan National Railways (now Central Japan Railway Co.) at Sakashita-cho, Gifu prefecture. The vertical depth is estimated at 80 mwe (meter water equivalent) from the topography. The telescope size was extended with three steps in 1977 to 1979 to 4 x 15 m^2 upper and 3 x 14 m^2 lower finally, and full observations of 10 directional cosmic ray intensities started in Dec. 1979. For details of the data, please take a look at http://www.stelab.nagoya-u.ac.jp/ste-www1/div3/muon/db_sak.pdf. In this meta-database, we chose particle as proton due to restriction of the current SPASE format. However, the actual measurement is done for muon. The primary cosmic ray intensity and energy range recorded in this metadata was inferred from the muon measurement at Sakashita underground.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Remote1AU"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Forbush decrease CME muon telescope",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://www.stelab.nagoya-u.ac.jp/ste-www1/div3/muon/ug01.html",
+      "name": "Sakashita underground telescope, Hourly values of multi-directional cosmic ray intensities",
+      "description": "This is an ftp server of the cosmic ray intensity. Zipped ASCII file is available from this web site."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "cosmic ray intensity",
+      "description": "cosmic ray intensity observed by the multi-directional cosmic-ray muon telescope at Sakashita",
+      "unitText": "0.01 percent",
+      "minValue": "0",
+      "maxValue": "9998"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

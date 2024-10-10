@@ -1,0 +1,104 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SWEA/mav-swea-kp",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/MAVEN/SWEA/mav-swea-kp",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "MAVEN - SWEA - electrons : key parameters",
+  "sdDatePublished": "2024-05-02",
+  "description": " Data follow a 4-second cadence when MAVEN is at an altitude of less than 500 km, otherwise the time cadence is 8 seconds. \n            The in situ key parameters contain 235 parameters selected by the instrument leads and other MAVEN scientists. These data consist of values derived from L2 data provided by the in situ instruments.",
+  "abstract": " Data follow a 4-second cadence when MAVEN is at an altitude of less than 500 km, otherwise the time cadence is 8 seconds. \n            The in situ key parameters contain 235 parameters selected by the instrument leads and other MAVEN scientists. These data consist of values derived from L2 data provided by the in situ instruments.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Density of solar wind or magnetosheath electrons based on moments of the electron distribution after correcting for the spacecraft potential",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density quality",
+      "description": "Density statistical uncertainty, (1 sigma)  ",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature",
+      "description": " Temperature solar wind or magnetosheath electrons based on moments of the electron distribution after correcting for the spacecraft potential",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature quality",
+      "description": "Temperature statistical uncertainty, (1 sigma)  ",
+      "unitText": "eV"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "parallel flux 5-100 eV",
+      "description": "Electron energy flux parallel to the magnetic field vector (0-90 degrees pitch angle)",
+      "unitText": "eV/(cm^2 s sr)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "parallel flux 100-500 eV",
+      "description": "Electron energy flux parallel to the magnetic field vector (0-90 degrees pitch angle)",
+      "unitText": "eV/(cm^2 s sr)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "parallel flux 500-1000 eV",
+      "description": "Electron energy flux parallel to the magnetic field vector (0-90 degrees pitch angle)",
+      "unitText": "eV/(cm^2 s sr)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "anti-parallel flux 5-100 eV",
+      "description": "Electron energy flux anti-parallel to the magnetic field vector (90-180 degrees pitch angle)",
+      "unitText": "eV/(cm^2 s sr)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "anti-parallel flux 100-500 eV",
+      "description": "Electron energy flux anti-parallel to the magnetic field vector (90-180 degrees pitch angle)",
+      "unitText": "eV/(cm^2 s sr)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "anti-parallel flux 500-1000 eV",
+      "description": "Electron energy flux anti-parallel to the magnetic field vector (90-180 degrees pitch angle)",
+      "unitText": "eV/(cm^2 s sr)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "spectrum shape",
+      "description": "Energy spectrum shape parameter used to distingush between ionospheric photoelectrons and solar wind electrons"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

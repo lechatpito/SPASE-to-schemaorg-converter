@@ -1,0 +1,79 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/FREJA/ESP/fja-sc-charg",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/FREJA/ESP/fja-sc-charg",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Freja - ESP - charging events",
+  "sdDatePublished": "2023-04-26",
+  "description": "This dataset provides data of a total of 291 spacecraft surface charging events detected during the operation of the Freja satellite. \n                The dataset provides peak charging level, light conditions and charging duration. \n                The Freja mission objective was to study the polar (high latitude) auroral processes and was therefore  \n                equipped with a highly advanced plasma payload package, and the spacecraft itself was designed to be \n                as electrically clean as possible. Such a payload package is, of course, also suitable for spacecraft charging studies. \n                Numerous surface charging events did indeed occur with negative charging levels as large as -2000 Volts. For detailed analysis \n                of the Freja charging events, see workpackage reports WP110, WP120 and WP130 (https://space.fmi.fi/spee/docs/), and take contact \n                withe the Swedish Institute of Space Physics, Uppsala, before using any of the data presented here. The data interpretation may \n                be heavily dependent on instrumental capabilities and measurement mode types.\n            ",
+  "abstract": "This dataset provides data of a total of 291 spacecraft surface charging events detected during the operation of the Freja satellite. \n                The dataset provides peak charging level, light conditions and charging duration. \n                The Freja mission objective was to study the polar (high latitude) auroral processes and was therefore  \n                equipped with a highly advanced plasma payload package, and the spacecraft itself was designed to be \n                as electrically clean as possible. Such a payload package is, of course, also suitable for spacecraft charging studies. \n                Numerous surface charging events did indeed occur with negative charging levels as large as -2000 Volts. For detailed analysis \n                of the Freja charging events, see workpackage reports WP110, WP120 and WP130 (https://space.fmi.fi/spee/docs/), and take contact \n                withe the Swedish Institute of Space Physics, Uppsala, before using any of the data presented here. The data interpretation may \n                be heavily dependent on instrumental capabilities and measurement mode types.\n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "orbit nb",
+      "description": "Orbit number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "q_peak",
+      "description": "peak charging level",
+      "unitText": "V"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "duration",
+      "description": "Event duration",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sun conditions",
+      "description": "Sunlight conditions (eclpise=1, Sunlight = 0, Both = 2)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Electron density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "e- distr. fun.",
+      "description": "Electron spectra",
+      "unitText": "1/(cm\u00b2 s\u00b2 str eV)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "angle",
+      "description": "Freja spin axis angle vs. magnetic field direction",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

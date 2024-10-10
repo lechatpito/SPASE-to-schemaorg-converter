@@ -1,0 +1,73 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/Moons_Ephemeris/io-eph-pol",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/Moons_Ephemeris/io-eph-pol",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - Ephemeris : Jupiter Moons : special - Io",
+  "sdDatePublished": "2012-03-06",
+  "description": "Some special Jovian moons ephemeris calculated by Joseph Groene tool (University of Iowa)",
+  "abstract": "Some special Jovian moons ephemeris calculated by Joseph Groene tool (University of Iowa)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    },
+    {
+      "@type": "Place",
+      "name": "Jupiter.Io"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "lon",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mlat",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "local time",
+      "unitText": "hours"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance io-jupiter",
+      "unitText": "Rj"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "IoPhase",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

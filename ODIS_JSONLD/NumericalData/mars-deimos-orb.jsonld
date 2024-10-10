@@ -1,0 +1,74 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/mars-deimos-orb",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Ephemerides/mars-deimos-orb",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Astronomical Objects Ephemerides - Planets and Moons - Mars Moons - Deimos",
+  "sdDatePublished": "2022-03-10",
+  "description": "Deimos is the smaller and outer of the two natural satellites of Mars.",
+  "abstract": "Deimos is the smaller and outer of the two natural satellites of Mars.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mars"
+    },
+    {
+      "@type": "Place",
+      "name": "Mars.Deimos"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "deimos_xyz_mso",
+      "unitText": "Rm",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "deimos_x",
+            "Index": "1",
+            "ParameterKey": "xyz_deimos(0)"
+          },
+          {
+            "Name": "deimos_y",
+            "Index": "2",
+            "ParameterKey": "xyz_deimos(1)"
+          },
+          {
+            "Name": "deimos_z",
+            "Index": "3",
+            "ParameterKey": "xyz_deimos(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance deimos-mars",
+      "unitText": "Rm"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

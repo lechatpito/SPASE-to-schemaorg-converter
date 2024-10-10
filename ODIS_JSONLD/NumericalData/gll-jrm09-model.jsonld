@@ -1,0 +1,102 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/Models/gll-jrm09-model",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Galileo/Models/gll-jrm09-model",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Galileo - Jovian Magnetic Field Models - JRM09 + CAN field model",
+  "sdDatePublished": "2018-09-04",
+  "description": "Magnetic field along Galileo orbit is being real-time calculated.          \n            \n            Jovian magnetic field of JRM09 (Connerney et al., 2018) and\n            CAN (Connerney et al., 1981) models are used in calculations.\n         ",
+  "abstract": "Magnetic field along Galileo orbit is being real-time calculated.          \n            \n            Jovian magnetic field of JRM09 (Connerney et al., 2018) and\n            CAN (Connerney et al., 1981) models are used in calculations.\n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_iau_jup",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "b_jrm09_can_60_1_gll_xyz_iau(0)"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "b_jrm09_can_60_1_gll_xyz_iau(1)"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "b_jrm09_can_60_1_gll_xyz_iau(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_sys3_jup",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "b_jrm09_sys3_can_60_1_gll_xyz_iau(0)"
+          },
+          {
+            "Name": "btheta",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "b_jrm09_sys3_can_60_1_gll_xyz_iau(1)"
+          },
+          {
+            "Name": "bphi",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "b_jrm09_sys3_can_60_1_gll_xyz_iau(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

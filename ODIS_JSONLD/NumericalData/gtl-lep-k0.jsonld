@@ -1,0 +1,101 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/LEP/gtl-lep-k0",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/GEOTAIL/LEP/gtl-lep-k0",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Geotail - LEP - key parameters : spectra",
+  "sdDatePublished": "2024-04-14",
+  "description": "sunward, duskward, tailward, dawnward",
+  "abstract": "sunward, duskward, tailward, dawnward",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ions : 2D",
+      "description": "sunward, duskward, tailward, dawnward; 32 energy ; range ",
+      "unitText": "cnts",
+      "minValue": "0.0",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "128",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ions : omni",
+      "unitText": "cnts",
+      "minValue": "0.0",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ions : flag RAM"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "electrons : 2D",
+      "description": "sunward, duskward, tailward, dawnward; 32 energy ; range ",
+      "unitText": "cnts",
+      "minValue": "0.0",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "128",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "electrons : omni",
+      "unitText": "cnts",
+      "minValue": "0.0",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "32",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

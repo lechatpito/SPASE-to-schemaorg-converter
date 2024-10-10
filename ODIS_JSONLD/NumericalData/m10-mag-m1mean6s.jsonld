@@ -1,0 +1,122 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Mariner10/MAG/m10-mag-m1mean6s",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Mariner10/MAG/m10-mag-m1mean6s",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Mariner 10 - MAG - flyby mercury 1 - 6 sec",
+  "sdDatePublished": "2021-02-12",
+  "description": "     \n\t\t      * MSO : X (Mercury to Sun), Z (X-Z plane contains Mercury's centered magnetic dipole axis), and Y (completes the right-hand set)\n\t\t      * MSEQ : X (Mercury to Sun), Z (X-Z plane contains Mercury's centered magnetic dipole axis), and Y (completes the right-hand set)\n\t\t      * PC : r (radial component from Mercury to the spacecraft), phi (azimuthal component that is parallel to the equator and perpendicular to the radial direction), and theta (completes the right-hand set)\n\n     ",
+  "abstract": "     \n\t\t      * MSO : X (Mercury to Sun), Z (X-Z plane contains Mercury's centered magnetic dipole axis), and Y (completes the right-hand set)\n\t\t      * MSEQ : X (Mercury to Sun), Z (X-Z plane contains Mercury's centered magnetic dipole axis), and Y (completes the right-hand set)\n\t\t      * PC : r (radial component from Mercury to the spacecraft), phi (azimuthal component that is parallel to the equator and perpendicular to the radial direction), and theta (completes the right-hand set)\n\n     ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mercury"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "b_mso",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "m10_b_mso(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "m10_b_mso(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "m10_b_mso(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_mseq",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "m10_b_mseq(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "m10_b_mseq(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "m10_b_mseq(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_pc",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "br",
+            "Index": "1",
+            "ParameterKey": "m10_b_pc(0)"
+          },
+          {
+            "Name": "btheta",
+            "Index": "2",
+            "ParameterKey": "m10_b_pc(1)"
+          },
+          {
+            "Name": "bphi",
+            "Index": "3",
+            "ParameterKey": "m10_b_pc(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

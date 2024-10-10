@@ -1,0 +1,88 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/WDC_Kyoto/WDC/YCB/Magnetometer/PT1S_IAGA2002",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/NumericalData/WDC_Kyoto/WDC/YCB/Magnetometer/PT1S_IAGA2002",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Yinchuan geomagnetic field 1-second digital data in IAGA-2002 format",
+  "sdDatePublished": "2011-03-23",
+  "description": "The geomagnetic field 1.0 second digital data observed at Yinchuan (YCB) in IAGA-2002 format. Data file comprises: Twelve mandatory file header records, Unlimited optional comment records, One mandatory data header record, A series of data records. Every record is 70 characters long plus the machine-dependent carriage return / line feed. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/mdplt/format/iaga2002.html",
+  "abstract": "The geomagnetic field 1.0 second digital data observed at Yinchuan (YCB) in IAGA-2002 format. Data file comprises: Twelve mandatory file header records, Unlimited optional comment records, One mandatory data header record, A series of data records. Every record is 70 characters long plus the machine-dependent carriage return / line feed. Details of the format is described at http://wdc.kugi.kyoto-u.ac.jp/mdplt/format/iaga2002.html",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Surface"
+    }
+  ],
+  "keywords": [
+    "EARTH SCIENCE Atmosphere Solid Earth Geomagnetism Magnetic Field",
+    "EARTH SCIENCE Atmosphere Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Magnetic Fields/Magnetic Currents"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://wdc.kugi.kyoto-u.ac.jp/wdc/Sec3.html",
+      "name": "Geomagnetic Data Service",
+      "description": "Geomagnetic Data Service at World Data Center for Geomagnetism, Kyoto."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Universal Time",
+      "description": "The date and time headers are DATE, TIME, and DOY (day of year).",
+      "cadence": "PT1S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "DATE",
+            "Index": "1"
+          },
+          {
+            "Name": "TIME",
+            "Index": "2"
+          },
+          {
+            "Name": "DOY",
+            "Index": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic Field Elements (DHIF, DHZF, or XYZF)",
+      "description": "Data records report exactly 4 magnetic field elements (DHIF, DHZF, or XYZF). Use missing data values (8's or 9's) if fewer than 4 elements are available.",
+      "unitText": "D and I are reported in angular units of minutes of arc to the precision of the instruments. F, H, X, Y, Z, E, and V are reported in nanotesla and a fraction of nT.",
+      "defaultValue": "Indicate missing data with 99999 to the corresponding accuracy for a given component (e.g., 99999.00 or 99999.90). If an element is not observed, please record 88888 (to the corresponding accuarcy) in that field.",
+      "cadence": "PT1S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "4",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

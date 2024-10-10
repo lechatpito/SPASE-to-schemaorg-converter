@@ -1,0 +1,187 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/OMNI/omni-hour-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/OMNI/omni-hour-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "OMNI - Sun / Solar Wind / Ground-Based Indices - 1 hour",
+  "sdDatePublished": "2024-04-15",
+  "description": "Hourly averaged, multi-source, near-Earth solar wind magnetic \n              field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst \n              geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).  \n            ",
+  "abstract": "Hourly averaged, multi-source, near-Earth solar wind magnetic \n              field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst \n              geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).  \n            ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw average b magn (vec)",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Index": "1",
+            "ParameterKey": "omni_imf(0)"
+          },
+          {
+            "Name": "by",
+            "Index": "2",
+            "ParameterKey": "omni_imf(1)"
+          },
+          {
+            "Name": "bz",
+            "Index": "3",
+            "ParameterKey": "omni_imf(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw temperature",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw v_bulk",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw v_lon",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw v_lat",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw alpha ratio"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw ram pressure",
+      "unitText": "nPa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw electric field",
+      "unitText": "mV/m"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw beta"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw mach alfven"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Kp index",
+      "description": "The standard Kp values look like 0, 0+, 1-, 1, 1+, 2-, ... but are stored as Kp = 0, 3, 7, 10, 13, 17, ... in the OMNI data set. We have mapped 0+ to 3, 1- to 7, 1 to 10, 1+ to 13, 2- to 17, etc."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AE index",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dst index",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sunspot number",
+      "description": "Daily sunspot number"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "F10.7 solar index",
+      "unitText": "10e-22 W/m^2/Hz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sw integral proton fluxes",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "6",
+        "elements": [
+          {
+            "Name": ">1MeV",
+            "Index": "1",
+            "ParameterKey": "omni_hour_pflux(0)"
+          },
+          {
+            "Name": ">2MeV",
+            "Index": "2",
+            "ParameterKey": "omni_hour_pflux(1)"
+          },
+          {
+            "Name": ">4MeV",
+            "Index": "3",
+            "ParameterKey": "omni_hour_pflux(2)"
+          },
+          {
+            "Name": ">10MeV",
+            "Index": "4",
+            "ParameterKey": "omni_hour_pflux(3)"
+          },
+          {
+            "Name": ">30MeV",
+            "Index": "5",
+            "ParameterKey": "omni_hour_pflux(4)"
+          },
+          {
+            "Name": ">60MeV",
+            "Index": "6",
+            "ParameterKey": "omni_hour_pflux(5)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

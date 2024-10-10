@@ -1,0 +1,260 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ParkerSolarProbe/SWEAP/SPAN-I/Level2/AlphaDifferentialEnergyFlux/VariableCadence",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/ParkerSolarProbe/SWEAP/SPAN-I/Level2/AlphaDifferentialEnergyFlux/VariableCadence",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Proton-Contaminated Alpha Differential Energy Flux measured by the PSP SPAN-Ion Instrument",
+  "sdDatePublished": "2023-08-31",
+  "description": "Parker Solar Probe SPAN-I Alpha particle differential energy flux (contaminated by Protons) dataset covers 8 defector settings, 32 energies, and 8 angles. The log spaced energy range covers 21.0 eV to 17.6 keV. The field of view covers the entire sky except for the region obscured by the heat shield. \n           Due to heat shield, the centroid of the solar wind alpha particle distribution is typically only observed around perihelion. The mode of the cadence is about 3.5 seconds, with smaller cadence of about 1.7 seconds around perihelion.",
+  "abstract": "Parker Solar Probe SPAN-I Alpha particle differential energy flux (contaminated by Protons) dataset covers 8 defector settings, 32 energies, and 8 angles. The log spaced energy range covers 21.0 eV to 17.6 keV. The field of view covers the entire sky except for the region obscured by the heat shield. \n           Due to heat shield, the centroid of the solar wind alpha particle distribution is typically only observed around perihelion. The mode of the cadence is about 3.5 seconds, with smaller cadence of about 1.7 seconds around perihelion.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Sun.Corona"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Time in TT2000 format",
+      "description": "Time at middle of sample",
+      "unitText": "ns",
+      "minValue": "1990-01-01T00:00:00.000000000",
+      "maxValue": "2029-12-31T23:59:58.999000000",
+      "defaultValue": "9999-12-31T23:59:59.999999999"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Time in UTC format",
+      "description": "Time at middle of sample, unix time",
+      "unitText": "s",
+      "minValue": "1.2623e+09",
+      "maxValue": "4.10244e+09",
+      "defaultValue": "nan"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MET",
+      "description": "MET"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "APID",
+      "description": "APID"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SEQN",
+      "description": "SEQN"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SEQN_DELTA",
+      "description": "SEQN_DELTA"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SEQN_GROUP",
+      "description": "SEQN_GROUP"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PKT_SIZE",
+      "description": "PKT_SIZE"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SOURCE_APID",
+      "description": "SOURCE_APID"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SOURCE_HASH",
+      "description": "SOURCE_HASH"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "COMPR_RATIO",
+      "description": "COMPR_RATIO"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NDAT",
+      "description": "NDAT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATASIZE",
+      "description": "DATASIZE"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LTCSNNNN_BITS",
+      "description": "LTCSNNNN_BITS"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ARCH_BITS",
+      "description": "ARCH_BITS"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MODE2_ORI",
+      "description": "MODE2_ORI"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MODE2",
+      "description": "MODE2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "F0",
+      "description": "F0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STATUS_BITS",
+      "description": "STATUS_BITS"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PEAK_BIN",
+      "description": "PEAK_BIN"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PRODUCT_BITS",
+      "description": "PRODUCT_BITS"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NUM_TOTAL",
+      "description": "NUM_TOTAL"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NUM_ACCUM",
+      "description": "NUM_ACCUM"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TIME_TOTAL",
+      "description": "TIME_TOTAL"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TIME_ACCUM",
+      "description": "TIME_ACCUM"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CNTS",
+      "description": "CNTS"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATA",
+      "description": "DATA",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "GAP",
+      "description": "GAP"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Quality Flag",
+      "description": "Quality Flag",
+      "minValue": "0",
+      "maxValue": "65534",
+      "defaultValue": "65535"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Eflux",
+      "description": "Differential Energy Flux vs Energy/Angle Bin",
+      "unitText": "eV/cm2-s-ster-eV",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy",
+      "description": "Energy",
+      "unitText": "eV",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Theta",
+      "description": "Elevation Angle in instrument coordinates",
+      "unitText": "\u00b0",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Phi",
+      "description": "Azimuth Angle in instrument coordinates",
+      "unitText": "\u00b0",
+      "defaultValue": "nan",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "2048",
+        "elements": []
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

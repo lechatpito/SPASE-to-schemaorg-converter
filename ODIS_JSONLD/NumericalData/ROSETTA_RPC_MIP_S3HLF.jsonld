@@ -1,0 +1,73 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ROSETTA/RPC_MIP/ROSETTA_RPC_MIP_S3HLF",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ROSETTA/RPC_MIP/ROSETTA_RPC_MIP_S3HLF",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ROSETTA RPC-MIP Calibrated Electric Field Phase Spectrum in Active LDL Full Mode (CDF)",
+  "sdDatePublished": "2022-05-30",
+  "description": "This dataset contains E-field phase spectra acquired in active LDL mode. The frequency table is fixed, with 24 frequency bins in the [7 kHz - 168 kHz] range. The time resolution depends on the operational mode.",
+  "abstract": "This dataset contains E-field phase spectra acquired in active LDL mode. The frequency table is fixed, with 24 frequency bins in the [7 kHz - 168 kHz] range. The time resolution depends on the operational mode.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ROSETTA_RPC_MIP_S3HLF",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Mode",
+      "description": "Possible value is LDL"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Instrument Sub_Mode",
+      "description": "Possible value is FULL"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spectrum Type",
+      "description": "Possible value is PHASE"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frequency",
+      "description": "Fixed frequency table: 24 frequency bins with 7 kHz resolution in the [7-168] kHz range"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Electric Field Phase",
+      "description": "Field Phase Spectrum (Active LDL mode)",
+      "unitText": "\u00b0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

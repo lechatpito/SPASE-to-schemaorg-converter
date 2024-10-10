@@ -1,0 +1,65 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/THEMIS-C/SCM/THEMIS_SCM_THC_L1_SCW",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/THEMIS-C/SCM/THEMIS_SCM_THC_L1_SCW",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "THEMIS-C SCM Search Coil Magnetometer Wave Burst Level-1 (CDF)",
+  "sdDatePublished": "2022-01-21",
+  "description": "This data set contains THEMIS-C Search Coil Magnetometer raw magnetic field in sensor coordinates, ADC units, Wave Burst Mode.",
+  "abstract": "This data set contains THEMIS-C Search Coil Magnetometer raw magnetic field in sensor coordinates, ADC units, Wave Burst Mode.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:THEMIS_SCM_THC_L1_SCW",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Raw Magnetic field B in XYZ Sensor Coordinates, ADC units, Wave Burst Mode",
+      "description": "Raw Magnetic field B in XYZ Sensor Coordinates, ADC units, Wave Burst Mode",
+      "unitText": "ADC"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

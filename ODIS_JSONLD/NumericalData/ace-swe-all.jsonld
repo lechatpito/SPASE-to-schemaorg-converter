@@ -1,0 +1,136 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/SWEPAM/ace-swe-all",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/SWEPAM/ace-swe-all",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ACE - SWEPAM - sw : final",
+  "sdDatePublished": "2024-04-14",
+  "description": "\n         Solar Wind Ion parameters from ACE/SWEPAM. Level 2 data, 64-second averages (from AC_H0_SWE dataset). Parameters include proton density, \n         temperature (radial component) and flow speed, flow velocity vector in GSE and GSM coordinates, and alpha \n         to proton density ratio.        \n         AMDA presents temperature in eV. The ram pressure is calculated using P=rho*Np*Vp\u00b2, where rho=1.672622*(1+4*(1/(1-He++_ratio)-1)). \n         We use rho=2 here, which corresponds to a ratio of He++ between 4% and 5%.\n      ",
+  "abstract": "\n         Solar Wind Ion parameters from ACE/SWEPAM. Level 2 data, 64-second averages (from AC_H0_SWE dataset). Parameters include proton density, \n         temperature (radial component) and flow speed, flow velocity vector in GSE and GSM coordinates, and alpha \n         to proton density ratio.        \n         AMDA presents temperature in eV. The ram pressure is calculated using P=rho*Np*Vp\u00b2, where rho=1.672622*(1+4*(1/(1-He++_ratio)-1)). \n         We use rho=2 here, which corresponds to a ratio of He++ between 4% and 5%.\n      ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "v_gse",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "sw_v_gse(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "sw_v_gse(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "sw_v_gse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gsm",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Index": "1",
+            "ParameterKey": "sw_v_gsm(0)"
+          },
+          {
+            "Name": "vy",
+            "Index": "2",
+            "ParameterKey": "sw_v_gsm(1)"
+          },
+          {
+            "Name": "vz",
+            "Index": "3",
+            "ParameterKey": "sw_v_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "Solar Wind Proton Number Density, scalar",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "200.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_bulk",
+      "description": "Solar Wind Bulk Speed",
+      "unitText": "km/s",
+      "minValue": "0.0",
+      "maxValue": "2500.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_radial",
+      "description": "radial component of the proton temperature",
+      "unitText": "eV",
+      "minValue": "1000.0",
+      "maxValue": "1100000.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "alpha/proton ratio",
+      "description": "alpha to proton density ratio",
+      "minValue": "0.0",
+      "maxValue": "10.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ram pressure",
+      "description": "P = 2*10e-6 * Np * Vp^2",
+      "unitText": "nPa"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

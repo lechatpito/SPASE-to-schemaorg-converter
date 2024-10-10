@@ -1,0 +1,118 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/AMPTE-CCE/MFE/PT5.83S",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/NASA/NumericalData/AMPTE-CCE/MFE/PT5.83S",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "AMPTE-CCE Spin-averaged Magnetic Field Measurements",
+  "sdDatePublished": "2020-07-07",
+  "description": "AMPTE-CCE spin-averaged DC magnetic field at ~5.83 second resolution.",
+  "abstract": "AMPTE-CCE spin-averaged DC magnetic field at ~5.83 second resolution.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "keywords": "Magnetic field",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://vmo.nasa.gov/mission/ampte_cce/mag/",
+      "name": "AMPTE/CCE Magnetic Field Data Download",
+      "description": "A web-accessible directory hosting AMPTE/CCE spin-averaged magnetic field data."
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Year",
+      "description": "Time tag: Two-digit year",
+      "unitText": "year"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Day of year",
+      "description": "Time tag: Day of year",
+      "unitText": "day"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Hour",
+      "description": "Time tag: Hour of the day",
+      "unitText": "hr"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Minute",
+      "description": "Time tag: Minute of the hour",
+      "unitText": "min"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Second",
+      "description": "Time tag: Decimal second of the minute",
+      "unitText": "s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft position GSE X component",
+      "description": "Spacecraft position GSE X component (Re=6378 km).",
+      "unitText": "Re"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft position GSE Y component",
+      "description": "Spacecraft position GSE Y component (Re=6378 km).",
+      "unitText": "Re"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Spacecraft position GSE Z component",
+      "description": "Spacecraft position GSE Z component (Re=6378 km).",
+      "unitText": "Re"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field cartesian GSE X component",
+      "description": "Magnetic field cartesian GSE X component",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field cartesian GSE Y component",
+      "description": "Magnetic field cartesian GSE Y component",
+      "unitText": "nT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Magnetic field cartesian GSE Z component",
+      "description": "Magnetic field cartesian GSE Z component",
+      "unitText": "nT"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

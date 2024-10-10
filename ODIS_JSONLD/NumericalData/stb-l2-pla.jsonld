@@ -1,0 +1,75 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/STEREO-B/PLASTIC/stb-l2-pla",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/STEREO-B/PLASTIC/stb-l2-pla",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "STEREO B - PLASTIC - proton 1D fit",
+  "sdDatePublished": "2021-12-07",
+  "description": "Data from https://stereo-ssc.nascom.nasa.gov/pub. PLASTIC has a ~1 minute energy per charge (E/Q) cadence in which the electrostatic\nanalyzer (ESA) steps through 128 logarithmically spaced E/Q steps from ~80 keV/e,\ndown to ~0.3 keV/e.\n\nProton bulk parameters provided here (speed, density, thermal) are derived from a 1D\nMaxwellian fit to a single detector rate (no coincidence required), and are corrected for\nbackground and dead time. The N/S angle is derived from a peak fitting to the N/S\n(deflection) rate bins of the same rate. The E/W angle is derived from a separate double\ncoincidence rate. \n\nThe proton velocity components are corrected for spacecraft aberration\nand are derived using the N/S and E/W angles.\n",
+  "abstract": "Data from https://stereo-ssc.nascom.nasa.gov/pub. PLASTIC has a ~1 minute energy per charge (E/Q) cadence in which the electrostatic\nanalyzer (ESA) steps through 128 logarithmically spaced E/Q steps from ~80 keV/e,\ndown to ~0.3 keV/e.\n\nProton bulk parameters provided here (speed, density, thermal) are derived from a 1D\nMaxwellian fit to a single detector rate (no coincidence required), and are corrected for\nbackground and dead time. The N/S angle is derived from a peak fitting to the N/S\n(deflection) rate bins of the same rate. The E/W angle is derived from a separate double\ncoincidence rate. \n\nThe proton velocity components are corrected for spacecraft aberration\nand are derived using the N/S and E/W angles.\n",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_rtn",
+      "unitText": "km/s",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vr",
+            "Index": "1",
+            "ParameterKey": "vp_stb(0)"
+          },
+          {
+            "Name": "vt",
+            "Index": "2",
+            "ParameterKey": "vp_stb(1)"
+          },
+          {
+            "Name": "vn",
+            "Index": "3",
+            "ParameterKey": "vp_stb(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "|v|",
+      "description": "Scalar magnitude of the velocity in km/s",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_thermal",
+      "unitText": "km/s"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

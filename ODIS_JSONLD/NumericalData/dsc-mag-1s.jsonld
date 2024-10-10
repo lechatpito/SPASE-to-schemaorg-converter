@@ -1,0 +1,126 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/DSCOVR/MAG/dsc-mag-1s",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/DSCOVR/MAG/dsc-mag-1s",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "DSCOVR - MAG - 1 s",
+  "sdDatePublished": "2024-05-23",
+  "description": "Solar wind magnetic field vector (sampling 1s)",
+  "abstract": "Solar wind magnetic field vector (sampling 1s)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "65536.0",
+      "defaultValue": "-99999."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "description": "\n             Magnetic field vector in GSE Cartesian coordinates\n         ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "dsc_b_1s_gse(0)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-99999."
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "dsc_b_1s_gse(1)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-99999."
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "dsc_b_1s_gse(2)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-99999."
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "description": "\n               Magnetic field vector in GSM Cartesian coordinates\n           ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "dsc_b_1s_gsm(0)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-99999."
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "dsc_b_1s_gsm(1)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-99999."
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "dsc_b_1s_gsm(2)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-99999."
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

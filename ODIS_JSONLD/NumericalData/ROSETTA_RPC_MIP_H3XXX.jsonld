@@ -1,0 +1,77 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ROSETTA/RPC_MIP/ROSETTA_RPC_MIP_H3XXX",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-Archive/ROSETTA/RPC_MIP/ROSETTA_RPC_MIP_H3XXX",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ROSETTA RPC-MIP Calibrated Level-3 HouseKeeping Data (CDF)",
+  "sdDatePublished": "2022-05-30",
+  "description": "This dataset contains housekeeping data with a 32 seconds time resolution : reduced information from passive and active spectra and receiver temperature.",
+  "abstract": "This dataset contains housekeeping data with a 32 seconds time resolution : reduced information from passive and active spectra and receiver temperature.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Comet"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://regards.cnes.fr/user/cdpp/modules/1777?sp=DatasetName;q=DatasetName:ROSETTA_RPC_MIP_H3XXX",
+      "name": "REGARDS",
+      "description": "Access via CNES Data Archive for CDPP"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Mean power in passive mode (LF part)",
+      "description": "Low Frequency Part : [7 - 224] KHz",
+      "unitText": "dB"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Mean power in passive mode (HF part)",
+      "description": "High Frequency Part : [479 - 3584] KHz",
+      "unitText": "dB"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Resonance power in survey mode",
+      "description": "Resonance power in survey mode",
+      "unitText": "dB"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Resonance frequency in survey mode",
+      "description": "Resonance frequency in survey mode",
+      "unitText": "kHz"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "R2 temperature",
+      "description": "R2 (reception electrode #2) temperature",
+      "unitText": "K"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

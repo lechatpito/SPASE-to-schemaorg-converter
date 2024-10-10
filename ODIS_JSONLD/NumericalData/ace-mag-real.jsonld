@@ -1,0 +1,126 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/MFI/ace-mag-real",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/ACE/MFI/ace-mag-real",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "ACE - MFI - real time",
+  "sdDatePublished": "2024-05-23",
+  "description": "\n             ACE Magnetometer real time, 60-second averages of field magnitude and vectors in GSE and GSM coordinates systems.             \n         ",
+  "abstract": "\n             ACE Magnetometer real time, 60-second averages of field magnitude and vectors in GSE and GSM coordinates systems.             \n         ",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "|b|",
+      "description": "Magnetic field magnitude",
+      "unitText": "nT",
+      "minValue": "0.0",
+      "maxValue": "500.0",
+      "defaultValue": "-1.0E31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gse",
+      "description": "\n             Magnetic field vector in GSE Cartesian coordinates (60 sec)\n         ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "imf_real_gse(0)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "imf_real_gse(1)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "imf_real_gse(2)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "b_gsm",
+      "description": "\n               Magnetic field vector in GSM Cartesian coordinates (60 sec)\n           ",
+      "unitText": "nT",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "bx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "imf_real_gsm(0)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "by",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "imf_real_gsm(1)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-1.0E31"
+          },
+          {
+            "Name": "bz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "imf_real_gsm(2)",
+            "ValidMin": "-65534.0",
+            "ValidMax": "65534.0",
+            "FillValue": "-1.0E31"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

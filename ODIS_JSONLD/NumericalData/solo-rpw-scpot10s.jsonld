@@ -1,0 +1,53 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/RPW/solo-rpw-scpot10s",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Solar_Orbiter/RPW/solo-rpw-scpot10s",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "SolarOrbiter - RPW - L3 - spacecraft potential (10 s)",
+  "sdDatePublished": "2023-09-28",
+  "description": "Solar Orbiter Radio/Plasma Wave, LFR L3 spacecraft potential, downsampled",
+  "abstract": "Solar Orbiter Radio/Plasma Wave, LFR L3 spacecraft potential, downsampled",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.Inner"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "s/c potential",
+      "description": "Spacecraft potential with respect to plasma. Median value over 10 s interval.",
+      "unitText": "V",
+      "defaultValue": "-1.0000e+31"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "probe-to-s/c potential",
+      "description": "Average probe-to-spacecraft potential. Median over 10 s interval.",
+      "unitText": "V",
+      "defaultValue": "-1.0000e+31"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

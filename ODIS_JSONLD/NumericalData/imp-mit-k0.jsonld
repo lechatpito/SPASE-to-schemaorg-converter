@@ -1,0 +1,88 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/IMP-8/MIT/imp-mit-k0",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/IMP-8/MIT/imp-mit-k0",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "IMP 8 - MIT - best fit",
+  "sdDatePublished": "2013-09-11",
+  "description": "The MIT Faraday cup experiment on IMP 8 measures \ncurrents from solar wind ions, and from these measurements we calculate \nthe velocity, density, and temperature of the solar wind. The IMP 8 data \nfiles consist of fine resolution data (approximately 1 minute resolution).\n\n            IMP 8 spins with a period of approximately 2.7s. The Faraday \nCup (FC) instrument scans the solar wind distribution stepping through a \ncontiguous set of energy windows, one step per spacecraft spin. The FC \ninstrument divides the spin into thirty-two, 11.25 degree angular sectors \nand integrates the measured currents over different angular sectors \ndepending upon the Mode in which the instrument is operating. The border \nbetween two of the 11.25 degree angular sectors lies on the Sun-spacecraft \nline.\n\n            The FC sensor collector plate is divided into two, \nsemi-circular halves; the division line is parallel to the spacecraft spin \nplane which is approximately parallel to the ecliptic plane. The split \ncollector allow determination of the bulk plasma flow relative to the spin \nplane; North/South angles refer to flows coming from above or below the \nspin plane respectively (flows from the South are designated as having a \npositive N/S angle).\n\n            The bulk flow angle in the spin plane is determined from the \nmeasurements of current vs. rotation angle. The currents telemetered to \nthe ground are the sums of currents for the two half-collectors (\"A\" and \n\"B\") and, for the TMS and AQM modes, also the current for the \nhalf-collector \"B\".\n\n            Electrons are measured except for the eight angles near the Sun.\n\n            The experiment has two memories only one of which is operating \nperfectly. As a result, only every other TMS spectrum is usable, and the \ntime between spectra is usually twice that that would be expected from the \nspacecraft spin rate. The bad half-memory also limits the energy windows \nthat can be used in the other modes, since they require both memories to \nhold the data. On occasion, the data are read out rapidly enough by the \nspacecraft to allow repeated use of the good half-memory, and the time \nresolution in the TMS is approximately 32 seconds.",
+  "abstract": "The MIT Faraday cup experiment on IMP 8 measures \ncurrents from solar wind ions, and from these measurements we calculate \nthe velocity, density, and temperature of the solar wind. The IMP 8 data \nfiles consist of fine resolution data (approximately 1 minute resolution).\n\n            IMP 8 spins with a period of approximately 2.7s. The Faraday \nCup (FC) instrument scans the solar wind distribution stepping through a \ncontiguous set of energy windows, one step per spacecraft spin. The FC \ninstrument divides the spin into thirty-two, 11.25 degree angular sectors \nand integrates the measured currents over different angular sectors \ndepending upon the Mode in which the instrument is operating. The border \nbetween two of the 11.25 degree angular sectors lies on the Sun-spacecraft \nline.\n\n            The FC sensor collector plate is divided into two, \nsemi-circular halves; the division line is parallel to the spacecraft spin \nplane which is approximately parallel to the ecliptic plane. The split \ncollector allow determination of the bulk plasma flow relative to the spin \nplane; North/South angles refer to flows coming from above or below the \nspin plane respectively (flows from the South are designated as having a \npositive N/S angle).\n\n            The bulk flow angle in the spin plane is determined from the \nmeasurements of current vs. rotation angle. The currents telemetered to \nthe ground are the sums of currents for the two half-collectors (\"A\" and \n\"B\") and, for the TMS and AQM modes, also the current for the \nhalf-collector \"B\".\n\n            Electrons are measured except for the eight angles near the Sun.\n\n            The experiment has two memories only one of which is operating \nperfectly. As a result, only every other TMS spectrum is usable, and the \ntime between spectra is usually twice that that would be expected from the \nspacecraft spin rate. The bad half-memory also limits the energy windows \nthat can be used in the other modes, since they require both memories to \nhold the data. On occasion, the data are read out rapidly enough by the \nspacecraft to allow repeated use of the good half-memory, and the time \nresolution in the TMS is approximately 32 seconds.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "(Better, from fits) Proton number density",
+      "unitText": "cm^-3",
+      "minValue": "0.0",
+      "maxValue": "100.0",
+      "defaultValue": "9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_bulk",
+      "description": "(Better, from fits) Ion Flow Velocity (aberration corrected)",
+      "unitText": "km/s",
+      "minValue": "100.0",
+      "maxValue": "3000.0",
+      "defaultValue": "9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_thermal",
+      "description": "(Better, from fits) Proton most-probable thermal \n                speed (aberration corrected).  Thermal speed is the most probable thermal \n                speed (i.e., the square root of [2kT/m(proton)]). To convert thermal speed \n                to temperature in eV, multiply 0.0052 by the square of the thermal speed; \n                to convert to temperature [K], multiply the square of the thermal speed by \n                60.5.",
+      "unitText": "km/s",
+      "minValue": "1.0",
+      "maxValue": "500.0",
+      "defaultValue": "9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flow angle e/w",
+      "description": "(Best, from fits) Proton East/West flow angle \n                (aberration corrected). Azimuth is E/W, meaning bulk flow from the East \n                or the West side of the Sun respectively. Positive azimuth angle means \n                flow from the West.",
+      "unitText": "deg",
+      "minValue": "-45.0",
+      "maxValue": "45.0",
+      "defaultValue": "9999.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flow angle n/s",
+      "description": "(Best, from fits) Proton North/South flow angle \n                (aberration corrected). Azimuth is N/S, meaning bulk flow from the North \n                or the South side of the Sun respectively. Positive azimuth angle means \n                flow from the North.\n            ",
+      "unitText": "deg",
+      "minValue": "-45.0",
+      "maxValue": "45.0",
+      "defaultValue": "9999.0"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

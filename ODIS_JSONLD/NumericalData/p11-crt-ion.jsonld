@@ -1,0 +1,116 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Pioneer11/CRT/p11-crt-ion",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Pioneer11/CRT/p11-crt-ion",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Pioneer 11 - CRT - flyby jupiter - ion flux",
+  "sdDatePublished": "2012-09-14",
+  "description": "Pionner 11\n                CRT - Cosmic Ray Telescope - \n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "abstract": "Pionner 11\n                CRT - Cosmic Ray Telescope - \n                Data provided to CDPP by ONERA. All information included in this report:\n                http://amda.cdpp.eu/help/parameters/doc/ONERA_Jupiter_plasma_db_for_AMDA.pdf",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Jupiter"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "flux_int",
+      "unitText": "cm-2.sr-1.s-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "8",
+        "elements": [
+          {
+            "Name": "E0",
+            "Index": "1",
+            "ParameterKey": "p11_crt_fpio(0)"
+          },
+          {
+            "Name": "E1",
+            "Index": "2",
+            "ParameterKey": "p11_crt_fpio(1)"
+          },
+          {
+            "Name": "E2",
+            "Index": "3",
+            "ParameterKey": "p11_crt_fpio(2)"
+          },
+          {
+            "Name": "E3",
+            "Index": "4",
+            "ParameterKey": "p11_crt_fpio(3)"
+          },
+          {
+            "Name": "E4",
+            "Index": "5",
+            "ParameterKey": "p11_crt_fpio(4)"
+          },
+          {
+            "Name": "E5",
+            "Index": "6",
+            "ParameterKey": "p11_crt_fpio(5)"
+          },
+          {
+            "Name": "E6",
+            "Index": "7",
+            "ParameterKey": "p11_crt_fpio(6)"
+          },
+          {
+            "Name": "E7",
+            "Index": "8",
+            "ParameterKey": "p11_crt_fpio(7)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "flux_dif",
+      "unitText": "cm-2.sr-1.s-1.MeV-1",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "E0",
+            "Index": "1",
+            "ParameterKey": "p11_crt_fpdo(0)"
+          },
+          {
+            "Name": "E1",
+            "Index": "2",
+            "ParameterKey": "p11_crt_fpdo(1)"
+          },
+          {
+            "Name": "E2",
+            "Index": "3",
+            "ParameterKey": "p11_crt_fpdo(2)"
+          }
+        ]
+      }
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

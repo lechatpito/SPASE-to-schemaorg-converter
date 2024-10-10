@@ -1,0 +1,50 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/DisplayData/ISEE/Induction/ALL/induction/induction_dynamic_spectra_png_logscale",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/IUGONET/DisplayData/ISEE/Induction/ALL/induction/induction_dynamic_spectra_png_logscale",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Dynamic Spectra viewer data of 64Hz induction magnetometer data at All Stations (PNG format, Logarithmic Scale)",
+  "sdDatePublished": "2017-12-25",
+  "description": "The stack plot data about ISEE induction magnetometer observed at all stations (Athabasca Canada, Moshiri Hokkaido-Japan, Paratunka Russia, Sata Kagoshima-Japan, Zhigansk Russia, Kapuskasing Canada, Gakona Alaska, and so on). This plot data shows the H-component frequency data (in logarithmic scale) taken with a sampling rate of 64 Hz. Some engineering parameters for the instrument, such as the sensitivity and phase difference. This plot data and station list has been opened by ISEE Magentometer's web site (http://stdb2.stelab.nagoya-u.ac.jp/magne/). Important Notes: 1. For frequencies below ~1Hz, use the following equation to obtain amplitude values in units of nT/s: dB/dt (nT/s) = data (V) / quick_sensitivity. The value of quick_sensitivity is given in global attributes. For frequencies above ~1Hz, use the exact sensitivity curve to obtain absolute amplitude of waves. 2. Please note that the positive direction (polarity) of H, D, and Z are different depending on the station. For example, in February 2011, the polarity is ATH: positive=northward, eastward, upward; MGD: positive=northward, eastward, downward; PTK: positive=northward, eastward, downward; MSR: positive=southward, westward, upward; STA: positive=northward, eastward, downward. Please see http://stdb2.isee.nagoya-u.ac.jp/magne/magne_stations.html for the latest information.",
+  "abstract": "The stack plot data about ISEE induction magnetometer observed at all stations (Athabasca Canada, Moshiri Hokkaido-Japan, Paratunka Russia, Sata Kagoshima-Japan, Zhigansk Russia, Kapuskasing Canada, Gakona Alaska, and so on). This plot data shows the H-component frequency data (in logarithmic scale) taken with a sampling rate of 64 Hz. Some engineering parameters for the instrument, such as the sensitivity and phase difference. This plot data and station list has been opened by ISEE Magentometer's web site (http://stdb2.stelab.nagoya-u.ac.jp/magne/). Important Notes: 1. For frequencies below ~1Hz, use the following equation to obtain amplitude values in units of nT/s: dB/dt (nT/s) = data (V) / quick_sensitivity. The value of quick_sensitivity is given in global attributes. For frequencies above ~1Hz, use the exact sensitivity curve to obtain absolute amplitude of waves. 2. Please note that the positive direction (polarity) of H, D, and Z are different depending on the station. For example, in February 2011, the polarity is ATH: positive=northward, eastward, upward; MGD: positive=northward, eastward, downward; PTK: positive=northward, eastward, downward; MSR: positive=southward, westward, upward; STA: positive=northward, eastward, downward. Please see http://stdb2.isee.nagoya-u.ac.jp/magne/magne_stations.html for the latest information.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere.ERegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    }
+  ],
+  "keywords": "EARTH SCIENCE Atmosphere Sun-earth Interactions Ionosphere/Magnetosphere Dynamics Magnetic Fields/Magnetic Currents",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "http://stdb2.isee.nagoya-u.ac.jp/magne/",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

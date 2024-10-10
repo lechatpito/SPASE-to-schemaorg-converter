@@ -1,0 +1,51 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ISWI/DisplayData/GIRO/SKYMAP/PT15M",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/ISWI/DisplayData/GIRO/SKYMAP/PT15M",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "GIRO Doppler Skymap Plots",
+  "sdDatePublished": "2019-05-05",
+  "description": "Collection of GIRO Doppler skymap images at University of Massachusetts Lowell, covering selected ionosonde stations and periods of time from 1993-07-20 to current time, including 28 real-time feeds. Total number of GIRO locations represented is 50 as of February 14, 2012. Access to images is arranged via a webpage containing a browsable data availability table. GIRO skymaps are visualized by plotting received echoes in the polar coordinate system using echo zenith and azimuth information. Color scale is used to represent Doppler Velocity of the signal reflection area in the ionosphere. Additionally, observed echoes on the skymap are used to derived zenith and azimuth of the ionospheric tilt, as well as vertical and horizontal components of the bulk ionospheric motion across the sounder location.",
+  "abstract": "Collection of GIRO Doppler skymap images at University of Massachusetts Lowell, covering selected ionosonde stations and periods of time from 1993-07-20 to current time, including 28 real-time feeds. Total number of GIRO locations represented is 50 as of February 14, 2012. Access to images is arranged via a webpage containing a browsable data availability table. GIRO skymaps are visualized by plotting received echoes in the polar coordinate system using echo zenith and azimuth information. Color scale is used to represent Doppler Velocity of the signal reflection area in the ionosphere. Additionally, observed echoes on the skymap are used to derived zenith and azimuth of the ionospheric tilt, as well as vertical and horizontal components of the bulk ionospheric motion across the sounder location.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    }
+  ],
+  "keywords": [
+    "Skymap",
+    "Echo",
+    "Bulk Plasma Velocity",
+    "Ionospheric Tilt"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://giro.uml.edu/driftbase/",
+      "name": "GIRO DriftBase Skymap Browser",
+      "description": "Repository of GIRO skymap images at University of Massachusetts Lowell, containing browsable interface to retrieve individual images."
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

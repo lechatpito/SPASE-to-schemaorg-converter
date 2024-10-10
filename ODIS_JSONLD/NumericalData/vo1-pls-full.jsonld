@@ -1,0 +1,69 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager1/PLS/vo1-pls-full",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Voyager1/PLS/vo1-pls-full",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Voyager 1 - PLS - cruise",
+  "sdDatePublished": "2021-07-13",
+  "description": "Voyager 1 PLS (Plasma_Science_Experiment data) during Cruise (from CDAWeb)",
+  "abstract": "Voyager 1 PLS (Plasma_Science_Experiment data) during Cruise (from CDAWeb)",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Heliosphere"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density h+",
+      "description": "Proton density",
+      "unitText": "cm-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temperature h+",
+      "description": "Proton radial temperature calculated from thermal speed (T = 60.5*Vth^2)",
+      "unitText": "K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "velocity h+",
+      "description": "Proton velocity",
+      "unitText": "km/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "velocity : elevation",
+      "description": "Proton velocity elevation angle",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "velocity : azimuth",
+      "description": "Proton velocity azimuth angle",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

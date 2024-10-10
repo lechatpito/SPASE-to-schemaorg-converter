@@ -1,0 +1,80 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/BepiColombo/Ephemeris/bepi-orb-mercury2",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/BepiColombo/Ephemeris/bepi-orb-mercury2",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "BepiColombo - Ephemeris - Mercury flyby #2",
+  "sdDatePublished": "2023-10-26",
+  "description": "Calculated by IRAP using BepiColombo SPICE kernels",
+  "abstract": "Calculated by IRAP using BepiColombo SPICE kernels",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Mercury"
+    }
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "xyz_mso",
+      "unitText": "Rm",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "x",
+            "Index": "1",
+            "ParameterKey": "bepi_xyz_mso2(0)"
+          },
+          {
+            "Name": "y",
+            "Index": "2",
+            "ParameterKey": "bepi_xyz_mso2(1)"
+          },
+          {
+            "Name": "z",
+            "Index": "3",
+            "ParameterKey": "bepi_xyz_mso2(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "distance bepi-mercury",
+      "unitText": "Rv"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lon iau_mercury",
+      "unitText": "deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lat iau_mercury",
+      "unitText": "deg"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}

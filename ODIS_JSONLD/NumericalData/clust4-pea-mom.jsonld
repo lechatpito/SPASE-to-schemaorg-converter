@@ -1,0 +1,407 @@
+{
+  "@id": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster4/PEACE/clust4-pea-mom",
+  "url": "https://raw.githubusercontent.com/lechatpito/SPASE-to-schemaorg-converter/main/CNES/NumericalData/CDPP-AMDA/Cluster/Cluster4/PEACE/clust4-pea-mom",
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Cluster 4 - PEACE - electron moments",
+  "sdDatePublished": "2023-12-17",
+  "description": " The  CAA  Moments  data  are  electron  density,  velocity  vector, \n            pressure  tensor  and  heat  flux  vector.  The  vectors  and tensors  are  provided  in  GSE  coordinates.  Velocity  and  temperature  \n            are  also  provided  as  components  perpendicular  and parallel  to  the  magnetic field. \n            The  magnetic  field  data  is  taken  from  CSDS  FGM  PP  data,  at  present.  In  a  possible  future \n            release  we would  ideally  use CAA  FGM  data,  but  it  is  considered  unlikely  that  there  will  be  major  differences  except  in \n            very weak field regions. Furthermore : \n            * T_perp and T_para are determined by projecting the pressure tensor along the magnetic field and dividing by the density and by Boltzmanns constant. T_perp is the average of the two perpendicular components.              \n            * v_para = (v.b) b and v_perp = v - (v.b) b. where v is the velocity vector and b is the magnetic field unit vector. \n           \n           These data  are  produced on the  ground  using 3-D  data  and thus are  available at  time  resolutions  which are  limited by the \n            rate  at  which  3-D  data  can  be  transmitted.  The  data  source  used  to  generate  the  mome\n            nts  is  always  the  best  available resolution 3-D data; this means mainly 3DR data but in the case 3DX or 3DXP are available these \n            are used instead for the MOMENTS  production (see  Mode_DataOrigin_HEEA/LEEA).  Choices  on  the  best  way  to  combine  data  from  the  two \n            sensors can be made in the moments production software; in the first release the moments are made using LEEA data in the \n            energy overlap region. \n            In some situations, use of both sensors together may be a better choice, for example in case\n            s where the  distribution  changes \n            during  a  spin  as  the  method  can  resolve  time  aliasing  errors.  If  resources  allow,  the  Moments \n            product at CAA may be updated to take advantage of this possibility.\n            The  advantage  of  these  ground  - calculated  moments  is  that  the  best  available \n            calibration  data  is  used,  a  correction  can  be made  for  the  spacecraft  potential\n            measurements  (collected  by  the  EFW  experiment),  and  spacecraft  electrons  can  be \n            properly  removed.  The  current  release  has  been  generated  automatically  \n            using  default  values  to  control  the  approach  to \n            potential correction and photoelectron removal, and has not been systematically human\n            - validated, so some errors may exist. \n            Specifically, the spacecraft potential, Vsc, is set to be 1 V greater than the\n            measured probe - spacecraft potential provided by \n            the electric field experiment (EFW) and the lower energy cutoff for the  moments\n            integration is set to reject the energy bin \n            containing  the  EFW  potential  and  the  one  above  that  (which  in  practice  \n            may  also  contain  counts  due  to  spacecraft electrons). \n            Sometimes cold electrons are present which can appear in the same energy bin as the spacecraft photoelectrons, \n            therefore  both the  cold electrons and spacecraft photoelectrons are  removed resulting in underestimated electron densities. \n            Recent  work\n            by  the  EFW  team  suggests  a  more  accurate  determination  of  from  would  be  a  term  that  increases  linearly \n            above  ~10  V  (Cully  et  al.,  2007)  but  this  has  not  yet  been  \n            implemented  in  our  CAA  moments  generation  code.",
+  "abstract": " The  CAA  Moments  data  are  electron  density,  velocity  vector, \n            pressure  tensor  and  heat  flux  vector.  The  vectors  and tensors  are  provided  in  GSE  coordinates.  Velocity  and  temperature  \n            are  also  provided  as  components  perpendicular  and parallel  to  the  magnetic field. \n            The  magnetic  field  data  is  taken  from  CSDS  FGM  PP  data,  at  present.  In  a  possible  future \n            release  we would  ideally  use CAA  FGM  data,  but  it  is  considered  unlikely  that  there  will  be  major  differences  except  in \n            very weak field regions. Furthermore : \n            * T_perp and T_para are determined by projecting the pressure tensor along the magnetic field and dividing by the density and by Boltzmanns constant. T_perp is the average of the two perpendicular components.              \n            * v_para = (v.b) b and v_perp = v - (v.b) b. where v is the velocity vector and b is the magnetic field unit vector. \n           \n           These data  are  produced on the  ground  using 3-D  data  and thus are  available at  time  resolutions  which are  limited by the \n            rate  at  which  3-D  data  can  be  transmitted.  The  data  source  used  to  generate  the  mome\n            nts  is  always  the  best  available resolution 3-D data; this means mainly 3DR data but in the case 3DX or 3DXP are available these \n            are used instead for the MOMENTS  production (see  Mode_DataOrigin_HEEA/LEEA).  Choices  on  the  best  way  to  combine  data  from  the  two \n            sensors can be made in the moments production software; in the first release the moments are made using LEEA data in the \n            energy overlap region. \n            In some situations, use of both sensors together may be a better choice, for example in case\n            s where the  distribution  changes \n            during  a  spin  as  the  method  can  resolve  time  aliasing  errors.  If  resources  allow,  the  Moments \n            product at CAA may be updated to take advantage of this possibility.\n            The  advantage  of  these  ground  - calculated  moments  is  that  the  best  available \n            calibration  data  is  used,  a  correction  can  be made  for  the  spacecraft  potential\n            measurements  (collected  by  the  EFW  experiment),  and  spacecraft  electrons  can  be \n            properly  removed.  The  current  release  has  been  generated  automatically  \n            using  default  values  to  control  the  approach  to \n            potential correction and photoelectron removal, and has not been systematically human\n            - validated, so some errors may exist. \n            Specifically, the spacecraft potential, Vsc, is set to be 1 V greater than the\n            measured probe - spacecraft potential provided by \n            the electric field experiment (EFW) and the lower energy cutoff for the  moments\n            integration is set to reject the energy bin \n            containing  the  EFW  potential  and  the  one  above  that  (which  in  practice  \n            may  also  contain  counts  due  to  spacecraft electrons). \n            Sometimes cold electrons are present which can appear in the same energy bin as the spacecraft photoelectrons, \n            therefore  both the  cold electrons and spacecraft photoelectrons are  removed resulting in underestimated electron densities. \n            Recent  work\n            by  the  EFW  team  suggests  a  more  accurate  determination  of  from  would  be  a  term  that  increases  linearly \n            above  ~10  V  (Cully  et  al.,  2007)  but  this  has  not  yet  been  \n            implemented  in  our  CAA  moments  generation  code.",
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosheath"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Magnetotail"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Main"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.Polar"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.Magnetosphere.RadiationBelt"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.AuroralRegion"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Ionosphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.Plasmasphere"
+    },
+    {
+      "@type": "Place",
+      "name": "Earth.NearSurface.PolarCap"
+    },
+    {
+      "@type": "Place",
+      "name": "Heliosphere.NearEarth"
+    }
+  ],
+  "keywords": [
+    "4 second",
+    "magnetosphere",
+    "auroral region",
+    "polar cap",
+    "cusp",
+    "bow shock",
+    "solar wind",
+    "magnetosheath",
+    "Cluster",
+    "magnetotail",
+    "lobe"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "density",
+      "description": "\n                Electron number density at spin time resolution\n            ",
+      "unitText": "cm^-3",
+      "minValue": "0.1000",
+      "maxValue": "1000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gse",
+      "description": "\n                Electron velocity at spin time resolution\n            ",
+      "unitText": "km/s",
+      "minValue": "-10000",
+      "maxValue": "10000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "c4_pea_vgse(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "c4_pea_vgse(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "c4_pea_vgse(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_gsm",
+      "description": "\n                Electron velocity at spin time resolution, in GSM\n            ",
+      "unitText": "km/s",
+      "minValue": "-10000",
+      "maxValue": "10000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "c4_pea_vgsm(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "c4_pea_vgsm(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "c4_pea_vgsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_para_gse",
+      "description": "\n                Electron parallel velocity at spin time resolution, in GSE\n            ",
+      "unitText": "km/s",
+      "minValue": "-10000",
+      "maxValue": "10000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "c4_pea_vpar(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "c4_pea_vpar(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "c4_pea_vpar(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_para_gsm",
+      "description": "\n                Electron parallel velocity at spin time resolution, in GSM\n            ",
+      "unitText": "km/s",
+      "minValue": "-10000",
+      "maxValue": "10000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "c4_pea_vpar_gsm(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "c4_pea_vpar_gsm(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "c4_pea_vpar_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_perp_gse",
+      "description": "\n                Electron perpendicular velocity at spin time resolution, in GSE\n            ",
+      "unitText": "km/s",
+      "minValue": "-10000",
+      "maxValue": "10000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "c4_pea_vperp(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "c4_pea_vperp(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "c4_pea_vperp(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "v_perp_gsm",
+      "description": "\n                Electron perpendicular velocity at spin time resolution, in GSM\n            ",
+      "unitText": "km/s",
+      "minValue": "-10000",
+      "maxValue": "10000",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "vx",
+            "Qualifier": "Component.I",
+            "Index": "1",
+            "ParameterKey": "c4_pea_vperp_gsm(0)"
+          },
+          {
+            "Name": "vy",
+            "Qualifier": "Component.J",
+            "Index": "2",
+            "ParameterKey": "c4_pea_vperp_gsm(1)"
+          },
+          {
+            "Name": "vz",
+            "Qualifier": "Component.K",
+            "Index": "3",
+            "ParameterKey": "c4_pea_vperp_gsm(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "heat_flux_gse",
+      "description": "\n                Parallel electron heat flux at spin time resolution, in GSE\n            ",
+      "unitText": "microW/m^2",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "3",
+        "elements": [
+          {
+            "Name": "flux_x",
+            "Index": "1",
+            "ParameterKey": "c4_pea_flux(0)"
+          },
+          {
+            "Name": "flux_y",
+            "Index": "1",
+            "ParameterKey": "c4_pea_flux(1)"
+          },
+          {
+            "Name": "flux_z",
+            "Index": "1",
+            "ParameterKey": "c4_pea_flux(2)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pressure_gse",
+      "description": "\n                Electron pressure tensor at spin time resolution, in GSE\n            ",
+      "unitText": "nPa",
+      "cadence": "PT4S",
+      "structure": {
+        "@type": "StructuredValue",
+        "size": "9",
+        "elements": [
+          {
+            "Name": "xx",
+            "Index": "1",
+            "ParameterKey": "c4_pea_press(0)"
+          },
+          {
+            "Name": "xy",
+            "Index": "2",
+            "ParameterKey": "c4_pea_press(1)"
+          },
+          {
+            "Name": "xz",
+            "Index": "3",
+            "ParameterKey": "c4_pea_press(2)"
+          },
+          {
+            "Name": "yx",
+            "Index": "4",
+            "ParameterKey": "c4_pea_press(3)"
+          },
+          {
+            "Name": "yy",
+            "Index": "5",
+            "ParameterKey": "c4_pea_press(4)"
+          },
+          {
+            "Name": "yz",
+            "Index": "6",
+            "ParameterKey": "c4_pea_press(5)"
+          },
+          {
+            "Name": "zx",
+            "Index": "7",
+            "ParameterKey": "c4_pea_press(6)"
+          },
+          {
+            "Name": "zy",
+            "Index": "8",
+            "ParameterKey": "c4_pea_press(7)"
+          },
+          {
+            "Name": "zz",
+            "Index": "9",
+            "ParameterKey": "c4_pea_press(8)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_para",
+      "description": "\n                Parallel electron temperature at spin time resolution\n            ",
+      "unitText": "eV",
+      "defaultValue": "-1.0000e+31",
+      "cadence": "PT4S"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "t_perp",
+      "description": "\n                Perpendicular electron temperature at spin time resolution\n            ",
+      "unitText": "eV",
+      "cadence": "PT4S"
+    }
+  ],
+  "license": "https://cdla.io/permissive-1-0/",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Space Physicist",
+      "Space Community",
+      "Data Scientists",
+      "Machine Learning Users"
+    ]
+  },
+  "sdPublisher": {
+    "@type": "Organization",
+    "name": "hpde.io"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "HPDE.io / SPASE",
+    "url": "https://hpde.io/"
+  }
+}
