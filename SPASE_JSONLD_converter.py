@@ -38,7 +38,12 @@ class SPASEConverter:
         self.jsonld["@id"] = urljoin(self.base_url, self.clean_path())
         self.jsonld["url"] = self.jsonld["@id"]
 
-        mapped_jsonld = self.mapping_engine.apply_mappings(self.data_type, self.spase_data, self.base_url)
+        mapped_jsonld = self.mapping_engine.apply_mappings(
+            self.data_type, 
+            self.spase_data, 
+            self.base_url, 
+            self.output_file_path
+        )
         self.jsonld.update(mapped_jsonld)
 
         return self.jsonld

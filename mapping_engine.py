@@ -4,21 +4,38 @@ from pathlib import Path
 from urllib.parse import urljoin
 import yaml
 from datetime import datetime
+import os
 
 # Define transformation functions
-def to_url(resource_id, base_url):
+def to_url(resource_id, base_url, output_file_path):
     # Ensure resource_id is a string
     if isinstance(resource_id, dict):
-        # Extract the appropriate string value from the dictionary
-        resource_id = resource_id.get("URL")  # Adjust this key as necessary
+        resource_id = resource_id.get("ResourceID")  # Adjust this key as necessary
 
-    # Check if resource_id is None or not a string
     if resource_id is None or not isinstance(resource_id, str):
         logging.warning(f"Invalid resource_id: {resource_id}")
         return ''  # or handle it as needed
 
-    identifier = resource_id.split('://')[-1]
-    return f"{base_url}{identifier}"
+    # Normalize the path separators and remove any leading/trailing slashes
+    relative_path = str(output_file_path).replace('\\', '/').strip('/')
+    
+    # Remove the base part of the path if it's included in the output_file_path
+    if relative_path.startswith(base_url.rstrip('/')):
+        relative_path = relative_path[len(base_url.rstrip('/')):]
+    
+    # Remove any leading slashes from the relative path
+    relative_path = relative_path.lstrip('/')
+    
+    # Construct the URL using urljoin to handle any remaining path issues
+    url = urljoin(base_url, relative_path)
+    
+    # Ensure there are no double slashes in the middle of the URL
+    url = url.replace('//', '/')
+    
+    # Re-add the protocol double slash
+    url = url.replace('://', '://')
+    
+    return url
 
 def extract_date(datetime_str):
     return datetime_str.split('T')[0] if 'T' in datetime_str else datetime_str
@@ -144,24 +161,19 @@ class MappingEngine:
         with open(path, 'r') as f:
             return yaml.safe_load(f)
 
-    def apply_mappings(self, data_type, spase_json, base_url):
-        # url = to_url(spase_json.get('Spase', {}).get('DisplayData', {}).get('ResourceID', ''), base_url)
+    def apply_mappings(self, data_type, spase_json, base_url, output_file_path):
         jsonld = {
             "@context": {
                 "@vocab": "https://schema.org/"
             },
             "@type": "Dataset",
-            # Ensure @id is set correctly
-            # "@id": url
         }
         mappings = self.mapping_spec.get(data_type, {}).get('mappings', {})
   
         data_section = spase_json.get('Spase', {}).get(data_type, {})
         for source_field, config in mappings.items():            
-            # Handle nested source fields
             source_value = self.get_nested_value(data_section, source_field)    
 
-             # Skip if source_value is empty
             if not source_value:
                 logging.info(f"Skipping mapping for {source_field} as no data is present.")
                 continue
@@ -170,7 +182,7 @@ class MappingEngine:
                 transform_func = TRANSFORM_FUNCTIONS.get(config['transform'])
                 if transform_func:
                     if config['transform'] == "to_url":                        
-                        transformed_value = transform_func(source_value, base_url)
+                        transformed_value = transform_func(source_value, base_url, output_file_path)
                     elif config['transform'] == "map_distribution":
                         transformed_value = transform_func(source_value, data_section, base_url)
                     else:
@@ -181,7 +193,6 @@ class MappingEngine:
             else:
                 transformed_value = source_value
 
-            # Apply to single target or multiple targets
             if 'target' in config:
                 jsonld[config['target']] = transformed_value
             elif 'targets' in config:
