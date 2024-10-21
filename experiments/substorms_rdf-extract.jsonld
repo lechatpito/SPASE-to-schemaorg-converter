@@ -1,0 +1,5625 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "base": "https://supermag.jhuapl.edu/substorms/"
+  },
+  "@id": "https://supermag.jhuapl.edu/substorms/Ohtani_and_Gjerloev_2020",
+  "@url": "https://supermag.jhuapl.edu/substorms/Ohtani_and_Gjerloev_2020",
+  "@type": "schema:Dataset",
+  "schema:name": "SuperMAG Substorm Dataset. Ohtani and Gjerloev, 2020",
+  "schema:description": "This dataset contains information about substorms observed in Earth's magnetosphere.",
+  "schema:abstract": "Substorms are disturbances in the Earth's magnetosphere that release energy from the 'tail' of the magnetosphere and inject it into the high latitude ionosphere.",
+  "schema:license": "unlicensed",
+  "schema:audience": [
+    {
+      "@type": "schema:Audience",
+      "schema:audienceType": "Space Physicist"
+    },
+    {
+      "@type": "schema:Audience",
+      "schema:audienceType": "Space Community"
+    },
+    {
+      "@type": "schema:Audience",
+      "schema:audienceType": "Data Scientists"
+    },
+    {
+      "@type": "schema:Audience",
+      "schema:audienceType": "Machine Learning Users"
+    }
+  ],
+  "schema:publisher": {
+    "@type": "schema:Organization",
+    "schema:name": "SuperMAG",
+    "schema:url": "https://supermag.jhuapl.edu/substorms/"
+  },
+  "schema:includedInDataCatalog": {
+    "@type": "schema:DataCatalog",
+    "schema:name": "SuperMAG",
+    "schema:url": "https://supermag.jhuapl.edu/substorms/"
+  },
+  "schema:hasPart": [
+    {
+      "@id": "base:storm/20231224T2143",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/71.42_22.79"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "71.42"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.79"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/68.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "23.85"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T21:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T1239",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.50_213.88"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.5"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.88"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "1.99"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T12:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T1351",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.42_214.27"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.42"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.27"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "3.24"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T13:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/74.08_17.09",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "74.08"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "17.09"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/53.22_247.35",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "53.22"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "247.35"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231223T0646",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/57.36_266.76"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.76"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/68.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "0.51"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.78_206.63",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.78"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.63"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/59.46_313.91",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "59.46"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "313.91"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231224T0529",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.18_348.44"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.18"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "348.44"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "6.3"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T05:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/62.74_265.49",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.74"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "265.49"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.21_348.67",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.21"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "348.67"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231219T1647",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.79_206.56"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.79"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.56"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "4.93"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T16:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.29_214.94",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.29"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.94"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.28_20.60",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.28"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "20.6"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/62.81_264.70",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.81"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "264.7"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/76.74_11.40",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "76.74"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "11.4"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T0930",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/53.15_247.71"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "53.15"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "247.71"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/61.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "1.46"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T09:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/69.56_25.32",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.56"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "25.32"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231229T0544",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/62.46_291.35"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.46"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "291.35"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/72.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "2.05"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T05:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/61.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/65.42_308.71",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "65.42"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "308.71"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231230T1327",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.95_205.59"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.95"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "205.59"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "1.88"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T13:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231231T1317",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.96_205.54"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.96"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "205.54"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "1.7"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T13:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.42_214.27",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.42"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.27"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/71.43_22.85",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "71.43"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.85"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/75.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "75.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/71.42_22.79",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "71.42"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.79"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.31_214.85",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.31"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.85"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.48_213.98",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.48"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.98"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231231T2130",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/74.03_16.39"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "74.03"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "16.39"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/71.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "23.48"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T21:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.78_206.61",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.78"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.61"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231227T0213",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/65.47_308.98"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "65.47"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "308.98"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/72.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "23.9"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T02:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.96_205.54",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.96"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "205.54"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231221T0937",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/69.61_213.33"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.61"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.33"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.41"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T09:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T1126",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/57.37_266.56"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.37"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.56"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/68.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "5.24"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T11:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231219T0644",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/61.44_246.93"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.44"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "246.93"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/69.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.42"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/67.40_22.23",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "67.4"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.23"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/62.46_291.35",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.46"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "291.35"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T0909",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.88_206.02"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.88"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.02"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "21.51"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T09:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T1113",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.57_213.52"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.57"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.52"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "0.42"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T11:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/63.70_336.56",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "63.7"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "336.56"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/53.15_247.71",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "53.15"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "247.71"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231224T0407",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.21_348.67"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.21"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "348.67"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "4.79"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T04:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/68.87_14.47",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "68.87"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "14.47"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/69.53_213.75",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.53"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.75"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231224T1622",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.78_206.63"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.78"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.63"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "4.56"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T16:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.88_206.02",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.88"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.02"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T0652",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/61.44_246.93"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.44"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "246.93"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/69.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.57"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/57.37_266.56",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.37"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.56"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T1510",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.78_206.61"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.78"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.61"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "3.6"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T15:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T0611",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/57.37_266.67"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.37"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.67"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/68.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "23.89"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/57.36_266.76",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.76"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/61.45_246.87",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.45"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "246.87"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T0011",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/67.40_22.23"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "67.4"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.23"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/64.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "2.08"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T00:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/59.43_313.76",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "59.43"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "313.76"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.40_214.39",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.4"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.39"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231227T0109",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.28_349.16"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.28"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "349.16"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "1.52"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T01:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T1050",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.54_213.67"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.54"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.67"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "0.03"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T10:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231231T0611",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/62.79_264.87"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.79"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "264.87"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/73.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "23.49"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T0319",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/59.46_313.91"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "59.46"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "313.91"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "1.32"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T03:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T1353",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/61.40_247.12"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.4"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "247.12"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/69.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "5.74"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T13:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T1709",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/74.08_17.09"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "74.08"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "17.09"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/71.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "19.5"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T17:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.18_348.44",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.18"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "348.44"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231226T1240",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/67.94_305.41"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "67.94"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "305.41"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/75.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "10.83"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T12:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/62.46_291.37",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.46"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "291.37"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/68.83_13.84",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "68.83"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "13.84"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.54_213.67",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.54"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.67"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/69.17_18.79",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.17"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "18.79"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231222T0603",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/62.46_291.37"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.46"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "291.37"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/72.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "2.47"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T1307",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.48_213.98"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.48"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.98"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "2.48"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T13:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/57.37_266.65",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.37"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.65"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231226T0906",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/69.60_213.34"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.6"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.34"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "21.87"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T09:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.20_348.55",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.2"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "348.55"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T2146",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/68.05_16.71"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "68.05"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "16.71"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "23.44"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T21:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231226T1123",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/62.81_264.70"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.81"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "264.7"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/73.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "4.8"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T11:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T0557",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.50_213.87"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.5"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.87"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "19.1"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T05:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.36_214.58",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.58"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/61.44_246.93",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.44"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "246.93"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T1432",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.36_214.58"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.58"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "3.88"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T14:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/65.47_308.98",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "65.47"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "308.98"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.89_205.96",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.89"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "205.96"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/61.40_247.12",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.4"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "247.12"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/74.03_16.39",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "74.03"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "16.39"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/67.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "67.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/69.60_213.34",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.6"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.34"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T0643",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/63.94_306.35"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "63.94"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "306.35"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/71.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "4.69"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/62.80_264.78",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.8"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "264.78"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231226T0429",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.20_348.55"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.2"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "348.55"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "5.17"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T04:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231216T2231",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/71.43_22.85"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "71.43"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.85"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/68.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "0.7"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T22:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/68.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "68.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/72.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "72.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.28_349.16",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.28"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "349.16"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231229T0841",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/65.42_308.71"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "65.42"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "308.71"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/72.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "6.8"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T08:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231224T1154",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/62.80_264.78"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.8"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "264.78"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/73.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "5.39"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T11:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/69.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T1630",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.76_206.73"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.76"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.73"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "4.72"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T16:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.01_306.73",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.01"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "306.73"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T1944",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.89_205.96"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.89"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "205.96"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "7.59"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T19:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/62.46_291.36",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.46"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "291.36"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/64.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/57.36_266.71",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.71"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/69.58_213.48",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.58"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.48"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231219T2127",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/68.83_13.84"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "68.83"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "13.84"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/66.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "23.02"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T21:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.28_349.22",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.28"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "349.22"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/62.79_264.87",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.79"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "264.87"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/61.44_246.90",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.44"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "246.9"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231224T1011",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/65.36_308.39"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "65.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "308.39"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/72.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "8.28"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T10:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/57.36_266.79",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.79"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.79_206.56",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.79"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.56"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231230T0706",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/61.44_246.90"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.44"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "246.9"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/69.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.71"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T07:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231223T1419",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.40_214.39"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.4"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.39"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "3.65"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T14:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.57_213.52",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.57"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.52"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/69.61_213.33",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.61"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.33"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.76_206.73",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.76"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.73"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/69.47_214.06",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.47"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.06"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231231T0644",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/57.37_266.65"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.37"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.65"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/68.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "0.39"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231224T0051",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/68.87_14.47"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "68.87"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "14.47"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/66.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "2.39"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T00:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T1506",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.31_214.85"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.31"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.85"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "4.41"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T15:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/68.05_16.71",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "68.05"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "16.71"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.95_205.59",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.95"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "205.59"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/63.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "63.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T1049",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/53.22_247.35"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "53.22"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "247.35"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/61.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "2.8"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T10:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/63.70_336.60",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "63.7"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "336.6"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/65.72_11.20",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "65.72"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "11.2"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231227T0647",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/76.74_11.40"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "76.74"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "11.4"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/74.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "9.44"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.77_206.66",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.77"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.66"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231219T0119",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/65.72_11.20"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "65.72"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "11.2"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/63.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "2.6"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T01:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/62.43_291.17",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.43"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "291.17"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/61.40_247.09",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.4"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "247.09"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/57.36_266.75",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.75"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/73.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "73.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T1541",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.29_214.94"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.29"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.94"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "4.9"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T15:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T0727",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/61.40_247.09"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.4"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "247.09"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/69.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "23.17"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T07:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T1312",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/57.36_266.79"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.79"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/68.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "7.14"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T13:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T1553",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/69.47_214.06"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.47"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "214.06"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "4.69"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T15:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T0118",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/69.17_18.79"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.17"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "18.79"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/66.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "3.14"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T01:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/74.03_16.44",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "74.03"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "16.44"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/74.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "74.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/57.37_266.67",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.37"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.67"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/67.94_305.41",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "67.94"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "305.41"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231229T2215",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/74.03_16.44"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "74.03"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "16.44"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/71.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "0.23"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T22:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.95_205.60",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.95"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "205.6"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/65.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "65.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T1839",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/69.58_213.48"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.58"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.48"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "7.04"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T18:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/65.36_308.39",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "65.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "308.39"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/70.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231222T0315",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/64.01_306.73"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.01"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "306.73"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/71.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "0.84"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T03:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/66.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "66.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231224T0203",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/63.70_336.56"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "63.7"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "336.56"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "1.46"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T02:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/61.45_246.88",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.45"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "246.88"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T1016",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.95_205.60"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.95"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "205.6"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.58"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T10:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231229T0046",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.28_349.17"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.28"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "349.17"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "1.1"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T00:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231221T1521",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.77_206.66"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.77"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "206.66"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "3.75"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T15:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/70.28_349.17",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.28"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "349.17"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T1720",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/69.53_213.75"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.53"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.75"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "5.87"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T17:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231228T0647",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/61.45_246.87"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.45"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "246.87"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/69.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "22.39"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/63.94_306.35",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "63.94"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "306.35"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231224T0226",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/63.70_336.60"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "63.7"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "336.6"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "1.89"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T02:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/66.85_31.33",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "66.85"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "31.33"
+        }
+      ]
+    },
+    {
+      "@id": "base:technique/MLT",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Local Time"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "h"
+        }
+      ],
+      "schema:value": [
+        {
+          "@value": "0.70"
+        },
+        {
+          "@value": "2.08"
+        },
+        {
+          "@value": "4.15"
+        },
+        {
+          "@value": "4.69"
+        },
+        {
+          "@value": "21.51"
+        },
+        {
+          "@value": "2.80"
+        },
+        {
+          "@value": "5.24"
+        },
+        {
+          "@value": "7.14"
+        },
+        {
+          "@value": "5.74"
+        },
+        {
+          "@value": "4.41"
+        },
+        {
+          "@value": "4.90"
+        },
+        {
+          "@value": "4.72"
+        },
+        {
+          "@value": "21.99"
+        },
+        {
+          "@value": "19.10"
+        },
+        {
+          "@value": "22.57"
+        },
+        {
+          "@value": "5.87"
+        },
+        {
+          "@value": "1.46"
+        },
+        {
+          "@value": "0.03"
+        },
+        {
+          "@value": "3.24"
+        },
+        {
+          "@value": "7.04"
+        },
+        {
+          "@value": "7.59"
+        },
+        {
+          "@value": "23.44"
+        },
+        {
+          "@value": "2.60"
+        },
+        {
+          "@value": "22.42"
+        },
+        {
+          "@value": "4.93"
+        },
+        {
+          "@value": "23.02"
+        },
+        {
+          "@value": "3.14"
+        },
+        {
+          "@value": "1.32"
+        },
+        {
+          "@value": "23.89"
+        },
+        {
+          "@value": "23.17"
+        },
+        {
+          "@value": "3.62"
+        },
+        {
+          "@value": "22.58"
+        },
+        {
+          "@value": "0.42"
+        },
+        {
+          "@value": "1.99"
+        },
+        {
+          "@value": "2.48"
+        },
+        {
+          "@value": "3.88"
+        },
+        {
+          "@value": "3.60"
+        },
+        {
+          "@value": "19.50"
+        },
+        {
+          "@value": "2.04"
+        },
+        {
+          "@value": "22.41"
+        },
+        {
+          "@value": "7.67"
+        },
+        {
+          "@value": "3.75"
+        },
+        {
+          "@value": "0.84"
+        },
+        {
+          "@value": "20.80"
+        },
+        {
+          "@value": "2.47"
+        },
+        {
+          "@value": "0.65"
+        },
+        {
+          "@value": "0.51"
+        },
+        {
+          "@value": "3.65"
+        },
+        {
+          "@value": "2.39"
+        },
+        {
+          "@value": "1.89"
+        },
+        {
+          "@value": "4.79"
+        },
+        {
+          "@value": "6.30"
+        },
+        {
+          "@value": "8.28"
+        },
+        {
+          "@value": "5.39"
+        },
+        {
+          "@value": "4.56"
+        },
+        {
+          "@value": "23.85"
+        },
+        {
+          "@value": "5.17"
+        },
+        {
+          "@value": "23.73"
+        },
+        {
+          "@value": "21.87"
+        },
+        {
+          "@value": "4.80"
+        },
+        {
+          "@value": "10.83"
+        },
+        {
+          "@value": "9.09"
+        },
+        {
+          "@value": "1.52"
+        },
+        {
+          "@value": "23.90"
+        },
+        {
+          "@value": "9.44"
+        },
+        {
+          "@value": "22.39"
+        },
+        {
+          "@value": "1.10"
+        },
+        {
+          "@value": "1.47"
+        },
+        {
+          "@value": "2.05"
+        },
+        {
+          "@value": "6.80"
+        },
+        {
+          "@value": "0.23"
+        },
+        {
+          "@value": "22.71"
+        },
+        {
+          "@value": "1.88"
+        },
+        {
+          "@value": "23.49"
+        },
+        {
+          "@value": "0.39"
+        },
+        {
+          "@value": "1.70"
+        },
+        {
+          "@value": "23.48"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231222T0518",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/61.45_246.88"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "61.45"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "246.88"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/69.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "20.8"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T05:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231218T0728",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/59.43_313.76"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "59.43"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "313.76"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/65.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "5.87"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T07:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.50_213.88",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.5"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.88"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231226T0605",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/57.36_266.71"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.71"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/68.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "23.73"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T06:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T0955",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/57.36_266.75"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "57.36"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "266.75"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/68.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "3.62"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T09:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:magnetic_latitude/71.00",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": [
+        {
+          "@value": "Magnetic Latitude"
+        }
+      ],
+      "schema:unitCode": [
+        {
+          "@value": "DEG"
+        }
+      ],
+      "schema:value": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "71.0"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T1932",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/66.85_31.33"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "66.85"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "31.33"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/63.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "21.99"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T19:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231223T0017",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.28_349.22"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.28"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "349.22"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/70.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "0.65"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T00:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231221T1111",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/62.43_291.17"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.43"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "291.17"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/72.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "7.67"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T11:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231220T2354",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/69.56_25.32"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "69.56"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "25.32"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/66.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "2.04"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T23:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231217T0203",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/70.28_20.60"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "70.28"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "20.6"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/67.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "4.15"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T02:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231229T0513",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/62.46_291.36"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.46"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "291.36"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/72.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "1.47"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T05:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:storm/20231226T1541",
+      "@type": [
+        "schema:WeatherObservation"
+      ],
+      "schema:geo": [
+        {
+          "@id": "base:geo/62.74_265.49"
+        }
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "62.74"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "265.49"
+        }
+      ],
+      "schema:magneticLatitude": [
+        {
+          "@id": "base:magnetic_latitude/73.00"
+        }
+      ],
+      "schema:measuredValue": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "9.09"
+        }
+      ],
+      "schema:measurementTechnique": [
+        {
+          "@id": "base:technique/MLT"
+        }
+      ],
+      "schema:observationDate": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value": "2023-01-01T15:00:00"
+        }
+      ]
+    },
+    {
+      "@id": "base:geo/64.50_213.87",
+      "@type": [
+        "schema:GeoCoordinates"
+      ],
+      "schema:latitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "64.5"
+        }
+      ],
+      "schema:longitude": [
+        {
+          "@type": "http://www.w3.org/2001/XMLSchema#float",
+          "@value": "213.87"
+        }
+      ]
+    }
+  ]
+}

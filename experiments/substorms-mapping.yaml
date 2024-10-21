@@ -1,0 +1,50 @@
+prefixes:
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  schema: "https://schema.org/"
+  base: "$(base_uri)"
+
+mappings:
+  storm_observation:
+    sources:
+      - ['substorms.csv~csv']
+    s: base:storm/$(year)$(month)$(day)T$(hour)$(min)
+    po:
+      - [a, schema:WeatherObservation]
+      - [schema:observationDate, $(year)-$(month)-$(day)T$(hour):$(min):00Z, xsd:dateTime]
+      - [schema:measuredValue, $(mlt), xsd:float]
+      - p: schema:measurementTechnique
+        o:
+          - mapping: mlt_technique
+      - [schema:latitude, $(glat), xsd:float]
+      - [schema:longitude, $(glon), xsd:float]
+      - p: schema:geo
+        o:
+          - mapping: geo_coordinates
+      - p: schema:magneticLatitude
+        o:
+          - mapping: magnetic_latitude
+
+  mlt_technique:
+    s: base:technique/MLT
+    po:
+      - [a, schema:PropertyValue]
+      - [schema:name, "Magnetic Local Time"]
+      - [schema:value, $(mlt)]
+      - [schema:unitCode, "h"]
+
+  geo_coordinates:
+    s: base:geo/$(glat)_$(glon)
+    po:
+      - [a, schema:GeoCoordinates]
+      - [schema:latitude, $(glat)]
+      - [schema:longitude, $(glon)]
+
+  magnetic_latitude:
+    s: base:magnetic_latitude/$(mlat)
+    po:
+      - [a, schema:PropertyValue]
+      - [schema:name, "Magnetic Latitude"]
+      - [schema:value, $(mlat)]
+      - [schema:unitCode, "DEG"]
